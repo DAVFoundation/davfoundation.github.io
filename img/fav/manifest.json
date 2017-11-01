@@ -2,25 +2,25 @@
  "name": "App",
  "icons": [
   {
-   "src": "\/android-icon-36x36.png",
+   "src": "\/favicon.png",
    "sizes": "36x36",
    "type": "image\/png",
    "density": "0.75"
   },
   {
-   "src": "\/android-icon-48x48.png",
+   "src": "\/favicon.png",
    "sizes": "48x48",
    "type": "image\/png",
    "density": "1.0"
   },
   {
-   "src": "\/android-icon-72x72.png",
+   "src": "\/favicon.png",
    "sizes": "72x72",
    "type": "image\/png",
    "density": "1.5"
   },
   {
-   "src": "\/android-icon-96x96.png",
+   "src": "\/favicon.png",
    "sizes": "96x96",
    "type": "image\/png",
    "density": "2.0"
