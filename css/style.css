@@ -240,7 +240,7 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 /*technology page*/
 .topbar{
 	height: 174px;
-	background: #7447f7 url('../img/under-menu.jpg') no-repeat center;
+	background: #7447f7 url('../img/under-menu.png') no-repeat center;
 	/*background-size: cover;*/
 	/*margin-bottom: 80px;*/
 }
@@ -793,7 +793,7 @@ margin: 0 0 30px;
 		background: #3d1b76;
 	}
 	.hero-home .hero-left{
-		background: #7447f7 url('../img/home-hero-mobile.jpg') no-repeat bottom center;
+		background: #7447f7 url('../img/home-hero-mobile.png') no-repeat bottom center;
 		background-size: 100%;
 		margin: 0 -15px;
 		padding: 5px 15px 15px;
@@ -819,7 +819,7 @@ margin: 0 0 30px;
 	}
 	.topbar{
 		height: 160px;
-		background: #7447f7 url('../img/under-menu-mobile.jpg') no-repeat center;
+		background: #7447f7 url('../img/under-menu-mobile.png') no-repeat center;
 		background-size: 100%;
 	}
 	.signupForm{
