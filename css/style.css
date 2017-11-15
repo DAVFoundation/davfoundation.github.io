@@ -1050,4 +1050,15 @@ margin: 0 0 30px;
 	.contact-page{
 		padding: 20px 0;
 	}
+	.custom-panel.video-panel > div {
+    	padding: 10px;
+	}
+	.video-carousel .slick-prev {
+    	left: 10px;
+    	top: 107%;
+	}
+	.video-carousel .slick-next {
+    	right: 10px;
+    	top: 107%;
+	}
 }

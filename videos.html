@@ -142,7 +142,7 @@
 
 
 
-      <div class="row">
+      <div class="row hidden-xs">
         <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
           <div class="row">
               <div class="col-md-6 col-md-offset-3">
@@ -282,6 +282,7 @@ $.get(
     $.each(data.items,function(i, item){
       // console.log(item);
       pid = item.contentDetails.relatedPlaylists.uploads;
+      pid = "PLpqJF_iMOExd-la7-aIFbcOd1WN4RwzWU";
       getVids(pid);
     });
   }
@@ -291,7 +292,7 @@ function getVids(pid){
   $.get(
   "https://www.googleapis.com/youtube/v3/playlistItems",{
     part: 'snippet',
-    maxResults: 25,
+    maxResults: 50,
     playlistId: pid,
     key: 'AIzaSyCveKJOnfiDIpLysaTFvqw2WNi3IT1hWCY'
   },function(data){
@@ -331,7 +332,18 @@ function getVids(pid){
         $('.video-carousel').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 4
+            slidesToScroll: 4,
+             responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    // arrows: false,
+                    centerPadding: '40px',
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  }
+                }
+              ]
         });
        
       };
