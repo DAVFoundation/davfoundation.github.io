@@ -633,6 +633,77 @@ margin: 0 0 30px;
 .typeform-widget iframe .ready input{
 	background: blue;
 }
+/*video page*/
+.videobox {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videobox iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.custom-panel.video-panel > div{
+	padding: 50px;
+}
+.video-carousel{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.video-carousel .slick-slide > div, .view-all-videos > div{
+	background: #FFF;
+	/*text-align: center;*/
+	border: 1px solid #EEE;
+	border-radius: 3px;
+	margin: 3px;
+	min-height: 245px;
+}
+.thumb-link{
+	cursor: pointer;
+	text-decoration: none;
+}
+.video-carousel .slick-slide > div h5, .view-all-videos > div h5{
+	font-size: 18px;
+	font-weight: 700;
+	padding: 5px 10px;
+	line-height: 27px;
+	color: #271E35;
+}
+.video-carousel .slick-slide > div p{
+	font-size: 18px;
+	padding: 0px 10px 0 10px;
+	margin: 0px;
+}
+.video-carousel .slick-slide img, .view-all-videos > div img {
+    display: inline-block;
+    width: 100%;
+}
+.video-carousel .slick-next,.video-carousel .slick-prev{
+	/*background: #FFF;*/
+}
+.btn-view-all:active,.btn-view-all:focus{color: #FFF;}
+.video-carousel .slick-next:before,.video-carousel .slick-prev:before{
+	color: #512CA3;
+	opacity: 1;
+	font-size: 30px;
+}
+.view-all-videos{
+	display: none;
+}
+.view-all-videos > div{
+	width: 24%;
+	float: left;
+	margin: 5px;
+}
+
+.contact-page.videos-page:after{
+	top: 320px;
+	bottom: auto;
+}
 /*media queries*/
 @media only screen and (max-width: 1281px){
 	.what-is:before{
