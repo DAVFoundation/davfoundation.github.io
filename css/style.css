@@ -685,6 +685,9 @@ margin: 0 0 30px;
 .video-carousel .slick-next,.video-carousel .slick-prev{
 	/*background: #FFF;*/
 }
+.video-carousel .slick-prev{
+	left: -35px;
+}
 .btn-view-all:active,.btn-view-all:focus{color: #FFF;}
 .video-carousel .slick-next:before,.video-carousel .slick-prev:before{
 	color: #512CA3;
