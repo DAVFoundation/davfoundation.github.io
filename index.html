@@ -359,11 +359,12 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="technology.html"><span>Technology</span></a></li>
+            <!-- <li><a href="technology.html"><span>Technology</span></a></li> -->
             <li><a href="use-cases.html"><span>Use Cases</span></a></li>
             <li><a href="videos.html"><span>Videos</span></a></li>
             <li><a href="join-us.html"><span>Join Us</span></a></li>
             <li class="hide"><a href="blog.html"><span>Blog</span></a></li>
+            <li><a href="index.html#dav-team"><span>Team</span></a></li>
             <li><a href="contact-us.html"><span>Contact Us</span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -510,7 +511,7 @@
 				</div>
 			</div>
 
-      <div class="team">
+      <div class="team" id="dav-team">
         <h2>Meet the Team</h2>
 
         <div class="row">
@@ -812,7 +813,43 @@ document.querySelector("#signupForm").addEventListener("submit", function(e){
     })
 }, false)
 
-</script>
 
+</script>
+<script type="text/javascript">
+    var jump=function(e)
+{
+   if (e){
+       e.preventDefault();
+       var target = $(this).attr("href");
+   }else{
+       var target = location.hash;
+   }
+
+   $('html,body').animate(
+   {
+       scrollTop: $(target).offset().top
+   },2000,function()
+   {
+       location.hash = target;
+   });
+
+}
+
+$('html, body').hide();
+
+$(document).ready(function()
+{
+    $('a[href^=#]').bind("click", jump);
+
+    if (location.hash){
+        setTimeout(function(){
+            $('html, body').scrollTop(0).show();
+            jump();
+        }, 0);
+    }else{
+        $('html, body').show();
+    }
+});
+</script>
   </body>
 </html>
