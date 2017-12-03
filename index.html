@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Expires" content="30" />
     <title>DAV - Decentralized Autonomous Vehicles</title>
     <link rel="apple-touch-icon" sizes="57x57" href="img/fav/favicon.png">
@@ -78,16 +79,25 @@
 }
 .nav li a:hover span,
 .nav li.active a span{
-  color: #7924cf;
+  color: #8abffd !important;
   display: inline-block;
-  border-bottom: 2px solid #7924cf;
+  border-bottom: 2px solid #8abffd !important;
   -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 .hero-home{
-  height: 460px;
-  background: #7447f7 url('img/home-hero.png') no-repeat center bottom;
+  margin-top: 66px;
+  /*height: 460px;*/
+  /*background: #7447f7 url('img/home-hero.png') no-repeat center bottom;*/
+  background: rgba(93,64,240,1);
+  background: -moz-linear-gradient(top, rgba(93,64,240,1) 0%, rgba(116,85,243,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(93,64,240,1)), color-stop(100%, rgba(116,85,243,1)));
+  background: -webkit-linear-gradient(top, rgba(93,64,240,1) 0%, rgba(116,85,243,1) 100%);
+  background: -o-linear-gradient(top, rgba(93,64,240,1) 0%, rgba(116,85,243,1) 100%);
+  background: -ms-linear-gradient(top, rgba(93,64,240,1) 0%, rgba(116,85,243,1) 100%);
+  background: linear-gradient(to bottom, rgba(93,64,240,1) 0%, rgba(116,85,243,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d40f0', endColorstr='#7455f3', GradientType=0 );
   color: #FFF;
   margin-bottom: 40px;
 }
@@ -100,6 +110,15 @@
   font-family: 'Exo 2', sans-serif;
   font-size: 25px;
   font-weight: 300;
+}
+.hero-home h3{
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-top: 45px;
+}
+.hero-home h3 span{
+  font-weight: 700;
 }
 .hero-home #paper{
   border: 2px solid #c3aeff;
@@ -127,11 +146,12 @@
   padding-left: 25px;
 }
 .hero-home form h4{
-  margin-top: 32px;
+  margin-top: 45px;
   font-size: 21px;
   font-weight: 500;
 }
 .hero-home form input[type=text],
+.hero-home form input[type=email],
 .hero-home form input[type=password]{
   margin-bottom: 11px;
   display: block;
@@ -140,8 +160,9 @@
   padding: 0 18px;
   color: #FFF;
   background: #6339d0;
+  background: #5c3de7;
   border-radius: 3px;
-  border: none;
+  border: 1px solid #FFF;
   font-size: 14px;
 }
 .hero-home form input::-webkit-input-placeholder {
@@ -190,8 +211,9 @@
   border: none;
   display: block;
   width: 100%;
-  height: 35px;
-  background: green;
+  height: 44px;
+  background: #62b252;
+  text-transform: uppercase;
   color: #FFF;
   font-size: 15px;
   font-weight: 700;
@@ -292,6 +314,76 @@
 .team h2{
   margin-bottom: 32px;
 }
+.dav-token{
+  background: transparent !important;
+}
+.dav-token .illustrations h2{
+  margin-bottom: 80px !important;
+}
+.dav-token .illustrations h4{
+  font-size: 25px;
+  color: #391871;
+  margin: 30px 0 20px;
+}
+.dav-token .illustrations p{
+  padding: 0px;
+  color: #271e36;
+  font-size: 19px;
+}
+.exchange{
+  background: #6948f2;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.dav-token .exchange h2{color: #FFF !important;}
+.dav-token .exchange p{color: #FFF; font-size: 19px;}
+
+.dav-token h2{
+  color: #391871 !important;
+  text-align: center;
+  margin: 0 0 50px !important;
+}
+.footer-home{
+  background: #FFF;
+}
+.footer-home h3{
+  text-align: center;
+  color: #391871;
+  font-size: 43px;
+  font-weight: 500;
+  margin: 0 0 45px;
+}
+.navbar-home .navbar-brand {
+    padding: 15px 0 0 15px !important;
+}
+.navbar-home.navbar{
+  height: 66px;
+}
+.navbar-home .nav li a{
+  font-size: 19px;
+}
+.navbar-home .nav{
+  margin-top: 10px;
+}
+.navbar-home .navbar-brand>img{
+  width: auto;
+}
+footer.footer-home .links a, footer.footer-home .links p{
+  color: #271e36;
+}
+footer.footer-home .social a{
+  margin: 0 30px;
+}
+footer.footer-home .copyright p{
+  color: #271e36;
+}
+.footer-home .social{
+  margin-top: 70px;
+  margin-bottom: 75px;
+}
 @media only screen and (min-width: 767px) and (max-width: 991px){
   .dav-token .team-member {
     min-height: 500px;
@@ -300,6 +392,20 @@
 @media only screen and (min-width: 992px) and (max-width: 1200px){
   .dav-token .team-member {
     min-height: 660px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .hero-home {
+    /*margin-top: 122px !important;*/
+  }
+  .navbar.navbar-home{
+    padding-top: 18px;
+  }
+  .navbar-home .navbar-brand {
+    padding: 0px !important;
+}
+  .downloadbtn{
+    width: 80%;
   }
 }
 
@@ -346,7 +452,7 @@
   </head>
   <body>
 
-  	<nav class="navbar">
+  	<nav class="navbar navbar-fixed-top navbar-home">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -355,7 +461,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
+          <a class="navbar-brand" href="/"><img src="img/logo-white.png"></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -374,145 +480,102 @@
     <div class="hero-home">
       <div class="container">
         <div class="row">
-          <div class="col-sm-9">
-            <div class="hero-left">
-            <h1>One Token to Move Anything Anywhere</h1>
-            <h2>The future of transportation is a network<br> of autonomous vehicles</h2>
-            <a  href="https://bit.ly/dav_whitepaper" target="_blank" id="paper"><img src="img/paper.png" > <span>Read the White Paper</span></a>
-            </div>
+          <div class="col-sm-8 hidden-xs">
+            <h3><span>DAV is a software platform </span>that allows anyone to buy or sell autonomous transportation services in a decentralized market. Our platform integrates into any autonomous vehicles, enabling those vehicles to discover, communicate, and transact with one another using a digital currency called DAV.</h3>
           </div>
 
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <form id="signupForm">
-              <h4>Sign up for updates</h4>
-              <input type="text" name='name' id='signupName' placeholder="Full name" />
-              <input type="text" name='email' id='signupEmail' placeholder="Email" />
-              <input type="password" name='password' id='signupPass' placeholder="Password" />
-              <div class="custom-checkbox">
-                <input type="checkbox" id="subscribeCheckbox" checked>
-                <label for="subscribeCheckbox">
-                  <span></span>
-                  Receive occasional updates from DAV
-                </label>
-              </div>
-              <p class="text-center" id="signup-errors"></p>
-              <div class="row">
-                <div class="col-xs-6">
-                  <input type="submit" value="Join">
-                </div>
-                <div class="col-xs-6">
-                  <a href="https://my.dav.network/login/#login">Already a member? <strong>Login</strong></a>
-                </div>
-              </div>
+              <h4>Sign up for occasional updates</h4>              
             </form>
+
+            <!-- Begin MailChimp Signup Form -->
+              <div id="mc_embed_signup">
+              <form action="https://network.us16.list-manage.com/subscribe/post?u=8cbc69b6acf3e3436662993bd&amp;id=6bd28e738d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                
+              <div class="mc-field-group">
+                <!-- <label for="mce-EMAIL">Email Address </label> -->
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email" style="width: 61%;">
+              </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8cbc69b6acf3e3436662993bd_6bd28e738d" tabindex="-1" value=""></div>
+                  <div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 35%;float: right;position: relative;top: -55px;"></div>
+                  </div>
+              </form>
+              </div>
+              
+              <!--End mc_embed_signup-->
           </div>
+
+          <div class="col-sm-8 visible-xs">
+            <h3><span>DAV is a software platform </span>that allows anyone to buy or sell autonomous transportation services in a decentralized market. Our platform integrates into any autonomous vehicles, enabling those vehicles to discover, communicate, and transact with one another using a digital currency called DAV.</h3>
+          </div>
+
         </div>
+
+        <br>
+        <br>
+        <img src="img/car-robot-drone.png" width="100%" class="hidden-xs" />
+        <img src="img/car-robot-drone-mobile.png" width="100%" class="visible-xs" />
+        <br>
+        <br>
+        <br class="hidden-xs">
+        <br class="hidden-xs">
+
+        <div class="text-center">
+          <a  href="https://bit.ly/dav_whitepaper" target="_blank" ><img src="img/download.png" class="downloadbtn" ></a>
+        </div>
+        
+        <br>
+        <br>
       </div>
     </div>
 
-    <div class="what-is hide">
-      Why DAV?
-    </div>
-    <div class="dav-token">
-    <div class="container">
-      <h2>Why DAV?</h2>
-      <p>The key to enabling a future where autonomous vehicles, service providers, and users work together is communication.</p>
-      <p>In this future, an autonomous vehicle (e.g. a driverless car or drone), can discover, communicate, and transact with users (e.g. passengers or packages), service providers (e.g. charging stations, insurers), and even other autonomous vehicles (e.g. last mile delivery, long-distance transportation).</p>
-      <p>This future can be controlled by a few large corporations that control the entire supply chain, or it can be decentralized (like the Internet itself) allowing autonomous vehicles, services, and users to discover each other and transact with each other without the need for a central authority to inflate costs, or control and manipulate the market.</p>
-      <p>DAV is working to build this future, using the power of the blockchain.</p>
 
-      <h2>How DAV works?</h2>
-      <p>DAV is a framework of open-source software, open-source hardware, and a free decentralized marketplace where anyone can buy and sell autonomous transportation services using the DAV token.</p>
-      <p>This framework includes:</p>
-      <ul>
-        <li>A P2P discovery protocol for autonomous agents to discover each other in a decentralized way</li>
-        <li>A P2P communication protocol that enables simple and efficient communication and mission planning between autonomous agents</li>
-        <li>Smart contracts for secure, and trustless transactions between autonomous agents</li>
-        <li>A smart token to enable secure transactions and payments between autonomous agents</li>
-        <li>A reputation system to track, identify, and flag bad actors</li>
-        <li>Software development kits to allow easy integration between existing AVs or other autonomous components and the DAV Network</li>
-        <li>Hardware components available off-the-shelf, or as open-source specifications, to connect autonomous agents to the DAV Network</li>
-        <li>Development and simulation tools to allow for easy development without an upfront hardware investment</li>
-      </ul>
+    <div class="dav-token">
+    <div class="container illustrations">
+      <h2>The future of transportation is a network<br class="hidden-xs"> of autonomous vehicles. Will you be a part of it?</h2>
+      <div class="row">
+          <div class="col-sm-4">
+            <div class="text-center"><img src="img/illustration-left.png"></div>
+            <h4>Earn DAV Tokens by providing transportation services</h4>
+            <p>Let your self-driving car give rides to passengers when you’re not using it. Have your drone help with deliveries around town.</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center"><img src="img/illustration-middle.png"></div>
+            <h4>Go anywhere or send/receive anything in minutes</h4>
+            <p>Send a package, book a ride, or have lunch delivered instantaneously. Utilize the efficiency for your business and supply chains.</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center"><img src="img/illustration-right.png"></div>
+            <h4>Service providers keep everything running smoothly</h4>
+            <p>Benefit from the efficiencies of service providers who keep your vehicle charged, clean, and operational. Become a service provider and earn DAV Tokens.</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="exchange">
+      <h2>Exchange DAV Tokens for USD, BTC, ETH, and more</h2>
+      <p>DAV Tokens will be traded on a number of exchanges and supported by several cryptocurrency wallets,<br class="hidden-xs"> allowing you to easily exchange DAV Tokens for other currencies like US Dollars, Bitcoin, and Ether.</p>
     </div>
 
     	<div class="container">
-    		<h2>Why Use Cryptocurrency and Blockchain?</h2>
-    		<div class="row">
-				<div class="col-sm-11 col-sm-offset-1">
-					<p>The DAV token is a unique cryptocurrency that is used by drones, robots,<br> cars, and other vehicles that provide autonomous transportation services.
-					<br>
-					Why is a token needed for autonomous transportation?
-					</p>
-					<ul>
-            <li>A token enables a completely decentralized system and isn't controlled by any government, bank, or company</li>
-            <li>A token enables a global payment standard between vehicles and their supporting infrastructure</li>
-            <li>A token's built-in smart mission contracts enable trustless cooperation between multiple vehicles and service providers</li>
-						<li>A token enables its investors and early adopters to benefit from the growth of its economy over time while still being a completely free and open-source platform</li>
-					</ul>
-				</div>
-			</div>
-
-      <div class="row hidden-xs hidden-sm">
-        <div class="col-sm-4">
-          <div class="img-block">
-            <img src="img/internet.png">
-          </div>
-          <p>The <span>Internet</span> enables P2P transfer of <span>Information</span></p>
-        </div>
-        <div class="col-sm-4">
-          <div class="img-block">
-            <img src="img/blockchain.png">
-          </div>
-          <p><span>Blockchain</span> enables P2P transfer of <span>Value</span></p>
-        </div>
-        <div class="col-sm-4">
-          <div class="img-block last-img-block">
-            <img src="img/drone.png">
-          </div>
-          <p><span>DAV</span> enables P2P transfer of <span>Physical Objects</span></p>
-        </div>
-      </div>
-
-      <div class="row visible-xs visible-sm">
-        <div class="col-xs-5">
-          <div class="img-block">
-            <img src="img/internet.png">
-          </div>
-        </div>
-        <div class="col-xs-7">
-          <p>The <span>Internet</span> enables P2P transfer of <span>Information</span></p>
-        </div>
-      </div>
-      <div class="row visible-xs visible-sm">
-        <div class="col-xs-5">
-          <div class="img-block">
-            <img src="img/blockchain.png">
-          </div>
-        </div>
-        <div class="col-xs-7">
-          <p><span>Blockchain</span> enables P2P transfer of <span>Value</span></p>
-        </div>
-      </div>
-      <div class="row visible-xs visible-sm">
-        <div class="col-xs-5">
-          <div class="img-block last-img-block">
-            <img src="img/drone.png">
-          </div>
-				</div>
-        <div class="col-xs-7">
-          <p><span>DAV</span> enables P2P transfer of <span>Physical Objects</span></p>
-        </div>
-			</div>
+    		   
 
 			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-					<a href="https://bit.ly/dav_whitepaper" target="_blank" class="btn btn-download btn-home">Download DAV White Paper</a>
-				</div>
-			</div>
+				<div class="col-sm-10 col-sm-offset-1 text-center">
+          <h2>Technology</h2>
+          <p style="font-size: 19px; color: #271e36;">DAV is a framework of open-source software, open-source hardware, and a free decentralized marketplace where anyone can buy and sell autonomous transportation services using the DAV token.</p>
+          <a href="https://bit.ly/dav_whitepaper" target="_blank" class="btn-home"> <img src="img/download.png" class="downloadbtn"></a>
+        </div>
+      </div>
 
       <div class="team" id="dav-team">
-        <h2>Meet the Team</h2>
+        <h2>Our Team</h2>
 
         <div class="row">
             <div class="col-sm-6 col-md-3 team-member">
@@ -601,10 +664,7 @@
               <h6>Head of Design</h6>
               <p>Graduate of British School of Design. A black belt designer with over 10 years of experience designing award-winning crypto, telephony, and fitness apps and products. Passionate for sensual minimalism and exquisite simplicity in design.</p>
             </div>
-
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-3 team-member">
+            <div class="col-sm-6 col-md-3 team-member">
               <img src="img/team/abhishek.jpg">
               <br>
               <!-- <a href="#"><img src="img/icons/telegram.png"></a> -->
@@ -616,6 +676,11 @@
               <h6>Senior Developer</h6>
               <p>An artist and maker. Graduated with a Master's from NYU. Post doctoral resident at NYU working on AR/VR, AI, hardware, robotics, self driving cars, and blockchain. Previously co-founded three startups, and brought countless projects to life.</p>
             </div>
+
+        </div>
+
+        <div class="row">
+          
           <div class="col-sm-6 col-md-3 team-member">
               <img src="img/team/eyal.jpg">
               <br>
@@ -644,11 +709,11 @@
     	</div>
     </div>
 
-    <footer>
+    <footer class="footer-home">
     	<div class="container">
     		<h3>Contact Us</h3>
     		<div class="row links">
-				<div class="col-sm-4">
+				<div class="col-sm-5">
 					<a href="mailto:press@dav.network">press@dav.network</a>
 					<p>Press, Media and Interview Requests</p>
 				</div>
@@ -656,21 +721,19 @@
 					<a href="mailto:info@dav.network">info@dav.network</a>
 					<p>Partnerships and General Inquiries</p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<a href="mailto:careers@dav.network">careers@dav.network</a>
 					<p>Jobs and CVs</p>
 				</div>
 			</div>
 			<div class="social">
-				<a href="https://www.youtube.com/channel/UCPuAOygDwCiLOdLosiQJJ1w" target="_blank"><img src="img/icons/icon1.png"></a>
-				<a href="https://github.com/davfoundation" target="_blank"><img src="img/icons/github.png"></a>
-				<a href="https://www.reddit.com/r/DAVNetwork/" target="_blank"><img src="img/icons/icon3.png"></a>
-				<a href="http://t.me/DAVNetwork" target="_blank"><img src="img/icons/icon5.png"></a>
-				<a href="https://twitter.com/DavNetwork" target="_blank"><img src="img/icons/icon6.png"></a>
-        <a href="https://www.facebook.com/DAVNetworkTeam" target="_blank"><img src="img/icons/icon7.png"></a>
-				<a href="https://gitter.im/DAVFoundation/DAV-Contributors" target="_blank"><img src="img/icons/gitter.svg" width="31"></a>
-        <a href="https://medium.com/davnetwork" target="_blank"><img src="img/icons/medium.png" width="31"></a>
-				<!-- <a href="contact-us.html" target="_blank"><img src="img/icons/icon8.png"></a> -->
+				<a href="https://www.youtube.com/channel/UCPuAOygDwCiLOdLosiQJJ1w" target="_blank"><img src="img/icons/large/youtube.png"></a>
+        <a href="https://www.reddit.com/r/DAVNetwork/" target="_blank"><img src="img/icons/large/reddit.png"></a>
+				<a href="http://t.me/DAVNetwork" target="_blank"><img src="img/icons/large/telegram.png"></a>
+				<a href="https://twitter.com/DavNetwork" target="_blank"><img src="img/icons/large/twitter.png"></a>
+        <a href="https://www.facebook.com/DAVNetworkTeam" target="_blank"><img src="img/icons/large/facebook.png"></a>
+				<a href="mailto:info@dav.network" target="_blank"><img src="img/icons/large/mail.png"></a>
+        <a href="https://medium.com/davnetwork" target="_blank"><img src="img/icons/large/medium.png"></a>
 			</div>
 			<div class="copyright">
 				<p>&copy; Copyright 2017 DAV - All Rights Reserved -- DAV is a registered non-profit foundation in Meyerlustenberger Lachenal Grabenstrasse 25 6340 Baar, Zug, Switzerland</p>

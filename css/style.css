@@ -785,6 +785,9 @@ margin: 0 0 30px;
 		padding-top: 25px;
 		z-index: 999;
 	}
+	.navbar-home.navbar {
+   	 height: 66px !important;
+  	} 
 	.navbar .navbar-brand{
 		float: none;
 		padding: 0;
@@ -794,6 +797,27 @@ margin: 0 0 30px;
 		width: 220px;
 		margin: 0 auto;
 	}
+ 	.navbar.navbar-home .navbar-brand img{
+  	  width: auto;
+  	  width: 160px;
+  	  margin: 0 0 0 15px;
+
+  	}
+ 	.navbar.navbar-home .navbar-toggle{
+ 		position: relative;
+ 		float: right;
+ 		margin-right: 15px;
+ 		margin-left: 0px;
+  	  	margin-top: -4px;
+ 	}
+ 	.navbar.navbar-home .navbar-toggle span.icon-bar{
+ 		background: #FFF;
+ 		width: 22px;
+ 	}
+ 	.navbar.navbar-home .navbar-collapse{
+ 		margin-top: 9px;
+ 		background: #36176e;
+ 	}
 	.nav{
 		margin-top: 0px;
 	}
@@ -863,8 +887,9 @@ margin: 0 0 30px;
 		border-bottom: 2px solid #FFF;
 	}
 	.hero-home{
+		width: 100%;
 		height: auto;
-		background: #3d1b76;
+		/*background: #3d1b76;*/
 	}
 	.hero-home .hero-left{
 		background: #7447f7 url('../img/home-hero-mobile.png') no-repeat bottom center;
@@ -886,7 +911,10 @@ margin: 0 0 30px;
 		padding: 0px;
 	}
 	.hero-home form h4{
-		text-align: center;
+		/*text-align: center;*/
+	}
+	.illustrations img{
+		width: 85%;
 	}
 	footer .social a{
 		margin: 0 3px;
