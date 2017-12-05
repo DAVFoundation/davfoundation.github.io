@@ -355,6 +355,39 @@ box-shadow: 0px 11px 35px 11px rgba(238,223,233,0.46);
 	color: #271e36;
 	line-height: 45px;
 }
+.telegram-alert{
+    position: fixed;
+    bottom: 0px;
+    /*left:2%;*/
+    width: 100%;
+    background: #36176e;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+.telegram-alert p{
+	color: #FFF;
+	float: left;
+	margin: 0px;
+	font-size: 19px;
+	padding: 10px 0;
+}
+.telegram-alert a{
+	text-decoration: none;
+	color: #70cadb;
+	border-bottom: 1px solid #70cadb;
+}
+.telegram-alert button{
+	float: right;
+	/*display: none;*/
+}
+.telegram-alert .close{
+	color: #FFF;
+	opacity: 1;
+	text-shadow: none;
+	font-family: Verdana;
+	font-size: 25px;
+	margin-top: 8px;
+}
 /*use-cases page*/
 .use-cases-page{
 	padding-top: 80px;
