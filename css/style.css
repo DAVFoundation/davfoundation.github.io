@@ -148,7 +148,7 @@ footer .links a, footer .links p{
   color: #271e36;
 }
 footer .social a{
-  margin: 0 30px;
+  margin: 0 25px;
 }
 footer .copyright p{
   color: #271e36;
@@ -1176,6 +1176,6 @@ margin: 0 0 30px;
 	}
 	footer .social img{
 		height: 32px;
-		margin: 20px;
+		margin: 20px 12px;
 	}
 }
