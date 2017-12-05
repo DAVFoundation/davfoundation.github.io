@@ -117,6 +117,46 @@ footer .copyright a{
 	display: none;
 }
 
+footer{
+  background: #FFF;
+}
+footer h3{
+  text-align: center;
+  color: #391871;
+  font-size: 43px;
+  font-weight: 500;
+  margin: 0 0 45px;
+}
+.navbar-home .navbar-brand {
+    padding: 15px 0 0 15px !important;
+}
+.navbar-home.navbar{
+  height: 66px;
+}
+.navbar-home .nav li a{
+  font-size: 19px;
+}
+.navbar-home .nav{
+  margin-top: 10px;
+}
+.navbar-home .navbar-brand>img{
+  width: auto;
+  width: 196px;
+}
+footer .links a, footer .links p{
+  color: #271e36;
+}
+footer .social a{
+  margin: 0 30px;
+}
+footer .copyright p{
+  color: #271e36;
+}
+footer .social{
+  margin-top: 70px;
+  margin-bottom: 75px;
+}
+
 /*homepage page*/
 /*.hero{
 	color: #FFF;
@@ -601,9 +641,9 @@ margin: 0 0 30px;
 /*contact page*/
 .contact-page{
 	padding-top: 80px;
-	padding-bottom: 240px;
+	/*padding-bottom: 240px;*/
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .contact-page .custom-panel p,
 .contact-page .custom-panel a{
@@ -618,7 +658,7 @@ margin: 0 0 30px;
 }
 .contact-page:after{
 	content: "";
-	display: block;
+	display: none;
 	background: #a981d4;
 	width: 200%;
 	margin-left: -50%;
@@ -920,9 +960,10 @@ margin: 0 0 30px;
 		margin: 0 3px;
 	}
 	.topbar{
-		height: 160px;
+		height: 240px;
 		background: #7447f7 url('../img/under-menu-mobile.png') no-repeat center;
-		background-size: 100%;
+		background: #7447f7 url('../img/car-robot-drone-mobile.png') no-repeat center;
+		background-size: 90%;
 	}
 	.signupForm{
 		background: #3d1b76;
