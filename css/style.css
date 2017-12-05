@@ -7,7 +7,7 @@ h1,h2{
 }
 .navbar{
 	font-family: 'Roboto', sans-serif;
-	height: 122px;
+	height: 66px;
 	margin: 0px;
 	border-radius: 0px;
 	border: none;
@@ -57,8 +57,9 @@ h1,h2{
 .nav li a:hover span,
 .nav li.active a span{
 	color: #7924cf;
+	color: #8abffd;
 	display: inline-block;
-	border-bottom: 2px solid #7924cf;
+	border-bottom: 2px solid #8abffd;
 	-webkit-transition: all 0.5s ease;
 		-moz-transition: all 0.5s ease;
 		transition: all 0.5s ease;
@@ -127,19 +128,19 @@ footer h3{
   font-weight: 500;
   margin: 0 0 45px;
 }
-.navbar-home .navbar-brand {
-    padding: 15px 0 0 15px !important;
+.navbar .navbar-brand {
+    padding: 15px 0 0 15px;
 }
 .navbar-home.navbar{
   height: 66px;
 }
-.navbar-home .nav li a{
+.navbar .nav li a{
   font-size: 19px;
 }
-.navbar-home .nav{
+.navbar .nav{
   margin-top: 10px;
 }
-.navbar-home .navbar-brand>img{
+.navbar .navbar-brand>img{
   width: auto;
   width: 196px;
 }
@@ -282,9 +283,10 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 }
 /*technology page*/
 .topbar{
-	height: 174px;
+	margin-top: 66px;
+	height: 280px;
 	background: #7447f7 url('../img/under-menu.png') no-repeat center;
-	/*background-size: cover;*/
+	background-size: 90%;
 	/*margin-bottom: 80px;*/
 }
 .technology-page{
@@ -825,11 +827,11 @@ margin: 0 0 30px;
 @media only screen and (max-width: 767px){
 	.navbar {
 		height: 90px;
-		padding-top: 25px;
+		padding-top: 18px;
 		z-index: 999;
 	}
-	.navbar-home.navbar {
-   	 height: 66px !important;
+	.navbar {
+   	   height: 66px !important;
   	} 
 	.navbar .navbar-brand{
 		float: none;
@@ -840,26 +842,28 @@ margin: 0 0 30px;
 		width: 220px;
 		margin: 0 auto;
 	}
- 	.navbar.navbar-home .navbar-brand img{
+ 	.navbar .navbar-brand img{
   	  width: auto;
   	  width: 160px;
   	  margin: 0 0 0 15px;
+  	  display: block;
 
   	}
- 	.navbar.navbar-home .navbar-toggle{
+ 	.navbar .navbar-toggle{
  		position: relative;
  		float: right;
  		margin-right: 15px;
  		margin-left: 0px;
   	  	margin-top: -4px;
  	}
- 	.navbar.navbar-home .navbar-toggle span.icon-bar{
+ 	.navbar .navbar-toggle span.icon-bar{
  		background: #FFF;
- 		width: 22px;
+ 		width: 22px !important;
  	}
- 	.navbar.navbar-home .navbar-collapse{
+ 	.navbar .navbar-collapse{
  		margin-top: 9px;
  		background: #36176e;
+ 		max-height: 100%;
  	}
 	.nav{
 		margin-top: 0px;
@@ -1132,5 +1136,13 @@ margin: 0 0 30px;
 	.video-carousel .slick-next {
     	right: 10px;
     	top: 107%;
+	}
+	footer .social{
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	footer .social img{
+		height: 32px;
+		margin: 20px;
 	}
 }
