@@ -89,6 +89,10 @@ footer .links a{
 	font-weight: 500;
 	text-decoration: underline;
 }
+footer .copyright{
+	position: relative;
+	z-index: 9999;
+}
 footer .copyright,
 footer .social{
 	text-align: center;
@@ -363,6 +367,7 @@ box-shadow: 0px 11px 35px 11px rgba(238,223,233,0.46);
     background: #36176e;
     border-radius: 0px;
     margin-bottom: 0px;
+    padding: 35px 15px;
 }
 .telegram-alert p{
 	color: #FFF;
@@ -1252,5 +1257,14 @@ margin: 0 0 30px;
 	}
 	.faq-page{
 		padding-top: 40px;
+	}
+	.telegram-alert{
+		padding: 5px;
+	}
+	.telegram-alert p{
+		width: 90%;
+	}
+	.telegram-alert .close{
+		margin-top: 10px;
 	}
 }
