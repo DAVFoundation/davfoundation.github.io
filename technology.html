@@ -106,7 +106,7 @@
                   <div class="response" id="mce-success-response" style="display:none"></div>
                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8cbc69b6acf3e3436662993bd_6bd28e738d" tabindex="-1" value=""></div>
-                  <div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 35%;float: right;position: relative;top: -32px;"></div>
+                  <div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 35%;float: right;position: relative;top: -55px;"></div>
                   </div>
               </form>
               </div>
@@ -239,73 +239,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-
-var apiUrl = 'https://communityapi.missions.io';
-var redirectUrl = 'https://my.dav.network/';
-var signupForm = document.getElementById("signupForm");
-
-
-
-var fetchInitt = {
-  method: 'GET',
-  credentials :'include'
-};
-
-
-document.querySelector("#signupForm").addEventListener("submit", function(e){
-  e.preventDefault();
-
-  var fetchInit = {
-    method: 'POST',
-    credentials :'include',
-    headers: {
-      'Accept':  'application/json',
-      'Content-Type': 'application/json',
-      'Cache': 'no-cache'
-    },
-    body: JSON.stringify({
-      name: document.getElementById('signupName').value,
-      email: document.getElementById('signupEmail').value,
-      password: document.getElementById('signupPass').value,
-      subscribe: document.getElementById('subscribeCheckbox').checked
-    })
-  };
-
-  fetch(apiUrl+'/api/signup', fetchInit)
-    .then(resp=>{
-      if(resp.ok){
-        window.location.replace(redirectUrl);
-      } else {
-        return resp.json();
-      }
-
-    })
-    .then(json=>{
-      console.log(json);
-      if (json.error == "required_fields_missing") {
-        if (document.getElementById('signupName').value =="") {
-          document.getElementById('signupName').className += " empty-field";
-        }
-        if (document.getElementById('signupEmail').value =="") {
-          document.getElementById('signupEmail').className += " empty-field";
-        }
-        if (document.getElementById('signupPass').value =="") {
-          document.getElementById('signupPass').className += " empty-field";
-        }
-      }
-      if (json.error == "user_exists") {
-        window.location.href = "https://my.dav.network/login/?email=" + document.getElementById('signupEmail').value + "#login";
-      }
-      if (json.error == "short_pass") {
-        document.getElementById('signup-errors').innerHTML = json.message;
-      }
-    })
-    .catch(error=>{
-      console.log(error);
-    })
-}, false)
-
-</script>
+    
   </body>
 </html>
