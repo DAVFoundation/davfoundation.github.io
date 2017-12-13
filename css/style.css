@@ -90,8 +90,8 @@ footer .links a{
 	text-decoration: underline;
 }
 footer .copyright{
-	position: relative;
-	z-index: 9999;
+	/*position: relative;*/
+	/*z-index: 9999;*/
 }
 footer .copyright,
 footer .social{
@@ -421,21 +421,26 @@ box-shadow: 0px 11px 35px 11px rgba(238,223,233,0.46);
     /*left:2%;*/
     width: 100%;
     background: #36176e;
+    background: #4BCEBD;
+    opacity: 0.9;
     border-radius: 0px;
     margin-bottom: 0px;
     padding: 5px 15px;
 }
 .telegram-alert p{
 	color: #FFF;
+	color: #000;
 	float: left;
 	margin: 0px;
-	font-size: 19px;
-	padding: 10px 0;
+	font-size: 17px;
+	padding: 5px 0;
 }
 .telegram-alert a{
 	text-decoration: none;
 	color: #70cadb;
+	color: #000;
 	border-bottom: 1px solid #70cadb;
+	border-bottom: 1px solid #000;
 }
 .telegram-alert button{
 	float: right;
@@ -443,11 +448,12 @@ box-shadow: 0px 11px 35px 11px rgba(238,223,233,0.46);
 }
 .telegram-alert .close{
 	color: #FFF;
+	color: #000;
 	opacity: 1;
 	text-shadow: none;
 	font-family: Verdana;
 	font-size: 25px;
-	margin-top: 8px;
+	margin-top: 4px;
 }
 /*use-cases page*/
 .use-cases-page{
