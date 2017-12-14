@@ -352,7 +352,7 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 .technology-page{
 	position: relative;
 	overflow: hidden;
-	padding: 80px 0;
+	padding: 66px 0 20px;
 }
 .contact-page + footer,
 .join-us-page + footer,
@@ -362,6 +362,7 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 .technology-page:after{
 	content: "";
 	display: block;
+	display: none;
 	background: #512ca3;
 	width: 200%;
 	margin-left: -50%;
@@ -372,6 +373,93 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 	-ms-transform: rotate(-21deg);
     -webkit-transform: rotate(-21deg);
     transform: rotate(-21deg);
+}
+.technology-hero{
+	background: rgba(93,63,240,1);
+	background: -moz-linear-gradient(top, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(93,63,240,1)), color-stop(100%, rgba(116,84,243,1)));
+	background: -webkit-linear-gradient(top, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
+	background: -o-linear-gradient(top, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
+	background: -ms-linear-gradient(top, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
+	background: linear-gradient(to bottom, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d3ff0', endColorstr='#7454f3', GradientType=0 );
+	padding: 35px 0 70px;
+}
+.technology-hero h2{
+	text-align: center;
+	color: #FFF;
+	font-size: 24px;
+	font-weight: 300;
+	margin: 0 0 -50px;
+}
+.technology-hero h2 span{
+	display: block;
+	font-weight: 500;
+}
+.technology-hero a.downloadbtn{
+	margin-top: -100px;
+}
+.downloadbtn {
+    background: url('../img/download.png') no-repeat center;
+    background-size: cover;
+    font-size: 19px;
+    font-weight: 500;
+    display: inline-block;
+    width: 382px;
+    height: 106px;
+    color: #FFF;
+    line-height: 64px;
+    padding-left: 36px;
+}
+.downloadbtn:hover, .downloadbtn:active, .downloadbtn:focus, .downloadbtn:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+.technology-icons{
+	padding: 50px 0;
+}
+.technology-icons h3{
+	font-size: 32px;
+	color: #391871;
+	font-weight: 500;
+	margin: 0 0 25px;
+}
+.technology-icons p{
+	font-size: 19px;
+	color: #271e36;
+}
+.technology-icons ul{
+	padding: 0px;
+	padding-left: 10px;
+	color: #271e36;
+	font-size: 19px;
+	list-style-image: url('../img/icons/purple-dot.png');
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+.technology-icons img{
+	margin: 20px 0 50px;
+}
+.the-blockchain h2{
+	color: #391871;
+	font-size: 42px;
+	text-align: center;
+	margin: 0 0 32px;
+}
+.the-blockchain ul{
+	padding: 0px;
+	padding-left: 15px;
+	color: #271e36;
+	font-size: 19px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	list-style-type: none;
+}
+.the-blockchain ul li{
+	background: url('../img/icons/list-type.jpg') top 6px left no-repeat;
+	line-height: 32px;
+	padding-left: 32px;
+	margin: 0 0 25px;
 }
 .page-title{
 	font-size: 42px;
@@ -1289,7 +1377,7 @@ margin: 0 0 30px;
 		line-height: normal;
 	}
 	.technology-page{
-		padding: 0;
+		/*padding: 0;*/
 	}
 	.contact-page:after,
 	.technology-page:after{
@@ -1328,5 +1416,14 @@ margin: 0 0 30px;
 	}
 	.telegram-alert .close{
 		margin-top: 10px;
+	}
+	.triangle-techno{
+		width: 90%;
+	}
+	.downloadbtn{
+		width: 240px;
+		height: 66.6px;
+		font-size: 12px;
+		line-height: 44px;
 	}
 }
