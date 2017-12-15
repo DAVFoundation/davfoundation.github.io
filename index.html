@@ -73,12 +73,13 @@
 .nav li.active a{
   color: #7924cf;
 }
-.nav li a span{
+.nav > li:not(.dropdown) > a > span{
   padding-bottom: 10px;
   border-bottom: 2px solid transparent;
 }
-.nav li a:hover span,
-.nav li.active a span{
+
+.nav > li > a:hover > span:not(.caret),
+.nav > li.active > a > span:not(.caret){
   color: #8abffd !important;
   display: inline-block;
   border-bottom: 2px solid #8abffd !important;
@@ -497,11 +498,16 @@ footer.footer-home .copyright p{
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="faq.html"><span>FAQ</span></a></li>
             <li><a href="technology.html"><span>Technology</span></a></li>
-            <li><a href="videos.html"><span>Videos</span></a></li>
-            <li class="hide"><a href="blog.html"><span>Blog</span></a></li>
-            <li><a href="/#dav-team"><span>Team</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="whitepaper.pdf">Whitepaper</a></li>
+                <li><a href="https://medium.com/davnetwork" target="_blank">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li><a href="/#dav-team" id="#team-anchor"><span>Team</span></a></li>
             <li><a href="contact-us.html"><span>Contact Us</span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -812,7 +818,7 @@ $('html, body').hide();
 
 $(document).ready(function()
 {
-  $(".navbar-nav li a").click(function(event) {
+  $(".navbar-nav li a#team-anchor").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });
   

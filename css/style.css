@@ -20,14 +20,14 @@ h1,h2{
 .nav{
 	margin-top: 30px;
 }
-.nav li a{
+.nav>li>a{
 	font-size: 25px;
 	color: #463548;
 	position: relative;
 	padding: 15px 16px;
 	color: #FFF;
 }
-.nav li a:hover{
+.nav>li>a:hover{
 	background: transparent;
 }
 .nav li a:after{
@@ -47,15 +47,38 @@ h1,h2{
 .nav li:last-child a:after{
 	display: none;
 }
-.nav li.active a{
+.nav>li.active>a{
 	color: #7924cf;
 }
-.nav li a span{
+.nav .dropdown-menu{
+	border: none;
+}
+.nav .dropdown li a{
+	color: #8abffd;
+	padding: 8px 16px;
+	font-weight: 300;
+}
+.nav>li>a:focus,
+.nav>li>a:active{
+	background: transparent;
+}
+.nav .dropdown li a:hover,
+.nav .dropdown li a:active{
+	background: transparent;
+	color: #36176e;
+}
+.nav > li:not(.dropdown) > a > span{
 	padding-bottom: 10px;
 	border-bottom: 2px solid transparent;
 }
-.nav li a:hover span,
-.nav li.active a span{
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background: transparent;
+	border: none;
+}
+
+
+.nav > li > a:hover > span:not(.caret),
+.nav > li.active > a > span:not(.caret){
 	color: #7924cf;
 	color: #8abffd;
 	display: inline-block;
