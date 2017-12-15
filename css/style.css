@@ -423,16 +423,19 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 	margin-top: -100px;
 }
 .downloadbtn {
-    background: url('../img/download.png') no-repeat center;
+    background: url('../img/download1.png') no-repeat center;
     background-size: cover;
     font-size: 19px;
     font-weight: 500;
     display: inline-block;
-    width: 382px;
-    height: 106px;
+    width: 370px;
+    height: 77px;
     color: #FFF;
-    line-height: 64px;
+    line-height: 69px;
     padding-left: 36px;
+}
+.downloadbtn.blueDownload{
+    background: url('../img/download2.png') no-repeat center;
 }
 .downloadbtn:hover, .downloadbtn:active, .downloadbtn:focus, .downloadbtn:visited {
     color: #FFF;
@@ -1445,7 +1448,7 @@ margin: 0 0 30px;
 	}
 	.downloadbtn{
 		width: 240px;
-		height: 66.6px;
+		height: 49.94px;
 		font-size: 12px;
 		line-height: 44px;
 	}
