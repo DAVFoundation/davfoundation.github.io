@@ -441,6 +441,9 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
     color: #FFF;
     text-decoration: none;
 }
+.triangle-techno{
+	width: 891px;
+}
 .technology-icons{
 	padding: 50px 0;
 }
@@ -1046,6 +1049,9 @@ margin: 0 0 30px;
 	.btn-download{
 		font-size: 20px;
 	}
+	.technology-icons img{
+		width: 100%;
+	}
 }
 @media only screen and (max-width: 1025px){
 	.nav li a:after{
@@ -1107,6 +1113,9 @@ margin: 0 0 30px;
 
 	.custom-panel > div{
 		padding: 35px 15px 15px;
+	}
+	.triangle-techno{
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 767px){
@@ -1445,6 +1454,10 @@ margin: 0 0 30px;
 	}
 	.triangle-techno{
 		width: 90%;
+	}
+
+	.technology-icons img{
+		width: auto;
 	}
 	.downloadbtn{
 		width: 240px;
