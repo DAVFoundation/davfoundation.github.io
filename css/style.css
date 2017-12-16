@@ -325,6 +325,9 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 .topbar.contactbar .container{
 	/*background-size: 100%;*/
 }
+.signupFormFaq{
+	margin-top: 66px;
+}
 .contactbar form h4{
     margin-top: 45px;
     font-size: 21px;
