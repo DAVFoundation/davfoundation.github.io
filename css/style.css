@@ -320,7 +320,7 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 	background: transparent;
 	background: #7447f7;
 	background: #7447f7 url('../img/car-robot-drone-contact.png') no-repeat center;
-	background-size: 60%;
+	background-size: 1170px;
 }
 .topbar.contactbar .container{
 	/*background-size: 100%;*/
@@ -1082,6 +1082,9 @@ margin: 0 0 30px;
 	}
 	.custom-panel ul li {
     	background: url('../img/icons/check-green.png') no-repeat left top 12px;
+	}
+	.topbar.contactbar{
+		background-size: 90%;
 	}
 }
 @media only screen and (max-width: 992px){
