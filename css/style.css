@@ -409,14 +409,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c4fde', end
     transform: rotate(-21deg);
 }
 .technology-hero{
-	background: rgba(93,63,240,1);
-	background: -moz-linear-gradient(top, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(93,63,240,1)), color-stop(100%, rgba(116,84,243,1)));
-	background: -webkit-linear-gradient(top, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
-	background: -o-linear-gradient(top, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
-	background: -ms-linear-gradient(top, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
-	background: linear-gradient(to bottom, rgba(93,63,240,1) 0%, rgba(116,84,243,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d3ff0', endColorstr='#7454f3', GradientType=0 );
+	background: rgba(108,79,222,1);
+background: -moz-linear-gradient(-45deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(108,79,222,1)), color-stop(100%, rgba(115,172,237,1)));
+background: -webkit-linear-gradient(-45deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+background: linear-gradient(135deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c4fde', endColorstr='#73aced', GradientType=1 );
 	padding: 35px 0 70px;
 }
 .technology-hero h2{
