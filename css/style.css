@@ -316,14 +316,22 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 	background-size: 90%;
 	/*margin-bottom: 80px;*/
 }
+
 .topbar.contactbar{
+	/*background-size: 1170px;*/
 	background: transparent;
-	background: #7447f7;
-	background: #7447f7 url('../img/car-robot-drone-contact.png') no-repeat center;
-	background-size: 1170px;
-}
+background: rgba(108,79,222,1);
+background: -moz-linear-gradient(-45deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(108,79,222,1)), color-stop(100%, rgba(115,172,237,1)));
+background: -webkit-linear-gradient(-45deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+background: linear-gradient(135deg, rgba(108,79,222,1) 0%, rgba(115,172,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c4fde', endColorstr='#73aced', GradientType=1 );}
 .topbar.contactbar .container{
-	/*background-size: 100%;*/
+	background: transparent url('../img/car-robot-drone-contact.png') no-repeat center;
+	background-size: 100%;
+	height: 280px;
 }
 .signupFormFaq{
 	margin-top: 66px;
