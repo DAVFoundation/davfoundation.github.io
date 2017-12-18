@@ -350,26 +350,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c4fde', end
     height: 44px;
     padding: 0 18px;
     color: #FFF;
+    color: #000;
     background: #6339d0;
     background: #7447f7;
+    background: #FFF;
     border-radius: 3px;
     border: 1px solid #FFF;
     font-size: 14px;
 }
 .contactbar form input::-webkit-input-placeholder {
-   color: #FFF;
+   color: #000;
 }
 
 .contactbar form input:-moz-placeholder {
-   color: #FFF;
+   color: #000;
 }
 
 .contactbar form input::-moz-placeholder {
-   color: #FFF;
+   color: #000;
 }
 
 .contactbar form input:-ms-input-placeholder {
-   color: #FFF;
+   color: #000;
 }
 .contactbar form input[type=submit] {
     border: none;
