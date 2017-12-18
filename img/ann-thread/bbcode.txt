@@ -10,7 +10,9 @@
 [center][url=https://app.bancor.network/communities/5a2e4da44f1311000100b97e/about][img]https://dav.network/img/ann-thread/slide4.jpg[/img][/url][/center]
 
 
-[center][table][tr][td][url=https://youtu.be/WyrDVeobAgo][img]https://dav.network/img/ann-thread/video.jpg[/img][/url][/td][td][url=https://medium.com/@DAVNetwork/6801f7ce7e3d][img]https://dav.network/img/ann-thread/transport.png[/img][/url][/td][td][url=https://youtu.be/Hybqt_aNnwY][img]https://dav.network/img/ann-thread/video1.jpg[/img][/url][/td][/tr][/table][/center]
+[center][table][tr][td][url=https://youtu.be/WyrDVeobAgo][img]https://dav.network/img/ann-thread/video.jpg[/img][/url][/td][td][url=https://youtu.be/Hybqt_aNnwY][img]https://dav.network/img/ann-thread/video1.jpg[/img][/url][/td][/tr][/table][/center]
+
+[center][url=https://medium.com/@DAVNetwork/6801f7ce7e3d][img]https://dav.network/img/ann-thread/transport.png[/img][/url][/center]
 
 [center][size=16pt][url=https://dav.network/]WEBSITE[/url] | [url=https://www.youtube.com/channel/UCPuAOygDwCiLOdLosiQJJ1w]YOUTUBE [/url]| [url=https://www.reddit.com/r/DAVNetwork/]REDDIT [/url]| [url=https://github.com/davfoundation]GITHUB [/url]| [url=http://t.me/DAVNetwork]TELEGRAM [/url]| [url=https://twitter.com/DavNetwork]TWITTER [/url]| [url=https://www.facebook.com/DAVNetworkTeam]FACEBOOK [/url]| [url=info@dav.network]EMAIL [/url]| [url=https://medium.com/davnetwork]MEDIUM[/url][/size][/center]
 
