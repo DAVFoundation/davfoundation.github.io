@@ -154,15 +154,15 @@
     <div class="container">
       <h2 class="page-title text-center">Contact Us</h2>
       <div class="row">
-        <div class="col-sm-11 col-sm-offset-1 text-center">
+        <div class="col-sm-11 col-sm-offset-1 text-center hide">
           <p style="font-weight: 500;">We're looking forward to hearing from you.  Please reach us by one of the emails below or on any of our social channels.</p>
         </div>
       </div>
 
 
-      <div class="custom-panel hide">
+      <div class="custom-panel hide1">
         <div>
-          <div class="row links">
+          <div class="row links hide">
             <div class="col-sm-4">
               <a href="mailto:press@dav.network">press@dav.network</a>
               <p>Press, Media and Interview Requests</p>
@@ -177,9 +177,26 @@
             </div>
           </div>
 
-          <!-- <div class="typeform-widget" data-url="https://davnetwork.typeform.com/to/Bv3vJ7" style="width: 100%; height: 500px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="visibility:hidden;font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com/examples/forms/contact-form-template/?utm_campaign=Bv3vJ7&amp;utm_source=typeform.com-9431134-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-contactform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div> -->
+          <form id="contactForm" action="" method="POST">
+            <div class="row">
+                <div class="col-sm-6">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
 
-          <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckWvIr5caADJRKu6aaD8pfv4J5DjtkF1sXIPrTlu6l5x0IBA/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Contact Us">
+            
+            <div id="messageBox"></div> 
+          </form>
+
+          
 
         </div>
       </div>
@@ -234,6 +251,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+
+     $("#contactForm").validate({
+         ignore: ":hidden",
+         rules: {
+             name: {
+                 required: true,
+                 minlength: 3
+             },
+             email: {
+                 required: true
+             },
+             message: {
+                 required: true,
+                 minlength: 10
+             }
+         },
+         submitHandler: function (form) {
+             $.ajax({
+                 type: "POST",
+                 url: "https://formspree.io/info@dav.network",
+                 data: $(form).serialize(),
+                 dataType: "json",
+                 success: function () {
+                     // $(form).html("<div id='message'></div>");
+                     $('#messageBox')
+                         .fadeIn(1500, function () {
+                         $('#messageBox').append("<h3>Your message was sent!</h3>");
+                     });
+                     $(form)[0].reset();
+                 }
+             });
+             return false; // required to block normal submit since you used ajax
+         }
+     });
+
+ });
+    </script>
   </body>
 </html>

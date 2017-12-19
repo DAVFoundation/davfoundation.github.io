@@ -946,17 +946,19 @@ margin: 0 0 30px;
 }
 .contact-page input[type=submit]{
 	border: none;
-	margin: 40px 0 45px;
-	width: 100%;
-	height: 72px;
-	background: #6436b1;
+	display: block;
+	margin: 40px auto 45px;
+	width: 370px;
+	height: 77px;
+	padding-bottom: 8px;
+	/*background: #6436b1;*/
 	color: #FFF;
 	font-size: 25px;
-	border-radius: 10px;
-
-	-webkit-box-shadow: 0px 16px 68px 7px rgba(121,36,207,0.6);
--moz-box-shadow: 0px 16px 68px 7px rgba(121,36,207,0.6);
-box-shadow: 0px 16px 68px 7px rgba(121,36,207,0.6);
+	/*border-radius: 10px;*/
+	background: url('../img/contactus.png') no-repeat center;
+	background-size: cover;
+    font-weight: 500;
+	
 }
 .contact-page #messageBox{
 	padding-bottom: 20px;
@@ -1119,6 +1121,7 @@ box-shadow: 0px 16px 68px 7px rgba(121,36,207,0.6);
 	.technology-icons img{
 		width: 100%;
 	}
+
 }
 @media only screen and (max-width: 1025px){
 	.nav li a:after{
@@ -1534,6 +1537,11 @@ box-shadow: 0px 16px 68px 7px rgba(121,36,207,0.6);
 		height: 49.94px;
 		font-size: 12px;
 		line-height: 44px;
+	}
+	.contact-page input[type=submit]{
+		width: 276px;
+		height: 57px;
+		font-size: 20px;
 	}
 }
 @media only screen and (min-width: 768px) {
