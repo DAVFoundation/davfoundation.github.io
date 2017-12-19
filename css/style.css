@@ -1541,7 +1541,7 @@ margin: 0 0 30px;
 	.contact-page input[type=submit]{
 		width: 276px;
 		height: 57px;
-		font-size: 20px;
+		font-size: 19px;
 	}
 }
 @media only screen and (min-width: 768px) {
