@@ -512,7 +512,7 @@ footer.footer-home .copyright p{
                 <li><a href="faq.html">FAQ</a></li>
               </ul>
             </li>
-            <li><a href="/#dav-team" id="#team-anchor"><span>Team</span></a></li>
+            <li><a href="/#dav-team" id="team-anchor"><span>Team</span></a></li>
             <li><a href="contact-us.html"><span>Contact Us</span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -565,7 +565,7 @@ footer.footer-home .copyright p{
         <br>
         <br>
         <img src="img/car-robot-drone.png" width="100%" class="hidden-xs" />
-        
+
         <br>
         <br>
         <br class="hidden-xs">
@@ -800,45 +800,12 @@ footer.footer-home .copyright p{
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
-    
 <script type="text/javascript">
-    var jump=function(e)
-{
-   if (e){
-       e.preventDefault();
-       var target = $(this).attr("href");
-   }else{
-       var target = location.hash;
-   }
-
-   $('html,body').animate(
-   {
-       scrollTop: $(target).offset().top
-   },2000,function()
-   {
-       location.hash = target;
-   });
-  
-}
-
-$('html, body').hide();
-
 $(document).ready(function()
 {
   $(".navbar-nav li a#team-anchor").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });
-  
-    $('a[href^=#]').bind("click", jump);
-
-    if (location.hash){
-        setTimeout(function(){
-            $('html, body').scrollTop(0).show();
-            jump();
-        }, 0);
-    }else{
-        $('html, body').show();
-    }
 });
 </script>
   </body>
