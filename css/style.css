@@ -307,6 +307,12 @@ box-shadow: 0px 25px 68px 13px rgba(121,36,207,0.6);
 }
 .our-partners img{
 	height: 85px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.our-partners img:hover{
+	opacity: 0.6;
+	filter: alpha(opacity=60);
 }
 /*technology page*/
 .topbar{
