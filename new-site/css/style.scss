@@ -1,0 +1,166 @@
+$orange: #ff6a46;
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.navbar-right{
+	margin-right: 0px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-nav>li>a{
+	font-size: 15px;
+	color: #FFF;
+	line-height: 25px;
+	&:hover{
+		background: transparent;
+	}
+}
+.navbar-nav.navbar-right>li>a{
+	font-size: 13px;
+}
+.user-scroll{
+	background-color: #FFF;
+	background-color: $orange;
+	li>a{
+		// color: $orange;
+	}
+}
+.hero{
+	background: url('../img/hero.jpg') no-repeat center;
+	background-size: cover;
+	color: #FFF;
+	.hero-inner{
+		height: 47.85714285714286vw;
+		display: table;
+		width: 99%;
+		.hero-valign{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		h1{
+			font-size: 41px;
+			font-weight: 700;
+			margin: 0 0 20px;
+			line-height: 60px;
+			}
+		h4{
+			font-size: 17px;
+			font-weight: 700;
+			line-height: 25px;
+			margin: 0 0 18px;
+			}
+		h5{
+			font-size: 17px;
+			margin: 0 0 50px;
+			line-height: 25px;
+			}
+		.countdown{
+			width: 250px;
+			margin: 0 auto;
+			p{	
+				border: 1px solid #FFF;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 55px;
+				border-radius: 2px;
+				}
+			h6{
+				font-size: 15px;
+				text-transform: uppercase;
+				margin: 0 0 45px;
+				}
+			}
+		.hero-join{
+			width: 390px;
+			margin: 0 auto;
+			input{
+				border: 1px solid #FFF;
+				border-radius: 3px;
+				background: rgba(255,255,255,0.3);
+				height: 37px;
+				display: block;
+				width: 100%;
+				}
+			button{
+				color: #FFF;
+				border-radius: 3px;
+				font-size: 15px;
+				font-weight: bold;
+				background: $orange;
+				border: none;
+				display: block;
+				width: 100%;
+				height: 37px;		
+				}
+			}
+		}
+	}
+}
+.join-us-orange{
+	padding: 25px 0 30px;
+	background: $orange;
+	text-align: center;
+	h2{
+		color: #FFF;
+		margin: 0 0 16px;
+		font-size: 31px;
+		font-weight: 700;
+	}
+	a{
+		display: inline-block;
+		margin: 0 15px;
+	}
+}
+.best-brands{
+	padding: 75px 0 100px;
+	text-align: center;
+	h2{
+		color: #333333;
+		margin: 0 0 75px;
+		font-size: 31px;
+		font-weight: 700;
+	}
+	a{
+		display: inline-block;
+		margin: 0 35px;
+	}
+}
+.video-home{
+	background: url('../img/highways.jpg') no-repeat center;
+	background-size: cover;
+	color: #FFF;
+	text-align: center;
+	padding: 35px 0 60px;
+	h2{
+		text-align: center;
+		font-size: 31px;
+		font-weight: 700;
+		margin: 0 0 45px;
+	}
+	p{
+		font-size: 21px;
+		text-align: left;
+		margin-top: 15px;
+		padding-left: 36px;
+	}
+}
+// media queries
+// @media (min-width: 768px) {
+//     .navbar .navbar-nav {
+//         display: inline-block;
+//         float: none;
+//         vertical-align: top;
+//     }
+
+//     .navbar .navbar-collapse {
+//         text-align: center;
+//     }
+// }
