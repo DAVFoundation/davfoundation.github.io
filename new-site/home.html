@@ -33,7 +33,7 @@
     })(window,document,'script','dataLayer','GTM-NCJHZN5');</script>
     <!-- End Google Tag Manager -->
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
@@ -92,7 +92,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
+          <a class="navbar-brand" href="/">
+            <img id="logo-orange" src="img/logo.png">
+            <img id="logo-white" src="img/logo-white.png">
+          </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -157,6 +160,7 @@
       <a href="#"><img src="img/icons/facebook.png"></a>
       <a href="#"><img src="img/icons/twitter.png"></a>
       <a href="#"><img src="img/icons/youtube.png"></a>
+      <a href="#"><img src="img/icons/linkedin.png"></a>
       <a href="#"><img src="img/icons/reddit.png"></a>
       <a href="#"><img src="img/icons/github.png"></a>
     </div>
@@ -175,55 +179,268 @@
         <h2>We're building a decentralized infrastructure<br> for tomorrow’s transportation on the blockchain</h2>
         <div class="row">
           <div class="col-sm-6">
-            <img src="img/video1.jpg">
+            <!-- <img src="img/video1.jpg"> -->
+            <div class="videoWrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/6EUO1fEXNRY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
             <p>DAV Overview</p>
           </div>
           <div class="col-sm-6">
-            <img src="img/video2.jpg">
+            <!-- <img src="img/video2.jpg"> -->
+            <div class="videoWrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/w92XODs5da8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
             <p>Blockchain Based Transportation Network <br>by Noam Copel, Co-Founder &amp; CEO of DAV</p>
           </div>
         </div>
       </div>
     </div>
 
-    <footer>
-    	<div class="container">
-    		<h3>Contact Us</h3>
-    		<div class="row links">
-				<div class="col-sm-4">
-					<a href="mailto:press@dav.network">press@dav.network</a>
-					<p>Press, Media and Interview Requests</p>
-				</div>
-				<div class="col-sm-4">
-					<a href="mailto:info@dav.network">info@dav.network</a>
-					<p>Partnerships and General Inquiries</p>
-				</div>
-				<div class="col-sm-4">
-					<a href="mailto:careers@dav.network">careers@dav.network</a>
-					<p>Jobs and CVs</p>
-				</div>
-			</div>
-			<div class="social">
-        <a href="https://www.youtube.com/c/DAVNetwork" target="_blank"><img src="img/icons/large/youtube.png"></a>
-        <a href="https://www.reddit.com/r/DAVNetwork/" target="_blank"><img src="img/icons/large/reddit.png"></a>
-        <a href="https://github.com/davfoundation" target="_blank"><img src="img/icons/large/github.png"></a>
-        <a href="http://t.me/DAVNetwork" target="_blank"><img src="img/icons/large/telegram.png"></a>
-        <!-- <a href="https://gitter.im/DAVFoundation/DAV-Contributors" target="_blank"><img src="img/icons/large/gitter.png"></a> -->
-        <br class="visible-xs">
-        <a href="https://twitter.com/DavNetwork" target="_blank"><img src="img/icons/large/twitter.png"></a>
-        <a href="https://www.facebook.com/DAVNetworkTeam" target="_blank"><img src="img/icons/large/facebook.png"></a>
-        <a href="mailto:info@dav.network" target="_blank"><img src="img/icons/large/mail.png"></a>
-        <a href="https://medium.com/davnetwork" target="_blank"><img src="img/icons/large/medium.png"></a>
+    <div class="container illustrations">
+      <h2>The future of transportation is a network of autonomous vehicles. <br>Will you be a part of it?</h2>
+      <div class="row">
+          <div class="col-sm-4">
+            <div class="text-center"><img src="img/illustration-left.png"></div>
+            <h4>Earn DAV Tokens by providing transportation services</h4>
+            <p>Let your self-driving car give rides to passengers when you’re not using it. Have your drone help with deliveries around town.</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center"><img src="img/illustration-center.png"></div>
+            <h4>Go anywhere or send/receive anything in minutes</h4>
+            <p>Send a package, book a ride, or have lunch delivered instantaneously. Utilize the efficiency for your business and supply chains.</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center"><img src="img/illustration-right.png"></div>
+            <h4>Service providers keep everything running smoothly</h4>
+            <p>Benefit from the efficiencies of service providers who keep your vehicle charged, clean, and operational. Become a service provider and earn DAV Tokens.</p>
+          </div>
       </div>
+    </div>
+
+    <div class="technology">
+      <h2>Technology</h2>
+      <p>DAV is a framework of open-source software, open-source hardware, and a free decentralized marketplace where anyone can buy and sell autonomous transportation services using the DAV token. Our technology consists of three major components:</p>
+      <img src="img/three-corner.png">
+    </div>
+
+    <div class="container technologies">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/technology1.png">
+        </div>
+        <div class="col-sm-9">
+          <h4>Decentralized Discovery</h4>
+          <p>DAV allows autonomous vehicles to discover each other, as well as service providers, and clients around them. DAV implements decentralized node discovery using a peer-to-peer protocol that is does not rely on a central server. Instead, nodes are listed in a distributed hash table which can be accessed in an extremely efficient way.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/technology2.png">
+        </div>
+        <div class="col-sm-9">
+          <h4>Communication Protocol</h4>
+          <p>DAV defines a library of standardized communication protocols for various transportation scenarios. This communication is divided into two groups:</p>
+          <ul>
+            <li><p>on-blockchain communication done directly by calling smart contracts and through events emitted by those smart contracts, and</p></li>
+            <li><p>off-blockchain communication done peer-to-peer using DAV’s protocols.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/technology3.png">
+        </div>
+        <div class="col-sm-9">
+          <h4>Trustless Cooperation Tools</h4>
+          <p>Trustless cooperation between buyers and sellers of transportation services is achieved using a series of specialized smart contracts. These smart contracts enable multi-party contracts between buyer, seller, and when needed, arbitrator, insurer, and others. These contracts are tied in directly to the DAV token, guaranteeing financial resolution for transactions between multiple parties without requiring any pre-established trust.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="blockchain-enables">
+      <div class="container">
+        <h2>The Blockchain enables:</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <ul>
+              <li>A verifiable ledger of historical data from autonomous vehicles, services providers and users needed for insurers and third parties</li>
+              <li>A completely decentralized system that isn't controlled by any government, bank, or company</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul>
+              <li>A global payment standard between vehicles and their supporting infrastructure</li>
+              <li>A built-in smart mission contract, which enables trustless cooperation between multiple vehicles and service providers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="development-tools">
+      <div class="container">
+        <h2>Explore the DAV development tools</h2>
+        <div class="row">
+            <div class="col-sm-4">
+              <h4>DAV CLI tool</h4>
+              <img src="img/dav-cli.png">
+              <a href="#"><span>Learn more about our CLI tools</span> <img src="img/circle-right.png"></a>
+            </div>
+            <div class="col-sm-4">
+              <h4>DAV Developer Portal</h4>
+              <img src="img/dav-portal.png">
+              <a href="#"><span>Visit our Developer Portal</span> <img src="img/circle-right.png"></a>
+            </div>
+            <div class="col-sm-4">
+              <h4>DAV Foundation @ Github</h4>
+              <img src="img/icons/github-large.png">
+              <a href="#"><span>Explore our Github channel</span> <img src="img/circle-right.png"></a>
+            </div>
+        </div>        
+      </div>
+    </div>
+
+    <div class="roadmap">
+      <h2>Roadmap</h2>
+      <img src="img/roadmap.png">
+      <a href="#">Download Our Whitepaper</a>
+    </div>
+
+    <div class="container dav-alliance">
+          <div class="text-center">
+            <img src="img/dav-alliance.png">
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <p>The DAV Alliance brings together members of the autonomous vehicle industry
+so that we may collaborate on standards and innovations for a global AV network.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="img/h3d.jpg">
+            </div>
+            <div class="col-sm-4 text-center">
+              <img src="img/husarion.png">
+            </div>
+            <div class="col-sm-4 text-right">
+              <img src="img/coex.jpg">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h4>Join the movement</h4>
+              <div class="row">
+                <div class="col-xs-8">
+                  <input type="text" />
+                </div>
+                <div class="col-xs-4">
+                  <button>Become a member</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+    </div>
+
+    <div class="as-seen-on">
+      <div class="container">
+        <h2>As seen on</h2>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="img/investing.png">
+          </div>
+          <div class="col-sm-6 text-right">
+            <img src="img/bitcoin-news.png">
+          </div>
+        </div>
+
+        <div class="text-right">
+          <a href="#">Learn more about our media and press releases <img src="img/circle-right.png"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container partners">
+      <h2>Strategic Partners</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#" target="_blank">
+              <img src="img/partners/bancor.jpg">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" target="_blank">
+              <img src="img/partners/amazix.jpg">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" target="_blank">
+              <img src="img/partners/auvsi.jpg">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" target="_blank">
+              <img src="img/partners/blockchain.jpg">
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <div class="join-telegram">
+      <h2>Join our community on Telegram</h2>
+      <a href="#"><img src="img/icons/telegram-30.png"> Join Telegram</a>
+    </div>
+
+    <footer>
+      <div class="container">
+    		
+			<div class="social">
+        <a href="https://www.facebook.com/DAVNetworkTeam" target="_blank"><img src="img/icons/facebook-footer.png"></a>
+        <a href="https://twitter.com/DavNetwork" target="_blank"><img src="img/icons/twitter-footer.png"></a>
+        <a href="https://www.youtube.com/c/DAVNetwork" target="_blank"><img src="img/icons/youtube-footer.png"></a>
+        <a href="" target="_blank"><img src="img/icons/linkedin-footer.png"></a>
+        <a href="https://www.reddit.com/r/DAVNetwork/" target="_blank"><img src="img/icons/reddit-footer.png"></a>
+        <a href="https://github.com/davfoundation" target="_blank"><img src="img/icons/github-footer.png"></a>
+        <!-- <a href="http://t.me/DAVNetwork" target="_blank"><img src="img/icons/telegram-footer.png"></a> -->
+        <!-- <a href="https://gitter.im/DAVFoundation/DAV-Contributors" target="_blank"><img src="img/icons/gitter-footer.png"></a> -->
+        <br class="visible-xs">
+        <!-- <a href="mailto:info@dav.network" target="_blank"><img src="img/icons/mail-footer.png"></a> -->
+        <!-- <a href="https://medium.com/davnetwork" target="_blank"><img src="img/icons/medium-footer.png"></a> -->
+      </div>
+
+      <h3>Contact Us</h3>
+        <div class="row links">
+        <div class="col-sm-4">
+          <a href="mailto:relations@dav.network">relations@dav.network</a>
+          <p>Join Our Pre-Sale</p>
+        </div>
+        <div class="col-sm-4">
+          <a href="mailto:info@dav.network">info@dav.network</a>
+          <p>Partnerships and General Inquiries</p>
+        </div>
+        <div class="col-sm-4">
+          <a href="mailto:careers@dav.network">careers@dav.network</a>
+          <p>Jobs and CVs</p>
+        </div>
+      </div>
+
 			<div class="copyright">
 				<p>&copy; Copyright 2018 DAV - All Rights Reserved -- DAV is a registered non-profit foundation in Meyerlustenberger Lachenal Grabenstrasse 25 6340 Baar, Zug, Switzerland</p>
-				<a href="#">Privacy Policy</a>
-				<a href="#">Term And Conditions</a>
+				<!-- <a href="#">Privacy Policy</a> -->
+				<!-- <a href="#">Term And Conditions</a> -->
 			</div>
     	</div>
     </footer>
 
-    <div class="alert telegram-alert" role="alert">
+    <div class="alert telegram-alert hide" role="alert">
       <div class="container">
        <p>Join the <a href="http://t.me/DAVNetwork" target="_blank">DAV Telegram channel</a> for 24x7 responses to your questions from our team.</p>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>

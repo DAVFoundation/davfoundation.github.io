@@ -22,9 +22,17 @@ body {
 .navbar-nav.navbar-right > li > a {
   font-size: 13px; }
 
+#logo-white {
+  display: none; }
+
 .user-scroll {
   background-color: #FFF;
-  background-color: #ff6a46; }
+  background-color: #ff6a46;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+  .user-scroll #logo-orange {
+    display: none; }
+  .user-scroll #logo-white {
+    display: inline-block; }
 
 .hero {
   background: url("../img/hero.jpg") no-repeat center;
@@ -74,7 +82,8 @@ body {
           background: rgba(255, 255, 255, 0.3);
           height: 37px;
           display: block;
-          width: 100%; }
+          width: 100%;
+          padding: 0 5px; }
         .hero .hero-inner .hero-valign .hero-join button {
           color: #FFF;
           border-radius: 3px;
@@ -97,7 +106,7 @@ body {
     font-weight: 700; }
   .join-us-orange a {
     display: inline-block;
-    margin: 0 15px; }
+    margin: 0 8px; }
 
 .best-brands {
   padding: 75px 0 100px;
@@ -126,6 +135,270 @@ body {
     font-size: 21px;
     text-align: left;
     margin-top: 15px;
-    padding-left: 36px; }
+    padding-left: 35px;
+    padding-right: 35px; }
+  .video-home .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0; }
+    .video-home .videoWrapper iframe {
+      padding-right: 35px;
+      padding-left: 35px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+.illustrations {
+  padding-top: 75px;
+  padding-bottom: 75px; }
+  .illustrations h2 {
+    text-align: center;
+    line-height: 44px;
+    color: #333333;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 40px; }
+  .illustrations h4 {
+    color: #333333;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 35px 0 15px; }
+  .illustrations p {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0; }
+
+.technology {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 30px 0 60px; }
+  .technology h2 {
+    color: #363840;
+    font-weight: 700;
+    font-size: 31px;
+    padding-top: 38px;
+    margin: 0 auto 25px;
+    width: 300px;
+    border-top: 1px solid #ff6a46; }
+  .technology p {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0 auto 35px;
+    width: 60%; }
+
+.technologies {
+  text-align: center;
+  padding-top: 40px; }
+  .technologies img {
+    margin: 0 0 70px; }
+  .technologies h4 {
+    font-size: 21px;
+    font-weight: 500;
+    color: #333333;
+    margin: 20px 0 30px;
+    text-align: left; }
+  .technologies ul {
+    color: #ff6a46;
+    padding-left: 20px; }
+  .technologies p {
+    text-align: left;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 300; }
+
+.blockchain-enables {
+  padding: 60px 0 40px;
+  background: #213946;
+  color: #FFF; }
+  .blockchain-enables h2 {
+    text-align: center;
+    line-height: 44px;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 32px; }
+  .blockchain-enables ul {
+    list-style: none; }
+    .blockchain-enables ul li {
+      background: url("../img/check.png") no-repeat top 2px left;
+      font-size: 17px;
+      font-weight: 300;
+      margin: 0 0 40px;
+      padding-left: 36px; }
+
+.development-tools {
+  background: #eeeded;
+  padding: 46px 0 66px; }
+  .development-tools h2 {
+    text-align: center;
+    line-height: 44px;
+    color: #333333;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 50px; }
+  .development-tools h4 {
+    padding-left: 27px;
+    color: #333333;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 -13px; }
+  .development-tools img {
+    width: 100%; }
+  .development-tools a {
+    color: #4c7ce8;
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+    text-align: center; }
+    .development-tools a span {
+      border-bottom: 1px solid #4c7ce8; }
+    .development-tools a img {
+      width: auto;
+      margin-left: 5px; }
+    .development-tools a:hover {
+      text-decoration: none; }
+
+.roadmap {
+  background: url("../img/city.jpg") no-repeat center;
+  background-size: cover;
+  padding: 60px 0 55px;
+  text-align: center; }
+  .roadmap h2 {
+    color: #FFF;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 50px; }
+  .roadmap a {
+    display: block;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 15px;
+    background: #ff6a46;
+    margin: 50px auto 0;
+    line-height: 47px;
+    height: 47px;
+    width: 260px;
+    border-radius: 3px; }
+    .roadmap a:hover {
+      text-decoration: none; }
+
+.dav-alliance {
+  padding-top: 55px;
+  padding-bottom: 70px; }
+  .dav-alliance p {
+    font-size: 17px;
+    color: #333333;
+    margin: 35px 0;
+    font-weight: 300; }
+  .dav-alliance h4 {
+    font-weight: 700;
+    font-size: 21px;
+    color: #333333;
+    margin: 45px 0 20px;
+    text-align: center; }
+  .dav-alliance input {
+    border: 1px solid #333;
+    line-height: 37px;
+    height: 37px;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    padding: 0 5px; }
+  .dav-alliance button {
+    border: none;
+    color: #FFF;
+    background: #ff6a46;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    height: 37px; }
+
+.as-seen-on {
+  padding: 40px 0 60px;
+  background: #f7f7f7; }
+  .as-seen-on h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 50px; }
+  .as-seen-on a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 500; }
+    .as-seen-on a:hover {
+      text-decoration: none; }
+    .as-seen-on a img {
+      margin-left: 10px; }
+
+.partners {
+  padding: 40px 0 60px;
+  text-align: center; }
+  .partners h2 {
+    color: #333333;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 50px; }
+
+.join-telegram {
+  background: #ff6a46;
+  color: #FFF;
+  text-align: center;
+  padding: 40px 0; }
+  .join-telegram h2 {
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 30px; }
+  .join-telegram a {
+    color: #FFF;
+    display: inline-block;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    line-height: 47px;
+    height: 47px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 35px; }
+    .join-telegram a:hover {
+      text-decoration: none; }
+    .join-telegram a img {
+      margin-right: 8px; }
+
+footer {
+  padding: 20px 0 80px; }
+  footer .social {
+    text-align: center; }
+    footer .social a {
+      display: inline-block;
+      margin: 20px 23px; }
+  footer h3 {
+    font-size: 31px;
+    font-weight: 700;
+    margin: 30px 0 40px;
+    color: #333333;
+    text-align: center; }
+  footer .links p, footer .links a {
+    font-size: 17px;
+    color: #271e36;
+    font-weight: 300;
+    text-decoration: underline;
+    line-height: 30px; }
+  footer .links p {
+    text-decoration: none;
+    margin-bottom: 30px; }
+  footer .copyright {
+    font-size: 13px;
+    color: #271e36;
+    text-align: center;
+    margin-top: 40px; }
 
 /*# sourceMappingURL=style.css.map */
