@@ -5,6 +5,10 @@ body{
 }
 .navbar-right{
 	margin-right: 0px;
+	img{
+		margin-right: 8px;
+		margin-top: -4px;
+	}
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -25,6 +29,9 @@ body{
 }
 .navbar-nav.navbar-right>li>a{
 	font-size: 13px;
+}
+.navbar-brand>img{
+	height: 36px;
 }
 #logo-white{
 	display: none;
@@ -438,9 +445,286 @@ body{
 		}
 	}
 }
-
-
-
+.team{
+	padding-top: 50px;
+	padding-bottom: 35px;
+	h2{
+		color: #333333;
+		font-size: 31px;
+		font-weight: 700;
+		margin: 0 0 70px;
+		text-align: center;
+	}
+	.team-large{
+		a{
+			display: block;
+			width: 280px;
+			margin: 0 auto;
+			color: #333333;
+			-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+			img{
+				width: 100%;
+			}
+			.row img{
+				width: auto;
+				margin-top: 10px;
+			}
+			&:hover,&:focus,&:active{
+				outline: none;
+			}
+			&:hover{
+				filter:brightness(60%)
+			}
+		}
+		h4{
+			font-size: 21px;
+			font-weight: 500;
+		}
+		h5{
+			font-size: 15px;
+			font-weight: 500;
+		}
+		h3{
+			font-size: 21px;
+			color: #333333;
+			font-weight: 300;
+			width: 280px;
+			margin: 15px auto 0;
+			line-height: 30px;
+			min-height: 90px;
+		}
+	}
+	.team-medium{
+		a{
+			display: block;
+			width: 203px;
+			margin: 20px auto 50px;
+			color: #333333;
+			-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+			img{
+				width: 100%;
+			}
+			.row img{
+				width: auto;
+				margin-top: 15px;
+			}
+			&:hover{
+				filter:brightness(60%)
+			}
+		}
+		h4{
+			font-weight: 500;
+			font-size: 21px;
+			margin: 10px 0 5px;
+		}
+		p{
+			font-weight: 300;
+			font-size: 15px;
+		}
+	}
+	.team-small{
+		a{
+			display: block;
+			width: 100%;
+			margin: 20px auto 50px;
+			color: #333333;
+			-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+			img{
+				width: 100%;
+			}
+			.row{
+				margin: 0px;
+				& > div{
+					padding: 0px;
+				}
+				img{
+				width: auto;
+				margin-top: 15px;
+				}
+			}
+			&:hover{
+				filter:brightness(60%)
+			}
+		}
+		h4{
+			font-weight: 500;
+			font-size: 15px;
+			margin: 10px 0 5px;
+		}
+		p{
+			font-weight: 300;
+			font-size: 15px;
+		}
+	}
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=70);
+    opacity: .7;
+}
+.team-modal{
+	.modal-dialog{
+		padding-top: 15%;
+		width: 800px;
+		button.close{
+			opacity: 1;
+			color: #333;
+			font-size: 36px;
+			&:focus,&:active{
+				outline: none;
+			}
+		}
+		h2{
+			margin: 0 0 10px;
+			font-size: 31px;
+			font-weight: 700;
+			color: #333;
+		}
+		h5{
+			margin: 0 0 10px;
+			font-size: 21px;
+			font-weight: 500;
+			color: #333;
+		}
+		p{
+			margin: 0 0 25px;
+			font-size: 17px;
+			font-weight: 300;
+			color: #333;
+		}
+		a{
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.modal-content{
+			box-shadow: none;
+			border-radius: 3px;
+			.modal-body{
+				padding-bottom: 50px;
+			}
+		}
+	}
+}
+.fundraising-goals{
+	padding-top: 20px;
+	padding-bottom: 50px;
+	h2{
+		color: #333333;
+		font-size: 31px;
+		font-weight: 700;
+		margin: 0 0 50px;
+		text-align: center;
+	}
+	h4{
+		font-size: 24px;
+		font-weight: 500;
+		color: #333333;
+		line-height: 50px;
+		margin: 20px 0 30px;
+	}
+	.market-cap{
+		width: 1100px;
+		margin: 0 auto;
+		.row{
+			margin-left: -2px; 
+			margin-right: -2px; 
+			div{
+				padding-left: 2px;
+				padding-right: 2px;
+			}
+		}
+	}
+	p{
+		font-weight: 500;
+		line-height: 60px;
+		background: #c7c7bf;
+		font-size: 21px;
+		color: #333333;
+		text-align: center;
+	}
+}
+.daily-dav{
+	background: #f7f7f7;
+	padding: 45px 0 80px;
+	h2{
+		color: #333333;
+		font-size: 31px;
+		font-weight: 700;
+		margin: 0 0 50px;
+		text-align: center;
+	}
+	p{
+		color: #333333;
+		font-size: 17px;
+		font-weight: 300;
+		margin: 0 0 25px;
+		&:first-child{
+			margin-top: 85px;
+		}
+	}
+	img{
+		margin-top: 100px;
+		width: 100%;
+	}
+}
+.crowd-sale{
+	background: $orange;
+	padding: 40px 0 60px;
+	text-align: center;
+	h3{
+		color: #FFF;
+		font-size: 21px;
+		font-weight: 700;
+		margin: 0 0 20px;
+	}
+	.join-crowd-sale{
+		width: 385px;
+		margin: 0 auto;
+		input{
+			border: 1px solid #FFF;
+			border-radius: 3px;
+			background: rgba(255,255,255,0.3);
+			height: 37px;
+			display: block;
+			width: 100%;
+			padding: 0 10px;
+			font-weight: 500;
+			color: #333;
+			font-size: 15px;
+			&::-webkit-input-placeholder {
+			   color: #333;
+			}
+			
+			&:-moz-placeholder {
+			   color: #333;  
+			}
+			
+			&::-moz-placeholder {
+			   color: #333;  
+			}
+			
+			&:-ms-input-placeholder {  
+			   color: #333;  
+			}
+		}
+		button{
+			color: #FFF;
+			border-radius: 3px;
+			font-size: 15px;
+			font-weight: bold;
+			background: #333;
+			border: none;
+			display: block;
+			width: 100%;
+			height: 37px;		
+		}
+	}
+}
 footer{
 	padding: 20px 0 80px;
 	.social{

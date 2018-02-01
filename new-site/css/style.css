@@ -3,6 +3,9 @@ body {
 
 .navbar-right {
   margin-right: 0px; }
+  .navbar-right img {
+    margin-right: 8px;
+    margin-top: -4px; }
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -21,6 +24,9 @@ body {
 
 .navbar-nav.navbar-right > li > a {
   font-size: 13px; }
+
+.navbar-brand > img {
+  height: 36px; }
 
 #logo-white {
   display: none; }
@@ -372,6 +378,226 @@ body {
       text-decoration: none; }
     .join-telegram a img {
       margin-right: 8px; }
+
+.team {
+  padding-top: 50px;
+  padding-bottom: 35px; }
+  .team h2 {
+    color: #333333;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 70px;
+    text-align: center; }
+  .team .team-large a {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    color: #333333;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .team .team-large a img {
+      width: 100%; }
+    .team .team-large a .row img {
+      width: auto;
+      margin-top: 10px; }
+    .team .team-large a:hover, .team .team-large a:focus, .team .team-large a:active {
+      outline: none; }
+    .team .team-large a:hover {
+      filter: brightness(60%); }
+  .team .team-large h4 {
+    font-size: 21px;
+    font-weight: 500; }
+  .team .team-large h5 {
+    font-size: 15px;
+    font-weight: 500; }
+  .team .team-large h3 {
+    font-size: 21px;
+    color: #333333;
+    font-weight: 300;
+    width: 280px;
+    margin: 15px auto 0;
+    line-height: 30px;
+    min-height: 90px; }
+  .team .team-medium a {
+    display: block;
+    width: 203px;
+    margin: 20px auto 50px;
+    color: #333333;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .team .team-medium a img {
+      width: 100%; }
+    .team .team-medium a .row img {
+      width: auto;
+      margin-top: 15px; }
+    .team .team-medium a:hover {
+      filter: brightness(60%); }
+  .team .team-medium h4 {
+    font-weight: 500;
+    font-size: 21px;
+    margin: 10px 0 5px; }
+  .team .team-medium p {
+    font-weight: 300;
+    font-size: 15px; }
+  .team .team-small a {
+    display: block;
+    width: 100%;
+    margin: 20px auto 50px;
+    color: #333333;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .team .team-small a img {
+      width: 100%; }
+    .team .team-small a .row {
+      margin: 0px; }
+      .team .team-small a .row > div {
+        padding: 0px; }
+      .team .team-small a .row img {
+        width: auto;
+        margin-top: 15px; }
+    .team .team-small a:hover {
+      filter: brightness(60%); }
+  .team .team-small h4 {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 10px 0 5px; }
+  .team .team-small p {
+    font-weight: 300;
+    font-size: 15px; }
+
+.modal-backdrop.in {
+  filter: alpha(opacity=70);
+  opacity: .7; }
+
+.team-modal .modal-dialog {
+  padding-top: 15%;
+  width: 800px; }
+  .team-modal .modal-dialog button.close {
+    opacity: 1;
+    color: #333;
+    font-size: 36px; }
+    .team-modal .modal-dialog button.close:focus, .team-modal .modal-dialog button.close:active {
+      outline: none; }
+  .team-modal .modal-dialog h2 {
+    margin: 0 0 10px;
+    font-size: 31px;
+    font-weight: 700;
+    color: #333; }
+  .team-modal .modal-dialog h5 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #333; }
+  .team-modal .modal-dialog p {
+    margin: 0 0 25px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #333; }
+  .team-modal .modal-dialog a {
+    display: inline-block;
+    margin-right: 10px; }
+  .team-modal .modal-dialog .modal-content {
+    box-shadow: none;
+    border-radius: 3px; }
+    .team-modal .modal-dialog .modal-content .modal-body {
+      padding-bottom: 50px; }
+
+.fundraising-goals {
+  padding-top: 20px;
+  padding-bottom: 50px; }
+  .fundraising-goals h2 {
+    color: #333333;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 50px;
+    text-align: center; }
+  .fundraising-goals h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 50px;
+    margin: 20px 0 30px; }
+  .fundraising-goals .market-cap {
+    width: 1100px;
+    margin: 0 auto; }
+    .fundraising-goals .market-cap .row {
+      margin-left: -2px;
+      margin-right: -2px; }
+      .fundraising-goals .market-cap .row div {
+        padding-left: 2px;
+        padding-right: 2px; }
+  .fundraising-goals p {
+    font-weight: 500;
+    line-height: 60px;
+    background: #c7c7bf;
+    font-size: 21px;
+    color: #333333;
+    text-align: center; }
+
+.daily-dav {
+  background: #f7f7f7;
+  padding: 45px 0 80px; }
+  .daily-dav h2 {
+    color: #333333;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 50px;
+    text-align: center; }
+  .daily-dav p {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0 0 25px; }
+    .daily-dav p:first-child {
+      margin-top: 85px; }
+  .daily-dav img {
+    margin-top: 100px;
+    width: 100%; }
+
+.crowd-sale {
+  background: #ff6a46;
+  padding: 40px 0 60px;
+  text-align: center; }
+  .crowd-sale h3 {
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 20px; }
+  .crowd-sale .join-crowd-sale {
+    width: 385px;
+    margin: 0 auto; }
+    .crowd-sale .join-crowd-sale input {
+      border: 1px solid #FFF;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.3);
+      height: 37px;
+      display: block;
+      width: 100%;
+      padding: 0 10px;
+      font-weight: 500;
+      color: #333;
+      font-size: 15px; }
+      .crowd-sale .join-crowd-sale input::-webkit-input-placeholder {
+        color: #333; }
+      .crowd-sale .join-crowd-sale input:-moz-placeholder {
+        color: #333; }
+      .crowd-sale .join-crowd-sale input::-moz-placeholder {
+        color: #333; }
+      .crowd-sale .join-crowd-sale input:-ms-input-placeholder {
+        color: #333; }
+    .crowd-sale .join-crowd-sale button {
+      color: #FFF;
+      border-radius: 3px;
+      font-size: 15px;
+      font-weight: bold;
+      background: #333;
+      border: none;
+      display: block;
+      width: 100%;
+      height: 37px; }
 
 footer {
   padding: 20px 0 80px; }
