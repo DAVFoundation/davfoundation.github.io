@@ -1,6 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
-  zoom: 85%; }
+  font-family: 'Montserrat', sans-serif; }
 
 .navbar-right {
   margin-right: 0px; }
@@ -22,6 +21,8 @@ body {
   line-height: 25px; }
   .navbar-nav > li > a:hover {
     background: transparent; }
+  .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus {
+    background: transparent; }
 
 .navbar-nav.navbar-right > li > a {
   font-size: 13px; }
@@ -34,8 +35,10 @@ body {
 
 .user-scroll {
   background-color: #FFF;
-  background-color: #ff6a46;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+  .user-scroll li > a {
+    color: #ff6a46;
+    color: #333; }
   .user-scroll #logo-orange {
     display: none; }
   .user-scroll #logo-white {
@@ -381,8 +384,7 @@ body {
       margin-right: 8px; }
 
 .team {
-  padding-top: 50px;
-  padding-bottom: 35px; }
+  padding-top: 50px; }
   .team h2 {
     color: #333333;
     font-size: 31px;
@@ -411,7 +413,8 @@ body {
     font-weight: 500; }
   .team .team-large h5 {
     font-size: 15px;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #ff6a46; }
   .team .team-large h3 {
     font-size: 21px;
     color: #333333;
@@ -435,13 +438,16 @@ body {
       margin-top: 15px; }
     .team .team-medium a:hover {
       filter: brightness(60%); }
+    .team .team-medium a:hover, .team .team-medium a:focus, .team .team-medium a:active {
+      outline: none; }
   .team .team-medium h4 {
     font-weight: 500;
     font-size: 21px;
     margin: 10px 0 5px; }
   .team .team-medium p {
     font-weight: 300;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #ff6a46; }
   .team .team-small a {
     display: block;
     width: 100%;
@@ -461,20 +467,22 @@ body {
         margin-top: 15px; }
     .team .team-small a:hover {
       filter: brightness(60%); }
+    .team .team-small a:hover, .team .team-small a:focus, .team .team-small a:active {
+      outline: none; }
   .team .team-small h4 {
     font-weight: 500;
     font-size: 15px;
     margin: 10px 0 5px; }
   .team .team-small p {
     font-weight: 300;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #ff6a46; }
 
 .modal-backdrop.in {
   filter: alpha(opacity=70);
   opacity: .7; }
 
 .team-modal .modal-dialog {
-  padding-top: 15%;
   width: 800px; }
   .team-modal .modal-dialog button.close {
     opacity: 1;
@@ -497,6 +505,8 @@ body {
     font-size: 17px;
     font-weight: 300;
     color: #333; }
+    .team-modal .modal-dialog p span {
+      font-weight: 500; }
   .team-modal .modal-dialog a {
     display: inline-block;
     margin-right: 10px; }
@@ -514,7 +524,11 @@ body {
     font-size: 31px;
     font-weight: 700;
     margin: 0 0 50px;
-    text-align: center; }
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 auto 25px;
+    width: 300px;
+    border-top: 1px solid #ff6a46; }
   .fundraising-goals h4 {
     font-size: 24px;
     font-weight: 500;
@@ -599,6 +613,51 @@ body {
       display: block;
       width: 100%;
       height: 37px; }
+
+.faq-questions {
+  padding-top: 75px;
+  padding-bottom: 60px; }
+  .faq-questions h2 {
+    color: #333333;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 0 0 50px;
+    text-align: center; }
+  .faq-questions p {
+    margin: 0px; }
+  .faq-questions h3 {
+    text-align: center;
+    margin: 60px 0 0; }
+    .faq-questions h3 a {
+      color: #333;
+      font-size: 20px;
+      font-weight: 700; }
+      .faq-questions h3 a:hover, .faq-questions h3 a:active, .faq-questions h3 a:focus {
+        text-decoration: none; }
+      .faq-questions h3 a img {
+        margin-left: 10px; }
+  .faq-questions .panel {
+    border-bottom: 1px solid #d4d4d4 !important;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    box-shadow: none; }
+    .faq-questions .panel .panel-heading {
+      padding: 5px 15px; }
+      .faq-questions .panel .panel-heading .panel-title a {
+        font-size: 17px;
+        color: #333333;
+        font-weight: 500;
+        display: block;
+        padding-right: 50px;
+        background: url("../img/faq-down.png") no-repeat top 4px right; }
+        .faq-questions .panel .panel-heading .panel-title a[aria-expanded=true] {
+          background: url("../img/faq-up.png") no-repeat top 4px right; }
+        .faq-questions .panel .panel-heading .panel-title a:hover, .faq-questions .panel .panel-heading .panel-title a:active, .faq-questions .panel .panel-heading .panel-title a:focus {
+          text-decoration: none; }
+    .faq-questions .panel .panel-body {
+      padding: 0 15px;
+      border: none !important; }
 
 footer {
   padding: 20px 0 80px; }

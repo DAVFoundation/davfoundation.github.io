@@ -2,7 +2,7 @@ $orange: #ff6a46;
 
 body{
 	font-family: 'Montserrat', sans-serif;
-	zoom: 85%;
+	// zoom: 85%;
 }
 .navbar-right{
 	margin-right: 0px;
@@ -27,6 +27,9 @@ body{
 	&:hover{
 		background: transparent;
 	}
+	&:hover,&:active,&:focus{
+		background: transparent;
+	}
 }
 .navbar-nav.navbar-right>li>a{
 	font-size: 13px;
@@ -39,10 +42,11 @@ body{
 }
 .user-scroll{
 	background-color: #FFF;
-	background-color: $orange;
+	// background-color: $orange;
     box-shadow: 0 0 5px rgba(0,0,0,.3);
 	li>a{
-		// color: $orange;
+		color: $orange;
+		color: #333;
 	}
 	#logo-orange{
 		display: none;
@@ -448,7 +452,7 @@ body{
 }
 .team{
 	padding-top: 50px;
-	padding-bottom: 35px;
+	// padding-bottom: 35px;
 	h2{
 		color: #333333;
 		font-size: 31px;
@@ -486,6 +490,7 @@ body{
 		h5{
 			font-size: 15px;
 			font-weight: 500;
+			color: $orange;
 		}
 		h3{
 			font-size: 21px;
@@ -516,6 +521,9 @@ body{
 			&:hover{
 				filter:brightness(60%)
 			}
+			&:hover,&:focus,&:active{
+				outline: none;
+			}
 		}
 		h4{
 			font-weight: 500;
@@ -525,6 +533,7 @@ body{
 		p{
 			font-weight: 300;
 			font-size: 15px;
+			color: $orange;
 		}
 	}
 	.team-small{
@@ -552,6 +561,9 @@ body{
 			&:hover{
 				filter:brightness(60%)
 			}
+			&:hover,&:focus,&:active{
+				outline: none;
+			}
 		}
 		h4{
 			font-weight: 500;
@@ -561,6 +573,7 @@ body{
 		p{
 			font-weight: 300;
 			font-size: 15px;
+			color: $orange;
 		}
 	}
 }
@@ -570,7 +583,7 @@ body{
 }
 .team-modal{
 	.modal-dialog{
-		padding-top: 15%;
+		// padding-top: 15%;
 		width: 800px;
 		button.close{
 			opacity: 1;
@@ -597,6 +610,9 @@ body{
 			font-size: 17px;
 			font-weight: 300;
 			color: #333;
+			span{
+				font-weight: 500;
+			}
 		}
 		a{
 			display: inline-block;
@@ -620,6 +636,11 @@ body{
 		font-weight: 700;
 		margin: 0 0 50px;
 		text-align: center;
+
+    	padding-top: 50px;
+    	margin: 0 auto 25px;
+    	width: 300px;
+    	border-top: 1px solid #ff6a46;
 	}
 	h4{
 		font-size: 24px;
@@ -726,6 +747,67 @@ body{
 		}
 	}
 }
+
+.faq-questions{
+	padding-top: 75px;
+	padding-bottom: 60px;
+	h2{
+		color: #333333;
+		font-size: 31px;
+		font-weight: 700;
+		margin: 0 0 50px;
+		text-align: center;
+	}
+	p{
+		margin: 0px;
+	} 
+	h3 {
+		text-align: center;	
+		margin: 60px 0 0;
+		a{
+			color: #333;
+			font-size: 20px;
+			font-weight: 700;
+			&:hover,&:active,&:focus{
+				text-decoration: none;
+			}
+			img{
+				margin-left: 10px;
+			}
+		}
+	}
+	.panel{
+		border-bottom: 1px solid #d4d4d4 !important;
+		border-radius: 0px;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		box-shadow: none;
+		.panel-heading{
+			padding: 5px 15px;
+			.panel-title{
+				 a{
+					font-size: 17px;
+					color: #333333;
+					font-weight: 500;
+					display: block;
+					padding-right: 50px;
+					background: url('../img/faq-down.png') no-repeat top 4px right;
+					&[aria-expanded=true]{
+						background: url('../img/faq-up.png') no-repeat top 4px right;
+					}
+					&:hover,&:active,&:focus{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.panel-body{
+			padding: 0 15px;
+			border: none !important;
+		}
+	}
+}
+
 footer{
 	padding: 20px 0 80px;
 	.social{
