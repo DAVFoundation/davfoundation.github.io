@@ -71,19 +71,19 @@ input {
 		vertical-align: middle;
 		text-align: center;
 		h1{
-			font-size: 37px;
+			font-size: 41px;
 			font-weight: 700;
 			margin: 0 0 20px;
-			line-height: 54px;
+			line-height: 60px;
 			}
 		h4{
-			font-size: 15px;
+			font-size: 17px;
 			font-weight: 700;
 			line-height: 25px;
 			margin: 0 0 18px;
 			}
 		h5{
-			font-size: 15px;
+			font-size: 17px;
 			margin: 0 0 50px;
 			line-height: 25px;
 			}
@@ -196,15 +196,12 @@ input {
 	h2{
 		color: #FFF;
 		margin: 0 0 16px;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 	}
 	a{
 		display: inline-block;
 		margin: 0 8px;
-		img{
-			width: 34px;
-		}
 	}
 }
 .best-brands{
@@ -213,15 +210,12 @@ input {
 	h2{
 		color: #333333;
 		margin: 0 0 75px;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 	}
 	a{
 		display: inline-block;
 		margin: 0 35px;
-		img{
-			height: 80px;
-		}
 	}
 }
 .video-home{
@@ -232,12 +226,12 @@ input {
 	padding: 35px 0 60px;
 	h2{
 		text-align: center;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 45px;
 	}
 	p{
-		font-size: 16px;
+		font-size: 21px;
 		text-align: left;
 		margin-top: 15px;
 		padding-left: 35px;
@@ -267,24 +261,21 @@ input {
 		text-align: center;
 		line-height: 44px;
 		color: #333333;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 40px;
 	}
 	h4{
 		color: #333333;
-		font-size: 16px;
+		font-size: 21px;
 		font-weight: 500;
 		margin: 35px 0 15px;
 	}
 	p{
 		color: #333333;
-		font-size: 15px;
+		font-size: 17px;
 		font-weight: 300;
 		margin: 0;
-	}
-	img{
-		height: 150px;
 	}
 }
 .technology{
@@ -294,7 +285,7 @@ input {
 	h2{
 		color: #363840;
 		font-weight: 700;
-		font-size: 25px;
+		font-size: 31px;
 		padding-top: 38px;
 		margin: 0 auto 25px;
 		width: 300px;
@@ -302,13 +293,10 @@ input {
 	}
 	p{
 		color: #333333;
-		font-size: 15px;
+		font-size: 17px;
 		font-weight: 300;
 		margin: 0 auto 35px;
 		width: 60%;
-	}
-	img{
-		height: 412px;
 	}
 }
 .technologies{
@@ -317,10 +305,9 @@ input {
 	// padding-bottom: 60px;
 	img{
 		margin: 0 0 70px;
-		height: 182px;
 	}
 	h4{
-		font-size: 17px;
+		font-size: 21px;
 		font-weight: 500;
 		color: #333333;
 		margin: 20px 0 30px;
@@ -333,7 +320,7 @@ input {
 	p{
 		text-align: left;
 		color: #333333;
-		font-size: 15px;
+		font-size: 17px;
 		font-weight: 300;
 		// margin: 0 auto 35px;
 	}
@@ -345,7 +332,7 @@ input {
 	h2{	
 		text-align: center;
 		line-height: 44px;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 32px;
 	}
@@ -353,7 +340,7 @@ input {
 		list-style: none;
 		li{
 			background: url('../img/check.png') no-repeat top 2px left;
-			font-size: 15px;
+			font-size: 17px;
 			font-weight: 300;
 			margin: 0 0 40px;
 			padding-left: 36px;
@@ -367,23 +354,23 @@ input {
 		text-align: center;
 		line-height: 44px;
 		color: #333333;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 50px;
 	}
 	h4{
 		padding-left: 27px;
 		color: #333333;
-		font-size: 17px;
+		font-size: 21px;
 		font-weight: 500;
-		margin: 0 0 -5px;
+		margin: 0 0 -13px;
 	}
 	img{
-		width: 80%;
+		width: 100%;
 	}
 	a{
 		color: #4c7ce8;
-		font-size: 14px;
+		font-size: 17px;
 		font-weight: 500;
 		display: block;
 		text-align: center;
@@ -406,7 +393,7 @@ input {
 	text-align: center;
 	h2{
 		color: #FFF;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 50px;
 	}
@@ -414,7 +401,7 @@ input {
 		display: block;
 		color: #FFF;
 		font-weight: 700;
-		font-size: 14px;
+		font-size: 15px;
 		background: $orange;
 		margin: 50px auto 0;
 		line-height: 47px;
@@ -430,20 +417,17 @@ input {
 	padding-top: 55px;
 	padding-bottom: 70px;
 	p{
-		font-size: 15px;
+		font-size: 17px;
 		color: #333333;
 		margin: 35px 0;
 		font-weight: 300;
 	}
 	h4{
 		font-weight: 700;
-		font-size: 17px;
+		font-size: 21px;
 		color: #333333;
 		margin: 45px 0 20px;
 		text-align: center
-	}
-	img{
-		height: 100px;
 	}
 	input[type=email]{
 		border: 1px solid #333;
@@ -472,18 +456,15 @@ input {
 	h2{
 		text-align: center;
 		color: #333333;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 50px;
-	}
-	img{
-		height: 150px;
 	}
 	a{
 		display: inline-block;
 		margin-top: 20px;
 		color: #333333;
-		font-size: 15px;
+		font-size: 17px;
 		font-weight: 500;
 		&:hover{
 			text-decoration: none;
@@ -498,12 +479,9 @@ input {
 	text-align: center;
 	h2{
 		color: #333333;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 50px;
-	}
-	img{
-		height: 115px;
 	}
 }
 .join-telegram{
@@ -512,7 +490,7 @@ input {
 	text-align: center;
 	padding: 40px 0;
 	h2{
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 30px;
 	}
@@ -523,7 +501,7 @@ input {
 		border-radius: 3px;
 		line-height: 47px;
 		height: 47px;
-		font-size: 14px;
+		font-size: 15px;
 		font-weight: 700;
 		padding: 0 35px;
 		&:hover{
@@ -539,7 +517,7 @@ input {
 	// padding-bottom: 35px;
 	h2{
 		color: #333333;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 70px;
 		text-align: center;
@@ -548,7 +526,6 @@ input {
 		a{
 			display: block;
 			width: 280px;
-			width: 224px;
 			margin: 0 auto;
 			color: #333333;
 			-webkit-transition: all 0.5s ease;
@@ -569,7 +546,7 @@ input {
 			}
 		}
 		h4{
-			font-size: 17px;
+			font-size: 21px;
 			font-weight: 500;
 		}
 		h5{
@@ -578,23 +555,19 @@ input {
 			color: $orange;
 		}
 		h3{
-			font-size: 17px;
+			font-size: 21px;
 			color: #333333;
 			font-weight: 300;
 			width: 280px;
 			margin: 15px auto 0;
 			line-height: 30px;
 			min-height: 90px;
-			& + img{
-				height: 152px;
-			}
 		}
 	}
 	.team-medium{
 		a{
 			display: block;
 			width: 203px;
-			// width: 162px;
 			margin: 20px auto 50px;
 			color: #333333;
 			-webkit-transition: all 0.5s ease;
@@ -616,7 +589,7 @@ input {
 		}
 		h4{
 			font-weight: 500;
-			font-size: 17px;
+			font-size: 21px;
 			margin: 10px 0 5px;
 		}
 		p{
@@ -684,19 +657,19 @@ input {
 		}
 		h2{
 			margin: 0 0 10px;
-			font-size: 25px;
+			font-size: 31px;
 			font-weight: 700;
 			color: #333;
 		}
 		h5{
 			margin: 0 0 10px;
-			font-size: 17px;
+			font-size: 21px;
 			font-weight: 500;
 			color: #333;
 		}
 		p{
 			margin: 0 0 25px;
-			font-size: 15px;
+			font-size: 17px;
 			font-weight: 300;
 			color: #333;
 			span{
@@ -721,7 +694,7 @@ input {
 	padding-bottom: 50px;
 	h2{
 		color: #333333;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 50px;
 		text-align: center;
@@ -732,14 +705,11 @@ input {
     	border-top: 1px solid #ff6a46;
 	}
 	h4{
-		font-size: 19px;
+		font-size: 24px;
 		font-weight: 500;
 		color: #333333;
 		line-height: 50px;
 		margin: 20px 0 30px;
-	}
-	img{
-		height: 357px;
 	}
 	.market-cap{
 		width: 1100px;
@@ -757,7 +727,7 @@ input {
 		font-weight: 500;
 		line-height: 60px;
 		background: #c7c7bf;
-		font-size: 17px;
+		font-size: 21px;
 		color: #333333;
 		text-align: center;
 	}
@@ -767,14 +737,14 @@ input {
 	padding: 45px 0 80px;
 	h2{
 		color: #333333;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 50px;
 		text-align: center;
 	}
 	p{
 		color: #333333;
-		font-size: 15px;
+		font-size: 17px;
 		font-weight: 300;
 		margin: 0 0 25px;
 		&:first-child{
@@ -782,7 +752,7 @@ input {
 		}
 	}
 	img{
-		margin-top: 75px;
+		margin-top: 100px;
 		width: 100%;
 	}
 }
@@ -792,7 +762,7 @@ input {
 	text-align: center;
 	h3{
 		color: #FFF;
-		font-size: 17px;
+		font-size: 21px;
 		font-weight: 700;
 		margin: 0 0 20px;
 	}
@@ -845,7 +815,7 @@ input {
 	padding-bottom: 60px;
 	h2{
 		color: #333333;
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 0 0 50px;
 		text-align: center;
@@ -858,14 +828,13 @@ input {
 		margin: 60px 0 0;
 		a{
 			color: #333;
-			font-size: 17px;
+			font-size: 20px;
 			font-weight: 700;
 			&:hover,&:active,&:focus{
 				text-decoration: none;
 			}
 			img{
 				margin-left: 10px;
-				height: 50px;
 			}
 		}
 	}
@@ -879,7 +848,7 @@ input {
 			padding: 5px 15px;
 			.panel-title{
 				 a{
-					font-size: 15px;
+					font-size: 17px;
 					color: #333333;
 					font-weight: 500;
 					display: block;
@@ -908,13 +877,10 @@ footer{
 		a{
 			display: inline-block;
 			margin: 20px 23px;
-			img{
-				height: 50px;
-			}
 		}
 	}
 	h3{
-		font-size: 25px;
+		font-size: 31px;
 		font-weight: 700;
 		margin: 30px 0 40px;
 		color: #333333;
@@ -922,7 +888,7 @@ footer{
 	}
 	.links{
 		p,a{
-			font-size: 15px;
+			font-size: 17px;
 			color: #271e36;
 			font-weight: 300;
 			text-decoration: underline;

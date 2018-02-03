@@ -1,6 +1,9 @@
 body {
   font-family: 'Montserrat', sans-serif; }
 
+input {
+  outline: none; }
+
 .navbar-right {
   margin-right: 0px; }
   .navbar-right img {
@@ -57,21 +60,21 @@ body {
       vertical-align: middle;
       text-align: center; }
       .hero .hero-inner .hero-valign h1 {
-        font-size: 41px;
+        font-size: 37px;
         font-weight: 700;
         margin: 0 0 20px;
-        line-height: 60px; }
+        line-height: 54px; }
       .hero .hero-inner .hero-valign h4 {
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 25px;
         margin: 0 0 18px; }
       .hero .hero-inner .hero-valign h5 {
-        font-size: 17px;
+        font-size: 15px;
         margin: 0 0 50px;
         line-height: 25px; }
       .hero .hero-inner .hero-valign .countdown {
-        width: 250px;
+        width: 320px;
         margin: 0 auto; }
         .hero .hero-inner .hero-valign .countdown p {
           border: 1px solid #FFF;
@@ -86,15 +89,24 @@ body {
       .hero .hero-inner .hero-valign .hero-join {
         width: 390px;
         margin: 0 auto; }
-        .hero .hero-inner .hero-valign .hero-join input {
+        .hero .hero-inner .hero-valign .hero-join input[type=email] {
           border: 1px solid #FFF;
           border-radius: 3px;
           background: rgba(255, 255, 255, 0.3);
           height: 37px;
           display: block;
           width: 100%;
-          padding: 0 5px; }
-        .hero .hero-inner .hero-valign .hero-join button {
+          padding: 0 5px;
+          color: #ff6a46; }
+          .hero .hero-inner .hero-valign .hero-join input[type=email]::-webkit-input-placeholder {
+            color: #ff6a46; }
+          .hero .hero-inner .hero-valign .hero-join input[type=email]:-moz-placeholder {
+            color: #ff6a46; }
+          .hero .hero-inner .hero-valign .hero-join input[type=email]::-moz-placeholder {
+            color: #ff6a46; }
+          .hero .hero-inner .hero-valign .hero-join input[type=email]:-ms-input-placeholder {
+            color: #ff6a46; }
+        .hero .hero-inner .hero-valign .hero-join input[type=submit] {
           color: #FFF;
           border-radius: 3px;
           font-size: 15px;
@@ -104,6 +116,35 @@ body {
           display: block;
           width: 100%;
           height: 37px; }
+  .hero .countdown-row {
+    margin: 0 auto 40px;
+    width: 100%;
+    display: table;
+    text-align: center; }
+  .hero .countdown-section {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 74px;
+    height: 55px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: solid 1px #fff;
+    text-align: center;
+    margin: 10px 15px; }
+  .hero .countdown-amount {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 55px;
+    border-radius: 2px; }
+  .hero .countdown-period {
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0 0 45px;
+    font-weight: 500;
+    text-align: center; }
 
 .join-us-orange {
   padding: 25px 0 30px;
@@ -112,11 +153,13 @@ body {
   .join-us-orange h2 {
     color: #FFF;
     margin: 0 0 16px;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700; }
   .join-us-orange a {
     display: inline-block;
     margin: 0 8px; }
+    .join-us-orange a img {
+      width: 34px; }
 
 .best-brands {
   padding: 75px 0 100px;
@@ -124,11 +167,13 @@ body {
   .best-brands h2 {
     color: #333333;
     margin: 0 0 75px;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700; }
   .best-brands a {
     display: inline-block;
     margin: 0 35px; }
+    .best-brands a img {
+      height: 80px; }
 
 .video-home {
   background: url("../img/highways.jpg") no-repeat center;
@@ -138,11 +183,11 @@ body {
   padding: 35px 0 60px; }
   .video-home h2 {
     text-align: center;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 45px; }
   .video-home p {
-    font-size: 21px;
+    font-size: 16px;
     text-align: left;
     margin-top: 15px;
     padding-left: 35px;
@@ -169,19 +214,21 @@ body {
     text-align: center;
     line-height: 44px;
     color: #333333;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 40px; }
   .illustrations h4 {
     color: #333333;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 500;
     margin: 35px 0 15px; }
   .illustrations p {
     color: #333333;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     margin: 0; }
+  .illustrations img {
+    height: 150px; }
 
 .technology {
   text-align: center;
@@ -190,25 +237,28 @@ body {
   .technology h2 {
     color: #363840;
     font-weight: 700;
-    font-size: 31px;
+    font-size: 25px;
     padding-top: 38px;
     margin: 0 auto 25px;
     width: 300px;
     border-top: 1px solid #ff6a46; }
   .technology p {
     color: #333333;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     margin: 0 auto 35px;
     width: 60%; }
+  .technology img {
+    height: 412px; }
 
 .technologies {
   text-align: center;
   padding-top: 40px; }
   .technologies img {
-    margin: 0 0 70px; }
+    margin: 0 0 70px;
+    height: 182px; }
   .technologies h4 {
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 500;
     color: #333333;
     margin: 20px 0 30px;
@@ -219,7 +269,7 @@ body {
   .technologies p {
     text-align: left;
     color: #333333;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300; }
 
 .blockchain-enables {
@@ -229,14 +279,14 @@ body {
   .blockchain-enables h2 {
     text-align: center;
     line-height: 44px;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 32px; }
   .blockchain-enables ul {
     list-style: none; }
     .blockchain-enables ul li {
       background: url("../img/check.png") no-repeat top 2px left;
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 300;
       margin: 0 0 40px;
       padding-left: 36px; }
@@ -248,20 +298,20 @@ body {
     text-align: center;
     line-height: 44px;
     color: #333333;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 50px; }
   .development-tools h4 {
     padding-left: 27px;
     color: #333333;
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 500;
-    margin: 0 0 -13px; }
+    margin: 0 0 -5px; }
   .development-tools img {
-    width: 100%; }
+    width: 80%; }
   .development-tools a {
     color: #4c7ce8;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 500;
     display: block;
     text-align: center; }
@@ -280,14 +330,14 @@ body {
   text-align: center; }
   .roadmap h2 {
     color: #FFF;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 50px; }
   .roadmap a {
     display: block;
     color: #FFF;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     background: #ff6a46;
     margin: 50px auto 0;
     line-height: 47px;
@@ -301,17 +351,19 @@ body {
   padding-top: 55px;
   padding-bottom: 70px; }
   .dav-alliance p {
-    font-size: 17px;
+    font-size: 15px;
     color: #333333;
     margin: 35px 0;
     font-weight: 300; }
   .dav-alliance h4 {
     font-weight: 700;
-    font-size: 21px;
+    font-size: 17px;
     color: #333333;
     margin: 45px 0 20px;
     text-align: center; }
-  .dav-alliance input {
+  .dav-alliance img {
+    height: 100px; }
+  .dav-alliance input[type=email] {
     border: 1px solid #333;
     line-height: 37px;
     height: 37px;
@@ -319,7 +371,7 @@ body {
     display: block;
     border-radius: 3px;
     padding: 0 5px; }
-  .dav-alliance button {
+  .dav-alliance input[type=submit] {
     border: none;
     color: #FFF;
     background: #ff6a46;
@@ -336,14 +388,16 @@ body {
   .as-seen-on h2 {
     text-align: center;
     color: #333333;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 50px; }
+  .as-seen-on img {
+    height: 150px; }
   .as-seen-on a {
     display: inline-block;
     margin-top: 20px;
     color: #333333;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500; }
     .as-seen-on a:hover {
       text-decoration: none; }
@@ -355,9 +409,11 @@ body {
   text-align: center; }
   .partners h2 {
     color: #333333;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 50px; }
+  .partners img {
+    height: 115px; }
 
 .join-telegram {
   background: #ff6a46;
@@ -365,7 +421,7 @@ body {
   text-align: center;
   padding: 40px 0; }
   .join-telegram h2 {
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 30px; }
   .join-telegram a {
@@ -375,7 +431,7 @@ body {
     border-radius: 3px;
     line-height: 47px;
     height: 47px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     padding: 0 35px; }
     .join-telegram a:hover {
@@ -387,13 +443,14 @@ body {
   padding-top: 50px; }
   .team h2 {
     color: #333333;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 70px;
     text-align: center; }
   .team .team-large a {
     display: block;
     width: 280px;
+    width: 224px;
     margin: 0 auto;
     color: #333333;
     -webkit-transition: all 0.5s ease;
@@ -409,20 +466,22 @@ body {
     .team .team-large a:hover {
       filter: brightness(60%); }
   .team .team-large h4 {
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 500; }
   .team .team-large h5 {
     font-size: 15px;
     font-weight: 500;
     color: #ff6a46; }
   .team .team-large h3 {
-    font-size: 21px;
+    font-size: 17px;
     color: #333333;
     font-weight: 300;
     width: 280px;
     margin: 15px auto 0;
     line-height: 30px;
     min-height: 90px; }
+    .team .team-large h3 + img {
+      height: 152px; }
   .team .team-medium a {
     display: block;
     width: 203px;
@@ -442,7 +501,7 @@ body {
       outline: none; }
   .team .team-medium h4 {
     font-weight: 500;
-    font-size: 21px;
+    font-size: 17px;
     margin: 10px 0 5px; }
   .team .team-medium p {
     font-weight: 300;
@@ -492,17 +551,17 @@ body {
       outline: none; }
   .team-modal .modal-dialog h2 {
     margin: 0 0 10px;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     color: #333; }
   .team-modal .modal-dialog h5 {
     margin: 0 0 10px;
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 500;
     color: #333; }
   .team-modal .modal-dialog p {
     margin: 0 0 25px;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     color: #333; }
     .team-modal .modal-dialog p span {
@@ -521,7 +580,7 @@ body {
   padding-bottom: 50px; }
   .fundraising-goals h2 {
     color: #333333;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 50px;
     text-align: center;
@@ -530,11 +589,13 @@ body {
     width: 300px;
     border-top: 1px solid #ff6a46; }
   .fundraising-goals h4 {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 500;
     color: #333333;
     line-height: 50px;
     margin: 20px 0 30px; }
+  .fundraising-goals img {
+    height: 357px; }
   .fundraising-goals .market-cap {
     width: 1100px;
     margin: 0 auto; }
@@ -548,7 +609,7 @@ body {
     font-weight: 500;
     line-height: 60px;
     background: #c7c7bf;
-    font-size: 21px;
+    font-size: 17px;
     color: #333333;
     text-align: center; }
 
@@ -557,19 +618,19 @@ body {
   padding: 45px 0 80px; }
   .daily-dav h2 {
     color: #333333;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 50px;
     text-align: center; }
   .daily-dav p {
     color: #333333;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     margin: 0 0 25px; }
     .daily-dav p:first-child {
       margin-top: 85px; }
   .daily-dav img {
-    margin-top: 100px;
+    margin-top: 75px;
     width: 100%; }
 
 .crowd-sale {
@@ -578,13 +639,13 @@ body {
   text-align: center; }
   .crowd-sale h3 {
     color: #FFF;
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 700;
     margin: 0 0 20px; }
   .crowd-sale .join-crowd-sale {
     width: 385px;
     margin: 0 auto; }
-    .crowd-sale .join-crowd-sale input {
+    .crowd-sale .join-crowd-sale input[type=email] {
       border: 1px solid #FFF;
       border-radius: 3px;
       background: rgba(255, 255, 255, 0.3);
@@ -595,15 +656,15 @@ body {
       font-weight: 500;
       color: #333;
       font-size: 15px; }
-      .crowd-sale .join-crowd-sale input::-webkit-input-placeholder {
+      .crowd-sale .join-crowd-sale input[type=email]::-webkit-input-placeholder {
         color: #333; }
-      .crowd-sale .join-crowd-sale input:-moz-placeholder {
+      .crowd-sale .join-crowd-sale input[type=email]:-moz-placeholder {
         color: #333; }
-      .crowd-sale .join-crowd-sale input::-moz-placeholder {
+      .crowd-sale .join-crowd-sale input[type=email]::-moz-placeholder {
         color: #333; }
-      .crowd-sale .join-crowd-sale input:-ms-input-placeholder {
+      .crowd-sale .join-crowd-sale input[type=email]:-ms-input-placeholder {
         color: #333; }
-    .crowd-sale .join-crowd-sale button {
+    .crowd-sale .join-crowd-sale input[type=submit] {
       color: #FFF;
       border-radius: 3px;
       font-size: 15px;
@@ -619,7 +680,7 @@ body {
   padding-bottom: 60px; }
   .faq-questions h2 {
     color: #333333;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 50px;
     text-align: center; }
@@ -630,12 +691,13 @@ body {
     margin: 60px 0 0; }
     .faq-questions h3 a {
       color: #333;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 700; }
       .faq-questions h3 a:hover, .faq-questions h3 a:active, .faq-questions h3 a:focus {
         text-decoration: none; }
       .faq-questions h3 a img {
-        margin-left: 10px; }
+        margin-left: 10px;
+        height: 50px; }
   .faq-questions .panel {
     border-bottom: 1px solid #d4d4d4 !important;
     border-radius: 0px;
@@ -645,7 +707,7 @@ body {
     .faq-questions .panel .panel-heading {
       padding: 5px 15px; }
       .faq-questions .panel .panel-heading .panel-title a {
-        font-size: 17px;
+        font-size: 15px;
         color: #333333;
         font-weight: 500;
         display: block;
@@ -666,14 +728,16 @@ footer {
     footer .social a {
       display: inline-block;
       margin: 20px 23px; }
+      footer .social a img {
+        height: 50px; }
   footer h3 {
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 700;
     margin: 30px 0 40px;
     color: #333333;
     text-align: center; }
   footer .links p, footer .links a {
-    font-size: 17px;
+    font-size: 15px;
     color: #271e36;
     font-weight: 300;
     text-decoration: underline;

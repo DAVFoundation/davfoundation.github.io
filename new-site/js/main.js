@@ -45,4 +45,11 @@ $(document).ready(function(){
         scrollTop: $(section).offset().top - offset
       }, 700);
     });
+
+    //countdown
+  // $('#countdown').countdown({until: new Date(2018, 9-1, 13), format: 'dHM'}); 
+  $('#countdown').countdown(
+    {until: $.countdown.UTCDate(-8, new Date(2018, 2, 14)), format: 'dHM'}
+  );
+
 });
