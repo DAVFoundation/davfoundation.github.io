@@ -477,8 +477,7 @@ input {
     font-weight: 300;
     width: 280px;
     margin: 15px auto 0;
-    line-height: 30px;
-    min-height: 90px; }
+    line-height: 30px; }
     .team .team-large h3 + img {
       height: 152px; }
   .team .team-medium a {
