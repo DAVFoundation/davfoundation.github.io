@@ -35,12 +35,30 @@ $(document).ready(function(){
       $('.modal-dialog').css('padding-top', modalTopPadding +'px');
     })
 
+    //thank you modal
+    var url = window.location.href;
+    if(url.indexOf('?thank=you') != -1) {
+        $('#modalThankYou').modal('show');
+    }
+
     // scroll nav
-    $(".nav-scroll").find("a").click(function(e) {
+    $(".nav").find("a.scroll-link").click(function(e) {
       e.preventDefault();
+      $('.navbar-collapse').removeClass('in');
+      $('.navbar-toggle').addClass('collapsed');
       var offset = $('.navbar').height();
       // offset = offset + offset*0.15;
       var section = $(this).attr("href");
+      $("html, body").animate({
+        scrollTop: $(section).offset().top - offset
+      }, 700);
+    });
+
+    $("a[href=#dav-team]").click(function(e) {
+      e.preventDefault();
+      var offset = $('.navbar').height();
+      // offset = offset + offset*0.15;
+      var section = "#team";
       $("html, body").animate({
         scrollTop: $(section).offset().top - offset
       }, 700);

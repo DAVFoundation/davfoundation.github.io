@@ -15,9 +15,6 @@ input {
   float: none;
   vertical-align: top; }
 
-.navbar .navbar-collapse {
-  text-align: center; }
-
 .navbar-nav > li > a {
   font-size: 15px;
   color: #FFF;
@@ -54,7 +51,7 @@ input {
   .hero .hero-inner {
     height: 47.85714285714286vw;
     display: table;
-    width: 99%; }
+    width: 100%; }
     .hero .hero-inner .hero-valign {
       display: table-cell;
       vertical-align: middle;
@@ -97,15 +94,15 @@ input {
           display: block;
           width: 100%;
           padding: 0 5px;
-          color: #ff6a46; }
+          color: #FFF; }
           .hero .hero-inner .hero-valign .hero-join input[type=email]::-webkit-input-placeholder {
-            color: #ff6a46; }
+            color: #FFF; }
           .hero .hero-inner .hero-valign .hero-join input[type=email]:-moz-placeholder {
-            color: #ff6a46; }
+            color: #FFF; }
           .hero .hero-inner .hero-valign .hero-join input[type=email]::-moz-placeholder {
-            color: #ff6a46; }
+            color: #FFF; }
           .hero .hero-inner .hero-valign .hero-join input[type=email]:-ms-input-placeholder {
-            color: #ff6a46; }
+            color: #FFF; }
         .hero .hero-inner .hero-valign .hero-join input[type=submit] {
           color: #FFF;
           border-radius: 3px;
@@ -185,27 +182,29 @@ input {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
-    margin: 0 0 45px; }
+    margin: 0 0 45px;
+    line-height: 44px; }
   .video-home p {
     font-size: 16px;
     text-align: left;
     margin-top: 15px;
     padding-left: 35px;
     padding-right: 35px; }
-  .video-home .videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0; }
-    .video-home .videoWrapper iframe {
-      padding-right: 35px;
-      padding-left: 35px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .videoWrapper iframe {
+    padding-right: 35px;
+    padding-left: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 .illustrations {
   padding-top: 75px;
@@ -750,5 +749,190 @@ footer {
     color: #271e36;
     text-align: center;
     margin-top: 40px; }
+
+@media (max-width: 1400px) {
+  .nav > li > a {
+    padding: 10px; }
+
+  .navbar-brand {
+    padding: 10px; } }
+@media (max-width: 1025px) {
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  textarea {
+    -webkit-appearance: none; }
+
+  .best-brands a img {
+    height: 75px; }
+
+  .roadmap img {
+    width: 90%; }
+
+  .fundraising-goals .market-cap {
+    width: 100%; }
+
+  .as-seen-on img {
+    height: 100px; }
+
+  .daily-dav p:first-child {
+    margin-top: 30px; }
+
+  .daily-dav img {
+    margin-top: 55px; }
+
+  .videoWrapper iframe {
+    padding: 0px; }
+
+  .video-home p {
+    padding: 0px; }
+
+  .team .team-small a {
+    min-height: 280px;
+    margin: auto; } }
+@media (max-width: 992px) {
+  .nav > li > a {
+    padding: 10px 5px; }
+
+  .best-brands a img {
+    height: 48px; }
+
+  .illustrations img {
+    height: 100px; }
+
+  .technologies img {
+    height: 150px; }
+
+  .technology img {
+    height: auto;
+    width: 90%; }
+
+  .as-seen-on img {
+    height: 80px; }
+
+  .development-tools h4 {
+    margin-top: 40px; }
+  .development-tools img {
+    width: 100%; }
+
+  .fundraising-goals p {
+    font-size: 13px; }
+
+  .team .team-medium a,
+  .team .team-large h3,
+  .team .team-large a {
+    width: 100%; }
+
+  .team-modal .modal-dialog {
+    width: 100%; }
+
+  .navbar-right {
+    margin-right: 5px; } }
+@media (max-width: 767px) {
+  .navbar-toggle .icon-bar {
+    background: #ff6a46; }
+
+  .navbar-fixed-top {
+    background: #FFF; }
+    .navbar-fixed-top li > a {
+      color: #333; }
+
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 100%; }
+
+  .navbar-toggle span.icon-bar {
+    height: 3px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+  .navbar-toggle span.icon-bar:nth-child(2) {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none; }
+
+  .navbar-toggle:not(.collapsed) span.icon-bar {
+    visibility: hidden; }
+
+  .navbar-toggle:not(.collapsed) span.icon-bar:nth-child(3) {
+    visibility: visible;
+    width: 20px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+  .navbar-toggle:not(.collapsed) span.icon-bar:nth-child(4) {
+    visibility: visible;
+    width: 20px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -3px; }
+
+  ul.nav {
+    float: left;
+    width: 50%;
+    padding-left: 15px; }
+
+  .crowd-sale .join-crowd-sale,
+  .hero .hero-inner .hero-valign .hero-join {
+    width: 320px; }
+
+  .hero .hero-inner .hero-valign h1 {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 50px; }
+
+  .hero .hero-inner .hero-valign h5 {
+    margin: 0 0 20px;
+    font-size: 12px; }
+
+  .best-brands a {
+    margin: 0px; }
+    .best-brands a img {
+      height: 70px;
+      margin: 30px 15px; }
+
+  .illustrations img {
+    margin-top: 50px; }
+
+  .technology p {
+    width: 90%; }
+
+  .technologies {
+    padding-top: 0px;
+    padding-bottom: 40px; }
+    .technologies img {
+      margin: 50px 0 0; }
+
+  .blockchain-enables ul {
+    padding-left: 5px; }
+
+  .as-seen-on h2 {
+    margin: 0px; }
+  .as-seen-on div {
+    text-align: center !important; }
+
+  .fundraising-goals img {
+    width: 90%;
+    height: auto; }
+
+  .partners .row {
+    margin: 0px; }
+
+  .team-modal .modal-dialog button.close {
+    position: relative;
+    z-index: 1999; }
+
+  .modal-dialog {
+    margin: 0px; }
+
+  .team-modal .modal-dialog h2 {
+    margin: 10px 0; }
+
+  .daily-dav img {
+    width: 100px;
+    margin: 0 auto;
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
