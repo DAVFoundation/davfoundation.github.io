@@ -648,28 +648,29 @@ input {
       border: 1px solid #FFF;
       border-radius: 3px;
       background: rgba(255, 255, 255, 0.3);
+      background: transparent;
       height: 37px;
       display: block;
       width: 100%;
       padding: 0 10px;
       font-weight: 500;
-      color: #333;
+      color: #FFF;
       font-size: 15px; }
       .crowd-sale .join-crowd-sale input[type=email]::-webkit-input-placeholder {
-        color: #333; }
+        color: #FFF; }
       .crowd-sale .join-crowd-sale input[type=email]:-moz-placeholder {
-        color: #333; }
+        color: #FFF; }
       .crowd-sale .join-crowd-sale input[type=email]::-moz-placeholder {
-        color: #333; }
+        color: #FFF; }
       .crowd-sale .join-crowd-sale input[type=email]:-ms-input-placeholder {
-        color: #333; }
+        color: #FFF; }
     .crowd-sale .join-crowd-sale input[type=submit] {
-      color: #FFF;
       border-radius: 3px;
       font-size: 15px;
       font-weight: bold;
-      background: #333;
-      border: none;
+      color: #ff6a46;
+      background: #FFF;
+      border: 1px solid #FFF;
       display: block;
       width: 100%;
       height: 37px; }
@@ -764,7 +765,7 @@ footer {
     -webkit-appearance: none; }
 
   .best-brands a img {
-    height: 75px; }
+    height: 60px; }
 
   .roadmap img {
     width: 90%; }
@@ -794,8 +795,8 @@ footer {
   .nav > li > a {
     padding: 10px 5px; }
 
-  .best-brands a img {
-    height: 48px; }
+  .best-brands a {
+    margin: 15px 35px; }
 
   .illustrations img {
     height: 100px; }
