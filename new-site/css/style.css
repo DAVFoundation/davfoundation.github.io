@@ -347,8 +347,12 @@ input {
       text-decoration: none; }
 
 .dav-alliance {
-  padding-top: 55px;
   padding-bottom: 70px; }
+  .dav-alliance .alliance-logo {
+    padding-top: 50px;
+    width: 300px;
+    margin: 0 auto;
+    border-top: 1px solid #ff6a46; }
   .dav-alliance p {
     font-size: 15px;
     color: #333333;
@@ -582,10 +586,7 @@ input {
     font-weight: 700;
     margin: 0 0 50px;
     text-align: center;
-    padding-top: 50px;
-    margin: 0 auto 25px;
-    width: 300px;
-    border-top: 1px solid #ff6a46; }
+    margin: 0 auto 25px; }
   .fundraising-goals h4 {
     font-size: 19px;
     font-weight: 500;
