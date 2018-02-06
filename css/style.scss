@@ -563,7 +563,9 @@ height: 0;
 				-moz-transition: all 0.5s ease;
 				transition: all 0.5s ease;
 			img{
-				width: 100%;
+		    	width: 65%;
+    			margin: 0 auto;
+    			display: block;
 			}
 			.row img{
 				width: auto;
@@ -608,7 +610,9 @@ height: 0;
 				-moz-transition: all 0.5s ease;
 				transition: all 0.5s ease;
 			img{
-				width: 100%;
+				width: 65%;
+    			margin: 0 auto;
+    			display: block;
 			}
 			.row img{
 				width: auto;
@@ -642,7 +646,9 @@ height: 0;
 				-moz-transition: all 0.5s ease;
 				transition: all 0.5s ease;
 			img{
-				width: 100%;
+			    width: 65%;
+    			margin: 0 auto;
+    			display: block;
 			}
 			.row{
 				margin: 0px;
@@ -688,6 +694,11 @@ height: 0;
 			&:focus,&:active{
 				outline: none;
 			}
+		}
+		br + img{
+		    width: 65%;
+    		margin: 0 auto;
+    		display: block;
 		}
 		h2{
 			margin: 0 0 10px;

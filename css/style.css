@@ -460,7 +460,9 @@ input {
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease; }
     .team .team-large a img {
-      width: 100%; }
+      width: 65%;
+      margin: 0 auto;
+      display: block; }
     .team .team-large a .row img {
       width: auto;
       margin-top: 10px; }
@@ -493,7 +495,9 @@ input {
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease; }
     .team .team-medium a img {
-      width: 100%; }
+      width: 65%;
+      margin: 0 auto;
+      display: block; }
     .team .team-medium a .row img {
       width: auto;
       margin-top: 15px; }
@@ -518,7 +522,9 @@ input {
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease; }
     .team .team-small a img {
-      width: 100%; }
+      width: 65%;
+      margin: 0 auto;
+      display: block; }
     .team .team-small a .row {
       margin: 0px; }
       .team .team-small a .row > div {
@@ -551,6 +557,10 @@ input {
     font-size: 36px; }
     .team-modal .modal-dialog button.close:focus, .team-modal .modal-dialog button.close:active {
       outline: none; }
+  .team-modal .modal-dialog br + img {
+    width: 65%;
+    margin: 0 auto;
+    display: block; }
   .team-modal .modal-dialog h2 {
     margin: 0 0 10px;
     font-size: 25px;
