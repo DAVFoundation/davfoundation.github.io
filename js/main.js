@@ -33,13 +33,16 @@ $(document).ready(function(){
       var modalTopPadding = (windowHeight - modalHeight)/2 - 30;
       // var modalTopPadding = (windowHeight + windowHeight*0.18 - modalHeight)/2 - 30;
       $('.modal-dialog').css('padding-top', modalTopPadding +'px');
-    })
+    });
 
     //thank you modal
     var url = window.location.href;
     if(url.indexOf('?thank=you') != -1) {
         $('#modalThankYou').modal('show');
     }
+    $('#modalThankYou').on('hidden.bs.modal', function (e) {
+      document.location.href="/";
+    });
 
     // scroll nav
     $(".nav").find("a.scroll-link").click(function(e) {
