@@ -801,6 +801,21 @@ height: 0;
 		margin-top: 75px;
 		width: 100%;
 	}
+	a{
+		color: #4c7ce8;
+		font-size: 14px;
+		font-weight: 500;
+		span{
+			border-bottom: 1px solid #4c7ce8;
+		}
+		img{
+			width: auto;
+			margin: 0 0 0 5px;
+		}
+		&:active,&:focus,&:hover{
+			text-decoration: none;
+		}
+	}
 }
 .crowd-sale{
 	background: $orange;
@@ -1104,7 +1119,7 @@ footer{
     	margin-top: -3px;
 	}
 	ul.nav{
-		float: left;
+		float: left !important;
 		width: 50%;
 		padding-left: 15px;
 	}
@@ -1120,6 +1135,9 @@ footer{
 	.hero .hero-inner .hero-valign h5{
 		margin: 0 0 20px;
 		font-size: 12px;
+	}
+	.join-us-orange a{
+		margin: 10px 25px;
 	}
 	.best-brands{
 		a{

@@ -641,6 +641,17 @@ input {
   .daily-dav img {
     margin-top: 75px;
     width: 100%; }
+  .daily-dav a {
+    color: #4c7ce8;
+    font-size: 14px;
+    font-weight: 500; }
+    .daily-dav a span {
+      border-bottom: 1px solid #4c7ce8; }
+    .daily-dav a img {
+      width: auto;
+      margin: 0 0 0 5px; }
+    .daily-dav a:active, .daily-dav a:focus, .daily-dav a:hover {
+      text-decoration: none; }
 
 .crowd-sale {
   background: #ff6a46;
@@ -881,7 +892,7 @@ footer {
     margin-top: -3px; }
 
   ul.nav {
-    float: left;
+    float: left !important;
     width: 50%;
     padding-left: 15px; }
 
@@ -897,6 +908,9 @@ footer {
   .hero .hero-inner .hero-valign h5 {
     margin: 0 0 20px;
     font-size: 12px; }
+
+  .join-us-orange a {
+    margin: 10px 25px; }
 
   .best-brands a {
     margin: 0px; }
