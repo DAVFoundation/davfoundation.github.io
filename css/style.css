@@ -852,7 +852,10 @@ footer {
     width: 100%; }
 
   .navbar-right {
-    margin-right: 5px; } }
+    margin-right: 5px; }
+    .navbar-right img {
+      margin-right: 0px;
+      width: 27px; } }
 @media (max-width: 767px) {
   .navbar-nav > li > a {
     font-size: 15px; }

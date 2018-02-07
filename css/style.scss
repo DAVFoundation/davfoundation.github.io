@@ -1075,6 +1075,10 @@ footer{
 	}
 	.navbar-right {
     	margin-right: 5px;
+    	img{
+    		margin-right: 0px;
+    		width: 27px;
+    	}
 	}
 }
 @media (max-width: 767px) {
