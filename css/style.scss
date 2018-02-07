@@ -988,6 +988,9 @@ footer{
 	textarea {
 	    -webkit-appearance: none;
 	}
+	.navbar-nav>li>a{
+		font-size: 13px;
+	}
 	.best-brands{
 		a{
 			img{
@@ -1075,6 +1078,9 @@ footer{
 	}
 }
 @media (max-width: 767px) {
+	.navbar-nav>li>a{
+		font-size: 15px;
+	}
 	.navbar-toggle .icon-bar{
 		background: $orange;
 	}
