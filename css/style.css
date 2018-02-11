@@ -328,6 +328,9 @@ input {
   background-size: cover;
   padding: 60px 0 55px;
   text-align: center; }
+  .roadmap img {
+    width: 90%;
+    max-width: 1270px; }
   .roadmap h2 {
     color: #FFF;
     font-size: 25px;
@@ -791,9 +794,6 @@ footer {
 
   .best-brands a img {
     height: 60px; }
-
-  .roadmap img {
-    width: 90%; }
 
   .fundraising-goals .market-cap {
     width: 100%; }

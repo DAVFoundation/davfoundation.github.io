@@ -404,6 +404,10 @@ height: 0;
 	}
 }
 .roadmap{
+	img{
+		width: 90%;
+		max-width: 1270px;
+	}
 	background: url('../img/city.jpg') no-repeat center;
 	background-size: cover;
 	padding: 60px 0 55px;
@@ -437,7 +441,7 @@ height: 0;
 		width: 300px;
 		margin: 0 auto;
 		border-top: 1px solid $orange;
-	}	
+	}
 	p{
 		font-size: 15px;
 		color: #333333;
@@ -997,11 +1001,6 @@ footer{
 			img{
 				height: 60px;
 			}
-		}
-	}
-	.roadmap{
-		img{
-			width: 90%;
 		}
 	}
 	.fundraising-goals{
