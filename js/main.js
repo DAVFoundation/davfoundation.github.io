@@ -73,12 +73,13 @@ $(document).ready(function(){
       "https://www.googleapis.com/youtube/v3/channels",{
         part: 'contentDetails',
         id: channelID,
-        key: 'AIzaSyCveKJOnfiDIpLysaTFvqw2WNi3IT1hWCY'
+        key: 'AIzaSyDFsWKhs1WKWskhk6DErKtNCy-TR57EPbM'
       },function(data){
         $.each(data.items,function(i, item){
           // console.log(item);
           pid = item.contentDetails.relatedPlaylists.uploads;
-          pid = "PLpqJF_iMOExd-la7-aIFbcOd1WN4RwzWU";
+          pid = "PLpqJF_iMOExdrA0eJjhIk1Ies4jqAXawD";
+          // pid = "PLpqJF_iMOExd-la7-aIFbcOd1WN4RwzWU";
           getVids(pid);
         });
       }
@@ -88,9 +89,9 @@ $(document).ready(function(){
       $.get(
       "https://www.googleapis.com/youtube/v3/playlistItems",{
         part: 'snippet',
-        maxResults: 5,
+        maxResults: 1,
         playlistId: pid,
-        key: 'AIzaSyCveKJOnfiDIpLysaTFvqw2WNi3IT1hWCY'
+        key: 'AIzaSyDFsWKhs1WKWskhk6DErKtNCy-TR57EPbM'
       },function(data){
         var output;
         $.each(data.items,function(i, item){
