@@ -67,6 +67,47 @@ $(document).ready(function(){
       }, 700);
     });
 
+    //daily video
+    var channelID = 'UCPuAOygDwCiLOdLosiQJJ1w';
+    $.get(
+      "https://www.googleapis.com/youtube/v3/channels",{
+        part: 'contentDetails',
+        id: channelID,
+        key: 'AIzaSyCveKJOnfiDIpLysaTFvqw2WNi3IT1hWCY'
+      },function(data){
+        $.each(data.items,function(i, item){
+          // console.log(item);
+          pid = item.contentDetails.relatedPlaylists.uploads;
+          pid = "PLpqJF_iMOExd-la7-aIFbcOd1WN4RwzWU";
+          getVids(pid);
+        });
+      }
+    );
+
+    function getVids(pid){
+      $.get(
+      "https://www.googleapis.com/youtube/v3/playlistItems",{
+        part: 'snippet',
+        maxResults: 5,
+        playlistId: pid,
+        key: 'AIzaSyCveKJOnfiDIpLysaTFvqw2WNi3IT1hWCY'
+      },function(data){
+        var output;
+        $.each(data.items,function(i, item){
+          // console.log(item);
+          // videoTitle = item.snippet.title;
+          videoId = item.snippet.resourceId.videoId;
+          // thumbnail = item.snippet.thumbnails.medium.url;
+          // channelTitle = item.snippet.channelTitle;
+          // output = '<div><div><a href="#" class="thumb-link" id="' + videoId + '"><img src="' + thumbnail + '"><br> <h5>' + videoTitle + '</h5></a></div></div>';
+          output = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + videoId + '?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+          //Append videos to carousel
+            $('#daily-video').append(output);
+        })
+      }
+    );
+    }
+
     //countdown
   // $('#countdown').countdown(
   //   {until: $.countdown.UTCDate(-8, new Date(2018, 2, 14)), format: 'dHM'}
