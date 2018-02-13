@@ -402,6 +402,18 @@ height: 0;
 			text-decoration: none;
 		}
 	}
+	.laptop{
+		position: relative;
+		video{
+			position: absolute;
+			top: 55px;
+			left: 50%;
+			width: 232px;
+			height: 143px;
+			margin-left: -114px;
+			object-fit: fill;
+		}
+	}
 }
 .roadmap{
 	img{

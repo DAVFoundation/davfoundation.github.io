@@ -322,6 +322,16 @@ input {
       margin-left: 5px; }
     .development-tools a:hover {
       text-decoration: none; }
+  .development-tools .laptop {
+    position: relative; }
+    .development-tools .laptop video {
+      position: absolute;
+      top: 55px;
+      left: 50%;
+      width: 232px;
+      height: 143px;
+      margin-left: -114px;
+      object-fit: fill; }
 
 .roadmap {
   background: url("../img/city.jpg") no-repeat center;

@@ -109,9 +109,20 @@ $(document).ready(function(){
     );
     }
 
+    
+
     //countdown
   // $('#countdown').countdown(
   //   {until: $.countdown.UTCDate(-8, new Date(2018, 2, 14)), format: 'dHM'}
   // );
 
 });
+
+//dav cli clip
+    var vidShowAndTell = document.querySelector('video');
+    // Start playing the video as soon as the user scrolls
+    var scrollAction = function() {
+      window.removeEventListener('scroll', scrollAction);
+      vidShowAndTell.play();
+    };
+    window.addEventListener('scroll', scrollAction);
