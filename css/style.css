@@ -306,7 +306,8 @@ input {
     color: #333333;
     font-size: 17px;
     font-weight: 500;
-    margin: 0 0 -5px; }
+    margin: 0 0 -5px;
+    text-align: center; }
   .development-tools img {
     width: 100%; }
   .development-tools a {
