@@ -378,6 +378,18 @@ input {
     color: #333333;
     margin: 45px 0 20px;
     text-align: center; }
+  .dav-alliance a[href='#modalMessage'] {
+    background: #ff6a46;
+    color: #FFF;
+    padding: 10px 15px;
+    font-size: 17px;
+    border-radius: 3px;
+    height: 47px;
+    font-weight: 500;
+    margin: 20px 0 0;
+    display: inline-block; }
+    .dav-alliance a[href='#modalMessage']:focus, .dav-alliance a[href='#modalMessage']:active, .dav-alliance a[href='#modalMessage']:hover {
+      text-decoration: none; }
   .dav-alliance img {
     height: 100px; }
   .dav-alliance input[type=email] {
@@ -398,6 +410,40 @@ input {
     display: block;
     width: 100%;
     height: 37px; }
+
+.alliance-modal.team-modal .modal-dialog {
+  width: 360px; }
+.alliance-modal.team-modal input[type=text] {
+  display: block;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 3px;
+  height: 37px;
+  margin: 0 0 15px;
+  padding: 0 10px; }
+.alliance-modal.team-modal label {
+  width: 100%;
+  display: block;
+  color: #333;
+  font-size: 15px; }
+  .alliance-modal.team-modal label.error {
+    color: #ff6a46;
+    margin: -10px 0 10px; }
+.alliance-modal.team-modal input[type=submit] {
+  border-radius: 3px;
+  background: #ff6a46;
+  color: #FFF;
+  border: none;
+  height: 37px;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 700; }
+.alliance-modal.team-modal h4 {
+  text-align: center;
+  margin: 10px 0;
+  color: #333; }
+.alliance-modal.team-modal .modal-dialog .modal-content .modal-body {
+  padding-bottom: 15px; }
 
 .as-seen-on {
   padding: 40px 0 60px;

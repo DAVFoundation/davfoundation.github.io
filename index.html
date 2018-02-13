@@ -739,12 +739,13 @@ so that we may collaborate on standards and innovations for a global AV network.
           </div>
 
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-              <h4>Join the Alliance</h4>
+            <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center">
+              <!-- <h4>Join the Alliance</h4> -->
+              <a href="#modalMessage" data-toggle="modal" data-target="#modalMessage">Join the Alliance</a>
 
               <!-- Begin MailChimp Signup Form -->
 
-              <div id="mc_embed_signup">
+              <div id="mc_embed_signup" class="hide">
                 <form action="https://network.us16.list-manage.com/subscribe/post?u=8cbc69b6acf3e3436662993bd&amp;id=b382a18f84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <div id="mc_embed_signup_scroll">
 
@@ -1693,12 +1694,52 @@ so that we may collaborate on standards and innovations for a global AV network.
       </div>
     </div>
 
+    <div class="modal team-modal alliance-modal" id="modalMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <br>
+            <br>
+            <form id="contactForm" action="alick@dav.network" method="POST">
+              <input type="hidden" name="_subject" value="New member joining the Alliance!" />
+             <div class="row">
+                 <div class="col-sm-12">
+                   <label for="name">Name</label>
+                   <input type="text" id="Name" name="Name" required>
+
+                   <label for="name">Company</label>
+                   <input type="text" id="Company" name="Company" required>
+
+                   <label for="name">Title</label>
+                   <input type="text" id="Title" name="Title" required>
+
+                   <label for="email">Work E-mail</label>
+                   <input type="text" id="Email" name="Email" required>
+                 </div>
+                 <!-- <div class="col-sm-6">
+                   <label for="message">Message</label>
+                   <textarea id="message" name="message" required></textarea>
+                 </div> -->
+             </div>
+             <input type="submit" value="Join Us">
+             
+             <div id="messageBox"></div> 
+           </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" data-cfasync="false"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js" type="text/javascript" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js" type="text/javascript" data-cfasync="false"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" data-cfasync="false"></script>
     <script src="js/main.js" type="text/javascript" data-cfasync="false"></script>
 
   </body>

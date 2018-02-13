@@ -467,6 +467,20 @@ height: 0;
 		margin: 45px 0 20px;
 		text-align: center
 	}
+	a[href='#modalMessage']{
+		background: $orange;
+		color: #FFF;
+		padding: 10px 15px;
+		font-size: 17px;
+		border-radius: 3px;
+		height: 47px;
+		font-weight: 500;
+		margin: 20px 0 0;
+		display: inline-block;
+		&:focus,&:active,&:hover{
+			text-decoration: none;
+		}
+	}
 	img{
 		height: 100px;
 	}
@@ -490,6 +504,52 @@ height: 0;
 		width: 100%;
 		height: 37px;
 	}
+}
+.alliance-modal.team-modal{
+	.modal-dialog{
+		width: 360px;
+	}
+	input[type=text]{
+		display: block;
+		width: 100%;
+		border: 1px solid #333;
+		border-radius: 3px;
+		height: 37px;
+		margin: 0 0 15px;
+		padding: 0 10px;
+	}
+	label{
+		width: 100%;
+		display: block;
+		color: #333;
+		font-size: 15px;
+		&.error{
+			color: $orange;
+			margin: -10px 0 10px;
+		}
+	}
+	input[type=submit]{
+		border-radius: 3px;
+		background: $orange;
+		color: #FFF;
+		border: none;
+		height: 37px;
+		padding: 0 10px;
+		font-size: 15px;
+		font-weight: 700;
+	}
+	h4{
+		text-align: center;
+		margin: 10px 0;
+		color: #333;
+	}
+	.modal-dialog{
+		.modal-content{
+			.modal-body{
+				padding-bottom: 15px;
+			}
+		}	
+	}	
 }
 .as-seen-on{
 	padding: 40px 0 60px;
