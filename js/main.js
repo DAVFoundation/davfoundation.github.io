@@ -110,47 +110,47 @@ $(document).ready(function(){
     }
 
 
-    // $("#contactForm").validate({
-    //       ignore: ":hidden",
-    //       rules: {
-    //           Name: {
-    //               required: true,
-    //               minlength: 3
-    //           },
-    //           Company: {
-    //               required: true,
-    //               minlength: 3
-    //           },
-    //           Title: {
-    //               required: true,
-    //               minlength: 3
-    //           },
-    //           Email: {
-    //               required: true
-    //           }//,
-    //           // message: {
-    //           //     required: true,
-    //           //     minlength: 10
-    //           // }
-    //       },
-    //       submitHandler: function (form) {
-    //           $.ajax({
-    //               type: "POST",
-    //               url: "https://formspree.io/alick@dav.network",
-    //               data: $(form).serialize(),
-    //               dataType: "json",
-    //               success: function () {
-    //                   // $(form).html("<div id='message'></div>");
-    //                   $('#messageBox')
-    //                       .fadeIn(1500, function () {
-    //                       $('#messageBox').append("<h4>Your message was sent!</h4>");
-    //                   });
-    //                   $(form)[0].reset();
-    //               }
-    //           });
-    //           return false; // required to block normal submit since you used ajax
-    //       }
-    //   });
+    $("#contactForm").validate({
+          ignore: ":hidden",
+          rules: {
+              Name: {
+                  required: true,
+                  minlength: 3
+              },
+              Company: {
+                  required: true,
+                  minlength: 3
+              },
+              Title: {
+                  required: true,
+                  minlength: 3
+              },
+              Email: {
+                  required: true
+              }//,
+              // message: {
+              //     required: true,
+              //     minlength: 10
+              // }
+          },
+          submitHandler: function (form) {
+              $.ajax({
+                  type: "POST",
+                  url: "https://formspree.io/alick@dav.network",
+                  data: $(form).serialize(),
+                  dataType: "json",
+                  success: function () {
+                      // $(form).html("<div id='message'></div>");
+                      $('#messageBox')
+                          .fadeIn(1500, function () {
+                          $('#messageBox').append("<h4>Your message was sent!</h4>");
+                      });
+                      $(form)[0].reset();
+                  }
+              });
+              return false; // required to block normal submit since you used ajax
+          }
+      });
     
 
     //countdown
