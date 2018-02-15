@@ -152,7 +152,41 @@ $(document).ready(function(){
           }
       });
     
-
+  // media galley
+  $('.slick-gallery').slick({
+  nextArrow: '<img class="arrow-right" src="img/media/arrow-right.png" />',
+  prevArrow: '<img class="arrow-left" src="img/media/arrow-left.png" />',
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
     //countdown
   // $('#countdown').countdown(
   //   {until: $.countdown.UTCDate(-8, new Date(2018, 3, 30)), format: 'dHM'}
