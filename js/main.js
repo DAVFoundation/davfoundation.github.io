@@ -151,6 +151,18 @@ $(document).ready(function(){
               return false; // required to block normal submit since you used ajax
           }
       });
+
+  // show more media press
+  $("a.show-more").click(function(e) {
+      e.preventDefault();
+      $(".hidden-press").fadeToggle();
+      var word = $(this).find("span");
+      if( word.text() == 'more'){
+        word.text("less");
+      }else{
+        word.text("more");
+      }
+  });
     
   // media galley
   $('.slick-gallery').slick({

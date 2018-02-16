@@ -949,6 +949,9 @@ footer {
     top: 25%;
     cursor: pointer; }
 
+.hidden-press {
+  display: none; }
+
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }
