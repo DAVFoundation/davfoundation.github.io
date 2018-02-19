@@ -518,6 +518,16 @@ height: 0;
 		margin: 0 0 15px;
 		padding: 0 10px;
 	}
+	textarea{
+		display: block;
+		width: 100%;
+		border: 1px solid #333;
+		border-radius: 3px;
+		min-height: 100px;
+		margin: 0 0 15px;
+		padding: 10px;
+		resize: none;
+	}
 	label{
 		width: 100%;
 		display: block;
