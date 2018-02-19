@@ -1229,7 +1229,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     width: 96%;
 }
 .alert-announcement{
-	background: rgba(0,0,0,0.7);
+	background: rgba(255,255,255,0.3);
 	color: #FFF;
 	border-radius: 0px;
 	padding: 30px 15px;
@@ -1508,7 +1508,13 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     	display: block;
 	}
 	.alert-announcement{
+		bottom: 10px;
+		margin-bottom: 0px;
 		padding: 15px;
+		p{
+			font-size: 13px;
+			line-height: 20px;
+		}
 	}
 }
 // @media (min-width: 768px) {
