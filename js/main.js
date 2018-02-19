@@ -110,7 +110,7 @@ $(document).ready(function(){
     }
 
 
-    $("#contactForm1").validate({
+    $("#contactForm").validate({
           ignore: ":hidden",
           rules: {
               Name: {
