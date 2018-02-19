@@ -891,6 +891,14 @@ footer {
   margin: 55px 0 40px; }
 .media-articles a:hover, .media-articles a:active, .media-articles a:focus {
   text-decoration: none; }
+.media-articles a.show-articles {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #f1f1f2;
+  color: #ff6a46;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 3px; }
 .media-articles a article {
   position: relative;
   min-height: 380px;
@@ -949,7 +957,7 @@ footer {
     top: 25%;
     cursor: pointer; }
 
-.hidden-press {
+.hidden-press, .hidden-articles {
   display: none; }
 
 @media (max-width: 1400px) {

@@ -1131,6 +1131,15 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		&:focus{
 			text-decoration: none;
 		}
+		&.show-articles{
+			display: inline-block;
+			padding: 10px 15px;
+			background: #f1f1f2;
+			color: $orange;
+			font-size: 15px;
+			font-weight: 500;
+			border-radius: 3px;
+		}
 		article{
 			position: relative;
 			min-height: 380px;
@@ -1200,7 +1209,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		cursor: pointer;
 	}
 }
-.hidden-press{
+.hidden-press,.hidden-articles{
 	display: none;
 }
 // media queries

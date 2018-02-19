@@ -163,6 +163,17 @@ $(document).ready(function(){
         word.text("more");
       }
   });
+
+  $("a.show-articles").click(function(e) {
+      e.preventDefault();
+      $(".hidden-articles").fadeToggle();
+      var word = $(this).find("span");
+      if( word.text() == 'more'){
+        word.text("less");
+      }else{
+        word.text("more");
+      }
+  });
     
   // media galley
   $('.slick-gallery').slick({
