@@ -228,3 +228,11 @@ $(document).ready(function(){
       vidShowAndTell.play();
     };
     window.addEventListener('scroll', scrollAction);
+
+
+    var announcementTrigger = document.querySelector('.video-home');
+    var scrollAnouncement = function() {
+      window.removeEventListener('scroll', scrollAnouncement);
+      $("#alert-announcement").removeClass('hide');
+    };
+    window.addEventListener('scroll', scrollAnouncement);

@@ -979,6 +979,7 @@ footer {
 
 .alert-announcement {
   background: rgba(255, 255, 255, 0.3);
+  background: rgba(55, 201, 182, 0.9);
   color: #FFF;
   border-radius: 0px;
   padding: 30px 15px; }
