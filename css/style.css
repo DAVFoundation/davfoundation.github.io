@@ -965,6 +965,8 @@ footer {
     right: -59px;
     top: 25%;
     cursor: pointer; }
+  .media-gallery a:hover, .media-gallery a:active, .media-gallery a:focus {
+    outline: none; }
 
 .hidden-press, .hidden-articles {
   display: none; }
@@ -1215,6 +1217,9 @@ footer {
     width: 100px;
     margin: 0 auto;
     display: block; }
+
+  .media-gallery img {
+    margin: 0 auto; }
 
   .alert-announcement {
     bottom: 10px;

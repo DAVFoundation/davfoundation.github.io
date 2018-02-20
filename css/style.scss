@@ -1218,6 +1218,13 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		top: 25%;
 		cursor: pointer;
 	}
+	a{
+		&:hover,
+		&:active,
+		&:focus{
+			outline: none;
+		}
+	}
 }
 .hidden-press,.hidden-articles{
 	display: none;
@@ -1506,6 +1513,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     	width: 100px;
     	margin: 0 auto;
     	display: block;
+	}
+	.media-gallery img {
+    	margin: 0 auto;
 	}
 	.alert-announcement{
 		bottom: 10px;
