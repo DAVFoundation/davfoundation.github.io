@@ -1003,6 +1003,152 @@ footer {
       text-decoration: underline !important;
       font-weight: 700; }
 
+.hero.hero-prototypes {
+  background: url(../img/prototypes/hero.jpg) no-repeat center;
+  background-size: cover; }
+  .hero.hero-prototypes h1 {
+    margin: 15% 0 !important; }
+  .hero.hero-prototypes h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px; }
+  .hero.hero-prototypes p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px; }
+    .hero.hero-prototypes p span {
+      font-weight: 700; }
+  .hero.hero-prototypes #iphonex {
+    margin-top: -90px; }
+  .hero.hero-prototypes #drone {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    -webkit-animation: balls 4s infinite;
+    animation: balls 4s infinite;
+    -webkit-animation-timing-function: cubic-bezier;
+    animation-timing-function: cubic-bezier; }
+  .hero.hero-prototypes a {
+    display: block;
+    color: #ff6a46;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px; }
+
+@-webkit-keyframes balls {
+  from {
+    -webkit-transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(70px); }
+  to {
+    -webkit-transform: translateY(0); } }
+@keyframes balls {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(70px); }
+  to {
+    transform: translateY(0); } }
+.dav-cli {
+  background: url(../img/prototypes/orange-bg.jpg) no-repeat center;
+  background-size: cover;
+  color: #FFF;
+  padding-top: 120px; }
+  .dav-cli h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px; }
+    .dav-cli h2#portal-title {
+      margin-top: 170px; }
+  .dav-cli p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px; }
+    .dav-cli p span {
+      font-weight: 700; }
+  .dav-cli #laptop {
+    margin-top: -30px; }
+  .dav-cli a {
+    display: block;
+    color: #fff;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px; }
+    .dav-cli a#developer-portal-link {
+      margin-bottom: 25px; }
+  .dav-cli #car {
+    margin-top: 54px; }
+
+.dav-portal {
+  background: #363840 url(../img/prototypes/orange-links.png) no-repeat center bottom;
+  background-size: 100%;
+  height: 45.71428571428571vw;
+  text-align: center; }
+  .dav-portal img {
+    margin-top: -165px;
+    margin-left: 315px;
+    position: relative;
+    z-index: 2; }
+
+.block-explorer {
+  background: #dfe2ec;
+  color: #363840; }
+  .block-explorer img {
+    width: 100%;
+    margin-top: 42px;
+    margin-bottom: 1px; }
+  .block-explorer h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 32% 0 20px; }
+  .block-explorer p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px; }
+    .block-explorer p span {
+      font-weight: 700; }
+  .block-explorer a {
+    display: block;
+    color: #363840;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 18px; }
+
+.mission-control, .search-rescue {
+  color: #2b2d33;
+  padding-top: 110px;
+  padding-bottom: 110px; }
+  .mission-control img, .search-rescue img {
+    width: 100%; }
+  .mission-control h2, .search-rescue h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 40px 0 20px; }
+    .mission-control h2#second-title, .search-rescue h2#second-title {
+      margin-top: 110px; }
+  .mission-control p, .search-rescue p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px; }
+    .mission-control p span, .search-rescue p span {
+      font-weight: 700; }
+  .mission-control a, .search-rescue a {
+    display: block;
+    color: #ff6a46;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px; }
+
+.search-rescue {
+  background: #dfe2ec url(../img/prototypes/gray-links.png) no-repeat center bottom;
+  background-size: 100%;
+  height: 45.71428571428571vw;
+  padding: 80px 0 0; }
+  .search-rescue img {
+    width: auto; }
+    .search-rescue img#rover {
+      margin-right: 50px; }
+
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }
@@ -1235,6 +1381,21 @@ footer {
       font-size: 13px;
       line-height: 20px; }
     .alert-announcement .close {
-      line-height: 20px; } }
+      line-height: 20px; }
+
+  @-webkit-keyframes balls {
+    from {
+      -webkit-transform: translateY(0); }
+    50% {
+      -webkit-transform: translateY(25px); }
+    to {
+      -webkit-transform: translateY(0); } }
+  @keyframes balls {
+    from {
+      transform: translateY(0); }
+    50% {
+      transform: translateY(25px); }
+    to {
+      transform: translateY(0); } } }
 
 /*# sourceMappingURL=style.css.map */

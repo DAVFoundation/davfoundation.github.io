@@ -1264,6 +1264,184 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 }
+//prototypes page
+.hero.hero-prototypes{
+    background: url(../img/prototypes/hero.jpg) no-repeat center;
+    background-size: cover;
+    .hero-inner{
+    	// height: 58vw !important;
+    }
+    h1{
+    	margin: 15% 0 !important;
+    }
+    h2{
+    	font-size: 30px;
+    	font-weight: 700;
+    	margin: 0 0 20px;
+    }
+    p{
+    	font-size: 18px;
+    	font-weight: 300;
+    	line-height: 28px;
+    	span{
+    		font-weight: 700;
+    	}
+    }
+    #iphonex{
+    	margin-top: -90px;
+    	// position: absolute;
+    }
+    #drone{
+    	position: absolute;
+    	top: 5%;
+    	left: 20%;
+    	  -webkit-animation: balls 4s infinite;
+  animation: balls 4s infinite;
+  -webkit-animation-timing-function: cubic-bezier;
+  animation-timing-function: cubic-bezier;
+    }
+    a{
+    	display: block;
+    	color: $orange;
+    	line-height: 30px;
+    	font-weight: 700;
+    	font-size: 20px;
+    }
+}
+@-webkit-keyframes balls {
+  from{-webkit-transform: translateY(0);}
+  50%{-webkit-transform: translateY(70px);}
+  to{-webkit-transform: translateY(0);}
+}
+
+@keyframes balls {
+  from{transform: translateY(0);}
+  50%{transform: translateY(70px);}
+  to{transform: translateY(0);}
+}
+
+.dav-cli{
+	background: url(../img/prototypes/orange-bg.jpg) no-repeat center;
+    background-size: cover;
+    color: #FFF;
+    padding-top: 120px;
+    h2{
+    	font-size: 30px;
+    	font-weight: 700;
+    	margin: 0 0 20px;
+    	&#portal-title{
+    		margin-top: 170px;
+    	}
+    }
+    p{
+    	font-size: 18px;
+    	font-weight: 300;
+    	line-height: 28px;
+    	span{
+    		font-weight: 700;
+    	}
+    }
+ 	#laptop{
+    	margin-top: -30px;
+    }
+    a{
+    	display: block;
+    	color: #fff;
+    	line-height: 30px;
+    	font-weight: 700;
+    	font-size: 20px;
+    	&#developer-portal-link{
+    		margin-bottom: 25px;
+    	}
+    }
+    #car{
+    	margin-top: 54px;
+    }
+} 
+.dav-portal{
+	background: #363840 url(../img/prototypes/orange-links.png) no-repeat center bottom;
+	background-size: 100%;
+	height: 45.71428571428571vw;
+	text-align: center;
+	img{
+		margin-top: -165px;
+    	margin-left: 315px;
+		position: relative;
+		z-index: 2;
+	}
+}
+.block-explorer{
+	background: #dfe2ec;
+	color: #363840;
+	img{
+		width: 100%;
+		margin-top: 42px;
+		margin-bottom: 1px;
+	}
+	h2{
+    	font-size: 30px;
+    	font-weight: 700;
+    	margin: 32% 0 20px;
+    }
+    p{
+    	font-size: 18px;
+    	font-weight: 300;
+    	line-height: 28px;
+    	span{
+    		font-weight: 700;
+    	}
+    }
+    a{
+    	display: block;
+		color: #363840;
+    	line-height: 30px;
+    	font-weight: 700;
+    	font-size: 18px;
+    }
+}
+.mission-control,.search-rescue{
+	color: #2b2d33;
+	padding-top: 110px;
+	padding-bottom: 110px;
+	img{
+		width: 100%;
+	}
+	h2{
+    	font-size: 30px;
+    	font-weight: 700;
+    	margin: 40px 0 20px;
+    	&#second-title{
+    		margin-top: 110px;
+    	}
+    }
+    p{
+    	font-size: 18px;
+    	font-weight: 300;
+    	line-height: 28px;
+    	span{
+    		font-weight: 700;
+    	}
+    }
+    a{
+    	display: block;
+		color: $orange;
+    	line-height: 30px;
+    	font-weight: 700;
+    	font-size: 20px;
+    }
+}
+.search-rescue{
+	background: #dfe2ec url(../img/prototypes/gray-links.png) no-repeat center bottom;
+	background-size: 100%;
+	height: 45.71428571428571vw;
+	padding: 80px 0 0;
+	img{
+		width: auto;
+		&#rover{
+			margin-right: 50px;
+		}
+	}
+}
 // media queries
 @media (max-width: 1400px) {
 	.nav>li>a{
@@ -1536,6 +1714,18 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			line-height: 20px;
 		}
 	}
+  	@-webkit-keyframes balls {
+	  from{-webkit-transform: translateY(0);}
+	  50%{-webkit-transform: translateY(25px);}
+	  to{-webkit-transform: translateY(0);}
+	}
+
+	@keyframes balls {
+	  from{transform: translateY(0);}
+	  50%{transform: translateY(25px);}
+	  to{transform: translateY(0);}
+	}
+
 }
 // @media (min-width: 768px) {
 //     .navbar .navbar-nav {
