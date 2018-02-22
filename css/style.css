@@ -1016,7 +1016,10 @@ footer {
 
   .media-gallery .arrow-right.slick-arrow {
     width: 40px;
-    right: -40px; } }
+    right: -40px; }
+
+  .team .team-small a {
+    min-height: 207px; } }
 @media (max-width: 1025px) {
   input[type=text],
   input[type=email],
