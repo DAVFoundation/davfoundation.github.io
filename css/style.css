@@ -1006,20 +1006,25 @@ footer {
 .hero.hero-prototypes {
   background: url(../img/prototypes/hero.jpg) no-repeat center;
   background-size: cover; }
+  .hero.hero-prototypes .hero-inner .hero-valign {
+    vertical-align: top; }
   .hero.hero-prototypes h1 {
-    margin: 15% 0 !important; }
+    margin: 10% 0 !important;
+    font-size: 30px !important; }
   .hero.hero-prototypes h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0 0 20px; }
   .hero.hero-prototypes p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
-    line-height: 28px; }
+    line-height: 24px;
+    margin: 0px; }
     .hero.hero-prototypes p span {
       font-weight: 700; }
   .hero.hero-prototypes #iphonex {
-    margin-top: -90px; }
+    margin-top: -90px;
+    position: absolute; }
   .hero.hero-prototypes #drone {
     position: absolute;
     top: 5%;
@@ -1033,7 +1038,7 @@ footer {
     color: #ff6a46;
     line-height: 30px;
     font-weight: 700;
-    font-size: 20px; }
+    font-size: 16px; }
 
 @-webkit-keyframes balls {
   from {
@@ -1055,15 +1060,15 @@ footer {
   color: #FFF;
   padding-top: 120px; }
   .dav-cli h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0 0 20px; }
     .dav-cli h2#portal-title {
-      margin-top: 170px; }
+      margin-top: 30px; }
   .dav-cli p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
-    line-height: 28px; }
+    line-height: 24px; }
     .dav-cli p span {
       font-weight: 700; }
   .dav-cli #laptop {
@@ -1073,7 +1078,7 @@ footer {
     color: #fff;
     line-height: 30px;
     font-weight: 700;
-    font-size: 20px; }
+    font-size: 16px; }
     .dav-cli a#developer-portal-link {
       margin-bottom: 25px; }
   .dav-cli #car {
@@ -1090,20 +1095,20 @@ footer {
     z-index: 2; }
 
 .block-explorer {
-  background: #dfe2ec;
+  background: #f7f7f7;
   color: #363840; }
   .block-explorer img {
     width: 100%;
     margin-top: 42px;
     margin-bottom: 1px; }
   .block-explorer h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     margin: 32% 0 20px; }
   .block-explorer p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
-    line-height: 28px; }
+    line-height: 24px; }
     .block-explorer p span {
       font-weight: 700; }
   .block-explorer a {
@@ -1111,7 +1116,7 @@ footer {
     color: #363840;
     line-height: 30px;
     font-weight: 700;
-    font-size: 18px; }
+    font-size: 16px; }
 
 .mission-control, .search-rescue {
   color: #2b2d33;
@@ -1120,15 +1125,15 @@ footer {
   .mission-control img, .search-rescue img {
     width: 100%; }
   .mission-control h2, .search-rescue h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     margin: 40px 0 20px; }
     .mission-control h2#second-title, .search-rescue h2#second-title {
       margin-top: 110px; }
   .mission-control p, .search-rescue p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
-    line-height: 28px; }
+    line-height: 24px; }
     .mission-control p span, .search-rescue p span {
       font-weight: 700; }
   .mission-control a, .search-rescue a {
@@ -1136,10 +1141,10 @@ footer {
     color: #ff6a46;
     line-height: 30px;
     font-weight: 700;
-    font-size: 20px; }
+    font-size: 16px; }
 
 .search-rescue {
-  background: #dfe2ec url(../img/prototypes/gray-links.png) no-repeat center bottom;
+  background: #f7f7f7 url(../img/prototypes/gray-links.png) no-repeat center bottom;
   background-size: 100%;
   height: 45.71428571428571vw;
   padding: 80px 0 0; }
@@ -1164,7 +1169,16 @@ footer {
     right: -40px; }
 
   .team .team-small a {
-    min-height: 207px; } }
+    min-height: 207px; }
+
+  #iphonex {
+    height: 640px; }
+
+  #drone {
+    width: 400px; }
+
+  .dav-cli #laptop {
+    width: 100%; } }
 @media (max-width: 1025px) {
   input[type=text],
   input[type=email],
@@ -1204,7 +1218,17 @@ footer {
     left: -30px; }
 
   .media-gallery .arrow-right.slick-arrow {
-    right: -30px; } }
+    right: -30px; }
+
+  .dav-portal img {
+    width: 50%; }
+
+  .search-rescue {
+    height: auto !important;
+    padding: 80px 0; }
+
+  .search-rescue img#rover {
+    width: 60%; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
@@ -1256,7 +1280,18 @@ footer {
 
   .media-gallery .arrow-right.slick-arrow {
     width: 36px;
-    right: 0px; } }
+    right: 0px; }
+
+  .hero.hero-prototypes {
+    overflow: hidden; }
+    .hero.hero-prototypes h1 {
+      padding: 13% 0 !important; }
+
+  .block-explorer h2 {
+    margin: 24% 0 20px; }
+
+  .mission-control h2#second-title {
+    margin-top: 50px; } }
 @media (max-width: 767px) {
   .navbar-nav > li > a {
     font-size: 15px; }
@@ -1395,6 +1430,36 @@ footer {
     50% {
       transform: translateY(25px); }
     to {
-      transform: translateY(0); } } }
+      transform: translateY(0); } }
+  .hero.hero-prototypes #iphonex {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+    height: auto; }
+
+  .hero.hero-prototypes #drone {
+    width: 220px;
+    top: 25%; }
+
+  .dav-cli #laptop {
+    margin-top: 20px; }
+
+  .dav-portal img {
+    margin-top: -50px; }
+
+  .charger-car img {
+    height: 50px; }
+
+  .dav-cli #car {
+    margin-top: 0px; }
+
+  .block-explorer {
+    padding-bottom: 50px; }
+    .block-explorer h2 {
+      margin: 50px 0 20px; }
+
+  .mission-control, .search-rescue {
+    padding-top: 50px;
+    padding-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

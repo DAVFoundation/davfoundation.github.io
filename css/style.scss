@@ -1270,26 +1270,31 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     background-size: cover;
     .hero-inner{
     	// height: 58vw !important;
+    	.hero-valign{
+    		vertical-align: top;
+    	}
     }
     h1{
-    	margin: 15% 0 !important;
+    	margin: 10% 0 !important;
+    	font-size: 30px !important;
     }
     h2{
-    	font-size: 30px;
+    	font-size: 24px;
     	font-weight: 700;
     	margin: 0 0 20px;
     }
     p{
-    	font-size: 18px;
+    	font-size: 15px;
     	font-weight: 300;
-    	line-height: 28px;
+    	line-height: 24px;
+    	margin: 0px;
     	span{
     		font-weight: 700;
     	}
     }
     #iphonex{
     	margin-top: -90px;
-    	// position: absolute;
+    	position: absolute;
     }
     #drone{
     	position: absolute;
@@ -1305,7 +1310,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     	color: $orange;
     	line-height: 30px;
     	font-weight: 700;
-    	font-size: 20px;
+    	font-size: 16px;
     }
 }
 @-webkit-keyframes balls {
@@ -1326,17 +1331,17 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     color: #FFF;
     padding-top: 120px;
     h2{
-    	font-size: 30px;
+    	font-size: 24px;
     	font-weight: 700;
     	margin: 0 0 20px;
     	&#portal-title{
-    		margin-top: 170px;
+    		margin-top: 30px;
     	}
     }
     p{
-    	font-size: 18px;
+    	font-size: 15px;
     	font-weight: 300;
-    	line-height: 28px;
+    	line-height: 24px;
     	span{
     		font-weight: 700;
     	}
@@ -1349,7 +1354,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     	color: #fff;
     	line-height: 30px;
     	font-weight: 700;
-    	font-size: 20px;
+    	font-size: 16px;
     	&#developer-portal-link{
     		margin-bottom: 25px;
     	}
@@ -1371,7 +1376,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 }
 .block-explorer{
-	background: #dfe2ec;
+	background: #f7f7f7;
 	color: #363840;
 	img{
 		width: 100%;
@@ -1379,14 +1384,14 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		margin-bottom: 1px;
 	}
 	h2{
-    	font-size: 30px;
+    	font-size: 24px;
     	font-weight: 700;
     	margin: 32% 0 20px;
     }
     p{
-    	font-size: 18px;
+    	font-size: 15px;
     	font-weight: 300;
-    	line-height: 28px;
+    	line-height: 24px;
     	span{
     		font-weight: 700;
     	}
@@ -1396,7 +1401,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		color: #363840;
     	line-height: 30px;
     	font-weight: 700;
-    	font-size: 18px;
+    	font-size: 16px;
     }
 }
 .mission-control,.search-rescue{
@@ -1407,7 +1412,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		width: 100%;
 	}
 	h2{
-    	font-size: 30px;
+    	font-size: 24px;
     	font-weight: 700;
     	margin: 40px 0 20px;
     	&#second-title{
@@ -1415,9 +1420,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     	}
     }
     p{
-    	font-size: 18px;
+    	font-size: 15px;
     	font-weight: 300;
-    	line-height: 28px;
+    	line-height: 24px;
     	span{
     		font-weight: 700;
     	}
@@ -1427,11 +1432,11 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		color: $orange;
     	line-height: 30px;
     	font-weight: 700;
-    	font-size: 20px;
+    	font-size: 16px;
     }
 }
 .search-rescue{
-	background: #dfe2ec url(../img/prototypes/gray-links.png) no-repeat center bottom;
+	background: #f7f7f7 url(../img/prototypes/gray-links.png) no-repeat center bottom;
 	background-size: 100%;
 	height: 45.71428571428571vw;
 	padding: 80px 0 0;
@@ -1460,6 +1465,15 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.team .team-small a{
 		min-height: 207px;
+	}
+	#iphonex{
+		height: 640px;
+	}
+	#drone{
+		width: 400px;
+	}
+	.dav-cli #laptop{
+		width: 100%;
 	}
 }
 @media (max-width: 1025px) {
@@ -1510,6 +1524,16 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.media-gallery .arrow-right.slick-arrow{
 		right: -30px;
+	}
+	.dav-portal img{
+		width: 50%;
+	}
+	.search-rescue{
+		height: auto !important;
+		padding: 80px 0;
+	}
+	.search-rescue img#rover{
+		width: 60%;
 	}
 }
 @media (max-width: 992px) {
@@ -1572,6 +1596,18 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.media-gallery .arrow-right.slick-arrow{
 		width: 36px;
 		right:  0px;
+	}
+	.hero.hero-prototypes{
+		overflow: hidden;
+		h1{
+			padding: 13% 0 !important;
+		}
+	}
+	.block-explorer h2{
+		margin: 24% 0 20px;
+	}
+	.mission-control h2#second-title{
+    	margin-top: 50px;
 	}
 }
 @media (max-width: 767px) {
@@ -1725,7 +1761,38 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	  50%{transform: translateY(25px);}
 	  to{transform: translateY(0);}
 	}
-
+	.hero.hero-prototypes #iphonex{
+		position: static;
+		margin-top: 20px; 
+		width: 100%;
+		height: auto;
+	}
+	.hero.hero-prototypes #drone{
+		width: 220px;
+		top: 25%;
+	}
+	.dav-cli #laptop {
+    	margin-top: 20px;
+	}
+	.dav-portal img {
+    	margin-top: -50px;
+	}
+	.charger-car img{
+		height: 50px;
+	}
+	.dav-cli #car {
+    	margin-top: 0px;
+	}
+	.block-explorer{
+		padding-bottom: 50px;
+		h2 {
+    		margin: 50px 0 20px;
+		}
+	}
+	.mission-control, .search-rescue{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 }
 // @media (min-width: 768px) {
 //     .navbar .navbar-nav {
