@@ -1431,18 +1431,32 @@ footer {
       transform: translateY(25px); }
     to {
       transform: translateY(0); } }
+  .hero.hero-prototypes .text-right {
+    text-align: center !important; }
+
+  .hero.hero-prototypes h1 {
+    font-size: 24px !important; }
+
   .hero.hero-prototypes #iphonex {
     position: static;
     margin-top: 20px;
-    width: 100%;
-    height: auto; }
+    width: 65%;
+    height: auto;
+    margin-bottom: -25px; }
 
   .hero.hero-prototypes #drone {
     width: 220px;
-    top: 25%; }
+    top: 25%;
+    left: 25%; }
+
+  .dav-cli {
+    padding-top: 40px; }
+    .dav-cli .text-right {
+      text-align: center !important; }
 
   .dav-cli #laptop {
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: -50px; }
 
   .dav-portal img {
     margin-top: -50px; }
@@ -1457,9 +1471,20 @@ footer {
     padding-bottom: 50px; }
     .block-explorer h2 {
       margin: 50px 0 20px; }
+    .block-explorer img {
+      margin: 20px 0; }
 
   .mission-control, .search-rescue {
     padding-top: 50px;
-    padding-bottom: 50px; } }
+    padding-bottom: 50px;
+    text-align: center !important; }
+    .mission-control h2, .search-rescue h2 {
+      margin-top: 0px; }
+
+  .mission-control .text-right {
+    text-align: center !important; }
+
+  .search-rescue img#rover {
+    margin-right: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

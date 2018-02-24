@@ -142,15 +142,24 @@
                 <h2>Drone Missions App</h2>
                 <p>Missions is the first app built to showcase the DAV ecosystem.</p>
                 <p>It connects users looking to ship packages with autonomous drones.  Users request drone services, drones bid for those services, and trustless cooperation is enabled by using the blockchain.</p>
+                <div class="hidden-xs">
                 <p><span>Current Status:</span> Integration with the first drone partner (Copter Express) is underway.</p>
                 <a href="https://missions.io/" target="_blank">Go to Missions App >></a>
                 <a href="https://github.com/DAVFoundation/missions" target="_blank">Visit our Github repository >></a>
+                </div>
               </div>
               <div class="col-sm-6 text-left">
                 <img src="img/prototypes/iphone.png" id="iphonex">
                 <img src="img/prototypes/drone_flying.png" class="animated fadeInLeft animation-delay-20" id="drone">
               </div>
             </div>
+            <div class="visible-xs">
+                <p><span>Current Status:</span> Integration with the first drone partner (Copter Express) is underway.</p>
+                <a href="https://missions.io/" target="_blank">Go to Missions App >></a>
+                <a href="https://github.com/DAVFoundation/missions" target="_blank">Visit our Github repository >></a>
+                <br>
+            </div>
+
           </div>
         </div>
       </div>
@@ -162,10 +171,11 @@
           <div class="col-sm-6 text-right">
             <h2>DAV CLI and Testnet</h2>
             <p>Our Command Line Interface (CLI) tool was built to make developing applications and services that interact with DAV a much more pleasant experience. It allows developers to easily run a local testnet containing DAV contracts, generate identities secured by private and public keys and register them on the blockchain.  This allows anyone to easily scaffold new projects or modify an existing one to interact with DAV, and more.</p>
+            <img src="img/prototypes/dav-cli.png" id="laptop" class="visible-xs">
             <p><span>Current Status:</span> Basic functionality implemented. Work on connecting the registration functionality with the identity smart contract is in progress.</p>
             <a href="https://github.com/DAVFoundation/dav-cli" target="_blank">Visit our Github repository >></a>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 hidden-xs">
                 <img src="img/prototypes/dav-cli.png" id="laptop">
           </div>
         </div>
@@ -197,12 +207,13 @@
     <div class="block-explorer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6 hidden-xs">
             <img src="img/prototypes/block-explorer.jpg">
           </div>
           <div class="col-sm-6">
             <h2>Block Explorer</h2>
             <p>Our block explorer allows users to explore local Ethereum testnets. This eases development and debugging for developers building apps and services on top of DAV.</p>
+            <img src="img/prototypes/block-explorer.jpg" class="visible-xs">
             <p><span>Current Status:</span> Work is underway to package the block explorer enabling it to launch automatically from the DAV CLI Tools.</p>
             <a href="https://github.com/DAVFoundation/xplore" target="_blank">Visit our Github repository >></a>
 
@@ -220,12 +231,10 @@
         <div class="col-sm-6">
           <h2>Mission Control</h2>
           <p>Mission Control serves as the discovery and communication layer that connects and keeps track of vehicles, users and services.</p>
+          <img src="img/prototypes/mission-control.png" class="visible-xs">
           <p><span>Current Status:</span> Fully working for running simulated environments with drone deliveries. Currently being expanded to support the vehicles of our first partners.</p>
           <a href="https://missions.io/" target="_blank">Go to Missions App >> </a>
           <a href="https://github.com/DAVFoundation/missioncontrol" target="_blank">Visit our Github repository >> </a>
-        </div>
-        <div class="col-sm-6 visible-xs">
-            <img src="img/prototypes/mission-control.png">
         </div>
       </div>
 
@@ -233,11 +242,12 @@
         <div class="col-sm-6 text-right">
           <h2 id="second-title">Autonomous Boat</h2>
           <p>DAV and the California Maritime University are developing an autonomous boat called n3m0 (pronounced "Nemo"). n3m0 will receive and complete photography missions for students and be paid in DAV tokens. When n3m0 requires charging, it will pay DAV tokens to students in exchange for charging services. n3mo will demonstrate true autonomy by earning money and spending money to take care of its own needs; all in service of taking oceanographic measurements for the University.</p>
+          <img src="img/prototypes/autonomous-boat.png" class="visible-xs">
           <p><span>Current Status:</span> Boat is ready. Work on the onboard computer and the updates to Mission Control and Missions is in progress.</p>
 
           <a href="https://github.com/DAVFoundation/n3m0" target="_blank">Visit our Github repository >></a>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 hidden-xs">
             <img src="img/prototypes/autonomous-boat.png">
         </div>
       </div>
@@ -248,10 +258,10 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <a href="https://husarion.com" target="_blank">
+            <a href="https://husarion.com" target="_blank" class="hidden-xs">
               <img src="img/prototypes/husarion.png">
             </a>
-            <div class="text-right">
+            <div class="text-right hidden-xs">
               <br>
               <img src="img/prototypes/rover.png" id="rover">
             </div>
@@ -259,6 +269,15 @@
           <div class="col-sm-6">
             <h2>Search and Rescue Robot</h2>
             <p>DAV and Husarion (a robotics prototyping platform) are developing a POC involving an autonomous robotic rover that will perform drone search and rescue missions. The rover will bid for missions to locate drones that have lost contact with their owners, go to their last known location, and then using its onboard lidar and computer vision find them and send back their exact coordinates.</p>
+            <a href="https://husarion.com" target="_blank" class="visible-xs">
+              <img src="img/prototypes/husarion.png">
+            </a>
+            <div class="text-right visible-xs">
+              <br>
+              <img src="img/prototypes/rover.png" id="rover">
+              <br>
+              <br>
+            </div>
             <p><span>Current Status:</span> ROSBot’s computer vision algorithms are being updated to support identifying drones.</p>
             <a href="https://husarion.com/#rosbot" target="_blank">Learn more about ROSBot >></a>
 
