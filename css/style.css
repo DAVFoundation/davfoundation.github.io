@@ -1009,8 +1009,7 @@ footer {
   .hero.hero-prototypes .hero-inner .hero-valign {
     vertical-align: top; }
   .hero.hero-prototypes h1 {
-    margin: 10% 0 !important;
-    font-size: 30px !important; }
+    margin: 10% 0 !important; }
   .hero.hero-prototypes h2 {
     font-size: 24px;
     font-weight: 700;
@@ -1019,7 +1018,7 @@ footer {
     font-size: 15px;
     font-weight: 300;
     line-height: 24px;
-    margin: 0px; }
+    margin: 0 0 20px; }
     .hero.hero-prototypes p span {
       font-weight: 700; }
   .hero.hero-prototypes #iphonex {
@@ -1068,7 +1067,8 @@ footer {
   .dav-cli p {
     font-size: 15px;
     font-weight: 300;
-    line-height: 24px; }
+    line-height: 24px;
+    margin: 0 0 20px; }
     .dav-cli p span {
       font-weight: 700; }
   .dav-cli #laptop {
@@ -1108,7 +1108,8 @@ footer {
   .block-explorer p {
     font-size: 15px;
     font-weight: 300;
-    line-height: 24px; }
+    line-height: 24px;
+    margin: 0 0 20px; }
     .block-explorer p span {
       font-weight: 700; }
   .block-explorer a {
@@ -1133,7 +1134,8 @@ footer {
   .mission-control p, .search-rescue p {
     font-size: 15px;
     font-weight: 300;
-    line-height: 24px; }
+    line-height: 24px;
+    margin: 0 0 20px; }
     .mission-control p span, .search-rescue p span {
       font-weight: 700; }
   .mission-control a, .search-rescue a {
@@ -1431,7 +1433,7 @@ footer {
       transform: translateY(25px); }
     to {
       transform: translateY(0); } }
-  .hero.hero-prototypes .text-right {
+  .hero.hero-prototypes .text-left {
     text-align: center !important; }
 
   .hero.hero-prototypes h1 {
@@ -1451,7 +1453,7 @@ footer {
 
   .dav-cli {
     padding-top: 40px; }
-    .dav-cli .text-right {
+    .dav-cli .text-left {
       text-align: center !important; }
 
   .dav-cli #laptop {
