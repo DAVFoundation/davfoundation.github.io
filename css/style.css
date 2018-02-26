@@ -1144,6 +1144,16 @@ footer {
     line-height: 30px;
     font-weight: 700;
     font-size: 16px; }
+  .mission-control .mission-vid, .search-rescue .mission-vid {
+    position: relative; }
+    .mission-control .mission-vid video, .search-rescue .mission-vid video {
+      position: absolute;
+      top: 51px;
+      left: 50%;
+      width: 417px;
+      height: 315px;
+      margin-left: -208px;
+      object-fit: fill; }
 
 .search-rescue {
   background: #f7f7f7 url(../img/prototypes/gray-links.png) no-repeat center bottom;
