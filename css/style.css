@@ -1433,7 +1433,7 @@ footer {
       transform: translateY(25px); }
     to {
       transform: translateY(0); } }
-  .hero.hero-prototypes .text-left {
+  .hero.hero-prototypes .text-right {
     text-align: center !important; }
 
   .hero.hero-prototypes h1 {
