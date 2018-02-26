@@ -291,6 +291,26 @@ input {
       margin: 0 0 40px;
       padding-left: 36px; }
 
+.prototypes-section {
+  background: #eeeded; }
+  .prototypes-section .container {
+    background: url("../img/prototypes.jpg") no-repeat center;
+    background-size: 100%;
+    height: 59.34343434343434vw; }
+  .prototypes-section h2 {
+    margin: 20vw 0 20px;
+    font-weight: 700; }
+  .prototypes-section a {
+    color: #4c7ce8;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    text-align: center; }
+    .prototypes-section a span {
+      border-bottom: 1px solid #4c7ce8; }
+    .prototypes-section a:hover {
+      text-decoration: none; }
+
 .development-tools {
   background: #eeeded;
   padding: 46px 0 66px; }
@@ -1497,6 +1517,14 @@ footer {
     text-align: center !important; }
 
   .search-rescue img#rover {
-    margin-right: 0px; } }
+    margin-right: 0px; }
+
+  .prototypes-section {
+    padding-bottom: 50px; }
+    .prototypes-section .container {
+      height: auto;
+      background-position: left 55px top; }
+    .prototypes-section h2 {
+      margin-top: 60vw; } }
 
 /*# sourceMappingURL=style.css.map */
