@@ -647,7 +647,7 @@ input {
     .team-modal .modal-dialog button.close:focus, .team-modal .modal-dialog button.close:active {
       outline: none; }
   .team-modal .modal-dialog br + img {
-    width: 65%;
+    width: 90%;
     margin: 0 auto;
     display: block; }
   .team-modal .modal-dialog h2 {
@@ -1433,6 +1433,10 @@ footer {
   .team-modal .modal-dialog h2 {
     margin: 10px 0; }
 
+  .team-modal .modal-dialog br + img {
+    width: 60%;
+    margin: 0px; }
+
   .daily-dav img {
     width: 100px;
     margin: 0 auto;
@@ -1529,6 +1533,56 @@ footer {
       height: auto;
       background-position: left 55px top; }
     .prototypes-section h2 {
-      margin-top: 60vw; } }
+      margin-top: 60vw; }
+
+  .team .team-small a img,
+  .team .team-medium a img,
+  .team .team-large a img {
+    width: 100%; }
+
+  .team .team-large .text-center {
+    text-align: left !important; }
+
+  .team .team-small h4,
+  .team .team-medium h4,
+  .team .team-large h4 {
+    font-size: 13px;
+    min-height: 32px; }
+
+  .team .team-small p,
+  .team .team-medium p,
+  .team .team-large h5 {
+    font-size: 10px;
+    min-height: 34px;
+    margin: 0px; }
+
+  .team .team-large h3 {
+    font-size: 11px;
+    line-height: 20px;
+    margin: 0px;
+    min-height: 66px; }
+
+  .team .team-large h3 + img {
+    height: 100px; }
+
+  .team .team-small h4,
+  .team .team-medium h4 {
+    margin: 10px 0 0;
+    line-height: 20px; }
+
+  .team .team-small p,
+  .team .team-medium p {
+    line-height: 20px;
+    margin-top: -5px; }
+
+  .team .team-small a,
+  .team .team-medium a {
+    margin: 20px auto 5px; }
+
+  .team .team-small h4 {
+    font-size: 12px; }
+
+  .team .team-small a {
+    min-height: 230px; } }
 
 /*# sourceMappingURL=style.css.map */
