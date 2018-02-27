@@ -369,7 +369,7 @@ height: 0;
 	.container{
 		background: url('../img/prototypes.jpg') no-repeat center;
 		background-size: 100%;
-		height: 45vw;
+		height: 40vw;
 	}
 	h2{
 		margin: 15vw 0 20px;
@@ -1775,6 +1775,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     	width: 100px;
     	margin: 0 auto;
     	display: block;
+	}
+	.daily-dav a img {
+		display: inline-block;
 	}
 	.media-gallery img {
     	margin: 0 auto;
