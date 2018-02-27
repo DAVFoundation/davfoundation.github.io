@@ -296,9 +296,9 @@ input {
   .prototypes-section .container {
     background: url("../img/prototypes.jpg") no-repeat center;
     background-size: 100%;
-    height: 59.34343434343434vw; }
+    height: 45vw; }
   .prototypes-section h2 {
-    margin: 20vw 0 20px;
+    margin: 15vw 0 20px;
     font-weight: 700; }
   .prototypes-section a {
     color: #4c7ce8;
@@ -1135,6 +1135,7 @@ footer {
   .block-explorer a {
     display: block;
     color: #363840;
+    color: #ff6a46;
     line-height: 30px;
     font-weight: 700;
     font-size: 16px; }
