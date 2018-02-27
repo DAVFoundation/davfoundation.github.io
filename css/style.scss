@@ -475,12 +475,12 @@ height: 0;
 	padding-bottom: 70px;
 	.alliance-logo{
 		padding-top: 50px;
-		width: 300px;
+		// width: 300px;
 		margin: 0 auto;
 		border-top: 1px solid $orange;
 	}
 	p{
-		font-size: 15px;
+		font-size: 17px;
 		color: #333333;
 		margin: 35px 0;
 		font-weight: 300;
@@ -507,7 +507,7 @@ height: 0;
 		}
 	}
 	img{
-		height: 100px;
+		height: 90px;
 	}
 	input[type=email]{
 		border: 1px solid #333;
@@ -528,6 +528,9 @@ height: 0;
 		display: block;
 		width: 100%;
 		height: 37px;
+	}
+	.col-sm-4{
+		width: 20%;
 	}
 }
 .alliance-modal.team-modal{
@@ -614,13 +617,15 @@ height: 0;
 	}
 }
 .partners{
-	padding: 40px 0 60px;
+	padding: 0 0 60px;
 	text-align: center;
 	h2{
 		color: #333333;
 		font-size: 25px;
 		font-weight: 700;
 		margin: 0 0 50px;
+		border-top: 1px solid $orange;
+		padding-top: 50px;
 	}
 	img{
 		height: 115px;
@@ -1650,6 +1655,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.mission-control h2#second-title{
     	margin-top: 50px;
 	}
+	.dav-alliance img {
+    	height: 60px;
+	}
 }
 @media (max-width: 767px) {
 	.navbar-nav>li>a{
@@ -1929,6 +1937,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.team .team-small a{
 		min-height: 230px;
+	}
+	.dav-alliance .col-sm-4{
+		width: 50%;
 	}
 }
 // @media (min-width: 768px) {

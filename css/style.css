@@ -384,11 +384,10 @@ input {
   padding-bottom: 70px; }
   .dav-alliance .alliance-logo {
     padding-top: 50px;
-    width: 300px;
     margin: 0 auto;
     border-top: 1px solid #ff6a46; }
   .dav-alliance p {
-    font-size: 15px;
+    font-size: 17px;
     color: #333333;
     margin: 35px 0;
     font-weight: 300; }
@@ -411,7 +410,7 @@ input {
     .dav-alliance a[href='#modalMessage']:focus, .dav-alliance a[href='#modalMessage']:active, .dav-alliance a[href='#modalMessage']:hover {
       text-decoration: none; }
   .dav-alliance img {
-    height: 100px; }
+    height: 90px; }
   .dav-alliance input[type=email] {
     border: 1px solid #333;
     line-height: 37px;
@@ -430,6 +429,8 @@ input {
     display: block;
     width: 100%;
     height: 37px; }
+  .dav-alliance .col-sm-4 {
+    width: 20%; }
 
 .alliance-modal.team-modal .modal-dialog {
   width: 360px; }
@@ -497,13 +498,15 @@ input {
       margin-left: 10px; }
 
 .partners {
-  padding: 40px 0 60px;
+  padding: 0 0 60px;
   text-align: center; }
   .partners h2 {
     color: #333333;
     font-size: 25px;
     font-weight: 700;
-    margin: 0 0 50px; }
+    margin: 0 0 50px;
+    border-top: 1px solid #ff6a46;
+    padding-top: 50px; }
   .partners img {
     height: 115px; }
 
@@ -1324,7 +1327,10 @@ footer {
     margin: 24% 0 20px; }
 
   .mission-control h2#second-title {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+
+  .dav-alliance img {
+    height: 60px; } }
 @media (max-width: 767px) {
   .navbar-nav > li > a {
     font-size: 15px; }
@@ -1583,6 +1589,9 @@ footer {
     font-size: 12px; }
 
   .team .team-small a {
-    min-height: 230px; } }
+    min-height: 230px; }
+
+  .dav-alliance .col-sm-4 {
+    width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
