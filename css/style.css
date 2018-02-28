@@ -429,8 +429,6 @@ input {
     display: block;
     width: 100%;
     height: 37px; }
-  .dav-alliance .col-sm-4 {
-    width: 20%; }
 
 .alliance-modal.team-modal .modal-dialog {
   width: 360px; }
@@ -1264,7 +1262,10 @@ footer {
     padding: 80px 0; }
 
   .search-rescue img#rover {
-    width: 60%; } }
+    width: 60%; }
+
+  .dav-alliance img {
+    height: 65px; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
