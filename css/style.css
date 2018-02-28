@@ -1541,6 +1541,20 @@ footer {
     .prototypes-section h2 {
       margin-top: 60vw; }
 
+  .team .team-large a .row img,
+  .team .team-medium a .row img,
+  .team .team-small a .row img {
+    width: 100%; }
+
+  .team .team-large a .row,
+  .team .team-medium a .row,
+  .team .team-small a .row {
+    margin: 0px; }
+    .team .team-large a .row div,
+    .team .team-medium a .row div,
+    .team .team-small a .row div {
+      padding: 0px; }
+
   .team .team-small a img,
   .team .team-medium a img,
   .team .team-large a img {
@@ -1558,15 +1572,17 @@ footer {
   .team .team-small p,
   .team .team-medium p,
   .team .team-large h5 {
-    font-size: 10px;
+    font-size: 13px;
     min-height: 34px;
-    margin: 0px; }
+    margin: 0px;
+    width: 120%; }
 
   .team .team-large h3 {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
     margin: 0px;
-    min-height: 66px; }
+    min-height: 67px;
+    width: 110%; }
 
   .team .team-large h3 + img {
     height: 100px; }
@@ -1586,7 +1602,7 @@ footer {
     margin: 20px auto 5px; }
 
   .team .team-small h4 {
-    font-size: 12px; }
+    font-size: 13px; }
 
   .team .team-small a {
     min-height: 230px; }
