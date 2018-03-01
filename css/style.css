@@ -1574,7 +1574,10 @@ footer {
   .team .team-large a .row img,
   .team .team-medium a .row img,
   .team .team-small a .row img {
-    width: 100%; }
+    width: auto;
+    margin-top: 12px;
+    height: 15px;
+    margin-right: -5px; }
 
   .team .team-large a .row,
   .team .team-medium a .row,
@@ -1597,13 +1600,14 @@ footer {
   .team .team-medium h4,
   .team .team-large h4 {
     font-size: 13px;
-    min-height: 32px; }
+    min-height: 32px;
+    width: 110%; }
 
   .team .team-small p,
   .team .team-medium p,
   .team .team-large h5 {
-    font-size: 13px;
-    min-height: 34px;
+    font-size: 12px;
+    min-height: 40px;
     margin: 0px;
     width: 120%;
     font-weight: 500; }
@@ -1618,15 +1622,18 @@ footer {
   .team .team-large h3 + img {
     height: 100px; }
 
+  .team .team-large h4,
   .team .team-small h4,
   .team .team-medium h4 {
     margin: 10px 0 0;
     line-height: 20px; }
 
+  .team .team-large h5,
   .team .team-small p,
   .team .team-medium p {
     line-height: 20px;
-    margin-top: -5px; }
+    margin-top: -5px;
+    margin-top: -12px; }
 
   .team .team-small a,
   .team .team-medium a {
