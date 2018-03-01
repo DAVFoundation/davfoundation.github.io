@@ -267,14 +267,3 @@ $(function() {
       $( "<div/>", {"class": "contributors-modal", html: modalContributor.join( "" )}).appendTo( "body" );
     });
 });    
-
-$(document).keydown(function(e) {
-    switch(e.which) {
-        case 19:
-            $(".contributors,.contributors-title").fadeToggle();
-        break;
-
-        default: return; // exit this handler for other keys
-    }
-    e.preventDefault(); // prevent the default action (scroll / move caret)
-});
