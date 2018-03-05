@@ -111,7 +111,7 @@ $(document).ready(function(){
 
 
     $("#contactForm").validate({
-          ignore: ":hidden",
+          // ignore: ":hidden",
           rules: {
               Name: {
                   required: true,
@@ -121,18 +121,23 @@ $(document).ready(function(){
                   required: true,
                   minlength: 3
               },
-              Title: {
-                  required: true,
-                  minlength: 3
-              },
               Email: {
-                  required: true
+                required: true,
+                email: true
               }//,
               // message: {
               //     required: true,
               //     minlength: 10
               // }
           },
+          messages: {
+              Name: "Please specify your name",
+              Company: "Please specify your company",
+              Email: {
+                required: "Invalid email",
+                email: "Your email address must be in the format of name@domain.com"
+              }
+            },
           submitHandler: function (form) {
               $.ajax({
                   type: "POST",
@@ -141,11 +146,13 @@ $(document).ready(function(){
                   dataType: "json",
                   success: function () {
                       // $(form).html("<div id='message'></div>");
-                      $('#messageBox')
-                          .fadeIn(1500, function () {
-                          $('#messageBox').append("<h4>Your message was sent!</h4>");
-                      });
+                      // $('#messageBox')
+                      //     .fadeIn(1500, function () {
+                      //     $('#messageBox').append("<h4>Your message was sent!</h4>");
+                      // });
+                      $("#modalMessage").modal('hide');
                       $(form)[0].reset();
+                      $("#modalThankYouAlliance").modal('show');
                   }
               });
               return false; // required to block normal submit since you used ajax
