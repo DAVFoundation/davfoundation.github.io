@@ -2009,6 +2009,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		width: 18%;
 		margin: 1%;
 	}
+	.alliance-modal.team-modal .modal-dialog {
+    	width: 100%;
+	}
 }
 @media (max-height: 767px) {
 	#iphonex {

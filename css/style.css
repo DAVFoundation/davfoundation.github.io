@@ -1650,7 +1650,10 @@ footer {
 
   .contributors ul li {
     width: 18%;
-    margin: 1%; } }
+    margin: 1%; }
+
+  .alliance-modal.team-modal .modal-dialog {
+    width: 100%; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
