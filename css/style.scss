@@ -2018,6 +2018,20 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
    		 height: 530px;
 	}
 }
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
 // @media (min-width: 768px) {
 //     .navbar .navbar-nav {
 //         display: inline-block;

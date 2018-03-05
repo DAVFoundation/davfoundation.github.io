@@ -1657,5 +1657,15 @@ footer {
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px; } }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

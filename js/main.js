@@ -135,7 +135,7 @@ $(document).ready(function(){
               Company: "Please specify your company",
               Email: {
                 required: "Invalid email",
-                email: "Your email address must be in the format of name@domain.com"
+                email: "Invalid email"
               }
             },
           submitHandler: function (form) {
