@@ -1651,5 +1651,8 @@ footer {
   .contributors ul li {
     width: 18%;
     margin: 1%; } }
+@media (max-height: 767px) {
+  #iphonex {
+    height: 530px; } }
 
 /*# sourceMappingURL=style.css.map */
