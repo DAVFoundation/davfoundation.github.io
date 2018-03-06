@@ -1667,5 +1667,8 @@ footer {
   textarea,
   input {
     font-size: 16px; } }
+body.iosBugFixCaret.modal-open {
+  position: fixed;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
