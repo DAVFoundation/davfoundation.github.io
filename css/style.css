@@ -389,7 +389,7 @@ input {
   .dav-alliance p {
     font-size: 17px;
     color: #333333;
-    margin: 35px 0 50px;
+    margin: 35px 0 45px;
     font-weight: 300; }
   .dav-alliance h4 {
     font-weight: 700;
@@ -405,7 +405,7 @@ input {
     border-radius: 3px;
     height: 47px;
     font-weight: 500;
-    margin: 40px 0 0;
+    margin: 45px 0 0;
     display: inline-block; }
     .dav-alliance a[href='#modalMessage']:focus, .dav-alliance a[href='#modalMessage']:active, .dav-alliance a[href='#modalMessage']:hover {
       text-decoration: none; }
