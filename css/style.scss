@@ -472,9 +472,9 @@ height: 0;
 	}
 }
 .dav-alliance{
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 	.alliance-logo{
-		padding-top: 50px;
+		padding-top: 30px;
 		// width: 300px;
 		margin: 0 auto;
 		border-top: 1px solid $orange;
@@ -482,7 +482,7 @@ height: 0;
 	p{
 		font-size: 17px;
 		color: #333333;
-		margin: 35px 0;
+		margin: 35px 0 50px;
 		font-weight: 300;
 	}
 	h4{
@@ -500,7 +500,7 @@ height: 0;
 		border-radius: 3px;
 		height: 47px;
 		font-weight: 500;
-		margin: 20px 0 0;
+		margin: 40px 0 0;
 		display: inline-block;
 		&:focus,&:active,&:hover{
 			text-decoration: none;

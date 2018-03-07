@@ -381,15 +381,15 @@ input {
       text-decoration: none; }
 
 .dav-alliance {
-  padding-bottom: 70px; }
+  padding-bottom: 30px; }
   .dav-alliance .alliance-logo {
-    padding-top: 50px;
+    padding-top: 30px;
     margin: 0 auto;
     border-top: 1px solid #ff6a46; }
   .dav-alliance p {
     font-size: 17px;
     color: #333333;
-    margin: 35px 0;
+    margin: 35px 0 50px;
     font-weight: 300; }
   .dav-alliance h4 {
     font-weight: 700;
@@ -405,7 +405,7 @@ input {
     border-radius: 3px;
     height: 47px;
     font-weight: 500;
-    margin: 20px 0 0;
+    margin: 40px 0 0;
     display: inline-block; }
     .dav-alliance a[href='#modalMessage']:focus, .dav-alliance a[href='#modalMessage']:active, .dav-alliance a[href='#modalMessage']:hover {
       text-decoration: none; }
