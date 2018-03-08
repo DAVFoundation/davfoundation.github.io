@@ -725,9 +725,19 @@ input {
     .team-modal .modal-dialog .modal-content .modal-body {
       padding-bottom: 50px; }
 
+.add-blur {
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  -webkit-filter: url(#blur-filter);
+  filter: url(#blur-filter);
+  -webkit-filter: blur(4px);
+  filter: blur(4px); }
+
 .fundraising-goals {
   padding-top: 20px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  position: relative; }
+  .fundraising-goals .blur-svg {
+    display: none; }
   .fundraising-goals h2 {
     color: #333333;
     font-size: 25px;

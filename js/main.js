@@ -29,7 +29,15 @@ $(document).ready(function(){
         $("body").addClass("iosBugFixCaret");
 
     }
-
+    //Fundraising remove blur
+    var ckbox = $('#us-checkbox');
+    $('.not-from-us label').on('click',function () {
+        if (ckbox.is(':checked')) {
+            $(".fundraising-goals").removeClass("add-blur");
+        } else {
+            $(".fundraising-goals").addClass("add-blur");
+        }
+    });
     // full height hero
     var windowHeight = $(window).height();
     $('.hero .hero-inner').height(windowHeight);
@@ -234,7 +242,7 @@ $(document).ready(function(){
        $('#alert-announcement').hide();
     }
     
-  
+    
     //countdown
   // $('#countdown').countdown(
   //   {until: $.countdown.UTCDate(-8, new Date(2018, 3, 30)), format: 'dHM'}

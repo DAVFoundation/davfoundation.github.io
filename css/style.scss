@@ -909,9 +909,23 @@ height: 0;
 		}
 	}
 }
+.add-blur{
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+    -webkit-filter: url(#blur-filter);
+    filter: url(#blur-filter);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+.not-from-us{
+
+}
 .fundraising-goals{
 	padding-top: 20px;
 	padding-bottom: 50px;
+	position: relative;
+	.blur-svg {
+        display: none;
+    }
 	h2{
 		color: #333333;
 		font-size: 25px;
