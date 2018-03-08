@@ -822,6 +822,10 @@ height: 0;
 				&:focus,&:active{
 					outline: none;
 				}
+				&:after{
+					display: none;
+  					content: "pseudo block!";
+				}
 				&:hover{
 					outline: none;
 					img{
@@ -2035,6 +2039,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.alliance-modal.team-modal .modal-dialog {
     	width: 100%;
+	}
+	.team h2{
+		margin: 40px 0 30px;
 	}
 }
 @media (max-height: 767px) {

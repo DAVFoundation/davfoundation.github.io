@@ -658,6 +658,9 @@ input {
       transition: all 0.5s ease; }
       .contributors ul li a:focus, .contributors ul li a:active {
         outline: none; }
+      .contributors ul li a:after {
+        display: none;
+        content: "pseudo block!"; }
       .contributors ul li a:hover {
         outline: none; }
         .contributors ul li a:hover img {
@@ -1676,7 +1679,10 @@ footer {
     margin: 1%; }
 
   .alliance-modal.team-modal .modal-dialog {
-    width: 100%; } }
+    width: 100%; }
+
+  .team h2 {
+    margin: 40px 0 30px; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
