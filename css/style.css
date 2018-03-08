@@ -658,9 +658,6 @@ input {
       transition: all 0.5s ease; }
       .contributors ul li a:focus, .contributors ul li a:active {
         outline: none; }
-      .contributors ul li a:after {
-        display: none;
-        content: "pseudo block!"; }
       .contributors ul li a:hover {
         outline: none; }
         .contributors ul li a:hover img {
@@ -1316,7 +1313,10 @@ footer {
     width: 60%; }
 
   .dav-alliance img {
-    height: 65px; } }
+    height: 65px; }
+
+  .contributors ul li a:hover:after {
+    display: none; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
