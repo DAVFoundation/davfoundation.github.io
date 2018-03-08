@@ -381,6 +381,7 @@ input {
       text-decoration: none; }
 
 .dav-alliance {
+  margin-top: 30px;
   padding-bottom: 30px; }
   .dav-alliance .alliance-logo {
     padding-top: 30px;
@@ -650,10 +651,30 @@ input {
       -moz-transition: all 0.5s ease;
       transition: all 0.5s ease; }
     .contributors ul li a {
-      display: block; }
-      .contributors ul li a:hover img {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%); }
+      display: block;
+      position: relative;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      .contributors ul li a:focus, .contributors ul li a:active {
+        outline: none; }
+      .contributors ul li a:hover {
+        outline: none; }
+        .contributors ul li a:hover img {
+          filter: brightness(60%) grayscale(100%);
+          -webkit-filter: brightness(60%) grayscale(100%); }
+        .contributors ul li a:hover:after {
+          content: '';
+          background: url("../img/right-orange-arrow-thick.png") no-repeat center;
+          position: absolute;
+          display: block;
+          width: 12px;
+          height: 24px;
+          top: 50%;
+          left: 50%;
+          margin-top: -12px;
+          margin-left: -6px;
+          z-index: 999; }
 
 .modal-backdrop.in {
   filter: alpha(opacity=70);
@@ -670,7 +691,9 @@ input {
   .team-modal .modal-dialog br + img {
     width: 90%;
     margin: 0 auto;
-    display: block; }
+    display: block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
   .team-modal .modal-dialog h2 {
     margin: 0 0 10px;
     font-size: 25px;
