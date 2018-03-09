@@ -1481,8 +1481,13 @@ footer {
   .team .team-large a {
     width: 100%; }
 
+  .team-modal.job-modal .modal-dialog,
   .team-modal .modal-dialog {
     width: 100%; }
+
+  .team-modal.job-modal .modal-body {
+    padding-left: 15px;
+    padding-right: 15px; }
 
   .navbar-right {
     margin-right: 5px; }
@@ -1811,6 +1816,9 @@ footer {
 
   .alliance-modal.team-modal .modal-dialog {
     width: 100%; }
+
+  .team-modal.job-modal .modal-dialog {
+    padding-top: 0px !important; }
 
   .team h2 {
     margin: 40px 0 30px; } }
