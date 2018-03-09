@@ -1245,6 +1245,72 @@ footer {
     .search-rescue img#rover {
       margin-right: 50px; }
 
+.hero.hero-careers {
+  background: url(../img/careers.jpg) no-repeat center;
+  background-size: cover; }
+  .hero.hero-careers .hero-inner {
+    height: 30.71428571428571vw !important; }
+
+.under-careers {
+  text-align: center; }
+  .under-careers p {
+    font-size: 18px;
+    color: #484c59;
+    font-weight: 300;
+    margin: 40px 0 0; }
+    .under-careers p a {
+      font-weight: 700;
+      color: #484c59;
+      text-decoration: underline; }
+
+.job-list h2 {
+  font-size: 31px;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin: 55px 0 40px; }
+.job-list a:hover, .job-list a:active, .job-list a:focus {
+  text-decoration: none; }
+.job-list a.show-more {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #f1f1f2;
+  color: #ff6a46;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 3px; }
+.job-list article {
+  min-height: 270px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  margin: 0 15px 75px;
+  -webkit-box-shadow: 0px 0px 21px 7px rgba(200, 202, 205, 0.74);
+  -moz-box-shadow: 0px 0px 21px 7px rgba(200, 202, 205, 0.74);
+  box-shadow: 0px 0px 21px 7px rgba(200, 202, 205, 0.74); }
+  .job-list article h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff6a46;
+    margin: 0 0 20px; }
+  .job-list article p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 20px; }
+  .job-list article h6 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    margin: 0px; }
+    .job-list article h6:after {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 1px;
+      background: #ff6a46;
+      margin: 20px auto 25px; }
+
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }
