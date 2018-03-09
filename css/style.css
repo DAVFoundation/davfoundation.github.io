@@ -1311,6 +1311,61 @@ footer {
       background: #ff6a46;
       margin: 20px auto 25px; }
 
+.team-modal.job-modal .modal-dialog {
+  width: 640px; }
+.team-modal.job-modal .modal-body {
+  padding-left: 80px;
+  padding-right: 80px; }
+  .team-modal.job-modal .modal-body .close {
+    position: absolute;
+    right: 5px;
+    top: 0px; }
+.team-modal.job-modal h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff6a46;
+  margin: 0 0 20px;
+  text-align: center; }
+.team-modal.job-modal h6 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+  margin: 0px; }
+  .team-modal.job-modal h6:after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #ff6a46;
+    margin: 20px auto 25px; }
+  .team-modal.job-modal h6 span {
+    font-weight: 700; }
+.team-modal.job-modal p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 10px; }
+  .team-modal.job-modal p a {
+    font-weight: 700;
+    color: #333;
+    text-decoration: underline; }
+.team-modal.job-modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+.team-modal.job-modal li {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 20px; }
+.team-modal.job-modal li::before {
+  content: '\2022';
+  color: red;
+  padding-right: 5px;
+  font-size: 20px;
+  display: inline-block; }
+
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }

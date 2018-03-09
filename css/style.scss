@@ -1650,6 +1650,76 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 }
+.team-modal.job-modal{
+	.modal-dialog{
+		width: 640px;
+	}
+	.modal-body{
+		padding-left: 80px;
+		padding-right: 80px;
+		.close{
+			position: absolute;
+    		right: 5px;
+    		top: 0px;
+		}
+	}
+	h5{
+		font-size: 20px;
+		font-weight: 700;
+		color: $orange;
+		margin: 0 0 20px;
+		text-align: center;
+	}
+	h6{
+		text-align: center;
+		font-size: 15px;
+		font-weight: 300;
+		color: #333;
+		margin: 0px;
+		&:after{
+			content: '';
+			display: block;
+			width: 150px;
+			height: 1px;
+			background: $orange;
+			margin: 20px auto 25px;
+		}
+		span{
+			font-weight: 700;
+		}
+	}
+	p{
+		font-size: 15px;
+		font-weight: 500;
+		color: #333;
+		margin: 0 0 10px;
+		a{
+			font-weight: 700;
+			color: #333;
+			text-decoration: underline;
+		}
+	}
+	ul {
+	  list-style: none;
+	  padding: 0;
+	  margin: 0;
+	}
+	
+	li {
+		font-size: 15px;
+		font-weight: 500;
+		color: #333;
+		margin: 0 0 20px;
+	}
+	
+	li::before {
+	  content: '\2022';
+	  color: red;
+  	  padding-right: 5px; 
+	  font-size: 20px;
+	  display: inline-block;
+	}
+}
 // media queries
 @media (max-width: 1400px) {
 	.nav>li>a{
