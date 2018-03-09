@@ -33,9 +33,9 @@ $(document).ready(function(){
     var ckbox = $('#us-checkbox');
     $('.not-from-us label').on('click',function () {
         if (ckbox.is(':checked')) {
-            $(".fundraising-goals").removeClass("add-blur");
+            $(".blur-funds").removeClass("add-blur");
         } else {
-            $(".fundraising-goals").addClass("add-blur");
+            $(".blur-funds").addClass("add-blur");
         }
     });
     // full height hero
