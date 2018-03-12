@@ -570,13 +570,26 @@ input {
     color: #ff6a46; }
   .team .team-large h3 {
     font-size: 17px;
+    font-size: 13px;
     color: #333333;
     font-weight: 300;
-    width: 280px;
     margin: 15px auto 0;
-    line-height: 30px; }
+    margin: 0;
+    line-height: 20px; }
     .team .team-large h3 + img {
       height: 152px; }
+  .team .team-large .advisor-logo {
+    width: 224px;
+    margin: 0 auto;
+    min-height: 90px; }
+    .team .team-large .advisor-logo .row {
+      margin-left: -5px;
+      margin-right: -5px; }
+      .team .team-large .advisor-logo .row div {
+        padding-left: 5px;
+        padding-right: 5px; }
+    .team .team-large .advisor-logo img {
+      width: 100%; }
   .team .team-medium a {
     display: block;
     width: 203px;
@@ -1813,11 +1826,11 @@ footer {
     font-weight: 500; }
 
   .team .team-large h3 {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 16px;
     margin: 0px;
     min-height: 67px;
-    width: 110%; }
+    width: 100%; }
 
   .team .team-large h3 + img {
     height: 100px; }
@@ -1864,7 +1877,16 @@ footer {
   .fundraising-goals .not-from-us {
     left: 0;
     margin-left: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  .team .team-large .advisor-logo {
+    width: 100%; }
+
+  .team .team-large .advisor-logo img {
+    width: 115%; }
+
+  .logo-up {
+    margin-top: -8px; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
