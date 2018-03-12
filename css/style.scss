@@ -915,13 +915,20 @@ height: 0;
     filter: url(#blur-filter);
     -webkit-filter: blur(4px);
     filter: blur(4px);
-}
-.not-from-us{
-
+    &:after{
+    	content: '';
+    	display: block;
+    	background: red;
+    	background: rgba(0,0,0,0.35);
+    	position: absolute;
+    	top: 99px;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+    }
 }
 .fundraising-goals{
-	padding-top: 20px;
-	padding-bottom: 50px;
+	// padding-top: 20px;
 	position: relative;
 	.blur-svg {
         display: none;
@@ -933,8 +940,8 @@ height: 0;
 		margin: 0 0 50px;
 		text-align: center;
     	// padding-top: 50px;
-    	margin: 0 auto 25px;
-
+    	margin: 0 auto;
+    	line-height: 99px;
 	}
 	h4{
 		font-size: 19px;
@@ -965,6 +972,40 @@ height: 0;
 		font-size: 17px;
 		color: #333333;
 		text-align: center;
+	}
+	.blur-funds{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.not-from-us{
+		background: #FFF;
+		width: 460px;
+		padding: 20px;
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		margin-left: -230px;
+		top: 190px;
+		p{
+			background: #FFF;
+			font-size: 15px;
+			color: #333;
+			font-weight: 500;
+			margin: 0 0 20px;
+			line-height: normal;
+		}
+		a{
+			border-radius: 3px;
+			background: $orange;
+			color: #FFF;
+			font-size: 15px;
+			font-weight: 500;
+			display: inline-block;
+			padding: 10px 15px;
+			&:active,&:focus,&:hover{
+				text-decoration: none;
+			}
+		}
 	}
 }
 .daily-dav{
@@ -2220,6 +2261,11 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.team h2{
 		margin: 40px 0 30px;
+	}
+	.fundraising-goals .not-from-us{
+		left: 0;
+		margin-left: 0px;
+		width: 100%;
 	}
 }
 @media (max-height: 767px) {

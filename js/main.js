@@ -30,13 +30,10 @@ $(document).ready(function(){
 
     }
     //Fundraising remove blur
-    var ckbox = $('#us-checkbox');
-    $('.not-from-us label').on('click',function () {
-        if (ckbox.is(':checked')) {
-            $(".blur-funds").removeClass("add-blur");
-        } else {
-            $(".blur-funds").addClass("add-blur");
-        }
+    $('.not-from-us a').on('click',function (e) {
+        e.preventDefault();
+        $(".blur-funds").removeClass("add-blur");
+        $(".not-from-us").addClass("hide");
     });
     // full height hero
     var windowHeight = $(window).height();

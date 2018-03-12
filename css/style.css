@@ -731,10 +731,18 @@ input {
   filter: url(#blur-filter);
   -webkit-filter: blur(4px);
   filter: blur(4px); }
+  .add-blur:after {
+    content: '';
+    display: block;
+    background: red;
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 99px;
+    left: 0;
+    bottom: 0;
+    right: 0; }
 
 .fundraising-goals {
-  padding-top: 20px;
-  padding-bottom: 50px;
   position: relative; }
   .fundraising-goals .blur-svg {
     display: none; }
@@ -744,7 +752,8 @@ input {
     font-weight: 700;
     margin: 0 0 50px;
     text-align: center;
-    margin: 0 auto 25px; }
+    margin: 0 auto;
+    line-height: 99px; }
   .fundraising-goals h4 {
     font-size: 19px;
     font-weight: 500;
@@ -769,6 +778,35 @@ input {
     font-size: 17px;
     color: #333333;
     text-align: center; }
+  .fundraising-goals .blur-funds {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .fundraising-goals .not-from-us {
+    background: #FFF;
+    width: 460px;
+    padding: 20px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    margin-left: -230px;
+    top: 190px; }
+    .fundraising-goals .not-from-us p {
+      background: #FFF;
+      font-size: 15px;
+      color: #333;
+      font-weight: 500;
+      margin: 0 0 20px;
+      line-height: normal; }
+    .fundraising-goals .not-from-us a {
+      border-radius: 3px;
+      background: #ff6a46;
+      color: #FFF;
+      font-size: 15px;
+      font-weight: 500;
+      display: inline-block;
+      padding: 10px 15px; }
+      .fundraising-goals .not-from-us a:active, .fundraising-goals .not-from-us a:focus, .fundraising-goals .not-from-us a:hover {
+        text-decoration: none; }
 
 .daily-dav {
   background: #f7f7f7;
@@ -1821,7 +1859,12 @@ footer {
     padding-top: 0px !important; }
 
   .team h2 {
-    margin: 40px 0 30px; } }
+    margin: 40px 0 30px; }
+
+  .fundraising-goals .not-from-us {
+    left: 0;
+    margin-left: 0px;
+    width: 100%; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
