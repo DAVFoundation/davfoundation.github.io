@@ -14,13 +14,45 @@ input {
   display: inline-block;
   float: none;
   vertical-align: top; }
+  .navbar .navbar-nav .dropdown a {
+    min-width: 140px; }
+    .navbar .navbar-nav .dropdown a:hover, .navbar .navbar-nav .dropdown a:active, .navbar .navbar-nav .dropdown a:focus {
+      background: #2c2928; }
+  .navbar .navbar-nav .dropdown:hover > a {
+    background: #2c2928; }
+  .navbar .navbar-nav .dropdown-menu {
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    background: #2c2928;
+    min-width: 140px;
+    top: 45px; }
+    .navbar .navbar-nav .dropdown-menu li > a {
+      color: #FFF;
+      padding: 5px 20px; }
+      .navbar .navbar-nav .dropdown-menu li > a:hover {
+        background: transparent;
+        color: #ff6a46; }
+
+.navbar.user-scroll .navbar-nav .dropdown a:hover, .navbar.user-scroll .navbar-nav .dropdown a:active, .navbar.user-scroll .navbar-nav .dropdown a:focus {
+  background: #FFF; }
+.navbar.user-scroll .navbar-nav .dropdown:hover > a {
+  background: #FFF; }
+.navbar.user-scroll .navbar-nav .dropdown-menu {
+  background: #FFF; }
+  .navbar.user-scroll .navbar-nav .dropdown-menu li > a {
+    color: #333; }
+    .navbar.user-scroll .navbar-nav .dropdown-menu li > a:hover {
+      background: transparent;
+      color: #ff6a46; }
 
 .navbar-nav > li > a {
   font-size: 15px;
   color: #FFF;
   line-height: 25px; }
   .navbar-nav > li > a:hover {
-    background: transparent; }
+    background: transparent;
+    color: #ff6a46; }
   .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus {
     background: transparent; }
 
@@ -1903,5 +1935,9 @@ footer {
 body.iosBugFixCaret.modal-open {
   position: fixed;
   width: 100%; }
+
+@media only screen and (min-width: 1025px) {
+  .dropdown:hover .dropdown-menu {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

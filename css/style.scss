@@ -18,8 +18,53 @@ input {
   display: inline-block;
   float: none;
   vertical-align: top;
+  .dropdown a{
+  	min-width: 140px;
+  	// background: yellow;
+  	&:hover,&:active,&:focus{
+  		background: #2c2928;
+  	}
+  }
+  .dropdown:hover > a{
+  	background: #2c2928;
+  }
+  .dropdown-menu{
+  	border-radius: 0px;
+  	border: none;
+  	box-shadow: none;
+  	background: #2c2928;
+  	min-width: 140px;
+  	top: 45px;
+  	li>a{
+  		color: #FFF;
+  		padding: 5px 20px;
+  		&:hover{
+  			background: transparent;
+  			color: $orange;
+  		}
+  	}
+  }
 }
-
+.navbar.user-scroll .navbar-nav{
+	.dropdown a{
+		&:hover,&:active,&:focus{
+  			background: #FFF;
+  		}
+	}
+	.dropdown:hover > a{
+  		background: #FFF;
+  	}
+  	.dropdown-menu{
+  		background: #FFF;
+  		li>a{
+  			color: #333;
+  			&:hover{
+  				background: transparent;
+  				color: $orange;
+  			}
+  		}
+  	}
+}
 .navbar .navbar-collapse {
   // text-align: center;
 }
@@ -29,6 +74,7 @@ input {
 	line-height: 25px;
 	&:hover{
 		background: transparent;
+		color: $orange;
 	}
 	&:hover,&:active,&:focus{
 		background: transparent;
@@ -2316,6 +2362,11 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
   }
 }
 body.iosBugFixCaret.modal-open { position: fixed; width: 100%; }
+@media only screen and (min-width: 1025px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
 // @media (min-width: 768px) {
 //     .navbar .navbar-nav {
 //         display: inline-block;
