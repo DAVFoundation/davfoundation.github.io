@@ -1292,7 +1292,7 @@ footer {
 .under-careers {
   text-align: center; }
   .under-careers p {
-    font-size: 18px;
+    font-size: 17px;
     color: #484c59;
     font-weight: 300;
     margin: 40px 0 0; }
@@ -1333,7 +1333,7 @@ footer {
     margin: 0 0 20px; }
   .job-list article p {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     color: #333;
     margin: 0 0 20px; }
   .job-list article h6 {
@@ -1381,7 +1381,7 @@ footer {
     font-weight: 700; }
 .team-modal.job-modal p {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   color: #333;
   margin: 0 0 10px; }
   .team-modal.job-modal p a {
@@ -1394,9 +1394,9 @@ footer {
   margin: 0; }
 .team-modal.job-modal li {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   color: #333;
-  margin: 0 0 20px; }
+  margin: 0 0 5px; }
 .team-modal.job-modal li::before {
   content: '\2022';
   color: red;
