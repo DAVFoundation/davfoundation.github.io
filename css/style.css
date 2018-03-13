@@ -46,11 +46,11 @@ input {
     .navbar.user-scroll .navbar-nav .dropdown-menu li > a:hover {
       background: transparent;
       color: #ff6a46; }
-  .navbar.user-scroll .navbar-nav .dropdown-menu:before {
+  .navbar.user-scroll .navbar-nav .dropdown-menu::before {
     content: '';
     display: block;
     width: 106%;
-    height: 12px;
+    height: 18px;
     background: #FFF;
     position: absolute;
     top: -6px;

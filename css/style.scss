@@ -64,11 +64,11 @@ input {
   				color: $orange;
   			}
   		}
-  		&:before{
+  		&::before{
   			content: '';
   			display: block;
   			width: 106%;
-  			height: 12px;
+  			height: 18px;
   			background: #FFF;
   			position: absolute;
   			top: -6px;
