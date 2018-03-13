@@ -68,9 +68,12 @@ $(document).ready(function(){
     if(url.indexOf('?thank=you') != -1) {
         $('#modalThankYou').modal('show');
     }
-    $('#modalThankYou').on('hidden.bs.modal', function (e) {
+    $('#modalThankYou,#modalThankYouKYC').on('hidden.bs.modal', function (e) {
       document.location.href="/";
     });
+    if(url.indexOf('?kyc=thankyou') != -1) {
+        $('#modalThankYouKYC').modal('show');
+    }
 
     // scroll nav
     $(".nav").find("a.scroll-link").click(function(e) {
