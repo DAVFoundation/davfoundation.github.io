@@ -1484,7 +1484,10 @@ footer {
     width: 400px; }
 
   .dav-cli #laptop {
-    width: 100%; } }
+    width: 100%; }
+
+  .navbar.user-scroll .navbar-nav .dropdown-menu::before {
+    height: 12px; } }
 @media (max-width: 1025px) {
   input[type=text],
   input[type=email],

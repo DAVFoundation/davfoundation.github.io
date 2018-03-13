@@ -1865,6 +1865,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.dav-cli #laptop{
 		width: 100%;
 	}
+	.navbar.user-scroll .navbar-nav .dropdown-menu::before{
+		height: 12px;
+	}
 }
 @media (max-width: 1025px) {
 	input[type=text],
