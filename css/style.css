@@ -1933,7 +1933,15 @@ footer {
     width: 115%; }
 
   .logo-up {
-    margin-top: -8px; } }
+    margin-top: -8px; }
+
+  .hero.hero-media,
+  .hero.hero-careers {
+    margin-top: 54px; }
+    .hero.hero-media .hero-inner .hero-valign h1,
+    .hero.hero-careers .hero-inner .hero-valign h1 {
+      margin: 0px;
+      padding: 0px; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
