@@ -39,12 +39,22 @@ input {
 .navbar.user-scroll .navbar-nav .dropdown:hover > a {
   background: #FFF; }
 .navbar.user-scroll .navbar-nav .dropdown-menu {
-  background: #FFF; }
+  background: #FFF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
   .navbar.user-scroll .navbar-nav .dropdown-menu li > a {
     color: #333; }
     .navbar.user-scroll .navbar-nav .dropdown-menu li > a:hover {
       background: transparent;
       color: #ff6a46; }
+  .navbar.user-scroll .navbar-nav .dropdown-menu:before {
+    content: '';
+    display: block;
+    width: 106%;
+    height: 12px;
+    background: #FFF;
+    position: absolute;
+    top: -6px;
+    left: -3%; }
 
 .navbar-nav > li > a {
   font-size: 15px;
@@ -1484,6 +1494,8 @@ footer {
 
   .navbar-nav > li > a {
     font-size: 12px; }
+    .navbar-nav > li > a + ul.dropdown-menu > li > a {
+      font-size: 12px; }
 
   .best-brands a img {
     height: 60px; }
@@ -1605,7 +1617,10 @@ footer {
 
   .contributors ul li {
     width: 9%;
-    margin: 0.5%; } }
+    margin: 0.5%; }
+
+  .navbar .navbar-nav .dropdown a {
+    min-width: 0px; } }
 @media (max-width: 767px) {
   .navbar-nav > li > a {
     font-size: 15px; }
@@ -1935,9 +1950,5 @@ footer {
 body.iosBugFixCaret.modal-open {
   position: fixed;
   width: 100%; }
-
-@media only screen and (min-width: 1025px) {
-  .dropdown:hover .dropdown-menu {
-    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -29,6 +29,14 @@ $(document).ready(function(){
         $("body").addClass("iosBugFixCaret");
 
     }
+
+    // open dropdown on hover
+    $('ul.nav li.dropdown').hover(function() {
+      $(this).addClass("open");
+    }, function() {
+      $(this).removeClass("open");
+    });
+
     //Fundraising remove blur
     $('.not-from-us a').on('click',function (e) {
         e.preventDefault();
