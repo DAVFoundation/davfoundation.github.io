@@ -1459,6 +1459,32 @@ footer {
   font-size: 20px;
   display: inline-block; }
 
+.team-modal.kyc-modal .modal-body {
+  padding: 0 0 30px !important; }
+  .team-modal.kyc-modal .modal-body h3 {
+    margin: 0px;
+    background: url(../img/handshake.jpg) no-repeat center;
+    background-size: cover;
+    line-height: 160px;
+    color: #FFF;
+    font-weight: 700;
+    border: 1px solid #FFF; }
+  .team-modal.kyc-modal .modal-body h4 {
+    font-weight: 700;
+    color: #ff6a46; }
+  .team-modal.kyc-modal .modal-body p {
+    padding: 0 30px; }
+    .team-modal.kyc-modal .modal-body p a {
+      margin: 0; }
+  .team-modal.kyc-modal .modal-body button {
+    border: none;
+    color: #FFF;
+    font-weight: 500;
+    background: #ff6a46;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 10px 20px; }
+
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }

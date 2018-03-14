@@ -1837,6 +1837,40 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	  display: inline-block;
 	}
 }
+.team-modal.kyc-modal{
+	.modal-body{
+		padding: 0 0 30px !important;
+		h3{
+			margin: 0px;
+			background: url(../img/handshake.jpg) no-repeat center;
+			background-size: cover;
+			line-height: 160px;
+			color: #FFF;
+			font-weight: 700;
+			border: 1px solid #FFF;
+		}
+		h4{
+			font-weight: 700;
+			color: $orange;
+		}
+		p{
+			padding: 0 30px;
+			a{
+				margin: 0;
+			}
+		}
+		button{
+			border: none;
+			color: #FFF;
+			font-weight: 500;
+			background: $orange;
+			font-size: 18px;
+			border-radius: 3px;
+			padding: 10px 20px;
+		}
+	}
+}
+
 // media queries
 @media (max-width: 1400px) {
 	.nav>li>a{
