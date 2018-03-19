@@ -216,7 +216,7 @@ $(document).ready(function(){
   // alert announcement
 
     $('#alert-announcement').on('closed.bs.alert', function () {
-        setCookie('alert-dav', true, 365);
+        setCookie('alert-dav-missioncontrol', true, 365);
         return false;
     })
     
@@ -246,7 +246,7 @@ $(document).ready(function(){
         document.cookie = c_name + "=" + c_value;
     }
 
-    if (getCookie('alert-dav') === "true") {
+    if (getCookie('alert-dav-missioncontrol') === "true") {
        $('#alert-announcement').hide();
     }
     
