@@ -551,6 +551,32 @@ input {
   .partners img {
     height: 115px; }
 
+.people-are-talking {
+  text-align: center;
+  background: #eee;
+  padding: 60px 0; }
+  .people-are-talking h2 {
+    color: #333333;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 70px; }
+  .people-are-talking h3 {
+    color: #333333;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 40px 0 15px; }
+  .people-are-talking p {
+    font-style: italic;
+    min-height: 120px;
+    font-size: 17px;
+    margin: 0 0 20px; }
+  .people-are-talking a {
+    color: #4c7ce8;
+    font-size: 14px;
+    font-weight: 500; }
+    .people-are-talking a span {
+      border-bottom: 1px solid #4c7ce8; }
+
 .join-telegram {
   background: #ff6a46;
   color: #FFF;
@@ -1571,7 +1597,10 @@ footer {
     height: 65px; }
 
   .contributors ul li a:hover:after {
-    display: none; } }
+    display: none; }
+
+  .people-are-talking p {
+    min-height: 150px; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
@@ -1970,7 +1999,15 @@ footer {
     .hero.hero-media .hero-inner .hero-valign h1,
     .hero.hero-careers .hero-inner .hero-valign h1 {
       margin: 0px;
-      padding: 0px; } }
+      padding: 0px; }
+
+  .people-are-talking {
+    padding-bottom: 0px; }
+    .people-are-talking p {
+      min-height: 0px; }
+    .people-are-talking a {
+      margin-bottom: 50px;
+      display: inline-block; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
