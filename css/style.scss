@@ -433,18 +433,32 @@ height: 0;
 		font-weight: 700;
 	}
 	a{
-		color: #4c7ce8;
-		font-size: 14px;
+		background: $orange;
+		color: #FFF;
+		padding: 10px 15px;
+		font-size: 17px;
+		border-radius: 3px;
+		height: 47px;
 		font-weight: 500;
-		display: block;
-		text-align: center;
-		span{
-			border-bottom: 1px solid #4c7ce8;
-		}
-		&:hover{
+		margin: 15px 0 0;
+		display: inline-block;
+		&:focus,&:active,&:hover{
 			text-decoration: none;
 		}
 	}
+	// a{
+	// 	color: #4c7ce8;
+	// 	font-size: 14px;
+	// 	font-weight: 500;
+	// 	display: block;
+	// 	text-align: center;
+	// 	span{
+	// 		border-bottom: 1px solid #4c7ce8;
+	// 	}
+	// 	&:hover{
+	// 		text-decoration: none;
+	// 	}
+	// }
 }
 .development-tools{
 	background: #eeeded;
@@ -550,6 +564,7 @@ height: 0;
 		margin: 45px 0 20px;
 		text-align: center
 	}
+	a.goToAlliance,
 	a[href='#modalMessage']{
 		background: $orange;
 		color: #FFF;
@@ -558,7 +573,7 @@ height: 0;
 		border-radius: 3px;
 		height: 47px;
 		font-weight: 500;
-		margin: 45px 0 0;
+		margin: 60px 0;
 		display: inline-block;
 		&:focus,&:active,&:hover{
 			text-decoration: none;
