@@ -838,6 +838,17 @@ height: 0;
 				width: 100%;
 			}
 		}
+		.hasVideo{
+			a{
+				position: relative;
+			}
+			img.videoIcon{
+				position: absolute;
+				top: 10px;
+				left: 22%;
+				width: 12%;
+			}
+		}
 	}
 	.team-medium{
 		a{
@@ -1027,6 +1038,13 @@ height: 0;
 			border-radius: 3px;
 			.modal-body{
 				padding-bottom: 50px;
+			}
+		}
+		.videoWrapper{
+			margin: 0 0 15px;
+			padding-top: 0px;
+			iframe{
+				padding: 0px;
 			}
 		}
 	}
@@ -2461,6 +2479,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			margin-bottom: 50px;
 			display: inline-block;
 		}
+	}
+	.team .team-large .hasVideo img.videoIcon{
+		left: 10px;
 	}
 }
 @media (max-height: 767px) {

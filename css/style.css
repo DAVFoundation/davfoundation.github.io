@@ -664,6 +664,13 @@ input {
         padding-right: 5px; }
     .team .team-large .advisor-logo img {
       width: 100%; }
+  .team .team-large .hasVideo a {
+    position: relative; }
+  .team .team-large .hasVideo img.videoIcon {
+    position: absolute;
+    top: 10px;
+    left: 22%;
+    width: 12%; }
   .team .team-medium a {
     display: block;
     width: 203px;
@@ -811,6 +818,11 @@ input {
     border-radius: 3px; }
     .team-modal .modal-dialog .modal-content .modal-body {
       padding-bottom: 50px; }
+  .team-modal .modal-dialog .videoWrapper {
+    margin: 0 0 15px;
+    padding-top: 0px; }
+    .team-modal .modal-dialog .videoWrapper iframe {
+      padding: 0px; }
 
 .add-blur {
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
@@ -2013,7 +2025,10 @@ footer {
       min-height: 0px; }
     .people-are-talking a {
       margin-bottom: 50px;
-      display: inline-block; } }
+      display: inline-block; }
+
+  .team .team-large .hasVideo img.videoIcon {
+    left: 10px; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
