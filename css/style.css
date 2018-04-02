@@ -424,6 +424,10 @@ input {
     .roadmap a:hover {
       text-decoration: none; }
 
+.refer-dav {
+  background: #eeeded;
+  padding: 50px 0; }
+
 .dav-alliance {
   margin-top: 30px;
   padding-bottom: 30px; }
