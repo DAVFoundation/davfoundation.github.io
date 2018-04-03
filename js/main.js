@@ -290,7 +290,7 @@ $(function(){
        hH = $('.every-feature').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
+   if (wS > (hT+hH-wH) - 200){
       $('.phone-puzzle').addClass('end');
    }else{
       $('.phone-puzzle').removeClass('end');

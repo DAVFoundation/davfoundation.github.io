@@ -1,5 +1,9 @@
 $orange: #ff6a46;
-
+@mixin transition-speed($time,$effect){
+	-webkit-transition: all $time $effect;
+				-moz-transition: all $time $effect;
+				transition: all $time $effect;
+}
 body{
 	font-family: 'Montserrat', sans-serif;
 	// zoom: 85%;
@@ -1986,6 +1990,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 }
 .every-feature{
+	// overflow-x: hidden;
 	height: 50vw;
 	// background: green;
 	h2{
@@ -2005,9 +2010,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.phone-puzzle{
 		position: relative;
 		top: 0px;
-		-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			transition: all 0.5s ease;
+		@include transition-speed(1.4s,ease-out);
 		.iPhoneX{
 			background: url('../img/blockchain-today/iPhoneX.png') no-repeat center;
 			width: 250px;
@@ -2028,36 +2031,38 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			}
 		}
 		.puzzle{
-			-webkit-transition: all 0.5s ease;
-				-moz-transition: all 0.5s ease;
-				transition: all 0.5s ease;
-			// visibility: hidden;
 			position: absolute;
 			left: 50%;
 			margin-left: -125px;
 			top: 412px;
 			z-index: 2;
 			&.p1{
-				margin-left: -240px;
+				margin-left: -1240px;
+				@include transition-speed(0.8s,linear);
 			}
 			&.p2{
-				margin-left: 109px;
+				margin-left: 1109px;
+				@include transition-speed(1s,linear);
 			}
 			&.p3{
-				margin-left: -250px;
+				margin-left: -1250px;
 				top: 587px;
+				@include transition-speed(1.2s,linear);
 			}
 			&.p4{
-				margin-left: 150px;
+				margin-left: 1150px;
 				top: 550px;
+				@include transition-speed(1.4s,linear);
 			}
 			&.p5{
-				margin-left: -260px;
+				margin-left: -1260px;
 				top: 714px;
+				@include transition-speed(1.6s,linear);
 			}
 			&.p6{
-				margin-left: 129px;
+				margin-left: 1129px;
 				top: 750px;
+				@include transition-speed(1.8s,linear);
 			}
 		}
 		&.end{

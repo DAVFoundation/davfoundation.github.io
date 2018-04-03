@@ -1585,9 +1585,9 @@ footer {
   .every-feature .phone-puzzle {
     position: relative;
     top: 0px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
+    -webkit-transition: all 1.4s ease-out;
+    -moz-transition: all 1.4s ease-out;
+    transition: all 1.4s ease-out; }
     .every-feature .phone-puzzle .iPhoneX {
       background: url("../img/blockchain-today/iPhoneX.png") no-repeat center;
       width: 250px;
@@ -1604,30 +1604,45 @@ footer {
         left: 0;
         z-index: 3; }
     .every-feature .phone-puzzle .puzzle {
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      transition: all 0.5s ease;
       position: absolute;
       left: 50%;
       margin-left: -125px;
       top: 412px;
       z-index: 2; }
       .every-feature .phone-puzzle .puzzle.p1 {
-        margin-left: -240px; }
+        margin-left: -1240px;
+        -webkit-transition: all 0.8s linear;
+        -moz-transition: all 0.8s linear;
+        transition: all 0.8s linear; }
       .every-feature .phone-puzzle .puzzle.p2 {
-        margin-left: 109px; }
+        margin-left: 1109px;
+        -webkit-transition: all 1s linear;
+        -moz-transition: all 1s linear;
+        transition: all 1s linear; }
       .every-feature .phone-puzzle .puzzle.p3 {
-        margin-left: -250px;
-        top: 587px; }
+        margin-left: -1250px;
+        top: 587px;
+        -webkit-transition: all 1.2s linear;
+        -moz-transition: all 1.2s linear;
+        transition: all 1.2s linear; }
       .every-feature .phone-puzzle .puzzle.p4 {
-        margin-left: 150px;
-        top: 550px; }
+        margin-left: 1150px;
+        top: 550px;
+        -webkit-transition: all 1.4s linear;
+        -moz-transition: all 1.4s linear;
+        transition: all 1.4s linear; }
       .every-feature .phone-puzzle .puzzle.p5 {
-        margin-left: -260px;
-        top: 714px; }
+        margin-left: -1260px;
+        top: 714px;
+        -webkit-transition: all 1.6s linear;
+        -moz-transition: all 1.6s linear;
+        transition: all 1.6s linear; }
       .every-feature .phone-puzzle .puzzle.p6 {
-        margin-left: 129px;
-        top: 750px; }
+        margin-left: 1129px;
+        top: 750px;
+        -webkit-transition: all 1.8s linear;
+        -moz-transition: all 1.8s linear;
+        transition: all 1.8s linear; }
     .every-feature .phone-puzzle.end {
       top: 440px; }
       .every-feature .phone-puzzle.end .puzzle {
