@@ -284,6 +284,19 @@ $(function(){
     };
     window.addEventListener('scroll', scrollAnouncement);
 
+
+    $(window).scroll(function() {
+   var hT = $('.every-feature').offset().top,
+       hH = $('.every-feature').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+      $('.phone-puzzle').addClass('end');
+   }else{
+      $('.phone-puzzle').removeClass('end');
+   }
+  });
+
 // contributors section
 $(function() {
     $.getJSON( "contributors.json", function( data ) {

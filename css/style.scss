@@ -1938,6 +1938,169 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 }
+// blockchain today page
+.hero{
+	&.hero-blockchain {
+	    background: url(../img/blockchain-today/hero.jpg) no-repeat center;
+    	background-size: cover;
+    	.hero-inner{
+    		height: 36.71428571428571vw !important;
+    	}
+    	h3{
+    		font-size: 21px;
+    		font-weight: 400;
+    	}
+	}
+
+}
+.peer-to-peer{
+	background: #eeeded url('../img/prototypes/gray-links.png') no-repeat center bottom -100px;
+	background-size: 100% auto;
+	padding: 60px 0 135px;
+	h2{
+		font-size: 27px;
+		font-weight: 700;
+		color: #131313;
+		margin-top: 15%;
+	}
+	p{
+		font-size: 17px;
+		font-weight: 400;
+		color: #131313;
+	}
+}
+.open-source{
+	background: #eeeded url('../img/blockchain-today/code.jpg') no-repeat center;
+	background-size: cover;
+	height: 37.07142857142857vw;
+	color: #FFF;
+	h2{
+		font-size: 27px;
+		font-weight: 700;
+		padding-top: 20px;
+	}
+	p{
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+}
+.every-feature{
+	height: 50vw;
+	// background: green;
+	h2{
+		font-size: 25px;
+		font-weight: 700;
+		color: #131313;
+		// margin-top: 15%;
+	}
+	p{
+		font-size: 17px;
+		font-weight: 400;
+		color: #131313;
+	}
+	.puzzle-container{
+		margin-top: -300px;
+	}
+	.phone-puzzle{
+		position: relative;
+		top: 0px;
+		-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		.iPhoneX{
+			background: url('../img/blockchain-today/iPhoneX.png') no-repeat center;
+			width: 250px;
+			height: 506px;
+			margin: -300px auto 0;
+			margin: 0 auto 0;	
+			position: relative;
+			// top: -300px;
+			.case{
+				background: url('../img/blockchain-today/case.png') no-repeat center;
+				width: 250px;
+				height: 506px;
+				position: absolute;
+				top: 0px;
+				left: 0;
+				// margin-left: -62px;
+				z-index: 3;
+			}
+		}
+		.puzzle{
+			-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+			// visibility: hidden;
+			position: absolute;
+			left: 50%;
+			margin-left: -125px;
+			top: 412px;
+			z-index: 2;
+			&.p1{
+				margin-left: -240px;
+			}
+			&.p2{
+				margin-left: 109px;
+			}
+			&.p3{
+				margin-left: -250px;
+				top: 587px;
+			}
+			&.p4{
+				margin-left: 150px;
+				top: 550px;
+			}
+			&.p5{
+				margin-left: -260px;
+				top: 714px;
+			}
+			&.p6{
+				margin-left: 129px;
+				top: 750px;
+			}
+		}
+		&.end{
+			top: 440px;
+			.puzzle{
+			// visibility: hidden;
+			position: absolute;
+			left: 50%;
+			margin-left: -125px;
+			top: 12px;
+			&.p1{
+				margin-left: -110px;
+			}
+			&.p2{
+				margin-left: -41px;
+			}
+			&.p3{
+				margin-left: -110px;
+				top: 177px;
+			}
+			&.p4{
+				margin-left: -6px;
+				top: 140px;
+			}
+			&.p5{
+				margin-left: -110px;
+				top: 294px;
+			}
+			&.p6{
+				margin-left: -43px;
+				top: 332px;
+			}
+		}
+		}
+	}
+}
+.blockchain-video{
+	h2{
+		font-size: 25px;
+		font-weight: 700;
+		color: #131313;
+	}
+}
 
 // media queries
 @media (max-width: 1400px) {
@@ -2041,6 +2204,15 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.people-are-talking p{
 		min-height: 150px;
+	}
+	.peer-to-peer img{
+		width: 100%;
+	}
+	.open-source{
+		height: 47vw;
+	}
+	.every-feature{
+		height: 67vw;
 	}
 }
 @media (max-width: 992px) {
