@@ -136,13 +136,17 @@ input {
 			font-weight: 700;
 			margin: 0 0 20px;
 			line-height: 54px;
-			}
+		}
 		h4{
 			font-size: 15px;
 			font-weight: 700;
 			line-height: 25px;
 			margin: 0 0 18px;
-			}
+			padding: 0 15px;
+			.mailchimp-count{
+					color: $orange;
+				}
+		}
 		h5{
 			font-size: 15px;
 			margin: 0 0 50px;
@@ -1099,7 +1103,7 @@ height: 0;
 		margin: 20px 0 30px;
 	}
 	img{
-		height: 357px;
+		height: 297px;
 	}
 	.market-cap{
 		width: 1100px;
@@ -1122,7 +1126,7 @@ height: 0;
 		text-align: center;
 	}
 	.blur-funds{
-		padding-top: 50px;
+		padding-top: 20px;
 		padding-bottom: 50px;
 	}
 	.not-from-us{
