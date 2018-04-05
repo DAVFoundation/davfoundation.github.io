@@ -1672,6 +1672,9 @@ footer {
   font-weight: 700;
   color: #131313; }
 
+#maitre-widget-container, #maitre-widget-popup {
+  max-width: 690px !important; }
+
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }

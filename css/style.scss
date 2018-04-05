@@ -2106,7 +2106,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		color: #131313;
 	}
 }
-
+#maitre-widget-container, #maitre-widget-popup{
+	max-width: 690px !important;
+}
 // media queries
 @media (max-width: 1400px) {
 	.nav>li>a{
