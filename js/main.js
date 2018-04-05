@@ -301,10 +301,9 @@ $(function(){
 $.ajax({ 
     type: 'GET', 
     url: 'https://nessie.dav.network/members', 
-    data: { get_param: 'count' }, 
     dataType: 'json',
     success: function (data) { 
-      $(".mailchimp-count").text(data);
+      $(".mailchimp-count").text(data.count);
     }
 });
 // contributors section
