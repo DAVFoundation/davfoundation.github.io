@@ -1675,6 +1675,90 @@ footer {
 #maitre-widget-container, #maitre-widget-popup {
   max-width: 690px !important; }
 
+.kyc-top {
+  background: url("../img/prototypes/gray-links.png") no-repeat bottom center;
+  background-size: 100%;
+  margin-bottom: 30px; }
+  .kyc-top h1 {
+    margin: 54px 0 0;
+    padding: 45px 0;
+    font-size: 27px;
+    color: #333;
+    font-weight: 700;
+    text-align: center; }
+  .kyc-top p {
+    font-size: 15px;
+    color: #333;
+    font-weight: 400; }
+    .kyc-top p span {
+      font-weight: 700; }
+  .kyc-top .token-details {
+    border: 1px solid #484848;
+    background: #FFF;
+    padding: 32px 64px; }
+    .kyc-top .token-details .details-row {
+      border-bottom: 1px solid #ebebeb; }
+      .kyc-top .token-details .details-row p {
+        margin: 0px;
+        line-height: 40px; }
+        .kyc-top .token-details .details-row p.halfHeight {
+          line-height: 24px; }
+
+.kyc-page {
+  padding-bottom: 110px; }
+  .kyc-page h4 {
+    font-size: 19px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 30px; }
+  .kyc-page ol, .kyc-page ul {
+    padding-left: 20px; }
+    .kyc-page ol.line-list, .kyc-page ul.line-list {
+      list-style-type: none;
+      padding: 0px; }
+      .kyc-page ol.line-list li::before, .kyc-page ul.line-list li::before {
+        content: "\2014";
+        color: #ff6a46;
+        margin-right: 3px; }
+    .kyc-page ol.disc-list, .kyc-page ul.disc-list {
+      list-style-type: none;
+      padding: 0px; }
+      .kyc-page ol.disc-list > li::before, .kyc-page ul.disc-list > li::before {
+        content: "\25CF";
+        color: #ff6a46;
+        margin-right: 5px; }
+    .kyc-page ol.lower-alpha, .kyc-page ul.lower-alpha {
+      list-style-type: lower-alpha;
+      padding-left: 30px; }
+      .kyc-page ol.lower-alpha > li, .kyc-page ul.lower-alpha > li {
+        font-weight: 700; }
+        .kyc-page ol.lower-alpha > li p, .kyc-page ul.lower-alpha > li p {
+          font-weight: 400;
+          margin: 0px; }
+    .kyc-page ol.number-list, .kyc-page ul.number-list {
+      padding-left: 30px; }
+      .kyc-page ol.number-list > li, .kyc-page ul.number-list > li {
+        font-weight: 700; }
+        .kyc-page ol.number-list > li p, .kyc-page ul.number-list > li p {
+          font-weight: 400;
+          margin: 0px; }
+  .kyc-page p, .kyc-page li {
+    font-size: 15px;
+    color: #333;
+    font-weight: 300;
+    line-height: 21px;
+    padding: 0px; }
+    .kyc-page p span, .kyc-page li span {
+      font-weight: 700; }
+    .kyc-page p a, .kyc-page li a {
+      color: #ff6a46;
+      text-decoration: underline; }
+  .kyc-page h3 {
+    color: #ff6a46;
+    font-size: 19px;
+    font-weight: 300;
+    margin-top: 30px; }
+
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }
