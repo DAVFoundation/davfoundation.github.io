@@ -910,6 +910,16 @@ input {
       padding: 10px 15px; }
       .fundraising-goals .not-from-us a:active, .fundraising-goals .not-from-us a:focus, .fundraising-goals .not-from-us a:hover {
         text-decoration: none; }
+  .fundraising-goals a.btn-orange {
+    border-radius: 3px;
+    background: #ff6a46;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 15px; }
+    .fundraising-goals a.btn-orange:active, .fundraising-goals a.btn-orange:focus, .fundraising-goals a.btn-orange:hover {
+      text-decoration: none; }
 
 .daily-dav {
   background: #f7f7f7;
@@ -1690,8 +1700,8 @@ footer {
     font-size: 15px;
     color: #333;
     font-weight: 400; }
-    .kyc-top p span {
-      font-weight: 700; }
+    .kyc-top p a {
+      color: #ff6a46; }
   .kyc-top .token-details {
     border: 1px solid #484848;
     background: #FFF;
@@ -1727,7 +1737,7 @@ footer {
       padding: 0px; }
       .kyc-page ol.disc-list > li::before, .kyc-page ul.disc-list > li::before {
         content: "\25CF";
-        color: #ff6a46;
+        color: #000;
         margin-right: 5px; }
     .kyc-page ol.lower-alpha, .kyc-page ul.lower-alpha {
       list-style-type: lower-alpha;
@@ -1756,10 +1766,11 @@ footer {
       color: #ff6a46;
       text-decoration: underline; }
   .kyc-page h3 {
-    color: #ff6a46;
+    color: #000;
     font-size: 19px;
     font-weight: 300;
-    margin-top: 30px; }
+    margin-top: 30px;
+    line-height: 30px; }
 
 @media (max-width: 1400px) {
   .nav > li > a {

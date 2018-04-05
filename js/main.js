@@ -296,7 +296,17 @@ $(function(){
       $('.phone-puzzle').removeClass('end');
    }
   });
+// mailchimp subscriber count
 
+$.ajax({ 
+    type: 'GET', 
+    url: 'https://nessie.dav.network/members', 
+    data: { get_param: 'count' }, 
+    dataType: 'json',
+    success: function (data) { 
+      $(".mailchimp-count").text(data);
+    }
+});
 // contributors section
 $(function() {
     $.getJSON( "contributors.json", function( data ) {

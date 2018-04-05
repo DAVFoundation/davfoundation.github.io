@@ -1155,6 +1155,18 @@ height: 0;
 			}
 		}
 	}
+	a.btn-orange{
+		border-radius: 3px;
+		background: $orange;
+		color: #FFF;
+		font-size: 15px;
+		font-weight: 500;
+		display: inline-block;
+		padding: 10px 15px;
+		&:active,&:focus,&:hover{
+			text-decoration: none;
+		}
+	}
 }
 .daily-dav{
 	background: #f7f7f7;
@@ -2127,7 +2139,10 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		color: #333;
 		font-weight: 400;
 		span{
-			font-weight: 700;
+			// font-weight: 700;
+		}
+		a{
+			color: $orange;
 		}
 	}
 	.token-details{
@@ -2174,7 +2189,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			padding: 0px;
 			& > li::before{
 				content: "\25CF";
-				color: $orange;
+				color: #000;
 				margin-right: 5px;
 			}
 		}
@@ -2217,10 +2232,11 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 	h3{
-		color: $orange;
+		color: #000;
 		font-size: 19px;
 		font-weight: 300;
 		margin-top: 30px;
+		line-height: 30px;
 	}
 }
 // media queries
