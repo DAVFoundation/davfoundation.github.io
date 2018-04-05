@@ -1703,6 +1703,8 @@ footer {
         line-height: 40px; }
         .kyc-top .token-details .details-row p.halfHeight {
           line-height: 24px; }
+      .kyc-top .token-details .details-row:last-child {
+        border: none; }
 
 .kyc-page {
   padding-bottom: 110px; }
@@ -2267,7 +2269,13 @@ footer {
       display: inline-block; }
 
   .team .team-large .hasVideo img.videoIcon {
-    left: 10px; } }
+    left: 10px; }
+
+  .kyc-top .token-details {
+    padding: 15px; }
+    .kyc-top .token-details .details-row p {
+      line-height: normal;
+      padding: 5px 0px; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
