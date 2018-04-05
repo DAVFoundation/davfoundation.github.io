@@ -110,7 +110,10 @@ input {
         margin: 0 0 18px;
         padding: 0 15px; }
         .hero .hero-inner .hero-valign h4 .mailchimp-count {
-          color: #ff6a46; }
+          color: #ff6a46;
+          display: inline-block;
+          min-width: 70px;
+          text-align: right; }
       .hero .hero-inner .hero-valign h5 {
         font-size: 15px;
         margin: 0 0 50px;

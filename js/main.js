@@ -314,7 +314,18 @@ $.ajax({
     url: 'https://nessie.dav.network/members', 
     dataType: 'json',
     success: function (data) { 
-      $(".mailchimp-count").text(addCommas(data.count));
+      // $(".mailchimp-count").text(addCommas(data.count));
+      $('.mailchimp-count').countTo({
+        from: 100,
+        to: data.count,
+        speed: 3000,
+        refreshInterval: 20,
+        formatter: function (value, options) {
+          value = value.toFixed(options.decimals);
+          value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+          return value;
+        }
+      });
     }
 });
 // contributors section
