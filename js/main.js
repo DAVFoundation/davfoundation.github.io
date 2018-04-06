@@ -295,7 +295,9 @@ $(function(){
        hH = $('.every-feature').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH) - 200){
+       customOffset = 250;
+       if($(window).width() < 767){customOffset = 400;}
+   if (wS > (hT+hH-wH) - customOffset){
       $('.phone-puzzle').addClass('end');
    }else{
       $('.phone-puzzle').removeClass('end');

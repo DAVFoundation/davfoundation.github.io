@@ -1960,7 +1960,19 @@ footer {
     margin: 0.5%; }
 
   .navbar .navbar-nav .dropdown a {
-    min-width: 0px; } }
+    min-width: 0px; }
+
+  .open-source,
+  .every-feature {
+    padding-bottom: 30px;
+    height: auto; }
+    .open-source .puzzle-container,
+    .every-feature .puzzle-container {
+      margin-top: 80px;
+      margin-bottom: 30px; }
+    .open-source .phone-puzzle.end,
+    .every-feature .phone-puzzle.end {
+      top: 0px; } }
 @media (max-width: 767px) {
   .navbar-nav > li > a {
     font-size: 15px; }
@@ -2298,7 +2310,21 @@ footer {
     padding: 15px; }
     .kyc-top .token-details .details-row p {
       line-height: normal;
-      padding: 5px 0px; } }
+      padding: 5px 0px; }
+
+  .hero-blockchain {
+    margin-top: 54px;
+    padding: 50px 0; }
+
+  .peer-to-peer {
+    padding: 50px 0; }
+    .peer-to-peer h2 {
+      margin-top: 0; }
+    .peer-to-peer .text-right {
+      text-align: center; }
+
+  .every-feature .text-left {
+    text-align: center; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
