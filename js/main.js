@@ -74,7 +74,12 @@ $(document).ready(function(){
     if(url.indexOf('?kyc=thankyou') != -1) {
         $('#modalThankYouKYC').modal('show');
     }
-
+ 
+    var target = window.location.hash;
+    if(target == "#tokensale"){
+       $('.fundraising-goals').addClass("offsetMe");
+    }
+ 
     // scroll nav
     $(".nav").find("a.scroll-link").click(function(e) {
       e.preventDefault();

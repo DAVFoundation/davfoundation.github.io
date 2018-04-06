@@ -112,7 +112,7 @@ input {
         .hero .hero-inner .hero-valign h4 .mailchimp-count {
           color: #ff6a46;
           display: inline-block;
-          min-width: 70px;
+          min-width: 50px;
           text-align: right; }
       .hero .hero-inner .hero-valign h5 {
         font-size: 15px;
@@ -926,6 +926,12 @@ input {
     padding: 10px 15px; }
     .fundraising-goals a.btn-orange:active, .fundraising-goals a.btn-orange:focus, .fundraising-goals a.btn-orange:hover {
       text-decoration: none; }
+  .fundraising-goals.offsetMe h2:before {
+    content: "";
+    display: block;
+    height: 58px; }
+  .fundraising-goals.offsetMe .add-blur:after {
+    top: 157px; }
 
 .daily-dav {
   background: #f7f7f7;
