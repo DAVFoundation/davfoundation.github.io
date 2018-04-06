@@ -432,6 +432,65 @@ height: 0;
 		}
 	}
 }
+.blockchain-middleman{
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: #333;
+	h2{
+		font-size: 27px;
+		font-weight: 700;
+	}
+	h3{
+		font-size: 17px;
+		font-weight: 500;
+		margin: 0 0 50px;
+	}
+	h4{
+		font-size: 17px;
+		font-weight: 700;
+		margin: 0 0 20px;
+	}
+	h5{
+		font-size: 16px;
+		font-weight: 500;
+		margin: 0 0 10px;
+	}
+	p{
+		font-size: 15px;
+		font-weight: 300;
+		margin: 0 0 30px;
+		padding: 0 60px;
+	}
+	img{
+		width: 70%;
+	}
+	a.btn-orange{
+		border-radius: 3px;
+		background: $orange;
+		color: #FFF;
+		font-size: 15px;
+		font-weight: 600;
+		display: inline-block;
+		padding: 10px 40px;
+		&:active,&:focus,&:hover{
+			text-decoration: none;
+		}
+	}
+	.row > div:after{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 48px;
+		height: 31px;
+		background: url("../img/arrow-right.png") no-repeat center;
+		right: -24px;
+		top: 215px;
+	}
+	.row > div:last-child::after{
+		display: none;
+	}
+}
 .prototypes-section{
 	background: #eeeded;
 	.container{
@@ -2469,6 +2528,17 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
     	.phone-puzzle.end {
     		top: 0px;
+		}
+	}
+	.blockchain-middleman{
+		h2{
+			font-size: 24px;
+		}
+		p{
+			padding: 0px;
+		}
+		.row > div:after{
+			display: none;
 		}
 	}
 }

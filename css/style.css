@@ -339,6 +339,55 @@ input {
       margin: 0 0 40px;
       padding-left: 36px; }
 
+.blockchain-middleman {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #333; }
+  .blockchain-middleman h2 {
+    font-size: 27px;
+    font-weight: 700; }
+  .blockchain-middleman h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 50px; }
+  .blockchain-middleman h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 20px; }
+  .blockchain-middleman h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 10px; }
+  .blockchain-middleman p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px;
+    padding: 0 60px; }
+  .blockchain-middleman img {
+    width: 70%; }
+  .blockchain-middleman a.btn-orange {
+    border-radius: 3px;
+    background: #ff6a46;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 40px; }
+    .blockchain-middleman a.btn-orange:active, .blockchain-middleman a.btn-orange:focus, .blockchain-middleman a.btn-orange:hover {
+      text-decoration: none; }
+  .blockchain-middleman .row > div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 31px;
+    background: url("../img/arrow-right.png") no-repeat center;
+    right: -24px;
+    top: 215px; }
+  .blockchain-middleman .row > div:last-child::after {
+    display: none; }
+
 .prototypes-section {
   background: #eeeded; }
   .prototypes-section .container {
@@ -1972,7 +2021,14 @@ footer {
       margin-bottom: 30px; }
     .open-source .phone-puzzle.end,
     .every-feature .phone-puzzle.end {
-      top: 0px; } }
+      top: 0px; }
+
+  .blockchain-middleman h2 {
+    font-size: 24px; }
+  .blockchain-middleman p {
+    padding: 0px; }
+  .blockchain-middleman .row > div:after {
+    display: none; } }
 @media (max-width: 767px) {
   .navbar-nav > li > a {
     font-size: 15px; }
