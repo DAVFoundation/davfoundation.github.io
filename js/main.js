@@ -311,7 +311,7 @@ $.ajax({
       $('.mailchimp-count').countTo({
         from: 16500,
         to: data.count,
-        speed: 1000,
+        speed: 3000,
         refreshInterval: 20,
         formatter: function (value, options) {
           value = value.toFixed(options.decimals);
