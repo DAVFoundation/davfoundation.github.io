@@ -2027,7 +2027,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 				margin: 0;
 			}
 		}
-		button{
+		button,.kyc-button{
 			border: none;
 			color: #FFF;
 			font-weight: 500;
@@ -2035,6 +2035,11 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			font-size: 18px;
 			border-radius: 3px;
 			padding: 10px 20px;
+			&:hover,
+			&:active,
+			&:focus{
+				text-decoration: none;
+			}
 		}
 		input[type=email]{
 			display: block;
@@ -2046,6 +2051,10 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			margin: 60px auto 40px;
 			border: 2px solid #000;
 			border-radius: 5px;
+		}
+		h5{
+			color: red;
+			margin: -20px 0 20px; 
 		}
 	}
 }

@@ -42,6 +42,7 @@
     <!-- End Google Tag Manager -->
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css?v=3.0.1"/>
 
@@ -163,6 +164,7 @@
 
               <div class="mc-field-group">
                 <!-- <label for="mce-EMAIL">Email Address </label> -->
+                <input type="hidden" id="transaction_id" name="transaction_id">
                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" style="width: 66%;">
               </div>
                 <div id="mce-responses" class="clear">
@@ -2309,9 +2311,15 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
           <div class="modal-body text-center">
             <h3>KYC Status Check</h3>
             <br><br>
-            <h4>Please enter the email you have registered with:</h4>
-            <input type="email" name="kycmail" placeholder="Email address">
-            <button type="button">Check KYC Status</button>
+            <h4 class="kyc-title">Please enter the email you have registered with:</h4>
+            <p class="kyc-response"></p>
+            <div id="kyc-form">
+              <input type="email" name="kycmail" id="kycmail" placeholder="Email address" required>
+              <h5 class="kyc-error"></h5>
+              <button type="button" id="checkKYC">Check KYC Status</button>
+            </div>
+            <a href="#" class="close1 kyc-button hide">Return to KYC process</a>
+            <button type="button" class="close1 kyc-close hide" data-dismiss="modal" aria-label="Close">Close</button>
           </div>
 
         </div>

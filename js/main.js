@@ -15,6 +15,8 @@ $(document).ready(function(){
      });
     }
 
+    $("#transaction_id").val(getParameterByName("transaction_id"));
+
     // iOS cursor fix
     // Detect ios 11_x_x affected  
     // NEED TO BE UPDATED if new versions are affected
@@ -258,7 +260,54 @@ $(document).ready(function(){
        $('#alert-announcement').hide();
     }
     
-    
+    //KYC status check
+    function validateEmail(email) {
+      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
+    $('#checkKYC').on('click',function (e) {
+        e.preventDefault();
+        var email = $("#kycmail").val();
+        var url = "https://nessie.dav.network/status?email=" + email;
+        if(validateEmail(email)){
+          // alert("KYC check click " + email);
+          $(".kyc-error").hide();
+          $.ajax({ 
+              type: 'GET', 
+              url: url, 
+              dataType: 'json',
+              success: function (data) { 
+                $("#kyc-form").hide();
+                $(".kyc-response").text(data.suggestionText);
+                switch(data.statusText) {
+                    case "AutoFinish":
+                        $(".kyc-title").text("Identification was confirmed automatically");
+                        $(".kyc-close").removeClass('hide');
+                        break;
+                    case "ManualFinish":
+                        $(".kyc-title").text("Identification was confirmed manually");
+                        $(".kyc-close").removeClass('hide');
+                        break;
+                    case "Failed / Checkrequired":
+                        $(".kyc-title").text("Identification has to be reviewed manually.");
+                        $(".kyc-button").removeClass('hide');
+                        break;
+                    case "Rejected":
+                        $(".kyc-title").text("Identification was rejected manually");
+                        $(".kyc-button").removeClass('hide');
+                        break;
+                    default:
+                      break;
+                }
+              }
+          });
+        }else{
+          $(".kyc-error").show();
+          $(".kyc-error").animateCss("shake");
+          $(".kyc-error").text("Please enter your email address.");
+        }
+
+    });
     //countdown
   // $('#countdown').countdown(
   //   {until: $.countdown.UTCDate(-8, new Date(2018, 3, 30)), format: 'dHM'}
@@ -370,3 +419,40 @@ $(function() {
       });
     });
 });    
+
+$.fn.extend({
+  animateCss: function(animationName, callback) {
+    var animationEnd = (function(el) {
+      var animations = {
+        animation: 'animationend',
+        OAnimation: 'oAnimationEnd',
+        MozAnimation: 'mozAnimationEnd',
+        WebkitAnimation: 'webkitAnimationEnd',
+      };
+
+      for (var t in animations) {
+        if (el.style[t] !== undefined) {
+          return animations[t];
+        }
+      }
+    })(document.createElement('div'));
+
+    this.addClass('animated ' + animationName).one(animationEnd, function() {
+      $(this).removeClass('animated ' + animationName);
+
+      if (typeof callback === 'function') callback();
+    });
+
+    return this;
+  },
+});
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}

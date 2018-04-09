@@ -1602,7 +1602,7 @@ footer {
     padding: 0 30px; }
     .team-modal.kyc-modal .modal-body p a {
       margin: 0; }
-  .team-modal.kyc-modal .modal-body button {
+  .team-modal.kyc-modal .modal-body button, .team-modal.kyc-modal .modal-body .kyc-button {
     border: none;
     color: #FFF;
     font-weight: 500;
@@ -1610,6 +1610,8 @@ footer {
     font-size: 18px;
     border-radius: 3px;
     padding: 10px 20px; }
+    .team-modal.kyc-modal .modal-body button:hover, .team-modal.kyc-modal .modal-body button:active, .team-modal.kyc-modal .modal-body button:focus, .team-modal.kyc-modal .modal-body .kyc-button:hover, .team-modal.kyc-modal .modal-body .kyc-button:active, .team-modal.kyc-modal .modal-body .kyc-button:focus {
+      text-decoration: none; }
   .team-modal.kyc-modal .modal-body input[type=email] {
     display: block;
     width: 40%;
@@ -1620,6 +1622,9 @@ footer {
     margin: 60px auto 40px;
     border: 2px solid #000;
     border-radius: 5px; }
+  .team-modal.kyc-modal .modal-body h5 {
+    color: red;
+    margin: -20px 0 20px; }
 
 .hero.hero-blockchain {
   background: url(../img/blockchain-today/hero.jpg) no-repeat center;
