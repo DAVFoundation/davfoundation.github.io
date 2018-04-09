@@ -212,6 +212,14 @@ input {
 				}
 			}
 		}
+		a[href='#modalKYCStatus']{
+			color: #FFF;
+			font-size: 17px;
+			text-decoration: underline;
+			margin: 20px auto 0;
+			display: block;
+			width: 240px;
+		}
 	}
 	.countdown-row {
 	margin:0 auto 40px;
@@ -2027,6 +2035,17 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			font-size: 18px;
 			border-radius: 3px;
 			padding: 10px 20px;
+		}
+		input[type=email]{
+			display: block;
+			width: 40%;
+			padding: 0 15px;
+			line-height: 44px;
+			height: 44px;
+			font-size: 17px;
+			margin: 60px auto 40px;
+			border: 2px solid #000;
+			border-radius: 5px;
 		}
 	}
 }
