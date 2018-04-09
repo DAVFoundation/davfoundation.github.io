@@ -1589,7 +1589,7 @@ footer {
   padding: 0 0 30px !important; }
   .team-modal.kyc-modal .modal-body h3 {
     margin: 0px;
-    background: url(../img/careers.jpg) no-repeat center;
+    background: #333 url(../img/kyc-header.jpg) no-repeat center;
     background-size: cover;
     line-height: 160px;
     color: #FFF;
