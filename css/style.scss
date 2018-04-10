@@ -2026,6 +2026,13 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			a{
 				margin: 0;
 			}
+			&.kyc-medium,
+			&.kyc-telegram,
+			&.kyc-telegram2{
+				a{
+					color: $orange;
+				}
+			}
 		}
 		button,.kyc-button{
 			border: none;

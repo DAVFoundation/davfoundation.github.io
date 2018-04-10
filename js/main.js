@@ -271,30 +271,48 @@ $(document).ready(function(){
         var url = "https://nessie.dav.network/status?email=" + email;
         if(validateEmail(email)){
           // alert("KYC check click " + email);
+          $(".kyc-loader").removeClass('hide');
           $(".kyc-error").hide();
           $.ajax({ 
               type: 'GET', 
               url: url, 
               dataType: 'json',
               success: function (data) { 
+                $(".kyc-loader").addClass('hide');
                 $("#kyc-form").hide();
-                $(".kyc-response").text(data.suggestionText);
+                // $(".kyc-response").text(data.suggestionText);
                 switch(data.statusText) {
                     case "AutoFinish":
-                        $(".kyc-title").text("Identification was confirmed automatically");
-                        $(".kyc-close").removeClass('hide');
+                        $(".kyc-title").text("Congratulations!");
+                        $(".kyc-response").text("Your identification has been confirmed successfully. We’ll share specific instructions on how to participate as we get closer to our token sale.");
+                        $(".kyc-close,.kyc-telegram").removeClass('hide');
                         break;
                     case "ManualFinish":
-                        $(".kyc-title").text("Identification was confirmed manually");
-                        $(".kyc-close").removeClass('hide');
+                        $(".kyc-title").text("Congratulations!");
+                        $(".kyc-response").text("Your identification has been confirmed successfully. We’ll share specific instructions on how to participate as we get closer to our token sale.");
+                        $(".kyc-close,.kyc-telegram").removeClass('hide');
                         break;
-                    case "Failed / Checkrequired":
-                        $(".kyc-title").text("Identification has to be reviewed manually.");
-                        $(".kyc-button").removeClass('hide');
+                    case "Failed":
+                        $(".kyc-title").text("Your KYC application failed to process.");
+                        $(".kyc-response").text("We ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully complete your KYC by doing the following: " + data.suggestionText);
+                        $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
+                        $(".kyc-button").attr("href","http://nessie.dav.network/join?email="+email);
+                        break;
+                    case "Checkrequired":
+                        $(".kyc-title").text("Your KYC application is currently under review.");
+                        $(".kyc-response").text("You’ll receive an email once your application has been processed.");
+                        $(".kyc-close,.kyc-telegram2").removeClass('hide');
                         break;
                     case "Rejected":
-                        $(".kyc-title").text("Identification was rejected manually");
-                        $(".kyc-button").removeClass('hide');
+                        $(".kyc-title").text("Your KYC application has not been accepted.");
+                        $(".kyc-response").text("If you believe your KYC has been rejected by mistake we ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully complete your KYC by doing the following: " + data.suggestionText);
+                        $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
+                        $(".kyc-button").attr("href","http://nessie.dav.network/join?email="+email);
+                        break;
+                    case "Expired":
+                        $(".kyc-title").text("Your KYC application has expired.");
+                        $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
+                        $(".kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
                         break;
                     default:
                       break;
