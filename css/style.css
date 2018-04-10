@@ -254,13 +254,18 @@ input {
       text-decoration: none; }
 
 .refer-friends {
-  background: #f7f7f7 url("../img/prototypes/gray-links.png") no-repeat center bottom;
+  background: #f7f7f7 url("../img/refer.png") no-repeat center bottom;
   background-size: 100% auto;
   margin-top: 51px;
   padding: 50px 0 75px;
   text-align: center; }
   .refer-friends img {
     width: 80%; }
+  .refer-friends #maitre-widget-container #maitre-main-header {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    line-height: 40px; }
   .refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
     margin-top: 15%; }
   .refer-friends #maitre-widget-container #maitre-form-content, .refer-friends #maitre-widget-popup #maitre-form-content {
@@ -2457,7 +2462,11 @@ footer {
       text-align: center; }
 
   .every-feature .text-left {
-    text-align: center; } }
+    text-align: center; }
+
+  .refer-friends {
+    background: #f7f7f7 url("../img/prototypes/gray-links.png") no-repeat center bottom;
+    background-size: 100% auto; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }

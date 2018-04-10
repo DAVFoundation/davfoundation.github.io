@@ -331,13 +331,19 @@ input {
 	}
 }
 .refer-friends{
-	background: #f7f7f7 url('../img/prototypes/gray-links.png') no-repeat center bottom;
+	background: #f7f7f7 url('../img/refer.png') no-repeat center bottom;
 	background-size: 100% auto;
 	margin-top: 51px;
 	padding: 50px 0 75px;
 	text-align: center;
 	img{
 		width: 80%;
+	}
+	#maitre-widget-container #maitre-main-header{
+		font-size: 22px;
+		font-weight: 700;
+		color: #333;
+		line-height: 40px;
 	}
 	#maitre-widget-container, #maitre-widget-popup{
 		margin-top: 15%;
@@ -3021,6 +3027,10 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		.text-left{
 			text-align: center;
 		}
+	}
+	.refer-friends{
+		background: #f7f7f7 url('../img/prototypes/gray-links.png') no-repeat center bottom;
+		background-size: 100% auto;
 	}
 
 }
