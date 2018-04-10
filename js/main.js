@@ -314,6 +314,12 @@ $(document).ready(function(){
                         $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
                         $(".kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
                         break;
+                    case "Started":
+                        $(".kyc-title").text(" Your KYC application failed to process.");
+                        $(".kyc-response").text("Our systems tell us the email address you used is not valid. We ask that you please resubmit your KYC by clicking the button below and providing a valid email address.");
+                        $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
+                        $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
+                        break;
                     default:
                       break;
                 }
