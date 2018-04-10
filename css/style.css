@@ -1656,7 +1656,8 @@ footer {
   .team-modal.kyc-modal .modal-body p {
     padding: 0 30px; }
     .team-modal.kyc-modal .modal-body p a {
-      margin: 0; }
+      margin: 0;
+      color: #ff6a46; }
     .team-modal.kyc-modal .modal-body p.kyc-medium a, .team-modal.kyc-modal .modal-body p.kyc-telegram a, .team-modal.kyc-modal .modal-body p.kyc-telegram2 a {
       color: #ff6a46; }
   .team-modal.kyc-modal .modal-body button, .team-modal.kyc-modal .modal-body .kyc-button {

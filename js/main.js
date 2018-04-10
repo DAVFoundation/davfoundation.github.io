@@ -307,7 +307,7 @@ $(document).ready(function(){
                         $(".kyc-title").text("Your KYC application has not been accepted.");
                         $(".kyc-response").text("If you believe your KYC has been rejected by mistake we ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully complete your KYC by doing the following: " + data.suggestionText);
                         $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                        $(".kyc-button").attr("href","http://nessie.dav.network/join?email="+email);
+                        $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
                         break;
                     case "Expired":
                         $(".kyc-title").text("Your KYC application has expired.");
