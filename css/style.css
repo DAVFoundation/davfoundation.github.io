@@ -228,6 +228,60 @@ input {
       height: 65px;
       margin: 10px 0; }
 
+.refer-dav {
+  background: #ecebeb;
+  text-align: center;
+  padding: 40px 15px; }
+  .refer-dav h2 {
+    font-size: 27px;
+    color: #333;
+    font-weight: 700;
+    margin: 0 0 20px; }
+  .refer-dav h4 {
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+    margin: 0 0 35px; }
+  .refer-dav a {
+    border-radius: 3px;
+    background: #ff6a46;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 40px; }
+    .refer-dav a:active, .refer-dav a:focus, .refer-dav a:hover {
+      text-decoration: none; }
+
+.refer-friends {
+  background: #f7f7f7 url("../img/prototypes/gray-links.png") no-repeat center bottom;
+  background-size: 100% auto;
+  margin-top: 51px;
+  padding: 50px 0 75px;
+  text-align: center; }
+  .refer-friends img {
+    width: 80%; }
+  .refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
+    margin-top: 15%; }
+  .refer-friends #maitre-widget-container #maitre-form-content, .refer-friends #maitre-widget-popup #maitre-form-content {
+    display: block; }
+  .refer-friends #maitre-widget-container label, .refer-friends #maitre-widget-popup label {
+    color: #363840;
+    top: 10px;
+    left: 10px; }
+  .refer-friends #maitre-widget-container input, .refer-friends #maitre-widget-popup input {
+    border: 1px solid #9e9fa1;
+    border-radius: 5px;
+    line-height: 55px;
+    height: 55px; }
+  .refer-friends #maitre-widget-container input:focus + label, .refer-friends #maitre-widget-popup input:focus + label {
+    display: none; }
+  .refer-friends #maitre-widget-container #maitre-submit-button, .refer-friends #maitre-widget-popup #maitre-submit-button {
+    border-radius: 5px;
+    box-shadow: none;
+    height: 47px;
+    line-height: 47px; }
+
 .video-home {
   background: url("../img/highways.jpg") no-repeat center;
   background-size: cover;
@@ -485,10 +539,6 @@ input {
     border-radius: 3px; }
     .roadmap a:hover {
       text-decoration: none; }
-
-.refer-dav {
-  background: #eeeded;
-  padding: 50px 0; }
 
 .dav-alliance {
   margin-top: 30px;
@@ -1767,9 +1817,6 @@ footer {
   font-weight: 700;
   color: #131313; }
 
-#maitre-widget-container, #maitre-widget-popup {
-  max-width: 690px !important; }
-
 .kyc-top {
   background: url("../img/prototypes/gray-links.png") no-repeat bottom center;
   background-size: 100%;
@@ -1955,7 +2002,10 @@ footer {
     height: 47vw; }
 
   .every-feature {
-    height: 67vw; } }
+    height: 67vw; }
+
+  .refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
+    margin-top: 8%; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
@@ -2052,7 +2102,10 @@ footer {
   .blockchain-middleman p {
     padding: 0px; }
   .blockchain-middleman .row > div:after {
-    display: none; } }
+    display: none; }
+
+  .refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
+    margin-top: 0px; } }
 @media (max-width: 767px) {
   .navbar-nav > li > a {
     font-size: 15px; }

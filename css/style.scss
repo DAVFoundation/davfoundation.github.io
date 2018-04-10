@@ -301,6 +301,71 @@ input {
 		}
 	}
 }
+.refer-dav{
+	background: #ecebeb;
+	text-align: center;
+	padding: 40px 15px;
+	h2{
+		font-size: 27px;
+		color: #333;
+		font-weight: 700;
+		margin: 0 0 20px;
+	}
+	h4{
+		font-size: 17px;
+		color: #333;
+		font-weight: 500;
+		margin: 0 0 35px;
+	}
+	a{
+		border-radius: 3px;
+		background: $orange;
+		color: #FFF;
+		font-size: 15px;
+		font-weight: 600;
+		display: inline-block;
+		padding: 10px 40px;
+		&:active,&:focus,&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.refer-friends{
+	background: #f7f7f7 url('../img/prototypes/gray-links.png') no-repeat center bottom;
+	background-size: 100% auto;
+	margin-top: 51px;
+	padding: 50px 0 75px;
+	text-align: center;
+	img{
+		width: 80%;
+	}
+	#maitre-widget-container, #maitre-widget-popup{
+		margin-top: 15%;
+	}
+	#maitre-widget-container #maitre-form-content, #maitre-widget-popup #maitre-form-content{
+		display: block;
+	}
+	#maitre-widget-container label, #maitre-widget-popup label{
+		color: #363840;
+		top: 10px;
+		left: 10px;
+	}
+	#maitre-widget-container input, #maitre-widget-popup input{
+		border: 1px solid #9e9fa1;
+		border-radius: 5px;
+		line-height: 55px;
+		height: 55px;
+	}
+	#maitre-widget-container input:focus + label, #maitre-widget-popup input:focus + label{
+		display: none;
+	}
+	#maitre-widget-container #maitre-submit-button, #maitre-widget-popup #maitre-submit-button{
+		border-radius: 5px;
+		box-shadow: none;
+		height: 47px;
+		line-height: 47px;
+	}
+}
 .video-home{
 	background: url('../img/highways.jpg') no-repeat center;
 	background-size: cover;
@@ -619,10 +684,6 @@ height: 0;
 			text-decoration: none;
 		}
 	}
-}
-.refer-dav{
-	background: #eeeded;
-	padding: 50px 0;
 }
 .dav-alliance{
 	margin-top: 30px;
@@ -2229,9 +2290,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		color: #131313;
 	}
 }
-#maitre-widget-container, #maitre-widget-popup{
-	max-width: 690px !important;
-}
+// #maitre-widget-container, #maitre-widget-popup{
+// 	max-width: 690px !important;
+// }
 // kyc info page
 .kyc-top{
 	background: url('../img/prototypes/gray-links.png') no-repeat bottom center;
@@ -2462,6 +2523,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.every-feature{
 		height: 67vw;
 	}
+	.refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
+	    margin-top: 8%;
+	}
 }
 @media (max-width: 992px) {
 	.nav > li > a {
@@ -2575,6 +2639,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		.row > div:after{
 			display: none;
 		}
+	}
+	.refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
+    	margin-top: 0px;
 	}
 }
 @media (max-width: 767px) {
