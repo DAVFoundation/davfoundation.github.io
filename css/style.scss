@@ -2448,6 +2448,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.navbar.user-scroll .navbar-nav .dropdown-menu::before{
 		height: 12px;
 	}
+	.people-are-talking p{
+		min-height: 190px;
+	}
 }
 @media (max-width: 1025px) {
 	input[type=text],
@@ -2518,7 +2521,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		display: none;
 	}
 	.people-are-talking p{
-		min-height: 150px;
+		min-height: 190px;
 	}
 	.peer-to-peer img{
 		width: 100%;
@@ -2648,6 +2651,17 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
     	margin-top: 0px;
+	}
+	.people-are-talking{
+		h2{
+			margin: 0px;
+		}
+		p{
+			min-height: 100px;
+		}
+		.row > div{
+			margin-top: 50px;
+		}
 	}
 }
 @media (max-width: 767px) {

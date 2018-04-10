@@ -1937,7 +1937,10 @@ footer {
     width: 100%; }
 
   .navbar.user-scroll .navbar-nav .dropdown-menu::before {
-    height: 12px; } }
+    height: 12px; }
+
+  .people-are-talking p {
+    min-height: 190px; } }
 @media (max-width: 1025px) {
   input[type=text],
   input[type=email],
@@ -1998,7 +2001,7 @@ footer {
     display: none; }
 
   .people-are-talking p {
-    min-height: 150px; }
+    min-height: 190px; }
 
   .peer-to-peer img {
     width: 100%; }
@@ -2110,7 +2113,14 @@ footer {
     display: none; }
 
   .refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+
+  .people-are-talking h2 {
+    margin: 0px; }
+  .people-are-talking p {
+    min-height: 100px; }
+  .people-are-talking .row > div {
+    margin-top: 50px; } }
 @media (max-width: 767px) {
   .navbar-nav > li > a {
     font-size: 15px; }
