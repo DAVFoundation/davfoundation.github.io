@@ -2349,8 +2349,29 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	h4{
 		font-size: 19px;
 		color: #333;
-		font-weight: 500;
-		margin-top: 30px;
+		font-weight: 700;
+		margin-top: 20px;
+		&:before{
+			content: "";
+			display: block;
+			width: 150px;
+			height: 1px;
+			background: $orange;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		&:first-child:before{
+			display: none;
+		}
+		&.orange{
+			color: $orange;
+			text-align: center;
+			font-weight: 500;
+			&:before{
+				display: none;
+			}
+		}
+		
 	}
 	ol,ul{
 		padding-left: 20px;
@@ -2360,7 +2381,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			li::before{
 				content: "\2014";
 				color: $orange;
-				margin-right: 3px;
+				margin-right: 5px;
 			}
 		}
 		&.disc-list{
@@ -2370,6 +2391,11 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 				content: "\25CF";
 				color: #000;
 				margin-right: 5px;
+			}
+		}
+		&.orange-list{
+			& > li::before{
+				color: $orange;
 			}
 		}
 		&.lower-alpha{
@@ -2385,22 +2411,36 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 		
 		&.number-list{
-			padding-left: 30px;
+			list-style-type: none;
+			padding-left: 0px;
 			& > li{
-				font-weight: 700;
-					p{
-						font-weight: 400;
-						margin: 0px;
-				}
+				font-weight: 400;
+				margin: 3.5px 0;
+				span{
+					font-weight: 700;
+					width: 27px;
+					height: 27px;
+					margin: 0px;
+					display: inline-block;
+					background: #d0d0d0;
+					color: #333;
+					margin-right: 8px;
+					text-align: center;
+					border-radius: 50%;
+				}	
 			}
 		}
-
+		&.high-line{
+			& > li{
+				line-height: 32px;
+			}
+		}
 	}
 	p,li{
 		font-size: 15px;
 		color: #333;
 		font-weight: 300;
-		line-height: 21px;
+		line-height: 27px;
 		padding: 0px;
 		span{
 			font-weight: 700;

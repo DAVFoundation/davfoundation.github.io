@@ -1859,8 +1859,24 @@ footer {
   .kyc-page h4 {
     font-size: 19px;
     color: #333;
-    font-weight: 500;
-    margin-top: 30px; }
+    font-weight: 700;
+    margin-top: 20px; }
+    .kyc-page h4:before {
+      content: "";
+      display: block;
+      width: 150px;
+      height: 1px;
+      background: #ff6a46;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .kyc-page h4:first-child:before {
+      display: none; }
+    .kyc-page h4.orange {
+      color: #ff6a46;
+      text-align: center;
+      font-weight: 500; }
+      .kyc-page h4.orange:before {
+        display: none; }
   .kyc-page ol, .kyc-page ul {
     padding-left: 20px; }
     .kyc-page ol.line-list, .kyc-page ul.line-list {
@@ -1869,7 +1885,7 @@ footer {
       .kyc-page ol.line-list li::before, .kyc-page ul.line-list li::before {
         content: "\2014";
         color: #ff6a46;
-        margin-right: 3px; }
+        margin-right: 5px; }
     .kyc-page ol.disc-list, .kyc-page ul.disc-list {
       list-style-type: none;
       padding: 0px; }
@@ -1877,6 +1893,8 @@ footer {
         content: "\25CF";
         color: #000;
         margin-right: 5px; }
+    .kyc-page ol.orange-list > li::before, .kyc-page ul.orange-list > li::before {
+      color: #ff6a46; }
     .kyc-page ol.lower-alpha, .kyc-page ul.lower-alpha {
       list-style-type: lower-alpha;
       padding-left: 30px; }
@@ -1886,17 +1904,29 @@ footer {
           font-weight: 400;
           margin: 0px; }
     .kyc-page ol.number-list, .kyc-page ul.number-list {
-      padding-left: 30px; }
+      list-style-type: none;
+      padding-left: 0px; }
       .kyc-page ol.number-list > li, .kyc-page ul.number-list > li {
-        font-weight: 700; }
-        .kyc-page ol.number-list > li p, .kyc-page ul.number-list > li p {
-          font-weight: 400;
-          margin: 0px; }
+        font-weight: 400;
+        margin: 3.5px 0; }
+        .kyc-page ol.number-list > li span, .kyc-page ul.number-list > li span {
+          font-weight: 700;
+          width: 27px;
+          height: 27px;
+          margin: 0px;
+          display: inline-block;
+          background: #d0d0d0;
+          color: #333;
+          margin-right: 8px;
+          text-align: center;
+          border-radius: 50%; }
+    .kyc-page ol.high-line > li, .kyc-page ul.high-line > li {
+      line-height: 32px; }
   .kyc-page p, .kyc-page li {
     font-size: 15px;
     color: #333;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 27px;
     padding: 0px; }
     .kyc-page p span, .kyc-page li span {
       font-weight: 700; }
