@@ -293,12 +293,7 @@ $(document).ready(function(){
                         $(".kyc-close,.kyc-telegram").removeClass('hide');
                         break;
                     case "Failed":
-                        $(".kyc-title").text("Your KYC application failed to process.");
-                        $(".kyc-response").html("We ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully complete your KYC by doing the following:<br><br><b>" + data.suggestionText + "</b>");
-                        $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                        $(".kyc-button").attr("href","http://nessie.dav.network/join?email="+email);
-                        break;
-                    case "Checkrequired":
+                    case "CheckRequired":
                         $(".kyc-title").text("Your KYC application is currently under review.");
                         $(".kyc-response").text("You’ll receive an email once your application has been processed.");
                         $(".kyc-close,.kyc-telegram2").removeClass('hide');
