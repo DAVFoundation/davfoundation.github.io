@@ -2184,12 +2184,13 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 .open-source{
 	background: #eeeded url('../img/blockchain-today/code.jpg') no-repeat center;
 	background-size: cover;
-	height: 37.07142857142857vw;
+	// height: 37.07142857142857vw;
+	padding: 100px 0;
 	color: #FFF;
 	h2{
 		font-size: 27px;
 		font-weight: 700;
-		padding-top: 20px;
+		// padding-top: 20px;
 	}
 	p{
 		font-size: 17px;
@@ -2199,7 +2200,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 }
 .every-feature{
 	// overflow-x: hidden;
-	height: 50vw;
+	// height: 50vw;
 	// background: green;
 	h2{
 		font-size: 25px;
@@ -2244,6 +2245,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			margin-left: -125px;
 			top: 412px;
 			z-index: 2;
+			display: none;
 			&.p1{
 				margin-left: -1240px;
 				@include transition-speed(0.8s,linear);
@@ -2312,6 +2314,82 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		font-size: 25px;
 		font-weight: 700;
 		color: #131313;
+	}
+}
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+.blockchain-carousel{
+	padding-top: 125px;
+	.carousel{
+		.item{
+			img{
+				width: 100%;
+			}
+			.carousel-caption{
+				position: static;
+				text-shadow: none;
+				color: #131313;
+				min-height: 150px;
+				padding: 0px 100px;
+				h2{
+					font-size: 27px;
+					font-weight: 700;
+				}
+				p{
+					font-size: 15px;
+					font-weight: 400;
+				}
+			}
+		}
+		.carousel-control{
+			// width: 32%;
+			background: none;
+			opacity: 1;
+			span{
+				top: 75px;
+				&.glyphicon-chevron-left{
+					background: url('../img/blockchain-today/arrow-left.png') no-repeat center;
+					&:before{
+						content: '';
+					}
+				}
+				&.glyphicon-chevron-right{
+					background: url('../img/blockchain-today/arrow-right.png') no-repeat center;
+					&:before{
+						content: '';
+					}
+				}
+			}
+		}
 	}
 }
 // #maitre-widget-container, #maitre-widget-popup{

@@ -1725,118 +1725,165 @@ footer {
 .open-source {
   background: #eeeded url("../img/blockchain-today/code.jpg") no-repeat center;
   background-size: cover;
-  height: 37.07142857142857vw;
+  padding: 100px 0;
   color: #FFF; }
   .open-source h2 {
     font-size: 27px;
-    font-weight: 700;
-    padding-top: 20px; }
+    font-weight: 700; }
   .open-source p {
     font-size: 17px;
     font-weight: 400;
     line-height: 30px; }
 
-.every-feature {
-  height: 50vw; }
-  .every-feature h2 {
-    font-size: 25px;
-    font-weight: 700;
-    color: #131313; }
-  .every-feature p {
-    font-size: 17px;
-    font-weight: 400;
-    color: #131313; }
-  .every-feature .puzzle-container {
-    margin-top: -300px; }
-  .every-feature .phone-puzzle {
-    position: relative;
-    top: 0px;
-    -webkit-transition: all 1.4s ease-out;
-    -moz-transition: all 1.4s ease-out;
-    transition: all 1.4s ease-out; }
-    .every-feature .phone-puzzle .iPhoneX {
-      background: url("../img/blockchain-today/iPhoneX.png") no-repeat center;
+.every-feature h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #131313; }
+.every-feature p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #131313; }
+.every-feature .puzzle-container {
+  margin-top: -300px; }
+.every-feature .phone-puzzle {
+  position: relative;
+  top: 0px;
+  -webkit-transition: all 1.4s ease-out;
+  -moz-transition: all 1.4s ease-out;
+  transition: all 1.4s ease-out; }
+  .every-feature .phone-puzzle .iPhoneX {
+    background: url("../img/blockchain-today/iPhoneX.png") no-repeat center;
+    width: 250px;
+    height: 506px;
+    margin: -300px auto 0;
+    margin: 0 auto 0;
+    position: relative; }
+    .every-feature .phone-puzzle .iPhoneX .case {
+      background: url("../img/blockchain-today/case.png") no-repeat center;
       width: 250px;
       height: 506px;
-      margin: -300px auto 0;
-      margin: 0 auto 0;
-      position: relative; }
-      .every-feature .phone-puzzle .iPhoneX .case {
-        background: url("../img/blockchain-today/case.png") no-repeat center;
-        width: 250px;
-        height: 506px;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        z-index: 3; }
-    .every-feature .phone-puzzle .puzzle {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      z-index: 3; }
+  .every-feature .phone-puzzle .puzzle {
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+    top: 412px;
+    z-index: 2;
+    display: none; }
+    .every-feature .phone-puzzle .puzzle.p1 {
+      margin-left: -1240px;
+      -webkit-transition: all 0.8s linear;
+      -moz-transition: all 0.8s linear;
+      transition: all 0.8s linear; }
+    .every-feature .phone-puzzle .puzzle.p2 {
+      margin-left: 1109px;
+      -webkit-transition: all 1s linear;
+      -moz-transition: all 1s linear;
+      transition: all 1s linear; }
+    .every-feature .phone-puzzle .puzzle.p3 {
+      margin-left: -1250px;
+      top: 587px;
+      -webkit-transition: all 1.2s linear;
+      -moz-transition: all 1.2s linear;
+      transition: all 1.2s linear; }
+    .every-feature .phone-puzzle .puzzle.p4 {
+      margin-left: 1150px;
+      top: 550px;
+      -webkit-transition: all 1.4s linear;
+      -moz-transition: all 1.4s linear;
+      transition: all 1.4s linear; }
+    .every-feature .phone-puzzle .puzzle.p5 {
+      margin-left: -1260px;
+      top: 714px;
+      -webkit-transition: all 1.6s linear;
+      -moz-transition: all 1.6s linear;
+      transition: all 1.6s linear; }
+    .every-feature .phone-puzzle .puzzle.p6 {
+      margin-left: 1129px;
+      top: 750px;
+      -webkit-transition: all 1.8s linear;
+      -moz-transition: all 1.8s linear;
+      transition: all 1.8s linear; }
+  .every-feature .phone-puzzle.end {
+    top: 440px; }
+    .every-feature .phone-puzzle.end .puzzle {
       position: absolute;
       left: 50%;
       margin-left: -125px;
-      top: 412px;
-      z-index: 2; }
-      .every-feature .phone-puzzle .puzzle.p1 {
-        margin-left: -1240px;
-        -webkit-transition: all 0.8s linear;
-        -moz-transition: all 0.8s linear;
-        transition: all 0.8s linear; }
-      .every-feature .phone-puzzle .puzzle.p2 {
-        margin-left: 1109px;
-        -webkit-transition: all 1s linear;
-        -moz-transition: all 1s linear;
-        transition: all 1s linear; }
-      .every-feature .phone-puzzle .puzzle.p3 {
-        margin-left: -1250px;
-        top: 587px;
-        -webkit-transition: all 1.2s linear;
-        -moz-transition: all 1.2s linear;
-        transition: all 1.2s linear; }
-      .every-feature .phone-puzzle .puzzle.p4 {
-        margin-left: 1150px;
-        top: 550px;
-        -webkit-transition: all 1.4s linear;
-        -moz-transition: all 1.4s linear;
-        transition: all 1.4s linear; }
-      .every-feature .phone-puzzle .puzzle.p5 {
-        margin-left: -1260px;
-        top: 714px;
-        -webkit-transition: all 1.6s linear;
-        -moz-transition: all 1.6s linear;
-        transition: all 1.6s linear; }
-      .every-feature .phone-puzzle .puzzle.p6 {
-        margin-left: 1129px;
-        top: 750px;
-        -webkit-transition: all 1.8s linear;
-        -moz-transition: all 1.8s linear;
-        transition: all 1.8s linear; }
-    .every-feature .phone-puzzle.end {
-      top: 440px; }
-      .every-feature .phone-puzzle.end .puzzle {
-        position: absolute;
-        left: 50%;
-        margin-left: -125px;
-        top: 12px; }
-        .every-feature .phone-puzzle.end .puzzle.p1 {
-          margin-left: -110px; }
-        .every-feature .phone-puzzle.end .puzzle.p2 {
-          margin-left: -41px; }
-        .every-feature .phone-puzzle.end .puzzle.p3 {
-          margin-left: -110px;
-          top: 177px; }
-        .every-feature .phone-puzzle.end .puzzle.p4 {
-          margin-left: -6px;
-          top: 140px; }
-        .every-feature .phone-puzzle.end .puzzle.p5 {
-          margin-left: -110px;
-          top: 294px; }
-        .every-feature .phone-puzzle.end .puzzle.p6 {
-          margin-left: -43px;
-          top: 332px; }
+      top: 12px; }
+      .every-feature .phone-puzzle.end .puzzle.p1 {
+        margin-left: -110px; }
+      .every-feature .phone-puzzle.end .puzzle.p2 {
+        margin-left: -41px; }
+      .every-feature .phone-puzzle.end .puzzle.p3 {
+        margin-left: -110px;
+        top: 177px; }
+      .every-feature .phone-puzzle.end .puzzle.p4 {
+        margin-left: -6px;
+        top: 140px; }
+      .every-feature .phone-puzzle.end .puzzle.p5 {
+        margin-left: -110px;
+        top: 294px; }
+      .every-feature .phone-puzzle.end .puzzle.p6 {
+        margin-left: -43px;
+        top: 332px; }
 
 .blockchain-video h2 {
   font-size: 25px;
   font-weight: 700;
   color: #131313; }
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity; }
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+.carousel-fade .carousel-control {
+  z-index: 2; }
+
+.blockchain-carousel {
+  padding-top: 125px; }
+  .blockchain-carousel .carousel .item img {
+    width: 100%; }
+  .blockchain-carousel .carousel .item .carousel-caption {
+    position: static;
+    text-shadow: none;
+    color: #131313;
+    min-height: 150px;
+    padding: 0px 100px; }
+    .blockchain-carousel .carousel .item .carousel-caption h2 {
+      font-size: 27px;
+      font-weight: 700; }
+    .blockchain-carousel .carousel .item .carousel-caption p {
+      font-size: 15px;
+      font-weight: 400; }
+  .blockchain-carousel .carousel .carousel-control {
+    background: none;
+    opacity: 1; }
+    .blockchain-carousel .carousel .carousel-control span {
+      top: 75px; }
+      .blockchain-carousel .carousel .carousel-control span.glyphicon-chevron-left {
+        background: url("../img/blockchain-today/arrow-left.png") no-repeat center; }
+        .blockchain-carousel .carousel .carousel-control span.glyphicon-chevron-left:before {
+          content: ''; }
+      .blockchain-carousel .carousel .carousel-control span.glyphicon-chevron-right {
+        background: url("../img/blockchain-today/arrow-right.png") no-repeat center; }
+        .blockchain-carousel .carousel .carousel-control span.glyphicon-chevron-right:before {
+          content: ''; }
 
 .kyc-top {
   background: url("../img/prototypes/gray-links.png") no-repeat bottom center;
