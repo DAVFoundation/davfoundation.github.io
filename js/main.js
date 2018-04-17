@@ -268,8 +268,9 @@ $(document).ready(function(){
     $('#checkKYC').on('click',function (e) {
         e.preventDefault();
         var email = $("#kycmail").val();
-        var url = "https://nessie.dav.network/status?email=" + email;
         if(validateEmail(email)){
+          email=encodeURIComponent(email);
+          var url = "https://nessie.dav.network/status?email=" + email;
           // alert("KYC check click " + email);
           $(".kyc-loader").removeClass('hide');
           $(".kyc-error").hide();
