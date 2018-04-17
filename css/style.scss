@@ -2153,7 +2153,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 // blockchain today page
 .hero{
 	&.hero-blockchain {
-	    background: url(../img/blockchain-today/hero.jpg) no-repeat center;
+	    background: #333 url(../img/blockchain-today/hero.jpg) no-repeat center;
     	background-size: cover;
     	.hero-inner{
     		height: 36.71428571428571vw !important;
@@ -2185,7 +2185,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	background: #eeeded url('../img/blockchain-today/code.jpg') no-repeat center;
 	background-size: cover;
 	// height: 37.07142857142857vw;
-	padding: 100px 0;
+	padding: 45px 0;
 	color: #FFF;
 	h2{
 		font-size: 27px;
@@ -2196,6 +2196,10 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 30px;
+	}
+	.people-taxi{
+		position: relative;
+		bottom: -110px;
 	}
 }
 .every-feature{
@@ -2348,7 +2352,16 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     }
 }
 .blockchain-carousel{
-	padding-top: 125px;
+	padding-top: 135px;
+	h1{
+		text-align: center;
+		font-size: 27px;
+		color: #131313;
+		font-weight: 700;
+		// text-transform: capitalize;
+		margin: 0 0 60px;
+		padding: 0 15px;
+	}
 	.carousel{
 		.item{
 			img{
@@ -2361,7 +2374,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 				min-height: 150px;
 				padding: 0px 100px;
 				h2{
-					font-size: 27px;
+					font-size: 22px;
 					font-weight: 700;
 				}
 				p{
@@ -2377,12 +2390,16 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			span{
 				top: 75px;
 				&.glyphicon-chevron-left{
+					width: 16px;
+					height: 31px;
 					background: url('../img/blockchain-today/arrow-left.png') no-repeat center;
 					&:before{
 						content: '';
 					}
 				}
 				&.glyphicon-chevron-right{
+					width: 16px;
+					height: 31px;
 					background: url('../img/blockchain-today/arrow-right.png') no-repeat center;
 					&:before{
 						content: '';
@@ -2671,6 +2688,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
 	    margin-top: 8%;
 	}
+	.blockchain-carousel h1{
+		margin: 45px 0 60px;
+	}
 }
 @media (max-width: 992px) {
 	.nav > li > a {
@@ -2798,6 +2818,10 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		.row > div{
 			margin-top: 50px;
 		}
+	}
+
+	.blockchain-carousel h1{
+		margin: 0 0 60px;
 	}
 }
 @media (max-width: 767px) {
@@ -3182,7 +3206,20 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		background: #f7f7f7 url('../img/prototypes/gray-links.png') no-repeat center bottom;
 		background-size: 100% auto;
 	}
-
+	.open-source img{
+		width: 100%;
+	}
+	.blockchain-carousel .carousel .item .carousel-caption{
+		min-height: 200px;
+		padding: 0px 37px;
+		p{
+		}
+	}
+	.blockchain-carousel .carousel .item img {
+	    width: auto;
+	    max-width: 150%;
+	    margin-left: -25%;
+	}
 }
 @media (max-height: 767px) {
 	#iphonex {

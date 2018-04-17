@@ -1700,7 +1700,7 @@ footer {
     margin: -20px 0 20px; }
 
 .hero.hero-blockchain {
-  background: url(../img/blockchain-today/hero.jpg) no-repeat center;
+  background: #333 url(../img/blockchain-today/hero.jpg) no-repeat center;
   background-size: cover; }
   .hero.hero-blockchain .hero-inner {
     height: 36.71428571428571vw !important; }
@@ -1725,7 +1725,7 @@ footer {
 .open-source {
   background: #eeeded url("../img/blockchain-today/code.jpg") no-repeat center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 45px 0;
   color: #FFF; }
   .open-source h2 {
     font-size: 27px;
@@ -1734,6 +1734,9 @@ footer {
     font-size: 17px;
     font-weight: 400;
     line-height: 30px; }
+  .open-source .people-taxi {
+    position: relative;
+    bottom: -110px; }
 
 .every-feature h2 {
   font-size: 25px;
@@ -1856,7 +1859,14 @@ footer {
   z-index: 2; }
 
 .blockchain-carousel {
-  padding-top: 125px; }
+  padding-top: 135px; }
+  .blockchain-carousel h1 {
+    text-align: center;
+    font-size: 27px;
+    color: #131313;
+    font-weight: 700;
+    margin: 0 0 60px;
+    padding: 0 15px; }
   .blockchain-carousel .carousel .item img {
     width: 100%; }
   .blockchain-carousel .carousel .item .carousel-caption {
@@ -1866,7 +1876,7 @@ footer {
     min-height: 150px;
     padding: 0px 100px; }
     .blockchain-carousel .carousel .item .carousel-caption h2 {
-      font-size: 27px;
+      font-size: 22px;
       font-weight: 700; }
     .blockchain-carousel .carousel .item .carousel-caption p {
       font-size: 15px;
@@ -1877,10 +1887,14 @@ footer {
     .blockchain-carousel .carousel .carousel-control span {
       top: 75px; }
       .blockchain-carousel .carousel .carousel-control span.glyphicon-chevron-left {
+        width: 16px;
+        height: 31px;
         background: url("../img/blockchain-today/arrow-left.png") no-repeat center; }
         .blockchain-carousel .carousel .carousel-control span.glyphicon-chevron-left:before {
           content: ''; }
       .blockchain-carousel .carousel .carousel-control span.glyphicon-chevron-right {
+        width: 16px;
+        height: 31px;
         background: url("../img/blockchain-today/arrow-right.png") no-repeat center; }
         .blockchain-carousel .carousel .carousel-control span.glyphicon-chevron-right:before {
           content: ''; }
@@ -2106,7 +2120,10 @@ footer {
     height: 67vw; }
 
   .refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
-    margin-top: 8%; } }
+    margin-top: 8%; }
+
+  .blockchain-carousel h1 {
+    margin: 45px 0 60px; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
@@ -2213,7 +2230,10 @@ footer {
   .people-are-talking p {
     min-height: 100px; }
   .people-are-talking .row > div {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+
+  .blockchain-carousel h1 {
+    margin: 0 0 60px; } }
 @media (max-width: 767px) {
   .navbar-nav > li > a {
     font-size: 15px; }
@@ -2569,7 +2589,19 @@ footer {
 
   .refer-friends {
     background: #f7f7f7 url("../img/prototypes/gray-links.png") no-repeat center bottom;
-    background-size: 100% auto; } }
+    background-size: 100% auto; }
+
+  .open-source img {
+    width: 100%; }
+
+  .blockchain-carousel .carousel .item .carousel-caption {
+    min-height: 200px;
+    padding: 0px 37px; }
+
+  .blockchain-carousel .carousel .item img {
+    width: auto;
+    max-width: 150%;
+    margin-left: -25%; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
