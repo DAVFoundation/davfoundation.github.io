@@ -1202,6 +1202,21 @@ footer {
   footer .links p {
     text-decoration: none;
     margin-bottom: 30px; }
+  footer .line {
+    height: 1px;
+    background: #d4d4d4;
+    margin-bottom: 30px; }
+  footer .about-legal h4 {
+    font-size: 15px;
+    color: #271e36;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0px; }
+  footer .about-legal a {
+    font-size: 15px;
+    display: block;
+    line-height: 30px;
+    color: #271e36; }
   footer .copyright {
     font-size: 13px;
     color: #271e36;

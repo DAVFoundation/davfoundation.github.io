@@ -1524,6 +1524,26 @@ footer{
 			margin-bottom: 30px;
 		}
 	}
+	.line{
+		height: 1px;
+		background: #d4d4d4;
+		margin-bottom: 30px;
+	}
+	.about-legal{
+		h4{
+			font-size: 15px;
+			color: #271e36;
+			font-weight: 700;
+			line-height: 30px;
+			margin: 0px;
+		}
+		a{
+			font-size: 15px;
+			display: block;
+			line-height: 30px;
+			color: #271e36;
+		}
+	}
 	.copyright{
 		font-size: 13px;
 		color: #271e36;
