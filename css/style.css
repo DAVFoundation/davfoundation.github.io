@@ -2023,6 +2023,61 @@ footer {
     margin-top: 30px;
     line-height: 30px; }
 
+.hero.hero-terms {
+  background: url(../img/terms.jpg) no-repeat center;
+  background-size: cover; }
+  .hero.hero-terms .hero-inner {
+    height: 36.71428571428571vw !important; }
+
+.hero.hero-privacy {
+  background: url(../img/privacy.jpg) no-repeat center;
+  background-size: cover; }
+  .hero.hero-privacy .hero-inner {
+    height: 36.71428571428571vw !important; }
+    .hero.hero-privacy .hero-inner h2 {
+      font-size: 23px;
+      font-weight: 700;
+      margin: 0 0 15px; }
+
+.hero-privacy + .legal-page h2 {
+  margin: 55px 0 25px; }
+
+.legal-page h2 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #1c1e1c;
+  text-align: center;
+  margin: 55px 0 45px; }
+.legal-page h3 {
+  font-weight: 700;
+  font-size: 17px;
+  color: #1c1e1c;
+  margin: 0 0 15px; }
+.legal-page p, .legal-page li {
+  font-weight: 400;
+  font-size: 15px;
+  color: #1c1e1c;
+  margin: 0 0 20px;
+  line-height: 25px; }
+  .legal-page p a, .legal-page li a {
+    color: #ff6a46; }
+.legal-page li {
+  margin: 0px; }
+.legal-page .disc-list {
+  margin-top: -15px; }
+.legal-page ul {
+  margin: 0 0 15px; }
+.legal-page ol {
+  margin: 0 0 15px;
+  list-style-type: none; }
+  .legal-page ol li {
+    margin: 10px 0; }
+  .legal-page ol li span {
+    font-weight: 700;
+    margin-left: -30px;
+    display: block;
+    float: left; }
+
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }
@@ -2555,9 +2610,13 @@ footer {
   .logo-up {
     margin-top: -8px; }
 
+  .hero.hero-privacy,
+  .hero.hero-terms,
   .hero.hero-media,
   .hero.hero-careers {
     margin-top: 54px; }
+    .hero.hero-privacy .hero-inner .hero-valign h1,
+    .hero.hero-terms .hero-inner .hero-valign h1,
     .hero.hero-media .hero-inner .hero-valign h1,
     .hero.hero-careers .hero-inner .hero-valign h1 {
       margin: 0px;
