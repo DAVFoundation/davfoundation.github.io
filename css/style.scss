@@ -229,9 +229,10 @@ input {
 			color: #FFF;
 			font-size: 15px;
 			text-decoration: underline;
-			margin: 20px auto 0;
+			// margin: 20px auto 0;
 			display: block;
-			width: 240px;
+			// width: 240px;
+			clear: both;
 		}
 	}
 	.countdown-row {
@@ -2132,6 +2133,15 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			&:focus{
 				text-decoration: none;
 			}
+			&.close{
+				background: none;
+				font-size: 30px;
+			    position: absolute;
+				top: 5px;
+    			right: 5px;
+    			padding: 10px;
+    			line-height: 15px;
+			}
 		}
 		input[type=email]{
 			display: block;
@@ -3219,6 +3229,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	    width: auto;
 	    max-width: 150%;
 	    margin-left: -25%;
+	}
+	.team-modal.kyc-modal .modal-body input[type=email]{
+		width: 89%;
 	}
 }
 @media (max-height: 767px) {

@@ -177,9 +177,8 @@ input {
       color: #FFF;
       font-size: 15px;
       text-decoration: underline;
-      margin: 20px auto 0;
       display: block;
-      width: 240px; }
+      clear: both; }
   .hero .countdown-row {
     margin: 0 auto 40px;
     width: 100%;
@@ -1685,6 +1684,14 @@ footer {
     padding: 10px 20px; }
     .team-modal.kyc-modal .modal-body button:hover, .team-modal.kyc-modal .modal-body button:active, .team-modal.kyc-modal .modal-body button:focus, .team-modal.kyc-modal .modal-body .kyc-button:hover, .team-modal.kyc-modal .modal-body .kyc-button:active, .team-modal.kyc-modal .modal-body .kyc-button:focus {
       text-decoration: none; }
+    .team-modal.kyc-modal .modal-body button.close, .team-modal.kyc-modal .modal-body .kyc-button.close {
+      background: none;
+      font-size: 30px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 10px;
+      line-height: 15px; }
   .team-modal.kyc-modal .modal-body input[type=email] {
     display: block;
     width: 40%;
@@ -2601,7 +2608,10 @@ footer {
   .blockchain-carousel .carousel .item img {
     width: auto;
     max-width: 150%;
-    margin-left: -25%; } }
+    margin-left: -25%; }
+
+  .team-modal.kyc-modal .modal-body input[type=email] {
+    width: 89%; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
