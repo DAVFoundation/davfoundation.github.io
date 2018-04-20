@@ -295,7 +295,7 @@ $(document).ready(function(){
                         break;
                     case "Failed":
                         $(".kyc-title").text("Your KYC application failed to process.");
-                        $(".kyc-response").text("We ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully be whitelisted by doing the following:<br><br><b>" + data.suggestionText + "</b>");
+                        $(".kyc-response").html("We ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully be whitelisted by doing the following:<br><br><b>" + data.suggestionText + "</b>");
                         $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
                         $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
                         break;
