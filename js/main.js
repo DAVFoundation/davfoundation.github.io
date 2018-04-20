@@ -285,19 +285,24 @@ $(document).ready(function(){
                 switch(data.statusText) {
                     case "AutoFinish":
                         $(".kyc-title").text("Congratulations!");
-                        $(".kyc-response").text("Your identification has been confirmed successfully. We’ll share specific instructions on how to participate as we get closer to our token sale.");
+                        $(".kyc-response").text("You’re now officially whitelisted! We’ll share specific instructions on how to participate as we get closer to our token sale.");
                         $(".kyc-close,.kyc-telegram").removeClass('hide');
                         break;
                     case "ManualFinish":
                         $(".kyc-title").text("Congratulations!");
-                        $(".kyc-response").text("Your identification has been confirmed successfully. We’ll share specific instructions on how to participate as we get closer to our token sale.");
+                        $(".kyc-response").text("You’re now officially whitelisted! We’ll share specific instructions on how to participate as we get closer to our token sale.");
                         $(".kyc-close,.kyc-telegram").removeClass('hide');
                         break;
                     case "Failed":
+                        $(".kyc-title").text("Your KYC application failed to process.");
+                        $(".kyc-response").text("We ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully be whitelisted by doing the following:<br><br><b>" + data.suggestionText + "</b>");
+                        $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
+                        $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
+                        break;
                     case "CheckRequired":
-                        $(".kyc-title").text("Your KYC application is currently under review.");
-                        $(".kyc-response").text("You’ll receive an email once your application has been processed.");
-                        $(".kyc-close,.kyc-telegram2").removeClass('hide');
+                        $(".kyc-title").text("Your KYC application is currently being processed.");
+                        $(".kyc-response").text("You’ll receive an email once your application has been processed with next steps.");
+                        $(".kyc-close,.kyc-telegram3").removeClass('hide');
                         break;
                     case "Rejected":
                         $(".kyc-title").text("Your KYC application has not been accepted.");
