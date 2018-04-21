@@ -1,11 +1,11 @@
-$(document).ready(function(){   
-  // color switch for nav    
+$(document).ready(function(){
+  // color switch for nav
    var scroll_start = 0;
    var startchange = $('#startchange');
    var offset = startchange.offset();
     if (startchange.length){
-     $(document).scroll(function() { 
-  
+     $(document).scroll(function() {
+
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
             $(".navbar-fixed-top").addClass('user-scroll');
@@ -18,7 +18,7 @@ $(document).ready(function(){
     $("#transaction_id").val(getParameterByName("transaction_id"));
 
     // iOS cursor fix
-    // Detect ios 11_x_x affected  
+    // Detect ios 11_x_x affected
     // NEED TO BE UPDATED if new versions are affected
     var ua = navigator.userAgent,
     iOS = /iPad|iPhone|iPod/.test(ua),
@@ -50,7 +50,7 @@ $(document).ready(function(){
     $('.hero .hero-inner').height(windowHeight);
     // $('.hero .hero-inner').height(windowHeight + windowHeight*0.18);
 
-    $(window).on('resize',function() { 
+    $(window).on('resize',function() {
       var windowHeight = $(window).height();
       $('.hero .hero-inner').height(windowHeight);
     });
@@ -79,12 +79,12 @@ $(document).ready(function(){
     if(url.indexOf('?kyc=status') != -1) {
         $('#modalKYCStatus').modal('show');
     }
- 
+
     var target = window.location.hash;
     if(target == "#tokensale"){
        $('.fundraising-goals').addClass("offsetMe");
     }
- 
+
     // scroll nav
     $(".nav").find("a.scroll-link").click(function(e) {
       e.preventDefault();
@@ -229,7 +229,7 @@ $(document).ready(function(){
         setCookie('alert-dav-missioncontrol', true, 365);
         return false;
     })
-    
+
     function getCookie(c_name) {
         var c_value = document.cookie;
         var c_start = c_value.indexOf(" " + c_name + "=");
@@ -259,7 +259,7 @@ $(document).ready(function(){
     if (getCookie('alert-dav-missioncontrol') === "true") {
        $('#alert-announcement').hide();
     }
-    
+
     //KYC status check
     function validateEmail(email) {
       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -274,31 +274,22 @@ $(document).ready(function(){
           // alert("KYC check click " + email);
           $(".kyc-loader").removeClass('hide');
           $(".kyc-error").hide();
-          $.ajax({ 
-              type: 'GET', 
-              url: url, 
+          $.ajax({
+              type: 'GET',
+              url: url,
               dataType: 'json',
-              success: function (data) { 
+              success: function (data) {
                 $(".kyc-loader").addClass('hide');
                 $("#kyc-form").hide();
                 // $(".kyc-response").text(data.suggestionText);
                 switch(data.statusText) {
                     case "AutoFinish":
-                        $(".kyc-title").text("Congratulations!");
-                        $(".kyc-response").text("You’re now officially whitelisted! We’ll share specific instructions on how to participate as we get closer to our token sale.");
-                        $(".kyc-close,.kyc-telegram").removeClass('hide');
-                        break;
                     case "ManualFinish":
                         $(".kyc-title").text("Congratulations!");
                         $(".kyc-response").text("You’re now officially whitelisted! We’ll share specific instructions on how to participate as we get closer to our token sale.");
                         $(".kyc-close,.kyc-telegram").removeClass('hide');
                         break;
                     case "Failed":
-                        $(".kyc-title").text("Your KYC application failed to process.");
-                        $(".kyc-response").html("We ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully be whitelisted by doing the following:<br><br><b>" + data.suggestionText + "</b>");
-                        $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                        $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
-                        break;
                     case "CheckRequired":
                         $(".kyc-title").text("Your KYC application is currently being processed.");
                         $(".kyc-response").text("You’ll receive an email once your application has been processed with next steps.");
@@ -316,7 +307,7 @@ $(document).ready(function(){
                         $(".kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
                         break;
                     case "Started":
-                        $(".kyc-title").text(" Your KYC application failed to process.");
+                        $(".kyc-title").text("Your KYC application failed to process.");
                         $(".kyc-response").text("Our systems tell us the email address you used is not valid. We ask that you please resubmit your KYC by clicking the button below and providing a valid email address.");
                         $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
                         $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
@@ -379,11 +370,11 @@ function addCommas(nStr)
   }
   return x1 + x2;
 }
-$.ajax({ 
-    type: 'GET', 
-    url: 'https://nessie.dav.network/members', 
+$.ajax({
+    type: 'GET',
+    url: 'https://nessie.dav.network/members',
     dataType: 'json',
-    success: function (data) { 
+    success: function (data) {
       // $(".mailchimp-count").text(addCommas(data.count));
       $('.mailchimp-count').countTo({
         from: 16866,
@@ -414,7 +405,7 @@ $(function() {
           }else{
             repo += "<a href='https://github.com/DAVFoundation/" + val.repos[i] + "' class='repo-contrib' target='_blank'>" + val.repos[i] + "</a>"
           }
-            
+
         }
         if (val.name == null) {
           val.name = val.user;
@@ -426,12 +417,12 @@ $(function() {
         }
         modalContributor.push( "<div class='modal team-modal' id='contributor-" + key + "' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'><div class='modal-dialog' role='document'><div class='modal-content'><div class='modal-body'><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button><div class='row'><div class='col-sm-4'><br><br><img src='" + val.avatar + "' width='100%'></div><div class='col-sm-8'><h2>" + val.name + "</h2><h5>Open Source Contributor</h5><p><i>" + val.bio + "</i></p><p>DAV repos that the user contributed to: " + repo + "</p><p>Total number of contributions to DAV: <b>" + val.contrib_count + "</b></p><a href='https://github.com/" + val.user + "' target='_blank'><img src='img/icons/github-footer.png' width='25'></a></div></div></div></div></div></div>" );
       });
-     
+
       $( "<ul/>", {
         "class": "contributors-list",
         html: modalTrigger.join( "" )
       }).appendTo( ".contributors" );
-     
+
       $( "<div/>", {"class": "contributors-modal", html: modalContributor.join( "" )}).appendTo( "body" );
       // modal vertical align
       $('.team-modal').on('shown.bs.modal', function (e) {
@@ -443,7 +434,7 @@ $(function() {
         $('.modal-dialog').css('padding-top', modalTopPadding +'px');
       });
     });
-});    
+});
 
 $.fn.extend({
   animateCss: function(animationName, callback) {
