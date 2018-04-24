@@ -377,7 +377,7 @@ $.ajax({
     success: function (data) {
       // $(".mailchimp-count").text(addCommas(data.count));
       $('.mailchimp-count').countTo({
-        from: 16866,
+        from: 18350,
         to: data.count,
         speed: 3000,
         refreshInterval: 20,
