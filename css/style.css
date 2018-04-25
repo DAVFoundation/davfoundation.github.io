@@ -1179,7 +1179,7 @@ input {
       border: none !important; }
 
 footer {
-  padding: 100px 0 0; }
+  padding: 0; }
   footer .footer-gray {
     background: #333333;
     padding: 35px 0;
@@ -1192,7 +1192,7 @@ footer {
   footer h3 {
     font-size: 25px;
     font-weight: 700;
-    margin: 30px 0 40px;
+    margin: 30px 0 30px;
     color: #333333;
     text-align: center; }
   footer .links p, footer .links a {
@@ -2048,13 +2048,13 @@ footer {
     line-height: 30px; }
 
 .hero.hero-terms {
-  background: url(../img/terms.jpg) no-repeat center;
+  background: #000 url(../img/terms.jpg) no-repeat center;
   background-size: cover; }
   .hero.hero-terms .hero-inner {
     height: 36.71428571428571vw !important; }
 
 .hero.hero-privacy {
-  background: url(../img/privacy.jpg) no-repeat center;
+  background: #000 url(../img/privacy.jpg) no-repeat center;
   background-size: cover; }
   .hero.hero-privacy .hero-inner {
     height: 36.71428571428571vw !important; }

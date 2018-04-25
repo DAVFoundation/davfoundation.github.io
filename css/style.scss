@@ -1493,7 +1493,7 @@ height: 0;
 }
 
 footer{
-	padding: 100px 0 0;
+	padding: 0;
 	.footer-gray{
 		background: #333333;
 		padding: 35px 0;
@@ -1512,7 +1512,7 @@ footer{
 	h3{
 		font-size: 25px;
 		font-weight: 700;
-		margin: 30px 0 40px;
+		margin: 30px 0 30px;
 		color: #333333;
 		text-align: center
 	}
@@ -2620,13 +2620,13 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 }
 // legal pages
 .hero.hero-terms{
-    background: url(../img/terms.jpg) no-repeat center;
+    background: #000 url(../img/terms.jpg) no-repeat center;
     background-size: cover;
     .hero-inner{
     	height: 36.71428571428571vw !important;
     }
 }.hero.hero-privacy{
-    background: url(../img/privacy.jpg) no-repeat center;
+    background: #000 url(../img/privacy.jpg) no-repeat center;
     background-size: cover;
     .hero-inner{
     	height: 36.71428571428571vw !important;
