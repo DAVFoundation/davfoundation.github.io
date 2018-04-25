@@ -1179,14 +1179,16 @@ input {
       border: none !important; }
 
 footer {
-  padding: 20px 0 80px; }
-  footer .social {
-    text-align: center; }
-    footer .social a {
-      display: inline-block;
-      margin: 20px 23px; }
-      footer .social a img {
-        height: 50px; }
+  padding: 100px 0 0; }
+  footer .footer-gray {
+    background: #333333;
+    padding: 35px 0;
+    color: #FFF; }
+  footer .social a {
+    display: inline-block;
+    margin: 20px 23px; }
+    footer .social a img {
+      height: 50px; }
   footer h3 {
     font-size: 25px;
     font-weight: 700;
@@ -1208,7 +1210,7 @@ footer {
     margin-bottom: 30px; }
   footer .about-legal h4 {
     font-size: 15px;
-    color: #271e36;
+    color: #FFF;
     font-weight: 700;
     line-height: 30px;
     margin: 0px; }
@@ -1216,10 +1218,19 @@ footer {
     font-size: 15px;
     display: block;
     line-height: 30px;
-    color: #271e36; }
+    color: #FFF;
+    margin-top: 18px; }
+  footer .about-legal .social a {
+    display: inline-block;
+    min-width: 32%;
+    margin: 6px 0; }
+    footer .about-legal .social a img {
+      margin-right: 6px;
+      display: inline-block;
+      height: 38px; }
   footer .copyright {
     font-size: 13px;
-    color: #271e36;
+    color: #FFF;
     text-align: center;
     margin-top: 40px; }
 
@@ -1325,30 +1336,28 @@ footer {
       line-height: 21px;
       margin: 0 0 20px -15px; }
 
-.media-gallery {
-  padding-bottom: 180px; }
-  .media-gallery h2 {
-    font-size: 31px;
-    color: #333;
-    font-weight: 700;
-    text-align: center;
-    margin: 55px 0 40px; }
-  .media-gallery img {
-    margin: 0 40px; }
-  .media-gallery .arrow-left.slick-arrow {
-    margin: 0px;
-    position: absolute;
-    left: -59px;
-    top: 25%;
-    cursor: pointer; }
-  .media-gallery .arrow-right.slick-arrow {
-    margin: 0px;
-    position: absolute;
-    right: -59px;
-    top: 25%;
-    cursor: pointer; }
-  .media-gallery a:hover, .media-gallery a:active, .media-gallery a:focus {
-    outline: none; }
+.media-gallery h2 {
+  font-size: 31px;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin: 55px 0 40px; }
+.media-gallery img {
+  margin: 0 40px; }
+.media-gallery .arrow-left.slick-arrow {
+  margin: 0px;
+  position: absolute;
+  left: -59px;
+  top: 25%;
+  cursor: pointer; }
+.media-gallery .arrow-right.slick-arrow {
+  margin: 0px;
+  position: absolute;
+  right: -59px;
+  top: 25%;
+  cursor: pointer; }
+.media-gallery a:hover, .media-gallery a:active, .media-gallery a:focus {
+  outline: none; }
 
 .hidden-press, .hidden-articles {
   display: none; }
@@ -2310,8 +2319,14 @@ footer {
     margin-top: 50px; }
 
   .blockchain-carousel h1 {
-    margin: 0 0 60px; } }
+    margin: 0 0 60px; }
+
+  footer .about-legal .social a {
+    min-width: 49%; } }
 @media (max-width: 767px) {
+  footer .links {
+    text-align: center; }
+
   .navbar-nav > li > a {
     font-size: 15px; }
 
