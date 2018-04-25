@@ -1558,7 +1558,7 @@ footer {
       margin-right: 50px; }
 
 .hero.hero-careers {
-  background: url(../img/careers.jpg) no-repeat center;
+  background: #000 url(../img/careers.jpg) no-repeat center;
   background-size: cover; }
   .hero.hero-careers .hero-inner {
     height: 30.71428571428571vw !important; }
