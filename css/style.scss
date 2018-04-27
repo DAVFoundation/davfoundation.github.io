@@ -10,6 +10,8 @@ body{
 }
 input {
  	outline:none;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 .btn-orange{
 	border-radius: 3px;
@@ -2762,6 +2764,103 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 }
+.hero.route-creator{
+	background: #000 url(../img/route-creator.jpg) no-repeat center;
+    background-size: cover;
+    .hero-inner{
+    	// min-height: 98.64364981504316vw !important;
+		padding-top: 55px;
+    	h1{
+    		font-size: 40px;
+    		font-weight: 700;
+    		color: $orange;
+    		line-height: 50px;
+    	}
+    	h2{
+    		font-size: 25px;
+    		font-weight: 400;
+    		margin: 0 0 45px;
+    		span{
+    			font-weight: 700;
+    		}
+    	}
+    	p{
+    		padding-left: 24%;
+    		font-size: 14px;
+    		font-weight: 400;
+    		line-height: 27px;
+    		margin: 0px;
+    		a{
+    			color: $orange;
+    			font-size: 19px;
+    		}
+    		img{
+    			height: 20px;
+    			margin-right: 5px;
+    		}
+    	}
+    	.waypoint-plus p{
+    		padding-left: 0;
+    		a:focus,
+    		a:active{
+    			text-decoration: none;
+    		}
+    	}
+    	.row{
+    		margin-top: 30px;
+    		margin-bottom: 30px;
+    	}
+    	input[type=text]{
+    		line-height: 27px;
+    		height: 27px;
+    		background: none;
+    		border: none;
+    		color: #FFF;
+    		display: block;
+    		width: 100%;
+    		border-bottom: 1px solid #FFF;
+    		font-size: 12px;
+    		&::-webkit-input-placeholder {
+    		   color: #FFF;
+    		}
+    		
+    		&:-moz-placeholder {
+    		   color: #FFF;  
+    		}
+    		
+    		&::-moz-placeholder {
+    		   color: #FFF;  
+    		}
+    		
+    		&:-ms-input-placeholder {  
+    		   color: #FFF;  
+    		}
+    	}
+    	.waypoint{
+    		p:before{
+			    content: "\25CF";
+    			color: $orange;
+    			margin-right: 5px;
+    		}
+    		input[type=text]{
+    			color: $orange;
+    		}
+    	}
+    	input[type=submit]{
+    		display: block;
+    		background-color: $orange;
+    		color: #FFF;
+    		border: none;
+    		width: 100%;
+    		height: 58px;
+    		font-size: 19px;
+    		border-radius: 6px;
+    		letter-spacing: 1px;
+    		margin: 60px 0 0;
+    		font-weight: 700;
+    	}
+    }
+}
 // media queries
 @media (max-width: 1400px) {
 	.nav>li>a{
@@ -2904,6 +3003,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.drone-flight-planning img{
 		margin-top: -10px;
+	}
+	.hero.route-creator .hero-inner p{
+		padding-left: 0;
 	}
 }
 @media (max-width: 992px) {
@@ -3463,6 +3565,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		img{
 			margin-top: 60px;
 		}
+	}
+	.hero.route-creator .hero-inner input[type=text]{
+		margin: 0 0 20px;
 	}
 }
 @media (max-height: 767px) {
