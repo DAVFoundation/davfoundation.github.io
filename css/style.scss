@@ -138,6 +138,16 @@ input {
 	background: #000 url('../img/hero.jpg') no-repeat center;
 	background-size: cover;
 	color: #FFF;
+	&.index2{
+		.hero-inner{
+			.hero-valign{
+				h1{
+					margin: -40px 0 0;
+					padding: 0;
+				}
+			}
+		}
+	}
 	.hero-inner{
 		height: 47.85714285714286vw;
 		display: table;
@@ -164,6 +174,12 @@ input {
 				min-width: 50px;
 				text-align: right;
 			}
+			&.orange-title{
+				font-size: 19px;
+				color: $orange;
+				font-weight: 400;
+				margin: 0 0 10px;
+			}
 		}
 		h5{
 			font-size: 15px;
@@ -171,7 +187,7 @@ input {
 			line-height: 25px;
 			}
 		.countdown{
-			width: 320px;
+			width: 290px;
 			margin: 0 auto;
 			p{
 				border: 1px solid #FFF;
@@ -186,6 +202,38 @@ input {
 				margin: 0 0 45px;
 				}
 			}
+			.eth-progress{
+				width: 300px;
+				margin: 0px auto 20px;
+				p{
+					font-weight: 700;
+					font-size: 15px;
+				}
+				.progress{
+					border-radius: 10px;
+					.progress-bar{
+						background: $orange;
+						border-top-right-radius: 10px;
+						border-bottom-right-radius: 10px;
+						font-weight: 700;
+					}
+				}
+			}
+		.hero-telegram{
+			background: $orange;
+			border-radius: 3px;
+			color: #FFF;
+			font-size: 15px;
+			font-weight: 700;
+			height: 47px;
+			line-height: 47px;
+			display: inline-block;
+			padding: 0 15px;
+			margin-top: 20px;
+			img{
+				margin-right: 7px;
+			}
+		}
 		.hero-join{
 			width: 390px;
 			margin: 0 auto;
@@ -238,7 +286,7 @@ input {
 		}
 	}
 	.countdown-row {
-	margin:0 auto 40px;
+	margin:0 auto 30px;
 	width:100%;
 	display:table;
 	text-align:center;
@@ -251,8 +299,8 @@ input {
 		display: block;
 		float: left;
 		text-align: center;
-		width:74px;
-		height:55px;
+		width:64px;
+		height:45px;
 		border-radius: 3px;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
@@ -267,14 +315,14 @@ input {
 		// font-weight:700;
 		// line-height:120px;
 		    // border: 1px solid #FFF;
-		font-size: 24px;
+		font-size: 18px;
 		font-weight: 700;
-		line-height: 55px;
+		line-height: 45px;
 		border-radius: 2px;
 	}
 	.countdown-period {
 	    display: block;
-		font-size: 15px;
+		font-size: 12px;
     	text-transform: uppercase;
     	margin: 0 0 45px;
     	font-weight: 500;
@@ -283,6 +331,17 @@ input {
 	&.hero-whitelist{
 		background: #000 url('../img/intersection.jpg') no-repeat center;
 		background-size: cover;
+	}
+}
+.best-brands.index2{
+	margin-top: -112px;
+	padding: 15px;
+	background: #FFF;
+	img{
+		// width: 20%;
+		margin: 0 0 15px;
+		height: 26px;
+		width: auto;
 	}
 }
 .join-us-orange{

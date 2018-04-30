@@ -326,7 +326,7 @@ $(document).ready(function(){
     });
     //countdown
   // $('#countdown').countdown(
-  //   {until: $.countdown.UTCDate(-8, new Date(2018, 3, 30)), format: 'dHM'}
+  //   {until: $.countdown.UTCDate(-10, new Date(2018, 5, 11)), format: 'dHM'}
   // );
 
 });

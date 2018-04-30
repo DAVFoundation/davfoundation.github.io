@@ -104,6 +104,9 @@ input {
   background: #000 url("../img/hero.jpg") no-repeat center;
   background-size: cover;
   color: #FFF; }
+  .hero.index2 .hero-inner .hero-valign h1 {
+    margin: -40px 0 0;
+    padding: 0; }
   .hero .hero-inner {
     height: 47.85714285714286vw;
     display: table;
@@ -128,12 +131,17 @@ input {
           display: inline-block;
           min-width: 50px;
           text-align: right; }
+        .hero .hero-inner .hero-valign h4.orange-title {
+          font-size: 19px;
+          color: #ff6a46;
+          font-weight: 400;
+          margin: 0 0 10px; }
       .hero .hero-inner .hero-valign h5 {
         font-size: 15px;
         margin: 0 0 50px;
         line-height: 25px; }
       .hero .hero-inner .hero-valign .countdown {
-        width: 320px;
+        width: 290px;
         margin: 0 auto; }
         .hero .hero-inner .hero-valign .countdown p {
           border: 1px solid #FFF;
@@ -145,6 +153,32 @@ input {
           font-size: 15px;
           text-transform: uppercase;
           margin: 0 0 45px; }
+      .hero .hero-inner .hero-valign .eth-progress {
+        width: 300px;
+        margin: 0px auto 20px; }
+        .hero .hero-inner .hero-valign .eth-progress p {
+          font-weight: 700;
+          font-size: 15px; }
+        .hero .hero-inner .hero-valign .eth-progress .progress {
+          border-radius: 10px; }
+          .hero .hero-inner .hero-valign .eth-progress .progress .progress-bar {
+            background: #ff6a46;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-weight: 700; }
+      .hero .hero-inner .hero-valign .hero-telegram {
+        background: #ff6a46;
+        border-radius: 3px;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 700;
+        height: 47px;
+        line-height: 47px;
+        display: inline-block;
+        padding: 0 15px;
+        margin-top: 20px; }
+        .hero .hero-inner .hero-valign .hero-telegram img {
+          margin-right: 7px; }
       .hero .hero-inner .hero-valign .hero-join {
         width: 390px;
         margin: 0 auto; }
@@ -182,7 +216,7 @@ input {
       display: block;
       clear: both; }
   .hero .countdown-row {
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
     width: 100%;
     display: table;
     text-align: center; }
@@ -190,8 +224,8 @@ input {
     display: block;
     float: left;
     text-align: center;
-    width: 74px;
-    height: 55px;
+    width: 64px;
+    height: 45px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -199,13 +233,13 @@ input {
     text-align: center;
     margin: 10px 15px; }
   .hero .countdown-amount {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 55px;
+    line-height: 45px;
     border-radius: 2px; }
   .hero .countdown-period {
     display: block;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     margin: 0 0 45px;
     font-weight: 500;
@@ -213,6 +247,15 @@ input {
   .hero.hero-whitelist {
     background: #000 url("../img/intersection.jpg") no-repeat center;
     background-size: cover; }
+
+.best-brands.index2 {
+  margin-top: -112px;
+  padding: 15px;
+  background: #FFF; }
+  .best-brands.index2 img {
+    margin: 0 0 15px;
+    height: 26px;
+    width: auto; }
 
 .join-us-orange {
   padding: 25px 0 30px;
