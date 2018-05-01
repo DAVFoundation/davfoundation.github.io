@@ -2209,9 +2209,12 @@ footer {
     display: block;
     float: left; }
 
-.hero.route-creator {
+.route-creator-bg {
   background: #000 url(../img/route-creator.jpg) no-repeat center;
   background-size: cover; }
+
+.hero.route-creator {
+  background: none; }
   .hero.route-creator .hero-inner h1 {
     font-size: 40px;
     font-weight: 700;
@@ -2219,13 +2222,14 @@ footer {
     line-height: 50px;
     padding-top: 30px; }
   .hero.route-creator .hero-inner h2 {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 400;
     margin: 0 0 45px; }
     .hero.route-creator .hero-inner h2 span {
-      font-weight: 700; }
+      font-weight: 700;
+      word-wrap: break-word; }
   .hero.route-creator .hero-inner p {
-    padding-left: 24%;
+    padding-left: 16%;
     font-size: 14px;
     font-weight: 400;
     line-height: 27px;
@@ -2236,6 +2240,16 @@ footer {
     .hero.route-creator .hero-inner p img {
       height: 20px;
       margin-right: 5px; }
+  .hero.route-creator .hero-inner label {
+    padding: 0;
+    font-weight: 700;
+    font-size: 12px;
+    color: #ff6a46; }
+  .hero.route-creator .hero-inner .waypoint-header p, .hero.route-creator .hero-inner label {
+    padding: 0;
+    font-weight: 700;
+    font-size: 12px;
+    color: #ff6a46; }
   .hero.route-creator .hero-inner .waypoint-plus p {
     padding-left: 0; }
     .hero.route-creator .hero-inner .waypoint-plus p a:focus,
@@ -2252,30 +2266,31 @@ footer {
     color: #FFF;
     display: block;
     width: 100%;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #9b9b9b;
     font-size: 12px; }
     .hero.route-creator .hero-inner input[type=text]::-webkit-input-placeholder {
-      color: #FFF; }
+      color: #9b9b9b; }
     .hero.route-creator .hero-inner input[type=text]:-moz-placeholder {
-      color: #FFF; }
+      color: #9b9b9b; }
     .hero.route-creator .hero-inner input[type=text]::-moz-placeholder {
-      color: #FFF; }
+      color: #9b9b9b; }
     .hero.route-creator .hero-inner input[type=text]:-ms-input-placeholder {
-      color: #FFF; }
+      color: #9b9b9b; }
+    .hero.route-creator .hero-inner input[type=text].input-gray {
+      border: none;
+      color: #9b9b9b; }
   .hero.route-creator .hero-inner .waypoint p:before {
     content: "\25CF";
     color: #ff6a46;
     margin-right: 5px; }
-  .hero.route-creator .hero-inner .waypoint input[type=text] {
-    color: #ff6a46; }
   .hero.route-creator .hero-inner input[type=submit] {
     display: block;
     background-color: #ff6a46;
     color: #FFF;
     border: none;
     width: 100%;
-    height: 58px;
-    font-size: 19px;
+    height: 42px;
+    font-size: 15px;
     border-radius: 6px;
     letter-spacing: 1px;
     margin: 60px 0 0;
@@ -2409,7 +2424,14 @@ footer {
     margin-top: -10px; }
 
   .hero.route-creator .hero-inner p {
-    padding-left: 0; } }
+    padding-left: 0;
+    font-size: 12px; }
+
+  .route-creator-bg {
+    background-size: auto; }
+
+  .fixed-container-width {
+    width: 970px; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }

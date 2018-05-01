@@ -45,7 +45,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.30.0/css/blueimp-gallery.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.1.8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.1.9"/>
 
     <!-- Bootstrap -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -87,7 +87,7 @@
 </noscript>
 <!-- End Facebook Pixel Code -->
   </head>
-  <body>
+  <body class="route-creator-bg">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCJHZN5"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -99,27 +99,35 @@
       <div class="hero-inner">
         <div class="hero-valign">
           <h1>Route Creator</h1>
-          <h2>Create a new route for: <span>4ed359fc</span></h2>
+          <h2>Create a new route for: <span>FE77193dE757E4eBd49fC876d0b656A7</span></h2>
           <form>
-          <div class="container text-left">
+          <div class="container text-left fixed-container-width">
+            <div class="row waypoint-header hidden-xs1">
+              <div class="col-xs-2"></div>
+              <div class="col-xs-2"><p>Latitude</p></div>
+              <div class="col-xs-2"><p>Longitude</p></div>
+              <div class="col-xs-2"><p>Altitude (meters)</p></div>
+              <div class="col-xs-2"><p>Heading (degrees)</p></div>
+              <div class="col-xs-2"><p>Distance (meters)</p></div>
+            </div>
             <div class="row">
-              <div class="col-md-2">
-                <p><img src="img/gps.png"> START:</p>
+              <div class="col-xs-2">
+                <p><img src="img/gps.png"> START:<br class="visible-xs"><br class="visible-xs"></p>
               </div>
-              <div class="col-sm-2 col-xs-6">
-                <input type="text" placeholder="Latitude">
+              <div class="col-xs-2">
+                <input type="text" class="input-gray" placeholder="N/A" disabled>
               </div>
-              <div class="col-sm-2 col-xs-6">
-                <input type="text" placeholder="Longitude">
+              <div class="col-xs-2">
+                <input type="text" class="input-gray" placeholder="N/A" disabled>
               </div>
-              <div class="col-sm-2 col-xs-6">
-                <input type="text" placeholder="Altitude (meters)">
+              <div class="col-xs-2">
+                <input type="text" class="input-gray" placeholder="N/A" disabled>
               </div>
-              <div class="col-sm-2 col-xs-6">
-                <input type="text" placeholder="Heading (degrees)">
+              <div class="col-xs-2">
+                <input type="text">
               </div>
-              <div class="col-sm-2 col-xs-6">
-                <input type="text" placeholder="Distance (meters)">
+              <div class="col-xs-2">
+                <input type="text">
               </div>
             </div>
 
@@ -128,28 +136,28 @@
             </div>
 
             <div class="row waypoint-plus">
-              <div class="col-sm-10 col-sm-offset-2">
+              <div class="col-xs-10 col-xs-offset-2">
                 <p><a href="#">+ Add Waypoint</a></p>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-md-2">
-                <p><img src="img/gps.png"> END:</p>
+              <div class="col-xs-2">
+                <p><img src="img/gps.png"> END:<br class="visible-xs"><br class="visible-xs"></p>
               </div>
-              <div class="col-sm-2 col-xs-6">
-                <input type="text" placeholder="Latitude">
+              <div class="col-xs-2">
+                <input type="text" class="input-gray" placeholder="N/A" disabled>
               </div>
-              <div class="col-sm-2 col-xs-6">
-                <input type="text" placeholder="Longitude">
+              <div class="col-xs-2">
+                <input type="text" class="input-gray" placeholder="N/A" disabled>
               </div>
-              <div class="col-sm-2 col-xs-6">
-                <input type="text" placeholder="Altitude (meters)">
+              <div class="col-xs-2">
+                <input type="text" class="input-gray" placeholder="N/A" disabled>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-4 col-sm-offset-4">
+              <div class="col-xs-2 col-xs-offset-5">
                 <input type="submit" value="SUBMIT">
               </div>
             </div>
@@ -173,13 +181,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js" type="text/javascript" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js" data-cfasync="false"></script>
-    <script src="js/main.js?v=3.1.8" type="text/javascript" data-cfasync="false"></script>
+    <script src="js/main.js?v=3.1.9" type="text/javascript" data-cfasync="false"></script>
     <script data-cfasync="false">
       var waypointNumber = 1;
       $(".waypoint-plus a").click(function(e) {
         e.preventDefault();
         // alert("Add waypoint " + waypointNumber);
-        $(".waypoint-container").append('<div class="row waypoint"><div class="col-md-2"><p>WAYPOINT ' + waypointNumber + ':</p></div><div class="col-sm-2 col-xs-6"><input type="text" placeholder="Latitude"></div><div class="col-sm-2 col-xs-6"><input type="text" placeholder="Longitude"></div><div class="col-sm-2 col-xs-6"><input type="text" placeholder="Altitude (meters)"></div><div class="col-sm-2 col-xs-6"><input type="text" placeholder="Heading (degrees)"></div><div class="col-sm-2 col-xs-6"><input type="text" placeholder="Distance (meters)"></div></div>');
+        $(".waypoint-container").append('<div class="row waypoint"><div class="col-xs-2"><p>WAYPOINT ' + waypointNumber + ':</p></div><div class="col-xs-2"><input type="text"></div><div class="col-xs-2"><input type="text"></div><div class="col-xs-2"><input type="text"></div><div class="col-xs-2"><input type="text"></div><div class="col-xs-2"><input type="text"></div></div>');
         waypointNumber ++;
       });
     </script>

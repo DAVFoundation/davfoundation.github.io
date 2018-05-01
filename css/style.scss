@@ -2823,9 +2823,12 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 }
-.hero.route-creator{
+.route-creator-bg{
 	background: #000 url(../img/route-creator.jpg) no-repeat center;
     background-size: cover;
+}
+.hero.route-creator{
+	background: none;
     .hero-inner{
     	// min-height: 98.64364981504316vw !important;
 		// padding-top: 55px;
@@ -2837,15 +2840,16 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     		padding-top: 30px;
     	}
     	h2{
-    		font-size: 25px;
+    		font-size: 15px;
     		font-weight: 400;
     		margin: 0 0 45px;
     		span{
     			font-weight: 700;
+    			word-wrap: break-word;
     		}
     	}
     	p{
-    		padding-left: 24%;
+    		padding-left: 16%;
     		font-size: 14px;
     		font-weight: 400;
     		line-height: 27px;
@@ -2858,6 +2862,18 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     			height: 20px;
     			margin-right: 5px;
     		}
+    	}
+    	label{
+    		padding: 0;
+    		font-weight: 700;
+    		font-size: 12px;
+    		color: $orange;
+    	}
+    	.waypoint-header p,label{
+    		padding: 0;
+    		font-weight: 700;
+    		font-size: 12px;
+    		color: $orange;
     	}
     	.waypoint-plus p{
     		padding-left: 0;
@@ -2878,22 +2894,26 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     		color: #FFF;
     		display: block;
     		width: 100%;
-    		border-bottom: 1px solid #FFF;
+    		border-bottom: 1px solid #9b9b9b;
     		font-size: 12px;
     		&::-webkit-input-placeholder {
-    		   color: #FFF;
+    		   color: #9b9b9b;
     		}
     		
     		&:-moz-placeholder {
-    		   color: #FFF;  
+    		   color: #9b9b9b;  
     		}
     		
     		&::-moz-placeholder {
-    		   color: #FFF;  
+    		   color: #9b9b9b;  
     		}
     		
     		&:-ms-input-placeholder {  
-    		   color: #FFF;  
+    		   color: #9b9b9b;  
+    		}
+    		&.input-gray{
+    			border: none;
+    			color: #9b9b9b;
     		}
     	}
     	.waypoint{
@@ -2903,7 +2923,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     			margin-right: 5px;
     		}
     		input[type=text]{
-    			color: $orange;
+    			// color: $orange;
     		}
     	}
     	input[type=submit]{
@@ -2912,8 +2932,8 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     		color: #FFF;
     		border: none;
     		width: 100%;
-    		height: 58px;
-    		font-size: 19px;
+    		height: 42px;
+    		font-size: 15px;
     		border-radius: 6px;
     		letter-spacing: 1px;
     		margin: 60px 0 0;
@@ -3066,6 +3086,13 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.hero.route-creator .hero-inner p{
 		padding-left: 0;
+		font-size: 12px;
+	}
+	.route-creator-bg{
+		background-size: auto;
+	}
+	.fixed-container-width{
+		width: 970px;
 	}
 }
 @media (max-width: 992px) {
