@@ -69,6 +69,7 @@ $(document).ready(function(){
     var url = window.location.href;
     if(url.indexOf('?thank=you') != -1) {
         $('#modalThankYou').modal('show');
+        ga('send', 'event', 'KYC', 'completed', 'KYC Process Completed');
     }
     $('#modalThankYou,#modalThankYouKYC,#modalKYCStatus').on('hidden.bs.modal', function (e) {
       document.location.href="/";
@@ -266,7 +267,8 @@ $(document).ready(function(){
       return re.test(email);
     }
     $('#checkKYC').on('click',function (e) {
-        e.preventDefault();
+      ga('send', 'event', 'KYC', 'status checked', 'Check KYC Status');
+      e.preventDefault();
         var email = $("#kycmail").val();
         if(validateEmail(email)){
           email=encodeURIComponent(email);
@@ -315,6 +317,7 @@ $(document).ready(function(){
                     default:
                       break;
                 }
+                ga('send', 'event', 'KYC', 'status results', data.statusText);
               }
           });
         }else{
@@ -329,7 +332,12 @@ $(document).ready(function(){
   //   {until: $.countdown.UTCDate(-10, new Date(2018, 5, 11)), format: 'dHM'}
   // );
 
+  // register event google analytics
+  $("#mc-embedded-subscribe-form").on('submit', function() {
+    ga('send', 'event', 'Registration', 'started', 'Register');
+  });
 });
+
 //pause youtube video
 $(function(){
   $("body").on('hidden.bs.modal', function (e) {
