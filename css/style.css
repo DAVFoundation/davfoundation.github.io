@@ -659,6 +659,71 @@ input {
     width: 100%;
     height: 37px; }
 
+.members h2 {
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0 0 70px;
+  color: #333; }
+.members a {
+  display: block;
+  position: relative; }
+  .members a .alliance-popup {
+    min-height: 230px;
+    opacity: 0;
+    position: absolute;
+    top: -45%;
+    background: #FFF;
+    z-index: 2;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 38px 6px rgba(222, 221, 221, 0.84);
+    -moz-box-shadow: 0px 0px 38px 6px rgba(222, 221, 221, 0.84);
+    box-shadow: 0px 0px 38px 6px rgba(222, 221, 221, 0.84);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .members a .alliance-popup img {
+      margin: 0;
+      height: 60px; }
+    .members a .alliance-popup h5 {
+      font-size: 13px;
+      color: #363840;
+      font-weight: 500;
+      padding: 0 10px 10px;
+      margin: 0; }
+  .members a:hover .alliance-popup {
+    opacity: 1; }
+  .members a:hover, .members a:active, .members a:focus {
+    outline: none; }
+.members img {
+  height: 90px;
+  margin-bottom: 60px; }
+.members .popover-content img {
+  margin: 0;
+  height: auto;
+  width: 100%; }
+
+.alliance-modal-small .modal-dialog button.close {
+  position: absolute;
+  right: 10px;
+  color: #a7a7a7;
+  opacity: 1;
+  font-size: 36px; }
+.alliance-modal-small .modal-content {
+  border: none; }
+.alliance-modal-small a {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+  color: #4361d8; }
+.alliance-modal-small h5 {
+  font-size: 13px;
+  color: #363840;
+  font-weight: 500;
+  line-height: 21px;
+  padding: 0 10px 20px;
+  margin: 0; }
+
 .alliance-modal.team-modal .modal-dialog {
   width: 360px; }
 .alliance-modal.team-modal input[type=text] {
@@ -2955,8 +3020,5 @@ footer {
   textarea,
   input {
     font-size: 16px; } }
-body.iosBugFixCaret.modal-open {
-  position: fixed;
-  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
