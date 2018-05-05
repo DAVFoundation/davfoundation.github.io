@@ -350,7 +350,7 @@ $(function(){
       var url = 'http://startappexchange.com/trackpostinstall/davnetwork?a=join_telegram&d=' + clkid;
       $.ajax({
         url: url,
-        type: 'POST',
+        type: 'GET',
         success: function(res) {
           console.log(res);
         }
