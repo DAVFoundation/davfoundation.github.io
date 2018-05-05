@@ -6,6 +6,9 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
+.makeOrange {
+  color: #ff6a46 !important; }
+
 .btn-orange {
   border-radius: 3px;
   background: #ff6a46;
