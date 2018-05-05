@@ -56,13 +56,13 @@ $(document).ready(function(){
     });
 
     // modal vertical align
-    $('.team-modal').on('shown.bs.modal', function (e) {
+    $('.team-modal,.alliance-modal-small').on('shown.bs.modal', function (e) {
       // alert("Modal for " + $(this).attr('id') + " is open.")
       var windowHeight = $(window).height();
       var modalHeight = $(this).find('.modal-content').height();
       var modalTopPadding = (windowHeight - modalHeight)/2 - 30;
       // var modalTopPadding = (windowHeight + windowHeight*0.18 - modalHeight)/2 - 30;
-      $('.modal-dialog').css('padding-top', modalTopPadding +'px');
+      $('.modal-dialog').css('margin-top', modalTopPadding +'px');
     });
 
     //thank you modal
@@ -450,7 +450,7 @@ $(function() {
         var modalHeight = $(this).find('.modal-content').height();
         var modalTopPadding = (windowHeight - modalHeight)/2 - 30;
         // var modalTopPadding = (windowHeight + windowHeight*0.18 - modalHeight)/2 - 30;
-        $('.modal-dialog').css('padding-top', modalTopPadding +'px');
+        $('.modal-dialog').css('margin-top', modalTopPadding +'px');
       });
     });
 });
