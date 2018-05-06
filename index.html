@@ -2941,6 +2941,19 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js" data-cfasync="false"></script>
     <script src="js/main.js?v=3.2.1" type="text/javascript" data-cfasync="false"></script>
+    <script type="text/javascript" data-cfasync="false">
+      $(document).ready(function(){
+        var transactionId = getParameterByName("transaction_id");
+        if (transactionId) {
+          var homepageEventUrl = "https://nessie.dav.network/homepage?transaction_id=" + transactionId;
+          $.ajax({
+            type: 'GET',
+            url: homepageEventUrl,
+            dataType: 'json'
+          });
+        }
+      });
+    </script>
 
   </body>
 </html>
