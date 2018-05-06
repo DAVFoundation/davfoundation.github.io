@@ -110,67 +110,107 @@
       <div id="startchange"></div>
       <div class="hero-inner">
         <div class="hero-valign">
-          <h1>Route Creator</h1>
-          <h2>Create a new route for: <span>FE77193dE757E4eBd49fC876d0b656A7</span></h2>
+          <h1 style="padding-top: 20px;">Charging Station Dashboard</h1>
+          <h2>STATION ID: <span>4E3332</span></h2>
           <form>
-          <div class="container text-left fixed-container-width">
-            <div class="row waypoint-header hidden-xs1">
-              <div class="col-xs-2"></div>
-              <div class="col-xs-2"><p>Latitude</p></div>
-              <div class="col-xs-2"><p>Longitude</p></div>
-              <div class="col-xs-2"><p>Altitude (meters)</p></div>
-              <div class="col-xs-2"><p>Heading (degrees)</p></div>
-              <div class="col-xs-2"><p>Distance (meters)</p></div>
-            </div>
+          <div class="container text-left fixed-container-width1">
             <div class="row">
-              <div class="col-xs-2">
-                <p><img src="img/gps.png"> START:<br class="visible-xs"><br class="visible-xs"></p>
+            <div class="col-sm-6">
+            <h3>Supported Drones</h3>
+              <div class="row">
+              <div class="col-md-4 col-xs-6">
+                <div class="custom-check">
+                  <input type="checkbox" id="drone1">
+                  <label for="drone1"><span></span> DJI Mavic Pro</label>
+                </div>
               </div>
-              <div class="col-xs-2">
-                <input type="text" class="input-gray" placeholder="N/A" disabled>
+              <div class="col-md-4 col-xs-6">
+                <div class="custom-check">
+                  <input type="checkbox" id="drone2" checked>
+                  <label for="drone2"><span></span> DJI Mavic Pro</label>
+                </div>
               </div>
-              <div class="col-xs-2">
-                <input type="text" class="input-gray" placeholder="N/A" disabled>
+              <div class="col-md-4 col-xs-6">
+                <div class="custom-check">
+                  <input type="checkbox" id="drone3">   
+                  <label for="drone3"><span></span> DJI Mavic Pro</label>
+                </div>
               </div>
-              <div class="col-xs-2">
-                <input type="text" class="input-gray" placeholder="N/A" disabled>
+            
+              <div class="col-md-4 col-xs-6">
+                <div class="custom-check">
+                  <input type="checkbox" id="drone4" checked>
+                  <label for="drone4"><span></span> DJI Phantom</label>
+                </div>
               </div>
-              <div class="col-xs-2">
-                <input type="text">
+              <div class="col-md-4 col-xs-6">
+                <div class="custom-check">
+                  <input type="checkbox" id="drone5">
+                  <label for="drone5"><span></span> DJI Mavic Pro</label>
+                </div>
               </div>
-              <div class="col-xs-2">
-                <input type="text">
+              <div class="col-md-4 col-xs-6">
+                <div class="custom-check">
+                  <input type="checkbox" id="drone6" checked>
+                  <label for="drone6"><span></span> DJI Mavic Pro</label>
+                </div>
+              </div>
+            
+              <div class="col-md-4 col-xs-6">
+                <div class="custom-check">
+                  <input type="checkbox" id="drone7">
+                  <label for="drone7"><span></span> DJI Mavic Pro</label>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="custom-check">
+                  <input type="checkbox" id="drone8" checked>
+                  <label for="drone8"><span></span> DJI Mavic Pro</label>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="custom-check">
+                  <input type="checkbox" id="drone9" checked>
+                  <label for="drone9"><span></span> DJI Mavic Pro</label>
+                </div>
+              </div>
               </div>
             </div>
-
-            <div class="waypoint-container">
-              
+            <div class="col-sm-6">
+              <h3>Station Location</h3>
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <label class="inline-label">
+                    Lat:
+                    <input type="text" value="40°41′21″N">
+                  </label>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                  <label class="inline-label">
+                    Long:
+                    <input type="text" value="74°2′40″W">
+                  </label>
+                </div>
+              </div>
+            </div>
             </div>
 
-            <div class="row waypoint-plus">
-              <div class="col-xs-10 col-xs-offset-2">
-                <p><a href="#">+ Add Waypoint</a></p>
+            
+
+
+            <h3>Charging Price</h3>
+            <div class="row">
+              <div class="col-md-3 col-xs-6">
+                <label class="inline-label charge-price">
+                  <input type="text" value="45">
+                  DAV
+                </label>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-xs-2">
-                <p><img src="img/gps.png"> END:<br class="visible-xs"><br class="visible-xs"></p>
-              </div>
-              <div class="col-xs-2">
-                <input type="text" class="input-gray" placeholder="N/A" disabled>
-              </div>
-              <div class="col-xs-2">
-                <input type="text" class="input-gray" placeholder="N/A" disabled>
-              </div>
-              <div class="col-xs-2">
-                <input type="text" class="input-gray" placeholder="N/A" disabled>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-2 col-xs-offset-5">
-                <input type="submit" value="SUBMIT">
+              <div class="col-sm-4 col-sm-offset-4 col-lg-2 col-lg-offset-5">
+                <input type="submit" value="SAVE CHANGES" style="margin: 0;">
               </div>
             </div>
 
@@ -194,15 +234,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js" data-cfasync="false"></script>
     <script src="js/main.js?v=3.2.1" type="text/javascript" data-cfasync="false"></script>
-    <script data-cfasync="false">
-      var waypointNumber = 1;
-      $(".waypoint-plus a").click(function(e) {
-        e.preventDefault();
-        // alert("Add waypoint " + waypointNumber);
-        $(".waypoint-container").append('<div class="row waypoint"><div class="col-xs-2"><p>WAYPOINT ' + waypointNumber + ':</p></div><div class="col-xs-2"><input type="text"></div><div class="col-xs-2"><input type="text"></div><div class="col-xs-2"><input type="text"></div><div class="col-xs-2"><input type="text"></div><div class="col-xs-2"><input type="text"></div></div>');
-        waypointNumber ++;
-      });
-    </script>
 
   </body>
 </html>
