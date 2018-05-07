@@ -2402,6 +2402,43 @@ footer {
     width: 100px !important;
     text-align: center; }
 
+.station-name {
+  margin: 40px 0 20px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important; }
+
+.station-box {
+  border: 1px solid #FFF;
+  min-height: 200px;
+  padding: 15px 0; }
+  .station-box p {
+    padding: 5px 0 !important;
+    font-size: 12px; }
+  .station-box span {
+    display: block;
+    font-weight: 700; }
+  .station-box a {
+    color: #4a4a4a;
+    background-color: #9a9a9a;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 20px 0;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    font-weight: normal; }
+    .station-box a:hover, .station-box a:active, .station-box a:focus {
+      text-decoration: none; }
+  .station-box.awaiting {
+    border-color: #ff6a46; }
+    .station-box.awaiting a {
+      font-weight: bold;
+      color: #FFF;
+      background: #ff6a46; }
+  .station-box.charging span {
+    color: #7ed321; }
+
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }

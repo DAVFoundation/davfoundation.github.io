@@ -3081,6 +3081,54 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 }
+.station-name{
+	margin: 40px 0 20px !important;
+	font-size: 18px !important;
+	font-weight: 700 !important;
+}
+.station-box{
+	border: 1px solid #FFF;
+	min-height: 200px;
+	padding: 15px 0;
+	p{
+		padding: 5px 0 !important;
+		font-size: 12px;
+	}
+	span{
+		display: block;
+		font-weight: 700;
+	}
+	a{
+		color: #4a4a4a;
+		background-color: #9a9a9a;
+		border-radius: 6px;
+		display: inline-block;
+		padding: 0 15px;
+		margin: 20px 0;
+		font-size: 12px;
+		height: 32px;
+		line-height: 32px;
+		font-weight: normal;
+		&:hover,
+		&:active,
+		&:focus{
+			text-decoration: none;
+		}
+	}
+	&.awaiting{
+		border-color: $orange;
+		a{
+			font-weight: bold;
+			color: #FFF;
+			background: $orange;
+		}
+	}
+	&.charging{
+		span{
+			color: #7ed321;
+		}
+	}
+}
 // media queries
 @media (max-width: 1400px) {
 	.nav>li>a{
