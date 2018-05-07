@@ -350,6 +350,26 @@ $(function(){
   });
 });
 
+// index2 clkid pixel
+function handleJoinTelegram() {
+  $(function () {
+    var clkid = getParameterByName('clkid');
+    $('#join-telegram').on('click', function () {
+      var url = 'http://startappexchange.com/trackpostinstall/davnetwork?a=join_telegram&d=' + clkid;
+      $.ajax({
+        url: url,
+        type: 'GET',
+        success: function (res,status) {
+          console.log(res,status);
+        },
+        error: function(xhr,status,error){
+          console.log(status,error);
+        }
+      });
+    });
+  });
+}
+
 //dav cli clip
     var vidShowAndTell = document.querySelector('video');
     // Start playing the video as soon as the user scrolls
