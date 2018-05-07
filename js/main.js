@@ -420,20 +420,25 @@ $.ajax({
     }
 });
 // contributors section
+var AVATAR_SIZE = 128
 $(function() {
     $.getJSON( "contributors.json", function( data ) {
       var modalTrigger = [];
       var modalContributor = [];
       $.each( data, function( key, val ) {
-        modalTrigger.push( "<li><a href='#contributor-" + key + "' data-toggle='modal' data-target='#contributor-" + key + "'><img src='" + val.avatar + "'></a></li>" );
+        modalTrigger.push( "<li><a href='#contributor-" + key +
+         "' data-toggle='modal' data-target='#contributor-" + key +
+          "'><img src='" + val.avatar + '&s=' + AVATAR_SIZE + "'></a></li>" );
       });
       $.each( data, function( key, val ) {
         var repo = "";
         for (var i = 0; i < val.repos.length; i++) {
           if (i != val.repos.length - 1) {
-            repo += "<a href='https://github.com/DAVFoundation/" + val.repos[i] + "' class='repo-contrib' target='_blank'>" + val.repos[i] + "</a>,"
+            repo += "<a href='https://github.com/DAVFoundation/" + val.repos[i] + 
+            "' class='repo-contrib' target='_blank'>" + val.repos[i] + "</a>,"
           }else{
-            repo += "<a href='https://github.com/DAVFoundation/" + val.repos[i] + "' class='repo-contrib' target='_blank'>" + val.repos[i] + "</a>"
+            repo += "<a href='https://github.com/DAVFoundation/" + val.repos[i] +
+             "' class='repo-contrib' target='_blank'>" + val.repos[i] + "</a>"
           }
 
         }
@@ -445,7 +450,12 @@ $(function() {
         }else{
           val.bio = "&ldquo;" + val.bio + "&rdquo;";
         }
-        modalContributor.push( "<div class='modal team-modal' id='contributor-" + key + "' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'><div class='modal-dialog' role='document'><div class='modal-content'><div class='modal-body'><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button><div class='row'><div class='col-sm-4'><br><br><img src='" + val.avatar + "' width='100%'></div><div class='col-sm-8'><h2>" + val.name + "</h2><h5>Open Source Contributor</h5><p><i>" + val.bio + "</i></p><p>DAV repos that the user contributed to: " + repo + "</p><p>Total number of contributions to DAV: <b>" + val.contrib_count + "</b></p><a href='https://github.com/" + val.user + "' target='_blank'><img src='img/icons/github-footer.png' width='25'></a></div></div></div></div></div></div>" );
+        modalContributor.push( "<div class='modal team-modal' id='contributor-" + key + 
+        "' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'><div class='modal-dialog' role='document'><div class='modal-content'><div class='modal-body'><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button><div class='row'><div class='col-sm-4'><br><br><img src='" + 
+        val.avatar + '&s=' + AVATAR_SIZE + "' width='100%'></div><div class='col-sm-8'><h2>" + val.name + "</h2><h5>Open Source Contributor</h5><p><i>" + 
+        val.bio + "</i></p><p>DAV repos that the user contributed to: " + repo + "</p><p>Total number of contributions to DAV: <b>" + 
+        val.contrib_count + "</b></p><a href='https://github.com/" + val.user + 
+        "' target='_blank'><img src='img/icons/github-footer.png' width='25'></a></div></div></div></div></div></div>" );
       });
 
       $( "<ul/>", {
