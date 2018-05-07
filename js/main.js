@@ -9,8 +9,10 @@ $(document).ready(function(){
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
             $(".navbar-fixed-top").addClass('user-scroll');
+            $(".hero-join").addClass('makeFix');
          } else {
             $(".navbar-fixed-top").removeClass('user-scroll');
+            $(".hero-join").removeClass('makeFix');
          }
      });
     }

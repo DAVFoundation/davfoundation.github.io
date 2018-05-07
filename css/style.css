@@ -212,6 +212,26 @@ input {
           display: block;
           width: 100%;
           height: 37px; }
+        .hero .hero-inner .hero-valign .hero-join.makeFix {
+          border-top: 1px solid #ff6a46;
+          position: fixed;
+          background: #FFF;
+          bottom: -17px;
+          width: 100%;
+          padding: 0 30%;
+          z-index: 99999;
+          padding-top: 20px; }
+          .hero .hero-inner .hero-valign .hero-join.makeFix input[type=email] {
+            color: #ff6a46;
+            border-color: #ff6a46; }
+            .hero .hero-inner .hero-valign .hero-join.makeFix input[type=email]::-webkit-input-placeholder {
+              color: #ff6a46; }
+            .hero .hero-inner .hero-valign .hero-join.makeFix input[type=email]:-moz-placeholder {
+              color: #ff6a46; }
+            .hero .hero-inner .hero-valign .hero-join.makeFix input[type=email]::-moz-placeholder {
+              color: #ff6a46; }
+            .hero .hero-inner .hero-valign .hero-join.makeFix input[type=email]:-ms-input-placeholder {
+              color: #ff6a46; }
     .hero .hero-inner a[href='#modalKYCStatus'] {
       color: #FFF;
       font-size: 15px;
@@ -3084,7 +3104,10 @@ footer {
     margin-top: 60px; }
 
   .hero.route-creator .hero-inner input[type=text] {
-    margin: 0 0 20px; } }
+    margin: 0 0 20px; }
+
+  .hero .hero-inner .hero-valign .hero-join.makeFix {
+    padding: 20px 15px 0; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }

@@ -275,7 +275,38 @@ input {
 				display: block;
 				width: 100%;
 				height: 37px;
+			}
+			&.makeFix{
+				border-top: 1px solid $orange;
+				position: fixed;
+				background: #FFF;
+				bottom: -17px;
+				width: 100%;
+				padding: 0 30%;
+				z-index: 99999;
+				padding-top: 20px;
+				// left: 50%;
+				// margin-left: -195px;
+				input[type=email]{
+					color: $orange;
+					border-color: $orange;
+					&::-webkit-input-placeholder {
+					   color: $orange;
+					}
+					
+					&:-moz-placeholder {
+					   color: $orange;  
+					}
+					
+					&::-moz-placeholder {
+					   color: $orange;  
+					}
+					
+					&:-ms-input-placeholder {  
+					   color: $orange;  
+					}
 				}
+			}
 			}
 		}
 		a[href='#modalKYCStatus']{
@@ -3843,6 +3874,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.hero.route-creator .hero-inner input[type=text]{
 		margin: 0 0 20px;
+	}
+	.hero .hero-inner .hero-valign .hero-join.makeFix{
+		padding: 20px 15px 0;
 	}
 }
 @media (max-height: 767px) {
