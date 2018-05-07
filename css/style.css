@@ -2296,6 +2296,9 @@ footer {
     .hero.route-creator .hero-inner h2 span {
       font-weight: 700;
       word-wrap: break-word; }
+  .hero.route-creator .hero-inner h3 {
+    margin-top: 0;
+    font-size: 20px; }
   .hero.route-creator .hero-inner p {
     padding-left: 16%;
     font-size: 14px;
@@ -2363,6 +2366,41 @@ footer {
     letter-spacing: 1px;
     margin: 60px 0 0;
     font-weight: 700; }
+
+.custom-check > label span {
+  display: block;
+  border: 1px solid #ff6a46;
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 10px; }
+.custom-check input {
+  display: none; }
+.custom-check input:checked + label span:after {
+  content: '\00d7';
+  color: #ff6a46;
+  font-size: 24px;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+  font-weight: normal; }
+.custom-check label {
+  color: #FFF !important;
+  line-height: 18px;
+  cursor: pointer;
+  margin-bottom: 20px; }
+
+.inline-label {
+  line-height: 27px;
+  display: block; }
+  .inline-label input {
+    width: 60% !important;
+    margin-left: 10px !important;
+    display: inline-block !important; }
+  .inline-label.charge-price input {
+    margin-left: 0;
+    width: 100px !important;
+    text-align: center; }
 
 @media (max-width: 1400px) {
   .nav > li > a {

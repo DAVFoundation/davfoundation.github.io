@@ -2937,6 +2937,10 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     			word-wrap: break-word;
     		}
     	}
+    	h3{
+    		margin-top: 0;
+    		font-size: 20px;
+    	}
     	p{
     		padding-left: 16%;
     		font-size: 14px;
@@ -3029,6 +3033,53 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     		font-weight: 700;
     	}
     }
+}
+// charging station dashboard
+.custom-check{
+	& > label span{
+		display: block;
+		border: 1px solid $orange;
+		width: 18px;
+		height: 18px;
+		float: left;
+		margin-right: 10px;
+	}
+	input{
+		display: none;
+	}
+	input:checked + label span:after{
+		content: '\00d7';
+		color: $orange;
+		font-size: 24px;
+		line-height: 16px;
+		text-align: center;
+		display: block;
+		// margin-left: -1px;
+		font-weight: normal;
+	}
+	label{
+		color: #FFF !important;
+		line-height: 18px;
+		cursor: pointer;
+		margin-bottom: 20px;
+	}
+
+}
+.inline-label{
+	line-height: 27px;
+	display: block;
+	input{
+		width: 60% !important;
+		margin-left: 10px !important;
+		display: inline-block !important;
+	}
+	&.charge-price{
+		input{
+			margin-left: 0;
+			width: 100px !important;
+			text-align: center;
+		}
+	}
 }
 // media queries
 @media (max-width: 1400px) {
