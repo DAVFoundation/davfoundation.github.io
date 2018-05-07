@@ -355,7 +355,7 @@ function handleJoinTelegram() {
   $(function () {
     var clkid = getParameterByName('clkid');
     $('#join-telegram').on('click', function () {
-      var url = 'http://startappexchange.com/trackpostinstall/davnetwork?a=join_telegram&d=' + clkid;
+      var url = 'https://startappexchange.com/trackpostinstall/davnetwork?a=join_telegram&d=' + clkid;
       $.ajax({
         url: url,
         type: 'GET',
