@@ -3141,6 +3141,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		height: 32px;
 		line-height: 32px;
 		font-weight: normal;
+		cursor: not-allowed;
 		&:hover,
 		&:active,
 		&:focus{
@@ -3148,11 +3149,15 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 	&.awaiting{
+		span{
+			color: $orange;
+		}
 		border-color: $orange;
 		a{
 			font-weight: bold;
 			color: #FFF;
 			background: $orange;
+			cursor: pointer;
 		}
 	}
 	&.charging{
@@ -3878,6 +3883,20 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.hero .hero-inner .hero-valign .hero-join.makeFix{
 		padding: 20px 15px 0;
+	}
+	.route-creator-bg.chargin-stations-bg{
+		background-size: cover;
+		// background: #000;
+	}
+	.station-name{
+		font-size: 24px !important;
+	}
+	.station-box a,
+	.station-box p{
+		font-size: 18px !important;
+	}
+	.station-box{
+		margin-bottom: 50px;
 	}
 }
 @media (max-height: 767px) {

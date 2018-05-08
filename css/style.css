@@ -2448,15 +2448,19 @@ footer {
     font-size: 12px;
     height: 32px;
     line-height: 32px;
-    font-weight: normal; }
+    font-weight: normal;
+    cursor: not-allowed; }
     .station-box a:hover, .station-box a:active, .station-box a:focus {
       text-decoration: none; }
   .station-box.awaiting {
     border-color: #ff6a46; }
+    .station-box.awaiting span {
+      color: #ff6a46; }
     .station-box.awaiting a {
       font-weight: bold;
       color: #FFF;
-      background: #ff6a46; }
+      background: #ff6a46;
+      cursor: pointer; }
   .station-box.charging span {
     color: #7ed321; }
 
@@ -3108,7 +3112,20 @@ footer {
     margin: 0 0 20px; }
 
   .hero .hero-inner .hero-valign .hero-join.makeFix {
-    padding: 20px 15px 0; } }
+    padding: 20px 15px 0; }
+
+  .route-creator-bg.chargin-stations-bg {
+    background-size: cover; }
+
+  .station-name {
+    font-size: 24px !important; }
+
+  .station-box a,
+  .station-box p {
+    font-size: 18px !important; }
+
+  .station-box {
+    margin-bottom: 50px; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
