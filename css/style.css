@@ -372,6 +372,7 @@ input {
 .video-home {
   background: url("../img/highways.jpg") no-repeat center;
   background-size: cover;
+  background-color: #263E49;
   color: #FFF;
   text-align: center;
   padding: 35px 0 60px; }
@@ -2999,7 +3000,7 @@ footer {
     width: 50%; }
 
   .contributors ul li {
-    width: 18%;
+    width: 12%;
     margin: 1%; }
 
   .alliance-modal.team-modal .modal-dialog {
