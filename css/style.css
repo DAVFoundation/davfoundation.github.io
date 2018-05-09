@@ -1166,6 +1166,8 @@ input {
       margin: 0 0 20px;
       line-height: normal; }
     .fundraising-goals .not-from-us a {
+      color: #ff6a46; }
+    .fundraising-goals .not-from-us a.viewTokenInfo {
       border-radius: 3px;
       background: #ff6a46;
       color: #FFF;
@@ -1173,7 +1175,7 @@ input {
       font-weight: 500;
       display: inline-block;
       padding: 10px 15px; }
-      .fundraising-goals .not-from-us a:active, .fundraising-goals .not-from-us a:focus, .fundraising-goals .not-from-us a:hover {
+      .fundraising-goals .not-from-us a.viewTokenInfo:active, .fundraising-goals .not-from-us a.viewTokenInfo:focus, .fundraising-goals .not-from-us a.viewTokenInfo:hover {
         text-decoration: none; }
   .fundraising-goals a.btn-orange {
     border-radius: 3px;

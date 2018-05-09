@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     //Fundraising remove blur
-    $('.not-from-us a').on('click',function (e) {
+    $('.not-from-us a.viewTokenInfo').on('click',function (e) {
         e.preventDefault();
         $(".blur-funds").removeClass("add-blur");
         $(".not-from-us").addClass("hide");
