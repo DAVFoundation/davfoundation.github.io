@@ -216,7 +216,7 @@ input {
           border-top: 1px solid #ff6a46;
           position: fixed;
           background: #FFF;
-          bottom: -17px;
+          bottom: 0px;
           width: 100%;
           padding: 0 30%;
           z-index: 99999;
