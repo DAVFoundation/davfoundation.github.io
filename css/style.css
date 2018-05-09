@@ -2449,7 +2449,7 @@ footer {
     height: 32px;
     line-height: 32px;
     font-weight: normal;
-    cursor: not-allowed; }
+    cursor: default; }
     .station-box a:hover, .station-box a:active, .station-box a:focus {
       text-decoration: none; }
   .station-box.awaiting {
@@ -3116,13 +3116,20 @@ footer {
 
   .route-creator-bg.chargin-stations-bg {
     background-size: cover; }
+    .route-creator-bg.chargin-stations-bg h1 {
+      line-height: 120px !important;
+      font-size: 22px !important; }
 
   .station-name {
-    font-size: 24px !important; }
+    font-size: 20px !important; }
 
-  .station-box a,
   .station-box p {
     font-size: 18px !important; }
+
+  .station-box a {
+    font-size: 16px !important;
+    height: 36px;
+    line-height: 36px; }
 
   .station-box {
     margin-bottom: 50px; } }

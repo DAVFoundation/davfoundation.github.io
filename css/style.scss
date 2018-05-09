@@ -3141,7 +3141,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		height: 32px;
 		line-height: 32px;
 		font-weight: normal;
-		cursor: not-allowed;
+		cursor: default;
 		&:hover,
 		&:active,
 		&:focus{
@@ -3887,13 +3887,21 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.route-creator-bg.chargin-stations-bg{
 		background-size: cover;
 		// background: #000;
+		h1{
+			line-height: 120px !important;
+			font-size: 22px !important;
+		}
 	}
 	.station-name{
-		font-size: 24px !important;
+		font-size: 20px !important;
 	}
-	.station-box a,
 	.station-box p{
 		font-size: 18px !important;
+	}
+	.station-box a{
+		font-size: 16px !important;
+		height: 36px;
+		line-height: 36px;
 	}
 	.station-box{
 		margin-bottom: 50px;
