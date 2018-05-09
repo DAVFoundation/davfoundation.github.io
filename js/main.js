@@ -69,15 +69,12 @@ $(document).ready(function(){
 
     //thank you modal
     var url = window.location.href;
-    if(url.indexOf('?thank=you') != -1) {
-        $('#modalThankYou').modal('show');
-        ga('send', 'event', 'KYC', 'completed', 'KYC Process Completed');
-    }
     $('#modalThankYou,#modalThankYouKYC,#modalKYCStatus').on('hidden.bs.modal', function (e) {
       document.location.href="/";
     });
     if(url.indexOf('?kyc=thankyou') != -1) {
         $('#modalThankYouKYC').modal('show');
+        ga('send', 'event', 'KYC', 'completed', 'KYC Process Completed');
     }
     if(url.indexOf('?kyc=status') != -1) {
         $('#modalKYCStatus').modal('show');
