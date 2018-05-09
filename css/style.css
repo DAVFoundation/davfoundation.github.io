@@ -997,7 +997,8 @@ input {
   .team .team-small p {
     font-weight: 300;
     font-size: 15px;
-    color: #ff6a46; }
+    color: #ff6a46;
+    min-height: 44px; }
 
 .contributors ul {
   padding: 0px;
