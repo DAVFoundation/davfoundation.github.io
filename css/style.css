@@ -83,6 +83,17 @@ input {
   .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus {
     background: transparent; }
 
+.navbar-nav > li.btn-top-register #mc-embedded-subscribe {
+  background: #ff6a46;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 6px 15px;
+  margin-top: 12px;
+  margin-right: 10px;
+  margin-left: 8px;
+  border: none;
+  font-size: 13px; }
+
 .navbar-nav.navbar-right > li > a {
   font-size: 13px; }
 
@@ -102,6 +113,30 @@ input {
     display: none; }
   .user-scroll #logo-white {
     display: inline-block; }
+
+.telegram-bottom {
+  position: fixed;
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  left: auto;
+  height: 47px;
+  background-color: #ffffff;
+  z-index: 200;
+  border-radius: 50%;
+  box-shadow: 0 4px 5px -1px rgba(0, 0, 0, 0.5); }
+
+.telegram-bottom a {
+  display: block;
+  font-size: 48px;
+  color: #26AFE2; }
+
+.telegram-bottom a:hover,
+.telegram-bottom a:focus {
+  color: #26AFE2; }
+
+.telegram-bottom a .fa {
+  vertical-align: top; }
 
 .hero {
   background: #000 url("../img/hero.jpg") no-repeat center;
@@ -216,7 +251,7 @@ input {
           border-top: 1px solid #ff6a46;
           position: fixed;
           background: #FFF;
-          bottom: 0px;
+          bottom: -17px;
           width: 100%;
           padding: 0 30%;
           z-index: 99999;
@@ -1512,7 +1547,8 @@ footer {
   color: #FFF;
   border-radius: 0px;
   padding: 5px 15px;
-  margin: 0px; }
+  margin: 0px;
+  z-index: 300; }
   .alert-announcement .close {
     color: #FFF;
     box-shadow: none;
@@ -2501,7 +2537,10 @@ footer {
     min-height: 190px; }
 
   .drone-flight-planning img {
-    width: 60%; } }
+    width: 60%; }
+
+  .navbar-nav > li.btn-top-register #mc-embedded-subscribe {
+    margin-top: 7px; } }
 @media (max-width: 1200px) {
   .drone-flight-planning {
     height: auto;
