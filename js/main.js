@@ -288,7 +288,7 @@ $(document).ready(function(){
                     case "AutoFinish":
                     case "ManualFinish":
                         title = "Congratulations!";
-                        $(".kyc-response").text("You’re now officially whitelisted! We’ll share specific instructions on how to participate as we get closer to our token sale.");
+                        $(".kyc-response").text("You’re now officially in whitelist A! We’ll share specific instructions on how to participate as we get closer to our token sale.");
                         $(".kyc-close,.kyc-telegram").removeClass('hide');
                         break;
                     case "Failed":
