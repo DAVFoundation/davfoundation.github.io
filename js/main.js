@@ -227,6 +227,7 @@ $(document).ready(function(){
 
     $('#alert-announcement').on('closed.bs.alert', function () {
         setCookie('alert-dav-missioncontrol', true, 365);
+       $('.telegram-bottom').removeClass("extra-space");
         return false;
     })
 
@@ -258,6 +259,7 @@ $(document).ready(function(){
 
     if (getCookie('alert-dav-missioncontrol') === "true") {
        $('#alert-announcement').hide();
+       $('.telegram-bottom').removeClass("extra-space");
     }
 
     //KYC status check
@@ -383,6 +385,11 @@ function handleJoinTelegram() {
     var scrollAnouncement = function() {
       window.removeEventListener('scroll', scrollAnouncement);
       $("#alert-announcement").removeClass('hide');
+      if($('#alert-announcement').is(':visible'))
+      {
+        $(".telegram-bottom").addClass('extra-space');
+      }
+
     };
     window.addEventListener('scroll', scrollAnouncement);
 

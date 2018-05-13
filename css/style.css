@@ -138,6 +138,9 @@ input {
 .telegram-bottom a .fa {
   vertical-align: top; }
 
+.telegram-bottom.extra-space {
+  bottom: 60px; }
+
 .hero {
   background: #000 url("../img/hero.jpg") no-repeat center;
   background-size: cover;
@@ -1555,7 +1558,8 @@ footer {
     font-weight: 300;
     opacity: 1;
     font-size: 30px;
-    position: absolute; }
+    position: absolute;
+    padding: 0 4px; }
   .alert-announcement p {
     font-size: 15px;
     padding-left: 30px;
@@ -2641,7 +2645,10 @@ footer {
     background-size: auto; }
 
   .fixed-container-width {
-    width: 970px; } }
+    width: 970px; }
+
+  .telegram-bottom.extra-space {
+    bottom: 120px; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
@@ -3174,7 +3181,10 @@ footer {
     line-height: 36px; }
 
   .station-box {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+
+  .telegram-bottom.extra-space {
+    bottom: 140px; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
