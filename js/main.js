@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  $(".telegram-bottom").addClass("telegram-loaded");
+
   // color switch for nav
    var scroll_start = 0;
    var startchange = $('#startchange');
@@ -10,9 +12,11 @@ $(document).ready(function(){
         if(scroll_start > offset.top) {
             $(".navbar-fixed-top").addClass('user-scroll');
             $(".index3").addClass('makeFix');
+            // $(".telegram-bottom").addClass('nospan');
          } else {
             $(".navbar-fixed-top").removeClass('user-scroll');
             $(".index3").removeClass('makeFix');
+            // $(".telegram-bottom").removeClass('nospan');
          }
      });
     }
@@ -48,13 +52,35 @@ $(document).ready(function(){
         $(".not-from-us").addClass("hide");
     });
     // full height hero
+    var windowWidth = $(window).width();
     var windowHeight = $(window).height();
     $('.hero .hero-inner').height(windowHeight);
-    // $('.hero .hero-inner').height(windowHeight + windowHeight*0.18);
 
+    var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
+    var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
+    if (windowWidth < 767) {
+      heroIcoLeft.css("padding-top", (windowHeight - heroIcoLeft.height())/3 + "px");
+      heroIcoLeft.css("padding-bottom", (windowHeight - heroIcoLeft.height())/3 + "px");
+      heroIcoLeft.find(".airpad").css("height", (windowHeight - heroIcoLeft.height())/10 + "px");
+    }
+    // heroIcoRight.css("padding-top", (windowHeight - heroIcoLeft.height())/2 + "px");
+    // heroIcoRight.css("padding-bottom", (windowHeight - heroIcoLeft.height())/2 + "px");
+    // $('.hero .hero-inner').height(windowHeight + windowHeight*0.18);
+    // alert(windowWidth);
     $(window).on('resize',function() {
+      var windowWidth = $(window).width();
       var windowHeight = $(window).height();
       $('.hero .hero-inner').height(windowHeight);
+
+      // var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
+      // var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
+      // if (windowWidth < 767) {
+      //   heroIcoLeft.css("padding-top", (windowHeight - heroIcoLeft.height())/3 + "px");
+      //   heroIcoLeft.css("padding-bottom", (windowHeight - heroIcoLeft.height())/3 + "px");
+      //   heroIcoLeft.find(".airpad").css("height", (windowHeight - heroIcoLeft.height())/10 + "px");
+      // }
+      // heroIcoRight.css("padding-top", (windowHeight - heroIcoLeft.height())/2 + "px");
+      // heroIcoRight.css("padding-bottom", (windowHeight - heroIcoLeft.height())/2 + "px");
     });
 
     // modal vertical align
@@ -103,6 +129,16 @@ $(document).ready(function(){
       var offset = $('.navbar').height();
       // offset = offset + offset*0.15;
       var section = "#team";
+      $("html, body").animate({
+        scrollTop: $(section).offset().top - offset
+      }, 700);
+    });
+
+    $("a[href=#tokensale]").click(function(e) {
+      e.preventDefault();
+      var offset = $('.navbar').height();
+      // offset = offset + offset*0.15;
+      var section = "#tokensale";
       $("html, body").animate({
         scrollTop: $(section).offset().top - offset
       }, 700);
@@ -331,9 +367,9 @@ $(document).ready(function(){
 
     });
     //countdown
-  // $('#countdown').countdown(
-  //   {until: $.countdown.UTCDate(-10, new Date(2018, 5, 11)), format: 'dHM'}
-  // );
+  $('#countdown,#countdownMobile').countdown(
+    {until: $.countdown.UTCDate(-10, new Date(2018, 5, 11)), format: 'dHM'}
+  );
 
   // register event google analytics
   $("#mc-embedded-subscribe-form").on('submit', function() {
@@ -384,7 +420,7 @@ function handleJoinTelegram() {
     var announcementTrigger = document.querySelector('.video-home');
     var scrollAnouncement = function() {
       window.removeEventListener('scroll', scrollAnouncement);
-      $("#alert-announcement").removeClass('hide');
+      //uncomment this to enable $("#alert-announcement").removeClass('hide');
       if($('#alert-announcement').is(':visible'))
       {
         $(".telegram-bottom").addClass('extra-space');

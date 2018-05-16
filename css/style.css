@@ -118,25 +118,53 @@ input {
   position: fixed;
   top: auto;
   bottom: 20px;
-  right: 20px;
+  right: 0px;
   left: auto;
-  height: 47px;
-  background-color: #ffffff;
+  height: 48px;
+  background-color: #ff6a46;
   z-index: 200;
-  border-radius: 50%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   box-shadow: 0 4px 5px -1px rgba(0, 0, 0, 0.5); }
 
 .telegram-bottom a {
   display: block;
   font-size: 48px;
-  color: #26AFE2; }
+  color: #FFF;
+  text-decoration: none; }
+  .telegram-bottom a span {
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    line-height: 20px;
+    float: left;
+    padding: 4px 0 0 25px;
+    text-align: right;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    transition: all 0.7s ease; }
 
 .telegram-bottom a:hover,
 .telegram-bottom a:focus {
-  color: #26AFE2; }
+  color: #FFF; }
 
 .telegram-bottom a .fa {
-  vertical-align: top; }
+  vertical-align: top;
+  position: relative;
+  color: #ff6a46; }
+  .telegram-bottom a .fa::after {
+    position: absolute;
+    content: '';
+    background: #ff6a46;
+    border-radius: 50%;
+    z-index: -1;
+    top: 1px;
+    left: 1px;
+    width: 45px;
+    height: 45px; }
+
+.telegram-bottom.telegram-loaded a .fa::after {
+  background: #FFF; }
 
 .telegram-bottom.extra-space {
   bottom: 60px; }
@@ -308,6 +336,73 @@ input {
   .hero.hero-whitelist {
     background: #000 url("../img/intersection.jpg") no-repeat center;
     background-size: cover; }
+  .hero.hero-ico {
+    background: #000 url("../img/hero-new.jpg") no-repeat center;
+    background-size: cover; }
+    .hero.hero-ico .hero-inner .hero-valign h1 {
+      font-size: 45px; }
+    .hero.hero-ico .hero-inner .hero-valign h4 {
+      font-size: 18px;
+      margin: 0 0 16px; }
+    .hero.hero-ico .hero-inner .hero-valign h5 {
+      margin: 30px 0;
+      font-size: 20px;
+      line-height: 32px; }
+      .hero.hero-ico .hero-inner .hero-valign h5 span {
+        display: block;
+        font-weight: 700; }
+    .hero.hero-ico .hero-inner .hero-valign p.restriction {
+      text-align: left;
+      font-size: 12px;
+      color: #c0b5b5;
+      padding-top: 10px;
+      white-space: nowrap; }
+    .hero.hero-ico .hero-inner .hero-valign .ico-start-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px 0; }
+    .hero.hero-ico .hero-inner .hero-valign .container-transparent {
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      padding-top: 20px;
+      padding-bottom: 20px;
+      min-height: 125px;
+      margin-bottom: 20px; }
+      .hero.hero-ico .hero-inner .hero-valign .container-transparent.left {
+        width: 95%; }
+      .hero.hero-ico .hero-inner .hero-valign .container-transparent.right {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto; }
+      .hero.hero-ico .hero-inner .hero-valign .container-transparent h4 span {
+        color: #ff6a46; }
+      .hero.hero-ico .hero-inner .hero-valign .container-transparent h5 {
+        margin: 0 0 12px;
+        font-size: 18px;
+        font-weight: 700; }
+        .hero.hero-ico .hero-inner .hero-valign .container-transparent h5 span {
+          display: inline-block;
+          color: #ff6a46; }
+      .hero.hero-ico .hero-inner .hero-valign .container-transparent h6 {
+        font-style: italic;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+        margin: 0 0 20px;
+        min-height: 36px; }
+      .hero.hero-ico .hero-inner .hero-valign .container-transparent p {
+        font-size: 16px;
+        font-weight: 500; }
+        .hero.hero-ico .hero-inner .hero-valign .container-transparent p img {
+          margin-right: 10px;
+          height: 60px; }
+      .hero.hero-ico .hero-inner .hero-valign .container-transparent a {
+        color: #ff6a46; }
+    .hero.hero-ico .hero-inner .hero-valign .hero-join {
+      width: 90%; }
+    .hero.hero-ico .hero-inner .hero-valign .best-brands {
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 0;
+      margin: 30px 0 0; }
 
 .best-brands.index2 {
   margin-top: -112px;
@@ -2553,7 +2648,12 @@ footer {
     .drone-flight-planning img {
       width: 80%; }
     .drone-flight-planning video {
-      display: none; } }
+      display: none; }
+
+  .hero.hero-ico .hero-inner .hero-valign h1 {
+    font-size: 32px; }
+  .hero.hero-ico .hero-inner .hero-valign .best-brands a {
+    margin: 0 25px; } }
 @media (max-width: 1025px) {
   input[type=text],
   input[type=email],
@@ -2648,7 +2748,10 @@ footer {
     width: 970px; }
 
   .telegram-bottom.extra-space {
-    bottom: 120px; } }
+    bottom: 120px; }
+
+  .hero.hero-ico .hero-inner .hero-valign .container-transparent h6 {
+    font-size: 12px; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
@@ -2761,7 +2864,24 @@ footer {
     margin: 0 0 60px; }
 
   footer .about-legal .social a {
-    min-width: 49%; } }
+    min-width: 49%; }
+
+  .hero.hero-ico {
+    background-position: left 15% top; }
+
+  .hero.hero-ico .hero-inner .hero-valign .ico-start-box {
+    margin-bottom: 30px;
+    padding: 20px 0; }
+
+  .hero.hero-ico .hero-inner .hero-valign .container-transparent.left {
+    width: 100%; }
+
+  .hero.hero-ico .hero-inner .hero-valign h1 {
+    font-size: 24px;
+    padding-top: 64px; }
+
+  .hero.hero-ico .hero-inner .hero-valign h1, .hero.hero-ico .hero-inner .hero-valign h5 {
+    text-align: center; } }
 @media (max-width: 767px) {
   footer .links {
     text-align: center; }
@@ -3184,10 +3304,69 @@ footer {
     margin-bottom: 50px; }
 
   .telegram-bottom.extra-space {
-    bottom: 140px; } }
+    bottom: 140px; }
+
+  .hero.hero-ico {
+    background-position: left 24% top; }
+
+  .hero.hero-ico .hero-inner .hero-valign h1 {
+    font-size: 28px;
+    padding-top: 25px;
+    margin-bottom: 20px; }
+  .hero.hero-ico .hero-inner .hero-valign h5 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .hero.hero-ico .hero-inner .hero-valign h4 {
+    font-size: 15px; }
+  .hero.hero-ico .hero-inner .hero-valign img.visible-xs {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
+  .hero.hero-ico .hero-inner .hero-valign .container-transparent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 0; }
+    .hero.hero-ico .hero-inner .hero-valign .container-transparent.left {
+      margin-bottom: 27px;
+      margin-bottom: 60px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+    .hero.hero-ico .hero-inner .hero-valign .container-transparent h5 {
+      font-size: 14px; }
+    .hero.hero-ico .hero-inner .hero-valign .container-transparent h6 {
+      font-size: 10px;
+      line-height: 12px;
+      min-height: 48px;
+      margin: 0;
+      font-weight: 400; }
+    .hero.hero-ico .hero-inner .hero-valign .container-transparent p {
+      margin: 0;
+      font-size: 12px; }
+    .hero.hero-ico .hero-inner .hero-valign .container-transparent p img {
+      height: 24px;
+      margin-right: 0px; }
+  .hero.hero-ico .hero-inner .hero-valign p.restriction {
+    font-size: 13px; }
+  .hero.hero-ico .hero-inner .hero-valign .best-brands {
+    padding-bottom: 50px; }
+    .hero.hero-ico .hero-inner .hero-valign .best-brands a {
+      margin: 0 5px; }
+      .hero.hero-ico .hero-inner .hero-valign .best-brands a img {
+        margin: 0;
+        height: 60px; }
+
+  .telegram-bottom.nospan a span {
+    display: none; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
+@media (max-width: 767px) and (max-height: 668px) {
+  .hero.hero-ico .hero-inner .hero-valign h1 {
+    padding: 0;
+    margin-top: 60px; } }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select:focus,
   textarea:focus,
