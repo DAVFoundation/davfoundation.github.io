@@ -4188,9 +4188,21 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			} 
 		}
 	}
-	.telegram-bottom.nospan{
+	.telegram-bottom{
 		a span{
 			display: none;
+		}
+	}
+	.telegram-bottom.nospan{
+		a span{
+			display: block;
+		}
+	}
+	.screen1{
+		display: table;
+		.screen1Cell{
+			display: table-cell;
+			vertical-align: middle;
 		}
 	}
 }
@@ -4200,12 +4212,12 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 }
 @media (max-width: 767px) and (max-height: 668px) {
-	.hero.hero-ico .hero-inner .hero-valign{
-		h1{
-			padding: 0;
-			margin-top: 60px;
-		}
-	}
+	// .hero.hero-ico .hero-inner .hero-valign{
+	// 	h1{
+	// 		padding: 0;
+	// 		margin-top: 60px;
+	// 	}
+	// }
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
   select:focus,

@@ -12,11 +12,11 @@ $(document).ready(function(){
         if(scroll_start > offset.top) {
             $(".navbar-fixed-top").addClass('user-scroll');
             $(".index3").addClass('makeFix');
-            // $(".telegram-bottom").addClass('nospan');
+            $(".telegram-bottom").addClass('nospan');
          } else {
             $(".navbar-fixed-top").removeClass('user-scroll');
             $(".index3").removeClass('makeFix');
-            // $(".telegram-bottom").removeClass('nospan');
+            $(".telegram-bottom").removeClass('nospan');
          }
      });
     }
@@ -55,32 +55,28 @@ $(document).ready(function(){
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
     $('.hero .hero-inner').height(windowHeight);
-
-    var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
-    var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
     if (windowWidth < 767) {
-      heroIcoLeft.css("padding-top", (windowHeight - heroIcoLeft.height())/3 + "px");
-      heroIcoLeft.css("padding-bottom", (windowHeight - heroIcoLeft.height())/3 + "px");
-      heroIcoLeft.find(".airpad").css("height", (windowHeight - heroIcoLeft.height())/10 + "px");
+      $('.screen1').height(windowHeight + 54);
     }
+    // var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
+    // var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
+    // if (windowWidth < 767) {
+    //   heroIcoLeft.css("padding-top", (windowHeight - heroIcoLeft.height() + 54)/3 + 54 "px");
+    //   heroIcoLeft.css("padding-bottom", (windowHeight - heroIcoLeft.height())/3 + "px");
+    //   heroIcoLeft.find(".airpad").css("height", (windowHeight - heroIcoLeft.height())/10 + "px");
+    // }
     // heroIcoRight.css("padding-top", (windowHeight - heroIcoLeft.height())/2 + "px");
     // heroIcoRight.css("padding-bottom", (windowHeight - heroIcoLeft.height())/2 + "px");
     // $('.hero .hero-inner').height(windowHeight + windowHeight*0.18);
     // alert(windowWidth);
+    // alert(windowHeight);
     $(window).on('resize',function() {
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
       $('.hero .hero-inner').height(windowHeight);
-
-      // var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
-      // var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
-      // if (windowWidth < 767) {
-      //   heroIcoLeft.css("padding-top", (windowHeight - heroIcoLeft.height())/3 + "px");
-      //   heroIcoLeft.css("padding-bottom", (windowHeight - heroIcoLeft.height())/3 + "px");
-      //   heroIcoLeft.find(".airpad").css("height", (windowHeight - heroIcoLeft.height())/10 + "px");
-      // }
-      // heroIcoRight.css("padding-top", (windowHeight - heroIcoLeft.height())/2 + "px");
-      // heroIcoRight.css("padding-bottom", (windowHeight - heroIcoLeft.height())/2 + "px");
+      if (windowWidth < 767) {
+        $('.screen1').height(windowHeight + 54);
+      }
     });
 
     // modal vertical align

@@ -3358,15 +3358,20 @@ footer {
         margin: 0;
         height: 60px; }
 
+  .telegram-bottom a span {
+    display: none; }
+
   .telegram-bottom.nospan a span {
-    display: none; } }
+    display: block; }
+
+  .screen1 {
+    display: table; }
+    .screen1 .screen1Cell {
+      display: table-cell;
+      vertical-align: middle; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
-@media (max-width: 767px) and (max-height: 668px) {
-  .hero.hero-ico .hero-inner .hero-valign h1 {
-    padding: 0;
-    margin-top: 60px; } }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select:focus,
   textarea:focus,
