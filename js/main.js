@@ -371,9 +371,13 @@ $(document).ready(function(){
 
     });
     //countdown
-  $('#countdown,#countdownMobile').countdown(
-    {until: $.countdown.UTCDate(-10, new Date(2018, 5, 11)), format: 'dHM'}
-  );
+      var targetDate = new Date("06/11/2018");
+      var todaysDate = new Date();
+      if(targetDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
+        $('#countdown,#countdownMobile').countdown({until: $.countdown.UTCDate(-10, new Date(2018, 5, 11)), format: 'dHMS'});
+      }else{
+        $('#countdown,#countdownMobile').countdown({until: $.countdown.UTCDate(-10, new Date(2018, 5, 11)), format: 'dHM'});
+      }
 
   // register event google analytics
   $("#mc-embedded-subscribe-form").on('submit', function() {
