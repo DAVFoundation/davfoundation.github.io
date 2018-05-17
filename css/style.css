@@ -345,7 +345,7 @@ input {
       font-size: 18px;
       margin: 0 0 7px; }
     .hero.hero-ico .hero-inner .hero-valign h5 {
-      margin: 30px 0;
+      margin: 40px 0;
       font-size: 20px;
       line-height: 32px; }
       .hero.hero-ico .hero-inner .hero-valign h5 span {
@@ -361,6 +361,10 @@ input {
       color: #FFF;
       padding: 0 45px 10px;
       font-weight: 700; }
+    .hero.hero-ico .hero-inner .hero-valign img.hidden-xs {
+      margin-bottom: 33px; }
+    .hero.hero-ico .hero-inner .hero-valign img.visible-xs {
+      margin-bottom: 25px; }
     .hero.hero-ico .hero-inner .hero-valign .ico-start-box {
       background: rgba(0, 0, 0, 0.6);
       padding: 30px 0; }
@@ -369,14 +373,16 @@ input {
       border-bottom: 1px solid rgba(255, 255, 255, 0.4);
       padding-top: 20px;
       padding-bottom: 20px;
-      min-height: 125px;
-      margin-bottom: 20px; }
+      min-height: 125px; }
       .hero.hero-ico .hero-inner .hero-valign .container-transparent.left {
-        width: 95%; }
+        width: 95%;
+        padding-top: 10px;
+        padding-bottom: 10px; }
       .hero.hero-ico .hero-inner .hero-valign .container-transparent.right {
         width: 90%;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto;
+        margin-bottom: 20px; }
       .hero.hero-ico .hero-inner .hero-valign .container-transparent h4 span {
         color: #ff6a46; }
       .hero.hero-ico .hero-inner .hero-valign .container-transparent h5 {
@@ -391,7 +397,7 @@ input {
         font-size: 14px;
         font-weight: 300;
         line-height: 18px;
-        margin: 0 0 20px;
+        margin: 0 0 5px;
         min-height: 36px; }
       .hero.hero-ico .hero-inner .hero-valign .container-transparent p {
         font-size: 16px;

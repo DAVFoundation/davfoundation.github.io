@@ -54,9 +54,12 @@ $(document).ready(function(){
     // full height hero
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
-    $('.hero .hero-inner').height(windowHeight);
+    var navbar = $(".navbar").height();
+    $('.hero .hero-inner').height(windowHeight - navbar);
+    $('.hero').css('padding-top', navbar + 'px');
+
     if (windowWidth < 767) {
-      $('.screen1').height(windowHeight + 54);
+      $('.screen1').height(windowHeight - navbar);
     }
     // var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
     // var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
@@ -73,9 +76,11 @@ $(document).ready(function(){
     $(window).on('resize',function() {
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
-      $('.hero .hero-inner').height(windowHeight);
+      var navbar = $(".navbar").height();
+      $('.hero .hero-inner').height(windowHeight - navbar);
+      $('.hero').css('padding-top', navbar + 'px');
       if (windowWidth < 767) {
-        $('.screen1').height(windowHeight + 54);
+        $('.screen1').height(windowHeight - navbar);
       }
     });
 
@@ -94,6 +99,9 @@ $(document).ready(function(){
     $('#modalThankYou,#modalThankYouKYC,#modalKYCStatus').on('hidden.bs.modal', function (e) {
       document.location.href="/";
     });
+    if(url.indexOf('?thank=you') != -1) {
+      $('#modalThankYou').modal('show');
+    }
     if(url.indexOf('?kyc=thankyou') != -1) {
         $('#modalThankYouKYC').modal('show');
         ga('send', 'event', 'KYC', 'completed', 'KYC Process Completed');

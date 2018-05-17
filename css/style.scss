@@ -452,7 +452,7 @@ input {
 				margin: 0 0 7px;
 			}
 			h5{
-				margin: 30px 0;
+				margin: 40px 0;
 				font-size: 20px;
 				line-height: 32px;
 				span{
@@ -473,6 +473,12 @@ input {
 				font-weight: 700;
 				// white-space: nowrap;
 			}
+			img.hidden-xs{
+				margin-bottom: 33px;
+			}
+			img.visible-xs{
+				margin-bottom: 25px;
+			}
 			.ico-start-box{
 				background: rgba(0,0,0,0.6);
 				padding: 30px 0;
@@ -483,14 +489,16 @@ input {
 				padding-top: 20px;
 				padding-bottom: 20px;
 				min-height: 125px;
-				margin-bottom: 20px;
 				&.left{
 					width: 95%;
+					padding-top: 10px;
+					padding-bottom: 10px;
 				}
 				&.right{
 					width: 90%;
 					margin-left: auto;
 					margin-right: auto;
+					margin-bottom: 20px;
 				}
 				h4{
 					span{
@@ -511,7 +519,7 @@ input {
 					font-size: 14px;
 					font-weight: 300;
 				    line-height: 18px;
-    				margin: 0 0 20px;
+    				margin: 0 0 5px;
     				min-height: 36px;
 				}
 				p{	
