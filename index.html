@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.3.0"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.3.1"/>
 
     <!-- Bootstrap -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -367,23 +367,70 @@
     </div>
 
     <div class="container illustrations">
-      <h2>The future of transportation is a peer-to-peer network of people, vehicles and services.<br>Will you be a part of that future?</h2>
       <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <h3>DAV's protocol allows anyone to utilize transportation services or put their own manned or autonomous vehicles on the network, creating a decentralized peer-to-peer transportation ecosystem.</h3>
+          </div>
+      </div>
+      
+      <h2>What Blockchain means to transportation today</h2>
+      <div class="row text-center">
           <div class="col-sm-4">
-            <div class="text-center"><img src="img/illustration-left.png"></div>
-            <h4>Earn DAV Tokens by providing transportation services</h4>
-            <p>Let your self-driving car give rides to passengers when you’re not using it. Have your drone help with deliveries around town.</p>
+            <img src="img/illustration-left.png">
+            <h4>Decentralized Ride Hailing</h4>
+            <p>Drivers and passengers can now communicate directly with each other using Blockchain, with no middleman taking part of the revenue</p>
           </div>
           <div class="col-sm-4">
-            <div class="text-center"><img src="img/illustration-center.png"></div>
-            <h4>Go anywhere or send/receive anything in minutes</h4>
-            <p>Send a package, book a ride, or have lunch delivered instantaneously. Utilize the efficiency for your business and supply chains.</p>
+            <img src="img/scooter.png">
+            <h4>Convenient City Transportation</h4>
+            <p>Access convenient transportation around your city and earn DAV Tokens to charge your bike or scooter</p>
           </div>
           <div class="col-sm-4">
-            <div class="text-center"><img src="img/illustration-right.png"></div>
-            <h4>Service providers keep everything running smoothly</h4>
-            <p>Benefit from the efficiencies of service providers who keep your vehicle charged, clean, and operational. Become a service provider and earn DAV Tokens.</p>
+            <img src="img/illustration-center.png">
+            <h4>Automated Drone Deliveries</h4>
+            <p>Send and receive packages with the push of a button utilizing drones on the DAV Network</p>
           </div>
+      </div>
+
+      <div class="breaker"></div>
+
+      <h2>What Blockchain means to transportation tomorrow</h2>
+      <div class="row text-center">
+          <div class="col-sm-4">
+            <img src="img/auto-drone.png">
+            <h4>Autonomous Drone Deliveries</h4>
+            <p>Drones communicate with each other and service providers for deliveries, charging, and maintenance</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="img/auto-carriers.png">
+            <h4>Autonomous Carriers</h4>
+            <p>Supply carriers pick up material, navigate to their destination, and are paid for services autonomously</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="img/auto-ride-sharing.png">
+            <h4>Autonomous Ride Sharing</h4>
+            <p>Get a ride from an autonomous car or share your own car on the network and earn DAV Tokens</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="blockchain-enables">
+      <div class="container">
+        <h2>The Blockchain enables:</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <ul>
+              <li>A verifiable ledger of historical data from service providers, manned or autonomous vehicles and users needed for insurers and third parties</li>
+              <li>A completely decentralized system that isn't controlled by any government, bank, or company</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul>
+              <li>A global payment standard between vehicles and their supporting infrastructure</li>
+              <li>A built-in smart mission contract, which enables trustless cooperation between multiple vehicles and service providers</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -430,27 +477,7 @@
 
     </div>
 
-    <div class="blockchain-enables">
-      <div class="container">
-        <h2>The Blockchain enables:</h2>
-        <div class="row">
-          <div class="col-sm-6">
-            <ul>
-              <li>A verifiable ledger of historical data from autonomous vehicles, services providers and users needed for insurers and third parties</li>
-              <li>A completely decentralized system that isn't controlled by any government, bank, or company</li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <ul>
-              <li>A global payment standard between vehicles and their supporting infrastructure</li>
-              <li>A built-in smart mission contract, which enables trustless cooperation between multiple vehicles and service providers</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container blockchain-middleman" id="blockchain">
+    <div class="container blockchain-middleman hide" id="blockchain">
       <h2>What Blockchain means to transportation today</h2>
       <h3>Use Case: Decentralized Ride Hailing</h3>
       <div class="row">
@@ -3145,7 +3172,7 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js" type="text/javascript" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js" data-cfasync="false"></script>
-    <script src="js/main.js?v=3.3.0" type="text/javascript" data-cfasync="false"></script>
+    <script src="js/main.js?v=3.3.1" type="text/javascript" data-cfasync="false"></script>
     <script type="text/javascript" data-cfasync="false">
       $(document).ready(function(){
         var transactionId = getParameterByName("transaction_id");

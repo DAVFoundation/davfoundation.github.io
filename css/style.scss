@@ -714,6 +714,21 @@ height: 0;
 		font-weight: 700;
 		margin: 0 0 40px;
 	}
+	h3{
+		text-align: center;
+		font-size: 20px;
+		font-weight: 700;
+		margin: 0 0 40px;
+		line-height: 32px;
+		&:after{
+			content: '';
+			display: block;
+			width: 300px;
+			height: 1px;
+			background: $orange;
+			margin: 40px auto 0;
+		}
+	}
 	h4{
 		color: #333333;
 		font-size: 16px;
@@ -729,6 +744,11 @@ height: 0;
 	img{
 		height: 150px;
 	}
+	.breaker{
+		height: 1px;
+		background: #999;
+		margin: 60px 0;
+	}
 }
 .technology{
 	text-align: center;
@@ -741,7 +761,7 @@ height: 0;
 		padding-top: 38px;
 		margin: 0 auto 25px;
 		width: 300px;
-		border-top: 1px solid $orange;
+		// border-top: 1px solid $orange;
 	}
 	p{
 		color: #333333;
@@ -3911,10 +3931,11 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		padding-bottom: 50px;
 		.container{
 			height: auto;
-			background-position: left 55px top;
+			background-position: left 55px top 65%;
 		}	
 		 h2{
-			margin-top: 60vw;
+			margin-top: 10vw;
+			margin-bottom: 60vw;
 		}
 	}
 	.team .team-large a .row img,
@@ -3955,7 +3976,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		font-size: 12px;
 		min-height: 40px;
 		margin: 0px;
-		width: 120%;
+		width: 118%;
 		font-weight: 500;
 	}
 	.team .team-large h3{

@@ -557,6 +557,19 @@ input {
     font-size: 25px;
     font-weight: 700;
     margin: 0 0 40px; }
+  .illustrations h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 40px;
+    line-height: 32px; }
+    .illustrations h3:after {
+      content: '';
+      display: block;
+      width: 300px;
+      height: 1px;
+      background: #ff6a46;
+      margin: 40px auto 0; }
   .illustrations h4 {
     color: #333333;
     font-size: 16px;
@@ -569,6 +582,10 @@ input {
     margin: 0; }
   .illustrations img {
     height: 150px; }
+  .illustrations .breaker {
+    height: 1px;
+    background: #999;
+    margin: 60px 0; }
 
 .technology {
   text-align: center;
@@ -580,8 +597,7 @@ input {
     font-size: 25px;
     padding-top: 38px;
     margin: 0 auto 25px;
-    width: 300px;
-    border-top: 1px solid #ff6a46; }
+    width: 300px; }
   .technology p {
     color: #333333;
     font-size: 15px;
@@ -3106,9 +3122,10 @@ footer {
     padding-bottom: 50px; }
     .prototypes-section .container {
       height: auto;
-      background-position: left 55px top; }
+      background-position: left 55px top 65%; }
     .prototypes-section h2 {
-      margin-top: 60vw; }
+      margin-top: 10vw;
+      margin-bottom: 60vw; }
 
   .team .team-large a .row img,
   .team .team-medium a .row img,
@@ -3148,7 +3165,7 @@ footer {
     font-size: 12px;
     min-height: 40px;
     margin: 0px;
-    width: 120%;
+    width: 118%;
     font-weight: 500; }
 
   .team .team-large h3 {
