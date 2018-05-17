@@ -973,6 +973,8 @@ input {
   text-align: center;
   background: #eee;
   padding: 60px 0; }
+  .people-are-talking .row > div {
+    margin-bottom: 60px; }
   .people-are-talking h2 {
     color: #333333;
     font-size: 25px;
@@ -991,9 +993,12 @@ input {
   .people-are-talking a {
     color: #4c7ce8;
     font-size: 14px;
-    font-weight: 500; }
+    font-weight: 500;
+    text-decoration: none; }
     .people-are-talking a span {
       border-bottom: 1px solid #4c7ce8; }
+    .people-are-talking a.btn-orange {
+      color: #FFF; }
 
 .join-telegram {
   background: #ff6a46;
