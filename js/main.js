@@ -500,6 +500,7 @@ $(function() {
         var modalHeight = $(this).find('.modal-content').height();
         var modalTopPadding = (windowHeight - modalHeight)/2 - 30;
         // var modalTopPadding = (windowHeight + windowHeight*0.18 - modalHeight)/2 - 30;
+        if (modalTopPadding < 0) {modalTopPadding = 0;}
         $('.modal-dialog').css('margin-top', modalTopPadding +'px');
       });
     });

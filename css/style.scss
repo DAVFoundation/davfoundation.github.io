@@ -449,7 +449,7 @@ input {
 			}
 			h4{
 				font-size: 18px;
-				margin: 0 0 16px;
+				margin: 0 0 7px;
 			}
 			h5{
 				margin: 30px 0;
@@ -460,12 +460,18 @@ input {
 					font-weight: 700;
 				}
 			}
+			h6{
+				font-weight: 400;
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
 			p.restriction{
-				text-align: left;
-				font-size: 12px;
+				font-size: 14px;
 				color: #c0b5b5;
-				padding-top: 10px;
-				white-space: nowrap;
+				color: #FFF;
+				padding: 0 45px 10px;
+				font-weight: 700;
+				// white-space: nowrap;
 			}
 			.ico-start-box{
 				background: rgba(0,0,0,0.6);
@@ -3662,7 +3668,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		padding-top: 64px;
 	}
 	.hero.hero-ico .hero-inner .hero-valign{ 
-		h1,h5{
+		h1,h5,h6{
 			text-align: center;
 		}
 	}
@@ -4131,10 +4137,14 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			margin-bottom: 20px;
 		}
 		h5{
-			font-size: 16px;
+			font-size: 15px;
 			line-height: 24px;
 			margin-top: 15px;
-			margin-bottom: 15px;
+			margin-bottom: 25px;
+			// white-space: nowrap;
+		}
+		h6{
+			margin-bottom: 10px;
 		}
 		h4{
 			font-size: 15px;
@@ -4175,7 +4185,8 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			}
 		}
 		p.restriction {
-		    font-size: 13px;
+		    // font-size: 13px;
+		    text-align: center;
 		}
 		.best-brands{
 			padding-bottom: 50px;

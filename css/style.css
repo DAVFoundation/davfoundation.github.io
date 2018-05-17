@@ -343,7 +343,7 @@ input {
       font-size: 45px; }
     .hero.hero-ico .hero-inner .hero-valign h4 {
       font-size: 18px;
-      margin: 0 0 16px; }
+      margin: 0 0 7px; }
     .hero.hero-ico .hero-inner .hero-valign h5 {
       margin: 30px 0;
       font-size: 20px;
@@ -351,12 +351,16 @@ input {
       .hero.hero-ico .hero-inner .hero-valign h5 span {
         display: block;
         font-weight: 700; }
+    .hero.hero-ico .hero-inner .hero-valign h6 {
+      font-weight: 400;
+      font-size: 14px;
+      margin-bottom: 20px; }
     .hero.hero-ico .hero-inner .hero-valign p.restriction {
-      text-align: left;
-      font-size: 12px;
+      font-size: 14px;
       color: #c0b5b5;
-      padding-top: 10px;
-      white-space: nowrap; }
+      color: #FFF;
+      padding: 0 45px 10px;
+      font-weight: 700; }
     .hero.hero-ico .hero-inner .hero-valign .ico-start-box {
       background: rgba(0, 0, 0, 0.6);
       padding: 30px 0; }
@@ -2880,7 +2884,7 @@ footer {
     font-size: 24px;
     padding-top: 64px; }
 
-  .hero.hero-ico .hero-inner .hero-valign h1, .hero.hero-ico .hero-inner .hero-valign h5 {
+  .hero.hero-ico .hero-inner .hero-valign h1, .hero.hero-ico .hero-inner .hero-valign h5, .hero.hero-ico .hero-inner .hero-valign h6 {
     text-align: center; } }
 @media (max-width: 767px) {
   footer .links {
@@ -3314,10 +3318,12 @@ footer {
     padding-top: 25px;
     margin-bottom: 20px; }
   .hero.hero-ico .hero-inner .hero-valign h5 {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     margin-top: 15px;
-    margin-bottom: 15px; }
+    margin-bottom: 25px; }
+  .hero.hero-ico .hero-inner .hero-valign h6 {
+    margin-bottom: 10px; }
   .hero.hero-ico .hero-inner .hero-valign h4 {
     font-size: 15px; }
   .hero.hero-ico .hero-inner .hero-valign img.visible-xs {
@@ -3349,7 +3355,7 @@ footer {
       height: 24px;
       margin-right: 0px; }
   .hero.hero-ico .hero-inner .hero-valign p.restriction {
-    font-size: 13px; }
+    text-align: center; }
   .hero.hero-ico .hero-inner .hero-valign .best-brands {
     padding-bottom: 50px; }
     .hero.hero-ico .hero-inner .hero-valign .best-brands a {
