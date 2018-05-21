@@ -12,11 +12,11 @@ $(document).ready(function(){
         if(scroll_start > offset.top) {
             $(".navbar-fixed-top").addClass('user-scroll');
             $(".index3").addClass('makeFix');
-            $(".telegram-bottom").addClass('nospan');
+            // $(".telegram-bottom").addClass('nospan');
          } else {
             $(".navbar-fixed-top").removeClass('user-scroll');
             $(".index3").removeClass('makeFix');
-            $(".telegram-bottom").removeClass('nospan');
+            // $(".telegram-bottom").removeClass('nospan');
          }
      });
     }
