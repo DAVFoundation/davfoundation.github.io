@@ -1286,7 +1286,33 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
 		}
 		&.btn-orange{
 			color: #FFF;
+			margin-top: 60px;
 		}
+	}
+	.arrow-left.slick-arrow {
+    	margin: 0px;
+    	position: absolute;
+    	left: -35px;
+    	top: 25%;
+    	cursor: pointer;
+    	z-index: 9999;
+	}
+	.arrow-right.slick-arrow {
+	    margin: 0px;
+	    position: absolute;
+	    right: -35px;
+	    top: 25%;
+	    cursor: pointer;
+	}
+	// .slick-slide{
+	// 	padding-left: 70px;
+	// 	padding-right: 70px;
+	// }
+	.slick-slide.slick-active{
+		outline: none;
+	}
+	.slick-slide img{
+		display: inline-block;
 	}
 }
 .join-telegram{
@@ -3551,6 +3577,21 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.hero.hero-ico .hero-inner .hero-valign .container-transparent h6{
 		font-size: 12px;
 	}
+	
+	.people-are-talking{		
+		.arrow-right.slick-arrow {
+		    right: 0px;
+		    width: 24px;
+		}
+		.arrow-left.slick-arrow {
+    		left: 0px;
+		    width: 24px;
+		}
+		.slick-slide{
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
 }
 @media (max-width: 992px) {
 	.nav > li > a {
@@ -3670,7 +3711,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.people-are-talking{
 		h2{
-			margin: 0px;
+			// margin: 0px;
 		}
 		p{
 			min-height: 100px;
@@ -4251,6 +4292,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			display: table-cell;
 			vertical-align: middle;
 		}
+	}
+	.people-are-talking a.btn-orange{
+		margin-top: -60px;
 	}
 }
 @media (max-height: 767px) {

@@ -1014,7 +1014,25 @@ input {
     .people-are-talking a span {
       border-bottom: 1px solid #4c7ce8; }
     .people-are-talking a.btn-orange {
-      color: #FFF; }
+      color: #FFF;
+      margin-top: 60px; }
+  .people-are-talking .arrow-left.slick-arrow {
+    margin: 0px;
+    position: absolute;
+    left: -35px;
+    top: 25%;
+    cursor: pointer;
+    z-index: 9999; }
+  .people-are-talking .arrow-right.slick-arrow {
+    margin: 0px;
+    position: absolute;
+    right: -35px;
+    top: 25%;
+    cursor: pointer; }
+  .people-are-talking .slick-slide.slick-active {
+    outline: none; }
+  .people-are-talking .slick-slide img {
+    display: inline-block; }
 
 .join-telegram {
   background: #ff6a46;
@@ -2782,7 +2800,17 @@ footer {
     bottom: 120px; }
 
   .hero.hero-ico .hero-inner .hero-valign .container-transparent h6 {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .people-are-talking .arrow-right.slick-arrow {
+    right: 0px;
+    width: 24px; }
+  .people-are-talking .arrow-left.slick-arrow {
+    left: 0px;
+    width: 24px; }
+  .people-are-talking .slick-slide {
+    padding-left: 40px;
+    padding-right: 40px; } }
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
@@ -2884,8 +2912,6 @@ footer {
   .refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
     margin-top: 0px; }
 
-  .people-are-talking h2 {
-    margin: 0px; }
   .people-are-talking p {
     min-height: 100px; }
   .people-are-talking .row > div {
@@ -3402,7 +3428,10 @@ footer {
     display: table; }
     .screen1 .screen1Cell {
       display: table-cell;
-      vertical-align: middle; } }
+      vertical-align: middle; }
+
+  .people-are-talking a.btn-orange {
+    margin-top: -60px; } }
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
