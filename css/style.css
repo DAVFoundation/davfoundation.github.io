@@ -118,14 +118,17 @@ input {
   position: fixed;
   top: auto;
   bottom: 20px;
-  right: 0px;
+  right: -200px;
   left: auto;
   height: 48px;
   background-color: #ff6a46;
   z-index: 200;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  box-shadow: 0 4px 5px -1px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 4px 5px -1px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
 
 .telegram-bottom a {
   display: block;
@@ -162,6 +165,9 @@ input {
     left: 1px;
     width: 45px;
     height: 45px; }
+
+.telegram-bottom.telegram-loaded {
+  right: 0px; }
 
 .telegram-bottom.telegram-loaded a .fa::after {
   background: #FFF; }
@@ -360,7 +366,12 @@ input {
       color: #c0b5b5;
       color: #FFF;
       padding: 0 45px 10px;
-      font-weight: 700; }
+      padding: 10px;
+      margin: 10px 35px;
+      font-weight: 700;
+      border: 1px solid #ff6a46; }
+      .hero.hero-ico .hero-inner .hero-valign p.restriction span {
+        color: #ff6a46; }
     .hero.hero-ico .hero-inner .hero-valign img.hidden-xs {
       margin-bottom: 33px; }
     .hero.hero-ico .hero-inner .hero-valign img.visible-xs {
