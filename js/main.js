@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  setFlotingButonClickEvent();
+  setDifferentCtaForAdwordsUsers();
   $(".telegram-bottom").addClass("telegram-loaded");
 
   // color switch for nav
@@ -571,7 +571,7 @@ function validateEmail() {
   }
 }
 
-function setFlotingButonClickEvent() {
+function setDifferentCtaForAdwordsUsers() {
 
   var isAdwordsRedirect = function () {
     return location.search.includes('gclid');
@@ -580,7 +580,7 @@ function setFlotingButonClickEvent() {
   if (isAdwordsRedirect()) {
     var flotingButton = $('#floting-button');
 
-    flotingButton.find('span').html('REGISTER FOR<br>WHITELIST')
+    flotingButton.find('span').html('REGISTER FOR<br>WHITELIST');
     var KycRegistrationUrl = $('#mc-embedded-subscribe-form').attr('action');
     flotingButton.attr('href', KycRegistrationUrl);
     var KycRegistrationClickEvent = $('#mc-embedded-subscribe').attr('onclick');
