@@ -3456,5 +3456,8 @@ footer {
   textarea,
   input {
     font-size: 16px; } }
-
+.invalid {
+  border-color: red !important;
+}
+    
 /*# sourceMappingURL=style.css.map */

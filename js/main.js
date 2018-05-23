@@ -554,3 +554,17 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+
+function validateEmail() {
+  var emailInput = $($('.required.email')[2]);
+  var email = emailInput.val();
+  console.log(email)
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (re.test(email)) {
+    emailInput.removeClass('invalid');
+    return true;
+  } else {
+    emailInput.addClass('invalid');
+    return false;
+  }
+}
