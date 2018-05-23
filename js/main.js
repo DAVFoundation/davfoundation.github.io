@@ -578,6 +578,7 @@ function setDifferentCtaForAdwordsUsers() {
   };
 
   if (isAdwordsRedirect()) {
+    ga('send', 'event', 'entered_from_adwords', 'click', 'entered_from_adwords');
     var flotingButton = $('#floting-button');
 
     flotingButton.find('span').html('REGISTER FOR<br>WHITELIST');
