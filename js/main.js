@@ -577,9 +577,9 @@ function setDifferentCtaForAdwordsUsers() {
     var floatingButton = $('#floating-button');
 
     floatingButton.find('span').html('REGISTER FOR<br>WHITELIST');
-    var KycRegistrationUrl = $('#mc-embedded-subscribe-form').attr('action');
+    var kycRegistrationUrl = $('#mc-embedded-subscribe-form').attr('action');
     floatingButton.attr('href', floatingButton);
-    floatingButton.attr('onclick',null).off('click');
+    floatingButton.attr('onclick', null).off('click');
     floatingButton.click(sendAnaliticsEvent);
     changeIcon(floatingButton);
   }
