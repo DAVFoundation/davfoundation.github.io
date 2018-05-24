@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  setDifferentCtaForAdwordsUsers();
   $(".telegram-bottom").addClass("telegram-loaded");
 
   // color switch for nav
@@ -567,4 +569,31 @@ function validateEmail() {
     emailInput.addClass('invalid');
     return false;
   }
+}
+
+function setDifferentCtaForAdwordsUsers() {
+
+  if (isAdwordsRedirect()) {
+    var floatingButton = $('#floating-button');
+
+    floatingButton.find('span').html('REGISTER FOR<br>WHITELIST');
+    var kycRegistrationUrl = $('#mc-embedded-subscribe-form').attr('action');
+    floatingButton.attr('href', floatingButton);
+    floatingButton.attr('onclick', null).off('click');
+    floatingButton.click(sendAnaliticsEvent);
+    changeIcon(floatingButton);
+  }
+
+  function isAdwordsRedirect() {
+    return window.location.search.includes('gclid');
+  };
+
+  function changeIcon(e) {
+    e.find('i').removeClass('fa-telegram').addClass('fa-angle-double-right');
+  }
+
+  function sendAnaliticsEvent() {
+    ga('send', 'event', 'Registration-Bottom-Click', 'click', 'floating_Registration_click');
+  }
+
 }

@@ -151,11 +151,11 @@ input {
 .telegram-bottom a:focus {
   color: #FFF; }
 
-.telegram-bottom a .fa {
+.telegram-bottom a .fa-telegram {
   vertical-align: top;
   position: relative;
   color: #ff6a46; }
-  .telegram-bottom a .fa::after {
+  .telegram-bottom a .fa-telegram::after {
     position: absolute;
     content: '';
     background: #ff6a46;
@@ -165,11 +165,19 @@ input {
     left: 1px;
     width: 45px;
     height: 45px; }
-
+.telegram-bottom a .fa-angle-double-right {
+  position: relative;
+	width: 40px; }
+  .telegram-bottom a .fa-angle-double-right::before {
+    position: absolute;
+    top: -52px;
+    left: 8px;
+    width: 45px;
+    height: 45px; }
 .telegram-bottom.telegram-loaded {
   right: 0px; }
 
-.telegram-bottom.telegram-loaded a .fa::after {
+.telegram-bottom.telegram-loaded a .fa-telegram::after {
   background: #FFF; }
 
 .telegram-bottom.extra-space {
