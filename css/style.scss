@@ -190,7 +190,7 @@ input {
     color: #FFF;
 }
 
-.telegram-bottom a .fa {
+.telegram-bottom a .fa-telegram {
     vertical-align: top;
     position: relative;
     color: $orange;
@@ -206,10 +206,23 @@ input {
     	height: 45px;
 	}
 }
+.telegram-bottom a .fa-angle-double-right {
+	position: relative;
+	width: 40px;
+    &::before{
+    	position: absolute;
+    	z-index: -1;
+		top: -52px;
+		left: 8px;
+		width: 45px;
+    	height: 45px;
+	}
+}
+
 .telegram-bottom.telegram-loaded{
 	right: 0px;
 }
-.telegram-bottom.telegram-loaded a .fa {
+.telegram-bottom.telegram-loaded a .fa-telegram {
     &::after{
     	background: #FFF;
     }
