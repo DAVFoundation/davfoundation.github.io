@@ -573,18 +573,22 @@ function validateEmail() {
 
 function setDifferentCtaForAdwordsUsers() {
 
-  var isAdwordsRedirect = function () {
-    return location.search.includes('gclid');
-  };
-
   if (isAdwordsRedirect()) {
-    ga('send', 'event', 'entered_from_adwords', 'click', 'entered_from_adwords');
     var flotingButton = $('#floting-button');
 
     flotingButton.find('span').html('REGISTER FOR<br>WHITELIST');
     var KycRegistrationUrl = $('#mc-embedded-subscribe-form').attr('action');
-    flotingButton.attr('href', KycRegistrationUrl);
-    var KycRegistrationClickEvent = $('#mc-embedded-subscribe').attr('onclick');
-    flotingButton.attr('onclick', KycRegistrationClickEvent);
+    flotingButton.attr('href', flotingButton);
+    flotingButton.attr('click', '');
+    flotingButton.click(sendAnaliticsEvent);
   }
+
+  function isAdwordsRedirect () {
+    return location.search.includes('gclid');
+  };
+
+  function sendAnaliticsEvent () {
+    ga('send', 'event', 'Registration-Bottom-Click', 'click', 'floating_Registration_click');
+  }
+
 }
