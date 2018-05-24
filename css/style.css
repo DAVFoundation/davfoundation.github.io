@@ -165,15 +165,18 @@ input {
     left: 1px;
     width: 45px;
     height: 45px; }
+
 .telegram-bottom a .fa-angle-double-right {
   position: relative;
-	width: 40px; }
+  width: 40px; }
   .telegram-bottom a .fa-angle-double-right::before {
     position: absolute;
+    z-index: -1;
     top: -52px;
     left: 8px;
     width: 45px;
     height: 45px; }
+
 .telegram-bottom.telegram-loaded {
   right: 0px; }
 
@@ -1024,7 +1027,8 @@ input {
     font-style: italic;
     min-height: 120px;
     font-size: 15px;
-    margin: 0 0 20px; }
+    margin: 0 0 20px;
+    padding: 0 15px; }
   .people-are-talking a {
     color: #4c7ce8;
     font-size: 14px;
@@ -3451,6 +3455,9 @@ footer {
 
   .people-are-talking a.btn-orange {
     margin-top: -60px; } }
+.invalid {
+  border-color: red !important; }
+
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
@@ -3464,8 +3471,5 @@ footer {
   textarea,
   input {
     font-size: 16px; } }
-.invalid {
-  border-color: red !important;
-}
-    
+
 /*# sourceMappingURL=style.css.map */
