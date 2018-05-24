@@ -578,7 +578,7 @@ function setDifferentCtaForAdwordsUsers() {
 
     floatingButton.find('span').html('REGISTER FOR<br>WHITELIST');
     var kycRegistrationUrl = $('#mc-embedded-subscribe-form').attr('action');
-    floatingButton.attr('href', floatingButton);
+    floatingButton.attr('href', kycRegistrationUrl);
     floatingButton.attr('onclick', null).off('click');
     floatingButton.click(sendAnaliticsEvent);
     changeIcon(floatingButton);
