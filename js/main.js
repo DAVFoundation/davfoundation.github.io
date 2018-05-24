@@ -579,12 +579,12 @@ function setDifferentCtaForAdwordsUsers() {
     flotingButton.find('span').html('REGISTER FOR<br>WHITELIST');
     var KycRegistrationUrl = $('#mc-embedded-subscribe-form').attr('action');
     flotingButton.attr('href', flotingButton);
-    flotingButton.attr('click', '');
+    flotingButton.attr('onclick',null).off('click');
     flotingButton.click(sendAnaliticsEvent);
   }
 
   function isAdwordsRedirect () {
-    return location.search.includes('gclid');
+    return window.location.search.includes('gclid');
   };
 
   function sendAnaliticsEvent () {
