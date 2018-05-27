@@ -557,22 +557,32 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function validateEmail() {
-  var emailInput = $($('.required.email')[2]);
-  var email = emailInput.val();
-  console.log(email)
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (re.test(email)) {
-    emailInput.removeClass('invalid');
+function beforSubmitKycRegistration() {
+  
+  if (validateEmail()) {
+    sendRegistrationAnaliticsEvent();
     return true;
   } else {
-    emailInput.addClass('invalid');
     return false;
   }
-}
 
-function sendRegistrationAnaliticsEvent() {
-  ga('send', 'event', 'Registration', 'click', 'email_Registration_click');
+  function validateEmail() {
+    var emailInput = $($('.required.email')[2]);
+    var email = emailInput.val();
+    console.log(email)
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (re.test(email)) {
+      emailInput.removeClass('invalid');
+      return true;
+    } else {
+      emailInput.addClass('invalid');
+      return false;
+    }
+  }
+
+  function sendRegistrationAnaliticsEvent() {
+    ga('send', 'event', 'Registration', 'click', 'email_Registration_click');
+  }
 }
 
 function setDifferentCtaForAdwordsUsers() {
@@ -599,5 +609,4 @@ function setDifferentCtaForAdwordsUsers() {
   function sendAnaliticsEvent() {
     ga('send', 'event', 'Registration-Bottom-Click', 'click', 'floating_Registration_click');
   }
-
 }
