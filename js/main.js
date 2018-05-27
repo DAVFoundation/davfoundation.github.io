@@ -557,7 +557,7 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function beforSubmitKycRegistration() {
+function beforeSubmitKycRegistration() {
   
   if (validateEmail()) {
     sendRegistrationAnaliticsEvent();
@@ -567,7 +567,7 @@ function beforSubmitKycRegistration() {
   }
 
   function validateEmail() {
-    var emailInput = $($('.required.email')[2]);
+    var emailInput = $('.required.email').eq(2);
     var email = emailInput.val();
     console.log(email)
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
