@@ -568,6 +568,27 @@ input {
 				margin: 30px 0 0;
 			}
 		}
+		.as-seen-on-hero{
+			text-align: center;
+			padding: 20px 15px 50px;
+			margin-top: -140px;
+			h4{
+				color: #534e4e;
+				font-weight: 700;
+				font-size: 17px;
+				margin-bottom: 25px;
+			}
+			a img{
+				-webkit-transition: all 0.5s ease;
+					-moz-transition: all 0.5s ease;
+					transition: all 0.5s ease;
+			}
+			a:hover img{
+			    -webkit-filter: brightness(170%); /* Safari 6.0 - 9.0 */
+			    filter: brightness(170%);
+			}
+
+		}
 	}
 }
 .best-brands.index2{
@@ -3494,6 +3515,18 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			margin: 0 25px;
 		}
 	}
+	.hero.hero-ico .as-seen-on-hero{
+		margin-top: 0px;
+	}
+
+	.hero.hero-ico .as-seen-on-hero img{
+		width: 100%;
+	}
+}
+@media (max-height: 810px){
+	.hero.hero-ico .as-seen-on-hero{
+		margin-top: 0px;
+	}
 }
 @media (max-width: 1025px) {
 	input[type=text],
@@ -4321,6 +4354,16 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.people-are-talking a.btn-orange{
 		margin-top: -60px;
+	}
+	.hero.hero-ico .as-seen-on-hero{
+		padding: 20px 0 50px;
+	}
+	.hero.hero-ico .as-seen-on-hero h4{
+		color: rgba(255,255,255,0.7);
+	}
+	.hero.hero-ico .as-seen-on-hero a img{
+	    -webkit-filter: brightness(200%); /* Safari 6.0 - 9.0 */
+	    filter: brightness(200%);
 	}
 }
 .invalid {
