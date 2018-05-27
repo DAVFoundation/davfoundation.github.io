@@ -571,6 +571,10 @@ function validateEmail() {
   }
 }
 
+function sendRegistrationAnaliticsEvent() {
+  ga('send', 'event', 'Registration', 'click', 'email_Registration_click');
+}
+
 function setDifferentCtaForAdwordsUsers() {
 
   if (isAdwordsRedirect()) {
