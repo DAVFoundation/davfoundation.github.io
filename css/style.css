@@ -2152,6 +2152,10 @@ footer {
   .team-modal.kyc-modal .modal-body h5 {
     color: red;
     margin: -20px 0 20px; }
+.team-modal.kyc-modal#modalKYCStatus h4 {
+  font-weight: 500; }
+.team-modal.kyc-modal#modalKYCStatus input[type=email] {
+  border: 1px solid #000; }
 
 .hero.hero-blockchain {
   background: #333 url(../img/blockchain-today/hero.jpg) no-repeat center;

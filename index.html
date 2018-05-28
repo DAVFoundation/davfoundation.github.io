@@ -54,7 +54,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.3.7"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.3.8"/>
 
     <!-- Bootstrap -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -1554,7 +1554,13 @@ DAV Network.</p>
     <div class="people-are-talking">
       <div class="container">
         <h2>People Are Talking</h2>
-        <div class="row1 slick-gallery">
+        <div class="row1 slick-gallery">        
+          <div>
+            <img src="img/coindesk.png">
+            <h3>&nbsp;</h3>
+            <p>&ldquo;DAV is proposing a commons, a standard of sorts, in the form of a free and open-source decentralized mobility network.&rdquo;</p>
+            <a href="https://www.coindesk.com/auto-industry-gears-up-for-future-powered-by-blockchain/" target="_blank"><span>Read Full Article</span> <img src="img/circle-right.png"></a>
+          </div>
           <div>
             <img src="img/thegobone_logo.png">
             <h3>92.2% Score</h3>
@@ -1584,12 +1590,6 @@ DAV Network.</p>
             <h3>&nbsp;</h3>
             <p>&ldquo;I usually do not say my preferences, but this time I would say I am a very early supporter of DAV Network...the team is all-star, the advisors are amazing.&rdquo;</p>
             <a href="https://www.youtube.com/watch?v=kVF_3Xxevek" target="_blank"><span>Watch Youtube Video</span> <img src="img/circle-right.png"></a>
-          </div>
-          <div>
-            <img src="img/coindesk.png">
-            <h3>&nbsp;</h3>
-            <p>&ldquo;DAV is proposing a commons, a standard of sorts, in the form of a free and open-source decentralized mobility network.&rdquo;</p>
-            <a href="https://www.coindesk.com/auto-industry-gears-up-for-future-powered-by-blockchain/" target="_blank"><span>Read Full Article</span> <img src="img/circle-right.png"></a>
           </div>
         </div>
 
@@ -3250,7 +3250,7 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" data-cfasync="false"></script>
-    <script src="js/main.js?v=3.3.7" type="text/javascript" data-cfasync="false"></script>
+    <script src="js/main.js?v=3.3.8" type="text/javascript" data-cfasync="false"></script>
     <script type="text/javascript" data-cfasync="false">
       $(document).ready(function(){
         var transactionId = getParameterByName("transaction_id");
@@ -3263,8 +3263,9 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
           });
         }
       });
+
+      
       $(function() {
-      // media galley
           $('.slick-gallery').slick({
           nextArrow: '<img class="arrow-right" src="img/right.png" />',
           prevArrow: '<img class="arrow-left" src="img/left.png" />',
@@ -3305,6 +3306,16 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
           $('.slick-arrow').on('click', function() {
               $('.slick-gallery').slick('slickPause');
           });
+          $('.slick-gallery').slick('slickPause');
+      });
+      $(window).scroll(function() {
+         var hT = $('.people-are-talking').offset().top,
+             hH = $('.people-are-talking').outerHeight(),
+             wH = $(window).height(),
+             wS = $(this).scrollTop();
+         if (wS > (hT+hH-wH)){
+            $('.slick-gallery').slick('slickPlay');
+         }
       });
     </script>
 
