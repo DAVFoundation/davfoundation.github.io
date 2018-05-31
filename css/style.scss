@@ -462,6 +462,11 @@ input {
 	&.hero-ico{
 		background: #000 url('../img/hero-new.jpg') no-repeat center;
 		background-size: cover;
+		overflow: hidden;
+		.hero-inner{
+			position: relative;
+			z-index: 10;
+		}
 		.hero-inner .hero-valign{
 			h1{
 				font-size: 45px;
@@ -572,6 +577,8 @@ input {
 			text-align: center;
 			padding: 20px 15px 50px;
 			margin-top: -140px;
+			position: relative;
+			z-index: 10;
 			h4{
 				color: #534e4e;
 				font-weight: 700;
@@ -588,6 +595,24 @@ input {
 			    filter: brightness(170%);
 			}
 
+		}
+		video {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    width: 100%;
+		    z-index: 1;
+		}
+		.overlay {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: -100px;
+		    background: rgba(0, 0, 0, 0.7);
+		    z-index: 1;
 		}
 	}
 }
@@ -716,6 +741,8 @@ input {
 	color: #FFF;
 	text-align: center;
 	padding: 35px 0 60px;
+	position: relative;
+	z-index: 2;
 	h2{
 		text-align: center;
 		font-size: 25px;
@@ -2244,10 +2271,14 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 .hero.hero-prototypes{
     background: #000 url(../img/prototypes/hero.jpg) no-repeat center;
     background-size: cover;
+    background: #FFF;
+    background: #f7f7f7;
+    color: #333;
+    padding-top: 0 !important;
     .hero-inner{
-    	// height: 58vw !important;
+    	height: 100vh !important;
     	.hero-valign{
-    		vertical-align: top;
+    		// vertical-align: top;
     	}
     }
     h1{
@@ -2270,12 +2301,15 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     }
     #iphonex{
     	margin-top: -90px;
+    	margin-top: -180px;
+    	margin-top: -14vh;
     	position: absolute;
     }
     #drone{
     	position: absolute;
     	top: 5%;
     	left: 20%;
+    	left: 12%;
     	  -webkit-animation: balls 4s infinite;
   animation: balls 4s infinite;
   -webkit-animation-timing-function: cubic-bezier;
@@ -2301,23 +2335,31 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
   to{transform: translateY(0);}
 }
 .drone-charge-outter{
-    background: #000 url(../img/prototypes/hero.jpg) no-repeat center;
-    background-size: cover;
 	padding-top: 58px;
+	// padding-top: 100px;
+	background: #000 url(../img/prototypes/hero.jpg) no-repeat center;
+    background-size: cover;
 }
 .drone-charge{
-	background: url(../img/prototypes/drone_charge.png) no-repeat center center;
-	background-size: auto 80%;
+	// background: url(../img/drone_charge.png) no-repeat bottom 6vh left 6vw;
+	// background-size: auto 70%;
 	height: 90vh;
 	height: calc(100vh - 58px);
-	// color: #FFF;
+	display: table;
+	width: 100%;
+	color: #FFF;
+	.cell{
+		display: table-cell;
+		vertical-align: middle;
+	}
 	h1{
 		text-align: center;
+		margin: 0 0 40px;
 	}
 	h2{
     	font-size: 24px;
     	font-weight: 700;
-    	margin: 20% 0 20px;
+    	margin: 12% 0 20px;
     }
     p{
     	font-size: 15px;
@@ -4238,7 +4280,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			margin: 0 0 20px;
 		}
 		img{
-			margin-top: 60px;
+			margin-bottom: 20px;
 			width: 80%;
 		}
 	}
@@ -4247,7 +4289,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			text-align: center;
 		}
 		img{
-			margin-top: 60px;
+			// margin-top: 60px;
 		}
 	}
 	.hero.route-creator .hero-inner input[type=text]{
@@ -4382,6 +4424,12 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.hero.hero-ico .as-seen-on-hero a img{
 	    -webkit-filter: brightness(200%); /* Safari 6.0 - 9.0 */
 	    filter: brightness(200%);
+	}
+	.drone-charge-outter{
+		padding-top: 20px;
+	}
+	.hero.hero-prototypes h2{
+		margin: 20px 0;
 	}
 }
 .invalid {

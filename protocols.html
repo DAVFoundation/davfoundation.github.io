@@ -51,7 +51,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.3.9"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.4.0"/>
 
     <!-- Bootstrap -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -155,29 +155,83 @@
       </div>
     </nav>
 
-    <div class="hero hero-prototypes" id="home">
+    <div class="drone-charge-outter">
+    <div class="drone-charge">
       <div id="startchange"></div>
+      <div class="cell">
+      <div class="container">
+        <h1>What We Have Built So Far</h1>
+        <div class="row">
+          <div class="col-sm-6 hidden-xs">
+            <img src="img/drone_charge1.png" width="100%">
+          </div>
+          <div class="col-sm-6">
+            <h2>Drone Charging Network</h2>
+            <p>DAV connects drones and charging stations on an open network where they can buy and sell charging services using DAV tokens.</p>
+            <div class="visible-xs">
+              <img src="img/drone-pad.png">
+            </div>
+            <p><span>Current Status:</span>  A DAV Alliance member is currently deploying a network of charging stations in northern Italy. These stations will offer charging services through the DAV network in exchange for DAV tokens.</p>
+            <a href="https://developers.dav.network/protocols/drone-charging/" target="_blank">View Drone Charging Protocol >></a>
+
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="drone-flight-planning">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 text-right">
+            <h2>Drone Flight Planning</h2>
+            <p>DAV connects drones and service providers allowing them to buy and sell flight planning services on the DAV network, using DAV tokens.</p>
+            <p>Drones pass the waypoints of their planned trip, and the route planner bids to offer a service in exchange for DAV tokens. Once a mission has been awarded, the service provider returns a list of coordinates to fly through, so that the drone can reach its destination safely. This flight plan takes into consideration environmental, topographical, and regulatory considerations.</p>
+            <div class="visible-xs">
+              <img src="img/prototypes/route-plan.png">
+            </div>
+            <p><span>Current Status:</span>  An integration with a DAV Alliance member is in the final stages, so that the service can be offered in Nevada, USA starting May 2018.</p>
+            <a href="https://developers.dav.network/protocols/route-planning/" target="_blank">View Route Planning Protocol >></a>
+          </div>
+          <div class="col-sm-6 text-center hidden-xs">
+            <img src="img/prototypes/route-plan.png">
+          </div>
+        </div>
+      </div>
+      <video preload="auto" autoplay loop>
+        <source src="img/prototypes/route-plan.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="hero hero-prototypes" id="home">
       <div class="hero-inner">
         <div class="hero-valign">
           <div class="container">
-          <h1>What We Have Built So Far</h1>
+          <!-- <h1>What We Have Built So Far</h1> -->
           <div class="row">
-              <div class="col-sm-6 text-right">
+              <div class="col-sm-6 text-center visible-xs">
                 <h2>Drone Missions App</h2>
                 <p><b>Missions</b> is the first app built to showcase the DAV ecosystem.</p>
                 <p>It connects users looking to ship packages with autonomous drones.  Users request drone services, drones bid for those services, and trustless cooperation is enabled by using the blockchain.</p>
-                <div class="hidden-xs">
-                <p><span>Current Status:</span> Integration with the first drone partner (Copter Express) is underway.</p>
-                <a href="https://missions.io/" target="_blank">Go to Missions App >></a>
-                <a href="https://github.com/DAVFoundation/missions" target="_blank">Visit our Github repository >></a>
-                </div>
               </div>
               <div class="col-sm-6 text-left">
                 <img src="img/prototypes/iphone.png" id="iphonex">
                 <img src="img/prototypes/drone_flying.png" class="animated fadeInLeft animation-delay-20" id="drone">
               </div>
+              <div class="col-sm-6 text-left hidden-xs">
+                <h2>Drone Missions App</h2>
+                <p><b>Missions</b> is the first app built to showcase the DAV ecosystem.</p>
+                <p>It connects users looking to ship packages with autonomous drones.  Users request drone services, drones bid for those services, and trustless cooperation is enabled by using the blockchain.</p>
+                <p><span>Current Status:</span> Integration with the first drone partner (Copter Express) is underway.</p>
+                <a href="https://missions.io/" target="_blank">Go to Missions App >></a>
+                <a href="https://github.com/DAVFoundation/missions" target="_blank">Visit our Github repository >></a>
+              </div>
             </div>
             <div class="visible-xs">
+                <!-- <img src="img/prototypes/iphone.png" id="iphonex"> -->
+                <!-- <img src="img/prototypes/drone_flying.png" class="animated fadeInLeft animation-delay-20" id="drone"> -->
                 <p><span>Current Status:</span> Integration with the first drone partner (Copter Express) is underway.</p>
                 <a href="https://missions.io/" target="_blank">Go to Missions App >></a>
                 <a href="https://github.com/DAVFoundation/missions" target="_blank">Visit our Github repository >></a>
@@ -189,43 +243,7 @@
       </div>
     </div>
 
-    <div class="drone-charge">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6"></div>
-          <div class="col-sm-6">
-            <h2>Drone Charging Network</h2>
-            <p>DAV connects drones and charging stations on an open network where they can buy and sell charging services using DAV tokens.</p>
-            <p><span>Current Status:</span>  A DAV Alliance member is currently deploying a network of charging stations in northern Italy. These stations will offer charging services through the DAV network in exchange for DAV tokens.</p>
-            <a href="https://developers.dav.network/protocols/drone-charging/" target="_blank">View Drone Charging Protocol >></a>
-
-            <div class="visible-xs">
-              <img src="img/prototypes/drone-pad.png">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="drone-flight-planning">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 text-right">
-            <h2>Drone Flight Planning</h2>
-            <p>DAV connects drones and service providers allowing them to buy and sell flight planning services on the DAV network, using DAV tokens.</p>
-            <p>Drones pass the waypoints of their planned trip, and the route planner bids to offer a service in exchange for DAV tokens. Once a mission has been awarded, the service provider returns a list of coordinates to fly through, so that the drone can reach its destination safely. This flight plan takes into consideration environmental, topographical, and regulatory considerations.</p>
-            <p><span>Current Status:</span>  An integration with a DAV Alliance member is in the final stages, so that the service can be offered in Nevada, USA starting May 2018.</p>
-            <a href="https://developers.dav.network/protocols/route-planning/" target="_blank">View Route Planning Protocol >></a>
-          </div>
-          <div class="col-sm-6 text-center">
-            <img src="img/prototypes/route-plan.png">
-          </div>
-        </div>
-      </div>
-      <video preload="auto" autoplay loop>
-        <source src="img/prototypes/route-plan.mp4" type="video/mp4">
-      </video>
-    </div>
+    
 
     <div class="dav-cli">
       <div class="container">
@@ -427,7 +445,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js" type="text/javascript" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js" data-cfasync="false"></script>
-    <script src="js/main.js?v=3.3.9" type="text/javascript" data-cfasync="false"></script>
+    <script src="js/main.js?v=3.4.0" type="text/javascript" data-cfasync="false"></script>
 
   </body>
 </html>
