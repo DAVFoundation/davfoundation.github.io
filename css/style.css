@@ -1805,10 +1805,18 @@ footer {
     transform: translateY(70px); }
   to {
     transform: translateY(0); } }
+.drone-charge-outter {
+  background: #000 url(../img/prototypes/hero.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 58px; }
+
 .drone-charge {
   background: url(../img/prototypes/drone_charge.png) no-repeat center center;
-  background-size: auto 90%;
-  height: 90vh; }
+  background-size: auto 80%;
+  height: 90vh;
+  height: calc(100vh - 58px); }
+  .drone-charge h1 {
+    text-align: center; }
   .drone-charge h2 {
     font-size: 24px;
     font-weight: 700;
