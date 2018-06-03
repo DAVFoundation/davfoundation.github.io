@@ -620,7 +620,7 @@ function getVisitorCountry(cb1, cb2) {
       cb1(country);
       cb2(country);
     })
-  });
+  }).fail(cb2);
 }
 
 function isAdwordsRedirect() {
