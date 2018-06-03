@@ -1,7 +1,8 @@
-$(document).ready(function(){
+var GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8'
 
+$(document).ready(function(){
   setDifferentCtaForAdwordsUsers();
-  $(".telegram-bottom").addClass("telegram-loaded");
+  getVisitorCountry(setDifferentCtaForDifferentCountry, function(){$(".telegram-bottom").addClass("telegram-loaded");});
 
   // color switch for nav
    var scroll_start = 0;
@@ -585,28 +586,51 @@ function beforeSubmitKycRegistration() {
   }
 }
 
+var $floatingButton = $('#floating-button');
+
 function setDifferentCtaForAdwordsUsers() {
 
   if (isAdwordsRedirect()) {
-    var floatingButton = $('#floating-button');
-
-    floatingButton.find('span').html('REGISTER FOR<br>WHITELIST');
+    $floatingButton.find('span').html('REGISTER FOR<br>WHITELIST');
     var kycRegistrationUrl = $('#mc-embedded-subscribe-form').attr('action');
-    floatingButton.attr('href', kycRegistrationUrl);
-    floatingButton.attr('onclick', null).off('click');
-    floatingButton.click(sendAnaliticsEvent);
-    changeIcon(floatingButton);
+    $floatingButton.attr('href', kycRegistrationUrl);
+    $floatingButton.attr('onclick', null).off('click');
+    $floatingButton.click(sendAnaliticsEvent);
+    changeFloatingButtonIcon('fa-angle-double-right');
   }
 
-  function isAdwordsRedirect() {
-    return window.location.search.includes('gclid');
-  };
-
-  function changeIcon(e) {
-    e.find('i').removeClass('fa-telegram').addClass('fa-angle-double-right');
+}
+function setDifferentCtaForDifferentCountry(country) {
+  switch (country) {
+    case 'Korea' :
+      $floatingButton.find('span').html('한글<br>설명서');
+      var kycRegistrationUrl = 'https://medium.com/davnetwork/dav-%ED%86%A0%ED%81%B0-%EC%84%B8%EC%9D%BC%EC%9D%84-%EC%9C%84%ED%95%9C-kyc-%EC%9D%B8%EC%A6%9D-%EC%99%84%EB%A3%8C%ED%95%98%EA%B8%B0-cd83a2ab162b';
+      $floatingButton.attr('href', kycRegistrationUrl);
+      changeFloatingButtonIcon('korean-flag');
+      break;
   }
+}
 
-  function sendAnaliticsEvent() {
-    ga('send', 'event', 'Registration-Bottom-Click', 'click', 'floating_Registration_click');
-  }
+function getVisitorCountry(cb1, cb2) {
+  $.post('https://www.googleapis.com/geolocation/v1/geolocate?key=' + GOOGLE_GEOLOCATION_API_KEY, function(data) {
+    var latlng = {lat: data.location.lat, lng: data.location.lng};
+    var geocoder = new google.maps.Geocoder;
+    geocoder.geocode({location: latlng}, function(data) {
+      var country = data.filter(function(place){return place.types.indexOf('country') > -1})[0].formatted_address;
+      cb1('Korea');
+      cb2(country);
+    })
+  });
+}
+
+function isAdwordsRedirect() {
+  return window.location.search.includes('gclid');
+}
+
+function changeFloatingButtonIcon(iconName) {
+  $floatingButton.find('i').removeClass('fa-telegram').addClass(iconName);
+}
+
+function sendAnaliticsEvent() {
+  ga('send', 'event', 'Registration-Bottom-Click', 'click', 'floating_Registration_click');
 }
