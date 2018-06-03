@@ -589,7 +589,6 @@ function beforeSubmitKycRegistration() {
 var $floatingButton = $('#floating-button');
 
 function setDifferentCtaForAdwordsUsers() {
-  cb2
   if (isAdwordsRedirect()) {
     $floatingButton.find('span').html('REGISTER FOR<br>WHITELIST');
     var kycRegistrationUrl = $('#mc-embedded-subscribe-form').attr('action');
