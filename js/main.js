@@ -600,7 +600,7 @@ function setDifferentCtaForAdwordsUsers() {
   }
 
 }
-function setDifferentCtaForAdwordsUsers(country) {
+function setDifferentCtaForDifferentCountry(country) {
   switch (country) {
     case 'South Korea' :
       $floatingButton.find('span').html('한글<br>설명서');
