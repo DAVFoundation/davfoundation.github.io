@@ -259,7 +259,7 @@
                       <h4>HARD CAP</h4>
                     </div>
                     <div class="col-xs-6 text-right">
-                      <h4><span>31,769 ETH&nbsp;&nbsp;</span></h4>
+                      <h4><span class="eth-raised">31,769</span><span> ETH&nbsp;&nbsp;</span></h4>
                       <h4><span><a href="token-sale-details.html#hard-cap" style="text-decoration:underline;">54,286 ETH*</a></span></h4>
                     </div>
                   </div>
@@ -3256,9 +3256,36 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js" data-cfasync="false"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" data-cfasync="false"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js" type="text/javascript" data-cfasync="false"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8"></script>
     <script src="js/main.js?v=3.4.1" type="text/javascript" data-cfasync="false"></script>
+    <script src="js/contract-artifact.js" type="text/javascript" data-cfasync="false"></script>
     <script type="text/javascript" data-cfasync="false">
+      
+      const ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
+
+      let web3Provider = new Web3
+          .providers
+          .HttpProvider(ETH_NODE_URL);
+      let web3 = new Web3(web3Provider);
+      window.contractInstance = new web3.eth.Contract(window.contractArtefact.abi, window.contractArtefact.address);
+      let weiRaised = null;
+      
+      $(document).ready(function() {
+        updateEthRaised();
+        setInterval(() => updateEthRaised(), 2000)
+      });
+
+      
+      function updateEthRaised() {
+        window.contractInstance.methods.weiRaised().call(function(error, results) {
+          if(!error) {
+            weiRaised = results;
+            $(".eth-raised")[0].innerHTML = web3.utils.fromWei(weiRaised, 'ether');
+          }
+        });
+      }
+      
       $(document).ready(function(){
         var transactionId = getParameterByName("transaction_id");
         if (transactionId) {
