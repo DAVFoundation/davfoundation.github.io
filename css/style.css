@@ -357,7 +357,11 @@ input {
     background-size: cover; }
   .hero.hero-ico {
     background: #000 url("../img/hero-new.jpg") no-repeat center;
-    background-size: cover; }
+    background-size: cover;
+    overflow: hidden; }
+    .hero.hero-ico .hero-inner {
+      position: relative;
+      z-index: 10; }
     .hero.hero-ico .hero-inner .hero-valign h1 {
       font-size: 45px; }
     .hero.hero-ico .hero-inner .hero-valign h4 {
@@ -437,6 +441,41 @@ input {
       border-top: 1px solid rgba(255, 255, 255, 0.4);
       padding: 0;
       margin: 30px 0 0; }
+    .hero.hero-ico .as-seen-on-hero {
+      text-align: center;
+      padding: 20px 15px 50px;
+      margin-top: -140px;
+      position: relative;
+      z-index: 10; }
+      .hero.hero-ico .as-seen-on-hero h4 {
+        color: #534e4e;
+        font-weight: 700;
+        font-size: 17px;
+        margin-bottom: 25px; }
+      .hero.hero-ico .as-seen-on-hero a img {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+      .hero.hero-ico .as-seen-on-hero a:hover img {
+        -webkit-filter: brightness(170%);
+        /* Safari 6.0 - 9.0 */
+        filter: brightness(170%); }
+    .hero.hero-ico video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 1; }
+    .hero.hero-ico .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: -100px;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1; }
 
 .best-brands.index2 {
   margin-top: -112px;
@@ -542,7 +581,9 @@ input {
   background-color: #263E49;
   color: #FFF;
   text-align: center;
-  padding: 35px 0 60px; }
+  padding: 35px 0 60px;
+  position: relative;
+  z-index: 2; }
   .video-home h2 {
     text-align: center;
     font-size: 25px;
@@ -1041,7 +1082,8 @@ input {
     font-style: italic;
     min-height: 120px;
     font-size: 15px;
-    margin: 0 0 20px; }
+    margin: 0 0 20px;
+    padding: 0 15px; }
   .people-are-talking a {
     color: #4c7ce8;
     font-size: 14px;
@@ -1763,9 +1805,13 @@ footer {
 
 .hero.hero-prototypes {
   background: #000 url(../img/prototypes/hero.jpg) no-repeat center;
-  background-size: cover; }
-  .hero.hero-prototypes .hero-inner .hero-valign {
-    vertical-align: top; }
+  background-size: cover;
+  background: #FFF;
+  background: #f7f7f7;
+  color: #333;
+  padding-top: 0 !important; }
+  .hero.hero-prototypes .hero-inner {
+    height: 100vh !important; }
   .hero.hero-prototypes h1 {
     margin: 10% 0 !important; }
   .hero.hero-prototypes h2 {
@@ -1781,11 +1827,14 @@ footer {
       font-weight: 700; }
   .hero.hero-prototypes #iphonex {
     margin-top: -90px;
+    margin-top: -180px;
+    margin-top: -14vh;
     position: absolute; }
   .hero.hero-prototypes #drone {
     position: absolute;
     top: 5%;
     left: 20%;
+    left: 12%;
     -webkit-animation: balls 4s infinite;
     animation: balls 4s infinite;
     -webkit-animation-timing-function: cubic-bezier;
@@ -1813,14 +1862,27 @@ footer {
   to {
     transform: translateY(0); } }
 
+.drone-charge-outter {
+  padding-top: 58px;
+  background: #000 url(../img/prototypes/hero.jpg) no-repeat center;
+  background-size: cover; }
+
 .drone-charge {
-  background: url(../img/prototypes/drone_charge.png) no-repeat center center;
-  background-size: auto 90%;
-  height: 90vh; }
+  height: 90vh;
+  height: calc(100vh - 58px);
+  display: table;
+  width: 100%;
+  color: #FFF; }
+  .drone-charge .cell {
+    display: table-cell;
+    vertical-align: middle; }
+  .drone-charge h1 {
+    text-align: center;
+    margin: 0 0 40px; }
   .drone-charge h2 {
     font-size: 24px;
     font-weight: 700;
-    margin: 20% 0 20px; }
+    margin: 12% 0 20px; }
   .drone-charge p {
     font-size: 15px;
     font-weight: 300;
@@ -2170,6 +2232,12 @@ footer {
   .team-modal.kyc-modal .modal-body h5 {
     color: red;
     margin: -20px 0 20px; }
+
+.team-modal.kyc-modal#modalKYCStatus h4 {
+  font-weight: 500; }
+
+.team-modal.kyc-modal#modalKYCStatus input[type=email] {
+  border: 1px solid #000; }
 
 .hero.hero-blockchain {
   background: #333 url(../img/blockchain-today/hero.jpg) no-repeat center;
@@ -2765,7 +2833,15 @@ footer {
   .hero.hero-ico .hero-inner .hero-valign h1 {
     font-size: 32px; }
   .hero.hero-ico .hero-inner .hero-valign .best-brands a {
-    margin: 0 25px; } }
+    margin: 0 25px; }
+  .hero.hero-ico .as-seen-on-hero {
+    margin-top: 0px; }
+  .hero.hero-ico .as-seen-on-hero img {
+    width: 100%; } }
+
+@media (max-height: 810px) {
+  .hero.hero-ico .as-seen-on-hero {
+    margin-top: 0px; } }
 
 @media (max-width: 1025px) {
   input[type=text],
@@ -3253,12 +3329,10 @@ footer {
     .drone-charge h2 {
       margin: 0 0 20px; }
     .drone-charge img {
-      margin-top: 60px;
+      margin-bottom: 20px;
       width: 80%; }
   .drone-flight-planning .text-right {
     text-align: center; }
-  .drone-flight-planning img {
-    margin-top: 60px; }
   .hero.route-creator .hero-inner input[type=text] {
     margin: 0 0 20px; }
   .hero .hero-inner .hero-valign .hero-join.makeFix {
@@ -3342,7 +3416,19 @@ footer {
       display: table-cell;
       vertical-align: middle; }
   .people-are-talking a.btn-orange {
-    margin-top: -60px; } }
+    margin-top: -60px; }
+  .hero.hero-ico .as-seen-on-hero {
+    padding: 20px 0 50px; }
+  .hero.hero-ico .as-seen-on-hero h4 {
+    color: rgba(255, 255, 255, 0.7); }
+  .hero.hero-ico .as-seen-on-hero a img {
+    -webkit-filter: brightness(200%);
+    /* Safari 6.0 - 9.0 */
+    filter: brightness(200%); }
+  .drone-charge-outter {
+    padding-top: 20px; }
+  .hero.hero-prototypes h2 {
+    margin: 20px 0; } }
 
 .invalid {
   border-color: red !important; }

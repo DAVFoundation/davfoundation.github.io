@@ -58,8 +58,11 @@ $(document).ready(function(){
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
     var navbar = $(".navbar").height();
+    var asSeenOn = 0;
+    if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
     $('.hero .hero-inner').height(windowHeight - navbar);
     $('.hero').css('padding-top', navbar + 'px');
+    $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
 
     if (windowWidth < 767) {
       $('.screen1').height(windowHeight - navbar);
@@ -80,8 +83,11 @@ $(document).ready(function(){
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
       var navbar = $(".navbar").height();
+      var asSeenOn = 0;
+      if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
       $('.hero .hero-inner').height(windowHeight - navbar);
       $('.hero').css('padding-top', navbar + 'px');
+      $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
       if (windowWidth < 767) {
         $('.screen1').height(windowHeight - navbar);
       }
