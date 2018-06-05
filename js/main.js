@@ -1,14 +1,14 @@
 var GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8'
 
-const ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
+var ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
 //const ETH_NODE_URL = 'https://mainnet.infura.io/wUiZtmeZ1KwjFrcC8zRO';
 
-let web3Provider = new Web3
+var web3Provider = new Web3
     .providers
     .HttpProvider(ETH_NODE_URL);
-let web3 = new Web3(web3Provider);
+var web3 = new Web3(web3Provider);
 window.contractInstance = new web3.eth.Contract(window.contractArtifact.abi, window.contractArtifact.address);
-let weiRaised = null;
+var weiRaised = null;
 
 function numberWithCommas(number) {
   var parts = number.toString().split(".");
@@ -16,19 +16,38 @@ function numberWithCommas(number) {
   return parts.join(".");
 }
 
+var $ethRaised = $("#eth-raised");
 function updateEthRaised() {
   window.contractInstance.methods.weiRaised().call(function(error, results) {
     if(!error) {
       weiRaised = results;
-      let ethRaised = web3.utils.fromWei(weiRaised, 'ether');
-      $(".eth-raised")[0].innerHTML = numberWithCommas(ethRaised);
+      var ethRaisedValue = 100 || web3.utils.fromWei(weiRaised, 'ether');
+      increaseWithAnimation($ethRaised, ethRaisedValue)
     }
   });
 }
 
+var ANIMATION_DURATION = 2000;
+var PULSE_DURATION = 40;
+function increaseWithAnimation($element, value) {
+  var currentValue = Number($element.html().replace(/,/g , ''));
+  var newValue = currentValue + Math.floor(value);
+  var pulseValue = Math.min(value / (ANIMATION_DURATION / PULSE_DURATION), 1);
+  increasePulseUntilValue(pulseValue, newValue);
+
+  function increasePulseUntilValue(pulseValue, limitValue) {
+    var currentValue = Number($element.html().replace(/,/g , ''));
+    if (currentValue < limitValue) {
+      var newValue = currentValue + Math.floor(pulseValue);
+      $element.html(newValue);
+      setTimeout(function() {increasePulseUntilValue(pulseValue, limitValue)}, PULSE_DURATION);
+    }
+  } 
+}
+
 $(document).ready(function(){
   updateEthRaised();
-  setInterval(() => updateEthRaised(), 2000);
+  setInterval(() => updateEthRaised(), 20000);
   
   setDifferentCtaForAdwordsUsers();
   getVisitorCountry(setDifferentCtaForDifferentCountry, function(){$(".telegram-bottom").addClass("telegram-loaded");});
