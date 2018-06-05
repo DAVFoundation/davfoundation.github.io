@@ -383,7 +383,7 @@ $(document).ready(function(){
 
     var targetDate=moment.utc([2018,5,11,13,0,0]);
     var todaysDate = moment.utc();
-    $('#countdown,#countdownMobile').countdown({until: targetDate.toDate(), format: (1||targetDate.isSame(todaysDate,'day'))?'dHMS':'dHM'});
+    $('#countdown,#countdownMobile').countdown({until: targetDate.toDate(), format: targetDate.isSame(todaysDate,'day')?'dHMS':'dHM'});
 
   // register event google analytics
   $("#mc-embedded-subscribe-form").on('submit', function() {
