@@ -1,14 +1,14 @@
 var GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8'
 
-const ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
+var ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
 //const ETH_NODE_URL = 'https://mainnet.infura.io/wUiZtmeZ1KwjFrcC8zRO';
 
-let web3Provider = new Web3
+var web3Provider = new Web3
     .providers
     .HttpProvider(ETH_NODE_URL);
-let web3 = new Web3(web3Provider);
+var web3 = new Web3(web3Provider);
 window.contractInstance = new web3.eth.Contract(window.contractArtifact.abi, window.contractArtifact.address);
-let weiRaised = null;
+var weiRaised = null;
 
 function numberWithCommas(number) {
   var parts = number.toString().split(".");
@@ -16,14 +16,33 @@ function numberWithCommas(number) {
   return parts.join(".");
 }
 
+var $ethRaised = $("#eth-raised");
 function updateEthRaised() {
   window.contractInstance.methods.weiRaised().call(function(error, results) {
     if(!error) {
       weiRaised = results;
-      let ethRaised = web3.utils.fromWei(weiRaised, 'ether');
-      $(".eth-raised")[0].innerHTML = numberWithCommas(ethRaised);
+      var ethRaisedValue = Number(web3.utils.fromWei(weiRaised, 'ether'));
+      increaseWithAnimation(ethRaisedValue);
     }
   });
+}
+
+var ANIMATION_DURATION = 1000;
+var PULSE_DURATION = 40;
+function increaseWithAnimation(newValue) {
+  var currentValue = Number($ethRaised.text().replace(/,/g , ''));
+  var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
+
+  var interval = setInterval(increaseInPulse, PULSE_DURATION);
+
+  function increaseInPulse() {
+    currentValue += pulseValue;
+    if (currentValue >= newValue) {
+      currentValue=newValue;
+      clearInterval(interval);
+    }
+    $ethRaised.text(numberWithCommas(Math.floor(currentValue)));
+  } 
 }
 
 $(document).ready(function(){
@@ -411,8 +430,7 @@ $(document).ready(function(){
     //countdown
 
     var targetDate=moment.utc([2018,5,11,13,0,0]);
-    var todaysDate = moment.utc();
-    $('#countdown,#countdownMobile').countdown({until: targetDate.toDate(), format: targetDate.isSame(todaysDate,'day')?'dHMS':'dHM'});
+    $('#countdown,#countdownMobile').countdown({until: targetDate.toDate(), format: 'dHMS'});
 
   // register event google analytics
   $("#mc-embedded-subscribe-form").on('submit', function() {
