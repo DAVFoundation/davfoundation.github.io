@@ -229,11 +229,8 @@ input {
         margin: 0 0 50px;
         line-height: 25px; }
       .hero .hero-inner .hero-valign .countdown {
-        width: 352px;
+        width: 290px;
         margin: 0 auto; }
-        @media (max-width: 600px) {
-          .hero .hero-inner .hero-valign .countdown {
-            width: 290px; } }
         .hero .hero-inner .hero-valign .countdown p {
           border: 1px solid #FFF;
           font-size: 24px;
@@ -342,11 +339,7 @@ input {
     -moz-border-radius: 3px;
     border: solid 1px #fff;
     text-align: center;
-    margin: 10px 12px; }
-    @media (max-width: 600px) {
-      .hero .countdown-section {
-        margin: 10px 6px;
-        width: 60px; } }
+    margin: 10px 15px; }
   .hero .countdown-amount {
     font-size: 18px;
     font-weight: 700;
@@ -359,9 +352,6 @@ input {
     margin: 0 0 45px;
     font-weight: 500;
     text-align: center; }
-    @media (max-width: 600px) {
-      .hero .countdown-period {
-        font-size: 10px; } }
   .hero.hero-whitelist {
     background: #000 url("../img/intersection.jpg") no-repeat center;
     background-size: cover; }

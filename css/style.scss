@@ -1,31 +1,9 @@
 $orange: #ff6a46;
-$tablet-width: 600px;
-$desktop-width: 1024px;
-
 @mixin transition-speed($time,$effect){
 	-webkit-transition: all $time $effect;
 				-moz-transition: all $time $effect;
 				transition: all $time $effect;
 }
-
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
 body{
 	font-family: 'Montserrat', sans-serif;
 	// zoom: 85%;
@@ -305,12 +283,8 @@ input {
 			line-height: 25px;
 			}
 		.countdown{
-			width: 352px;
+			width: 290px;
 			margin: 0 auto;
-
-			@include mobile() {
-				width: 290px;
-			}
 			p{
 				border: 1px solid #FFF;
 				font-size: 24px;
@@ -443,6 +417,9 @@ input {
 	width:100%;
 	display:table;
 	text-align:center;
+		// &:last-child{
+		// 	display: none;
+		// }
 	}
 
 	.countdown-section {
@@ -456,14 +433,8 @@ input {
 		-moz-border-radius: 3px;
 		border:solid 1px #fff;
 		text-align:center;
-		margin:10px 12px;
+		margin:10px 15px;
 		// padding: 0 5px
-
-		@include mobile() {
-			margin: 10px 6px;
-			width: 60px;
-		}
-
 	}
 
 	.countdown-amount {
@@ -482,10 +453,7 @@ input {
     	text-transform: uppercase;
     	margin: 0 0 45px;
     	font-weight: 500;
-		text-align: center;
-		@include mobile() {
-			font-size: 10px;
-		}
+    	text-align: center;
 	}
 	&.hero-whitelist{
 		background: #000 url('../img/intersection.jpg') no-repeat center;
