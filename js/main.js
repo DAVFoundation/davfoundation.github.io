@@ -21,7 +21,7 @@ function updateEthRaised() {
   window.contractInstance.methods.weiRaised().call(function(error, results) {
     if(!error) {
       weiRaised = results;
-      var ethRaisedValue = 100 || web3.utils.fromWei(weiRaised, 'ether');
+      var ethRaisedValue = web3.utils.fromWei(weiRaised, 'ether');
       increaseWithAnimation($ethRaised, ethRaisedValue)
     }
   });
@@ -47,7 +47,7 @@ function increaseWithAnimation($element, value) {
 
 $(document).ready(function(){
   updateEthRaised();
-  setInterval(() => updateEthRaised(), 20000);
+  setInterval(() => updateEthRaised(), 2000);
   
   setDifferentCtaForAdwordsUsers();
   getVisitorCountry(setDifferentCtaForDifferentCountry, function(){$(".telegram-bottom").addClass("telegram-loaded");});
