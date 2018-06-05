@@ -32,15 +32,15 @@ var PULSE_DURATION = 40;
 function increaseWithAnimation($element, value) {
   var currentValue = Number($element.html().replace(/,/g , ''));
   var newValue = currentValue + Math.floor(value);
-  var pulseValue = Math.min(value / (ANIMATION_DURATION / PULSE_DURATION), 1);
-  increasePulseUntilValue(pulseValue, newValue);
+  var pulseValue = Math.max(value / (ANIMATION_DURATION / PULSE_DURATION), 1);
+  increaseInPulses(pulseValue, newValue);
 
-  function increasePulseUntilValue(pulseValue, limitValue) {
+  function increaseInPulses(pulseValue, limitValue) {
     var currentValue = Number($element.html().replace(/,/g , ''));
     if (currentValue < limitValue) {
       var newValue = currentValue + Math.floor(pulseValue);
       $element.html(newValue);
-      setTimeout(function() {increasePulseUntilValue(pulseValue, limitValue)}, PULSE_DURATION);
+      setTimeout(function() {increaseInPulses(pulseValue, limitValue)}, PULSE_DURATION);
     }
   } 
 }
