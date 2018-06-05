@@ -21,26 +21,27 @@ function updateEthRaised() {
   window.contractInstance.methods.weiRaised().call(function(error, results) {
     if(!error) {
       weiRaised = results;
-      var ethRaisedValue = web3.utils.fromWei(weiRaised, 'ether');
-      increaseWithAnimation($ethRaised, ethRaisedValue)
+      var ethRaisedValue = Number(web3.utils.fromWei(weiRaised, 'ether'));
+      increaseWithAnimation(ethRaisedValue);
     }
   });
 }
 
-var ANIMATION_DURATION = 2000;
+var ANIMATION_DURATION = 1000;
 var PULSE_DURATION = 40;
-function increaseWithAnimation($element, value) {
-  var currentValue = Number($element.text().replace(/,/g , ''));
-  var newValue = currentValue + Math.floor(value);
-  var pulseValue = Math.max(value / (ANIMATION_DURATION / PULSE_DURATION), 1);
-  var interval = setInterval(function() {increaseInPulse(pulseValue, newValue)}, PULSE_DURATION);
+var startValue = Number($ethRaised.text().replace(/,/g , ''));
+function increaseWithAnimation(newValue) {
+  var currentValue = Number($ethRaised.text().replace(/,/g , ''));
+  var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
 
-  function increaseInPulse(pulseValue, limitValue) {
-    var currentValue = Number($element.text().replace(/,/g , ''));
-    if (currentValue < limitValue) {
-      var newValue = currentValue + Math.floor(pulseValue);
-      $element.text(newValue);
+  var interval = setInterval(increaseInPulse, PULSE_DURATION);
+
+  function increaseInPulse() {
+    currentValue += pulseValue;
+    if (currentValue < newValue) {
+      $ethRaised.text(numberWithCommas(Math.floor(currentValue)));
     } else {
+      $ethRaised.text(numberWithCommas(Math.floor(newValue)));
       clearInterval(interval);
     }
   } 
