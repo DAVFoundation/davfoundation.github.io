@@ -30,17 +30,18 @@ function updateEthRaised() {
 var ANIMATION_DURATION = 2000;
 var PULSE_DURATION = 40;
 function increaseWithAnimation($element, value) {
-  var currentValue = Number($element.html().replace(/,/g , ''));
+  var currentValue = Number($element.text().replace(/,/g , ''));
   var newValue = currentValue + Math.floor(value);
   var pulseValue = Math.max(value / (ANIMATION_DURATION / PULSE_DURATION), 1);
-  increaseInPulses(pulseValue, newValue);
+  var interval = setInterval(function() {increaseInPulse(pulseValue, newValue)}, PULSE_DURATION);
 
-  function increaseInPulses(pulseValue, limitValue) {
-    var currentValue = Number($element.html().replace(/,/g , ''));
+  function increaseInPulse(pulseValue, limitValue) {
+    var currentValue = Number($element.text().replace(/,/g , ''));
     if (currentValue < limitValue) {
       var newValue = currentValue + Math.floor(pulseValue);
-      $element.html(newValue);
-      setTimeout(function() {increaseInPulses(pulseValue, limitValue)}, PULSE_DURATION);
+      $element.text(newValue);
+    } else {
+      clearInterval(interval);
     }
   } 
 }
