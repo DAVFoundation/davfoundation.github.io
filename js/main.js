@@ -38,11 +38,10 @@ function increaseWithAnimation(newValue) {
   function increaseInPulse() {
     currentValue += pulseValue;
     if (currentValue >= newValue) {
-      $ethRaised.text(numberWithCommas(Math.floor(newValue)));
-      return clearInterval(interval);
+      currentValue=newValue;
+      clearInterval(interval);
     }
     $ethRaised.text(numberWithCommas(Math.floor(currentValue)));
-
   } 
 }
 
