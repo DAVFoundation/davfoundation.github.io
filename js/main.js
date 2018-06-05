@@ -59,7 +59,7 @@ $(document).ready(function(){
     var windowHeight = $(window).height();
     var navbar = $(".navbar").height();
     var asSeenOn = 0;
-    if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
+    if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = 0;}
     $('.hero .hero-inner').height(windowHeight - navbar);
     $('.hero').css('padding-top', navbar + 'px');
     $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
