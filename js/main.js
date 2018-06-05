@@ -29,7 +29,6 @@ function updateEthRaised() {
 
 var ANIMATION_DURATION = 1000;
 var PULSE_DURATION = 40;
-var startValue = Number($ethRaised.text().replace(/,/g , ''));
 function increaseWithAnimation(newValue) {
   var currentValue = Number($ethRaised.text().replace(/,/g , ''));
   var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
@@ -38,12 +37,12 @@ function increaseWithAnimation(newValue) {
 
   function increaseInPulse() {
     currentValue += pulseValue;
-    if (currentValue < newValue) {
-      $ethRaised.text(numberWithCommas(Math.floor(currentValue)));
-    } else {
+    if (currentValue >= newValue) {
       $ethRaised.text(numberWithCommas(Math.floor(newValue)));
-      clearInterval(interval);
+      return clearInterval(interval);
     }
+    $ethRaised.text(numberWithCommas(Math.floor(currentValue)));
+
   } 
 }
 
