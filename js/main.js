@@ -1,6 +1,35 @@
 var GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8'
 
+const ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
+//const ETH_NODE_URL = 'https://mainnet.infura.io/wUiZtmeZ1KwjFrcC8zRO';
+
+let web3Provider = new Web3
+    .providers
+    .HttpProvider(ETH_NODE_URL);
+let web3 = new Web3(web3Provider);
+window.contractInstance = new web3.eth.Contract(window.contractArtifact.abi, window.contractArtifact.address);
+let weiRaised = null;
+
+function numberWithCommas(number) {
+  var parts = number.toString().split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return parts.join(".");
+}
+
+function updateEthRaised() {
+  window.contractInstance.methods.weiRaised().call(function(error, results) {
+    if(!error) {
+      weiRaised = results;
+      let ethRaised = web3.utils.fromWei(weiRaised, 'ether');
+      $(".eth-raised")[0].innerHTML = numberWithCommas(ethRaised);
+    }
+  });
+}
+
 $(document).ready(function(){
+  updateEthRaised();
+  setInterval(() => updateEthRaised(), 2000);
+  
   setDifferentCtaForAdwordsUsers();
   getVisitorCountry(setDifferentCtaForDifferentCountry, function(){$(".telegram-bottom").addClass("telegram-loaded");});
 
