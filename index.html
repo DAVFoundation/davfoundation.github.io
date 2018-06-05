@@ -3262,32 +3262,8 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js" type="text/javascript" data-cfasync="false"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8"></script>
     <script src="js/contract-artifact.js" type="text/javascript" data-cfasync="false"></script>
-    <script src="js/main.js?v=3.4.2" type="text/javascript" data-cfasync="false"></script>
+    <script src="js/main.js?v=3.4.3" type="text/javascript" data-cfasync="false"></script>
     <script type="text/javascript" data-cfasync="false">
-      
-      const ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
-
-      let web3Provider = new Web3
-          .providers
-          .HttpProvider(ETH_NODE_URL);
-      let web3 = new Web3(web3Provider);
-      window.contractInstance = new web3.eth.Contract(window.contractArtefact.abi, window.contractArtefact.address);
-      let weiRaised = null;
-      
-      $(document).ready(function() {
-        updateEthRaised();
-        setInterval(() => updateEthRaised(), 2000)
-      });
-
-      
-      function updateEthRaised() {
-        window.contractInstance.methods.weiRaised().call(function(error, results) {
-          if(!error) {
-            weiRaised = results;
-            $(".eth-raised")[0].innerHTML = web3.utils.fromWei(weiRaised, 'ether');
-          }
-        });
-      }
       
       $(document).ready(function(){
         var transactionId = getParameterByName("transaction_id");
