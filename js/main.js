@@ -429,7 +429,7 @@ $(document).ready(function(){
     });
     //countdown
 
-    var targetDate=moment.utc([2018,5,11,13,0,0]);
+    var targetDate=moment.utc([2018,5,25,13,0,0]);
     $('#countdown,#countdownMobile').countdown({until: targetDate.toDate(), format: 'dHMS'});
 
   // register event google analytics
