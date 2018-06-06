@@ -6,6 +6,16 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
+#home {
+  position: relative; }
+  #home .gradient {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
 .makeOrange {
   color: #ff6a46 !important; }
 
@@ -20,6 +30,11 @@ input {
   .btn-orange:active, .btn-orange:focus, .btn-orange:hover {
     text-decoration: none;
     color: #FFF; }
+
+#join-token-sale-button {
+  width: 192px;
+  margin: 16px auto;
+  font-weight: bold; }
 
 .navbar-right {
   margin-right: 0px; }
