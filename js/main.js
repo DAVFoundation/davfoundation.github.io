@@ -332,6 +332,14 @@ $(document).ready(function(){
               dataType: 'json',
               success: function (data) {
                 $(".kyc-loader").addClass('hide');
+
+                if (data.statusText === 'Started') {
+                  $(".kyc-error").show();
+                  $(".kyc-error").animateCss("shake");
+                  $(".kyc-error").text("This email does not exist.");
+                  return  ga('send', 'event', 'KYC', 'status results', data.statusText, title);
+                }
+
                 $("#kyc-form").hide();
                 // $(".kyc-response").text(data.suggestionText);
                 var title = '';
@@ -358,13 +366,6 @@ $(document).ready(function(){
                         title = "Your KYC application has expired.";
                         $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
                         $(".kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                        break;
-                    case "Started":
-                        title = 'Please enter the email you have registered with:';
-                        $("#kyc-form").show();
-                        $(".kyc-error").show();
-                        $(".kyc-error").animateCss("shake");
-                        $(".kyc-error").text("This email does not exist.");
                         break;
                     default:
                       break;
