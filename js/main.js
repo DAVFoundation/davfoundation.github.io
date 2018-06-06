@@ -380,7 +380,7 @@ $(document).ready(function(){
         }else{
           $(".kyc-error").show();
           $(".kyc-error").animateCss("shake");
-          $(".kyc-error").text("Please enter valid email address.");
+          $(".kyc-error").text("Please enter a valid email address.");
         }
 
     });
