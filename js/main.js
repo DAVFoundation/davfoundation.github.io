@@ -360,7 +360,7 @@ $(document).ready(function(){
                         $(".kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
                         break;
                     case "Started":
-                        title = 'Please enter the email you have registered with:'
+                        title = 'Please enter the email you have registered with:';
                         $("#kyc-form").show();
                         $(".kyc-error").show();
                         $(".kyc-error").animateCss("shake");
