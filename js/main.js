@@ -1,6 +1,6 @@
 var GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8'
 
-var KYC_MEMBERS_URL = 'https://a6e4u0sw16.execute-api.us-east-1.amazonaws.com/staging/members';
+var KYC_MEMBERS_URL = 'https://nessie.dav.network/members';
 
 function numberWithCommas(number) {
   var parts = number.toString().split(".");
