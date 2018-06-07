@@ -1,0 +1,326 @@
+@import "common.scss";
+
+$boarserRadius: 4px;
+$fontSize1: 32px;
+$fontSize2: 24px;
+$fontSize3: 20px;
+$fontSize4: 16px;
+$lightGrey: #efefef;
+$boarderColor: #c5cbd7;
+$middleGrey: #636363;
+$darkGrey: #252627;
+
+@mixin breaking-point {
+    @media (min-width: 1300) and (max-width: 1023px) {
+        @media (max-width: 767px) {
+        @content;
+        }
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    line-height: 1.4em;
+}
+
+.hide {
+    display: none;
+}
+
+.dav-logo {
+    background: url('../img/logo.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: $orange;
+    font-size: $fontSize1;
+    font-weight: bold;
+}
+
+.button {
+    background: $orange;
+    color: white;
+    border-radius: $boarserRadius;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid $orange;
+    font-weight: bold;
+}
+
+.link {
+    color: $orange;
+}
+
+a {
+    color: $orange;
+    text-decoration: none;
+}
+
+iframe {
+    max-width: calc(100% - 64px);
+}
+
+input {
+    font-size: $fontSize3;
+    line-height: 38px;
+    height: 38px;
+    border: 1px solid $boarderColor;
+    border-radius: $boarserRadius;
+    padding: 0 4px;
+    color: $darkGrey;
+}
+
+.deatal-blok {
+    background: white;
+    border: 1px solid $boarderColor;
+    border-radius: $boarserRadius;
+    font-weight: bold;
+    margin: 4px;
+    padding: 12px;
+    width: 256px;
+    text-align: center;
+}
+
+#error-msg {
+    width: 100%;
+    display: none;
+    color: red;
+    position: absolute;
+    bottom: -32px;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+    .left-section {
+        background-color: $lightGrey;
+        height: 100vh;
+        width: 50%;
+        position: relative;
+        transition: 1s;
+
+        @include not-desctop {
+            display: none;
+        }
+
+        .token-sale {
+            display: none;
+            text-align: center;
+            padding: 52px 32px;
+
+            .video-head {
+                font-size: $fontSize3;
+            }
+            a {
+                text-decoration: underline;
+                font-size: $fontSize3;
+            }
+            .details {
+                width: 292px;
+                margin: 20px auto 32px;
+            }
+            .video-container {
+                margin: 24px 0;
+            }
+        }
+
+        .dav-logo {
+            width: 50%;
+            height: 12vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+    .right-section {
+        background-color: white;
+        height: 100vh;
+        width: 50%;
+        position: relative;
+        transition: 1s;
+
+        @include not-desctop {
+            width: 100%;
+        }
+
+        .welcome-section {
+            width: 75%;
+            min-width: 300px;
+            margin: auto;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 45%;
+
+            p {
+                font-size: $fontSize3;
+            }
+
+            form {
+                display: flex;
+                position: relative;
+
+                input {
+                    width: 66%;
+                    margin: 0 4px 0 0;
+                }
+                .button {
+                    width: 33%;
+                    margin: 0 0 0 4px;
+                }
+            }
+        }
+
+        .dav-logo {
+            display: none;
+            width: 64px;
+            height: 32px;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+
+            @include not-desctop {
+                display: block;
+            }
+        }
+
+        .error {
+            padding: 32px;
+            transform: translateY(-50%);
+            top: 45%;
+            position: absolute;
+
+            @include not-desctop {
+                position: static;
+                transform: translate(0);
+            }    
+
+            .title {
+                font-size: $fontSize2;
+            }
+
+            .button {
+                display: block;
+                margin: auto;
+                margin-top: 32px;
+                width: 240px;
+                padding: 2px;
+
+                &.hide {
+                    display: none;
+                }
+            }
+        }
+
+        .token-sale {
+            display: none;
+            padding: 52px 40px 40px 40px;
+
+            a {
+                text-decoration: underline;
+                font-size: $fontSize4;
+                text-align: center;
+                margin: 32px;
+                margin-top: 20px;
+                display: block;
+            }
+
+            .title {
+                font-size: $fontSize2;
+            }
+
+            .details {
+                text-align: center;
+                margin-bottom: 32px;
+
+                >div {
+                    display: inline-flex;
+                    @include breaking-point {
+                        display: block;
+                    }
+            
+                }
+            }
+        }
+    }
+}
+
+.go-out {
+
+    .right-section {
+        transform: translateX(50vw);
+    }
+
+    .left-section {
+        transform: translateX(-50vw);
+    }
+}
+
+.address-container {
+    background: $lightGrey;
+    line-height: 1em;
+    padding: 16px 32px;
+    margin: 24px 0px;
+    text-align: center;
+
+    >div {
+        display: inline-flex;
+        text-align: left;
+
+        @include breaking-point {
+            display: block;
+        }    
+    }
+
+    .button {
+        height: 32px;
+        line-height: 32px;
+        padding: 0 24px;
+        font-size: 12px;
+        margin-left: 12px;
+    }
+}
+
+.eth-icon {
+    background: url('../img/logo_ETH.svg');
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 28px;
+}
+
+.address {
+    display: flex;
+    >div {
+        div:first-child {
+            font-size: 10px;
+        }
+        div:last-child {
+            font-size: 12px;
+        }    
+    }
+}
+
+@include not-desctop {
+       
+    #container.sale-page {
+        display: block;
+
+        .left-section {
+            display: block;
+            width: 100%;
+        }
+
+        .right-section {
+            width: 100%;
+        }
+    }
+}
+
