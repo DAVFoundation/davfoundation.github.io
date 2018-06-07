@@ -518,8 +518,12 @@ input {
 			}
 			h6{
 				font-weight: 400;
-				font-size: 14px;
+				font-size: 15px;
 				margin-bottom: 20px;
+				a{
+					color: #FFF;
+					text-decoration: underline;
+				}
 			}
 			p.restriction{
 				font-size: 14px;

@@ -384,8 +384,11 @@ input {
         font-weight: 700; }
     .hero.hero-ico .hero-inner .hero-valign h6 {
       font-weight: 400;
-      font-size: 14px;
+      font-size: 15px;
       margin-bottom: 20px; }
+      .hero.hero-ico .hero-inner .hero-valign h6 a {
+        color: #FFF;
+        text-decoration: underline; }
     .hero.hero-ico .hero-inner .hero-valign p.restriction {
       font-size: 14px;
       color: #c0b5b5;

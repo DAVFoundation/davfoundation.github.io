@@ -157,6 +157,16 @@ $(document).ready(function(){
       }, 700);
     });
 
+    $("a[href=#team]").click(function(e) {
+      e.preventDefault();
+      var offset = $('.navbar').height();
+      // offset = offset + offset*0.15;
+      var section = "#team";
+      $("html, body").animate({
+        scrollTop: $(section).offset().top - offset
+      }, 700);
+    });
+
     //daily video
     var channelID = 'UCPuAOygDwCiLOdLosiQJJ1w';
     $.get(
