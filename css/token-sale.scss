@@ -331,9 +331,6 @@ input {
         div:first-child {
             font-size: 10px;
         }
-        div:last-child {
-            font-size: 12px;
-        }    
     }
     @include breaking-point {
         padding: 0 12px 12px;
@@ -363,3 +360,12 @@ input {
     }
 }
 
+#construct-address {
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    color: black;
+    padding: 0;
+    height: 12px;
+    width: 296px;
+}

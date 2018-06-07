@@ -240,8 +240,6 @@ input {
   display: flex; }
   .address > div div:first-child {
     font-size: 10px; }
-  .address > div div:last-child {
-    font-size: 12px; }
   @media (max-width: 700px) {
     .address {
       padding: 0 12px 12px; } }
@@ -263,3 +261,12 @@ input {
     #container.sale-page .right-section {
       order: 1;
       width: 100%; } }
+
+#construct-address {
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  color: black;
+  padding: 0;
+  height: 12px;
+  width: 296px; }
