@@ -11,7 +11,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://dav.network/img/og_image.jpg" />
   <meta property="og:url" content="https://dav.network/token-sale.html" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/token-sale.css?v=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <meta property="og:description" content="DAV is a blockchain-based transportation platform." />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" data-cfasync="false"></script>
   <script type="text/javascript" data-cfasync="false">
@@ -29,25 +31,104 @@
 <body>
   <div id="container">
     <div class="left-section">
-      <div class="dav-logo"></div>
-      <div class="wellcom">
-
-      </div>
-      <div class="error">
-
-      </div>
-      <div class="token-sale">
-
-      </div>    
+        <div class="wellcom error">
+            <div class="dav-logo"></div>
+        </div>
+        <div class="token-sale">
+  
+        </div>   
     </div>
     <div class="right-section">
-      <div class="wellcom error">
-          <div class="dav-logo"></div>
-      </div>
-      <div class="token-sale">
+        <div class="dav-logo"></div>
+        <div class="wellcom-section">
+          <div class="title">DAV Token Sale</div>
+          <p>
+              Wellcom to DAV Token Sale.<br>
+              Please enter your email below to get started:
+          </p>
+          <form>
+            <input placeholder="Email address" id="email-input">
+            <div class="button" id="submit-email">START</div>
+            <div id="error-msg"></div>
+          </form>
+        </div>
+        <div class="error">
+          <p class="kyc-telegram hide">
+              In the meantime remember to join our 
+              <a href="https://t.me/DAVNetwork" target="_blank">
+                Telegram Channel
+              </a>
+              , as that will always be the place we first announce exciting news and updates happening at DAV.
+            </p>
+        
+            <p class="kyc-medium hide">We also suggest you take a look at this
+                <a href="https://medium.com/davnetwork/how-to-complete-your-kyc-registration-for-davs-token-sale-49681f950b98" target="_blank">
+                medium post
+              </a>
+                to get a detailed look at how to go through and get approved by our KYC process.
+            </p>
+        
+            <p class="kyc-telegram2 hide">
+              If you have any issues regarding the KYC procedure, please contact us in our 
+              <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel
+              </a>.
+            </p>
+        
+            <p class="kyc-telegram3 hide">
+              If you have any additional questions regarding the KYC procedure, please contact us in our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a>.
+            </p>
+        </div>
+        <div class="token-sale">
+  
+        </div>    
+    </div>
 
-      </div> 
-  </div>
   <script src="js/token-sale.js?v=1.0"></script>
 </body>
 </html>
+
+
+
+<!--div class="modal-body text-center">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h3>KYC Status Check</h3>
+    <br><br>
+    <h4 class="kyc-title">
+      Please enter the email you have registered with:
+    </h4>
+    <p class="kyc-response"></p>
+
+    <p class="kyc-telegram hide">
+      In the meantime remember to join our 
+      <a href="https://t.me/DAVNetwork" target="_blank">
+        Telegram Channel
+      </a>
+      , as that will always be the place we first announce exciting news and updates happening at DAV.
+    </p>
+
+    <p class="kyc-medium hide">We also suggest you take a look at this
+       <a href="https://medium.com/davnetwork/how-to-complete-your-kyc-registration-for-davs-token-sale-49681f950b98" target="_blank">
+        medium post
+      </a>
+       to get a detailed look at how to go through and get approved by our KYC process.
+    </p>
+
+    <p class="kyc-telegram2 hide">
+      If you have any issues regarding the KYC procedure, please contact us in our 
+      <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel
+      </a>.
+    </p>
+
+    <p class="kyc-telegram3 hide">
+      If you have any additional questions regarding the KYC procedure, please contact us in our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a>.
+    </p>
+
+
+    <div id="kyc-form">
+      <input type="email" name="kycmail" id="kycmail" placeholder="Email address" required>
+      <div class="text-center kyc-loader hide"><img src="img/load.gif"><br><br></div>
+      <button type="button" id="checkKYC">Check KYC Status</button>
+    </div>
+    <a href="#" class="close1 kyc-button hide">Return to KYC process</a>
+    <button type="button" class="close1 kyc-close hide" data-dismiss="modal" aria-label="Close">Close</button>
+  </div-->
