@@ -13,6 +13,7 @@ $darkGrey: #252627;
 body {
     margin: 0;
     font-family: 'Montserrat';
+    line-height: 1.4em;
 }
 
 .hide {
@@ -46,6 +47,15 @@ body {
     color: $orange;
 }
 
+a {
+    color: $orange;
+    text-decoration: none;
+}
+
+iframe {
+    max-width: calc(100% - 64px);
+}
+
 input {
     font-size: $fontSize3;
     line-height: 38px;
@@ -56,13 +66,23 @@ input {
     color: $darkGrey;
 }
 
+.deatal-blok {
+    background: white;
+    border: 1px solid $boarderColor;
+    border-radius: $boarserRadius;
+    font-weight: bold;
+    margin: 4px;
+    padding: 12px;
+    width: 256px;
+    text-align: center;
+}
+
 #error-msg {
     width: 100%;
     display: none;
     color: red;
-    text-align: center;
     position: absolute;
-    bottom: -24px;
+    bottom: -32px;
 }
 
 #container {
@@ -75,9 +95,31 @@ input {
         height: 100vh;
         width: 50%;
         position: relative;
+        transition: 1s;
 
-        @include mobile {
+        @include not-desctop {
             display: none;
+        }
+
+        .token-sale {
+            display: none;
+            text-align: center;
+            padding: 52px 32px;
+
+            .video-head {
+                font-size: $fontSize3;
+            }
+            a {
+                text-decoration: underline;
+                font-size: $fontSize3;
+            }
+            .details {
+                width: 292px;
+                margin: 20px auto 32px;
+            }
+            .video-container {
+                margin: 24px 0;
+            }
         }
 
         .dav-logo {
@@ -88,21 +130,27 @@ input {
             top: 50%;
             transform: translate(-50%, -50%);
         }
+
     }
     .right-section {
         background-color: white;
         height: 100vh;
         width: 50%;
         position: relative;
+        transition: 1s;
 
-        .wellcom-section {
+        @include not-desctop {
+            width: 100%;
+        }
+
+        .welcome-section {
             width: 75%;
             min-width: 300px;
             margin: auto;
             position: absolute;
             transform: translate(-50%, -50%);
             left: 50%;
-            top: 46%;
+            top: 45%;
 
             p {
                 font-size: $fontSize3;
@@ -131,13 +179,140 @@ input {
             right: 8px;
             top: 8px;
 
-            @include mobile {
+            @include not-desctop {
                 display: block;
             }
         }
 
-        @include mobile {
+        .error {
+            padding: 32px;
+            transform: translateY(-50%);
+            top: 45%;
+            position: absolute;
+
+            @include not-desctop {
+                position: static;
+                transform: translate(0);
+            }    
+
+            .title {
+                font-size: $fontSize2;
+            }
+
+            .button {
+                display: block;
+                margin: auto;
+                margin-top: 32px;
+                width: 240px;
+                padding: 2px;
+
+                &.hide {
+                    display: none;
+                }
+            }
+        }
+
+        .token-sale {
+            display: none;
+            padding: 52px 40px 40px 40px;
+
+            a {
+                text-decoration: underline;
+                font-size: $fontSize4;
+                text-align: center;
+                margin: 32px;
+                margin-top: 20px;
+                display: block;
+            }
+
+            .title {
+                font-size: $fontSize2;
+            }
+
+            .details {
+                text-align: center;
+                margin-bottom: 32px;
+
+                >div {
+                    display: inline-flex;
+                    @include not-desctop {
+                        display: block;
+                    }
+            
+                }
+            }
+        }
+    }
+}
+
+.go-out {
+
+    .right-section {
+        transform: translateX(50vw);
+    }
+
+    .left-section {
+        transform: translateX(-50vw);
+    }
+}
+
+.address-container {
+    background: $lightGrey;
+    line-height: 1em;
+    padding: 16px 32px;
+    margin: 24px 0px;
+    text-align: center;
+
+    >div {
+        display: inline-flex;
+        text-align: left;
+
+        @include not-desctop {
+            display: block;
+        }    
+    }
+
+    .button {
+        height: 32px;
+        line-height: 32px;
+        padding: 0 24px;
+        font-size: 12px;
+        margin-left: 12px;
+    }
+}
+
+.eth-icon {
+    background: url('../img/logo_ETH.svg');
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 28px;
+}
+
+.address {
+    display: flex;
+    >div {
+        div:first-child {
+            font-size: 10px;
+        }
+        div:last-child {
+            font-size: 12px;
+        }    
+    }
+}
+
+@include not-desctop {
+       
+    #container.sale-page {
+        display: block;
+
+        .left-section {
+            display: block;
+            width: 100%;
+        }
+
+        .right-section {
             width: 100%;
         }
     }
 }
+

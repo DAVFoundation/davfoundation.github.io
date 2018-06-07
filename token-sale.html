@@ -31,19 +31,30 @@
 <body>
   <div id="container">
     <div class="left-section">
-        <div class="wellcom error">
+        <div class="welcome-section">
             <div class="dav-logo"></div>
         </div>
         <div class="token-sale">
-  
+          <div class="video-head">
+              Watch the token sale instruction video:
+          </div>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MJrYxRo0UG8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>  
+          <div class="details">
+            <div class="deatal-blok">1ETH = 10,000DAV</div>
+            <div class="deatal-blok">Min. Contribution = 0.2ETH</div>
+            <div class="deatal-blok">MAX. Contribution = 150ETH</div>
+          </div>  
+          <a>View Full Token Sale Details</a>
         </div>   
     </div>
     <div class="right-section">
         <div class="dav-logo"></div>
-        <div class="wellcom-section">
+        <div class="welcome-section">
           <div class="title">DAV Token Sale</div>
           <p>
-              Wellcom to DAV Token Sale.<br>
+              Welcome to DAV Token Sale.<br>
               Please enter your email below to get started:
           </p>
           <form>
@@ -53,33 +64,65 @@
           </form>
         </div>
         <div class="error">
+
+          <h4 class="kyc-title title hide">
+            Please enter the email you have registered with:
+          </h4>
+
+          <p class="kyc-response hide"></p>
+          
           <p class="kyc-telegram hide">
               In the meantime remember to join our 
               <a href="https://t.me/DAVNetwork" target="_blank">
                 Telegram Channel
               </a>
               , as that will always be the place we first announce exciting news and updates happening at DAV.
-            </p>
+          </p>
         
-            <p class="kyc-medium hide">We also suggest you take a look at this
-                <a href="https://medium.com/davnetwork/how-to-complete-your-kyc-registration-for-davs-token-sale-49681f950b98" target="_blank">
-                medium post
-              </a>
-                to get a detailed look at how to go through and get approved by our KYC process.
-            </p>
+          <p class="kyc-medium hide">We also suggest you take a look at this
+              <a href="https://medium.com/davnetwork/how-to-complete-your-kyc-registration-for-davs-token-sale-49681f950b98" target="_blank">
+              medium post
+            </a>
+              to get a detailed look at how to go through and get approved by our KYC process.
+          </p>
+      
+          <p class="kyc-telegram2 hide">
+            If you have any issues regarding the KYC procedure, please contact us in our 
+            <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel
+            </a>.
+          </p>
         
-            <p class="kyc-telegram2 hide">
-              If you have any issues regarding the KYC procedure, please contact us in our 
-              <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel
-              </a>.
-            </p>
-        
-            <p class="kyc-telegram3 hide">
-              If you have any additional questions regarding the KYC procedure, please contact us in our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a>.
-            </p>
+          <p class="kyc-telegram3 hide">
+            If you have any additional questions regarding the KYC procedure, please contact us in our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a>.
+          </p>
+
+          <a href="#" class="kyc-button button hide">Return to KYC process</a>
         </div>
+
         <div class="token-sale">
-  
+          <div class="title">Purchase DAV Tokens</div>
+          <p>To purchase DAV Tokens, send a number between 1 and 0.2 ETH to 150 ETH (1 ETH = 10,000 DAV) to the following smart contract address:</p>
+          <div class="address-container">
+            <div>
+                <div class="address">
+                  <div class="eth-icon"></div>
+                  <div>
+                      <div>ADDRESS</div>
+                      <div>0xg1i6v4e72m7e54y3t6o7u18r4e12m5o6n2y18</div>    
+                  </div>
+                </div>
+                <div class="button">COPY TO CLIPBOARD</div>    
+            </div>
+          </div>
+          <p style="text-align: center"><b>Note: </b>Only send funds from the wallet you have registered with.</p>
+          <a>Forgot wallet address?</a>
+          <div class="details">
+            <div>
+                <div class="deatal-blok">Maximum Gas Limit: 300,000</div>
+                <div class="deatal-blok">Maximum Gas Price: 50Gwei</div>    
+            </div>
+          </div>
+          <p style="text-align: center"><b>DO NOT SEND FUNDS FROM AN EXCHANGE ACCOUNT</b></p>    
         </div>    
     </div>
 
@@ -129,6 +172,5 @@
       <div class="text-center kyc-loader hide"><img src="img/load.gif"><br><br></div>
       <button type="button" id="checkKYC">Check KYC Status</button>
     </div>
-    <a href="#" class="close1 kyc-button hide">Return to KYC process</a>
     <button type="button" class="close1 kyc-close hide" data-dismiss="modal" aria-label="Close">Close</button>
   </div-->
