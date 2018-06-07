@@ -11,10 +11,11 @@ $middleGrey: #636363;
 $darkGrey: #252627;
 
 @mixin breaking-point {
-    @media (min-width: 1300) and (max-width: 1023px) {
-        @media (max-width: 767px) {
+    @media (max-width: 700px) {
         @content;
-        }
+    }
+    @media (min-width: 1023px) and (max-width: 1300px) {
+        @content;
     }
 }
 
@@ -49,6 +50,7 @@ body {
     text-align: center;
     border: 1px solid $orange;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .link {
@@ -58,6 +60,7 @@ body {
 a {
     color: $orange;
     text-decoration: none;
+    cursor: pointer;
 }
 
 iframe {
@@ -100,12 +103,15 @@ input {
 
     .left-section {
         background-color: $lightGrey;
-        height: 100vh;
         width: 50%;
         position: relative;
         transition: 1s;
 
-        @include not-desctop {
+        @include desktop {
+            height: 100vh;
+        }
+
+        @include not-desktop {
             display: none;
         }
 
@@ -113,6 +119,10 @@ input {
             display: none;
             text-align: center;
             padding: 52px 32px;
+
+            @include mobile {
+                padding: 32px 12px;
+            }
 
             .video-head {
                 font-size: $fontSize3;
@@ -142,12 +152,15 @@ input {
     }
     .right-section {
         background-color: white;
-        height: 100vh;
         width: 50%;
         position: relative;
         transition: 1s;
 
-        @include not-desctop {
+        @include desktop {
+            height: 100vh;
+        }
+
+        @include not-desktop {
             width: 100%;
         }
 
@@ -187,7 +200,7 @@ input {
             right: 8px;
             top: 8px;
 
-            @include not-desctop {
+            @include not-desktop {
                 display: block;
             }
         }
@@ -198,7 +211,7 @@ input {
             top: 45%;
             position: absolute;
 
-            @include not-desctop {
+            @include not-desktop {
                 position: static;
                 transform: translate(0);
             }    
@@ -224,6 +237,10 @@ input {
             display: none;
             padding: 52px 40px 40px 40px;
 
+            @include mobile {
+                padding: 32px 12px;
+            }
+
             a {
                 text-decoration: underline;
                 font-size: $fontSize4;
@@ -245,6 +262,8 @@ input {
                     display: inline-flex;
                     @include breaking-point {
                         display: block;
+                        margin: auto;
+                        width: 290px;
                     }
             
                 }
@@ -257,10 +276,16 @@ input {
 
     .right-section {
         transform: translateX(50vw);
+        @include not-desktop {
+            transform: translateX(-100vw);
+        }
     }
 
     .left-section {
         transform: translateX(-50vw);
+        @include not-desktop {
+            transform: translateX(-100vw);
+        }
     }
 }
 
@@ -270,6 +295,10 @@ input {
     padding: 16px 32px;
     margin: 24px 0px;
     text-align: center;
+
+    @include mobile {
+        padding: 16px;
+    }
 
     >div {
         display: inline-flex;
@@ -306,19 +335,29 @@ input {
             font-size: 12px;
         }    
     }
+    @include breaking-point {
+        padding: 0 12px 12px;
+    }
+
+    @include mobile {
+        padding: 0;
+        padding-bottom: 12px;
+    }
 }
 
-@include not-desctop {
+@include not-desktop {
        
     #container.sale-page {
-        display: block;
+        flex-direction: column;
 
         .left-section {
+            order: 2;
             display: block;
             width: 100%;
         }
 
         .right-section {
+            order: 1;
             width: 100%;
         }
     }

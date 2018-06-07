@@ -20,9 +20,10 @@ $desktop-width: 1024px;
     }
   }
 
-  @mixin not-desctop {
+  @mixin not-desktop {
     @media (max-width: #{$desktop-width - 1px}) {
       @content;
     }
   }
+
 
