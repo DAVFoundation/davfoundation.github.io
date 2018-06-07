@@ -1,6 +1,46 @@
 var GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8'
 
+var KYC_MEMBERS_URL = 'https://nessie.dav.network/members';
+
+function numberWithCommas(number) {
+  var parts = number.toString().split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return parts.join(".");
+}
+
+function updateEthWhitelisted() {
+  $.ajax({
+    url: KYC_MEMBERS_URL,
+    type: 'GET',
+    success: function(result) {
+      let ethWhitelisted = result;
+      increaseWithAnimation($("#eth-whitelisted"), ethWhitelisted);
+    }
+  });
+}
+
+var ANIMATION_DURATION = 1000;
+var PULSE_DURATION = 40;
+function increaseWithAnimation(ethCountElement,newValue) {
+  var currentValue = Number(ethCountElement.text().replace(/,/g , ''));
+  var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
+
+  var interval = setInterval(increaseInPulse, PULSE_DURATION);
+
+  function increaseInPulse() {
+    currentValue += pulseValue;
+    if (currentValue >= newValue) {
+      currentValue=newValue;
+      clearInterval(interval);
+    }
+    ethCountElement.text(numberWithCommas(Math.floor(currentValue)));
+  } 
+}
+
 $(document).ready(function(){
+  updateEthWhitelisted();
+  setInterval(() => updateEthWhitelisted(), 10000);
+  
   setDifferentCtaForAdwordsUsers();
   getVisitorCountry(setDifferentCtaForDifferentCountry, function(){$(".telegram-bottom").addClass("telegram-loaded");});
 
