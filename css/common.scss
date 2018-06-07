@@ -26,9 +26,3 @@ $desktop-width: 1024px;
     }
   }
 
-
-  @mixin breaking-point {
-    @media (min-width: 1300) and (max-width: 1023px) {
-      @content;
-    }
-  }

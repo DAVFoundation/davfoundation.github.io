@@ -34,7 +34,7 @@ a {
   text-decoration: none; }
 
 iframe {
-  max-width: 100%; }
+  max-width: calc(100% - 64px); }
 
 input {
   font-size: 20px;
@@ -78,7 +78,7 @@ input {
     #container .left-section .token-sale {
       display: none;
       text-align: center;
-      padding: 52px; }
+      padding: 52px 32px; }
       #container .left-section .token-sale .video-head {
         font-size: 20px; }
       #container .left-section .token-sale a {
@@ -170,9 +170,10 @@ input {
         margin-bottom: 32px; }
         #container .right-section .token-sale .details > div {
           display: inline-flex; }
-          @media (max-width: 1023px) {
-            #container .right-section .token-sale .details > div {
-              display: block; } }
+
+@media (min-width: 1300) and (max-width: 1023px) and (max-width: 767px) {
+  #container .right-section .token-sale .details > div {
+    display: block; } }
 
 .go-out .right-section {
   transform: translateX(50vw); }
@@ -189,9 +190,10 @@ input {
   .address-container > div {
     display: inline-flex;
     text-align: left; }
-    @media (max-width: 1023px) {
-      .address-container > div {
-        display: block; } }
+
+@media (min-width: 1300) and (max-width: 1023px) and (max-width: 767px) {
+  .address-container > div {
+    display: block; } }
   .address-container .button {
     height: 32px;
     line-height: 32px;

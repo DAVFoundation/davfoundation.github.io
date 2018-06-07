@@ -10,6 +10,14 @@ $boarderColor: #c5cbd7;
 $middleGrey: #636363;
 $darkGrey: #252627;
 
+@mixin breaking-point {
+    @media (min-width: 1300) and (max-width: 1023px) {
+        @media (max-width: 767px) {
+        @content;
+        }
+    }
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat';
@@ -235,7 +243,7 @@ input {
 
                 >div {
                     display: inline-flex;
-                    @include not-desctop {
+                    @include breaking-point {
                         display: block;
                     }
             
@@ -267,7 +275,7 @@ input {
         display: inline-flex;
         text-align: left;
 
-        @include not-desctop {
+        @include breaking-point {
             display: block;
         }    
     }
