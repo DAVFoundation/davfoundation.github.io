@@ -24,14 +24,16 @@ body {
   line-height: 38px;
   text-align: center;
   border: 1px solid #ff6a46;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
 
 .link {
   color: #ff6a46; }
 
 a {
   color: #ff6a46;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 iframe {
   max-width: calc(100% - 64px); }
@@ -68,10 +70,12 @@ input {
   width: 100vw; }
   #container .left-section {
     background-color: #efefef;
-    height: 100vh;
     width: 50%;
     position: relative;
     transition: 1s; }
+    @media (min-width: 1024px) {
+      #container .left-section {
+        height: 100vh; } }
     @media (max-width: 1023px) {
       #container .left-section {
         display: none; } }
@@ -79,6 +83,9 @@ input {
       display: none;
       text-align: center;
       padding: 52px 32px; }
+      @media (max-width: 600px) {
+        #container .left-section .token-sale {
+          padding: 32px 12px; } }
       #container .left-section .token-sale .video-head {
         font-size: 20px; }
       #container .left-section .token-sale a {
@@ -98,10 +105,12 @@ input {
       transform: translate(-50%, -50%); }
   #container .right-section {
     background-color: white;
-    height: 100vh;
     width: 50%;
     position: relative;
     transition: 1s; }
+    @media (min-width: 1024px) {
+      #container .right-section {
+        height: 100vh; } }
     @media (max-width: 1023px) {
       #container .right-section {
         width: 100%; } }
@@ -156,6 +165,9 @@ input {
     #container .right-section .token-sale {
       display: none;
       padding: 52px 40px 40px 40px; }
+      @media (max-width: 600px) {
+        #container .right-section .token-sale {
+          padding: 32px 12px; } }
       #container .right-section .token-sale a {
         text-decoration: underline;
         font-size: 16px;
@@ -170,16 +182,28 @@ input {
         margin-bottom: 32px; }
         #container .right-section .token-sale .details > div {
           display: inline-flex; }
-
-@media (min-width: 1300) and (max-width: 1023px) and (max-width: 767px) {
-  #container .right-section .token-sale .details > div {
-    display: block; } }
+          @media (max-width: 700px) {
+            #container .right-section .token-sale .details > div {
+              display: block;
+              margin: auto;
+              width: 290px; } }
+          @media (min-width: 1023px) and (max-width: 1300px) {
+            #container .right-section .token-sale .details > div {
+              display: block;
+              margin: auto;
+              width: 290px; } }
 
 .go-out .right-section {
   transform: translateX(50vw); }
+  @media (max-width: 1023px) {
+    .go-out .right-section {
+      transform: translateX(-100vw); } }
 
 .go-out .left-section {
   transform: translateX(-50vw); }
+  @media (max-width: 1023px) {
+    .go-out .left-section {
+      transform: translateX(-100vw); } }
 
 .address-container {
   background: #efefef;
@@ -187,13 +211,18 @@ input {
   padding: 16px 32px;
   margin: 24px 0px;
   text-align: center; }
+  @media (max-width: 600px) {
+    .address-container {
+      padding: 16px; } }
   .address-container > div {
     display: inline-flex;
     text-align: left; }
-
-@media (min-width: 1300) and (max-width: 1023px) and (max-width: 767px) {
-  .address-container > div {
-    display: block; } }
+    @media (max-width: 700px) {
+      .address-container > div {
+        display: block; } }
+    @media (min-width: 1023px) and (max-width: 1300px) {
+      .address-container > div {
+        display: block; } }
   .address-container .button {
     height: 32px;
     line-height: 32px;
@@ -211,14 +240,33 @@ input {
   display: flex; }
   .address > div div:first-child {
     font-size: 10px; }
-  .address > div div:last-child {
-    font-size: 12px; }
+  @media (max-width: 700px) {
+    .address {
+      padding: 0 12px 12px; } }
+  @media (min-width: 1023px) and (max-width: 1300px) {
+    .address {
+      padding: 0 12px 12px; } }
+  @media (max-width: 600px) {
+    .address {
+      padding: 0;
+      padding-bottom: 12px; } }
 
 @media (max-width: 1023px) {
   #container.sale-page {
-    display: block; }
+    flex-direction: column; }
     #container.sale-page .left-section {
+      order: 2;
       display: block;
       width: 100%; }
     #container.sale-page .right-section {
+      order: 1;
       width: 100%; } }
+
+#construct-address {
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  color: black;
+  padding: 0;
+  height: 12px;
+  width: 296px; }

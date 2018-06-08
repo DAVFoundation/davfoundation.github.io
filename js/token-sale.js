@@ -6,6 +6,12 @@ $(document).ready(function(){
     maleCheckButton.click(function (){
         checkEmail(mailInput.val())
     })
+
+    $('#copy-to-clipboard').click(function() {
+        var copyText = document.querySelector("#construct-address");
+        copyText.select();
+        document.execCommand("copy");
+    })
 });
 
 function checkEmail(email) {
