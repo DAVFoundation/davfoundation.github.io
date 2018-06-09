@@ -14,6 +14,10 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/token-sale.css?v=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/fav/android-icon-192x192.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon.png?v=2">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/fav/favicon.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon.png?v=2">
   <meta property="og:description" content="DAV is a blockchain-based transportation platform." />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" data-cfasync="false"></script>
   <script type="text/javascript" data-cfasync="false">
@@ -58,7 +62,7 @@
               Welcome to DAV Token Sale.<br>
               Please enter your email below to get started:
           </p>
-          <form>
+          <form id="email-form">
             <input placeholder="Email address" id="email-input">
             <div class="button" id="submit-email">START</div>
             <div id="error-msg"></div>
@@ -117,7 +121,7 @@
             </div>
           </div>
           <p><b>Note: </b>Only send funds from the wallet you have whitelisted for the DAV token sale. We encourage you to set the gas limit and gas price outlined below. To prevent gas wars if you exceed the maximum amount outlined below, your transaction will be rejected.</p>
-          <a>Forgot wallet address?</a>
+          <a id="forgot-wallet-address">Forgot wallet address?</a>
           <div class="details">
             <div>
                 <div class="deatal-blok">Maximum Gas Limit: 300,000</div>
@@ -125,6 +129,13 @@
             </div>
           </div>
         </div>    
+    </div>
+
+    <div class="prompt success hide">
+      Please check your email. We've sent you the wallet address you have whitelisted with DAV.
+    </div>
+    <div class="prompt error hide">
+      Oops... something went wrong, please try again.
     </div>
 
   <script src="js/token-sale.js?v=1.0"></script>

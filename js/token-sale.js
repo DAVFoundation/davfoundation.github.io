@@ -1,9 +1,15 @@
 $(document).ready(function(){
 
     var mailInput = $('#email-input');
-    var maleCheckButton = $('#submit-email');
+    var mailCheckButton = $('#submit-email');
+    var mailCheckForm = $('#email-form');
 
-    maleCheckButton.click(function (){
+    mailCheckButton.submit(function (e){
+        e.preventdefault()
+        checkEmail(mailInput.val())
+    })
+
+    mailCheckButton.click(function (){
         checkEmail(mailInput.val())
     })
 
@@ -11,6 +17,10 @@ $(document).ready(function(){
         var copyText = document.querySelector("#construct-address");
         copyText.select();
         document.execCommand("copy");
+    })
+
+    $('#forgot-wallet-address').click(function() {
+        forgotWalletAddress(mailInput.val());
     })
 });
 
@@ -41,9 +51,9 @@ function validateEmail(email) {
 
 function kycHendler(email) {
     return function(data) {
-        var foo = 'ManualFinish'
+        // var foo = 'ManualFinish'
         var title = '';
-        switch(foo) {
+        switch(data.statusText) {
             case "ManualFinish":
                 startTokenSale();
             case "CheckRequired":
@@ -92,6 +102,13 @@ function showErrorMsg(el, msg) {
     el.show();
     el.animateCss("shake");
     el.text(msg);
+}
+
+function forgotWalletAddress() {
+    $('.prompt.success').removeClass('hide');
+    setTimeout(function () {
+        $('.prompt.success').addClass('hide');  
+    }, 5000)
 }
 
 $.fn.extend({

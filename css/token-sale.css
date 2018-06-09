@@ -270,3 +270,20 @@ input {
   padding: 0;
   height: 12px;
   width: 296px; }
+
+.prompt {
+  position: fixed;
+  padding: 24px;
+  right: 4px;
+  bottom: 4px;
+  transition: .4s}
+
+.prompt.error {
+  background: rgba(193, 66, 66, 0.5);}
+
+.prompt.success {
+  background: rgba(63, 191, 63, 0.5);}
+
+.prompt.hide {
+    display: block;
+    bottom: -128px;}

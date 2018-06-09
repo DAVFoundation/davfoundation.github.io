@@ -369,3 +369,24 @@ input {
     height: 12px;
     width: 296px;
 }
+
+.prompt {
+    position: fixed;
+    padding: 24px;
+    right: 4px;
+    bottom: 4px;
+    transition: .4s;
+
+    &.error {
+        background: rgba(193, 66, 66, 0.5);
+    }
+
+    &.success {
+        background: rgba(63, 191, 63, 0.5);
+    }
+
+    &.hide {
+        display: block;
+        bottom: -128px;
+    }
+}
