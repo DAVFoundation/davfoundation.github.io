@@ -55,7 +55,7 @@ function kycHendler(email) {
         var title = '';
         switch(data.statusText) {
             case "ManualFinish":
-                startTokenSale();
+            showHomeAddressForm();
             case "CheckRequired":
                 title = "Your KYC application is currently being processed.";
                 $(".kyc-response").text("You’ll receive an email once your application has been processed with next steps.");
@@ -94,8 +94,14 @@ function showErrorPage(title) {
 
 function startTokenSale() {
     $('.token-sale').show();
-    $('.welcome-section, .error').addClass('hide');
+    $('.welcome-section, .error, .home-address').addClass('hide');
     $('#container').removeClass('go-out').addClass('sale-page');
+}
+
+function showHomeAddressForm() {
+    $('.home-address').removeClass('hide');
+    $('.welcome-section, .error').addClass('hide');
+    $('#container').removeClass('go-out').addClass('home-address');
 }
 
 function showErrorMsg(el, msg) {
