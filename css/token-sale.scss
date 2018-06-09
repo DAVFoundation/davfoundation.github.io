@@ -98,7 +98,6 @@ input {
 
 #container {
     display: flex;
-    height: 100vh;
     width: 100vw;
 
     .left-section {
@@ -108,7 +107,7 @@ input {
         transition: 1s;
 
         @include desktop {
-            height: 100vh;
+            min-height: 100vh;
         }
 
         @include not-desktop {
@@ -136,7 +135,7 @@ input {
                 margin: 20px auto 32px;
             }
             .video-container {
-                margin: 24px 0;
+                margin: 32px 0;
             }
         }
 
@@ -157,7 +156,7 @@ input {
         transition: 1s;
 
         @include desktop {
-            height: 100vh;
+            min-height: 100vh;
         }
 
         @include not-desktop {
@@ -392,7 +391,7 @@ input {
 }
 
 .seperator {
-    margin: 64px auto;
+    margin: 40px auto;
     width: 256px;
     height: 2px;
     background: $boarderColor;
