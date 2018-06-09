@@ -390,3 +390,10 @@ input {
         bottom: -128px;
     }
 }
+
+.seperator {
+    margin: 64px auto;
+    width: 256px;
+    height: 2px;
+    background: $boarderColor;
+}
