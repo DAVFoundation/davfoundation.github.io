@@ -4,8 +4,8 @@ $(document).ready(function(){
     var mailCheckButton = $('#submit-email');
     var mailCheckForm = $('#email-form');
 
-    mailCheckButton.submit(function (e){
-        e.preventdefault()
+    mailCheckButton.submit(function (event){
+        event.preventDefault()
         checkEmail(mailInput.val())
     })
 
