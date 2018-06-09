@@ -325,7 +325,7 @@ $(document).ready(function(){
   // alert announcement
 
     $('#alert-announcement').on('closed.bs.alert', function () {
-        setCookie('alert-dav-missioncontrol', true, 365);
+        setCookie('dav-utility-token', true, 365);
        $('.telegram-bottom').removeClass("extra-space");
         return false;
     })
@@ -356,7 +356,7 @@ $(document).ready(function(){
         document.cookie = c_name + "=" + c_value;
     }
 
-    if (getCookie('alert-dav-missioncontrol') === "true") {
+    if (getCookie('dav-utility-token') === "true") {
        $('#alert-announcement').hide();
        $('.telegram-bottom').removeClass("extra-space");
     }
@@ -488,7 +488,7 @@ function handleJoinTelegram() {
     var announcementTrigger = document.querySelector('.video-home');
     var scrollAnouncement = function() {
       window.removeEventListener('scroll', scrollAnouncement);
-      //uncomment this to enable $("#alert-announcement").removeClass('hide');
+      $("#alert-announcement").removeClass('hide');
       if($('#alert-announcement').is(':visible'))
       {
         $(".telegram-bottom").addClass('extra-space');
