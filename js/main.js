@@ -49,7 +49,6 @@ $(document).ready(function(){
   updateEthRaised();
   setInterval(() => updateEthRaised(), 2000);
   
-  setDifferentCtaForAdwordsUsers();
   getVisitorCountry(setDifferentCtaForDifferentCountry, function(){$(".telegram-bottom").addClass("telegram-loaded");});
 
   // color switch for nav

@@ -207,6 +207,8 @@ input {
   background: #000 url("../img/hero.jpg") no-repeat center;
   background-size: cover;
   color: #FFF; }
+  .hero .hero-title {
+    font-size: 26px; }
   .hero.index2 .hero-inner .hero-valign h1 {
     margin: -40px 0 0;
     padding: 0; }
@@ -381,7 +383,7 @@ input {
     background: #000 url("../img/intersection.jpg") no-repeat center;
     background-size: cover; }
   .hero.hero-ico {
-    background: #000 url("../img/hero-new.jpg") no-repeat center;
+    background: #000 url("../img/hero-new.jpg") no-repeat center center;
     background-size: cover;
     overflow: hidden; }
     .hero.hero-ico .hero-inner {
@@ -3032,8 +3034,6 @@ footer {
     margin: 0 0 60px; }
   footer .about-legal .social a {
     min-width: 49%; }
-  .hero.hero-ico {
-    background-position: left 15% top; }
   .hero.hero-ico .hero-inner .hero-valign .ico-start-box {
     margin-bottom: 30px;
     padding: 20px 0; }
@@ -3208,7 +3208,8 @@ footer {
     margin-right: 0px; }
   .prototypes-section {
     padding-bottom: 50px; }
-    .prototypes-section .container {
+    .prototypes-section hero-title
+.container {
       height: auto;
       background-position: left 55px top 65%; }
     .prototypes-section h2 {
@@ -3379,8 +3380,6 @@ footer {
     margin-bottom: 50px; }
   .telegram-bottom.extra-space {
     bottom: 140px; }
-  .hero.hero-ico {
-    background-position: left 24% top; }
   .hero.hero-ico .hero-inner .hero-valign h1 {
     font-size: 28px;
     padding-top: 25px;

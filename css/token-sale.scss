@@ -483,6 +483,24 @@ input {
     }
 }
 
+.contact-us {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+
+    @include mobile {
+        position: static;
+        margin-top: 40px;
+    }
+
+    a {
+        font-size: 14px !important;
+    }
+}
+
 .seperator {
     margin: 40px auto;
     width: 256px;
