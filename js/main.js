@@ -13,7 +13,7 @@ function updateEthWhitelisted() {
     url: KYC_MEMBERS_URL,
     type: 'GET',
     success: function(result) {
-      let ethWhitelisted = result;
+      let ethWhitelisted = result.whitelisted;
       increaseWithAnimation($("#eth-whitelisted"), ethWhitelisted);
     }
   });
