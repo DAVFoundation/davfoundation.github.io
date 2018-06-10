@@ -3221,8 +3221,7 @@ footer {
     margin-right: 0px; }
   .prototypes-section {
     padding-bottom: 50px; }
-    .prototypes-section hero-title
-.container {
+    .prototypes-section .container {
       height: auto;
       background-position: left 55px top 65%; }
     .prototypes-section h2 {
