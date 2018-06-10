@@ -248,7 +248,9 @@ input {
         line-height: 25px; }
       .hero .hero-inner .hero-valign .countdown {
         width: 352px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        justify-items: center;
+        display: grid; }
         @media (max-width: 600px) {
           .hero .hero-inner .hero-valign .countdown {
             width: 290px; } }
