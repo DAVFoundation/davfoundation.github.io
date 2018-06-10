@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  line-height: 1.4em; }
+
+.hide {
+  display: none; }
+
+.dav-logo {
+  background: url("../img/logo.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.title {
+  color: #ff6a46;
+  font-size: 32px;
+  font-weight: bold; }
+
+.disabled {
+  position: relative; }
+  .disabled::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: -2px;
+    bottom: -2px;
+    background: white;
+    opacity: .7; }
+
+.button {
+  background: #ff6a46;
+  color: white;
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid #ff6a46;
+  font-weight: bold;
+  cursor: pointer; }
+
+.link {
+  color: #ff6a46; }
+
+a {
+  color: #ff6a46;
+  text-decoration: none;
+  cursor: pointer; }
+
+iframe {
+  max-width: calc(100% - 64px); }
+
+input {
+  font-size: 20px;
+  line-height: 38px;
+  height: 38px;
+  border: 1px solid #c5cbd7;
+  border-radius: 4px;
+  padding: 0 4px;
+  color: #252627; }
+  input.invalid {
+    border-color: red; }
+
+.deatal-blok {
+  background: white;
+  border: 1px solid #c5cbd7;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 4px;
+  padding: 12px;
+  width: 256px;
+  text-align: center; }
+
+#error-msg {
+  width: 100%;
+  display: none;
+  color: red;
+  position: absolute;
+  bottom: -32px; }
+
+#container {
+  display: flex;
+  width: 100vw; }
+  #container .left-section {
+    background-color: #efefef;
+    width: 50%;
+    position: relative;
+    transition: 1s; }
+    @media (min-width: 1024px) {
+      #container .left-section {
+        min-height: calc(100vh - 92px); } }
+    @media (max-width: 1023px) {
+      #container .left-section {
+        display: none; } }
+    #container .left-section .home-address .dav-logo {
+      top: 40%;
+      background-image: url("../img/Tok_Sale_logo.png"); }
+    #container .left-section .home-address .title {
+      position: absolute;
+      text-align: center;
+      transform: translateY(-50%);
+      width: 100%;
+      top: calc(40% + 64px); }
+    #container .left-section .token-sale {
+      display: none;
+      text-align: center;
+      padding: 52px 32px; }
+      @media (max-width: 600px) {
+        #container .left-section .token-sale {
+          padding: 32px 12px; } }
+      #container .left-section .token-sale .video-head {
+        font-size: 20px; }
+      #container .left-section .token-sale a {
+        text-decoration: underline;
+        font-size: 20px; }
+      #container .left-section .token-sale .details {
+        width: 292px;
+        margin: 20px auto 32px; }
+      #container .left-section .token-sale .video-container {
+        margin: 32px 0; }
+    #container .left-section .dav-logo {
+      width: 50%;
+      height: 12vw;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  #container .right-section {
+    background-color: white;
+    width: 50%;
+    position: relative;
+    transition: 1s;
+    padding: 52px 40px 40px 40px; }
+    @media (max-width: 600px) {
+      #container .right-section {
+        padding: 32px 12px; } }
+    @media (min-width: 1024px) {
+      #container .right-section {
+        min-height: calc(100vh - 92px); } }
+    @media (max-width: 1023px) {
+      #container .right-section {
+        width: 100%; } }
+    #container .right-section .welcome-section {
+      width: 75%;
+      min-width: 300px;
+      margin: auto;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 45%; }
+      @media (max-width: 1023px) {
+        #container .right-section .welcome-section {
+          position: static;
+          transform: translate(0, 0);
+          margin-top: 16px; } }
+      #container .right-section .welcome-section p {
+        font-size: 20px; }
+      #container .right-section .welcome-section form {
+        display: flex;
+        position: relative; }
+        #container .right-section .welcome-section form input {
+          width: 66%;
+          margin: 0 4px 0 0; }
+        #container .right-section .welcome-section form .button {
+          width: 33%;
+          margin: 0 0 0 4px; }
+    #container .right-section .dav-logo {
+      display: none;
+      width: 64px;
+      height: 32px;
+      position: absolute;
+      right: 8px;
+      top: 8px; }
+      @media (max-width: 1023px) {
+        #container .right-section .dav-logo {
+          display: block; } }
+    #container .right-section .error {
+      padding: 32px;
+      transform: translateY(-50%);
+      top: 45%;
+      position: absolute; }
+      @media (max-width: 1023px) {
+        #container .right-section .error {
+          position: static;
+          transform: translate(0); } }
+      #container .right-section .error .title {
+        font-size: 24px; }
+      #container .right-section .error .button {
+        display: block;
+        margin: auto;
+        margin-top: 32px;
+        width: 240px;
+        padding: 2px; }
+        #container .right-section .error .button.hide {
+          display: none; }
+    #container .right-section .home-address .title {
+      font-size: 24px; }
+    #container .right-section .home-address button {
+      display: block;
+      margin: 24px auto 0;
+      padding: 1px 16px; }
+    #container .right-section .home-address b {
+      text-transform: uppercase; }
+    #container .right-section .home-address p {
+      margin: 20px 0 0px 0; }
+    #container .right-section .home-address input {
+      font-size: 16px; }
+    #container .right-section .home-address .secondary-title {
+      margin: 24px 0 4px 0; }
+    #container .right-section .home-address .input-field {
+      min-width: 286px;
+      display: block;
+      margin-bottom: 12px; }
+    #container .right-section .home-address #another-person {
+      margin-top: 12px; }
+    #container .right-section .home-address .radio-button {
+      display: flex; }
+      #container .right-section .home-address .radio-button p {
+        margin: 9px; }
+    #container .right-section .token-sale {
+      display: none; }
+      #container .right-section .token-sale a {
+        text-decoration: underline;
+        font-size: 16px;
+        text-align: center;
+        margin: 32px;
+        margin-top: 20px;
+        display: block; }
+      #container .right-section .token-sale .title {
+        font-size: 24px; }
+      #container .right-section .token-sale .details {
+        text-align: center;
+        margin-bottom: 32px; }
+        #container .right-section .token-sale .details > div {
+          display: inline-flex; }
+          @media (max-width: 700px) {
+            #container .right-section .token-sale .details > div {
+              display: block;
+              margin: auto;
+              width: 290px; } }
+          @media (min-width: 1023px) and (max-width: 1300px) {
+            #container .right-section .token-sale .details > div {
+              display: block;
+              margin: auto;
+              width: 290px; } }
+        #container .right-section .token-sale .details a {
+          margin: 20px; }
+
+.go-out .right-section {
+  transform: translateX(50vw); }
+  @media (max-width: 1023px) {
+    .go-out .right-section {
+      transform: translateX(-100vw); } }
+
+.go-out .left-section {
+  transform: translateX(-50vw); }
+  @media (max-width: 1023px) {
+    .go-out .left-section {
+      transform: translateX(-100vw); } }
+
+.address-container {
+  background: #efefef;
+  line-height: 1em;
+  padding: 16px 32px;
+  margin: 24px 0px;
+  text-align: center; }
+  @media (max-width: 600px) {
+    .address-container {
+      padding: 16px; } }
+  .address-container > div {
+    display: inline-flex;
+    text-align: left; }
+    @media (max-width: 700px) {
+      .address-container > div {
+        display: block; } }
+    @media (min-width: 1023px) and (max-width: 1300px) {
+      .address-container > div {
+        display: block; } }
+  .address-container .button {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 24px;
+    font-size: 12px;
+    margin-left: 12px;
+    max-width: calc(100% - 72px); }
+
+.eth-icon {
+  background: url("../img/logo_ETH.svg");
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 28px; }
+
+.address {
+  display: flex; }
+  .address > div div:first-child {
+    font-size: 10px; }
+  @media (max-width: 700px) {
+    .address {
+      padding: 0 12px 12px; } }
+  @media (min-width: 1023px) and (max-width: 1300px) {
+    .address {
+      padding: 0 12px 12px; } }
+  @media (max-width: 600px) {
+    .address {
+      padding: 0;
+      padding-bottom: 12px; } }
+
+@media (max-width: 1023px) {
+  #container.sale-page {
+    flex-direction: column; }
+    #container.sale-page .left-section {
+      order: 2;
+      display: block;
+      width: 100%; }
+    #container.sale-page .right-section {
+      order: 1;
+      width: 100%; } }
+
+#contracts-address {
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  color: black;
+  padding: 0;
+  height: 12px;
+  width: 296px; }
+
+.prompt {
+  position: fixed;
+  padding: 24px;
+  right: 4px;
+  bottom: 4px;
+  transition: .4s; }
+  .prompt.error {
+    background: rgba(193, 66, 66, 0.5); }
+  .prompt.success {
+    background: rgba(63, 191, 63, 0.5); }
+  .prompt.hide {
+    display: block;
+    bottom: -128px; }
+
+.contact-us {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 32px;
+  left: 0; }
+  @media (max-width: 600px) {
+    .contact-us {
+      position: static;
+      margin-top: 40px; } }
+  .contact-us a {
+    font-size: 14px !important; }
+
+.seperator {
+  margin: 40px auto;
+  width: 256px;
+  height: 2px;
+  background: #c5cbd7; }
