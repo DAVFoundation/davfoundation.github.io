@@ -119,7 +119,8 @@ function kycHendler(email) {
             case "CheckRequired":
                 title = "Your KYC application is currently being processed.";
                 $(".kyc-response").text("You’ll receive an email once your application has been processed with next steps.");
-                $(".kyc-close,.kyc-telegram3").removeClass('hide');
+                $(".kyc-button, .kyc-close,.kyc-telegram3").removeClass('hide');
+                $(".kyc-button").attr("href","/").text('Back To Homepage');
                 showErrorPage(title);
                 break;
             case "Rejected":
@@ -133,7 +134,8 @@ function kycHendler(email) {
             case "Expired":
                 title = "Your KYC application has expired.";
                 $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
-                $(".kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
+                $(".kyc-button, .kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
+                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
                 showErrorPage(title);
             break;
             case "Started":

@@ -238,6 +238,8 @@ input {
               display: block;
               margin: auto;
               width: 290px; } }
+        #container .right-section .token-sale .details a {
+          margin: 20px; }
 
 .go-out .right-section {
   transform: translateX(50vw); }
