@@ -17,15 +17,7 @@ function numberWithCommas(number) {
   return parts.join(".");
 }
 
-var $ethRaised = $("#eth-raised");
-function updateEthRaised() {
-  window.contractInstance.methods.weiRaised().call(function(error, results) {
-    if(!error) {
-      weiRaised = results;
-      var ethRaisedValue = Number(web3.utils.fromWei(weiRaised, 'ether'));
-      increaseWithAnimation(ethRaisedValue);
-
-      function updateEthWhitelisted() {
+function updateEthWhitelisted() {
   $.ajax({
     url: KYC_MEMBERS_URL,
     type: 'GET',
