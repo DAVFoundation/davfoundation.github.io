@@ -1,6 +1,5 @@
 var GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8'
 
-<<<<<<< HEAD
 var ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
 //const ETH_NODE_URL = 'https://mainnet.infura.io/wUiZtmeZ1KwjFrcC8zRO';
 
@@ -10,9 +9,7 @@ var web3Provider = new Web3
 var web3 = new Web3(web3Provider);
 window.contractInstance = new web3.eth.Contract(window.contractArtifact.abi, window.contractArtifact.address);
 var weiRaised = null;
-=======
 var KYC_MEMBERS_URL = 'https://nessie.dav.network/members';
->>>>>>> d30a798b0bbc638294bd695f30fb1619a3b62c6b
 
 function numberWithCommas(number) {
   var parts = number.toString().split(".");
@@ -20,7 +17,6 @@ function numberWithCommas(number) {
   return parts.join(".");
 }
 
-<<<<<<< HEAD
 var $ethRaised = $("#eth-raised");
 function updateEthRaised() {
   window.contractInstance.methods.weiRaised().call(function(error, results) {
@@ -28,28 +24,22 @@ function updateEthRaised() {
       weiRaised = results;
       var ethRaisedValue = Number(web3.utils.fromWei(weiRaised, 'ether'));
       increaseWithAnimation(ethRaisedValue);
-=======
-function updateEthWhitelisted() {
+
+      function updateEthWhitelisted() {
   $.ajax({
     url: KYC_MEMBERS_URL,
     type: 'GET',
     success: function(result) {
       let ethWhitelisted = result;
       increaseWithAnimation($("#eth-whitelisted"), ethWhitelisted);
->>>>>>> d30a798b0bbc638294bd695f30fb1619a3b62c6b
     }
   });
 }
 
 var ANIMATION_DURATION = 1000;
 var PULSE_DURATION = 40;
-<<<<<<< HEAD
-function increaseWithAnimation(newValue) {
-  var currentValue = Number($ethRaised.text().replace(/,/g , ''));
-=======
 function increaseWithAnimation(ethCountElement,newValue) {
   var currentValue = Number(ethCountElement.text().replace(/,/g , ''));
->>>>>>> d30a798b0bbc638294bd695f30fb1619a3b62c6b
   var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
 
   var interval = setInterval(increaseInPulse, PULSE_DURATION);
@@ -60,25 +50,15 @@ function increaseWithAnimation(ethCountElement,newValue) {
       currentValue=newValue;
       clearInterval(interval);
     }
-<<<<<<< HEAD
-    $ethRaised.text(numberWithCommas(Math.floor(currentValue)));
-=======
     ethCountElement.text(numberWithCommas(Math.floor(currentValue)));
->>>>>>> d30a798b0bbc638294bd695f30fb1619a3b62c6b
   } 
 }
 
 $(document).ready(function(){
-<<<<<<< HEAD
-  updateEthRaised();
-  setInterval(() => updateEthRaised(), 2000);
-  
-=======
   updateEthWhitelisted();
   setInterval(() => updateEthWhitelisted(), 10000);
   
   setDifferentCtaForAdwordsUsers();
->>>>>>> d30a798b0bbc638294bd695f30fb1619a3b62c6b
   getVisitorCountry(setDifferentCtaForDifferentCountry, function(){$(".telegram-bottom").addClass("telegram-loaded");});
 
   // color switch for nav
