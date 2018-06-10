@@ -249,14 +249,13 @@ input {
 .telegram-bottom.extra-space{
 	bottom: 60px;
 }
+#hero-register-button {
+	text-decoration: none;
+}
 .hero{
 	background: #000 url('../img/hero.jpg') no-repeat center;
 	background-size: cover;
 	color: #FFF;
-
-	.hero-title {
-		font-size: 26px;
-	}
 
 	&.index2{
 		.hero-inner{
