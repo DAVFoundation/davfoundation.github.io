@@ -42,7 +42,6 @@ $(document).ready(function(){
   setInterval(() => updateEthWhitelisted(), 10000);
   
   setDifferentCtaForAdwordsUsers();
-  getVisitorCountry(setDifferentCtaForDifferentCountry, function(){$(".telegram-bottom").addClass("telegram-loaded");});
 
   // color switch for nav
    var scroll_start = 0;
@@ -665,18 +664,6 @@ function setDifferentCtaForDifferentCountry(country) {
       changeFloatingButtonIcon('korean-flag');
       break;
   }
-}
-
-function getVisitorCountry(cb1, cb2) {
-  $.post('https://www.googleapis.com/geolocation/v1/geolocate?key=' + GOOGLE_GEOLOCATION_API_KEY, function(data) {
-    var latlng = {lat: data.location.lat, lng: data.location.lng};
-    var geocoder = new google.maps.Geocoder;
-    geocoder.geocode({location: latlng}, function(data) {
-      var country = data.filter(function(place){return place.types.indexOf('country') > -1})[0].formatted_address;
-      cb1(country);
-      cb2(country);
-    })
-  }).fail(cb2);
 }
 
 function isAdwordsRedirect() {
