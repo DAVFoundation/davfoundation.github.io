@@ -381,48 +381,53 @@ $(document).ready(function(){
                 $(".kyc-loader").addClass('hide');
                 $("#kyc-form").hide();
                 // $(".kyc-response").text(data.suggestionText);
-                var title = '';
+                var gaTitle, title = '';
                 switch(data.statusText) {
                     case "AutoFinish":
                     case "ManualFinish":
                         title = "Congratulations!";
+                        gaTitle = 'Congratulations';
                         $(".kyc-response").text("You’re now officially in whitelist A! We’ll share specific instructions on how to participate as we get closer to our token sale.");
                         $(".kyc-close,.kyc-telegram").removeClass('hide');
                         break;
                     case "Failed":
                     case "CheckRequired":
                         title = "Your KYC application is currently being processed.";
+                        gaTitle = 'Your KYC application is currently being processed.';
                         $(".kyc-response").text("You’ll receive an email once your application has been processed with next steps.");
                         $(".kyc-close,.kyc-telegram3").removeClass('hide');
                         break;
                     case "Rejected":
                         title = "Your KYC application has not been accepted.";
+                        gaTitle = 'Your KYC application has not been accepted.';
                         $(".kyc-response").html("If you believe your KYC has been rejected by mistake we ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully complete your KYC by doing the following:<br><br><b>" + data.suggestionText + "</b>");
                         $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
                         $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
                         break;
                     case "Expired":
                         title = "Your KYC application has expired.";
+                        gaTitle = 'Your KYC application has expired.';
                         $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
                         $(".kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
                         break;
                     case "Started":
-                        title = "Your KYC application failed to process."
-                        $(".kyc-response").text("Our systems tell us the email address you used is not valid. We ask that you please resubmit your KYC by clicking the button below and providing a valid email address.");
-                        $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                        $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
+                        gaTitle = 'email not exist';
+                        $("#kyc-form").show();
+                        $(".kyc-error").show();
+                        $(".kyc-error").animateCss("shake");
+                        $(".kyc-error").text("This email does not exist");
                         break;
                     default:
                       break;
                 }
-                $(".kyc-title").text(title);
-                ga('send', 'event', 'KYC', 'status results', data.statusText, title);
+                if (title) $(".kyc-title").text(title);
+                ga('send', 'event', 'KYC', 'status results', data.statusText, gaTitle);
               }
           });
         }else{
           $(".kyc-error").show();
           $(".kyc-error").animateCss("shake");
-          $(".kyc-error").text("Please enter your email address.");
+          $(".kyc-error").text("Please enter a valid email address");
         }
 
     });
