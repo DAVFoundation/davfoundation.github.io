@@ -16,6 +16,18 @@ body {
   font-size: 32px;
   font-weight: bold; }
 
+.disabled {
+  position: relative; }
+  .disabled::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: -2px;
+    bottom: -2px;
+    background: white;
+    opacity: .7; }
+
 .button {
   background: #ff6a46;
   color: white;
@@ -46,6 +58,8 @@ input {
   border-radius: 4px;
   padding: 0 4px;
   color: #252627; }
+  input.invalid {
+    border-color: red; }
 
 .deatal-blok {
   background: white;
@@ -74,10 +88,19 @@ input {
     transition: 1s; }
     @media (min-width: 1024px) {
       #container .left-section {
-        min-height: 100vh; } }
+        min-height: calc(100vh - 92px); } }
     @media (max-width: 1023px) {
       #container .left-section {
         display: none; } }
+    #container .left-section .home-address .dav-logo {
+      top: 40%;
+      background-image: url("../img/Tok_Sale_logo.png"); }
+    #container .left-section .home-address .title {
+      position: absolute;
+      text-align: center;
+      transform: translateY(-50%);
+      width: 100%;
+      top: calc(40% + 64px); }
     #container .left-section .token-sale {
       display: none;
       text-align: center;
@@ -106,10 +129,14 @@ input {
     background-color: white;
     width: 50%;
     position: relative;
-    transition: 1s; }
+    transition: 1s;
+    padding: 52px 40px 40px 40px; }
+    @media (max-width: 600px) {
+      #container .right-section {
+        padding: 32px 12px; } }
     @media (min-width: 1024px) {
       #container .right-section {
-        min-height: 100vh; } }
+        min-height: calc(100vh - 92px); } }
     @media (max-width: 1023px) {
       #container .right-section {
         width: 100%; } }
@@ -161,12 +188,32 @@ input {
         padding: 2px; }
         #container .right-section .error .button.hide {
           display: none; }
+    #container .right-section .home-address .title {
+      font-size: 24px; }
+    #container .right-section .home-address button {
+      display: block;
+      margin: 24px auto 0;
+      padding: 1px 16px; }
+    #container .right-section .home-address b {
+      text-transform: uppercase; }
+    #container .right-section .home-address p {
+      margin: 20px 0 0px 0; }
+    #container .right-section .home-address input {
+      font-size: 16px; }
+    #container .right-section .home-address .secondary-title {
+      margin: 24px 0 4px 0; }
+    #container .right-section .home-address .input-field {
+      min-width: 286px;
+      display: block;
+      margin-bottom: 12px; }
+    #container .right-section .home-address #another-person {
+      margin-top: 12px; }
+    #container .right-section .home-address .radio-button {
+      display: flex; }
+      #container .right-section .home-address .radio-button p {
+        margin: 9px; }
     #container .right-section .token-sale {
-      display: none;
-      padding: 52px 40px 40px 40px; }
-      @media (max-width: 600px) {
-        #container .right-section .token-sale {
-          padding: 32px 12px; } }
+      display: none; }
       #container .right-section .token-sale a {
         text-decoration: underline;
         font-size: 16px;
@@ -261,7 +308,7 @@ input {
       order: 1;
       width: 100%; } }
 
-#construct-address {
+#contracts-address {
   font-size: 12px;
   background: transparent;
   border: none;
@@ -275,20 +322,17 @@ input {
   padding: 24px;
   right: 4px;
   bottom: 4px;
-  transition: .4s}
-
-.prompt.error {
-  background: rgba(193, 66, 66, 0.5);}
-
-.prompt.success {
-  background: rgba(63, 191, 63, 0.5);}
-
-.prompt.hide {
+  transition: .4s; }
+  .prompt.error {
+    background: rgba(193, 66, 66, 0.5); }
+  .prompt.success {
+    background: rgba(63, 191, 63, 0.5); }
+  .prompt.hide {
     display: block;
-    bottom: -128px;}
+    bottom: -128px; }
 
 .seperator {
   margin: 40px auto;
   width: 256px;
   height: 2px;
-  background-color: #c5cbd7}
+  background: #c5cbd7; }

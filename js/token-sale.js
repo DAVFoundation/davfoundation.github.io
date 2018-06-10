@@ -1,8 +1,12 @@
+var moreBeneficial = false;
+
 $(document).ready(function(){
 
     var mailInput = $('#email-input');
     var mailCheckButton = $('#submit-email');
     var mailCheckForm = $('#email-form');
+    var ounerDetailsForm = $('#ouner-details-form');
+    var anotherPersonDetails = $('#another-person');
 
     mailCheckForm.submit(function (event){
         event.preventDefault()
@@ -13,8 +17,43 @@ $(document).ready(function(){
         checkEmail(mailInput.val())
     })
 
+    ounerDetailsForm.find('input[type="radio"]').click(function(){
+        if (this.value) {
+            moreBeneficial = false;
+            anotherPersonDetails.addClass('hide');
+        } else {
+            moreBeneficial = true;
+            anotherPersonDetails.removeClass('hide');
+        }
+    });
+
+    ounerDetailsForm.submit(function () {
+        event.preventDefault();
+        if (validateOunerDetailsForm(ounerDetailsForm, moreBeneficial)) {
+            var addressInfo = ounerDetailsForm.serialize();
+            $('#container').addClass('go-out');
+            setTimeout(startTokenSale, 1000);
+        }
+    })
+
+    ounerDetailsForm.find('[type="checkbox"]').change(function () {
+        var isUserEgread = true;
+        ounerDetailsForm.find('[type="checkbox"]').each(function(index, checkbox) {
+            if (!$(checkbox).is(':checked')) isUserEgread = false;
+        });
+        if (isUserEgread) {
+            ounerDetailsForm.find('[type="submit"]').removeClass('disabled');
+        } else {
+            ounerDetailsForm.find('[type="submit"]').addClass('disabled');
+        }
+    });
+
+    $('input').focus(function() {
+        $(this).removeClass('invalid');
+    })
+
     $('#copy-to-clipboard').click(function() {
-        var copyText = document.querySelector("#construct-address");
+        var copyText = document.querySelector("#contracts-address");
         copyText.select();
         document.execCommand("copy");
     })
@@ -42,6 +81,27 @@ function kycCheck(email) {
         dataType: 'json',
         success: kycHendler(email)
     });
+}
+
+function validateOunerDetailsForm (form) {
+    var valid = true;
+    var ownerAddress = form.find('[name="ownerAddress"]');
+    if (!ownerAddress.val()) {
+        ownerAddress.addClass('invalid');
+        valid = false;
+    }
+    if (moreBeneficial) {
+        var moreInputs = form.find('#another-person').find('input');
+        moreInputs.each(function(index, element) {
+            input = $(element);
+            if (!input.val()) {
+                input.addClass('invalid');
+                valid = false;
+            }
+        })
+    }
+
+    return valid;
 }
 
 function validateEmail(email) {

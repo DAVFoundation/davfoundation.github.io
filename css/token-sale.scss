@@ -41,6 +41,20 @@ body {
     font-weight: bold;
 }
 
+.disabled {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        right: -2px;
+        top: -2px;
+        bottom: -2px;
+        background: white;
+        opacity: .7;
+    }
+}
+
 .button {
     background: $orange;
     color: white;
@@ -75,6 +89,10 @@ input {
     border-radius: $boarserRadius;
     padding: 0 4px;
     color: $darkGrey;
+
+    &.invalid {
+        border-color: red;
+    }
 }
 
 .deatal-blok {
@@ -107,11 +125,27 @@ input {
         transition: 1s;
 
         @include desktop {
-            min-height: 100vh;
+            min-height: calc(100vh - 92px);
         }
 
         @include not-desktop {
             display: none;
+        }
+
+        .home-address {
+
+            .dav-logo {
+                top: 40%;
+                background-image: url('../img/Tok_Sale_logo.png');
+            }
+
+            .title {
+                position: absolute;
+                text-align: center;
+                transform: translateY(-50%);
+                width: 100%;
+                top: calc(40% + 64px);
+            }
         }
 
         .token-sale {
@@ -155,8 +189,14 @@ input {
         position: relative;
         transition: 1s;
 
+        padding: 52px 40px 40px 40px;
+
+        @include mobile {
+            padding: 32px 12px;
+        }
+
         @include desktop {
-            min-height: 100vh;
+            min-height: calc(100vh - 92px);
         }
 
         @include not-desktop {
@@ -232,13 +272,55 @@ input {
             }
         }
 
+        .home-address {
+
+            .title {
+                font-size: $fontSize2;
+            }
+
+            button {
+                display: block;
+                margin: 24px auto 0;
+                padding: 1px 16px;
+            }
+
+            b {
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 20px 0 0px 0;
+            }
+
+            input {
+                font-size: $fontSize4;
+            }
+
+            .secondary-title {
+                margin: 24px 0 4px 0;
+            }
+
+            .input-field {
+                min-width: 286px;
+                display: block;
+                margin-bottom: 12px;
+            }
+
+            #another-person {
+                margin-top: 12px;
+            }
+
+            .radio-button {
+                display: flex;
+
+                p {
+                    margin: 9px;
+                }
+            }
+        }
+
         .token-sale {
             display: none;
-            padding: 52px 40px 40px 40px;
-
-            @include mobile {
-                padding: 32px 12px;
-            }
 
             a {
                 text-decoration: underline;
@@ -359,7 +441,7 @@ input {
     }
 }
 
-#construct-address {
+#contracts-address {
     font-size: 12px;
     background: transparent;
     border: none;

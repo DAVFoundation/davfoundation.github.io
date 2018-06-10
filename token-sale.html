@@ -37,14 +37,14 @@
     <div class="left-section">
         <div class="welcome-section">
             <div class="dav-logo"></div>
-            <div class="title">DAV Token Sale</div>
         </div>
         <div class="home-address hide">
-            <div class="dav-logo"></div>
+            <div class="dav-logo">
+            </div>
         </div>
         <div class="token-sale">
           <div class="video-head">
-              Watch the token sale instruction video:
+              Watch the token sale contribution tutorial
           </div>
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MJrYxRo0UG8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -108,24 +108,38 @@
         </div>
 
         <div class="home-address hide">
-          <div class="title">Hi #NAME</div>
-          <p></p>
-          <p>You are required to fill in the following form before you can purchase DAV tokens:</p>
-          <form>
-              <p><b></b></p>
-              <input>
-              <p><b>The Purchaser of DAV Tokens hereby declares that</b></p>
-              <input type="radio">
-              <input type="radio">
-              <div>
-                  <input>
-                  <input>
-                  <input>
-                  <input>
+          <div class="title">DAV Token Owner Details</div>
+          <p>Thanks for taking part in the DAV Token Sale!</p>
+          <p>Please fill in the below required information to purchase DAV tokens:</p>
+          <form id="ouner-details-form">
+              <p class="secondary-title"><b>Full home address</b></p>
+              <input class="input-field" name="ownerAddress" placeholder="Home address (actual address of domicile)">
+              <p class="secondary-title"><b>The Purchaser of DAV Tokens hereby declares that</b></p>
+              <div class="radio-button">
+                  <input type="radio" name="soleBeneficial" value="true" checked="checked">
+                  <p>he/she is the sole beneficial owner of the purchased DAV Tokens.</p>    
               </div>
-              <input type="checkbox">
-              <input type="checkbox">
-              <button class="button" type="submit">PURCHASE DAV TOKENS</button>
+              <div class="radio-button">
+                  <input type="radio" name="soleBeneficial" value="">
+                  <p>the person(s) listed below is/are the beneficial owner(s) of the purchased DAV Tokens:</p>    
+              </div>
+              <div id="another-person" class="hide">
+                  <input class="input-field" name="otherSurnames" placeholder="Suename(s)">
+                  <input class="input-field" name="otherFirstnames" placeholder="First name(s)">
+                  <input class="input-field" name="otherBirthdates" placeholder="Date(S) of birth">
+                  <input class="input-field" name="otherNationalities" placeholder="Nationality">
+                  <input class="input-field" name="otherFirstnames" placeholder="Home address (actual address of domicile)">
+              </div>
+              <p class="secondary-title"><b>Please Confirm The Below:</b></p>
+              <div class="radio-button">
+                <input type="checkbox" name="undertakesInformChanges">
+                <p>The Purchaser of DAV Tokens hereby undertakes to inform automatically DAV of any changes to the information contained herein.</p>
+              </div>
+              <div class="radio-button">
+                <input type="checkbox" name="acknowledgeCriminalOffence">
+                <p>The Purchaser of DAV acknowledges that it is a criminal offence to deliberately provide false information on this form (article 251 of the Swiss Criminal Code, document forgery).</p>
+              </div>
+              <button class="button disabled" type="submit">PURCHASE DAV TOKENS</button>
           </form>
         </div>
 
@@ -139,13 +153,13 @@
                   <div class="eth-icon"></div>
                   <div>
                       <div>ADDRESS</div>
-                      <div><input id="construct-address" value="0xg41i6v4e72m7e54y316o7u18r43e12m51o6n2y18"></div>    
+                      <div><input id="contracts-address" value="0xg41i6v4e72m7e54y316o7u18r43e12m51o6n2y18"></div>    
                   </div>
                 </div>
                 <div class="button" readonly id="copy-to-clipboard">COPY TO CLIPBOARD</div>    
             </div>
           </div>
-          <p><b>Note: </b>Only send funds from the wallet you have whitelisted for the DAV token sale. We encourage you to set the gas limit and gas price outlined below. To prevent gas wars if you exceed the maximum amount outlined below, your transaction will be rejected.</p>
+          <p><b>Note: </b>Only send funds from the wallet you have whitelisted for the DAV token sale. We encourage you to set the gas limit and gas price suggested by your wallet. To prevent gas wars if you exceed the maximum amount outlined below, your transaction will be rejected.</p>
           <a id="forgot-wallet-address">Forgot wallet address?</a>
           <div class="details">
             <div>
