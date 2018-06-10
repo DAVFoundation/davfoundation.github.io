@@ -212,6 +212,12 @@ input {
             left: 50%;
             top: 45%;
 
+            @include not-desktop {
+                position: static;
+                transform: translate(0, 0);
+                margin-top: 16px;
+            }
+
             p {
                 font-size: $fontSize3;
             }
@@ -400,6 +406,7 @@ input {
         padding: 0 24px;
         font-size: 12px;
         margin-left: 12px;
+        max-width: calc(100% - 72px);
     }
 }
 

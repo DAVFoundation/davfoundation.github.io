@@ -148,6 +148,11 @@ input {
       transform: translate(-50%, -50%);
       left: 50%;
       top: 45%; }
+      @media (max-width: 1023px) {
+        #container .right-section .welcome-section {
+          position: static;
+          transform: translate(0, 0);
+          margin-top: 16px; } }
       #container .right-section .welcome-section p {
         font-size: 20px; }
       #container .right-section .welcome-section form {
@@ -276,7 +281,8 @@ input {
     line-height: 32px;
     padding: 0 24px;
     font-size: 12px;
-    margin-left: 12px; }
+    margin-left: 12px;
+    max-width: calc(100% - 72px); }
 
 .eth-icon {
   background: url("../img/logo_ETH.svg");
