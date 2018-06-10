@@ -308,9 +308,7 @@ input {
 		.countdown{
 			width: 352px;
 			margin: 0 auto;
-			justify-items: center;
-			display: grid;
-	  
+
 			@include mobile() {
 				width: 290px;
 			}
