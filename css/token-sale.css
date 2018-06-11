@@ -375,6 +375,7 @@ input {
   color: black;
   padding: 0;
   height: 12px;
+  line-height: 12px;
   width: 310px;
   text-align: center; }
   #contracts-address .button {
