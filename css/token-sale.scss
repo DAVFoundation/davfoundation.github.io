@@ -334,6 +334,11 @@ input {
 
             label {
                 display: flex;
+
+                input {
+                    height: initial;
+                    margin-top: 14px;
+                }
             }
 
             button {

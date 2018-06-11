@@ -230,6 +230,9 @@ input {
       text-align: center; }
     #container .right-section .home-address label {
       display: flex; }
+      #container .right-section .home-address label input {
+        height: initial;
+        margin-top: 14px; }
     #container .right-section .home-address button {
       display: block;
       margin: 24px auto 0;
