@@ -86,7 +86,7 @@ iframe {
 }
 
 input {
-    font-size: $fontSize3;
+    font-size: $fontSize4;
     line-height: 38px;
     height: 38px;
     border: 1px solid $boarderColor;
@@ -234,7 +234,7 @@ input {
             top: 45%;
 
             p {
-                font-size: $fontSize3;
+                font-size: 18px;
                 text-align: center;
             }
 
@@ -330,6 +330,10 @@ input {
             .title {
                 font-size: $fontSize3;
                 text-align: center;
+
+                @include mobile {
+                    padding: 16px 0;
+                }
             }
 
             label {
@@ -337,7 +341,10 @@ input {
 
                 input {
                     height: initial;
-                    margin-top: 14px;
+                    margin-top: 12px;
+                    @include mobile {
+                        transform: scale(1.5);
+                    }
                 }
             }
 
@@ -369,6 +376,10 @@ input {
 
             .secondary-title {
                 margin: 24px 0 4px 0;
+
+                @include mobile {
+                    padding: 4px 0;
+                }
             }
 
             .input-field {
@@ -404,6 +415,12 @@ input {
 
             .title {
                 font-size: $fontSize2;
+                text-align: center;
+                padding-bottom: 12px;
+
+                @include mobile {
+                    padding-top: 12px;
+                }
             }
 
             .details {
@@ -497,6 +514,10 @@ input {
     >div {
         div:first-child {
             font-size: 10px;
+
+            @include mobile {
+                width: 12px;
+            }
         }
     }
     @include breaking-point {
@@ -545,6 +566,12 @@ input {
     line-height: 12px;
     width: 310px;
     text-align: center;
+
+
+    @include mobile {
+        font-size: 9px;
+        width: 232px;
+    }
 
     .button {
         padding: 8px 12px;
