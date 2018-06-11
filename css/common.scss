@@ -1,0 +1,29 @@
+$orange: #ff6a46;
+$tablet-width: 600px;
+$desktop-width: 1024px;
+
+  @mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: #{$tablet-width}) {
+      @content;
+    }
+  }
+
+  @mixin not-desktop {
+    @media (max-width: #{$desktop-width - 1px}) {
+      @content;
+    }
+  }
+
+
