@@ -54,7 +54,7 @@ iframe {
   max-width: calc(100% - 64px); }
 
 input {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 38px;
   height: 38px;
   border: 1px solid #c5cbd7;
@@ -163,7 +163,7 @@ input {
       left: 50%;
       top: 45%; }
       #container .right-section .welcome-section p {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center; }
       @media (max-width: 1023px) {
         #container .right-section .welcome-section {
@@ -228,11 +228,17 @@ input {
     #container .right-section .home-address .title {
       font-size: 20px;
       text-align: center; }
+      @media (max-width: 600px) {
+        #container .right-section .home-address .title {
+          padding: 16px 0; } }
     #container .right-section .home-address label {
       display: flex; }
       #container .right-section .home-address label input {
         height: initial;
-        margin-top: 14px; }
+        margin-top: 12px; }
+        @media (max-width: 600px) {
+          #container .right-section .home-address label input {
+            transform: scale(1.5); } }
     #container .right-section .home-address button {
       display: block;
       margin: 24px auto 0;
@@ -250,6 +256,9 @@ input {
       font-size: 13px; }
     #container .right-section .home-address .secondary-title {
       margin: 24px 0 4px 0; }
+      @media (max-width: 600px) {
+        #container .right-section .home-address .secondary-title {
+          padding: 4px 0; } }
     #container .right-section .home-address .input-field {
       min-width: 286px;
       display: block;
@@ -270,7 +279,12 @@ input {
         margin-top: 20px;
         display: block; }
       #container .right-section .token-sale .title {
-        font-size: 24px; }
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 12px; }
+        @media (max-width: 600px) {
+          #container .right-section .token-sale .title {
+            padding-top: 12px; } }
       #container .right-section .token-sale .details {
         text-align: center;
         margin-bottom: 32px; }
@@ -344,6 +358,9 @@ input {
   display: flex; }
   .address > div div:first-child {
     font-size: 10px; }
+    @media (max-width: 600px) {
+      .address > div div:first-child {
+        width: 12px; } }
   @media (max-width: 700px) {
     .address {
       padding: 0 12px 12px; } }
@@ -381,6 +398,10 @@ input {
   line-height: 12px;
   width: 310px;
   text-align: center; }
+  @media (max-width: 600px) {
+    #contracts-address {
+      font-size: 9px;
+      width: 232px; } }
   #contracts-address .button {
     padding: 8px 12px; }
   #contracts-address p {
