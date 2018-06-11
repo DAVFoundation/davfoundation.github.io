@@ -45,8 +45,7 @@ $(document).ready(function(){
             
         }
     })
-
-    ounerDetailsForm.find('[type="checkbox"]').change(function () {
+    function disableEnableSubmitMoreDetailsButton() {
         var isUserAgreed = true;
         ounerDetailsForm.find('[type="checkbox"]').each(function(index, checkbox) {
             if (!$(checkbox).is(':checked')) isUserAgreed = false;
@@ -55,8 +54,11 @@ $(document).ready(function(){
             ounerDetailsForm.find('[type="submit"]').removeClass('disabled').prop('disabled', false);
         } else {
             ounerDetailsForm.find('[type="submit"]').addClass('disabled').prop('disabled', true);
-        }
-    });
+        }    
+    }
+
+    disableEnableSubmitMoreDetailsButton();
+    ounerDetailsForm.find('[type="checkbox"]').change(disableEnableSubmitMoreDetailsButton);
 
     $('input').focus(function() {
         $(this).removeClass('invalid');
