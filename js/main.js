@@ -412,7 +412,7 @@ $(document).ready(function(){
                     case "ManualFinish":
                         title = "Congratulations!";
                         gaTitle = 'Congratulations';
-                        $(".kyc-response").html("You’re now officially whitelisted for the DAV Token Sale. Please watch this <a href=\"https://www.youtube.com/watch?v=mbk51jQ9BT4\" target=\"_blank\">video contribution tutorial</a> on how to participate and join our token sale below.");
+                        $(".kyc-response").html("You’re now officially whitelisted for the DAV Token Sale. Please watch this <a href=\"https://www.youtube.com/watch?v=bHzJbl9ygrI&feature=youtu.be\" target=\"_blank\">video contribution tutorial</a> on how to participate and join our token sale below.");
                         $("#whitelisted-join-token-sale-button").removeClass('hide');
                         $("#forgot-wallet-address").removeClass('hide');
                         $("#forgot-wallet-address").on('click',function (e) {
