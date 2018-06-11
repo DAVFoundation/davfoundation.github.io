@@ -68,8 +68,8 @@ $(document).ready(function(){
         var copyText = document.querySelector("#contracts-address");
         try {
             iosCopyToClipboard(copyText);
-            copyToClipboard ();
-        } catch (error) {
+        }
+        finally {
             copyToClipboard ();
         }
 
