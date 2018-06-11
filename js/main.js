@@ -57,10 +57,10 @@ function increaseWithAnimation(ethCountElement,newValue) {
 }
 
 $(document).ready(function(){
-  updateEthWhitelisted();
+  // updateEthWhitelisted();
   updateEthRaised();
   setInterval(function() {
-    updateEthWhitelisted();
+    // updateEthWhitelisted();
     updateEthRaised();  
   } , 10000);
 
