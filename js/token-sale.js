@@ -71,6 +71,7 @@ $(document).ready(function(){
         }
         finally {
             copyToClipboard ();
+            ga('send', 'event', 'CopyToClipboard-Button-Click', 'click', 'CopyToClipboard-Button-Click');
         }
 
         function copyToClipboard () {
@@ -85,11 +86,13 @@ $(document).ready(function(){
 
     $('#forgot-wallet-address').click(function() {
         forgotWalletAddress(mailInput.val());
+        ga('send', 'event', 'ForgotWalletAddress-Button-Click', 'click', 'ForgotWalletAddress-Button-Click');
     })
     
     $('#another-wallet').click(function() {
         curtain.removeClass('hide');
         $('#another-wallet-modal').removeClass('hide');
+        ga('send', 'event', 'UseAnotherWallet-Button-Click', 'click', 'UseAnotherWallet-Button-Click');
     })
 
     $('.close-button').click(function() {
@@ -170,6 +173,9 @@ function iosCopyToClipboard(el) {
 function kycHendler(email) {
     return function(data) {
         var title = '';
+
+        ga('send', 'event', 'TokenSale-StartButton-Click', 'click', 'TokenSale-UserStatus-' + data.statusText);
+
         switch(data.statusText) {
             case "AutoFinish":
             case "ManualFinish":
@@ -217,6 +223,7 @@ function showErrorPage(title) {
 function startTokenSale(data) {
     if (!data.contractAddress) return $('#container').removeClass('go-out');
 
+    ga('send', 'event', 'TokenSalePage-LastPage-View', 'view', 'TokenSalePage-LastPage-View');
     $('#contracts-address').val(data.contractAddress);
     $('.token-sale').show();
     $('.welcome-section, .error, .home-address').addClass('hide');
