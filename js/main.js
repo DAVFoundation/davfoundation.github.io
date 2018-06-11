@@ -433,12 +433,6 @@ $(document).ready(function(){
                         });
                         break;
                     case "Failed":
-                      title = "Your KYC application failed to process automatically.";
-                      gaTitle = 'Your KYC application failed to process automatically.';
-                      $(".kyc-response").html("Our team is currently reviewing your application manually, but you may also re-submit by clicking the button below. Our systems tell us your KYC application should be able to be processed automatically by doing the following:<br><br><b>" + data.suggestionText + "</b>");
-                      $(".kyc-return,.kyc-medium,.kyc-questions").removeClass('hide');
-                      $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email);
-                      break;
                     case "CheckRequired":
                         title = "Your KYC application is currently being processed.";
                         gaTitle = 'Your KYC application is currently being processed.';
