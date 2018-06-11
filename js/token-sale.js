@@ -99,7 +99,7 @@ function checkEmail(email) {
 }
 
 function kycCheck(email) {
-    var url = "https://nessie.dav.network/status?email=" + email;
+    var url = "https://nessie.dav.network/status?email=" + encodeURIComponent(email);
     $('#container').addClass('go-out');
     $(".kyc-error").hide();
     $.ajax({
@@ -157,18 +157,18 @@ function kycHendler(email) {
                 $(".kyc-response").html("If you believe your KYC has been rejected by mistake we ask that you please resubmit your KYC by clicking the button below. "
                 +"Our systems tell us you should be able to successfully complete your KYC by doing the following:<br><br><b>" + data.suggestionText + "</b>");
                 $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
+                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+encodeURIComponent(email));
                 showErrorPage(title);
                 break;
             case "Expired":
                 title = "Your KYC application has expired.";
                 $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
                 $(".kyc-button, .kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
+                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+encodeURIComponent(email));
                 showErrorPage(title);
             break;
             case "Started":
-                window.location.href = "https://nessie.dav.network/join?email=" + email;
+                window.location.href = "https://nessie.dav.network/join?email=" + encodeURIComponent(email);
                 break;
             default:
             break;
@@ -222,7 +222,7 @@ function showErrorMsg(el, msg) {
 function forgotWalletAddress(email) {
     $.ajax({
         type: 'GET',
-        url: "https://nessie.dav.network/restorewalletaddress?email="+email,
+        url: "https://nessie.dav.network/restorewalletaddress?email="+encodeURIComponent(email),
         dataType: 'json',
         success: function (data) {
             $('#curtain').removeClass('hide');
