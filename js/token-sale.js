@@ -66,13 +66,21 @@ $(document).ready(function(){
 
     $('#copy-to-clipboard').click(function() {
         var copyText = document.querySelector("#contracts-address");
-        copyText.select();
-        document.execCommand("copy");
-        prompMsg.removeClass('hide');
-        setTimeout(function() {
-            prompMsg.addClass('hide');
-        }, 3000);
-        
+        try {
+            iosCopyToClipboard(copyText);
+        }
+        finally {
+            copyToClipboard ();
+        }
+
+        function copyToClipboard () {
+            copyText.select();
+            document.execCommand("copy");
+            prompMsg.removeClass('hide');
+            setTimeout(function() {
+                prompMsg.addClass('hide');
+            }, 3000);    
+        }
     })
 
     $('#forgot-wallet-address').click(function() {
@@ -136,6 +144,27 @@ function validateOunerDetailsForm (form) {
 function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
+}
+
+function iosCopyToClipboard(el) {
+    var oldContentEditable = el.contentEditable,
+        oldReadOnly = el.readOnly,
+        range = document.createRange();
+
+    el.contenteditable = true;
+    el.readonly = false;
+    range.selectNodeContents(el);
+
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(range);
+
+    el.setSelectionRange(0, 999999); // A big number, to cover anything that could be inside the element.
+
+    el.contentEditable = oldContentEditable;
+    el.readOnly = oldReadOnly;
+
+    document.execCommand('copy');
 }
 
 function kycHendler(email) {

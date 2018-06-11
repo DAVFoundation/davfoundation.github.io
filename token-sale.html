@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://dav.network/img/og_image.jpg" />
   <meta property="og:url" content="https://dav.network/token-sale.html" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/token-sale.css?v=1.3">
+  <link rel="stylesheet" href="css/token-sale.css?v=1.4">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="icon" type="image/png" sizes="192x192"  href="img/fav/android-icon-192x192.png?v=2">
   <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon.png?v=2">
@@ -174,10 +174,10 @@
                   <div class="eth-icon"></div>
                   <div>
                       <div>ADDRESS</div>
-                      <div><input id="contracts-address" value=""></div>    
+                      <div><input id="contracts-address" readonly value=""></div>    
                   </div>
                 </div>
-                <div class="button" readonly id="copy-to-clipboard">COPY TO CLIPBOARD</div>    
+                <div class="button" id="copy-to-clipboard">COPY TO CLIPBOARD</div>    
             </div>
           </div>
           <p><b>Note: </b>Do not send any currency other than ETH. Only send ETH from an Ethereum wallet to which you hold the private key and that you have whitelisted for the DAV token sale. We encourage you to set a gas limit of 300,000 and the gas price suggested by your wallet. To prevent gas wars if you exceed a gas price of 50 Gwei, your transaction will be rejected.</p>
@@ -218,6 +218,6 @@
         Address copied successfully! 
     </div>
 
-  <script src="js/token-sale.js?v=1.3"></script>
+  <script src="js/token-sale.js?v=1.4"></script>
 </body>
 </html>
