@@ -194,18 +194,18 @@ function kycHendler(email) {
                 $(".kyc-response").html("If you believe your KYC has been rejected by mistake we ask that you please resubmit your KYC by clicking the button below. "
                 +"Our systems tell us you should be able to successfully complete your KYC by doing the following:<br><br><b>" + data.suggestionText + "</b>");
                 $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+encodeURIComponent(email));
+                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+encodeURIComponent(email)+"&referrer="+encodeURIComponent(document.referrer));
                 showErrorPage(title);
                 break;
             case "Expired":
                 title = "Your KYC application has expired.";
                 $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
                 $(".kyc-button, .kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+encodeURIComponent(email));
+                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+encodeURIComponent(email)+"&referrer="+encodeURIComponent(document.referrer));
                 showErrorPage(title);
             break;
             case "Started":
-                window.location.href = "https://nessie.dav.network/join?email=" + encodeURIComponent(email);
+                window.location.href = "https://nessie.dav.network/join?email=" + encodeURIComponent(email)+"&referrer="+encodeURIComponent(document.referrer);
                 break;
             default:
             break;

@@ -87,6 +87,7 @@ $(document).ready(function(){
     }
 
     $("#transaction_id").val(getParameterByName("transaction_id"));
+    $("#referrer").val(document.referrer);
 
     // iOS cursor fix
     // Detect ios 11_x_x affected
@@ -394,7 +395,7 @@ $(document).ready(function(){
         var email = $("#kycmail").val();
         if(validateEmail(email)){
           email=encodeURIComponent(email);
-          var url = "https://nessie.dav.network/status?email=" + email;
+          var url = "https://nessie.dav.network/status?email=" + email+"&referrer="+encodeURIComponent(document.referrer);
           // alert("KYC check click " + email);
           $(".kyc-loader").removeClass('hide');
           $(".kyc-error").hide();
@@ -444,14 +445,14 @@ $(document).ready(function(){
                         gaTitle = 'Your KYC application has not been accepted.';
                         $(".kyc-response").html("If you believe your KYC has been rejected by mistake we ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully complete your KYC by doing the following:<br><br><b>" + data.suggestionText + "</b>");
                         $(".kyc-return,.kyc-medium,.kyc-questions").removeClass('hide');
-                        $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email);
+                        $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email+"&referrer="+document.referrer);
                         break;
                     case "Expired":
                         title = "Your KYC application has expired.";
                         gaTitle = 'Your KYC application has expired.';
                         $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
                         $(".kyc-close,.kyc-medium,.kyc-questions,.return").removeClass('hide');
-                        $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email);
+                        $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email+"&referrer="+document.referrer);
                         break;
                     case "Started":
                         gaTitle = 'email not exist';
@@ -708,3 +709,4 @@ function changeFloatingButtonIcon(iconName) {
 function sendAnaliticsEvent() {
   ga('send', 'event', 'Registration-Bottom-Click', 'click', 'floating_Registration_click');
 }
+
