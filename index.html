@@ -32,7 +32,10 @@
     <meta name="msapplication-TileImage" content="img/fav/ms-icon-144x144.png?v=2.1">
     <meta name="theme-color" content="#ffffff">
     <script type="text/javascript">
-      window.localStorage.setItem('dav-referrer', document.referrer===""?document.URL:document.referrer);
+      if(!window.localStorage.getItem('dav-referrer'))
+      {
+        window.localStorage.setItem('dav-referrer', document.referrer===""?document.URL:document.referrer);
+      }
     </script>
     <!-- Google Tag Manager -->
     <!-- <script type="text/javascript" data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
