@@ -89,7 +89,7 @@ $(document).ready(function(){
     $("#transaction_id").val(getParameterByName("transaction_id"));
     $("#referrer").val(document.referrer);
 
-    document.cookie = "dav-referrer="+encodeURIComponent(document.referrer)+"; path=/";
+    document.cookie = "dav-referrer="+encodeURIComponent(document.referrer)+"; domain=nessie.dav.network";
 
     // iOS cursor fix
     // Detect ios 11_x_x affected
