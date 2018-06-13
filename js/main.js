@@ -348,7 +348,7 @@ $(document).ready(function(){
   // alert announcement
 
     $('#alert-announcement').on('closed.bs.alert', function () {
-        setCookie('dav-utility-token', true, 365);
+        setCookie('dav-utility-token', true, 14);
        $('.telegram-bottom').removeClass("extra-space");
         return false;
     })
@@ -379,10 +379,10 @@ $(document).ready(function(){
         document.cookie = c_name + "=" + c_value;
     }
 
-    // if (getCookie('dav-utility-token') === "true") {
-    //    $('#alert-announcement').hide();
-    //    $('.telegram-bottom').removeClass("extra-space");
-    // }
+    if (getCookie('dav-utility-token') === "true") {
+       $('#alert-announcement').hide();
+       $('.telegram-bottom').removeClass("extra-space");
+    }
 
     //KYC status check
     function validateEmail(email) {
