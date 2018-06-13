@@ -104,6 +104,7 @@ $(document).ready(function(){
 });
 
 function checkEmail(email) {
+    email = email.trim();
     if (validateEmail(email)) {
         return kycCheck(email);
     } 
