@@ -687,6 +687,10 @@ function beforeSubmitKycRegistration() {
 
 var $floatingButton = $('#floating-button');
 
+$(window).scroll(function() {
+  $floatingButton.removeClass('hidden-lg');
+});
+
 function setDifferentCtaForAdwordsUsers() {
   if (isAdwordsRedirect()) {
     $floatingButton.find('span').html('REGISTER FOR<br>WHITELIST');
