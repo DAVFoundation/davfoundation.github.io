@@ -230,7 +230,7 @@ input {
       text-align: center; }
       @media (max-width: 600px) {
         #container .right-section .home-address .title {
-          padding: 16px 0; } }
+          padding: 8px 0; } }
     #container .right-section .home-address label {
       display: flex; }
       #container .right-section .home-address label input {
@@ -280,11 +280,10 @@ input {
         display: block; }
       #container .right-section .token-sale .title {
         font-size: 24px;
-        text-align: center;
-        padding-bottom: 12px; }
+        text-align: center; }
         @media (max-width: 600px) {
           #container .right-section .token-sale .title {
-            padding-top: 12px; } }
+            padding: 12px 0 4px; } }
       #container .right-section .token-sale .details {
         text-align: center;
         margin-bottom: 32px; }
@@ -476,7 +475,7 @@ input {
     font-size: 14px !important; }
 
 .seperator {
-  margin: 40px auto;
+  margin: 32px auto;
   width: 256px;
   height: 2px;
   background: #c5cbd7; }

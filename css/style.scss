@@ -37,7 +37,7 @@ input {
 }
 #join-token-sale-button {
 	width: 192px;
-	margin: 32px auto;
+	margin: 40px auto;
 	font-weight: bold;
 	height: 40px;
 }
@@ -441,10 +441,10 @@ input {
 		}
 	}
 	.countdown-row {
-	margin:0 auto 30px;
-	width:100%;
-	display:table;
-	text-align:center;
+		margin:0 auto 24px;
+		width:100%;
+		display:table;
+		text-align:center;
 	}
 
 	.countdown-section {
@@ -555,9 +555,9 @@ input {
 			.container-transparent{
 				border-top: 1px solid rgba(255,255,255,0.4);
 				border-bottom: 1px solid rgba(255,255,255,0.4);
-				padding-top: 13px;
-				padding-bottom: 10px;
-				min-height: 125px;
+				padding-top: 12px;
+				padding-bottom: 8px;
+				min-height: 112px;
 				&.left{
 					width: 95%;
 					padding-top: 10px;
@@ -567,7 +567,7 @@ input {
 					width: 90%;
 					margin-left: auto;
 					margin-right: auto;
-					margin-bottom: 13px;
+					margin-bottom: 12px;
 				}
 				h4{
 					span{

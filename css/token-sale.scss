@@ -332,7 +332,7 @@ input {
                 text-align: center;
 
                 @include mobile {
-                    padding: 16px 0;
+                    padding: 8px 0;
                 }
             }
 
@@ -416,10 +416,9 @@ input {
             .title {
                 font-size: $fontSize2;
                 text-align: center;
-                padding-bottom: 12px;
 
                 @include mobile {
-                    padding-top: 12px;
+                    padding: 12px 0 4px;
                 }
             }
 
@@ -667,7 +666,7 @@ input {
 }
 
 .seperator {
-    margin: 40px auto;
+    margin: 32px auto;
     width: 256px;
     height: 2px;
     background: $boarderColor;
