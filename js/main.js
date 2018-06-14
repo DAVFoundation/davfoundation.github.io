@@ -15,17 +15,6 @@ function numberWithCommas(number) {
   return parts.join(".");
 }
 
-function updateEthWhitelisted() {
-  $.ajax({
-    url: KYC_MEMBERS_URL,
-    type: 'GET',
-    success: function(result) {
-      let ethWhitelisted = result.whitelisted;
-      increaseWithAnimation($("#eth-whitelisted"), ethWhitelisted);
-    }
-  });
-}
-
 function updateEthRaised() {
   $.ajax({
     url: KYC_MEMBERS_URL,
@@ -33,17 +22,28 @@ function updateEthRaised() {
     success: function(result) {
       weiRaised = result.weiRaised;
       var ethRaisedValue = Number(web3.utils.fromWei(weiRaised, 'ether'));
-      increaseWithAnimation($("#eth-raised"), ethRaisedValue);
+      increaseWithAnimation(ethRaisedValue);
     }
   });
 }
 
 var ANIMATION_DURATION = 1000;
 var PULSE_DURATION = 40;
-function increaseWithAnimation(ethCountElement,newValue) {
+function increaseWithAnimation(newValue) {
+  var ethCountElement = $("#eth-raised");
+
   var currentValue = Number(ethCountElement.text().replace(/,/g , ''));
+  if (currentValue===newValue) {
+    return;
+  }
+
+  var hardCap = 63123;
+  var newWidthValue = Math.floor((newValue/hardCap)*100);
+
   var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
 
+  $(".progress-bar").css("width",newWidthValue+"%");
+  
   var interval = setInterval(increaseInPulse, PULSE_DURATION);
 
   function increaseInPulse() {
@@ -53,14 +53,13 @@ function increaseWithAnimation(ethCountElement,newValue) {
       clearInterval(interval);
     }
     ethCountElement.text(numberWithCommas(Math.floor(currentValue)));
+    
   } 
 }
 
 $(document).ready(function(){
-  // updateEthWhitelisted();
   updateEthRaised();
   setInterval(function() {
-    // updateEthWhitelisted();
     updateEthRaised();  
   } , 10000);
 

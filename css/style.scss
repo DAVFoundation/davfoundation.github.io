@@ -660,20 +660,20 @@ input {
 	h6{
 		text-align: right;
 		margin: 0px !important;
-		font-size: 13px !important;
+		font-size: 16px !important;
 		font-weight: 700 !important;
 		color: #fd2826;
 	}
 	.progress{
-		height: 24px;
+		height: 30px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		background-color: #020406;
 		background-color: #4d4d4d;
 		border-radius: 25px;
 		.progress-bar{
-			line-height: 22px;
-			font-size: 13px;
+			line-height: 28px;
+			font-size: 16px;
 			font-weight: 700;
 			background: rgb(255,183,70);
 			background: linear-gradient(90deg, rgba(255,183,70,1) 0%, rgba(253,40,38,1) 100%);
@@ -681,6 +681,8 @@ input {
 			border-bottom-right-radius: 25px;
 			text-align: right;
 			padding-right: 10px;
+			transition-delay: 0.7s;
+			transition: all 1s;
 		}
 	}
 }
