@@ -512,9 +512,11 @@ input {
   .raised-progressbar h6 {
     text-align: right;
     margin: 0px !important;
-    font-size: 16px !important;
+    font-size: 15px !important;
     font-weight: 700 !important;
     color: #fd2826; }
+    .raised-progressbar h6 a {
+      color: #fd2826 !important; }
   .raised-progressbar .progress {
     height: 30px;
     margin-top: 10px;
@@ -524,7 +526,7 @@ input {
     border-radius: 25px; }
     .raised-progressbar .progress .progress-bar {
       line-height: 28px;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700;
       background: #ffb746;
       background: linear-gradient(90deg, #ffb746 0%, #fd2826 100%);
