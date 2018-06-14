@@ -26,11 +26,7 @@ input {
 
 #join-token-sale-button {
   width: 192px;
-<<<<<<< HEAD
-  margin: 32px auto;
-=======
   margin: 40px auto;
->>>>>>> upstream/master
   font-weight: bold;
   height: 40px; }
 
@@ -127,10 +123,11 @@ input {
   .user-scroll li > a {
     color: #ff6a46;
     color: #333; }
-  .user-scroll #logo-orange {
-    display: none; }
-  .user-scroll #logo-white {
-    display: inline-block; }
+  @media (min-width: 1024px) {
+    .user-scroll #logo-orange {
+      display: none; }
+    .user-scroll #logo-white {
+      display: inline-block; } }
 
 .telegram-bottom {
   position: fixed;
@@ -3072,12 +3069,8 @@ footer {
 
   .navbar-toggle .icon-bar {
     background: #ff6a46; }
-
-  .navbar-fixed-top {
-    background: #FFF; }
-    .navbar-fixed-top li > a {
-      color: #333; }
-
+  .navbar-fixed-top li > a {
+    color: #333; }
   .navbar-fixed-top .navbar-collapse {
     max-height: 100%; }
 
