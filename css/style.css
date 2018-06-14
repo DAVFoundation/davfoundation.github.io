@@ -408,6 +408,8 @@ input {
       .hero.hero-ico .hero-inner .hero-valign h6 a {
         color: #FFF;
         text-decoration: underline; }
+        .raised-progressbar .hero.hero-ico .hero-inner .hero-valign h6 a {
+          color: red; }
     .hero.hero-ico .hero-inner .hero-valign p.restriction {
       font-size: 14px;
       color: #c0b5b5;
