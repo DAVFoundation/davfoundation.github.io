@@ -15,17 +15,6 @@ function numberWithCommas(number) {
   return parts.join(".");
 }
 
-function updateEthWhitelisted() {
-  $.ajax({
-    url: KYC_MEMBERS_URL,
-    type: 'GET',
-    success: function(result) {
-      let ethWhitelisted = result.whitelisted;
-      increaseWithAnimation($("#eth-whitelisted"), ethWhitelisted);
-    }
-  });
-}
-
 function updateEthRaised() {
   $.ajax({
     url: KYC_MEMBERS_URL,
@@ -33,17 +22,28 @@ function updateEthRaised() {
     success: function(result) {
       weiRaised = result.weiRaised;
       var ethRaisedValue = Number(web3.utils.fromWei(weiRaised, 'ether'));
-      increaseWithAnimation($("#eth-raised"), ethRaisedValue);
+      increaseWithAnimation(ethRaisedValue);
     }
   });
 }
 
 var ANIMATION_DURATION = 1000;
 var PULSE_DURATION = 40;
-function increaseWithAnimation(ethCountElement,newValue) {
+function increaseWithAnimation(newValue) {
+  var ethCountElement = $("#eth-raised");
+
   var currentValue = Number(ethCountElement.text().replace(/,/g , ''));
+  if (currentValue===newValue) {
+    return;
+  }
+
+  var hardCap = 63123;
+  var newWidthValue = Math.floor((newValue/hardCap)*100);
+
   var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
 
+  $(".progress-bar").css("width",newWidthValue+"%");
+  
   var interval = setInterval(increaseInPulse, PULSE_DURATION);
 
   function increaseInPulse() {
@@ -53,14 +53,13 @@ function increaseWithAnimation(ethCountElement,newValue) {
       clearInterval(interval);
     }
     ethCountElement.text(numberWithCommas(Math.floor(currentValue)));
+    
   } 
 }
 
 $(document).ready(function(){
-  updateEthWhitelisted();
   updateEthRaised();
   setInterval(function() {
-    updateEthWhitelisted();
     updateEthRaised();  
   } , 10000);
 
@@ -87,6 +86,7 @@ $(document).ready(function(){
     }
 
     $("#transaction_id").val(getParameterByName("transaction_id"));
+    $("#referrer").val(window.localStorage.getItem('dav-referrer'));
 
     // iOS cursor fix
     // Detect ios 11_x_x affected
@@ -347,7 +347,7 @@ $(document).ready(function(){
   // alert announcement
 
     $('#alert-announcement').on('closed.bs.alert', function () {
-        setCookie('dav-utility-token', true, 365);
+        setCookie('dav-utility-token', true, 14);
        $('.telegram-bottom').removeClass("extra-space");
         return false;
     })
@@ -378,10 +378,10 @@ $(document).ready(function(){
         document.cookie = c_name + "=" + c_value;
     }
 
-    // if (getCookie('dav-utility-token') === "true") {
-    //    $('#alert-announcement').hide();
-    //    $('.telegram-bottom').removeClass("extra-space");
-    // }
+    if (getCookie('dav-utility-token') === "true") {
+       $('#alert-announcement').hide();
+       $('.telegram-bottom').removeClass("extra-space");
+    }
 
     //KYC status check
     function validateEmail(email) {
@@ -394,7 +394,8 @@ $(document).ready(function(){
         var email = $("#kycmail").val();
         if(validateEmail(email)){
           email=encodeURIComponent(email);
-          var url = "https://nessie.dav.network/status?email=" + email;
+          var referrer=encodeURIComponent(window.localStorage.getItem('dav-referrer'));
+          var url = "https://nessie.dav.network/status?email=" + email+"&referrer="+referrer;
           // alert("KYC check click " + email);
           $(".kyc-loader").removeClass('hide');
           $(".kyc-error").hide();
@@ -412,7 +413,7 @@ $(document).ready(function(){
                     case "ManualFinish":
                         title = "Congratulations!";
                         gaTitle = 'Congratulations';
-                        $(".kyc-response").html("You’re now officially whitelisted for the DAV Token Sale. Please watch this <a href=\"https://www.youtube.com/watch?v=mbk51jQ9BT4\" target=\"_blank\">video contribution tutorial</a> on how to participate and join our token sale below.");
+                        $(".kyc-response").html("You’re now officially whitelisted for the DAV Token Sale. Please watch this <a href=\"https://www.youtube.com/watch?v=bHzJbl9ygrI&feature=youtu.be\" target=\"_blank\">video contribution tutorial</a> on how to participate and join our token sale below.");
                         $("#whitelisted-join-token-sale-button").removeClass('hide');
                         $("#forgot-wallet-address").removeClass('hide');
                         $("#forgot-wallet-address").on('click',function (e) {
@@ -433,12 +434,6 @@ $(document).ready(function(){
                         });
                         break;
                     case "Failed":
-                      title = "Your KYC application failed to process automatically.";
-                      gaTitle = 'Your KYC application failed to process automatically.';
-                      $(".kyc-response").html("Our team is currently reviewing your application manually, but you may also re-submit by clicking the button below. Our systems tell us your KYC application should be able to be processed automatically by doing the following:<br><br><b>" + data.suggestionText + "</b>");
-                      $(".kyc-return,.kyc-medium,.kyc-questions").removeClass('hide');
-                      $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email);
-                      break;
                     case "CheckRequired":
                         title = "Your KYC application is currently being processed.";
                         gaTitle = 'Your KYC application is currently being processed.';
@@ -450,14 +445,14 @@ $(document).ready(function(){
                         gaTitle = 'Your KYC application has not been accepted.';
                         $(".kyc-response").html("If you believe your KYC has been rejected by mistake we ask that you please resubmit your KYC by clicking the button below. Our systems tell us you should be able to successfully complete your KYC by doing the following:<br><br><b>" + data.suggestionText + "</b>");
                         $(".kyc-return,.kyc-medium,.kyc-questions").removeClass('hide');
-                        $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email);
+                        $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email+"&referrer="+referrer);
                         break;
                     case "Expired":
                         title = "Your KYC application has expired.";
                         gaTitle = 'Your KYC application has expired.';
                         $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
                         $(".kyc-close,.kyc-medium,.kyc-questions,.return").removeClass('hide');
-                        $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email);
+                        $(".kyc-return").attr("href","https://nessie.dav.network/join?email="+email+"&referrer="+referrer);
                         break;
                     case "Started":
                         gaTitle = 'email not exist';
@@ -691,6 +686,10 @@ function beforeSubmitKycRegistration() {
 
 var $floatingButton = $('#floating-button');
 
+$(window).scroll(function() {
+  $floatingButton.removeClass('hidden-lg');
+});
+
 function setDifferentCtaForAdwordsUsers() {
   if (isAdwordsRedirect()) {
     $floatingButton.find('span').html('REGISTER FOR<br>WHITELIST');
@@ -714,3 +713,4 @@ function changeFloatingButtonIcon(iconName) {
 function sendAnaliticsEvent() {
   ga('send', 'event', 'Registration-Bottom-Click', 'click', 'floating_Registration_click');
 }
+

@@ -31,7 +31,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/fav/ms-icon-144x144.png?v=2.1">
     <meta name="theme-color" content="#ffffff">
-
+    <script type="text/javascript">
+      if(!window.localStorage.getItem('dav-referrer'))
+      {
+        window.localStorage.setItem('dav-referrer', document.referrer===""?document.URL:document.referrer);
+      }
+    </script>
     <!-- Google Tag Manager -->
     <!-- <script type="text/javascript" data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
     {'gtm.start': new Date().getTime(),event:'gtm.js'}
@@ -56,7 +61,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.5.0"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.5.2"/>
 
     <!-- Bootstrap -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -167,6 +172,7 @@
               <div class="mc-field-group">
                 <!-- <label for="mce-EMAIL">Email Address </label> -->
                 <input type="hidden" id="transaction_id" name="transaction_id">
+                <input type="hidden" id="referrer" name="referrer">
                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" style="width: 66%;display:none;">
               </div>
                 <div id="mce-responses" class="clear">
@@ -189,6 +195,7 @@
               <div class="mc-field-group">
                 <!-- <label for="mce-EMAIL">Email Address </label> -->
                 <input type="hidden" id="transaction_id" name="transaction_id">
+                <input type="hidden" id="referrer" name="referrer">
                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" style="width: 66%;display:none;">
               </div>
                 <div id="mce-responses" class="clear">
@@ -253,23 +260,33 @@
                 <div class="countdown">
                   <div id="countdown"></div>
                 </div>
+
+                <div class="raised-progressbar">
+                  <h6>HARD CAP</h6>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      <span><span id="eth-raised">40,206</span> ETH RAISED</span>
+                    </div>
+                  </div>
+                  <h6>63,123 ETH</h6>
+                </div>
                 <p class="restriction"><span>Note:</span> DAV Tokens are not offered in China or in the US or to US persons - residents and citizens</p>
                 <div class="hero-join">
 
-                <a class="clear" id="hero-register-button" href="token-sale"><input type="submit" value="JOIN TOKEN SALE" name="subscribe" id="join-token-sale-button" class="button"></a>
+                <a class="clear" id="hero-register-button" onclick="ga('send', 'event', 'TOKEN_SALE-Main-Click', 'click', 'main_TOKEN-SALE_click');" href="token-sale"><input type="submit" value="JOIN TOKEN SALE" name="subscribe" id="join-token-sale-button" class="button"></a>
                 </div>
             <!--Button go here-->
 
-                <div class="container-transparent right">
+                <div class="container-transparent right hide">
                   <div class="row">
                     <div class="col-xs-6 text-left">
                       <h4>RAISED</h4>
-                      <h4>WHITELISTED</h4>
+                      <!--h4>WHITELISTED</h4-->
                       <h4>HARD CAP</h4>
                     </div>
                     <div class="col-xs-6 text-right">
-                      <h4><span><span id="eth-raised">36,213</span> ETH&nbsp;&nbsp;</span></h4>
-                      <h4><a href="token-sale-details.html#whitelist-amount" style="text-decoration:underline;"><span id="eth-whitelisted">99,195</span><span> ETH*</span></a></h4>
+                      <h4><span><span id="eth-raised">40,206</span> ETH&nbsp;&nbsp;</span></h4>
+                      <!--h4><a href="token-sale-details.html#whitelist-amount" style="text-decoration:underline;"><span id="eth-whitelisted">99,195</span><span> ETH*</span></a></h4-->
                       <h4><span><a href="token-sale-details.html#hard-cap" style="text-decoration:underline;">63,123 ETH*</a></span></h4>
                     </div>
                   </div>
@@ -1914,7 +1931,7 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
 
     <div class="crowd-sale">
       <h2>TOKEN SALE IS NOW LIVE!</h2>
-      <a href="token-sale">JOIN TOKEN SALE</a>
+      <a href="token-sale" onclick="ga('send', 'event', 'TOKEN_SALE-Buttom-Click', 'click', 'buttom_TOKEN-SALE_click');">JOIN TOKEN SALE</a>
     </div>
 
     <footer id="contact">
@@ -1922,8 +1939,8 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
         <h3>Contact Us</h3>
         <div class="row links">
           <div class="col-sm-3">
-            <a href="mailto:relations@dav.network">relations@dav.network</a>
-            <p>Join Our Pre-Sale</p>
+            <a href="mailto:questions@dav.network">questions@dav.network</a>
+            <p>Token Sale Questions</p>
           </div>
           <div class="col-sm-3">
             <a href="mailto:info@dav.network">info@dav.network</a>
@@ -2884,7 +2901,7 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
               We're excited you're as enthusiastic about DAV as we are! <b>We’ll be sending you an email once your KYC application has been processed with next steps.</b> In the meantime you can check your whitelist status <a href="/?kyc=status">here</a>.
 
               <br><br>
-              Remember to join our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a> as that will always be the place we first announce exciting news and updates happening at DAV. You can watch this <a href="https://www.youtube.com/watch?v=mbk51jQ9BT4">video contribution tutorial</a> to see how to participate in our token sale.
+              Remember to join our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a> as that will always be the place we first announce exciting news and updates happening at DAV. You can watch this <a href="https://www.youtube.com/watch?v=bHzJbl9ygrI&feature=youtu.be">video contribution tutorial</a> to see how to participate in our token sale.
               <br><br>
               We appreciate your support and would like to show our thanks by giving you 3.5% in DAV Tokens of the total contributions for every member you refer. Read our <a href="https://medium.com/davnetwork/dav-has-launched-an-affiliate-program-alongside-their-kyc-b26fdd000b82" target="_blank">step by step</a> article on how to get earning today.
               <br><br>
@@ -2908,7 +2925,7 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
             <h4 class="kyc-title">Please enter the email you have registered with:</h4>
             <p class="kyc-response"></p>
 
-            <p class="kyc-telegram hide">In the meantime remember to join our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a>, as that will always be the place we first announce exciting news and updates happening at DAV. You can watch this <a href="https://www.youtube.com/watch?v=mbk51jQ9BT4"></a>video contribution tutorial</a> to see how to participate in our token sale.</p>
+            <p class="kyc-telegram hide">In the meantime remember to join our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a>, as that will always be the place we first announce exciting news and updates happening at DAV. You can watch this <a href="https://www.youtube.com/watch?v=bHzJbl9ygrI&feature=youtu.be"></a>video contribution tutorial</a> to see how to participate in our token sale.</p>
 
             <p class="kyc-medium hide">We also suggest you take a look at this <a href="https://medium.com/davnetwork/how-to-complete-your-kyc-registration-for-davs-token-sale-49681f950b98" target="_blank">medium post</a> to get a detailed look at how to go through and get approved by our KYC process.</p>
 
@@ -3239,12 +3256,12 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
     <div class="alert-bottom alert alert-announcement hide" id="alert-announcement">
       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
       <p>
-        Token Sale Is Now Live! Watch Our Video Contribution Tutorial For Step By Step Instructions On Participating <span class="alert-announcement-separator">&mdash;</span> <a href="https://www.youtube.com/watch?v=mbk51jQ9BT4" target="_blank">Watch Tutorial Video</a>
+        Token Sale Is Now Live! Watch Our Video Contribution Tutorial For Step By Step Instructions On Participating <span class="alert-announcement-separator">&mdash;</span> <a href="https://www.youtube.com/watch?v=bHzJbl9ygrI&feature=youtu.be" target="_blank">Watch Tutorial Video</a>
       </p>
     </div>
 
     <div class="telegram-bottom">
-      <a href="token-sale" id="floating-button" target="blank" onclick="ga('send', 'event', 'TOKEN_SALE-Bottom-Click', 'click', 'floating_TOKEN SALE_click');">
+        <a href="token-sale" class="hidden-lg" id="floating-button" target="blank" onclick="ga('send', 'event', 'TOKEN_SALE-Bottom-Click', 'click', 'floating_TOKEN SALE_click');">
         <span class="show">JOIN DAV<br>TOKEN SALE</span>
         <i class="fa ico-icon" aria-hidden="true"></i>
       </a>
@@ -3260,7 +3277,7 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" data-cfasync="false"></script>
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js" type="text/javascript" data-cfasync="false"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8"></script>
-    <script src="js/main.js?v=3.5.0" type="text/javascript" data-cfasync="false"></script>
+    <script src="js/main.js?v=3.5.6" type="text/javascript" data-cfasync="false"></script>
     <script type="text/javascript" data-cfasync="false">
 
       $(document).ready(function(){

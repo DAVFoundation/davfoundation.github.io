@@ -54,7 +54,7 @@ iframe {
   max-width: calc(100% - 64px); }
 
 input {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 38px;
   height: 38px;
   border: 1px solid #c5cbd7;
@@ -92,7 +92,7 @@ input {
     transition: 1s; }
     @media (min-width: 1024px) {
       #container .left-section {
-        min-height: calc(100vh - 92px); } }
+        min-height: calc(100vh - 80px); } }
     @media (max-width: 1023px) {
       #container .left-section {
         display: none; } }
@@ -112,21 +112,23 @@ input {
       font-size: 20px;
       text-align: center;
       width: 100%;
-      margin: 16px 0; }
+      padding: 32px 0; }
     #container .left-section .home-address .video-container {
       text-align: center; }
     #container .left-section .token-sale {
       display: none;
       text-align: center;
-      padding: 52px 32px; }
-      @media (max-width: 600px) {
+      padding-top: 40px; }
+      @media (max-width: 1023px) {
         #container .left-section .token-sale {
-          padding: 32px 12px; } }
+          padding-top: 32px; } }
       #container .left-section .token-sale .video-head {
         font-size: 20px; }
       #container .left-section .token-sale a {
         text-decoration: underline;
         font-size: 20px; }
+      #container .left-section .token-sale .contact-us a {
+        font-size: 14px; }
       #container .left-section .token-sale .details {
         width: 292px;
         margin: 20px auto 32px; }
@@ -144,13 +146,13 @@ input {
     width: 50%;
     position: relative;
     transition: 1s;
-    padding: 52px 40px 40px 40px; }
+    padding: 40px; }
     @media (max-width: 600px) {
       #container .right-section {
         padding: 16px 12px; } }
     @media (min-width: 1024px) {
       #container .right-section {
-        min-height: calc(100vh - 92px); } }
+        min-height: calc(100vh - 80px); } }
     @media (max-width: 1023px) {
       #container .right-section {
         width: 100%; } }
@@ -163,7 +165,7 @@ input {
       left: 50%;
       top: 45%; }
       #container .right-section .welcome-section p {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center; }
       @media (max-width: 1023px) {
         #container .right-section .welcome-section {
@@ -228,13 +230,27 @@ input {
     #container .right-section .home-address .title {
       font-size: 20px;
       text-align: center; }
+      @media (max-width: 600px) {
+        #container .right-section .home-address .title {
+          padding: 8px 0; } }
     #container .right-section .home-address label {
       display: flex; }
+      #container .right-section .home-address label input {
+        height: initial;
+        margin-top: 12px; }
+        @media (max-width: 600px) {
+          #container .right-section .home-address label input {
+            transform: scale(1.5); } }
     #container .right-section .home-address button {
       display: block;
       margin: 24px auto 0;
-      padding: 0 24px;
-      line-height: 16px; }
+      padding: 0 32px;
+      line-height: 16px;
+      font-size: 16px; }
+      @media (max-width: 600px) {
+        #container .right-section .home-address button {
+          padding: 0 24px;
+          margin: 24px auto; } }
     #container .right-section .home-address b {
       text-transform: uppercase; }
     #container .right-section .home-address p {
@@ -247,6 +263,9 @@ input {
       font-size: 13px; }
     #container .right-section .home-address .secondary-title {
       margin: 24px 0 4px 0; }
+      @media (max-width: 600px) {
+        #container .right-section .home-address .secondary-title {
+          padding: 4px 0; } }
     #container .right-section .home-address .input-field {
       min-width: 286px;
       display: block;
@@ -267,7 +286,11 @@ input {
         margin-top: 20px;
         display: block; }
       #container .right-section .token-sale .title {
-        font-size: 24px; }
+        font-size: 24px;
+        text-align: center; }
+        @media (max-width: 600px) {
+          #container .right-section .token-sale .title {
+            padding: 12px 0 4px; } }
       #container .right-section .token-sale .details {
         text-align: center;
         margin-bottom: 32px; }
@@ -341,6 +364,9 @@ input {
   display: flex; }
   .address > div div:first-child {
     font-size: 10px; }
+    @media (max-width: 600px) {
+      .address > div div:first-child {
+        width: 12px; } }
   @media (max-width: 700px) {
     .address {
       padding: 0 12px 12px; } }
@@ -375,8 +401,13 @@ input {
   color: black;
   padding: 0;
   height: 12px;
+  line-height: 12px;
   width: 310px;
   text-align: center; }
+  @media (max-width: 600px) {
+    #contracts-address {
+      font-size: 9px;
+      width: 232px; } }
   #contracts-address .button {
     padding: 8px 12px; }
   #contracts-address p {
@@ -443,15 +474,17 @@ input {
   position: absolute;
   bottom: 32px;
   left: 0; }
-  @media (max-width: 600px) {
+  @media (max-width: 1023px) {
     .contact-us {
       position: static;
-      margin-top: 40px; } }
+      margin: 32px 0; } }
   .contact-us a {
-    font-size: 14px !important; }
+    font-size: 14px;
+    display: block; }
 
 .seperator {
-  margin: 40px auto;
+  margin: 32px auto;
   width: 256px;
   height: 2px;
-  background: #c5cbd7; }
+  background: #c5cbd7;
+  display: block; }

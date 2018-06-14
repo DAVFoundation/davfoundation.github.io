@@ -45,8 +45,7 @@ $(document).ready(function(){
             
         }
     })
-
-    ounerDetailsForm.find('[type="checkbox"]').change(function () {
+    function disableEnableSubmitMoreDetailsButton() {
         var isUserAgreed = true;
         ounerDetailsForm.find('[type="checkbox"]').each(function(index, checkbox) {
             if (!$(checkbox).is(':checked')) isUserAgreed = false;
@@ -55,8 +54,11 @@ $(document).ready(function(){
             ounerDetailsForm.find('[type="submit"]').removeClass('disabled').prop('disabled', false);
         } else {
             ounerDetailsForm.find('[type="submit"]').addClass('disabled').prop('disabled', true);
-        }
-    });
+        }    
+    }
+
+    disableEnableSubmitMoreDetailsButton();
+    ounerDetailsForm.find('[type="checkbox"]').change(disableEnableSubmitMoreDetailsButton);
 
     $('input').focus(function() {
         $(this).removeClass('invalid');
@@ -64,22 +66,33 @@ $(document).ready(function(){
 
     $('#copy-to-clipboard').click(function() {
         var copyText = document.querySelector("#contracts-address");
-        copyText.select();
-        document.execCommand("copy");
-        prompMsg.removeClass('hide');
-        setTimeout(function() {
-            prompMsg.addClass('hide');
-        }, 3000);
-        
+        try {
+            iosCopyToClipboard(copyText);
+        }
+        finally {
+            copyToClipboard ();
+            ga('send', 'event', 'CopyToClipboard-Button-Click', 'click', 'CopyToClipboard-Button-Click');
+        }
+
+        function copyToClipboard () {
+            copyText.select();
+            document.execCommand("copy");
+            prompMsg.removeClass('hide');
+            setTimeout(function() {
+                prompMsg.addClass('hide');
+            }, 3000);    
+        }
     })
 
     $('#forgot-wallet-address').click(function() {
         forgotWalletAddress(mailInput.val());
+        ga('send', 'event', 'ForgotWalletAddress-Button-Click', 'click', 'ForgotWalletAddress-Button-Click');
     })
     
     $('#another-wallet').click(function() {
         curtain.removeClass('hide');
         $('#another-wallet-modal').removeClass('hide');
+        ga('send', 'event', 'UseAnotherWallet-Button-Click', 'click', 'UseAnotherWallet-Button-Click');
     })
 
     $('.close-button').click(function() {
@@ -91,6 +104,7 @@ $(document).ready(function(){
 });
 
 function checkEmail(email) {
+    email = email.trim();
     if (validateEmail(email)) {
         return kycCheck(email);
     } 
@@ -99,7 +113,7 @@ function checkEmail(email) {
 }
 
 function kycCheck(email) {
-    var url = "https://nessie.dav.network/status?email=" + email;
+    var url = "https://nessie.dav.network/status?email=" + encodeURIComponent(email);
     $('#container').addClass('go-out');
     $(".kyc-error").hide();
     $.ajax({
@@ -136,9 +150,33 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+function iosCopyToClipboard(el) {
+    var oldContentEditable = el.contentEditable,
+        oldReadOnly = el.readOnly,
+        range = document.createRange();
+
+    el.contenteditable = true;
+    el.readonly = false;
+    range.selectNodeContents(el);
+
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(range);
+
+    el.setSelectionRange(0, 999999); // A big number, to cover anything that could be inside the element.
+
+    el.contentEditable = oldContentEditable;
+    el.readOnly = oldReadOnly;
+
+    document.execCommand('copy');
+}
+
 function kycHendler(email) {
     return function(data) {
         var title = '';
+
+        ga('send', 'event', 'TokenSale-StartButton-Click', 'click', 'TokenSale-UserStatus-' + data.statusText);
+        var referrer=encodeURIComponent(window.localStorage.getItem('dav-referrer'))
         switch(data.statusText) {
             case "AutoFinish":
             case "ManualFinish":
@@ -157,18 +195,18 @@ function kycHendler(email) {
                 $(".kyc-response").html("If you believe your KYC has been rejected by mistake we ask that you please resubmit your KYC by clicking the button below. "
                 +"Our systems tell us you should be able to successfully complete your KYC by doing the following:<br><br><b>" + data.suggestionText + "</b>");
                 $(".kyc-button,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
+                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+encodeURIComponent(email)+"&referrer="+referrer);
                 showErrorPage(title);
                 break;
             case "Expired":
                 title = "Your KYC application has expired.";
                 $(".kyc-response").text("We ask you to please resubmit your KYC by clicking the button below.");
                 $(".kyc-button, .kyc-close,.kyc-medium,.kyc-telegram2").removeClass('hide');
-                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+email);
+                $(".kyc-button").attr("href","https://nessie.dav.network/join?email="+encodeURIComponent(email)+"&referrer="+referrer);
                 showErrorPage(title);
             break;
             case "Started":
-                window.location.href = "https://nessie.dav.network/join?email=" + email;
+                window.location.href = "https://nessie.dav.network/join?email=" + encodeURIComponent(email)+"&referrer="+referrer;
                 break;
             default:
             break;
@@ -186,9 +224,11 @@ function showErrorPage(title) {
 function startTokenSale(data) {
     if (!data.contractAddress) return $('#container').removeClass('go-out');
 
+    ga('send', 'event', 'TokenSalePage-LastPage-View', 'view', 'TokenSalePage-LastPage-View');
     $('#contracts-address').val(data.contractAddress);
     $('.token-sale').show();
     $('.welcome-section, .error, .home-address').addClass('hide');
+    $(document).scrollTop(- $(document).scrollTop());
     $('#container').removeClass('go-out').addClass('sale-page');
 }
 
@@ -222,7 +262,7 @@ function showErrorMsg(el, msg) {
 function forgotWalletAddress(email) {
     $.ajax({
         type: 'GET',
-        url: "https://nessie.dav.network/restorewalletaddress?email="+email,
+        url: "https://nessie.dav.network/restorewalletaddress?email="+encodeURIComponent(email),
         dataType: 'json',
         success: function (data) {
             $('#curtain').removeClass('hide');
