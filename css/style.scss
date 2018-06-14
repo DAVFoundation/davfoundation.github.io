@@ -37,7 +37,7 @@ input {
 }
 #join-token-sale-button {
 	width: 192px;
-	margin: 40px auto;
+	margin: 48px auto;
 	font-weight: bold;
 	height: 40px;
 }
@@ -161,15 +161,12 @@ input {
 		color: $orange;
 		color: #333;
 	}
-	@include desktop {
-		#logo-orange{
-			display: none;
-		}
-		#logo-white{
-			display: inline-block;
-		}
-	} 
-
+	#logo-orange{
+		display: none;
+	}
+	#logo-white{
+		display: inline-block;
+	}
 }
 .telegram-bottom {
     position: fixed;
@@ -552,7 +549,7 @@ input {
 				margin-bottom: 25px;
 			}
 			.ico-start-box{
-				background: rgba(0,0,0,0.6);
+				background: rgba(72,66,66,0.58);
 				padding: 10px 0 20px;
 			}
 			.container-transparent{
@@ -655,6 +652,37 @@ input {
 		    bottom: -100px;
 		    background: rgba(0, 0, 0, 0.7);
 		    z-index: 1;
+		}
+	}
+}
+.raised-progressbar{
+	margin: 40px 32px;
+	h6{
+		text-align: right;
+		margin: 0px !important;
+		font-size: 16px !important;
+		font-weight: 700 !important;
+		color: #fd2826;
+	}
+	.progress{
+		height: 30px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: #020406;
+		background-color: #4d4d4d;
+		border-radius: 25px;
+		.progress-bar{
+			line-height: 28px;
+			font-size: 16px;
+			font-weight: 700;
+			background: rgb(255,183,70);
+			background: linear-gradient(90deg, rgba(255,183,70,1) 0%, rgba(253,40,38,1) 100%);
+			border-top-right-radius: 25px;
+			border-bottom-right-radius: 25px;
+			text-align: right;
+			padding-right: 10px;
+			transition-delay: 0.7s;
+			transition: all 1s;
 		}
 	}
 }
@@ -3866,6 +3894,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		h1,h5,h6{
 			text-align: center;
 		}
+		.raised-progressbar h6 {
+    		text-align: right;
+		}
 	}
 }
 @media (max-width: 767px) {
@@ -3877,6 +3908,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		background: $orange;
 	}
 	.navbar-fixed-top{
+		background: #FFF;
 		li>a{
 			color: #333;
 		}
