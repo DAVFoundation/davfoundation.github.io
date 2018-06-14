@@ -26,7 +26,11 @@ input {
 
 #join-token-sale-button {
   width: 192px;
+<<<<<<< HEAD
   margin: 32px auto;
+=======
+  margin: 40px auto;
+>>>>>>> upstream/master
   font-weight: bold;
   height: 40px; }
 
@@ -342,7 +346,7 @@ input {
       display: block;
       clear: both; }
   .hero .countdown-row {
-    margin: 0 auto 30px;
+    margin: 0 auto 24px;
     width: 100%;
     display: table;
     text-align: center; }
@@ -427,9 +431,9 @@ input {
     .hero.hero-ico .hero-inner .hero-valign .container-transparent {
       border-top: 1px solid rgba(255, 255, 255, 0.4);
       border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-      padding-top: 13px;
-      padding-bottom: 10px;
-      min-height: 125px; }
+      padding-top: 12px;
+      padding-bottom: 8px;
+      min-height: 112px; }
       .hero.hero-ico .hero-inner .hero-valign .container-transparent.left {
         width: 95%;
         padding-top: 10px;
@@ -438,7 +442,7 @@ input {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 13px; }
+        margin-bottom: 12px; }
       .hero.hero-ico .hero-inner .hero-valign .container-transparent h4 span {
         color: #ff6a46; }
       .hero.hero-ico .hero-inner .hero-valign .container-transparent h5 {

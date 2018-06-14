@@ -228,6 +228,7 @@ function startTokenSale(data) {
     $('#contracts-address').val(data.contractAddress);
     $('.token-sale').show();
     $('.welcome-section, .error, .home-address').addClass('hide');
+    $(document).scrollTop(- $(document).scrollTop());
     $('#container').removeClass('go-out').addClass('sale-page');
 }
 
