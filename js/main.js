@@ -42,8 +42,8 @@ function increaseWithAnimation(newValue) {
 
   var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
 
-  $(".progress-bar").css("width",newWidthValue+"%");
-  
+  $(".progress-bar").css("width",`calc(${newWidthValue}% + 25px)`);
+
   var interval = setInterval(increaseInPulse, PULSE_DURATION);
 
   function increaseInPulse() {
@@ -53,14 +53,14 @@ function increaseWithAnimation(newValue) {
       clearInterval(interval);
     }
     ethCountElement.text(numberWithCommas(Math.floor(currentValue)));
-    
-  } 
+
+  }
 }
 
 $(document).ready(function(){
   updateEthRaised();
   setInterval(function() {
-    updateEthRaised();  
+    updateEthRaised();
   } , 10000);
 
   $(".telegram-bottom").addClass("telegram-loaded");
@@ -657,7 +657,7 @@ function getParameterByName(name, url) {
 }
 
 function beforeSubmitKycRegistration() {
-  
+
   if (validateEmail()) {
     sendRegistrationAnaliticsEvent();
     return true;
