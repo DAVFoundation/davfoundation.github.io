@@ -130,7 +130,7 @@ input {
         transition: 1s;
 
         @include desktop {
-            min-height: calc(100vh - 92px);
+            min-height: calc(100vh - 80px);
         }
 
         @include not-desktop {
@@ -159,7 +159,7 @@ input {
                 font-size: $fontSize3;
                 text-align: center;
                 width: 100%;
-                margin: 16px 0;
+                padding: 32px 0;
             }
 
             .video-container {
@@ -171,10 +171,10 @@ input {
         .token-sale {
             display: none;
             text-align: center;
-            padding: 52px 32px;
+            padding-top: 40px;
 
-            @include mobile {
-                padding: 32px 12px;
+            @include not-desktop {
+                padding-top: 32px;
             }
 
             .video-head {
@@ -183,6 +183,9 @@ input {
             a {
                 text-decoration: underline;
                 font-size: $fontSize3;
+            }
+            .contact-us a {
+                font-size: 14px;
             }
             .details {
                 width: 292px;
@@ -209,14 +212,14 @@ input {
         position: relative;
         transition: 1s;
 
-        padding: 52px 40px 40px 40px;
+        padding: 40px;
 
         @include mobile {
             padding: 16px 12px;
         }
 
         @include desktop {
-            min-height: calc(100vh - 92px);
+            min-height: calc(100vh - 80px);
         }
 
         @include not-desktop {
@@ -351,8 +354,14 @@ input {
             button {
                 display: block;
                 margin: 24px auto 0;
-                padding: 0 24px;
+                padding: 0 32px;
                 line-height: 16px;
+                font-size: $fontSize4;
+
+                @include mobile {
+                    padding: 0 24px;
+                    margin: 24px auto;
+                }
             }
 
             b {
@@ -655,13 +664,14 @@ input {
     bottom: 32px;
     left: 0;
 
-    @include mobile {
+    @include not-desktop {
         position: static;
-        margin-top: 40px;
+        margin: 32px 0;
     }
 
     a {
-        font-size: 14px !important;
+        font-size: 14px;
+        display: block;
     }
 }
 
@@ -670,4 +680,5 @@ input {
     width: 256px;
     height: 2px;
     background: $boarderColor;
+    display: block;
 }

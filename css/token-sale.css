@@ -92,7 +92,7 @@ input {
     transition: 1s; }
     @media (min-width: 1024px) {
       #container .left-section {
-        min-height: calc(100vh - 92px); } }
+        min-height: calc(100vh - 80px); } }
     @media (max-width: 1023px) {
       #container .left-section {
         display: none; } }
@@ -112,21 +112,23 @@ input {
       font-size: 20px;
       text-align: center;
       width: 100%;
-      margin: 16px 0; }
+      padding: 32px 0; }
     #container .left-section .home-address .video-container {
       text-align: center; }
     #container .left-section .token-sale {
       display: none;
       text-align: center;
-      padding: 52px 32px; }
-      @media (max-width: 600px) {
+      padding-top: 40px; }
+      @media (max-width: 1023px) {
         #container .left-section .token-sale {
-          padding: 32px 12px; } }
+          padding-top: 32px; } }
       #container .left-section .token-sale .video-head {
         font-size: 20px; }
       #container .left-section .token-sale a {
         text-decoration: underline;
         font-size: 20px; }
+      #container .left-section .token-sale .contact-us a {
+        font-size: 14px; }
       #container .left-section .token-sale .details {
         width: 292px;
         margin: 20px auto 32px; }
@@ -144,13 +146,13 @@ input {
     width: 50%;
     position: relative;
     transition: 1s;
-    padding: 52px 40px 40px 40px; }
+    padding: 40px; }
     @media (max-width: 600px) {
       #container .right-section {
         padding: 16px 12px; } }
     @media (min-width: 1024px) {
       #container .right-section {
-        min-height: calc(100vh - 92px); } }
+        min-height: calc(100vh - 80px); } }
     @media (max-width: 1023px) {
       #container .right-section {
         width: 100%; } }
@@ -242,8 +244,13 @@ input {
     #container .right-section .home-address button {
       display: block;
       margin: 24px auto 0;
-      padding: 0 24px;
-      line-height: 16px; }
+      padding: 0 32px;
+      line-height: 16px;
+      font-size: 16px; }
+      @media (max-width: 600px) {
+        #container .right-section .home-address button {
+          padding: 0 24px;
+          margin: 24px auto; } }
     #container .right-section .home-address b {
       text-transform: uppercase; }
     #container .right-section .home-address p {
@@ -467,15 +474,17 @@ input {
   position: absolute;
   bottom: 32px;
   left: 0; }
-  @media (max-width: 600px) {
+  @media (max-width: 1023px) {
     .contact-us {
       position: static;
-      margin-top: 40px; } }
+      margin: 32px 0; } }
   .contact-us a {
-    font-size: 14px !important; }
+    font-size: 14px;
+    display: block; }
 
 .seperator {
   margin: 32px auto;
   width: 256px;
   height: 2px;
-  background: #c5cbd7; }
+  background: #c5cbd7;
+  display: block; }
