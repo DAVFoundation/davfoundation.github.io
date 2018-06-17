@@ -886,7 +886,7 @@ input {
       object-fit: fill; }
 
 .roadmap {
-  background: url("../img/city.jpg") no-repeat center;
+  background: #434343 url("../img/city.jpg") no-repeat center;
   background-size: cover;
   padding: 60px 0 55px;
   text-align: center; }
