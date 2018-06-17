@@ -63,7 +63,10 @@ $(document).ready(function(){
     updateEthRaised();
   } , 10000);
 
-  $(".telegram-bottom").addClass("telegram-loaded");
+  if ($(window).width() < 600) {
+    $(".telegram-bottom").addClass("telegram-loaded");
+  }
+  
 
   // color switch for nav
    var scroll_start = 0;
@@ -687,7 +690,8 @@ function beforeSubmitKycRegistration() {
 var $floatingButton = $('#floating-button');
 
 $(window).scroll(function() {
-  $floatingButton.removeClass('hidden-lg');
+  var $animationDiv = $('.telegram-bottom')
+  $animationDiv.addClass('telegram-loaded');
 });
 
 function setDifferentCtaForAdwordsUsers() {
