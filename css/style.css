@@ -26,7 +26,7 @@ input {
 
 #join-token-sale-button {
   width: 192px;
-  margin: 48px auto;
+  margin: 45px auto;
   font-weight: bold;
   height: 40px; }
 
@@ -39,7 +39,7 @@ input {
 .ico-start-box h3 {
   color: #ff6a46;
   font-weight: bold;
-  font-size: 26px; }
+  font-size: 28px; }
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -508,7 +508,7 @@ input {
       z-index: 1; }
 
 .raised-progressbar {
-  margin: 40px 32px; }
+  margin: 30px 32px 40px 32px; }
   .raised-progressbar h6 {
     text-align: right;
     margin: 0px !important;
@@ -2885,7 +2885,10 @@ footer {
   .hero.hero-ico .as-seen-on-hero {
     margin-top: 0px; }
   .hero.hero-ico .as-seen-on-hero img {
-    width: 100%; } }
+    width: 100%; }
+  .ico-start-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px; } }
 
 @media (max-height: 810px) {
   .hero.hero-ico .as-seen-on-hero {
