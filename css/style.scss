@@ -1589,8 +1589,15 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
 			padding: 0 30px;
 			position: relative;
 
+			@include mobile {
+				padding: 0;
+				h6 {
+					width: 100%;
+				}
+			}
+
 			&::after {
-				$quoteHeight: 224px;
+				$quoteHeight: 62%;
 				background: no-repeat url("../img/bubl.svg") center;
 				content: '';
 				position: absolute;
@@ -1599,7 +1606,12 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
 				left: calc(50% - #{$quoteHeight/2});
    				background-size: 300px;
     			height: 8px;
-    			width: $quoteHeight;	
+				width: $quoteHeight;
+				@include mobile {
+					$quoteMobileHeight: 86%;
+					left: calc(50% - #{$quoteMobileHeight/2});
+					width: $quoteMobileHeight;
+				}
 			}
 		}
 		.hasVideo{

@@ -1272,16 +1272,25 @@ input {
     line-height: 14px;
     padding: 0 30px;
     position: relative; }
+    @media (max-width: 600px) {
+      .team .team-large .advisor-quote {
+        padding: 0; }
+        .team .team-large .advisor-quote h6 {
+          width: 100%; } }
     .team .team-large .advisor-quote::after {
       background: no-repeat url("../img/bubl.svg") center;
       content: '';
       position: absolute;
       z-index: 1;
       top: -20px;
-      left: calc(50% - 112px);
+      left: calc(50% - 31%);
       background-size: 300px;
       height: 8px;
-      width: 224px; }
+      width: 62%; }
+      @media (max-width: 600px) {
+        .team .team-large .advisor-quote::after {
+          left: calc(50% - 43%);
+          width: 86%; } }
   .team .team-large .hasVideo a {
     position: relative; }
   .team .team-large .hasVideo img.videoIcon {
