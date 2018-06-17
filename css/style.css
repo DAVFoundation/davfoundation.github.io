@@ -1262,6 +1262,26 @@ input {
         padding-right: 5px; }
     .team .team-large .advisor-logo img {
       width: 100%; }
+  .team .team-large .advisor-quote {
+    font-size: 11px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    color: #979797;
+    min-height: 60px;
+    line-height: 14px;
+    padding: 0 30px;
+    position: relative; }
+    .team .team-large .advisor-quote::after {
+      background: no-repeat url("../img/bubl.svg") center;
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      left: calc(50% - 112px);
+      background-size: 300px;
+      height: 8px;
+      width: 224px; }
   .team .team-large .hasVideo a {
     position: relative; }
   .team .team-large .hasVideo img.videoIcon {
