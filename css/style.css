@@ -1966,7 +1966,7 @@ footer {
     position: relative; }
 
 .dav-cli {
-  background: url(../img/prototypes/orange-bg.jpg) no-repeat center;
+  background: #fb6544 url(../img/prototypes/orange-bg.jpg) no-repeat center;
   background-size: cover;
   color: #FFF;
   padding-top: 120px; }
