@@ -277,6 +277,18 @@ input {
 		display: table-cell;
 		vertical-align: middle;
 		text-align: center;
+
+		.row {
+			.screen1 {
+				@include tablet {
+					min-height: calc(100vh - 50px);
+
+					.screen1Cell {
+						margin-top: calc(50vh - 384px);
+					}
+				}
+			}
+		}
 		h1{
 			font-size: 37px;
 			font-weight: 700;

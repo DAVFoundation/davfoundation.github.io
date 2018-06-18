@@ -63,7 +63,7 @@ $(document).ready(function(){
     updateEthRaised();
   } , 10000);
 
-  if ($(window).width() < 600) {
+  if ($(window).width() < 1024) {
     $(".telegram-bottom").addClass("telegram-loaded");
   }
   

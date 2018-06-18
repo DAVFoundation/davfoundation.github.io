@@ -220,6 +220,11 @@ input {
       display: table-cell;
       vertical-align: middle;
       text-align: center; }
+      @media (min-width: 600px) and (max-width: 1023px) {
+        .hero .hero-inner .hero-valign .row .screen1 {
+          min-height: calc(100vh - 50px); }
+          .hero .hero-inner .hero-valign .row .screen1 .screen1Cell {
+            margin-top: calc(50vh - 384px); } }
       .hero .hero-inner .hero-valign h1 {
         font-size: 37px;
         font-weight: 700;
