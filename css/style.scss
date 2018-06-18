@@ -279,11 +279,11 @@ input {
 		text-align: center;
 
 		.row {
-			.screen1 {
+			.text-left {
 				@include tablet {
 					min-height: calc(100vh - 50px);
 
-					.screen1Cell {
+					.screen1 {
 						margin-top: calc(50vh - 384px);
 					}
 				}

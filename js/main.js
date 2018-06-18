@@ -129,8 +129,11 @@ $(document).ready(function(){
     $('.hero').css('padding-top', navbar + 'px');
     $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
 
-    if (windowWidth < 767) {
+    if (windowWidth <= 768) {
       $('.screen1').height(windowHeight - navbar);
+      if (windowHeight < 768) {
+        $('.screen1').css('margin-top', 0);
+      }
     }
     // var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
     // var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
@@ -153,8 +156,11 @@ $(document).ready(function(){
       $('.hero .hero-inner').height(windowHeight - navbar);
       $('.hero').css('padding-top', navbar + 'px');
       $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
-      if (windowWidth < 767) {
+      if (windowWidth <= 768) {
         $('.screen1').height(windowHeight - navbar);
+        if (windowHeight < 768) {
+          $('.screen1').css('margin-top', 0);
+        }  
       }
     });
 
