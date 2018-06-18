@@ -886,7 +886,7 @@ input {
       object-fit: fill; }
 
 .roadmap {
-  background: url("../img/city.jpg") no-repeat center;
+  background: #434343 url("../img/city.jpg") no-repeat center;
   background-size: cover;
   padding: 60px 0 55px;
   text-align: center; }
@@ -1995,7 +1995,7 @@ footer {
     position: relative; }
 
 .dav-cli {
-  background: url(../img/prototypes/orange-bg.jpg) no-repeat center;
+  background: #fb6544 url(../img/prototypes/orange-bg.jpg) no-repeat center;
   background-size: cover;
   color: #FFF;
   padding-top: 120px; }
