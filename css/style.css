@@ -41,6 +41,9 @@ input {
   font-weight: bold;
   font-size: 28px; }
 
+.margin-top0 {
+  margin-top: 0 !important; }
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -218,6 +221,11 @@ input {
       display: table-cell;
       vertical-align: middle;
       text-align: center; }
+      @media (min-width: 600px) and (max-width: 1023px) {
+        .hero .hero-inner .hero-valign .row .text-left {
+          min-height: calc(100vh - 50px); }
+          .hero .hero-inner .hero-valign .row .text-left .screen1 {
+            margin-top: calc(50vh - 384px); } }
       .hero .hero-inner .hero-valign h1 {
         font-size: 37px;
         font-weight: 700;

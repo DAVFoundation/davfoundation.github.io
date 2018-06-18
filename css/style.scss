@@ -56,7 +56,9 @@ input {
 		font-size: 28px;
 	}
 }
-
+.margin-top0 {
+	margin-top: 0 !important;
+}
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -277,6 +279,18 @@ input {
 		display: table-cell;
 		vertical-align: middle;
 		text-align: center;
+
+		.row {
+			.text-left {
+				@include tablet {
+					min-height: calc(100vh - 50px);
+
+					.screen1 {
+						margin-top: calc(50vh - 384px);
+					}
+				}
+			}
+		}
 		h1{
 			font-size: 37px;
 			font-weight: 700;
