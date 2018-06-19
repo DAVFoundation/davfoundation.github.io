@@ -1275,6 +1275,33 @@ input {
         padding-right: 5px; }
     .team .team-large .advisor-logo img {
       width: 100%; }
+  .team .team-large .advisor-quote {
+    font-size: 11px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    color: #979797;
+    line-height: 14px;
+    position: relative; }
+    @media (max-width: 600px) {
+      .team .team-large .advisor-quote {
+        padding: 0; }
+        .team .team-large .advisor-quote h6 {
+          width: 100%; } }
+    .team .team-large .advisor-quote::after {
+      background: no-repeat url("../img/bubl.svg") center;
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      left: calc(50% - 31%);
+      background-size: 300px;
+      height: 8px;
+      width: 62%; }
+      @media (max-width: 600px) {
+        .team .team-large .advisor-quote::after {
+          left: calc(50% - 43%);
+          width: 86%; } }
   .team .team-large .hasVideo a {
     position: relative; }
   .team .team-large .hasVideo img.videoIcon {
@@ -3062,7 +3089,9 @@ footer {
   .hero.hero-ico .hero-inner .hero-valign h1, .hero.hero-ico .hero-inner .hero-valign h5, .hero.hero-ico .hero-inner .hero-valign h6 {
     text-align: center; }
   .hero.hero-ico .hero-inner .hero-valign .raised-progressbar h6 {
-    text-align: right; } }
+    text-align: right; }
+  .team .team-large > div {
+    min-height: 410px; } }
 
 @media (max-width: 767px) {
   footer .links {

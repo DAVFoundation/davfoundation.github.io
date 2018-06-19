@@ -1597,6 +1597,40 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
 				width: 100%;
 			}
 		}
+		.advisor-quote {
+			font-size: 11px;
+			font-weight: 500;
+			font-style: italic;
+			text-align: center;
+			color: #979797;
+			line-height: 14px;
+			position: relative;
+
+			@include mobile {
+				padding: 0;
+				h6 {
+					width: 100%;
+				}
+			}
+
+			&::after {
+				$quoteHeight: 62%;
+				background: no-repeat url("../img/bubl.svg") center;
+				content: '';
+				position: absolute;
+				z-index: 1;
+				top: -20px;
+				left: calc(50% - #{$quoteHeight/2});
+   				background-size: 300px;
+    			height: 8px;
+				width: $quoteHeight;
+				@include mobile {
+					$quoteMobileHeight: 86%;
+					left: calc(50% - #{$quoteMobileHeight/2});
+					width: $quoteMobileHeight;
+				}
+			}
+		}
 		.hasVideo{
 			a{
 				position: relative;
@@ -3929,6 +3963,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		.raised-progressbar h6 {
     		text-align: right;
 		}
+	}
+	.team .team-large > div{
+		min-height: 410px;
 	}
 }
 @media (max-width: 767px) {
