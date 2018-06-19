@@ -164,6 +164,18 @@ input {
 		color: $orange;
 	}
 }
+.join-github {
+	background: $orange;
+	padding: 40px;
+	width: 100%;
+	color: white;
+
+	h3 {
+		margin: 0;
+		line-height: 1.25em;
+		text-align: center;
+	}
+}
 .telegram-bottom {
     position: fixed;
     top: auto;

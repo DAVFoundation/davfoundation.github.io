@@ -128,6 +128,16 @@ input {
   .user-scroll li > a {
     color: #ff6a46; }
 
+.join-github {
+  background: #ff6a46;
+  padding: 40px;
+  width: 100%;
+  color: white; }
+  .join-github h3 {
+    margin: 0;
+    line-height: 1.25em;
+    text-align: center; }
+
 .telegram-bottom {
   position: fixed;
   top: auto;
