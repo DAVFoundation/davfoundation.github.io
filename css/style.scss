@@ -162,13 +162,6 @@ input {
     box-shadow: 0 0 5px rgba(0,0,0,.3);
 	li>a{
 		color: $orange;
-		color: #333;
-	}
-	#logo-orange{
-		display: none;
-	}
-	#logo-white{
-		display: inline-block;
 	}
 }
 .telegram-bottom {
@@ -3935,7 +3928,6 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		background: $orange;
 	}
 	.navbar-fixed-top{
-		background: #FFF;
 		li>a{
 			color: #333;
 		}

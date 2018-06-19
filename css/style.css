@@ -126,12 +126,7 @@ input {
   background-color: #FFF;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
   .user-scroll li > a {
-    color: #ff6a46;
-    color: #333; }
-  .user-scroll #logo-orange {
-    display: none; }
-  .user-scroll #logo-white {
-    display: inline-block; }
+    color: #ff6a46; }
 
 .telegram-bottom {
   position: fixed;
@@ -3066,10 +3061,8 @@ footer {
     font-size: 15px; }
   .navbar-toggle .icon-bar {
     background: #ff6a46; }
-  .navbar-fixed-top {
-    background: #FFF; }
-    .navbar-fixed-top li > a {
-      color: #333; }
+  .navbar-fixed-top li > a {
+    color: #333; }
   .navbar-fixed-top .navbar-collapse {
     max-height: 100%; }
   .navbar-toggle span.icon-bar {
