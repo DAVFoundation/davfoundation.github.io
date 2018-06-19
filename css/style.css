@@ -70,8 +70,10 @@ input {
 
 .navbar.user-scroll .navbar-nav .dropdown a:hover, .navbar.user-scroll .navbar-nav .dropdown a:active, .navbar.user-scroll .navbar-nav .dropdown a:focus {
   background: #FFF; }
+
 .navbar.user-scroll .navbar-nav .dropdown:hover > a {
   background: #FFF; }
+
 .navbar.user-scroll .navbar-nav .dropdown-menu {
   background: #FFF;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
@@ -124,12 +126,17 @@ input {
   background-color: #FFF;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
   .user-scroll li > a {
-    color: #ff6a46;
-    color: #333; }
-  .user-scroll #logo-orange {
-    display: none; }
-  .user-scroll #logo-white {
-    display: inline-block; }
+    color: #ff6a46; }
+
+.join-github {
+  background: #ff6a46;
+  padding: 40px;
+  width: 100%;
+  color: white; }
+  .join-github h3 {
+    margin: 0;
+    line-height: 1.25em;
+    text-align: center; }
 
 .telegram-bottom {
   position: fixed;
@@ -978,6 +985,7 @@ input {
   font-size: 26px;
   margin: 0 0 70px;
   color: #333; }
+
 .members a {
   display: block;
   position: relative; }
@@ -1008,9 +1016,11 @@ input {
     opacity: 1; }
   .members a:hover, .members a:active, .members a:focus {
     outline: none; }
+
 .members img {
   height: 90px;
   margin-bottom: 60px; }
+
 .members .popover-content img {
   margin: 0;
   height: auto;
@@ -1022,14 +1032,17 @@ input {
   color: #a7a7a7;
   opacity: 1;
   font-size: 36px; }
+
 .alliance-modal-small .modal-content {
   border: none; }
+
 .alliance-modal-small a {
   display: block;
   font-size: 13px;
   text-align: center;
   font-weight: 500;
   color: #4361d8; }
+
 .alliance-modal-small h5 {
   font-size: 13px;
   color: #363840;
@@ -1040,6 +1053,7 @@ input {
 
 .alliance-modal.team-modal .modal-dialog {
   width: 360px; }
+
 .alliance-modal.team-modal input[type=text] {
   display: block;
   width: 100%;
@@ -1048,6 +1062,7 @@ input {
   height: 37px;
   margin: 0 0 15px;
   padding: 0 10px; }
+
 .alliance-modal.team-modal textarea {
   display: block;
   width: 100%;
@@ -1057,6 +1072,7 @@ input {
   margin: 0 0 15px;
   padding: 10px;
   resize: none; }
+
 .alliance-modal.team-modal label {
   width: 100%;
   display: block;
@@ -1065,6 +1081,7 @@ input {
   .alliance-modal.team-modal label.error {
     color: #ff6a46;
     margin: -10px 0 10px; }
+
 .alliance-modal.team-modal input[type=submit] {
   border-radius: 3px;
   background: #ff6a46;
@@ -1074,10 +1091,12 @@ input {
   padding: 0 10px;
   font-size: 15px;
   font-weight: 700; }
+
 .alliance-modal.team-modal h4 {
   text-align: center;
   margin: 10px 0;
   color: #333; }
+
 .alliance-modal.team-modal .modal-dialog .modal-content .modal-body {
   padding-bottom: 15px; }
 
@@ -1690,8 +1709,10 @@ footer {
   font-weight: 700;
   text-align: center;
   margin: 55px 0 40px; }
+
 .press-releases a:hover, .press-releases a:active, .press-releases a:focus {
   text-decoration: none; }
+
 .press-releases a.show-more {
   display: inline-block;
   padding: 10px 15px;
@@ -1700,6 +1721,7 @@ footer {
   font-size: 15px;
   font-weight: 500;
   border-radius: 3px; }
+
 .press-releases article {
   min-height: 270px;
   position: relative;
@@ -1735,8 +1757,10 @@ footer {
   font-weight: 700;
   text-align: center;
   margin: 55px 0 40px; }
+
 .media-articles a:hover, .media-articles a:active, .media-articles a:focus {
   text-decoration: none; }
+
 .media-articles a.show-articles {
   display: inline-block;
   padding: 10px 15px;
@@ -1745,6 +1769,7 @@ footer {
   font-size: 15px;
   font-weight: 500;
   border-radius: 3px; }
+
 .media-articles a article {
   position: relative;
   min-height: 430px;
@@ -1786,20 +1811,24 @@ footer {
   font-weight: 700;
   text-align: center;
   margin: 55px 0 40px; }
+
 .media-gallery img {
   margin: 0 40px; }
+
 .media-gallery .arrow-left.slick-arrow {
   margin: 0px;
   position: absolute;
   left: -59px;
   top: 25%;
   cursor: pointer; }
+
 .media-gallery .arrow-right.slick-arrow {
   margin: 0px;
   position: absolute;
   right: -59px;
   top: 25%;
   cursor: pointer; }
+
 .media-gallery a:hover, .media-gallery a:active, .media-gallery a:focus {
   outline: none; }
 
@@ -1892,6 +1921,7 @@ footer {
     -webkit-transform: translateY(70px); }
   to {
     -webkit-transform: translateY(0); } }
+
 @keyframes balls {
   from {
     transform: translateY(0); }
@@ -1899,6 +1929,7 @@ footer {
     transform: translateY(70px); }
   to {
     transform: translateY(0); } }
+
 .drone-charge-outter {
   padding-top: 58px;
   background: #000 url(../img/prototypes/hero.jpg) no-repeat center;
@@ -2111,8 +2142,10 @@ footer {
   font-weight: 700;
   text-align: center;
   margin: 55px 0 40px; }
+
 .job-list a:hover, .job-list a:active, .job-list a:focus {
   text-decoration: none; }
+
 .job-list a.show-more {
   display: inline-block;
   padding: 10px 15px;
@@ -2121,6 +2154,7 @@ footer {
   font-size: 15px;
   font-weight: 500;
   border-radius: 3px; }
+
 .job-list article {
   min-height: 270px;
   position: relative;
@@ -2155,6 +2189,7 @@ footer {
 
 .team-modal.job-modal .modal-dialog {
   width: 640px; }
+
 .team-modal.job-modal .modal-body {
   padding-left: 80px;
   padding-right: 80px; }
@@ -2162,12 +2197,14 @@ footer {
     position: absolute;
     right: 5px;
     top: 0px; }
+
 .team-modal.job-modal h5 {
   font-size: 20px;
   font-weight: 700;
   color: #ff6a46;
   margin: 0 0 20px;
   text-align: center; }
+
 .team-modal.job-modal h6 {
   text-align: center;
   font-size: 15px;
@@ -2183,6 +2220,7 @@ footer {
     margin: 20px auto 25px; }
   .team-modal.job-modal h6 span {
     font-weight: 700; }
+
 .team-modal.job-modal p {
   font-size: 15px;
   font-weight: 400;
@@ -2192,15 +2230,18 @@ footer {
     font-weight: 700;
     color: #333;
     text-decoration: underline; }
+
 .team-modal.job-modal ul {
   list-style: none;
   padding: 0;
   margin: 0; }
+
 .team-modal.job-modal li {
   font-size: 15px;
   font-weight: 400;
   color: #333;
   margin: 0 0 5px; }
+
 .team-modal.job-modal li::before {
   content: '\2022';
   color: red;
@@ -2259,8 +2300,10 @@ footer {
   .team-modal.kyc-modal .modal-body h5 {
     color: red;
     margin: -20px 0 20px; }
+
 .team-modal.kyc-modal#modalKYCStatus h4 {
   font-weight: 500; }
+
 .team-modal.kyc-modal#modalKYCStatus input[type=email] {
   border: 1px solid #000; }
 
@@ -2307,12 +2350,15 @@ footer {
   font-size: 25px;
   font-weight: 700;
   color: #131313; }
+
 .every-feature p {
   font-size: 17px;
   font-weight: 400;
   color: #131313; }
+
 .every-feature .puzzle-container {
   margin-top: -300px; }
+
 .every-feature .phone-puzzle {
   position: relative;
   top: 0px;
@@ -2406,20 +2452,24 @@ footer {
 
 .carousel-fade .carousel-inner .item {
   transition-property: opacity; }
+
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0; }
+
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1; }
+
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   transform: translate3d(0, 0, 0); }
+
 .carousel-fade .carousel-control {
   z-index: 2; }
 
@@ -2606,11 +2656,13 @@ footer {
   color: #1c1e1c;
   text-align: center;
   margin: 55px 0 45px; }
+
 .legal-page h3 {
   font-weight: 700;
   font-size: 17px;
   color: #1c1e1c;
   margin: 0 0 15px; }
+
 .legal-page p, .legal-page li {
   font-weight: 400;
   font-size: 15px;
@@ -2619,12 +2671,16 @@ footer {
   line-height: 25px; }
   .legal-page p a, .legal-page li a {
     color: #ff6a46; }
+
 .legal-page li {
   margin: 0px; }
+
 .legal-page .disc-list {
   margin-top: -15px; }
+
 .legal-page ul {
   margin: 0 0 15px; }
+
 .legal-page ol {
   margin: 0 0 15px;
   list-style-type: none; }
@@ -2733,8 +2789,10 @@ footer {
   height: 18px;
   float: left;
   margin-right: 10px; }
+
 .custom-check input {
   display: none; }
+
 .custom-check input:checked + label span:after {
   content: '\00d7';
   color: #ff6a46;
@@ -2743,6 +2801,7 @@ footer {
   text-align: center;
   display: block;
   font-weight: normal; }
+
 .custom-check label {
   color: #FFF !important;
   line-height: 18px;
@@ -2805,41 +2864,31 @@ footer {
 @media (max-width: 1400px) {
   .nav > li > a {
     padding: 10px 7px; }
-
   .navbar-brand {
     padding: 10px; }
-
   .media-gallery .arrow-left.slick-arrow {
     width: 40px;
     left: -40px; }
-
   .media-gallery .arrow-right.slick-arrow {
     width: 40px;
     right: -40px; }
-
   .team .team-small a {
     min-height: 207px; }
-
   #iphonex {
     height: 640px; }
-
   #drone {
     width: 400px; }
-
   .dav-cli #laptop {
     width: 100%; }
-
   .navbar.user-scroll .navbar-nav .dropdown-menu::before {
     height: 12px; }
-
   .people-are-talking p {
     min-height: 190px; }
-
   .drone-flight-planning img {
     width: 60%; }
-
   .navbar-nav > li.btn-top-register #mc-embedded-subscribe {
     margin-top: 7px; } }
+
 @media (max-width: 1200px) {
   .drone-flight-planning {
     height: auto;
@@ -2849,123 +2898,91 @@ footer {
       width: 80%; }
     .drone-flight-planning video {
       display: none; }
-
   .hero.hero-ico .hero-inner .hero-valign h1 {
     font-size: 32px; }
   .hero.hero-ico .hero-inner .hero-valign .best-brands a {
     margin: 0 25px; }
-
   .hero.hero-ico .as-seen-on-hero {
     margin-top: 0px; }
-
   .hero.hero-ico .as-seen-on-hero img {
     width: 100%; }
-
   .ico-start-box h3 {
     font-size: 24px;
     margin-bottom: 20px; } }
+
 @media (max-height: 810px) {
   .hero.hero-ico .as-seen-on-hero {
     margin-top: 0px; } }
+
 @media (max-width: 1025px) {
   input[type=text],
   input[type=email],
   input[type=password],
   textarea {
     -webkit-appearance: none; }
-
   .navbar-nav > li > a {
     font-size: 12px; }
     .navbar-nav > li > a + ul.dropdown-menu > li > a {
       font-size: 12px; }
-
   .best-brands a img {
     height: 60px; }
-
   .fundraising-goals .market-cap {
     width: 100%; }
-
   .as-seen-on img {
     height: 100px; }
-
   .daily-dav p:first-child {
     margin-top: 30px; }
-
   .daily-dav img {
     margin-top: 55px; }
-
   .videoWrapper iframe {
     padding: 0px; }
-
   .video-home p {
     padding: 0px; }
-
   .team .team-small a {
     min-height: 280px;
     margin: auto; }
-
   .media-gallery .arrow-left.slick-arrow {
     left: -30px; }
-
   .media-gallery .arrow-right.slick-arrow {
     right: -30px; }
-
   .dav-portal img {
     width: 50%; }
-
   .search-rescue {
     height: auto !important;
     padding: 80px 0; }
-
   .search-rescue img#rover {
     width: 60%; }
-
   .dav-alliance img {
     height: 65px; }
-
   .contributors ul li a:hover:after {
     display: none; }
-
   .people-are-talking p {
     min-height: 190px; }
-
   .peer-to-peer img {
     width: 100%; }
-
   .open-source {
     height: 47vw; }
-
   .every-feature {
     height: 67vw; }
-
   .refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
     margin-top: 8%; }
-
   .blockchain-carousel h1 {
     margin: 45px 0 60px; }
-
   .drone-flight-planning h2 {
     margin: 5% 0 20px; }
-
   .drone-flight-planning img {
     margin-top: -10px; }
-
   .hero.route-creator .hero-inner p {
     padding-left: 0;
     font-size: 12px; }
-
   .route-creator-bg {
     background-size: auto; }
-
   .fixed-container-width {
     width: 970px; }
-
   .telegram-bottom.extra-space {
     bottom: 120px; }
-
   .hero.hero-ico .hero-inner .hero-valign .container-transparent h6 {
     font-size: 12px; }
-
   .people-are-talking .arrow-right.slick-arrow {
     right: 0px;
     width: 24px; }
@@ -2975,85 +2992,65 @@ footer {
   .people-are-talking .slick-slide {
     padding-left: 40px;
     padding-right: 40px; } }
+
 @media (max-width: 992px) {
   .nav > li > a {
     padding: 10px 5px; }
-
   .best-brands a {
     margin: 15px 35px; }
-
   .illustrations img {
     height: 100px; }
-
   .technologies img {
     height: 150px; }
-
   .technology img {
     height: auto;
     width: 90%; }
-
   .as-seen-on img {
     height: 80px; }
-
   .development-tools h4 {
     margin-top: 40px; }
   .development-tools img {
     width: 100%; }
-
   .fundraising-goals p {
     font-size: 13px; }
-
   .team .team-medium a,
   .team .team-large h3,
   .team .team-large a {
     width: 100%; }
-
   .team-modal.job-modal .modal-dialog,
   .team-modal .modal-dialog {
     width: 100%; }
-
   .team-modal.job-modal .modal-body {
     padding-left: 15px;
     padding-right: 15px; }
-
   .navbar-right {
     margin-right: 5px; }
     .navbar-right img {
       margin-right: 0px;
       width: 27px; }
-
   .media-gallery img {
     margin: 0 80px; }
-
   .media-gallery .arrow-left.slick-arrow {
     width: 36px;
     left: 0px; }
-
   .media-gallery .arrow-right.slick-arrow {
     width: 36px;
     right: 0px; }
-
   .hero.hero-prototypes {
     overflow: hidden; }
     .hero.hero-prototypes h1 {
       padding: 13% 0 !important; }
-
   .block-explorer h2 {
     margin: 24% 0 20px; }
-
   .mission-control h2#second-title {
     margin-top: 50px; }
-
   .dav-alliance img {
     height: 60px; }
-
   .contributors ul li {
     width: 9%;
     margin: 0.5%; }
-
   .navbar .navbar-nav .dropdown a {
     min-width: 0px; }
-
   .open-source,
   .every-feature {
     padding-bottom: 30px;
@@ -3065,85 +3062,65 @@ footer {
     .open-source .phone-puzzle.end,
     .every-feature .phone-puzzle.end {
       top: 0px; }
-
   .blockchain-middleman h2 {
     font-size: 24px; }
   .blockchain-middleman p {
     padding: 0px; }
   .blockchain-middleman .row > div:after {
     display: none; }
-
   .refer-friends #maitre-widget-container, .refer-friends #maitre-widget-popup {
     margin-top: 0px; }
-
   .people-are-talking p {
     min-height: 100px; }
   .people-are-talking .row > div {
     margin-top: 50px; }
-
   .blockchain-carousel h1 {
     margin: 0 0 60px; }
-
   footer .about-legal .social a {
     min-width: 49%; }
-
   .hero.hero-ico .hero-inner .hero-valign .ico-start-box {
     margin-bottom: 30px;
     padding: 20px 0; }
-
   .hero.hero-ico .hero-inner .hero-valign .container-transparent.left {
     width: 100%; }
-
   .hero.hero-ico .hero-inner .hero-valign h1 {
     font-size: 24px;
     padding-top: 64px; }
-
   .hero.hero-ico .hero-inner .hero-valign h1, .hero.hero-ico .hero-inner .hero-valign h5, .hero.hero-ico .hero-inner .hero-valign h6 {
     text-align: center; }
   .hero.hero-ico .hero-inner .hero-valign .raised-progressbar h6 {
     text-align: right; }
-
   .team .team-large > div {
     min-height: 410px; } }
+
 @media (max-width: 767px) {
   footer .links {
     text-align: center; }
-
   .navbar-nav > li > a {
     font-size: 15px; }
-
   .navbar-toggle .icon-bar {
     background: #ff6a46; }
-
-  .navbar-fixed-top {
-    background: #FFF; }
-    .navbar-fixed-top li > a {
-      color: #333; }
-
+  .navbar-fixed-top li > a {
+    color: #333; }
   .navbar-fixed-top .navbar-collapse {
     max-height: 100%; }
-
   .navbar-toggle span.icon-bar {
     height: 3px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-
   .navbar-toggle span.icon-bar:nth-child(2) {
     -webkit-transition: none;
     -moz-transition: none;
     transition: none; }
-
   .navbar-toggle:not(.collapsed) span.icon-bar {
     visibility: hidden; }
-
   .navbar-toggle:not(.collapsed) span.icon-bar:nth-child(3) {
     visibility: visible;
     width: 20px;
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
-
   .navbar-toggle:not(.collapsed) span.icon-bar:nth-child(4) {
     visibility: visible;
     width: 20px;
@@ -3151,86 +3128,65 @@ footer {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     margin-top: -3px; }
-
   ul.nav {
     float: left !important;
     width: 50%;
     padding-left: 15px; }
-
   .crowd-sale .join-crowd-sale,
   .hero .hero-inner .hero-valign .hero-join {
     width: 320px; }
-
   .hero .hero-inner .hero-valign h1 {
     font-size: 25px;
     line-height: 30px;
     padding-top: 50px; }
-
   .hero .hero-inner .hero-valign h5 {
     margin: 0 0 20px;
     font-size: 12px; }
-
   .join-us-orange a {
     margin: 10px 25px; }
-
   .best-brands a {
     margin: 0px; }
     .best-brands a img {
       height: 70px;
       margin: 30px 15px; }
-
   .illustrations img {
     margin-top: 50px; }
-
   .technology p {
     width: 90%; }
-
   .technologies {
     padding-top: 0px;
     padding-bottom: 40px; }
     .technologies img {
       margin: 50px 0 0; }
-
   .blockchain-enables ul {
     padding-left: 5px; }
-
   .as-seen-on h2 {
     margin: 0px; }
   .as-seen-on div {
     text-align: center !important; }
-
   .fundraising-goals img {
     width: 90%;
     height: auto; }
-
   .partners .row {
     margin: 0px; }
-
   .team-modal .modal-dialog button.close {
     position: relative;
     z-index: 1999; }
-
   .modal-dialog {
     margin: 0px; }
-
   .team-modal .modal-dialog h2 {
     margin: 10px 0; }
-
   .team-modal .modal-dialog br + img {
     width: 60%;
     margin: 0px; }
-
   .daily-dav img {
     width: 100px;
     margin: 0 auto;
     display: block; }
-
   .daily-dav a img {
     display: inline-block; }
-
   .media-gallery img {
     margin: 0 auto; }
-
   .alert-announcement {
     margin-bottom: 0px;
     padding: 15px; }
@@ -3241,7 +3197,6 @@ footer {
       display: none; }
     .alert-announcement .close {
       line-height: 20px; }
-
   @-webkit-keyframes balls {
     from {
       -webkit-transform: translateY(0); }
@@ -3258,60 +3213,47 @@ footer {
       transform: translateY(0); } }
   .hero.hero-prototypes .text-right {
     text-align: center !important; }
-
   .hero.hero-prototypes h1 {
     font-size: 24px !important; }
-
   .hero.hero-prototypes #iphonex {
     position: static;
     margin-top: 20px;
     width: 65%;
     height: auto;
     margin-bottom: -25px; }
-
   .hero.hero-prototypes #drone {
     width: 220px;
     top: 25%;
     left: 25%; }
-
   .dav-cli {
     padding-top: 40px; }
     .dav-cli .text-left {
       text-align: center !important; }
-
   .dav-cli #laptop {
     margin-top: 20px;
     margin-bottom: -50px; }
-
   .dav-portal img {
     margin-top: -50px; }
-
   .charger-car img {
     height: 50px; }
-
   .dav-cli #car {
     margin-top: 0px; }
-
   .block-explorer {
     padding-bottom: 50px; }
     .block-explorer h2 {
       margin: 50px 0 20px; }
     .block-explorer img {
       margin: 20px 0; }
-
   .mission-control, .search-rescue {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center !important; }
     .mission-control h2, .search-rescue h2 {
       margin-top: 0px; }
-
   .mission-control .text-right {
     text-align: center !important; }
-
   .search-rescue img#rover {
     margin-right: 0px; }
-
   .prototypes-section {
     padding-bottom: 50px; }
     .prototypes-section .container {
@@ -3320,10 +3262,8 @@ footer {
     .prototypes-section h2 {
       margin-top: 10vw;
       margin-bottom: 60vw; }
-
   .team .team-large h6 {
     padding: 0; }
-
   .team .team-large a .row img,
   .team .team-medium a .row img,
   .team .team-small a .row img {
@@ -3331,7 +3271,6 @@ footer {
     margin-top: 12px;
     height: 15px;
     margin-right: -5px; }
-
   .team .team-large a .row,
   .team .team-medium a .row,
   .team .team-small a .row {
@@ -3340,22 +3279,18 @@ footer {
     .team .team-medium a .row div,
     .team .team-small a .row div {
       padding: 0px; }
-
   .team .team-small a img,
   .team .team-medium a img,
   .team .team-large a img {
     width: 100%; }
-
   .team .team-large .text-center {
     text-align: left !important; }
-
   .team .team-small h4,
   .team .team-medium h4,
   .team .team-large h4 {
     font-size: 13px;
     min-height: 32px;
     width: 110%; }
-
   .team .team-small p,
   .team .team-medium p,
   .team .team-large h5 {
@@ -3364,70 +3299,53 @@ footer {
     margin: 0px;
     width: 118%;
     font-weight: 500; }
-
   .team .team-large h3 {
     font-size: 12px;
     line-height: 16px;
     margin: 0px;
     min-height: 67px;
     width: 100%; }
-
   .team .team-large h3 + img {
     height: 100px; }
-
   .team .team-large h4,
   .team .team-small h4,
   .team .team-medium h4 {
     margin: 10px 0 0;
     line-height: 20px; }
-
   .team .team-large h5,
   .team .team-small p,
   .team .team-medium p {
     line-height: 20px;
     margin-top: -5px;
     margin-top: -12px; }
-
   .team .team-small a,
   .team .team-medium a {
     margin: 20px auto 5px; }
-
   .team .team-small h4 {
     font-size: 13px; }
-
   .team .team-small a {
     min-height: 230px; }
-
   .dav-alliance .col-sm-4 {
     width: 50%; }
-
   .contributors ul li {
     width: 12%;
     margin: 1%; }
-
   .alliance-modal.team-modal .modal-dialog {
     width: 100%; }
-
   .team-modal.job-modal .modal-dialog {
     padding-top: 0px !important; }
-
   .team h2 {
     margin: 40px 0 30px; }
-
   .fundraising-goals .not-from-us {
     left: 0;
     margin-left: 0px;
     width: 100%; }
-
   .team .team-large .advisor-logo {
     width: 100%; }
-
   .team .team-large .advisor-logo img {
     width: 115%; }
-
   .logo-up {
     margin-top: -8px; }
-
   .hero.hero-privacy,
   .hero.hero-terms,
   .hero.hero-media,
@@ -3439,7 +3357,6 @@ footer {
     .hero.hero-careers .hero-inner .hero-valign h1 {
       margin: 0px;
       padding: 0px; }
-
   .people-are-talking {
     padding-bottom: 0px; }
     .people-are-talking p {
@@ -3447,49 +3364,38 @@ footer {
     .people-are-talking a {
       margin-bottom: 50px;
       display: inline-block; }
-
   .team .team-large .hasVideo img.videoIcon {
     left: 10px; }
-
   .kyc-top .token-details {
     padding: 15px; }
     .kyc-top .token-details .details-row p {
       line-height: normal;
       padding: 5px 0px; }
-
   .hero-blockchain {
     margin-top: 54px;
     padding: 50px 0; }
-
   .peer-to-peer {
     padding: 50px 0; }
     .peer-to-peer h2 {
       margin-top: 0; }
     .peer-to-peer .text-right {
       text-align: center; }
-
   .every-feature .text-left {
     text-align: center; }
-
   .refer-friends {
     background: #f7f7f7 url("../img/prototypes/gray-links.png") no-repeat center bottom;
     background-size: 100% auto; }
-
   .open-source img {
     width: 100%; }
-
   .blockchain-carousel .carousel .item .carousel-caption {
     min-height: 200px;
     padding: 0px 37px; }
-
   .blockchain-carousel .carousel .item img {
     width: auto;
     max-width: 150%;
     margin-left: -25%; }
-
   .team-modal.kyc-modal .modal-body input[type=email] {
     width: 89%; }
-
   .drone-charge {
     background: none;
     text-align: center;
@@ -3500,39 +3406,29 @@ footer {
     .drone-charge img {
       margin-bottom: 20px;
       width: 80%; }
-
   .drone-flight-planning .text-right {
     text-align: center; }
-
   .hero.route-creator .hero-inner input[type=text] {
     margin: 0 0 20px; }
-
   .hero .hero-inner .hero-valign .hero-join.makeFix {
     padding: 20px 15px 0; }
-
   .route-creator-bg.chargin-stations-bg {
     background-size: cover; }
     .route-creator-bg.chargin-stations-bg h1 {
       line-height: 120px !important;
       font-size: 22px !important; }
-
   .station-name {
     font-size: 20px !important; }
-
   .station-box p {
     font-size: 18px !important; }
-
   .station-box a {
     font-size: 16px !important;
     height: 36px;
     line-height: 36px; }
-
   .station-box {
     margin-bottom: 50px; }
-
   .telegram-bottom.extra-space {
     bottom: 140px; }
-
   .hero.hero-ico .hero-inner .hero-valign h1 {
     font-size: 28px;
     padding-top: 25px;
@@ -3583,54 +3479,49 @@ footer {
       .hero.hero-ico .hero-inner .hero-valign .best-brands a img {
         margin: 0;
         height: 60px; }
-
   .telegram-bottom a span {
     display: none; }
-
   .telegram-bottom.nospan a span {
     display: block; }
-
   .screen1 {
     display: table; }
     .screen1 .screen1Cell {
       display: table-cell;
       vertical-align: middle; }
-
   .people-are-talking a.btn-orange {
     margin-top: -60px; }
-
   .hero.hero-ico .as-seen-on-hero {
     padding: 20px 0 50px; }
-
   .hero.hero-ico .as-seen-on-hero h4 {
     color: rgba(255, 255, 255, 0.7); }
-
   .hero.hero-ico .as-seen-on-hero a img {
     -webkit-filter: brightness(200%);
     /* Safari 6.0 - 9.0 */
     filter: brightness(200%); }
-
   .drone-charge-outter {
     padding-top: 20px; }
-
   .hero.hero-prototypes h2 {
     margin: 20px 0; } }
+
 .invalid {
   border-color: red !important; }
 
 @media (max-height: 767px) {
   #iphonex {
     height: 530px; } }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select:focus,
   textarea:focus,
   input:focus {
     font-size: 16px; } }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select,
   textarea,
   input {
     font-size: 16px; } }
+
 .korean-flag {
   width: 40px;
   background-repeat: no-repeat;
@@ -3645,5 +3536,3 @@ footer {
   margin: 4px 6px 10px 8px;
   background-size: cover;
   background-image: url("../img/dav_token_symbol.svg"); }
-
-/*# sourceMappingURL=style.css.map */
