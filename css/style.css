@@ -126,7 +126,8 @@ input {
   background-color: #FFF;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
   .user-scroll li > a {
-    color: #ff6a46; }
+    color: #ff6a46;
+    color: #000; }
 
 .join-github {
   background: #ff6a46;
