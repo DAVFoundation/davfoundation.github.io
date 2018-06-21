@@ -37,7 +37,7 @@ input {
 }
 #join-token-sale-button {
 	width: 192px;
-	margin: 45px auto;
+	margin: 32px auto;
 	font-weight: bold;
 	height: 40px;
 }
@@ -297,6 +297,16 @@ input {
 				}
 			}
 		}
+
+		.announcement {
+			width: 100%;
+			padding: 0 16px 24px;
+			font-size: 14px;
+			text-align: center;
+			color: $red;
+			font-weight: bold;
+		}
+
 		h1{
 			font-size: 37px;
 			font-weight: 700;
@@ -477,7 +487,7 @@ input {
 		border-radius: 3px;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
-		border:solid 1px #fff;
+		border:solid 1px $red;
 		text-align:center;
 		margin:10px 12px;
 		// padding: 0 5px
@@ -677,23 +687,22 @@ input {
 	}
 }
 .raised-progressbar{
-	margin: 30px 32px 40px 32px;
+	margin: 36px 32px 4px 32px;
 	h6{
 		text-align: right;
 		margin: 0px !important;
 		font-size: 15px !important;
 		font-weight: 700 !important;
-		color: #fd2826;
+		color: $red;
 
 		a {
-			color: #fd2826 !important;
+			color: $red !important;
 		}
 
 	}
 	.progress{
 		height: 30px;
-		margin-top: 10px;
-		margin-bottom: 10px;
+		margin: 8px 0;
 		background-color: #020406;
 		background-color: #4d4d4d;
 		border-radius: 25px;
