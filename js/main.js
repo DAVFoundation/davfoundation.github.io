@@ -42,8 +42,8 @@ function increaseWithAnimation(newValue) {
 
   var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
 
-  $(".progress-bar").css("width",newWidthValue+"%");
-  
+  $(".progress-bar").css("width",`calc(${newWidthValue}% + 25px)`);
+
   var interval = setInterval(increaseInPulse, PULSE_DURATION);
 
   function increaseInPulse() {
@@ -53,17 +53,20 @@ function increaseWithAnimation(newValue) {
       clearInterval(interval);
     }
     ethCountElement.text(numberWithCommas(Math.floor(currentValue)));
-    
-  } 
+
+  }
 }
 
 $(document).ready(function(){
   updateEthRaised();
   setInterval(function() {
-    updateEthRaised();  
+    updateEthRaised();
   } , 10000);
 
-  $(".telegram-bottom").addClass("telegram-loaded");
+  if ($(window).width() < 1024) {
+    $(".telegram-bottom").addClass("telegram-loaded");
+  }
+  
 
   // color switch for nav
    var scroll_start = 0;
@@ -126,8 +129,13 @@ $(document).ready(function(){
     $('.hero').css('padding-top', navbar + 'px');
     $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
 
-    if (windowWidth < 767) {
+    if (windowWidth <= 768) {
       $('.screen1').height(windowHeight - navbar);
+      if (windowHeight < 768) {
+        $('.screen1').addClass('margin-top0');
+      } else {
+        $('.screen1').removeClass('margin-top0');
+      }
     }
     // var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
     // var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
@@ -150,8 +158,13 @@ $(document).ready(function(){
       $('.hero .hero-inner').height(windowHeight - navbar);
       $('.hero').css('padding-top', navbar + 'px');
       $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
-      if (windowWidth < 767) {
+      if (windowWidth <= 768) {
         $('.screen1').height(windowHeight - navbar);
+        if (windowHeight < 768) {
+          $('.screen1').addClass('margin-top0');
+        } else {
+          $('.screen1').removeClass('margin-top0');
+        }
       }
     });
 
@@ -657,7 +670,7 @@ function getParameterByName(name, url) {
 }
 
 function beforeSubmitKycRegistration() {
-  
+
   if (validateEmail()) {
     sendRegistrationAnaliticsEvent();
     return true;
@@ -687,7 +700,8 @@ function beforeSubmitKycRegistration() {
 var $floatingButton = $('#floating-button');
 
 $(window).scroll(function() {
-  $floatingButton.removeClass('hidden-lg');
+  var $animationDiv = $('.telegram-bottom')
+  $animationDiv.addClass('telegram-loaded');
 });
 
 function setDifferentCtaForAdwordsUsers() {

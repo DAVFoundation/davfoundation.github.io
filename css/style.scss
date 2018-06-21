@@ -37,7 +37,7 @@ input {
 }
 #join-token-sale-button {
 	width: 192px;
-	margin: 48px auto;
+	margin: 45px auto;
 	font-weight: bold;
 	height: 40px;
 }
@@ -48,14 +48,17 @@ input {
 		margin-top: -4px;
 	}
 }
+
 .ico-start-box{
 	h3 {
 		color: $orange;
 		font-weight: bold;
-		font-size: 26px;
+		font-size: 28px;
 	}
 }
-
+.margin-top0 {
+	margin-top: 0 !important;
+}
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -159,13 +162,19 @@ input {
     box-shadow: 0 0 5px rgba(0,0,0,.3);
 	li>a{
 		color: $orange;
-		color: #333;
+		color: #000;
 	}
-	#logo-orange{
-		display: none;
-	}
-	#logo-white{
-		display: inline-block;
+}
+.join-github {
+	background: $orange;
+	padding: 40px;
+	width: 100%;
+	color: white;
+
+	h3 {
+		margin: 0;
+		line-height: 1.25em;
+		text-align: center;
 	}
 }
 .telegram-bottom {
@@ -276,6 +285,18 @@ input {
 		display: table-cell;
 		vertical-align: middle;
 		text-align: center;
+
+		.row {
+			.text-left {
+				@include tablet {
+					min-height: calc(100vh - 50px);
+
+					.screen1 {
+						margin-top: calc(50vh - 384px);
+					}
+				}
+			}
+		}
 		h1{
 			font-size: 37px;
 			font-weight: 700;
@@ -656,13 +677,18 @@ input {
 	}
 }
 .raised-progressbar{
-	margin: 40px 32px;
+	margin: 30px 32px 40px 32px;
 	h6{
 		text-align: right;
 		margin: 0px !important;
-		font-size: 16px !important;
+		font-size: 15px !important;
 		font-weight: 700 !important;
 		color: #fd2826;
+
+		a {
+			color: #fd2826 !important;
+		}
+
 	}
 	.progress{
 		height: 30px;
@@ -673,7 +699,7 @@ input {
 		border-radius: 25px;
 		.progress-bar{
 			line-height: 28px;
-			font-size: 16px;
+			font-size: 15px;
 			font-weight: 700;
 			background: rgb(255,183,70);
 			background: linear-gradient(90deg, rgba(255,183,70,1) 0%, rgba(253,40,38,1) 100%);
@@ -1120,7 +1146,7 @@ height: 0;
 		width: 90%;
 		max-width: 1270px;
 	}
-	background: url('../img/city.jpg') no-repeat center;
+	background: #434343 url('../img/city.jpg') no-repeat center;
 	background-size: cover;
 	padding: 60px 0 55px;
 	text-align: center;
@@ -1570,6 +1596,40 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
 			}
 		 	img{
 				width: 100%;
+			}
+		}
+		.advisor-quote {
+			font-size: 11px;
+			font-weight: 500;
+			font-style: italic;
+			text-align: center;
+			color: #979797;
+			line-height: 14px;
+			position: relative;
+
+			@include mobile {
+				padding: 0;
+				h6 {
+					width: 100%;
+				}
+			}
+
+			&::after {
+				$quoteHeight: 62%;
+				background: no-repeat url("../img/bubl.svg") center;
+				content: '';
+				position: absolute;
+				z-index: 1;
+				top: -20px;
+				left: calc(50% - #{$quoteHeight/2});
+   				background-size: 300px;
+    			height: 8px;
+				width: $quoteHeight;
+				@include mobile {
+					$quoteMobileHeight: 86%;
+					left: calc(50% - #{$quoteMobileHeight/2});
+					width: $quoteMobileHeight;
+				}
 			}
 		}
 		.hasVideo{
@@ -2457,7 +2517,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 }
 .dav-cli{
-	background: url(../img/prototypes/orange-bg.jpg) no-repeat center;
+	background: #fb6544 url(../img/prototypes/orange-bg.jpg) no-repeat center;
     background-size: cover;
     color: #FFF;
     padding-top: 120px;
@@ -3612,6 +3672,13 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.hero.hero-ico .as-seen-on-hero img{
 		width: 100%;
 	}
+
+	.ico-start-box{
+		h3 {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+	}
 }
 @media (max-height: 810px){
 	.hero.hero-ico .as-seen-on-hero{
@@ -3898,6 +3965,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
     		text-align: right;
 		}
 	}
+	.team .team-large > div{
+		min-height: 410px;
+	}
 }
 @media (max-width: 767px) {
 	footer .links{text-align: center;}
@@ -3908,7 +3978,6 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		background: $orange;
 	}
 	.navbar-fixed-top{
-		background: #FFF;
 		li>a{
 			color: #333;
 		}
