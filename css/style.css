@@ -282,6 +282,11 @@ input {
           font-size: 15px;
           text-transform: uppercase;
           margin: 0 0 45px; }
+      .hero .hero-inner .hero-valign .countdown-show3 {
+        margin-left: calc(50% - 132px); }
+        @media (max-width: 600px) {
+          .hero .hero-inner .hero-valign .countdown-show3 {
+            margin-left: calc(50% - 106px); } }
       .hero .hero-inner .hero-valign .eth-progress {
         width: 300px;
         margin: 0px auto 20px; }
