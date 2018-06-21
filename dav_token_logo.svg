@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="33px" viewBox="0 0 34 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>DAV Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DAV-Logo">
+            <polygon id="path-1" points="0.2424572 0.449785126 33.8727525 0.449785126 33.8727525 32.1049012 0.2424572 32.1049012"></polygon>
+            <path d="M0.2424572,22.5224872 L7.1370023,22.5224872 L17.0588214,9.51561008 L26.9788157,22.5224872 L33.8727525,22.5224872 L17.0588214,0.477582278 L0.2424572,22.5224872 Z M11.5559586,24.8910234 L17.0588214,32.1049012 L22.5604676,24.8910234 L17.0588214,17.6765374 L11.5559586,24.8910234 Z" id="Fill-1" fill="#FF6A46" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
