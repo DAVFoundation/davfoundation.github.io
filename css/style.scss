@@ -3995,11 +3995,20 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.navbar-fixed-top{
 		li>a{
-			color: #333;
+			color: #fff;
+		}
+	}
+	.user-scroll{
+		li>a{
+			color: #333!important;
 		}
 	}
 	.navbar-fixed-top .navbar-collapse {
-    	max-height: 100%;
+			max-height: 100%;
+			background-color: #000;
+	}
+	.user-scroll .navbar-collapse {
+		background-color: #fff!important;
 	}
 	.navbar-toggle span.icon-bar{
 		height: 3px;
