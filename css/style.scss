@@ -357,6 +357,13 @@ input {
 				margin: 0 0 45px;
 				}
 			}
+			.countdown-show3 {
+				margin-left: calc(50% - 132px);
+
+				@include mobile {
+					margin-left: calc(50% - 106px);
+				}
+			}
 			.eth-progress{
 				width: 300px;
 				margin: 0px auto 20px;
