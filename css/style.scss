@@ -364,6 +364,20 @@ input {
 					margin-left: calc(50% - 106px);
 				}
 			}
+			.countdown-show2 {
+				margin-left: calc(50% - 88px);
+
+				@include mobile {
+					margin-left: calc(50% - 68px);
+				}
+			}
+			.countdown-show1 {
+				margin-left: calc(50% - 40px);
+
+				@include mobile {
+					margin-left: calc(50% - 32px);
+				}
+			}
 			.eth-progress{
 				width: 300px;
 				margin: 0px auto 20px;
