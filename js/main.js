@@ -1,7 +1,7 @@
 var GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8'
 
 // var ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
-var ETH_NODE_URL = 'https://mainnet.infura.io/wUiZtmeZ1KwjFrcC8zRO';
+const ETH_NODE_URL = 'https://mainnet.infura.io/wUiZtmeZ1KwjFrcC8zRO';
 
 var web3Provider = new Web3
     .providers
@@ -42,7 +42,7 @@ function increaseWithAnimation(newValue) {
 
   var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
 
-  $(".progress-bar").css("width", "calc("+newWidthValue+" + 25px)");
+  $(".progress-bar").css("width",`calc(${newWidthValue}% + 25px)`);
 
   var interval = setInterval(increaseInPulse, PULSE_DURATION);
 
@@ -66,28 +66,54 @@ $(document).ready(function(){
   if ($(window).width() < 1024) {
     $(".telegram-bottom").addClass("telegram-loaded");
   }
+  
 
+  var mailInput = $('.email-input');
+  var mailCheckButton = $('#submit-email');
+  var mailCheckForm = $('.email-form');
 
+  mailCheckForm.submit(function (event){
+      if (!checkEmail(mailInput.val())) {
+        event.preventDefault();
+      }
+  })
+
+  function checkEmail(email) {
+    email = email.trim();
+    if (validateEmail(email)) {
+      return true;
+    } 
+    var errorMsg = $('#error-msg');
+    showErrorMsg(errorMsg, "Please enter a valid email address.");
+    return false;
+  }
+
+  function showErrorMsg(el, msg) {
+    el.show();
+    el.animateCss("shake");
+    el.text(msg);
+  }
+  
   // color switch for nav
-   var scroll_start = 0;
-   var startchange = $('#startchange');
-   var offset = startchange.offset();
+    var scroll_start = 0;
+    var startchange = $('#startchange');
+    var offset = startchange.offset();
+    paintHeader();
     if (startchange.length){
-     $(document).scroll(function() {
-
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset.top) {
-            $(".navbar-fixed-top").addClass('user-scroll');
-            $(".index3").addClass('makeFix');
-            // $(".telegram-bottom").addClass('nospan');
-         } else {
-            $(".navbar-fixed-top").removeClass('user-scroll');
-            $(".index3").removeClass('makeFix');
-            // $(".telegram-bottom").removeClass('nospan');
-         }
-     });
+      $(document).scroll(paintHeader);
     }
-
+    function paintHeader() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-fixed-top").addClass('user-scroll');
+          $(".index3").addClass('makeFix');
+          // $(".telegram-bottom").addClass('nospan');
+        } else {
+          $(".navbar-fixed-top").removeClass('user-scroll');
+          $(".index3").removeClass('makeFix');
+          // $(".telegram-bottom").removeClass('nospan');
+        }
+    }
     $("#transaction_id").val(getParameterByName("transaction_id"));
     $("#referrer").val(window.localStorage.getItem('dav-referrer'));
 

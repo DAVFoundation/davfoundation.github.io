@@ -42,7 +42,7 @@ $(document).ready(function(){
                 data: addressInfo,
                 success: startTokenSale
             });
-
+            
         }
     })
     function disableEnableSubmitMoreDetailsButton() {
@@ -54,7 +54,7 @@ $(document).ready(function(){
             ounerDetailsForm.find('[type="submit"]').removeClass('disabled').prop('disabled', false);
         } else {
             ounerDetailsForm.find('[type="submit"]').addClass('disabled').prop('disabled', true);
-        }
+        }    
     }
 
     disableEnableSubmitMoreDetailsButton();
@@ -80,7 +80,7 @@ $(document).ready(function(){
             prompMsg.removeClass('hide');
             setTimeout(function() {
                 prompMsg.addClass('hide');
-            }, 3000);
+            }, 3000);    
         }
     })
 
@@ -88,7 +88,7 @@ $(document).ready(function(){
         forgotWalletAddress(mailInput.val());
         ga('send', 'event', 'ForgotWalletAddress-Button-Click', 'click', 'ForgotWalletAddress-Button-Click');
     })
-
+    
     $('#another-wallet').click(function() {
         curtain.removeClass('hide');
         $('#another-wallet-modal').removeClass('hide');
@@ -107,7 +107,7 @@ function checkEmail(email) {
     email = email.trim();
     if (validateEmail(email)) {
         return kycCheck(email);
-    }
+    } 
     var errorMsg = $('#error-msg');
     showErrorMsg(errorMsg, "Please enter a valid email address.");
 }
@@ -243,7 +243,7 @@ function saveTimestamp(email) {
     $.ajax({
         type: 'POST',
         url: "https://nessie.dav.network/formwatch",
-        data: { email: email },
+        data: { email },
         success: function(data) {
             console.log('Timestamp saved');
         },
@@ -280,20 +280,21 @@ $.fn.extend({
           MozAnimation: 'mozAnimationEnd',
           WebkitAnimation: 'webkitAnimationEnd',
         };
-
+  
         for (var t in animations) {
           if (el.style[t] !== undefined) {
             return animations[t];
           }
         }
       })(document.createElement('div'));
-
+  
       this.addClass('animated ' + animationName).one(animationEnd, function() {
         $(this).removeClass('animated ' + animationName);
-
+  
         if (typeof callback === 'function') callback();
       });
-
+  
       return this;
     },
 });
+  

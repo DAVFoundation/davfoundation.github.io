@@ -37,7 +37,7 @@ input {
 }
 #join-token-sale-button {
 	width: 192px;
-	margin: 32px auto;
+	margin: 45px auto;
 	font-weight: bold;
 	height: 40px;
 }
@@ -50,12 +50,113 @@ input {
 }
 
 .ico-start-box{
+	.token-sale-title {
+		padding-bottom: 15px;
+		h3 {
+			font-size: 22px !important;
+		}
+		h6 {
+			font-size: 16px !important;
+		}
+	}
+
+	.token-sale-announcement {
+		padding: 5%;
+		h6 {
+			margin-top: 20px;
+		}
+	}
+
 	h3 {
 		color: $orange;
 		font-weight: bold;
-		font-size: 28px;
+		margin-bottom: 13px;
+	}
+	h2 {
+		color: $orange;
+		font-weight: bold;
+		font-size: 36px;
+		margin-top: 8px;
+	}
+	h6 {
+		font-weight: 300 !important;
+		font-size: 16px !important;
+	}
+	h4 {
+		font-weight: bold;
+		font-size: 22px !important;
+	}
+	.raised {
+		border: solid grey 1px;
+		border-left: none;
+		border-right: none;
+		width: 90%;
+		padding-top: 10%;
+		padding-bottom: 10%;
+		margin: auto;
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	form {
+		display: flex;
+		position: relative;
+		max-width: 512px;
+		margin: auto;
+		padding: 1%;
+
+
+		::placeholder { // Chrome, Firefox, Opera, Safari 10.1+
+			color: white;
+			opacity: 1; // Firefox
+		}
+
+		:-ms-input-placeholder { // Internet Explorer 10-11
+			color: white;
+		}
+
+		::-ms-input-placeholder { // Microsoft Edge
+			color: white;
+		}
+
+		input {
+			width: 66%;
+			margin: 0 4px 0 0;
+			font-size: 16px;
+			line-height: 38px;
+			height: 38px;
+			border: 1px solid #c5cbd7;
+			border-radius: 4px;
+			padding: 0 4px;
+			color: white;
+			background-color:  rgba(187, 175, 175, 0.3);
+		}
+		.button {
+			width: 33%;
+			margin: 0 0 0 4px;
+			background: #ff6a46;
+			color: white;
+			border-radius: 4px;
+			height: 38px;
+			line-height: 38px;
+			text-align: center;
+			border: 1px solid #ff6a46;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+		}
 	}
 }
+#error-msg {
+    width: 100%;
+	display: none;
+	color: #ff6946;
+    position: absolute;
+    bottom: -32px;
+}
+
 .margin-top0 {
 	margin-top: 0 !important;
 }
@@ -95,6 +196,9 @@ input {
 		&:hover,&:active,&:focus{
   			background: #FFF;
   		}
+	}
+	.container1 {
+		background: #FFF;
 	}
 	.dropdown:hover > a{
   		background: #FFF;
@@ -257,7 +361,7 @@ input {
     }
 }
 .telegram-bottom.extra-space{
-	bottom: 60px;
+	bottom: 48px;
 }
 #hero-register-button {
 	text-decoration: none;
@@ -297,16 +401,6 @@ input {
 				}
 			}
 		}
-
-		.announcement {
-			width: 100%;
-			padding: 0 16px 24px;
-			font-size: 14px;
-			text-align: center;
-			color: $red;
-			font-weight: bold;
-		}
-
 		h1{
 			font-size: 37px;
 			font-weight: 700;
@@ -355,27 +449,6 @@ input {
 				font-size: 15px;
 				text-transform: uppercase;
 				margin: 0 0 45px;
-				}
-			}
-			.countdown-show3 {
-				margin-left: calc(50% - 132px);
-
-				@include mobile {
-					margin-left: calc(50% - 106px);
-				}
-			}
-			.countdown-show2 {
-				margin-left: calc(50% - 88px);
-
-				@include mobile {
-					margin-left: calc(50% - 68px);
-				}
-			}
-			.countdown-show1 {
-				margin-left: calc(50% - 40px);
-
-				@include mobile {
-					margin-left: calc(50% - 32px);
 				}
 			}
 			.eth-progress{
@@ -508,7 +581,7 @@ input {
 		border-radius: 3px;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
-		border:solid 1px $red;
+		border:solid 1px #fff;
 		text-align:center;
 		margin:10px 12px;
 		// padding: 0 5px
@@ -555,6 +628,9 @@ input {
 			z-index: 10;
 		}
 		.hero-inner .hero-valign{
+			.token-sale-title h6 {
+				padding: 0 10px;
+			}
 			h1{
 				font-size: 45px;
 			}
@@ -708,22 +784,23 @@ input {
 	}
 }
 .raised-progressbar{
-	margin: 36px 32px 4px 32px;
+	margin: 30px 32px 40px 32px;
 	h6{
 		text-align: right;
 		margin: 0px !important;
 		font-size: 15px !important;
 		font-weight: 700 !important;
-		color: $red;
+		color: #fd2826;
 
 		a {
-			color: $red !important;
+			color: #fd2826 !important;
 		}
 
 	}
 	.progress{
 		height: 30px;
-		margin: 8px 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		background-color: #020406;
 		background-color: #4d4d4d;
 		border-radius: 25px;
@@ -3308,6 +3385,19 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 					border-radius: 50%;
 				}
 			}
+
+			.token-information {
+
+				margin: 4px 0 0 36px;
+
+				div {
+					span {
+						width: 10px;
+						height: 10px;
+					}
+				}
+			}
+
 		}
 		&.high-line{
 			& > li{
@@ -3818,7 +3908,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		width: 970px;
 	}
 	.telegram-bottom.extra-space {
-    	bottom: 120px;
+    	bottom: 80px;
 	}
 	.hero.hero-ico .hero-inner .hero-valign .container-transparent h6{
 		font-size: 12px;
@@ -4000,6 +4090,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 }
 @media (max-width: 767px) {
+	.user-scroll .navbar-collapse {
+		background-color: #fff !important;
+	}
 	footer .links{text-align: center;}
 	.navbar-nav>li>a{
 		font-size: 15px;
@@ -4012,17 +4105,14 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			color: #fff;
 		}
 	}
-	.user-scroll{
+	.user-scroll.navbar-fixed-top{
 		li>a{
-			color: #333!important;
+			color: #333;
 		}
 	}
 	.navbar-fixed-top .navbar-collapse {
-			max-height: 100%;
-			background-color: #000;
-	}
-	.user-scroll .navbar-collapse {
-		background-color: #fff!important;
+		max-height: 100%;
+		background-color: #020202;
 	}
 	.navbar-toggle span.icon-bar{
 		height: 3px;
@@ -4147,6 +4237,17 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		// bottom: 10px;
 		margin-bottom: 0px;
 		padding: 15px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+
 		p{
 			font-size: 13px;
 			line-height: 20px;
@@ -4156,6 +4257,9 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 		.close{
 			line-height: 20px;
+			min-width: 45px;
+			min-height: 45px;
+			z-index: 2;
 		}
 	}
   	@-webkit-keyframes balls {
@@ -4466,7 +4570,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		margin-bottom: 50px;
 	}
 	.telegram-bottom.extra-space {
-    	bottom: 140px;
+    	bottom: 100px;
 	}
 	.hero.hero-ico .hero-inner .hero-valign{
 		h1{
@@ -4577,6 +4681,11 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 .invalid {
 	border-color: red !important;
 }
+@media (max-width: 362px) {
+	.telegram-bottom.extra-space {
+    	bottom: 120px;
+	}
+}
 @media (max-height: 767px) {
 	#iphonex {
    		 height: 530px;
@@ -4620,4 +4729,22 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	margin: 4px 6px 10px 8px;
 	background-size: cover;
 	background-image: url('../img/dav_token_symbol.svg');
+}
+.bottom-subscription {
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: white;
+		opacity: 1; /* Firefox */
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10+*/
+		color: white;
+	}
+
+	input::-webkit-input-placeholder { /* WebKit browsers */
+		color: white;
+	}
+
+	input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: white;
+	}
 }
