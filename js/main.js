@@ -1,7 +1,7 @@
 var GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8'
 
 // var ETH_NODE_URL = 'https://ropsten.infura.io/wUiZtmeZ1KwjFrcC8zRO';
-const ETH_NODE_URL = 'https://mainnet.infura.io/wUiZtmeZ1KwjFrcC8zRO';
+var ETH_NODE_URL = 'https://mainnet.infura.io/wUiZtmeZ1KwjFrcC8zRO';
 
 var web3Provider = new Web3
     .providers
@@ -42,7 +42,7 @@ function increaseWithAnimation(newValue) {
 
   var pulseValue = (newValue - currentValue) / (ANIMATION_DURATION / PULSE_DURATION);
 
-  $(".progress-bar").css("width",`calc(${newWidthValue}% + 25px)`);
+  $(".progress-bar").css("width", "calc("+newWidthValue+" + 25px)");
 
   var interval = setInterval(increaseInPulse, PULSE_DURATION);
 
@@ -66,7 +66,7 @@ $(document).ready(function(){
   if ($(window).width() < 1024) {
     $(".telegram-bottom").addClass("telegram-loaded");
   }
-  
+
 
   var mailInput = $('.email-input');
   var mailCheckButton = $('#submit-email');
@@ -148,7 +148,7 @@ $(document).ready(function(){
     // full height hero
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
-    var navbar = $(".navbar").height();
+    var navbar = $(".navbar-header").height();
     var asSeenOn = 0;
     if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
     $('.hero .hero-inner').height(windowHeight - navbar);
@@ -178,7 +178,7 @@ $(document).ready(function(){
     $(window).on('resize',function() {
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
-      var navbar = $(".navbar").height();
+      var navbar = $(".navbar-header").height();
       var asSeenOn = 0;
       if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
       $('.hero .hero-inner').height(windowHeight - navbar);
