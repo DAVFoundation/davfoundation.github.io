@@ -148,7 +148,7 @@ $(document).ready(function(){
     // full height hero
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
-    var navbar = $(".navbar").height();
+    var navbar = $(".navbar-header").height();
     var asSeenOn = 0;
     if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
     $('.hero .hero-inner').height(windowHeight - navbar);
@@ -178,7 +178,7 @@ $(document).ready(function(){
     $(window).on('resize',function() {
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
-      var navbar = $(".navbar").height();
+      var navbar = $(".navbar-header").height();
       var asSeenOn = 0;
       if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
       $('.hero .hero-inner').height(windowHeight - navbar);
