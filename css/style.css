@@ -3667,3 +3667,11 @@ footer {
 .bottom-subscription input:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: white; }
+
+#careers .navbar-header, #press .navbar-header, #protocols .navbar-header {
+  background-color: white; }
+
+#careers .navbar-collapse, #press .navbar-collapse, #protocols .navbar-collapse {
+  background-color: white; }
+  #careers .navbar-collapse ul li a, #press .navbar-collapse ul li a, #protocols .navbar-collapse ul li a {
+    color: #333; }
