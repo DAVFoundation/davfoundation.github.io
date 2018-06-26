@@ -404,7 +404,7 @@ input {
 				}
 			}
 
-			@media (max-height: 768px) {
+			@media (min-height: 768px) {
 				margin-top: calc(50vh - 384px);
 			}
 		}
