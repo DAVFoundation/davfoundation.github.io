@@ -146,22 +146,16 @@ $(document).ready(function(){
         $(".not-from-us").addClass("hide");
     });
     // full height hero
-    var windowWidth = $(window).width();
-    var windowHeight = $(window).height();
-    var navbar = $(".navbar-header").height();
-    var asSeenOn = 0;
-    if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
-    $('.hero .hero-inner').height(windowHeight - navbar);
-    $('.hero').css('padding-top', navbar + 'px');
-    $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
 
-    if (windowWidth <= 768) {
-      $('.screen1').height(windowHeight - navbar);
-      if (windowHeight < 768) {
-        $('.screen1').addClass('margin-top0');
-      } else {
-        $('.screen1').removeClass('margin-top0');
-      }
+    function rearrangeHero() {
+      var windowWidth = $(window).width();
+      var windowHeight = $(window).height();
+      var navbar = $(".navbar-header").height();
+      var asSeenOn = 0;
+      if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
+      $('.hero .hero-inner').height(windowHeight - navbar);
+      $('.hero').css('padding-top', navbar + 'px');
+      $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
     }
     // var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
     // var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
@@ -175,24 +169,9 @@ $(document).ready(function(){
     // $('.hero .hero-inner').height(windowHeight + windowHeight*0.18);
     // alert(windowWidth);
     // alert(windowHeight);
-    $(window).on('resize',function() {
-      var windowWidth = $(window).width();
-      var windowHeight = $(window).height();
-      var navbar = $(".navbar-header").height();
-      var asSeenOn = 0;
-      if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
-      $('.hero .hero-inner').height(windowHeight - navbar);
-      $('.hero').css('padding-top', navbar + 'px');
-      $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
-      if (windowWidth <= 768) {
-        $('.screen1').height(windowHeight - navbar);
-        if (windowHeight < 768) {
-          $('.screen1').addClass('margin-top0');
-        } else {
-          $('.screen1').removeClass('margin-top0');
-        }
-      }
-    });
+    rearrangeHero();
+    $(window).on('resize',rearrangeHero);
+
 
     // modal vertical align
     $('.team-modal,.alliance-modal-small').on('shown.bs.modal', function (e) {
