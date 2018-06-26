@@ -394,7 +394,14 @@ input {
 			.screen1 {
 				@media (max-width: 991px) {
 					min-height: calc(100vh - 50px);
-				}	
+				}
+				@media (min-width: 768px) and (max-width: 991px) {
+					display : flex;
+					align-items : center;					  
+				}
+				@media (min-width: 660px) and (max-width: 768px) {
+					padding: 0 calc(50vw - 330px) 
+				}
 			}
 
 			@media (max-height: 768px) {
@@ -4076,7 +4083,6 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	}
 	.hero.hero-ico .hero-inner .hero-valign h1{
 		font-size: 24px;
-		padding-top: 64px;
 	}
 	.hero.hero-ico .hero-inner .hero-valign{
 		h1,h5,h6{
@@ -4296,6 +4302,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		padding-top: 40px;
 		.text-left{
 			text-align: center !important;
+			min-height: calc(100vh - 50px)
 		}
 	}
 	.dav-cli #laptop {
