@@ -403,10 +403,6 @@ input {
 					padding: 0 calc(50vw - 330px) 
 				}
 			}
-
-			@media (min-height: 768px) {
-				margin-top: calc(50vh - 384px);
-			}
 		}
 		h1{
 			font-size: 37px;
@@ -4583,7 +4579,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	.hero.hero-ico .hero-inner .hero-valign{
 		h1{
 			font-size: 28px;
-			padding-top: 25px;
+			padding-top: 0;
 			margin-bottom: 20px;
 		}
 		h5{
