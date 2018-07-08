@@ -148,14 +148,14 @@ $(document).ready(function(){
     // full height hero
 
     function rearrangeHero() {
+      var hero = $('#home');
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
-      var navbar = $(".navbar-header").height();
-      var asSeenOn = 0;
-      if (windowHeight > 810 && windowWidth > 1200) {asSeenOn = -140;}
-      $('.hero .hero-inner').height(windowHeight - navbar);
+      
+      var pressHeight = hero.find('.as-seen-on-hero').height();
+      var navbarHeight = hero.find('.navbar-header').height();
+      $('.hero .hero-inner').height(windowHeight - navbarHeight - pressHeight -(windowWidth <= 600 ? 32 : 20));
       $('.hero').css('padding-top', navbar + 'px');
-      $('.hero.hero-ico .hero-inner .container').css('margin-top', asSeenOn + 'px');
     }
     // var heroIcoLeft = $('.hero.hero-ico .container > .row > div.col-md-7');
     // var heroIcoRight = $('.hero.hero-ico .container > .row > div.col-md-5');
@@ -703,11 +703,6 @@ function beforeSubmitKycRegistration() {
 }
 
 var $floatingButton = $('#floating-button');
-
-$(window).scroll(function() {
-  var $animationDiv = $('.telegram-bottom')
-  $animationDiv.addClass('telegram-loaded');
-});
 
 function setDifferentCtaForAdwordsUsers() {
   if (isAdwordsRedirect()) {
