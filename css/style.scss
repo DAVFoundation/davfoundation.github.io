@@ -48,25 +48,10 @@ input {
 		margin-top: -4px;
 	}
 }
-
+.hero-center {
+	padding: 0 32px;
+}
 .ico-start-box{
-	.token-sale-title {
-		padding-bottom: 15px;
-		h3 {
-			font-size: 22px !important;
-		}
-		h6 {
-			font-size: 16px !important;
-		}
-	}
-
-	.token-sale-announcement {
-		padding: 5%;
-		h6 {
-			margin-top: 20px;
-		}
-	}
-
 	h3 {
 		color: $orange;
 		font-weight: bold;
@@ -79,8 +64,8 @@ input {
 		margin-top: 8px;
 	}
 	h6 {
-		font-weight: 300 !important;
-		font-size: 16px !important;
+		margin: 0;
+		color: white
 	}
 	h4 {
 		font-weight: bold;
@@ -389,21 +374,6 @@ input {
 		display: table-cell;
 		vertical-align: middle;
 		text-align: center;
-
-		.row {
-			.screen1 {
-				@media (max-width: 991px) {
-					min-height: calc(100vh - 50px);
-				}
-				@media (min-width: 768px) and (max-width: 991px) {
-					display : flex;
-					align-items : center;					  
-				}
-				@media (min-width: 660px) and (max-width: 768px) {
-					padding: 0 calc(50vw - 330px) 
-				}
-			}
-		}
 		h1{
 			font-size: 37px;
 			font-weight: 700;
@@ -651,9 +621,14 @@ input {
 				}
 			}
 			h6{
-				font-weight: 400;
+				font-weight: 600;
 				font-size: 15px;
-				margin-bottom: 20px;
+
+				@include mobile {
+					font-weight: 300;
+					font-size: 14px;
+					margin-bottom: 8px;	
+				}
 				a{
 					color: #FFF;
 					text-decoration: underline;
@@ -680,8 +655,7 @@ input {
 				margin-bottom: 25px;
 			}
 			.ico-start-box{
-				background: rgba(72,66,66,0.58);
-				padding: 10px 0 20px;
+				padding-top: 10px;
 			}
 			.container-transparent{
 				border-top: 1px solid rgba(255,255,255,0.4);
@@ -745,15 +719,15 @@ input {
 		}
 		.as-seen-on-hero{
 			text-align: center;
-			padding: 20px 15px 50px;
-			margin-top: -140px;
-			position: relative;
-			z-index: 10;
+
+			padding-bottom: 20px;
+			@include mobile {
+				padding-bottom: 32px;
+			}
 			h4{
 				color: #928E8E;
 				font-weight: 700;
 				font-size: 17px;
-				margin-bottom: 25px;
 			}
 			a img{
 				-webkit-transition: all 0.5s ease;
@@ -763,6 +737,34 @@ input {
 			a:hover img{
 			    -webkit-filter: brightness(170%); /* Safari 6.0 - 9.0 */
 			    filter: brightness(170%);
+			}
+
+			.row {
+				max-width: 600px;
+    			margin: auto;
+				display: flex;
+				>div {
+					display: flex;
+					width: 50%;
+					>div {
+						width: 50%;
+						padding: 8px 0;
+
+						img {
+							width: 100%;
+						}
+					}
+				} 
+				@include mobile {
+					display: block;
+					>div {
+
+						>div {
+							padding: 8px 16px;
+						}
+						width: 100%;
+					}
+				}	
 			}
 
 		}
@@ -1954,24 +1956,6 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
 		}
 	}
 }
-.add-blur{
-	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
-    -webkit-filter: url(#blur-filter);
-    filter: url(#blur-filter);
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-    &:after{
-    	content: '';
-    	display: block;
-    	background: red;
-    	background: rgba(0,0,0,0.35);
-    	position: absolute;
-    	top: 99px;
-    	left: 0;
-    	bottom: 0;
-    	right: 0;
-    }
-}
 .fundraising-goals{
 	// padding-top: 20px;
 	position: relative;
@@ -2077,6 +2061,25 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
 			top: 157px;
 		}
 	}
+}
+
+.add-blur{
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+    -webkit-filter: url(#blur-filter);
+    filter: url(#blur-filter);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    &:after{
+    	content: '';
+    	display: block;
+    	background: red;
+    	background: rgba(0,0,0,0.35);
+    	position: absolute;
+    	top: 99px;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+    }
 }
 .daily-dav{
 	background: #f7f7f7;
@@ -3781,18 +3784,10 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 	.hero.hero-ico .hero-inner .hero-valign{
-		 h1{
-			font-size: 32px;
-			line-height: 32px;
-		}
 		.best-brands a{
 			margin: 0 25px;
 		}
 	}
-	.hero.hero-ico .as-seen-on-hero{
-		margin-top: 0px;
-	}
-
 	.hero.hero-ico .as-seen-on-hero img{
 		width: 100%;
 	}
@@ -3802,11 +3797,6 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			font-size: 24px;
 			margin-bottom: 20px;
 		}
-	}
-}
-@media (max-height: 810px){
-	.hero.hero-ico .as-seen-on-hero{
-		margin-top: 0px;
 	}
 }
 @media (max-width: 1025px) {
@@ -4067,18 +4057,10 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	footer .about-legal .social a{
 		min-width: 49%;
 	}
-	.hero.hero-ico .hero-inner .hero-valign .ico-start-box{
-		margin-bottom: 30px;
-		padding: 20px 0;
-
-	}
 	.hero.hero-ico .hero-inner .hero-valign .container-transparent{
 		&.left{
 			width: 100%;
 		}
-	}
-	.hero.hero-ico .hero-inner .hero-valign h1{
-		font-size: 24px;
 	}
 	.hero.hero-ico .hero-inner .hero-valign{
 		h1,h5,h6{
@@ -4589,9 +4571,6 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			margin-bottom: 25px;
 			// white-space: nowrap;
 		}
-		h6{
-			margin-bottom: 10px;
-		}
 		h4{
 			font-size: 15px;
 		}
@@ -4655,18 +4634,8 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			display: block;
 		}
 	}
-	.screen1{
-		display: table;
-		.screen1Cell{
-			display: table-cell;
-			vertical-align: middle;
-		}
-	}
 	.people-are-talking a.btn-orange{
 		margin-top: -60px;
-	}
-	.hero.hero-ico .as-seen-on-hero{
-		padding: 20px 0 50px;
 	}
 	.hero.hero-ico .as-seen-on-hero h4{
 		color: rgba(255,255,255,0.7);
