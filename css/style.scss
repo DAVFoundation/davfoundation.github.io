@@ -1956,6 +1956,113 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
 		}
 	}
 }
+.fundraising-goals{
+	// padding-top: 20px;
+	position: relative;
+	.blur-svg {
+        display: none;
+    }
+	h2{
+		color: #333333;
+		font-size: 25px;
+		font-weight: 700;
+		margin: 0 0 50px;
+		text-align: center;
+    	// padding-top: 50px;
+    	margin: 0 auto;
+    	line-height: 99px;
+	}
+	h4{
+		font-size: 19px;
+		font-weight: 500;
+		color: #333333;
+		line-height: 50px;
+		margin: 20px 0 30px;
+	}
+	img{
+		height: 297px;
+	}
+	.market-cap{
+		width: 1100px;
+		margin: 0 auto;
+		.row{
+			margin-left: -2px;
+			margin-right: -2px;
+			div{
+				padding-left: 2px;
+				padding-right: 2px;
+			}
+		}
+	}
+	p{
+		font-weight: 500;
+		line-height: 60px;
+		background: #c7c7bf;
+		font-size: 17px;
+		color: #333333;
+		text-align: center;
+	}
+	.blur-funds{
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
+	.not-from-us{
+		background: #FFF;
+		width: 460px;
+		padding: 20px;
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		margin-left: -230px;
+		top: 190px;
+		p{
+			background: #FFF;
+			font-size: 15px;
+			color: #333;
+			font-weight: 500;
+			margin: 0 0 20px;
+			line-height: normal;
+		}
+		a{
+			color: $orange;
+		}
+		a.viewTokenInfo{
+			border-radius: 3px;
+			background: $orange;
+			color: #FFF;
+			font-size: 15px;
+			font-weight: 500;
+			display: inline-block;
+			padding: 10px 15px;
+			&:active,&:focus,&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	a.btn-orange{
+		border-radius: 3px;
+		background: $orange;
+		color: #FFF;
+		font-size: 15px;
+		font-weight: 500;
+		display: inline-block;
+		padding: 10px 15px;
+		&:active,&:focus,&:hover{
+			text-decoration: none;
+		}
+	}
+	&.offsetMe{
+		h2:before{
+			content: "";
+			display: block;
+			height: 58px;
+		}
+		.add-blur:after{
+			top: 157px;
+		}
+	}
+}
+
 .add-blur{
 	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
     -webkit-filter: url(#blur-filter);
