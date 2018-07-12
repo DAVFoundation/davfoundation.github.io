@@ -1,6 +1,6 @@
 $orange: #ff6a46;
 $tablet-width: 600px;
-$desktop-width: 1024px;
+$desktop-width: 991px;
 
   @mixin tablet {
     @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
