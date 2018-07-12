@@ -15,18 +15,6 @@ function numberWithCommas(number) {
   return parts.join(".");
 }
 
-function updateEthRaised() {
-  $.ajax({
-    url: KYC_MEMBERS_URL,
-    type: 'GET',
-    success: function(result) {
-      weiRaised = result.weiRaised;
-      var ethRaisedValue = Number(web3.utils.fromWei(weiRaised, 'ether'));
-      increaseWithAnimation(ethRaisedValue);
-    }
-  });
-}
-
 var ANIMATION_DURATION = 1000;
 var PULSE_DURATION = 40;
 function increaseWithAnimation(newValue) {
@@ -58,10 +46,6 @@ function increaseWithAnimation(newValue) {
 }
 
 $(document).ready(function(){
-  updateEthRaised();
-  setInterval(function() {
-    updateEthRaised();
-  } , 10000);
 
   if ($(window).width() < 1024) {
     $(".telegram-bottom").addClass("telegram-loaded");
@@ -493,10 +477,6 @@ $(document).ready(function(){
         }
 
     });
-    //countdown
-
-    var targetDate=moment.utc([2018,5,25,13,0,0]);
-    $('#countdown,#countdownMobile').countdown({until: targetDate.toDate(), format: 'dHMS'});
 
   // register event google analytics
   $("#mc-embedded-subscribe-form").on('submit', function() {
@@ -539,7 +519,7 @@ function handleJoinTelegram() {
     // Start playing the video as soon as the user scrolls
     var scrollAction = function() {
       window.removeEventListener('scroll', scrollAction);
-      vidShowAndTell.play();
+      vidShowAndTell && vidShowAndTell.play();
     };
     window.addEventListener('scroll', scrollAction);
 

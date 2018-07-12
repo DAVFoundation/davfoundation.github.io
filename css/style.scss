@@ -1173,6 +1173,14 @@ height: 0;
 	h2{
 		margin: 15vw 0 20px;
 		font-weight: 700;
+
+		@include tablet {
+			margin: 12vw 0 20px;
+		}
+
+		@include not-desktop {
+			font-size: 24px;
+		}
 	}
 	a{
 		background: $orange;
@@ -3984,12 +3992,16 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		margin: 0 80px;
 	}
 	.media-gallery .arrow-left.slick-arrow{
-		width: 36px;
+		width: 24px;
 		left:  0px;
+		top: 80px;
+		z-index: 9;
 	}
 	.media-gallery .arrow-right.slick-arrow{
-		width: 36px;
+		width: 24px;
+		top: 80px;
 		right:  0px;
+		z-index: 9;
 	}
 	.hero.hero-prototypes{
 		overflow: hidden;
@@ -4721,6 +4733,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		color: white;
 	}
 }
+
 
 #careers, #press, #protocols{
 	@include mobile {
