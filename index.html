@@ -61,7 +61,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.6.4"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.6.5"/>
 
     <!-- Bootstrap -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -250,20 +250,23 @@
         <div class="container">
           <div class="row">
             <div>
-              <div>
+              <div class="as-seen-on-logo">
                   <a href="https://www.forbes.com/sites/samabuelsamid/2018/03/13/dav-foundation-wants-to-bring-open-source-blockchain-platform-to-mobility/2/" target="_blank"><img src="img/as-seen-forbes.png"></a>
               </div>  
-              <div>
+              <div class="as-seen-on-logo">
                 <a href="https://www.coindesk.com/auto-industry-gears-up-for-future-powered-by-blockchain/" target="_blank"><img src="img/as-seen-coindesk.png"></a>
               </div>
+              <div class="as-seen-on-logo">
+                <a href="https://motherboard.vice.com/en_us/article/j5aj3y/how-the-blockchain-will-change-uber-lyft-peer-to-peer-transportation-startups" target="_blank"><img src="img/as-seen-vice.png"></a>
+              </div>    
             </div>
             <div>
-              <div>
-                <a href="https://motherboard.vice.com/en_us/article/j5aj3y/how-the-blockchain-will-change-uber-lyft-peer-to-peer-transportation-startups" target="_blank"><img src="img/as-seen-vice.png"></a>
+              <div class="as-seen-on-logo">
+                <a href="https://www.entrepreneur.com/article/316354" target="_blank"><img src="img/as-seen-entrepreneuer.png"></a>
               </div>
-              <div>
+              <div class="as-seen-on-logo">
                 <a href="http://markets.businessinsider.com/news/stocks/dav-foundation-secures-major-korean-investment-from-block-crafters-capital-1021691119" target="_blank"><img src="img/business-insider.png"></a>
-              </div>    
+              </div>       
             </div>
           </div>
         </div>
@@ -2910,44 +2913,6 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
       </div>
     </div>
 
-    <div class="modal team-modal kyc-modal" id="modalKYCStatus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body text-center">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3>KYC Status Check</h3>
-            <br><br>
-            <h4 class="kyc-title">Please enter the email you have registered with:</h4>
-            <p class="kyc-response"></p>
-
-            <p class="kyc-telegram hide">In the meantime remember to join our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a>, as that will always be the place we first announce exciting news and updates happening at DAV. You can watch this <a href="https://www.youtube.com/watch?v=bHzJbl9ygrI&feature=youtu.be"></a>video contribution tutorial</a> to see how to participate in our token sale.</p>
-
-            <p class="kyc-medium hide">We also suggest you take a look at this <a href="https://medium.com/davnetwork/how-to-complete-your-kyc-registration-for-davs-token-sale-49681f950b98" target="_blank">medium post</a> to get a detailed look at how to go through and get approved by our KYC process.</p>
-
-            <p class="kyc-telegram2 hide">If you have any issues regarding the KYC procedure, please contact us in our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a>.
-
-            <p class="kyc-telegram3 hide">If you have any additional questions regarding the KYC procedure, please contact us in our <a href="https://t.me/DAVNetwork" target="_blank">Telegram Channel</a>.
-            </p>
-
-            <p class="kyc-questions hide">If you have any issues regarding the KYC procedure, please email us at questions@dav.network.</p>
-
-
-            <div id="kyc-form">
-              <input type="email" name="kycmail" id="kycmail" placeholder="Email address" required>
-              <h5 class="kyc-error"></h5>
-              <div class="text-center kyc-loader hide"><img src="img/load.gif"><br><br></div>
-              <button type="button" id="checkKYC">Check KYC Status</button>
-            </div>
-            <a href="#" class="close1 kyc-button hide kyc-return">Return to KYC process</a>
-            <a href="token-sale" id="whitelisted-join-token-sale-button" style="margin-right: 0;" class="text-center close1 kyc-button hide">Join Token Sale</a>
-            <button type="button" class="close1 kyc-close hide" data-dismiss="modal" aria-label="Close">Close</button>
-            <p class="text-center hide" style="margin-top: 10px;" id="forgot-wallet-address"><a href="#" style="margin-right: 0;" target="_blank">Forgot wallet address?</a></p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
     <div class="modal team-modal" id="modalThankYou" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -3273,7 +3238,7 @@ Having said all that, our gifted CTO and CEO are both accomplished technologists
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" data-cfasync="false"></script>
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js" type="text/javascript" data-cfasync="false"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOtBrAgfz68KEzcoArjq5MK9mNh6Uq1V8"></script>
-    <script src="js/main.min.js?v=3.6.3" type="text/javascript" data-cfasync="false"></script>
+    <script src="js/main.min.js?v=3.6.4" type="text/javascript" data-cfasync="false"></script>
     <script type="text/javascript" data-cfasync="false">
 
       $(document).ready(function(){
