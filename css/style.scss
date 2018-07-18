@@ -741,27 +741,72 @@ input {
 
 			.row {
 				max-width: 600px;
-    			margin: auto;
+				margin: auto;
 				display: flex;
+
+				@include desktop {
+					max-width: 800px;
+				}
+
 				>div {
 					display: flex;
-					width: 50%;
-					>div {
-						width: 50%;
-						padding: 8px 0;
+				}
 
-						img {
-							width: 100%;
-						}
+				>div:first-child {
+					width: 60%;
+				}
+				>div:last-child {
+					width: 40%;
+				}
+
+				.as-seen-on-logo {
+					display: flex;
+					width: 100%;
+					position: relative;
+					height: 36px;
+
+					img {
+						max-width: 100%;
+						position: absolute;
+						transform: translate(-50%, -50%);
+						left: 50%;
+						top: 50%;
 					}
 				} 
 				@include mobile {
 					display: block;
-					>div {
 
-						>div {
-							padding: 8px 16px;
+					>div:first-child {
+						width: 100%;
+					}
+					>div:last-child {
+						width: 100%;
+						margin-top: 12px;
+						
+						.as-seen-on-logo {
+							padding: 8px 10%;
+
+							img {
+								width: 60%;
+							}
+
+							&:first-child {
+								img {
+									left: 60%;
+								}
+							}
+
+							&:last-child {
+								img {
+									left: 40%;
+								}
+							}	
+
 						}
+					}
+
+					.as-seen-on-logo {
+						padding: 8px 16px;
 						width: 100%;
 					}
 				}	
@@ -2997,14 +3042,6 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		h5{
 			color: red;
 			margin: -20px 0 20px;
-		}
-	}
-	&#modalKYCStatus{
-		h4{
-			font-weight: 500;
-		}
-		input[type=email]{
-			border: 1px solid #000;
 		}
 	}
 }
