@@ -744,6 +744,10 @@ input {
 				margin: auto;
 				display: flex;
 
+				@include desktop {
+					max-width: 800px;
+				}
+
 				>div {
 					display: flex;
 				}
