@@ -231,7 +231,8 @@ $(document).ready(function(){
         $.each(data.items,function(i, item){
           // console.log(item);
           pid = item.contentDetails.relatedPlaylists.uploads;
-          pid = "PLpqJF_iMOExdrA0eJjhIk1Ies4jqAXawD";
+          pid = "PLpqJF_iMOExfLwaAvQp6E__DgzfkBmep3";
+          // pid = "PLpqJF_iMOExdrA0eJjhIk1Ies4jqAXawD"; //old playlist
           // pid = "PLpqJF_iMOExd-la7-aIFbcOd1WN4RwzWU";
           getVids(pid);
         });
@@ -256,7 +257,7 @@ $(document).ready(function(){
           // output = '<div><div><a href="#" class="thumb-link" id="' + videoId + '"><img src="' + thumbnail + '"><br> <h5>' + videoTitle + '</h5></a></div></div>';
           output = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + videoId + '?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
           //Append videos to carousel
-            $('#daily-video').append(output);
+            $('#weekly-video').append(output);
         })
       }
     );
