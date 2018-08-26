@@ -2024,6 +2024,9 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
     	// padding-top: 50px;
     	margin: 0 auto;
     	line-height: 99px;
+    	background: #FFF;
+    	position: relative;
+    	z-index: 999;
 	}
 	h4{
 		font-size: 19px;
@@ -2056,7 +2059,7 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
 		text-align: center;
 	}
 	.blur-funds{
-		padding-top: 20px;
+		padding-top: 50px;
 		padding-bottom: 50px;
 	}
 	.not-from-us{
@@ -2128,7 +2131,7 @@ box-shadow: 0px 0px 38px 6px rgba(222,221,221,0.84);
     	background: red;
     	background: rgba(0,0,0,0.35);
     	position: absolute;
-    	top: 99px;
+    	top: 0px;
     	left: 0;
     	bottom: 0;
     	right: 0;
