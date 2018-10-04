@@ -4123,7 +4123,7 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		}
 	}
 	.team .team-large > div{
-		min-height: 410px;
+		min-height: 428px;
 	}
 }
 @media (max-width: 767px) {
@@ -4792,4 +4792,10 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 			}
 		}
 	}	
+}
+
+@media (min-width: 992px) {
+	.team-large > div{
+		min-height: 396px;
+	}
 }

@@ -3220,7 +3220,7 @@ footer {
     text-align: right; }
 
   .team .team-large > div {
-    min-height: 410px; } }
+    min-height: 428px; } }
 @media (max-width: 767px) {
   .user-scroll .navbar-collapse {
     background-color: #fff !important; }
@@ -3793,5 +3793,9 @@ footer {
     background-color: white; }
     #careers .navbar-collapse ul li a, #press .navbar-collapse ul li a, #protocols .navbar-collapse ul li a {
       color: #333; } }
+
+@media (min-width: 992px) {
+  .team-large > div {
+    min-height: 396px; } }
 
 /*# sourceMappingURL=style.css.map */
