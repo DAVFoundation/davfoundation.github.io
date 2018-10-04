@@ -478,7 +478,7 @@ function addCommas(nStr) {
   return x1 + x2;
 }
 // contributors section
-var AVATAR_SIZE = 128;
+var AVATAR_SIZE = 64;
 $(function() {
   $.getJSON('contributors.json', function(data) {
     var modalTrigger = [];
