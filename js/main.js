@@ -479,6 +479,7 @@ function addCommas(nStr) {
 }
 // contributors section
 var AVATAR_SIZE = 64;
+var AVATAR_SIZE_MODAL = 256;
 $(function() {
   $.getJSON('contributors.json', function(data) {
     var modalTrigger = [];
@@ -529,7 +530,7 @@ $(function() {
           "' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'><div class='modal-dialog' role='document'><div class='modal-content'><div class='modal-body'><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button><div class='row'><div class='col-sm-4'><br><br><img src='" +
           val.avatar +
           '&s=' +
-          AVATAR_SIZE +
+          AVATAR_SIZE_MODAL +
           "' width='100%'></div><div class='col-sm-8'><h2>" +
           val.name +
           '</h2><h5>Open Source Contributor</h5><p><i>' +
