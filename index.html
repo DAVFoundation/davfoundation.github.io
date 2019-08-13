@@ -264,6 +264,11 @@
       position: absolute;
       z-index: 2;
     }
+    @media (max-width: 1280px) {
+      #home-video{
+        display: none;
+      }
+    }
     </style>
   </head>
   <body>
@@ -617,7 +622,7 @@
 
 
         <video autoplay loop id="home-video">
-          <source src="img/home.mp4" type="video/mp4">
+          <source src="img/home1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
     </div>
@@ -5628,7 +5633,7 @@
         }
       });
     </script>
-    
+
     <script>
       document.getElementById('home-video').play();
     </script>
