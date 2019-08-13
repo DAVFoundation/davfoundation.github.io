@@ -253,7 +253,18 @@
 
       gtag('config', 'UA-104463303-1');
     </script>
-
+    <style type="text/css">
+    #home-video{
+      /*width: 100vw;*/
+      /*height: auto;*/
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      z-index: 2;
+    }
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -529,17 +540,17 @@
                   <div class="screen1Cell">
                     <div class="visible-xs airpad"></div>
                     <h2 class="visible-xs">
-                      <span>Blockchain-based transportation protocol</span>
+                      <span><img src="img/logo.png" width="60%"><br>Blockchain-based transportation protocol</span>
                     </h2>
                     <h2 class="hidden-xs">
-                      <span>Blockchain-based transportation protocol</span><br>
+                      <span><img src="img/logo.png" height="120"><br><br>Blockchain-based transportation protocol</span><br>
                       Enabling a Decentralized, Peer to Peer, Global
                       Transportation Network
                     </h2>
-                    <h5>
+                    <h5 class="hide">
                       We’re building a decentralized infrastructure to<br /> revolutionize the transportation industry on the blockchain
                     </h5>
-                    <div class="row">
+                    <div class="row hide">
                       <div class="col-sm-4 col-sm-offset-4">
                         <div class="videoWrapper">
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/JnjO8q7FiZY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
@@ -553,10 +564,11 @@
               <!-- end screen1 -->
             </div>
           </div>
+          
         </div>
       </div>
 
-      <div class="as-seen-on-hero">
+      <div class="as-seen-on-hero" style="z-index: 10; position: relative;">
         <h4>As Seen On:</h4>
         <div class="container">
           <div class="row">
@@ -602,6 +614,12 @@
           </div>
         </div>
       </div>
+
+
+        <video autoplay loop id="home-video">
+          <source src="img/home.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
     </div>
 
 
@@ -5609,6 +5627,10 @@
           $('.slick-gallery').slick('slickPlay');
         }
       });
+    </script>
+    
+    <script>
+      document.getElementById('home-video').play();
     </script>
   </body>
 </html>
