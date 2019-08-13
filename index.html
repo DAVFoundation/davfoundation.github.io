@@ -5567,6 +5567,7 @@
     ></script>
     <script type="text/javascript" data-cfasync="false">
       $(document).ready(function() {
+        document.getElementById('home-video').play();
         var transactionId = getParameterByName('transaction_id');
         if (transactionId) {
           var homepageEventUrl =
@@ -5632,10 +5633,6 @@
           $('.slick-gallery').slick('slickPlay');
         }
       });
-    </script>
-
-    <script>
-      document.getElementById('home-video').play();
     </script>
   </body>
 </html>
