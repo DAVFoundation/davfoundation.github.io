@@ -2684,6 +2684,12 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 		z-index: 2;
 		position: relative;
 	}
+	&.omp{
+		background: url('../img/prototypes/omp.jpg') no-repeat bottom center;
+		img{
+			margin-top: 25%;
+		}
+	}
 }
 .dav-cli{
 	background: #fb6544 url(../img/prototypes/orange-bg.jpg) no-repeat center;
