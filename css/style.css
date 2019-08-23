@@ -2102,8 +2102,11 @@ footer {
     position: relative; }
   .drone-flight-planning.omp {
     background: url("../img/prototypes/omp.jpg") no-repeat bottom center; }
+    .drone-flight-planning.omp h2 {
+      margin: 0 0 25px; }
     .drone-flight-planning.omp img {
-      margin-top: 25%; }
+      margin-top: 5%;
+      width: 100%; }
 
 .dav-cli {
   background: #fb6544 url(../img/prototypes/orange-bg.jpg) no-repeat center;
@@ -3740,7 +3743,10 @@ footer {
     padding-top: 20px; }
 
   .hero.hero-prototypes h2 {
-    margin: 20px 0; } }
+    margin: 20px 0; }
+
+  .drone-flight-planning.omp.hero {
+    height: auto !important; } }
 .invalid {
   border-color: red !important; }
 
