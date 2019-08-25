@@ -2107,11 +2107,6 @@ footer {
     .drone-flight-planning.omp img {
       margin-top: 5%;
       width: 100%; }
-    .drone-flight-planning.omp p {
-      font-size: 18px; }
-    @media (min-width: 1024px) {
-      .drone-flight-planning.omp .added-right-margin {
-        margin-right: -25%; } }
 
 .dav-cli {
   background: #fb6544 url(../img/prototypes/orange-bg.jpg) no-repeat center;
