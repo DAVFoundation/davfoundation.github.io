@@ -2687,11 +2687,19 @@ box-shadow: 0px 0px 21px 7px rgba(200,202,205,0.74);
 	&.omp{
 		background: url('../img/prototypes/omp.jpg') no-repeat bottom center;
 		h2{
-			margin: 0 0 25px;
+			margin: 0 0 50px;
 		}
 		img{
 			margin-top: 5%;
 			width: 100%;
+		}
+		p{
+			font-size: 18px;
+		}
+		@media (min-width: 1024px){
+			.added-right-margin{
+				margin-right: -25%;
+			}
 		}
 	}
 }
