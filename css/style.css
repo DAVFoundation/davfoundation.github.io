@@ -768,19 +768,31 @@ input {
   padding: 35px 0 60px;
   position: relative;
   z-index: 2; }
+  .video-home .plexus {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url("../img/plexus1.png") no-repeat left 15% center;
+    background-size: 50% 100%; }
   .video-home h2 {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
     margin: 0 0 45px;
     line-height: 44px; }
+  .video-home h4 {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 20px; }
   .video-home p {
     font-size: 16px;
-    text-align: left;
     margin-top: 15px;
     padding-left: 35px;
     padding-right: 35px; }
 
+@media (min-width: 768px) {
+  #wot.modal.team-modal .modal-dialog {
+    width: 70vw; } }
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;

@@ -630,6 +630,34 @@
         </video>
     </div>
 
+    <div class="video-home" id="overview" style="padding: 0;">
+      <div class="plexus">
+      <div class="container">
+       <!-- <h2></h2> -->
+       <!-- <h2></h2> -->
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="#wot" data-toggle="modal" data-target="#wot"><img src="img/wot.png" width="100%"></a>
+            <!-- <div class="videoWrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4xILPeYoX9k?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            </div>
+            <p>DAV World of Transportation</p> -->
+            <br class="visible-xs">
+            <br class="visible-xs">
+          </div>
+          <div class="col-sm-6">
+            <table style="min-height: 290px;">
+              <tr>
+                <td>
+                  <h4>We’re building a decentralized infrastructure to revolutionize the transportation industry on the blockchain</h4>
+                  </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
 
     <div class="refer-dav hidden">
       <h2>Earn up to $100 in free DAV tokens by inviting friends</h2>
@@ -5517,6 +5545,35 @@
       </div>
     </div>
 
+    <div
+      class="modal team-modal"
+      id="wot"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" style="padding-bottom: 15px;">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <br>
+            <h4>DAV World of Transportation</h4>
+            <br class="hidden-xs">
+            <div class="videoWrapper">
+              <iframe src="https://streamable.com/s/sb7re/zhjq" frameborder="0" width="100%" height="100%" allowfullscreen ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- annoucement start -->
     <!--
       The annoucement is empty and not displayd for now, please only remove display: none to display this section
@@ -5582,6 +5639,13 @@
             dataType: 'json'
           });
         }
+
+        $('#wot').on('shown.bs.modal', function (e) {
+          $('video').trigger('play');
+        });
+        $('#wot').on('hidden.bs.modal', function (e) {
+          $('video').trigger('pause');
+        });
       });
 
       $(function() {
