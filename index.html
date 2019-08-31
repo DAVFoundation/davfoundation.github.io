@@ -5567,7 +5567,8 @@
             <h4>DAV World of Transportation</h4>
             <br class="hidden-xs">
             <div class="videoWrapper">
-              <iframe src="https://streamable.com/s/sb7re/zhjq" frameborder="0" width="100%" height="100%" allowfullscreen ></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4xILPeYoX9k?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!-- <iframe src="https://streamable.com/s/sb7re/zhjq" frameborder="0" width="100%" height="100%" allowfullscreen ></iframe> -->
             </div>
           </div>
         </div>
@@ -5640,11 +5641,14 @@
           });
         }
 
-        $('#wot').on('shown.bs.modal', function (e) {
-          $('video').trigger('play');
+        var videoSrc = $("#wot iframe").attr("src");
+        $('#wot').on('show.bs.modal', function (e) {
+          // $('video').trigger('play');
+          $("#wot iframe").attr("src", videoSrc+"&amp;autoplay=1");
         });
         $('#wot').on('hidden.bs.modal', function (e) {
-          $('video').trigger('pause');
+          $("#wot iframe").attr("src", videoSrc);
+        //   $('video').trigger('pause');
         });
       });
 
