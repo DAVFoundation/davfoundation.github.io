@@ -183,8 +183,7 @@ $(document).ready(function() {
   }
 
   // scroll nav
-  $(".nav")
-    .find("a.scroll-link")
+  $("a.scroll-link")
     .click(function(e) {
       e.preventDefault();
       $(".navbar-collapse").removeClass("in");
