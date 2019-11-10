@@ -110,17 +110,6 @@
       }
     </script>
     <!-- Google Tag Manager -->
-    <!--
-      <script type="text/javascript" data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
-      {'gtm.start': new Date().getTime(),event:'gtm.js'}
-      );var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NCJHZN5');</script>
-    -->
-    <!-- End Google Tag Manager -->
-
-    <!-- Google Tag Manager -->
     <script type="text/javascript" data-cfasync="false">
       (function(w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -1676,13 +1665,9 @@
         <div
           class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center"
         >
-          <!-- <h4>Join the Alliance</h4> -->
           <a href="https://alliance.dav.network/" class="goToAlliance"
             >Visit Our Alliance Page</a
           >
-          <!--
-            <a href="#modalMessage" data-toggle="modal" data-target="#modalMessage">Join the Alliance</a>
-          -->
 
           <!-- Begin MailChimp Signup Form -->
 
@@ -1921,7 +1906,6 @@
               <div class="col-sm-8">
                 <h2>Dr. Alan Messer</h2>
                 <h5>Automotive Advisor</h5>
-                <!-- <img src="img/team/gm.jpg" height="80"> -->
                 <p>
                   <span
                     >Dr. Alan Messer has been a worldwide leader in advanced
@@ -1955,9 +1939,6 @@
                   target="_blank"
                   ><img src="img/icons/linkedin-footer.png" width="25"
                 /></a>
-                <!--
-                  <a href="#"><img src="img/icons/twitter-footer.png" width="25"></a>
-                -->
               </div>
             </div>
           </div>
@@ -2019,13 +2000,6 @@
                     </div>
                   </div>
                 </div>
-
-                <!--
-                  <a href="#"><img src="img/icons/linkedin-footer.png" width="25"></a>
-                -->
-                <!--
-                  <a href="#"><img src="img/icons/twitter-footer.png" width="25"></a>
-                -->
               </div>
             </div>
           </div>
@@ -2085,9 +2059,6 @@
                   target="_blank"
                   ><img src="img/icons/linkedin-footer.png" width="25"
                 /></a>
-                <!--
-                  <a href="#"><img src="img/icons/twitter-footer.png" width="25"></a>
-                -->
               </div>
             </div>
           </div>
@@ -2529,9 +2500,6 @@
                   target="_blank"
                   ><img src="img/icons/linkedin-footer.png" width="25"
                 /></a>
-                <!--
-                  <a href="https://t.me/Hertzog" target="_blank"><img src="img/icons/telegram-footer.png" width="25"></a>
-                -->
               </div>
             </div>
           </div>
@@ -2976,12 +2944,6 @@
                   and communities. He has a deep passion for travel and finding
                   the next amazing destination.
                 </p>
-                <!--
-                  <a href="#" target="_blank"><img src="img/icons/linkedin-footer.png" width="25"></a>
-                -->
-                <!--
-                  <a href="#" target="_blank"><img src="img/icons/github-footer.png" width="25"></a>
-                -->
               </div>
             </div>
           </div>
@@ -3072,8 +3034,6 @@
                 name="_subject"
                 value="New member joining the Alliance!"
               />
-              <input type="hidden" name="_cc" value="noam@dav.network" />
-              <input type="hidden" name="_cc" value="john@dav.network" />
               <div class="row">
                 <div class="col-sm-12">
                   <label for="Name">Name</label>
@@ -3082,21 +3042,12 @@
                   <label for="Company">Company</label>
                   <input type="text" id="Company" name="Company" required />
 
-                  <!-- <label for="name">Title</label> -->
-                  <!-- <input type="text" id="Title" name="Title" required> -->
-
                   <label for="Email">E-mail</label>
                   <input type="text" id="Email" name="Email" required />
 
                   <label for="comment">Message</label>
                   <textarea id="comment" name="comment"></textarea>
                 </div>
-                <!--
-                  <div class="col-sm-6">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                  </div>
-                -->
               </div>
               <div class="text-center">
                 <input type="submit" value="Join Us" />
@@ -4029,21 +3980,12 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-              <!-- <iframe src="https://streamable.com/s/sb7re/zhjq" frameborder="0" width="100%" height="100%" allowfullscreen ></iframe> -->
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!--
-      <div class="telegram-bottom">
-          <a href="https://t.me/DAVNetwork" target="_blank" id="floating-button" onclick="ga('send', 'event', 'Telegram-Bottom-Click', 'click', 'floating_telegram_click');">
-          <span class="show">JOIN OUR<br>TELEGRAM</span>
-          <i class="fa fa-telegram" aria-hidden="true"></i>
-        </a>
-      </div>
-    -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script
       src="js/jquery.min.js"
@@ -4074,17 +4016,6 @@
     <script type="text/javascript" data-cfasync="false">
       $(document).ready(function() {
         document.getElementById("home-video").play();
-        var transactionId = getParameterByName("transaction_id");
-        if (transactionId) {
-          var homepageEventUrl =
-            "https://nessie.dav.network/homepage?transaction_id=" +
-            transactionId;
-          $.ajax({
-            type: "GET",
-            url: homepageEventUrl,
-            dataType: "json"
-          });
-        }
 
         var videoSrc = $("#wot iframe").attr("src");
         $("#wot").on("show.bs.modal", function(e) {
