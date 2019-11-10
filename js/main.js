@@ -482,8 +482,8 @@ function addCommas(nStr) {
 
 var preloadSections = document.querySelectorAll("#contributors");
 var config = {
-  // If the image gets within 800px in the Y axis, start the download.
-  rootMargin: "1000px 0px",
+  // If the image gets within 1100px in the Y axis, start the download.
+  rootMargin: "1100px 0px",
   threshold: 0.01
 };
 
