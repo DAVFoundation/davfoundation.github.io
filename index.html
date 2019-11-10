@@ -102,36 +102,25 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <script type="text/javascript">
-      if (!window.localStorage.getItem('dav-referrer')) {
+      if (!window.localStorage.getItem("dav-referrer")) {
         window.localStorage.setItem(
-          'dav-referrer',
-          document.referrer === '' ? document.URL : document.referrer
+          "dav-referrer",
+          document.referrer === "" ? document.URL : document.referrer
         );
       }
     </script>
     <!-- Google Tag Manager -->
-    <!--
-      <script type="text/javascript" data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
-      {'gtm.start': new Date().getTime(),event:'gtm.js'}
-      );var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NCJHZN5');</script>
-    -->
-    <!-- End Google Tag Manager -->
-
-    <!-- Google Tag Manager -->
     <script type="text/javascript" data-cfasync="false">
       (function(w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
+          dl = l != "dataLayer" ? "&l=" + l : "";
         j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-KRPG9G6');
+      })(window, document, "script", "dataLayer", "GTM-KRPG9G6");
     </script>
     <!-- End Google Tag Manager -->
 
@@ -159,27 +148,15 @@
     />
     <link rel="stylesheet" type="text/css" href="css/style.css?v=3.6.6" />
 
-    <!-- Bootstrap -->
-    <!--
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    -->
-    <!--
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    -->
-
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
-
-    <!--
-      HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-    -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
     <script type="text/javascript" data-cfasync="false">
       (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
+        i["GoogleAnalyticsObject"] = r;
         (i[r] =
           i[r] ||
           function() {
@@ -193,13 +170,13 @@
       })(
         window,
         document,
-        'script',
-        'https://www.google-analytics.com/analytics.js',
-        'ga'
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
       );
 
-      ga('create', 'UA-104463303-1', 'auto');
-      ga('send', 'pageview');
+      ga("create", "UA-104463303-1", "auto");
+      ga("send", "pageview");
     </script>
     <!-- Facebook Pixel Code -->
     <script>
@@ -213,7 +190,7 @@
         if (!f._fbq) f._fbq = n;
         n.push = n;
         n.loaded = !0;
-        n.version = '2.0';
+        n.version = "2.0";
         n.queue = [];
         t = b.createElement(e);
         t.async = !0;
@@ -223,11 +200,11 @@
       })(
         window,
         document,
-        'script',
-        'https://connect.facebook.net/en_US/fbevents.js'
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
       );
-      fbq('init', '738526256352778');
-      fbq('track', 'PageView');
+      fbq("init", "738526256352778");
+      fbq("track", "PageView");
     </script>
     <noscript>
       <img
@@ -244,23 +221,27 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-104463303-1"
       data-cfasync="false"
     ></script>
+
     <script data-cfasync="false">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'UA-104463303-1');
+      gtag("config", "UA-104463303-1");
     </script>
-
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <!--
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCJHZN5"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NCJHZN5"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Google Tag Manager (noscript) -->
@@ -274,7 +255,7 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top home-page">
       <div class="container1">
         <div class="navbar-header">
           <button
@@ -297,12 +278,13 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a class="scroll-link" href="#home">Home</a></li>
-            <li><a class="scroll-link" href="#overview">Overview</a></li>
-            <li><a class="scroll-link" href="#technology">Technology</a></li>
+            <li><a class="scroll-link" href="#learn-more">Overview</a></li>
             <li><a class="scroll-link" href="#prototypes">Protocols</a></li>
-            <li><a class="scroll-link" href="#roadmap">Roadmap</a></li>
+            <li><a class="scroll-link" href="#technology">Technology</a></li>
             <li><a class="scroll-link" href="#team">Team</a></li>
             <li><a class="scroll-link" href="#partners">Alliance</a></li>
+            <li><a href="/whitepaper.pdf">Whitepaper</a></li>
+            <li><a href="/roadmap.html">Roadmap</a></li>
             <li class="dropdown hidden-xs">
               <a
                 href="#"
@@ -314,16 +296,11 @@
                 >About</a
               >
               <ul class="dropdown-menu">
-                <li><a class="scroll-link" href="#faq">FAQ</a></li>
-                <li><a href="careers.html">Careers</a></li>
                 <li><a href="media.html">Press &amp; Media</a></li>
                 <li><a class="scroll-link" href="#contact">Contact</a></li>
               </ul>
             </li>
-            <li class="visible-xs">
-              <a class="scroll-link" href="#faq">FAQ</a>
-            </li>
-            <li class="visible-xs"><a href="careers.html">Careers</a></li>
+            <li class="visible-xs"></li>
             <li class="visible-xs">
               <a href="media.html">Press &amp; Media</a>
             </li>
@@ -331,409 +308,96 @@
               <a class="scroll-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right visible-xs visible-lg">
-            <li>
-              <a href="whitepaper.pdf" target="_blank"
-                ><img src="img/icons/whitepaper.png" /> Whitepaper</a
-              >
-            </li>
-            <li>
-              <a href="https://t.me/DAVNetwork" target="_blank"
-                ><img src="img/icons/telegram.png" /> Telegram</a
-              >
-            </li>
-            <li class="visible-xs">
-              <a href="https://medium.com/davnetwork" target="_blank"
-                ><img src="img/icons/medium.png" /> Medium</a
-              >
-            </li>
-            <li class="visible-md visible-lg btn-top-register">
-              <form
-                action="https://nessie.dav.network/join"
-                method="post"
-                id="mc-embedded-subscribe-form"
-                name="mc-embedded-subscribe-form"
-                class="validate"
-                novalidate
-              >
-                <div id="mc_embed_signup_scroll">
-                  <div class="mc-field-group">
-                    <!-- <label for="mce-EMAIL">Email Address </label> -->
-                    <input
-                      type="hidden"
-                      id="transaction_id"
-                      name="transaction_id"
-                    />
-                    <input type="hidden" id="referrer" name="referrer" />
-                    <input
-                      type="email"
-                      value=""
-                      name="EMAIL"
-                      class="required email"
-                      id="mce-EMAIL"
-                      placeholder="Email address"
-                      style="width: 66%;display:none;"
-                    />
-                  </div>
-                  <div id="mce-responses" class="clear">
-                    <div
-                      class="response"
-                      id="mce-error-response"
-                      style="display:none"
-                    ></div>
-                    <div
-                      class="response"
-                      id="mce-success-response"
-                      style="display:none"
-                    ></div>
-                  </div>
-                  <!--
-                    real people should not fill this in and expect good things - do not remove this or risk form bot signups
-                  -->
-                  <div
-                    style="position: absolute; left: -5000px;"
-                    aria-hidden="true"
-                  >
-                    <input
-                      type="text"
-                      name="b_8cbc69b6acf3e3436662993bd_6bd28e738d"
-                      tabindex="-1"
-                      value=""
-                    />
-                  </div>
-                  <div class="clear" id="hero-register-button">
-                    <input
-                      type="submit"
-                      value="Register"
-                      name="subscribe"
-                      id="mc-embedded-subscribe"
-                      class="button"
-                      onclick="ga('send', 'event', 'Register-Top-Click', 'click', 'top_register_click');"
-                      style="display:none"
-                    />
-                  </div>
-                </div>
-              </form>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right hidden-xs hidden-lg">
-            <li>
-              <a href="whitepaper.pdf" target="_blank"
-                ><img src="img/icons/whitepaper.png"
-              /></a>
-            </li>
-            <li>
-              <a href="https://t.me/DAVNetwork" target="_blank"
-                ><img src="img/icons/telegram.png"
-              /></a>
-            </li>
-            <li class="btn-top-register">
-              <form
-                action="https://nessie.dav.network/join"
-                method="post"
-                id="mc-embedded-subscribe-form"
-                name="mc-embedded-subscribe-form"
-                class="validate"
-                novalidate
-              >
-                <div id="mc_embed_signup_scroll">
-                  <div class="mc-field-group">
-                    <!-- <label for="mce-EMAIL">Email Address </label> -->
-                    <input
-                      type="hidden"
-                      id="transaction_id"
-                      name="transaction_id"
-                    />
-                    <input type="hidden" id="referrer" name="referrer" />
-                    <input
-                      type="email"
-                      value=""
-                      name="EMAIL"
-                      class="required email"
-                      id="mce-EMAIL"
-                      placeholder="Email address"
-                      style="width: 66%;display:none;"
-                    />
-                  </div>
-                  <div id="mce-responses" class="clear">
-                    <div
-                      class="response"
-                      id="mce-error-response"
-                      style="display:none"
-                    ></div>
-                    <div
-                      class="response"
-                      id="mce-success-response"
-                      style="display:none"
-                    ></div>
-                  </div>
-                  <!--
-                    real people should not fill this in and expect good things - do not remove this or risk form bot signups
-                  -->
-                  <div
-                    style="position: absolute; left: -5000px;"
-                    aria-hidden="true"
-                  >
-                    <input
-                      type="text"
-                      name="b_8cbc69b6acf3e3436662993bd_6bd28e738d"
-                      tabindex="-1"
-                      value=""
-                    />
-                  </div>
-                  <div class="clear" id="hero-register-button">
-                    <input
-                      type="submit"
-                      value="Register"
-                      name="subscribe"
-                      id="mc-embedded-subscribe"
-                      class="button"
-                      onclick="ga('send', 'event', 'Register-Top-Click', 'click', 'top_register_click');"
-                      style="display:none"
-                    />
-                  </div>
-                </div>
-              </form>
-            </li>
-            <li class="visible-xs">
-              <a href="https://medium.com/davnetwork" target="_blank"
-                ><img src="img/icons/medium.png"
-              /></a>
-            </li>
-          </ul>
         </div>
-        <!-- /.nav-collapse -->
       </div>
     </nav>
 
     <div class="hero hero-ico main-hero" id="home">
-      <div id="startchange"></div>
-      <div class="hero-inner">
-        <div class="hero-valign">
-          <div class="">
-            <div class="row">
-              <div class="screen1">
-                <div class="hero-center">
-                  <div class="screen1Cell">
-                    <h1>The Coin of Transportation</h1>
-                    <div class="visible-xs airpad"></div>
-                    <h5 class="visible-xs">
-                      <span>Blockchain-based transportation protocol</span>
-                    </h5>
-                    <h5 class="hidden-xs">
-                      <span>Blockchain-based transportation protocol</span>
-                      Enabling a Decentralized, Peer to Peer, Global
-                      Transportation Network
-                    </h5>
-                    <div class="token-sale-announcement ico-start-box">
-                      <h6>
-                        Be the first to know about DAV updates and
-                        announcements:
-                      </h6>
-                      <form
-                        action="https://network.us16.list-manage.com/subscribe/post?u=8cbc69b6acf3e3436662993bd&amp;id=6bd28e738d"
-                        method="post"
-                        id="mc-embedded-subscribe-form"
-                        name="mc-embedded-subscribe-form"
-                        class="validate email-form"
-                        novalidate
-                      >
-                        <input
-                          type="email"
-                          value=""
-                          name="EMAIL"
-                          class="required email email-input"
-                          id="mce-EMAIL"
-                          placeholder="Email address"
-                        />
-                        <input
-                          type="submit"
-                          class="button"
-                          id="submit-email"
-                          value="Subscribe"
-                        />
-                        <div id="error-msg"></div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end screen1 -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="as-seen-on-hero">
-        <h4>As Seen On:</h4>
-        <div class="container">
-          <div class="row">
-            <div>
-              <div class="as-seen-on-logo">
-                <a
-                  href="https://www.forbes.com/sites/samabuelsamid/2018/03/13/dav-foundation-wants-to-bring-open-source-blockchain-platform-to-mobility/2/"
-                  target="_blank"
-                  ><img src="img/as-seen-forbes.png"
-                /></a>
-              </div>
-              <div class="as-seen-on-logo">
-                <a
-                  href="https://www.coindesk.com/auto-industry-gears-up-for-future-powered-by-blockchain/"
-                  target="_blank"
-                  ><img src="img/as-seen-coindesk.png"
-                /></a>
-              </div>
-              <div class="as-seen-on-logo">
-                <a
-                  href="https://motherboard.vice.com/en_us/article/j5aj3y/how-the-blockchain-will-change-uber-lyft-peer-to-peer-transportation-startups"
-                  target="_blank"
-                  ><img src="img/as-seen-vice.png"
-                /></a>
-              </div>
-            </div>
-            <div>
-              <div class="as-seen-on-logo">
-                <a
-                  href="https://www.entrepreneur.com/article/316354"
-                  target="_blank"
-                  ><img src="img/as-seen-entrepreneuer.png"
-                /></a>
-              </div>
-              <div class="as-seen-on-logo">
-                <a
-                  href="http://markets.businessinsider.com/news/stocks/dav-foundation-secures-major-korean-investment-from-block-crafters-capital-1021691119"
-                  target="_blank"
-                  ><img src="img/business-insider.png"
-                /></a>
+      <div id="startchange">
+        <div class="hero-inner__new">
+          <div class="hero-center">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Blockchain-based transportation protocol
+              </h1>
+              <h2 class="hero-subtitle">
+                Enabling a Decentralized, Peer to Peer, Global Transportation
+                Network
+              </h2>
+              <div class="hero-buttons--container">
+                <a href="#learn-more" class="button-new primary scroll-link">Learn more</a>
+                <a href="/whitepaper.pdf" class="button-new secondary">White Paper</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="as-seen-on-hero__new">
+        <div class="text--wrapper"><p>As seen on</p></div>
+        <div class="logo--wrapper">
+          <div class="as-seen-on-logo">
+            <a
+              href="https://www.forbes.com/sites/samabuelsamid/2018/03/13/dav-foundation-wants-to-bring-open-source-blockchain-platform-to-mobility/2/"
+              target="_blank"
+              ><img src="img/as-seen-forbes.png"
+            /></a>
+          </div>
+          <div class="as-seen-on-logo">
+            <a
+              href="https://www.dropbox.com/s/i82ic6juqbxk391/DAV%20AW.pdf?dl=0"
+              target="_blank"
+              ><img src="img/as-seen-aw.png"
+            /></a>
+          </div>
+          <div class="as-seen-on-logo">
+            <a
+              href="https://motherboard.vice.com/en_us/article/j5aj3y/how-the-blockchain-will-change-uber-lyft-peer-to-peer-transportation-startups"
+              target="_blank"
+              ><img src="img/as-seen-vice.png"
+            /></a>
+          </div>
+          <div class="as-seen-on-logo">
+            <a
+              href="https://www.entrepreneur.com/article/316354"
+              target="_blank"
+              ><img src="img/as-seen-entrepreneuer.png"
+            /></a>
+          </div>
+          <div class="as-seen-on-logo">
+            <a
+              href="https://markets.businessinsider.com/news/stocks/dav-foundation-secures-major-korean-investment-from-block-crafters-capital-1021691119"
+              target="_blank"
+              ><img src="img/business-insider.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <video autoplay muted loop id="home-video">
+        <source src="img/home1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
-
-    <div class="best-brands hide">
-      <h2>A Team Built From The Best Brands</h2>
-      <a href="https://www.sap.com/index.html" target="_blank"
-        ><img src="img/brands/sap.jpg"
-      /></a>
-      <a href="https://www.gm.com/" target="_blank"
-        ><img src="img/brands/gm.jpg"
-      /></a>
-      <br class="visible-xs" />
-      <a href="https://www.nasa.gov/" target="_blank"
-        ><img src="img/brands/nasa.jpg"
-      /></a>
-      <a href="https://www.google.com/" target="_blank"
-        ><img src="img/brands/google.jpg"
-      /></a>
-      <br class="visible-xs" />
-      <a href="https://www.ibm.com/" target="_blank"
-        ><img src="img/brands/ibm.jpg"
-      /></a>
-      <a href="https://www.ethereum.org/" target="_blank"
-        ><img src="img/brands/ethereum.jpg"
-      /></a>
-      <br class="visible-xs" />
-      <!--
-        <a href="https://www.faa.gov/" target="_blank"><img src="img/brands/faa.jpg"></a>
-      -->
-      <!--
-        <a href="https://www.equinix.com/" target="_blank"><img src="img/brands/equinix.jpg"></a>
-      -->
-      <a href="https://www.ford.com" target="_blank"
-        ><img src="img/brands/ford1.jpg"
-      /></a>
-      <a href="https://www.ups.com/us/en/global.page" target="_blank"
-        ><img src="img/brands/ups.png"
-      /></a>
-    </div>
-
-    <div class="refer-dav hidden">
-      <h2>Earn up to $100 in free DAV tokens by inviting friends</h2>
-      <h4>
-        You’ll earn 5 DAV tokens for each friend you invite to the network. Up
-        to 400 DAVT, valued at $100
-      </h4>
-      <a href="referral.html">Join Now</a>
-    </div>
-
-    <div class="video-home" id="overview">
+    <section class="video-section--wrapper" id="learn-more" name="learn-more">
       <div class="container">
-        <h2>
-          We’re building a decentralized infrastructure to<br />
-          revolutionize the transportation industry on the blockchain
-        </h2>
-        <div class="row">
-          <div class="col-sm-6">
-            <!-- <img src="img/video1.jpg"> -->
-            <div class="videoWrapper">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/MJrYxRo0UG8?rel=0"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <p>DAV Overview</p>
-            <br class="visible-xs" />
-            <br class="visible-xs" />
-          </div>
-          <div class="col-sm-6">
-            <!-- <img src="img/video2.jpg"> -->
-            <div class="videoWrapper">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/jCXlgB8-RQw?rel=0"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <p>
-              First Australian Company To Utilize DAV Protocol For Shipping
-              &amp; Logistics
-            </p>
-          </div>
+        <div class="video--heading">
+          <h3>
+            We’re building a decentralized infrastructure to revolutionize the
+            transportation industry on the blockchain
+          </h3>
+        </div>
+
+        <div class="video--iframe">
+          <iframe
+            width="560"
+            height="540"
+            src="https://www.youtube-nocookie.com/embed/4xILPeYoX9k"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-    </div>
-
-    <div class="join-us-orange">
-      <h2>Join us</h2>
-      <a href="https://blog.dav.network/" target="_blank" title="DAV Magazine"><img src="img/icons/m.png"></a>
-      <a href="https://forum.dav.network/" target="_blank" title="DAV Forum"><img src="img/icons/f.png"> </a>
-      <a href="https://t.me/DAVNetwork" target="_blank"
-        ><img src="img/icons/telegram.png"
-      /></a>
-      <a href="https://open.kakao.com/o/gmXB6O5" target="_blank"
-        ><img src="img/icons/kakao.png"
-      /></a>
-      <!-- <a href="https://twitter.com/DAV_city" target="_blank"
-        ><img src="img/icons/twitter.png"
-      /></a> -->
-      <a href="https://github.com/DAVFoundation" target="_blank"
-        ><img src="img/icons/github.png"
-      /></a>
-      <a href="https://www.youtube.com/channel/UCPuAOygDwCiLOdLosiQJJ1w" target="_blank"
-        ><img src="img/icons/youtube.png"
-      /></a>
-      <!-- <a href="https://www.linkedin.com/company/dav-city" target="_blank"
-        ><img src="img/icons/linkedin.png"
-      /></a> -->
-      <a href="https://www.reddit.com/r/DAVNetwork/" target="_blank"
-        ><img src="img/icons/reddit.png"
-      /></a>
-      <!-- <a href="https://www.facebook.com/DAV.city" target="_blank"
-        ><img src="img/icons/facebook.png"
-      /></a> -->
-      <!-- <a href="https://medium.com/davnetwork" target="_blank"
-        ><img src="img/icons/medium.png"
-      /></a> -->
-    </div>
+    </section>
 
     <div class="container illustrations">
       <div class="row">
@@ -760,8 +424,8 @@
           <img src="img/illustration-center.png" />
           <h4>Convenient City Transportation</h4>
           <p>
-            Access convenient transportation around your city and earn DAV
-            Tokens to charge your bike or scooter
+            Access convenient transportation around your city or offer services
+            such as charge and parking
           </p>
         </div>
         <div class="col-sm-4">
@@ -799,8 +463,22 @@
           <h4>Autonomous Ride Sharing</h4>
           <p>
             Get a ride from an autonomous car or share your own car on the
-            network and earn DAV Tokens
+            network to generate revenue
           </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prototypes-section" id="prototypes">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-8 text-center">
+            <h2>
+              Explore what<br />
+              we've built so far
+            </h2>
+            <a href="protocols.html" class="goToAlliance">Our Protocols</a>
+          </div>
         </div>
       </div>
     </div>
@@ -906,104 +584,6 @@
           </p>
         </div>
       </div>
-    </div>
-
-    <div class="container blockchain-middleman hide" id="blockchain">
-      <h2>What Blockchain means to transportation today</h2>
-      <h3>Use Case: Decentralized Ride Hailing</h3>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="img/taxi-station.png" />
-          <h4>Before 2010</h4>
-          <h5>The Taxi Station Middleman</h5>
-          <p>
-            Taxis and passengers communicate via a taxi station using a
-            telephone and walkie-talkies, with 25% of the revenue being shared
-            with the station
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <img src="img/taxi-middleman.png" />
-          <h4>2010</h4>
-          <h5>The Technological Middleman</h5>
-          <p>
-            Taxis and passengers communicate via a mobile app (e.g., UBER), with
-            25% of the revenue being shared with the mobile app
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <img src="img/taxi-middleman-dead.png" />
-          <h4>2018</h4>
-          <h5>Removal of the Middleman</h5>
-          <p>
-            Taxis and passengers can now commnicate directly with each other
-            using Blockchain, no middleman to share the revenue with
-          </p>
-        </div>
-      </div>
-
-      <a href="blockchain-today.html" class="btn-orange">Learn More</a>
-    </div>
-
-    <div class="prototypes-section" id="prototypes">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-8 text-center">
-            <h2>
-              Explore what<br />
-              we've built so far
-            </h2>
-            <a href="protocols.html" class="goToAlliance">Our Protocols</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="development-tools hide" id="developers">
-      <div class="container">
-        <h2>Explore the DAV development tools</h2>
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <h4>DAV CLI tool</h4>
-            <div class="laptop">
-              <img src="img/laptop_homepage.png" />
-              <video
-                class="visible-lg"
-                onplaying="this.controls=false;"
-                onclick="this.play();"
-                loop="true"
-                src="img/dav-cli.mp4"
-              ></video>
-            </div>
-            <a href="https://github.com/DAVFoundation/dav-cli" target="_blank"
-              ><span>Learn more about our CLI tools</span>
-              <img src="img/circle-right.png"
-            /></a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <h4>DAV Developer Portal</h4>
-            <img src="img/dav-portal-api.png" />
-            <a href="https://developers.dav.network/" target="_blank"
-              ><span>Visit our Developer Portal</span>
-              <img src="img/circle-right.png"
-            /></a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <h4>DAV Foundation @ Github</h4>
-            <img src="img/github-page.png" />
-            <a href="https://github.com/DAVFoundation" target="_blank"
-              ><span>Explore our Github channel</span>
-              <img src="img/circle-right.png"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="roadmap" id="roadmap">
-      <h2>Roadmap Plan</h2>
-      <img src="img/roadmap.png?v=20180425.2" />
-      <a href="whitepaper.pdf" target="_blank">Download Our Whitepaper</a>
     </div>
 
     <div class="container team" id="team">
@@ -1114,6 +694,55 @@
           </div>
         </div>
 
+        <div class="col-xs-6 col-sm-3">
+          <a href="#modalSai" data-toggle="modal" data-target="#modalSai">
+            <!-- <img src="img/video_icon.png" class="videoIcon"> -->
+            <img src="img/team/sai.jpg" />
+            <div class="row">
+              <div class="col-xs-10 col-sm-12">
+                <h4>Sai Yagnyamurthy</h4>
+                <h5>Mobility Advisor</h5>
+              </div>
+            </div>
+          </a>
+          <div class="advisor-logo">
+            <div class="row">
+              <div class="col-xs-3 col-sm-2">
+                <img src="img/team/ford.jpg" />
+              </div>
+              <div class="col-xs-9 col-sm-10">
+                <h3>
+                  Head of Partnerships &amp; Digital sales at Ford Motor Company
+                </h3>
+              </div>
+            </div>
+          </div>
+          <h6></h6>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 hasVideo">
+          <a href="#modalGeorge" data-toggle="modal" data-target="#modalGeorge">
+            <img src="img/video_icon.png" class="videoIcon" />
+            <img src="img/team/george.jpg" />
+            <div class="row">
+              <div class="col-xs-10 col-sm-12">
+                <h4>George D. Zamka</h4>
+                <h5>Aviation Advisor</h5>
+              </div>
+            </div>
+          </a>
+          <div class="advisor-logo">
+            <div class="row">
+              <div class="col-xs-3 col-sm-2">
+                <img src="img/team/faa.jpg" />
+              </div>
+              <div class="col-xs-9 col-sm-10">
+                <h3>Former Space Shuttle astronaut and Executive at FAA</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-xs-6 col-sm-3 hasVideo">
           <a href="#modalGreg" data-toggle="modal" data-target="#modalGreg">
             <img src="img/video_icon.png" class="videoIcon" />
@@ -1176,27 +805,31 @@
           </div>
         </div>
 
-        <div class="col-xs-6 col-sm-3 hasVideo">
-          <a href="#modalGeorge" data-toggle="modal" data-target="#modalGeorge">
-            <img src="img/video_icon.png" class="videoIcon" />
-            <img src="img/team/george.jpg" />
+        <div class="col-xs-6 col-sm-3">
+          <a
+            href="#modalGiovanni"
+            data-toggle="modal"
+            data-target="#modalGiovanni"
+          >
+            <img src="img/team/giovanni.jpg" />
             <div class="row">
               <div class="col-xs-10 col-sm-12">
-                <h4>George D. Zamka</h4>
-                <h5>Aviation Advisor</h5>
+                <h4>Dr.&nbsp;Giovanni&nbsp;Lanfranchi</h4>
+                <h5>Technology Architecture Advisor</h5>
               </div>
             </div>
           </a>
           <div class="advisor-logo">
             <div class="row">
               <div class="col-xs-3 col-sm-2">
-                <img src="img/team/faa.jpg" />
+                <img src="img/team/ibm.jpg" />
               </div>
               <div class="col-xs-9 col-sm-10">
-                <h3>Former Space Shuttle astronaut and Executive at FAA</h3>
+                <h3>Vice President of Global Technology Services at IBM</h3>
               </div>
             </div>
           </div>
+          <h6></h6>
         </div>
 
         <div class="col-xs-6 col-sm-3">
@@ -1249,33 +882,6 @@
               that&rdquo;
             </h6>
           </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-3">
-          <a
-            href="#modalGiovanni"
-            data-toggle="modal"
-            data-target="#modalGiovanni"
-          >
-            <img src="img/team/giovanni.jpg" />
-            <div class="row">
-              <div class="col-xs-10 col-sm-12">
-                <h4>Dr.&nbsp;Giovanni&nbsp;Lanfranchi</h4>
-                <h5>Technology Architecture Advisor</h5>
-              </div>
-            </div>
-          </a>
-          <div class="advisor-logo">
-            <div class="row">
-              <div class="col-xs-3 col-sm-2">
-                <img src="img/team/ibm.jpg" />
-              </div>
-              <div class="col-xs-9 col-sm-10">
-                <h3>Vice President of Global Technology Services at IBM</h3>
-              </div>
-            </div>
-          </div>
-          <h6></h6>
         </div>
 
         <div class="col-xs-6 col-sm-3 hasVideo">
@@ -1338,29 +944,6 @@
           </div>
         </div>
 
-        <div class="col-xs-6 col-sm-3">
-          <a href="#modalSai" data-toggle="modal" data-target="#modalSai">
-            <!-- <img src="img/video_icon.png" class="videoIcon"> -->
-            <img src="img/team/sai.jpg" />
-            <div class="row">
-              <div class="col-xs-10 col-sm-12">
-                <h4>Sai Yagnyamurthy</h4>
-                <h5>Mobility Advisor</h5>
-              </div>
-            </div>
-          </a>
-          <div class="advisor-logo">
-            <div class="row">
-              <div class="col-xs-3 col-sm-2">
-                <img src="img/team/ford.jpg" />
-              </div>
-              <div class="col-xs-9 col-sm-10">
-                <h3>Head of Partnerships &amp; Digital sales at Ford Motor Company</h3>
-              </div>
-            </div>
-          </div>
-          <h6></h6>
-        </div>
       </div>
 
       <div class="row team-medium">
@@ -1409,21 +992,6 @@
           </a>
         </div>
 
-        <div class="col-xs-6 col-sm-4 col-lg-15 hide">
-          <a href="#modalJoe" data-toggle="modal" data-target="#modalJoe">
-            <img src="img/team/joe.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Joe Lopardo</h4>
-                <p>Co-Founder</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
         <div
           class="col-xs-6 col-sm-4 col-sm-offset-2 col-lg-offset-0 col-lg-15"
         >
@@ -1457,240 +1025,6 @@
         </div>
       </div>
 
-      <div class="row team-small">
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalFrank" data-toggle="modal" data-target="#modalFrank">
-            <img src="img/team/frank.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Shahar Frank</h4>
-                <p>R&amp;D Team Leader</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalLior" data-toggle="modal" data-target="#modalLior">
-            <img src="img/team/lior.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Lior Shkoori</h4>
-                <p>Head of Product</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a
-            href="#modalAnatoly"
-            data-toggle="modal"
-            data-target="#modalAnatoly"
-          >
-            <img src="img/team/anatoly.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Anatoly Tokalov</h4>
-                <p>Senior Developer</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalYaron" data-toggle="modal" data-target="#modalYaron">
-            <img src="img/team/yaron.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Yaron Shapira</h4>
-                <p>Developer</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalHai" data-toggle="modal" data-target="#modalHai">
-            <img src="img/team/hai.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Hai Alaluf</h4>
-                <p>Developer</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalTimi" data-toggle="modal" data-target="#modalTimi">
-            <img src="img/team/timi.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Timi Ajiboye</h4>
-                <p>Senior Developer</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalAlex" data-toggle="modal" data-target="#modalAlex">
-            <img src="img/team/alex.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Alex Iliescu</h4>
-                <p>Web Developer</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalRachel" data-toggle="modal" data-target="#modalRachel">
-            <img src="img/team/rachel.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Rachel Linnewiel</h4>
-                <p>Head of External Relations</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalAndrew" data-toggle="modal" data-target="#modalAndrew">
-            <img src="img/team/andrew.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Andrew Grunstein</h4>
-                <p>Head of Research</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalGuy" data-toggle="modal" data-target="#modalGuy">
-            <img src="img/team/guy.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Guy Magen</h4>
-                <p>Product Designer</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalHadar" data-toggle="modal" data-target="#modalHadar">
-            <img src="img/team/hadar.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Hadar Badash</h4>
-                <p>Office Manager</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalAlick" data-toggle="modal" data-target="#modalAlick">
-            <img src="img/team/alick.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Alick Friedman</h4>
-                <p>Global&nbsp;Business&nbsp;Development</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalDaniel" data-toggle="modal" data-target="#modalDaniel">
-            <img src="img/team/daniel.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Daniel Goldfine</h4>
-                <p>Video Content Manager</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="#modalDaan" data-toggle="modal" data-target="#modalDaan">
-            <img src="img/team/daan.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Daan van der Zwaag</h4>
-                <p>UX Engineer</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a
-            href="#modalBradley"
-            data-toggle="modal"
-            data-target="#modalBradley"
-          >
-            <img src="img/team/bradley.jpg" />
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>Bradley Berman</h4>
-                <p>Lead Storyteller</p>
-              </div>
-              <div class="col-xs-1 col-sm-2 text-right">
-                <img src="img/right-orange-arrow.png" />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
       <h2 class="contributors-title" id="contributors">
         Our Team of Open Source Contributors
       </h2>
@@ -1751,7 +1085,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://www.advancedaircraftcompany.com/" target="_blank">
+          <a href="https://www.advancedaircraftcompany.com/" target="_blank">
             <img src="img/alliance/aac.png" />
             <div class="alliance-popup">
               <img src="img/alliance/aac.png" /> <br />
@@ -1764,7 +1098,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://www.auvsi.org/" target="_blank">
+          <a href="https://www.auvsi.org/" target="_blank">
             <img src="img/alliance/auvsi.png" />
             <div class="alliance-popup">
               <img src="img/alliance/auvsi.png" /> <br />
@@ -1812,7 +1146,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://copterexpress.com/" target="_blank">
+          <a href="https://copterexpress.com/" target="_blank">
             <img src="img/alliance/coex.jpg" />
             <div class="alliance-popup">
               <img src="img/alliance/coex.jpg" /> <br />
@@ -1827,7 +1161,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://www.skysense.co/" target="_blank">
+          <a href="https://www.skysense.co/" target="_blank">
             <img src="img/alliance/skysense.png" />
             <div class="alliance-popup">
               <img src="img/alliance/skysense.png" /> <br />
@@ -1843,7 +1177,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://www.droneterminus.com" target="_blank">
+          <a href="https://www.droneterminus.com" target="_blank">
             <img src="img/alliance/drone-terminus.jpg" />
             <div class="alliance-popup">
               <img src="img/alliance/drone-terminus.jpg" /> <br />
@@ -1859,7 +1193,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://www.slipstreamadvantage.com/" target="_blank">
+          <a href="https://www.slipstreamadvantage.com/" target="_blank">
             <img src="img/alliance/slipstream.jpg" />
             <div class="alliance-popup">
               <br />
@@ -1890,7 +1224,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://gradd.co/" target="_blank">
+          <a href="https://gradd.co/" target="_blank">
             <img src="img/alliance/gradd.png" />
             <div class="alliance-popup">
               <img src="img/alliance/gradd.png" /> <br />
@@ -1922,7 +1256,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://aerodyne.co/" target="_blank">
+          <a href="https://aerodyne.co/" target="_blank">
             <img src="img/alliance/aerodyne.jpg" />
             <div class="alliance-popup">
               <img src="img/alliance/aerodyne.jpg" /> <br />
@@ -1939,7 +1273,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://www.blktatu.com/" target="_blank">
+          <a href="https://www.blktatu.com/" target="_blank">
             <img src="img/alliance/blktatu.jpg" />
             <div class="alliance-popup">
               <br />
@@ -2020,7 +1354,7 @@
         </div>
 
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://www.dronemarketwatch.com/" target="_blank">
+          <a href="https://www.dronemarketwatch.com/" target="_blank">
             <img src="img/alliance/drone-market-watch.png" />
             <div class="alliance-popup">
               <br />
@@ -2036,7 +1370,7 @@
         </div>
 
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://highdronechile.cl" target="_blank">
+          <a href="https://highdronechile.cl" target="_blank">
             <img src="img/alliance/highdrone-chile.png" />
             <div class="alliance-popup">
               <br />
@@ -2067,7 +1401,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6 tanu">
-          <a href="http://www.anratechnologies.com/home/" target="_blank">
+          <a href="https://www.anratechnologies.com/home/" target="_blank">
             <img
               style="padding: 0 30px;"
               src="img/alliance/anratechnologies_logo.png"
@@ -2124,7 +1458,7 @@
           </a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-          <a href="http://capacitybuilders.world/" target="_blank">
+          <a href="https://capacitybuilders.world/" target="_blank">
             <img style="padding: 0 30px;" src="img/alliance/wcb.jpg" />
             <div class="alliance-popup">
               <br />
@@ -2141,33 +1475,40 @@
           </a>
         </div>
 
-            <div class="col-lg-3 col-sm-4 col-xs-6">
-              <a href="https://www.brinc.io/" target="_blank">
-                <img style="padding: 0 30px;" src="img/alliance/brinc.jpg">
-                <div class="alliance-popup">
-                  <br>
-                  <br>
-                <img style="padding: 0 30px;" src="img/alliance/brinc.jpg">
-                  <br>
-                  <br>
-                  <h5>Provides selected technology innovators with accelerator programs, strategic capital and planning, and management support. Offers a focus on drone innovation.</h5>
-                </div>
-              </a>
+        <div class="col-lg-3 col-sm-4 col-xs-6">
+          <a href="https://www.brinc.io/" target="_blank">
+            <img style="padding: 0 30px;" src="img/alliance/brinc.jpg" />
+            <div class="alliance-popup">
+              <br />
+              <br />
+              <img style="padding: 0 30px;" src="img/alliance/brinc.jpg" />
+              <br />
+              <br />
+              <h5>
+                Provides selected technology innovators with accelerator
+                programs, strategic capital and planning, and management
+                support. Offers a focus on drone innovation.
+              </h5>
             </div>
+          </a>
+        </div>
 
-            <div class="col-lg-3 col-sm-4 col-xs-6">
-              <a href="https://www.xyo.network/" target="_blank">
-                <img style="padding: 0;" src="img/alliance/xyo.png">
-                <div class="alliance-popup">
-                  <br>
-                  <br>
-                <img style="padding: 0;" src="img/alliance/xyo.png">
-                  <br>
-                  <br>
-                  <h5>XYO provides decentralized, verified location data for transport assets on the DAV network.</h5>
-                </div>
-              </a>
+        <div class="col-lg-3 col-sm-4 col-xs-6">
+          <a href="https://www.xyo.network/" target="_blank">
+            <img style="padding: 0;" src="img/alliance/xyo.png" />
+            <div class="alliance-popup">
+              <br />
+              <br />
+              <img style="padding: 0;" src="img/alliance/xyo.png" />
+              <br />
+              <br />
+              <h5>
+                XYO provides decentralized, verified location data for transport
+                assets on the DAV network.
+              </h5>
             </div>
+          </a>
+        </div>
       </div>
       <div class="row hidden-lg text-center">
         <div class="col-lg-3 col-sm-4 col-xs-6">
@@ -2309,28 +1650,24 @@
           /></a>
         </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-              <a href=".brinc" data-toggle="modal" data-target="#brinc">
-                <img style="padding: 0 16px;" src="img/alliance/brinc.jpg">
-              </a>
-            </div>
+          <a href=".brinc" data-toggle="modal" data-target="#brinc">
+            <img style="padding: 0 16px;" src="img/alliance/brinc.jpg" />
+          </a>
+        </div>
         <div class="col-lg-3 col-sm-4 col-xs-6">
-              <a href=".xyo" data-toggle="modal" data-target="#xyo">
-                <img style="padding: 0;" src="img/alliance/xyo.png">
-              </a>
-            </div>
+          <a href=".xyo" data-toggle="modal" data-target="#xyo">
+            <img style="padding: 0;" src="img/alliance/xyo.png" />
+          </a>
+        </div>
       </div>
 
       <div class="row">
         <div
           class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center"
         >
-          <!-- <h4>Join the Alliance</h4> -->
           <a href="https://alliance.dav.network/" class="goToAlliance"
             >Visit Our Alliance Page</a
           >
-          <!--
-            <a href="#modalMessage" data-toggle="modal" data-target="#modalMessage">Join the Alliance</a>
-          -->
 
           <!-- Begin MailChimp Signup Form -->
 
@@ -2386,76 +1723,6 @@
       </div>
     </div>
 
-    <div class="as-seen-on hide">
-      <div class="container">
-        <h2>As seen on</h2>
-
-        <div class="row text-center">
-          <div class="col-sm-6">
-            <a
-              href="https://www.investing.com/analysis/tether-takes-the-limelight-200284760"
-              target="_blank"
-              ><img src="img/investing.png"
-            /></a>
-          </div>
-          <div class="col-sm-6">
-            <a
-              href="https://thebitcoinnews.com/john-frazer-ethereum-foundation-veteran-joins-dav-foundation-as-chief-communication-officer-business-wire-press-release/"
-              target="_blank"
-              ><img src="img/bitcoin-news.png"
-            /></a>
-          </div>
-          <div class="col-sm-6">
-            <a
-              href="https://sputniknews.com/analysis/201802011061271099-ico-market-regulation/"
-              target="_blank"
-              ><img src="img/sputniknews.png"
-            /></a>
-          </div>
-          <div class="col-sm-6">
-            <a
-              href="https://www.newsbtc.com/press-releases/cryptocurrency-investments-blockchain-thailand/"
-              target="_blank"
-              ><img src="img/newsbtc.png"
-            /></a>
-          </div>
-        </div>
-
-        <div class="text-right hide">
-          <a href="#"
-            >Learn more about our media and press releases
-            <img src="img/circle-right.png"
-          /></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container partners hide">
-      <h2>Strategic Partners</h2>
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <a href="https://www.bancor.network/discover" target="_blank">
-            <img src="img/partners/bancor.jpg" />
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a href="http://www.amazix.com/" target="_blank">
-            <img src="img/partners/amazix.jpg" />
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a href="http://www.auvsi.org/" target="_blank">
-            <img src="img/partners/auvsi.jpg" />
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a href="https://www.blockchainil.com/" target="_blank">
-            <img src="img/partners/blockchain.jpg" />
-          </a>
-        </div>
-      </div>
-    </div>
-
     <div class="people-are-talking">
       <div class="container">
         <h2>People Are Talking</h2>
@@ -2476,76 +1743,6 @@
             /></a>
           </div>
           <div>
-            <img src="img/forbes_logo.png" />
-            <h3>&nbsp;</h3>
-            <p>
-              &ldquo;We want to inspire a rapid and scalable adoption of
-              technologies by companies in the autonomous and mobility space and
-              the partnership with the DAV Foundation will help drive
-              this.&rdquo; - Chris Ballinger, CEO of MOBI
-            </p>
-            <a
-              href="https://www.forbes.com/sites/edgarsten/2018/09/05/a-major-push-to-use-blockchain-to-link-autonomous-vehicle-development-on-open-source-network/#4461fb5b548c"
-              target="_blank"
-              ><span>Read Full Article</span> <img src="img/circle-right.png"
-            /></a>
-          </div>
-          <div>
-            <img src="img/yahoo.png" />
-            <h3>&nbsp;</h3>
-            <p>
-              &ldquo;A decentralized transportation network to disrupt the way
-              people move from one location to another&rdquo;
-            </p>
-            <a
-              href="https://finance.yahoo.com/news/merger-mobility-blockchain-technology-could-150529927.html"
-              target="_blank"
-              ><span>Read Full Article</span> <img src="img/circle-right.png"
-            /></a>
-          </div>
-          <div>
-            <img src="img/coindesk.png" />
-            <h3>&nbsp;</h3>
-            <p>
-              &ldquo;DAV is proposing a commons, a standard of sorts, in the
-              form of a free and open-source decentralized mobility
-              network.&rdquo;
-            </p>
-            <a
-              href="https://www.coindesk.com/auto-industry-gears-up-for-future-powered-by-blockchain/"
-              target="_blank"
-              ><span>Read Full Article</span> <img src="img/circle-right.png"
-            /></a>
-          </div>
-          <div>
-            <img src="img/thegobone_logo.png" />
-            <h3>92.2% Score</h3>
-            <p>
-              &ldquo;Daaaamn, just got wind of some of the advisors DAV is
-              adding.....pretty crazy stuff. Stay tuned! Also, pretty happy to
-              see a great project like this start to get the attention it
-              deserves!&rdquo;
-            </p>
-            <a
-              href="https://medium.com/@Jsmeethesmee/dav-a-macro-analysis-3bc9a15ede9f"
-              target="_blank"
-              ><span>Read Full Article</span> <img src="img/circle-right.png"
-            /></a>
-          </div>
-          <div>
-            <img src="img/forbes_logo.png" />
-            <h3>&nbsp;</h3>
-            <p>
-              &ldquo;DAV blockchain is the underlying infrastructure that
-              enables all types of potential mobility business models.&rdquo;
-            </p>
-            <a
-              href="https://www.forbes.com/sites/samabuelsamid/2018/03/13/dav-foundation-wants-to-bring-open-source-blockchain-platform-to-mobility/2/"
-              target="_blank"
-              ><span>Read Full Article</span> <img src="img/circle-right.png"
-            /></a>
-          </div>
-          <div>
             <img src="img/vice.png" />
             <h3>&nbsp;</h3>
             <p>
@@ -2561,726 +1758,69 @@
             /></a>
           </div>
           <div>
-            <img src="img/rocketfuel_logo.png" />
-            <h3>98% Score</h3>
-            <p>
-              &ldquo;Rocket Fuel Capital rated DAV Network an amazing 98%, which
-              is extremely rare to be honest. I hope this helps get the word out
-              about such a great project!&rdquo;
-            </p>
-            <a
-              href="https://www.youtube.com/watch?v=XuTPEF-XLPU"
-              target="_blank"
-              ><span>Watch Youtube Review</span> <img src="img/circle-right.png"
-            /></a>
-          </div>
-          <div>
-            <img src="img/ituber.png" />
+            <img
+              src="https://noteya.com/wp-content/uploads/2016/09/Automotive-World.png?593418&593418"
+              height="58"
+            />
             <h3>&nbsp;</h3>
             <p>
-              &ldquo;I usually do not say my preferences, but this time I would
-              say I am a very early supporter of DAV Network...the team is
-              all-star, the advisors are amazing.&rdquo;
+              &ldquo;The DAV Foundation is laying the groundwork for a
+              decentralised, peer-to-peer, global transportation network&rdquo;
             </p>
             <a
-              href="https://www.youtube.com/watch?v=kVF_3Xxevek"
+              href="https://www.dropbox.com/s/i82ic6juqbxk391/DAV%20AW.pdf?dl=0"
               target="_blank"
-              ><span>Watch Youtube Video</span> <img src="img/circle-right.png"
+              ><span>Read Full Article</span> <img src="img/circle-right.png"
             /></a>
           </div>
+
           <div>
-            <img src="img/diddy-carter.jpg" />
+            <img src="img/yahoo.png" />
             <h3>&nbsp;</h3>
             <p>
-              &ldquo;I believe it'll do well in the long term as each successful
-              milestone is achieved and partnerships signed with real world
-              companies&rdquo;
+              &ldquo;A decentralized transportation network to disrupt the way
+              people move from one location to another&rdquo;
             </p>
-            <a href="https://t.me/diddycarterico/1092" target="_blank"
-              ><span>View Telegram Channel</span>
-              <img src="img/circle-right.png"
+            <a
+              href="https://finance.yahoo.com/news/merger-mobility-blockchain-technology-could-150529927.html"
+              target="_blank"
+              ><span>Read Full Article</span> <img src="img/circle-right.png"
+            /></a>
+          </div>
+
+          <div>
+            <img src="img/forbes_logo.png" />
+            <h3>&nbsp;</h3>
+            <p>
+              &ldquo;We want to inspire a rapid and scalable adoption of
+              technologies by companies in the autonomous and mobility space and
+              the partnership with the DAV Foundation will help drive
+              this.&rdquo; - Chris Ballinger, CEO of MOBI
+            </p>
+            <a
+              href="https://www.forbes.com/sites/edgarsten/2018/09/05/a-major-push-to-use-blockchain-to-link-autonomous-vehicle-development-on-open-source-network/#4461fb5b548c"
+              target="_blank"
+              ><span>Read Full Article</span> <img src="img/circle-right.png"
+            /></a>
+          </div>
+
+          <div>
+            <img src="img/coindesk.png" />
+            <h3>&nbsp;</h3>
+            <p>
+              &ldquo;DAV is proposing a commons, a standard of sorts, in the
+              form of a free and open-source decentralized mobility
+              network.&rdquo;
+            </p>
+            <a
+              href="https://www.coindesk.com/auto-industry-gears-up-for-future-powered-by-blockchain/"
+              target="_blank"
+              ><span>Read Full Article</span> <img src="img/circle-right.png"
             /></a>
           </div>
         </div>
 
         <a href="media.html" class="btn-orange">Visit Press &amp; Media Page</a>
-      </div>
-    </div>
-
-    <div class="join-telegram">
-      <h2>Join our community on Telegram</h2>
-      <a href="https://t.me/DAVNetwork" target="_blank"
-        ><img src="img/icons/telegram-30.png" /> Join Telegram</a
-      >
-    </div>
-
-    <div class="fundraising-goals hide" id="tokensale">
-      <h2>Token Sale Details</h2>
-      <div class="text-center not-from-us">
-        <p>
-          Our token sale is now closed and we've successfully raised
-          <span class="raised-amount">40,726 ETH</span>.
-        </p>
-        <p>Thank you to our amazing community for all your ongoing support!</p>
-        <a href="#" class="viewTokenInfo">View Token Sale Information</a>
-      </div>
-      <div class="blur-funds add-blur">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-sm-6">
-              <img src="img/token-distribution.png" />
-              <h4>Expected Token Distribution</h4>
-              <div class="row hidden-xs">
-                <div class="col-sm-10 col-sm-offset-1">
-                  <p>
-                    Amount Raised: <span class="raised-amount">40,726 ETH</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <img src="img/use-of-proceeds.png" />
-              <h4>Expected Use of Proceeds</h4>
-              <div class="row hidden-xs">
-                <div class="col-sm-10 col-sm-offset-1">
-                  <p>Cost: 1ETH = 10,000 DAV Tokens</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row visible-xs">
-            <div class="col-sm-6">
-              <p>
-                Amount Raised: <span class="raised-amount">40,726 ETH</span>
-              </p>
-            </div>
-            <div class="col-sm-6"><p>Cost: 1ETH = 10,000 DAV Tokens</p></div>
-          </div>
-
-          <div class="text-center">
-            <a
-              href="token-sale-details.html"
-              class="btn-orange"
-              style="margin-top:50px;display:inline-block;font-size:19px;"
-              >View Full Token Details</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <svg
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        class="blur-svg"
-      >
-        <defs>
-          <filter id="blur-filter">
-            <feGaussianBlur stdDeviation="4"></feGaussianBlur>
-          </filter>
-        </defs>
-      </svg>
-    </div>
-
-    <div class="daily-dav">
-      <div class="container">
-        <h2>Weekly DAV</h2>
-        <div class="row">
-          <div class="col-sm-2"><img src="img/authentic.png" /></div>
-          <div class="col-sm-5">
-            <p>
-              Knowing the importance of your trust, we believe we’ve built DAV
-              as one of the most open and transparent organizations in the
-              world.
-            </p>
-            <p>
-              Get to know our team! We'll be highlighting the most important
-              technical and business developments we're engaged in every week.
-            </p>
-            <div class="text-right">
-              <a
-                href="https://www.youtube.com/playlist?list=PLpqJF_iMOExfLwaAvQp6E__DgzfkBmep3"
-                target="_blank"
-                ><span>Watch the latest Weekly DAV</span>
-                <img src="img/circle-right.png"
-              /></a>
-              <br />
-              <br />
-            </div>
-          </div>
-          <div class="col-sm-5">
-            <div class="videoWrapper" id="weekly-video">
-              <!--
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zMp5xd8PHK0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container faq-questions" id="faq">
-      <h2>FAQ</h2>
-      <div
-        class="panel-group"
-        id="accordion-question"
-        role="tablist"
-        aria-multiselectable="true"
-      >
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title1">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question1"
-                aria-expanded="false"
-                aria-controls="question1"
-              >
-                What is DAV?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question1"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title1"
-          >
-            <div class="panel-body">
-              <p>
-                DAV is an open source Software platform that allows anyone to
-                buy or sell transportation services in a decentralized market.
-                DAV integrates into any vehicle (car, drone, ship), enabling
-                those vehicles to discover, communicate, and transact with one
-                another. This shapes a decentralized manned transportation
-                network today and is the underlying infrastructure for an
-                autonomous transportation network tomorrow. DAV accomplishes
-                this through the DAV protocol which connects vehicles, users,
-                and service providers all on one network.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title2">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question2"
-                aria-expanded="false"
-                aria-controls="question2"
-              >
-                Why does this need to be on the blockchain?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question2"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title2"
-          >
-            <div class="panel-body">
-              <p>
-                DAV takes the P2P information transfer capabilities of the
-                internet and the P2P value transfer made possible by the
-                blockchain (in this case, via the DAV token) and brings them to
-                their next logical conclusion, enabling P2P transfer of physical
-                goods. Consider this scenario: a package needs to be delivered
-                using a drone. The parties involved include a sender, recipient,
-                drone operator, goods insurer, and arbitrator. The blockchain,
-                and specifically smart contracts, enable us to conduct these
-                kinds of transactions P2P, directly between these parties,
-                without needing an intermediary, thus reducing costs to all
-                parties while providing them with the assurance they need to
-                conduct business without necessarily trusting each other
-                beforehand.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title3">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question3"
-                aria-expanded="false"
-                aria-controls="question3"
-              >
-                Autonomous Vehicles seem far in the future, how can this be
-                applied today?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question3"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title3"
-          >
-            <div class="panel-body">
-              <p>
-                Today our protocol creates a decentralized internet of
-                transportation with the manned vehicles on the road and in the
-                air that we see today. We’ve built the underlying infrastructure
-                that allows these vehicles to discover, communicate, and
-                transact with each other utilizing the blockchain technology.
-                <br />
-                <br />
-                This same infrastructure will allow autonomous vehicles to
-                discover, communicate, and transact with each other. Although
-                autonomous cars and trucks have not yet achieved mainstream
-                adoption, the world is awash in innovation in autonomous drones.
-                Companies large and small are popping up around the world
-                offering autonomous drone services to industry and the public.
-                Look up what Amazon is doing, or 7-Eleven, or Flytrex and you
-                will see solid evidence that autonomous drones have arrived and
-                are rushing in to fill a massive service void. <br />
-                <br />
-                Utilizing our protocol with autonomous vehicles, DAV will first
-                focus the technology on the drone and rover market which is
-                right on the cusp of mainstream adoption. Autonomous cars,
-                buses, trucks and marine vehicles will be addressed in due
-                course.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title4">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question4"
-                aria-expanded="false"
-                aria-controls="question4"
-              >
-                What is the purpose of the DAV token? Why use a new token? Why
-                not use ETH or any of the existing ones?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question4"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title4"
-          >
-            <div class="panel-body">
-              <p>
-                DAV tokens are essential for a truly decentralized
-                transportation marketplace. The DAV token is needed for users to
-                participate in the innovative DAV platform. Today vehicle owners
-                and service providers who see the value of a decentralized
-                transportation ecosystem will benefit from historically low
-                barriers to market entry (enabled by the DAV platform), along
-                with operational optimization. The same goes for AV owners once
-                more AV's hit the market in the coming years.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title5">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question5"
-                aria-expanded="false"
-                aria-controls="question5"
-              >
-                How will vehicles get DAV software? Will the manufacturer have
-                to allow or does this all happen aftermarket?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question5"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title5"
-          >
-            <div class="panel-body">
-              <p>
-                We are working on this on more than one level. First, we have
-                software that can reside outside of the vehicle (i.e., either on
-                a remote server, or onboard an aftermarket component attached to
-                the vehicle). This software can speak with the vehicle using its
-                existing APIs to give it commands, receive telemetry data, and
-                more. We are already working with a number of vehicle
-                manufacturers (both manned and autonomous) this way, both
-                integrating with their existing APIs, and working with them to
-                open new API capabilities. Second, there are common standards
-                emerging for vehicles that will allow the addition of external
-                ""apps"" to the vehicle's IVI (with appropriate permissions, of
-                course). We are in touch with someone who has been doing a lot
-                of great work on this over at Automotive Grade Linux, and we are
-                looking into that as well. Finally, we will be working with
-                manufacturers to integrate DAV technology directly into their
-                vehicles. This will happen at a later stage, but we are already
-                in talks with a few companies about this at the moment. To make
-                this possible, we are creating developer tools and SDKs for
-                different programming languages and platforms. These tools ease
-                third-party development and allow our partners to focus on their
-                core business by abstracting a lot of the complexities of
-                working with blockchain, doing decentralized communications,
-                etc.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title6">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question6"
-                aria-expanded="false"
-                aria-controls="question6"
-              >
-                What blockchain will DAV be built on?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question6"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title6"
-          >
-            <div class="panel-body">
-              <p>DAV is built on the Ethereum Blockchain.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title7">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question7"
-                aria-expanded="false"
-                aria-controls="question7"
-              >
-                Will scaling on the Ethereum Blockchain be an issue?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question7"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title7"
-          >
-            <div class="panel-body">
-              <p>
-                We are looking at various approaches to improve transaction
-                times and lower fees (which is critical for micropayments),
-                including using side chains, but we have not announced anything
-                yet. We are also in discussions with several partners who can
-                solve for any scalability issues. We chose the Ethereum platform
-                because it has by far the greatest concentration of developer
-                talent working on it in the blockchain space. The core
-                development team at the Ethereum Foundation is heavily supported
-                by game theorists and formal verification experts, and they have
-                ample funding. To top that off, the commercial and industrial
-                interests that have aligned with the Ethereum blockchain are
-                global heavyweights: Cisco, Deloitte, Intel, Mastercard, Pfizer,
-                Credit Suisse…just to name a few. With that kind of backing and
-                interest, we feel Ethereum is currently the protocol with the
-                greatest chance for global adoption at this time. To address
-                your concerns about transaction speed and congestion, we’d like
-                to highlight that we need to be looking at potential rather than
-                current status. We all recognize that it is still early days for
-                blockchain technology, and thus the foundations are currently
-                being built for future use. Vitalik Buterin recently said, “I
-                expect 2018, at least within the Ethereum space that I’m best
-                able to speak about, will be the year of action. It will be the
-                year where all of the ideas around scalability, Plasma,
-                proof-of-stake, and privacy that we have painstakingly worked on
-                and refined over the last four years are finally going to turn
-                into real, live working code that you can play around in a
-                highly mature form in some cases on testnets, and in some key
-                cases even on the public mainnet. Everyone in the Ethereum space
-                recognizes that the world is watching, and we are ready to
-                deliver.” Having said all that, our gifted CTO and CEO are both
-                accomplished technologists who keep a close watch on the broader
-                ecosystem, and should another platform make a better case for
-                the success of DAV, migration would be an option.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title8">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question8"
-                aria-expanded="false"
-                aria-controls="question8"
-              >
-                Who is behind DAV?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question8"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title8"
-          >
-            <div class="panel-body">
-              <p>
-                DAV's team consists of successful entreprenuers, innovators,
-                blockchain experts, and autonomous vehicle specialists. Our
-                team, together with our advisors, partners, and community, are
-                building the future of transporation together. You can learn
-                more about who we are in our
-                <a href="#dav-team">Team section</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title9">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question9"
-                aria-expanded="false"
-                aria-controls="question9"
-              >
-                Where is your project incorporated?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question9"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title9"
-          >
-            <div class="panel-body">
-              <p>
-                DAV is a registered non-profit foundation in Treforma AG,
-                Grabenstrasse 25 6340 Baar, Zug, Switzerland. The team is
-                located in Tel Aviv, San Francisco, Vancouver, and Switzerland.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-heading" role="tab" id="title10">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question10"
-                aria-expanded="false"
-                aria-controls="question10"
-              >
-                When was your token sale?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question10"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title10"
-          >
-            <div class="panel-body">
-              <p>
-                11 June, 2018 to 25 June, 2018. Our token sale was restricted
-                for persons from certain jurisdictions including the US or
-                China.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel hide">
-          <div class="panel-heading" role="tab" id="title12">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question12"
-                aria-expanded="false"
-                aria-controls="question12"
-              >
-                When will the token be listed on exchanges?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question12"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title12"
-          >
-            <div class="panel-body">
-              <p>
-                We are currently in discussions with several large exchanges and
-                will let our community know once we have confirmed dates.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel hide">
-          <div class="panel-heading" role="tab" id="title13">
-            <h4 class="panel-title">
-              <a
-                role="button"
-                data-toggle="collapse"
-                data-parent="#accordion-question"
-                href="#question13"
-                aria-expanded="false"
-                aria-controls="question13"
-              >
-                Where is the foundation registered?
-              </a>
-            </h4>
-          </div>
-          <div
-            id="question13"
-            class="panel-collapse collapse"
-            role="tabpanel"
-            aria-labelledby="title13"
-          >
-            <div class="panel-body"><p>Zug, Switzerland</p></div>
-          </div>
-        </div>
-      </div>
-      <!-- end panel group -->
-      <h3>
-        <a href="https://t.me/DAVNetwork" target="_blank"
-          >Couldn't find your answers?<br class="visible-xs"/>
-          Ask us on Telegram <img src="img/icons/telegram-footer.png"
-        /></a>
-      </h3>
-    </div>
-    <!-- end faq -->
-
-    <div class="crowd-sale">
-      <h3 style="font-size: 20px; margin: 0 0 20px 0;">
-        Be the first to know about DAV updates and announcements:
-      </h3>
-      <div class="join-crowd-sale" style="margin: auto;">
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form
-            action="https://network.us16.list-manage.com/subscribe/post?u=8cbc69b6acf3e3436662993bd&amp;id=6bd28e738d"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            class="validate bottom-subscription"
-            novalidate
-          >
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group">
-                <!-- <label for="mce-EMAIL">Email Address </label> -->
-                <input
-                  type="email"
-                  value=""
-                  name="EMAIL"
-                  class="required email"
-                  id="mce-EMAIL"
-                  placeholder="Email address"
-                  style="width: 60%;
-                  max-width: 265px;
-                  margin: 0 4px 0 0;
-                  font-size: 16px;
-                  line-height: 47px;
-                  height: 47px;
-                  border: 1px solid white;
-                  border-radius: 4px;
-                  padding: 0 4px;
-                  color: white;
-                  background-color: rgba(187, 175, 175, 0);"
-                />
-                <input
-                  type="submit"
-                  value="Subscribe"
-                  name="subscribe"
-                  id="mc-embedded-subscribe"
-                  class="button"
-                  style="color: #ff6a46;
-                      width: 30%;
-                      max-width: 130px;
-                      display: inline-block;
-                      border: 1px solid #FFF;
-                      border-radius: 3px;
-                      line-height: 47px;
-                      height: 47px;
-                      font-size: 14px;
-                      font-weight: 700;
-                      background-color: white; "
-                />
-              </div>
-              <div id="mce-responses" class="clear">
-                <div
-                  class="response"
-                  id="mce-error-response"
-                  style="display:none"
-                ></div>
-                <div
-                  class="response"
-                  id="mce-success-response"
-                  style="display:none"
-                ></div>
-              </div>
-              <!--
-                real people should not fill this in and expect good things - do not remove this or risk form bot signups
-              -->
-              <div
-                style="position: absolute; left: -5000px;"
-                aria-hidden="true"
-              >
-                <input
-                  type="text"
-                  name="b_8cbc69b6acf3e3436662993bd_6bd28e738d"
-                  tabindex="-1"
-                  value=""
-                />
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <!-- End mc_embed_signup -->
       </div>
     </div>
 
@@ -3308,13 +1848,11 @@
           <div class="row about-legal">
             <div class="col-sm-3 col-xs-6">
               <h4>ABOUT</h4>
-              <a href="token-sale-details.html">Token Sale Details</a>
-              <a href="#faq">FAQ</a> <a href="careers.html">Careers</a>
               <a href="media.html">Press &amp; Media</a>
+              <a href="privacy-policy.html">Privacy Policy</a>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <h4>LEGAL</h4>
-              <a href="privacy-policy.html">Privacy Policy</a>
+              <h4>&nbsp;</h4>
               <a href="terms-of-use.html">Terms of Use</a>
               <a href="Legal-Disclaimers.pdf">Legal Disclaimers</a>
             </div>
@@ -3322,17 +1860,9 @@
               <br class="visible-xs" />
               <h4>Join Us</h4>
               <div class="social">
-            <a href="https://blog.dav.network/" target="_blank"><img src="img/icons/m.png"> DAV Magazine</a>
-            <a href="https://www.youtube.com/channel/UCPuAOygDwCiLOdLosiQJJ1w" target="_blank"><img src="img/icons/youtube.png"> Youtube</a>
-            <!-- <a href="https://www.linkedin.com/company/dav-city" target="_blank"><img src="img/icons/linkedin-footer.png"> Linkedin</a> -->
-            <a href="https://forum.dav.network/" target="_blank"><img src="img/icons/f.png"> DAV Forum</a>
-            <a href="https://t.me/DAVNetwork" target="_blank"><img src="img/icons/telegram-footer.png"> Telegram</a>
-            <!-- <a href="https://www.facebook.com/DAV.city" target="_blank"><img src="img/icons/facebook-footer.png"> Facebook</a> -->
-            <!-- <a href="https://twitter.com/DAV_city" target="_blank"><img src="img/icons/twitter-footer.png"> Twitter</a> -->
-            <a href="https://open.kakao.com/o/gmXB6O5" target="_blank"><img src="img/icons/kakao-footer.png" /> Kakao</a>
-            <a href="https://www.reddit.com/r/DAVNetwork/" target="_blank"><img src="img/icons/reddit.png"> Reddit</a>
-            <a href="https://github.com/DAVFoundation" target="_blank"><img src="img/icons/github-footer.png"> Github</a>
-          </div>
+                <a href="https://github.com/DAVFoundation" target="_blank"><img src="img/icons/github-footer.png"> Github</a>
+                <a href="https://www.youtube.com/channel/UCPuAOygDwCiLOdLosiQJJ1w" target="_blank"><img src="img/icons/youtube.png"> Youtube</a>
+              </div>
             </div>
           </div>
 
@@ -3347,26 +1877,6 @@
         </div>
       </div>
     </footer>
-
-    <div class="alert telegram-alert hide" role="alert">
-      <div class="container">
-        <p>
-          Join the
-          <a href="https://t.me/DAVNetwork" target="_blank"
-            >DAV Telegram channel</a
-          >
-          for 24x7 responses to your questions from our team.
-        </p>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="alert"
-          aria-label="Close"
-        >
-          &times;
-        </button>
-      </div>
-    </div>
 
     <!-- Modal -->
     <div
@@ -3396,7 +1906,6 @@
               <div class="col-sm-8">
                 <h2>Dr. Alan Messer</h2>
                 <h5>Automotive Advisor</h5>
-                <!-- <img src="img/team/gm.jpg" height="80"> -->
                 <p>
                   <span
                     >Dr. Alan Messer has been a worldwide leader in advanced
@@ -3430,9 +1939,6 @@
                   target="_blank"
                   ><img src="img/icons/linkedin-footer.png" width="25"
                 /></a>
-                <!--
-                  <a href="#"><img src="img/icons/twitter-footer.png" width="25"></a>
-                -->
               </div>
             </div>
           </div>
@@ -3494,13 +2000,6 @@
                     </div>
                   </div>
                 </div>
-
-                <!--
-                  <a href="#"><img src="img/icons/linkedin-footer.png" width="25"></a>
-                -->
-                <!--
-                  <a href="#"><img src="img/icons/twitter-footer.png" width="25"></a>
-                -->
               </div>
             </div>
           </div>
@@ -3560,9 +2059,6 @@
                   target="_blank"
                   ><img src="img/icons/linkedin-footer.png" width="25"
                 /></a>
-                <!--
-                  <a href="#"><img src="img/icons/twitter-footer.png" width="25"></a>
-                -->
               </div>
             </div>
           </div>
@@ -3931,22 +2427,26 @@
                 <img src="img/team/ford.jpg" height="60" />
                 <p>
                   <span
-                    >Head of Partnerships &amp; Digital sales at Ford Motor Company</span
+                    >Head of Partnerships &amp; Digital sales at Ford Motor
+                    Company</span
                   >
-                  where he leads the efforts to form partnerships across technology, product and services for Ford Mobility organization as well as the sales team leading digital services.
-                  Sai is deeply involved in strategy development, execution and investment
-                  thesis for the future of automotive services ranging from
-                  telematics, autonomous, urban mobility and digital services.
-                  He is passionate about the intersection of key technologies
-                  like AI, Machine learning, Digital assistants, Blockchain, IoT
-                  and wireless which enable this transformation. Previously, Sai
-                  was a Director of Corporate Strategy at Verizon. His 11+ years
-                  in wireless product management &amp; strategy experience spans
-                  Wireless &amp; IoT technologies, digital services spanning
-                  M&amp;E, Ad-tech, commerce, healthcare and fintech where he
-                  holds a couple of patents. He's helped create several Centers
-                  of excellence &amp; R&amp;D units covering key technologies
-                  like AI, Digital assistants, NLP, and IoT platforms.
+                  where he leads the efforts to form partnerships across
+                  technology, product and services for Ford Mobility
+                  organization as well as the sales team leading digital
+                  services. Sai is deeply involved in strategy development,
+                  execution and investment thesis for the future of automotive
+                  services ranging from telematics, autonomous, urban mobility
+                  and digital services. He is passionate about the intersection
+                  of key technologies like AI, Machine learning, Digital
+                  assistants, Blockchain, IoT and wireless which enable this
+                  transformation. Previously, Sai was a Director of Corporate
+                  Strategy at Verizon. His 11+ years in wireless product
+                  management &amp; strategy experience spans Wireless &amp; IoT
+                  technologies, digital services spanning M&amp;E, Ad-tech,
+                  commerce, healthcare and fintech where he holds a couple of
+                  patents. He's helped create several Centers of excellence
+                  &amp; R&amp;D units covering key technologies like AI, Digital
+                  assistants, NLP, and IoT platforms.
                 </p>
                 <a href="https://www.linkedin.com/in/saisarat/" target="_blank"
                   ><img src="img/icons/linkedin-footer.png" width="25"
@@ -4000,9 +2500,6 @@
                   target="_blank"
                   ><img src="img/icons/linkedin-footer.png" width="25"
                 /></a>
-                <!--
-                  <a href="https://t.me/Hertzog" target="_blank"><img src="img/icons/telegram-footer.png" width="25"></a>
-                -->
               </div>
             </div>
           </div>
@@ -4352,748 +2849,6 @@
 
     <div
       class="modal team-modal"
-      id="modalJoe"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/joe.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Joe Lopardo</h2>
-                <h5>Co-Founder</h5>
-                <p>
-                  <span
-                    >An entrepreneur, investor, and doer for over 10 years
-                    across a multitude of industries.</span
-                  >
-                  Critically involved in the blockchain and cryptocurrency space
-                  at large. Has worked with companies such as Google, Oracle,
-                  Salesforce, and SAP to develop their brand and implement
-                  marketing strategies. A pay it forward mindset and focus on
-                  building genuine relationships. An outdoor and adventure
-                  enthusiast.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/joelopardo/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/joelopardo" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalAndrew"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/andrew.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Andrew Grunstein</h2>
-                <h5>Head of Research</h5>
-                <p>
-                  <span
-                    >Former Director of Military Cyber Products Gold Line Group
-                    and CEO of Pegasus Intelligence.</span
-                  >
-                  Experienced in Freight Forwarding, Customs Brokerage and
-                  transportation. Technology and Futurist enthusiast.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/andrew-grunstein-420bb514/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/ag88888888" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div
-      class="modal team-modal"
-      id="modalGuy"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/guy.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Guy Magen</h2>
-                <h5>Product Designer</h5>
-                <p>
-                  <span>Curious Digital Product Designer (UI/UX) with passion for Technology, Design and anything in between.</span>8+ years of experience with various startups in Israel and Abroad, Specialising with Mobile apps, Websites, Marketing Materials and much more.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/guymagen/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalAlex"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/alex.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Alex Iliescu</h2>
-                <h5>Web Developer</h5>
-                <p>
-                  <span
-                    >Bachelor of Computer Science with over 6 years of
-                    experience working for companies around the world.</span
-                  >
-                  Has created websites for a variety of industries, including
-                  cryptocurrency, shipping, services, developer tools, and more.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalRachel"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/rachel.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Rachel Linnewiel</h2>
-                <h5>Head of External Relations</h5>
-                <p>
-                  <span
-                    >Graduate of the Technion Institute of Technology with a
-                    Masters in City and Regional Planning.</span
-                  >
-                  Previously Transportation Planner and Coordinator of Electric
-                  Vehicles North Texas, the electric vehicle stakeholders group
-                  of the DFW Clean Cities Coalition.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/rachel-hercky-linnewiel-a6032697/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/rlinnewiel" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalHadar"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/hadar.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Hadar Badash</h2>
-                <h5>Office Manager</h5>
-                <p>
-                  <span
-                    >Hadar is experienced in corporate administration and office
-                    management.</span
-                  >
-                  She has a keen interest in project coordination for blockchain
-                  related projects. She is a B.A graduate in Social Science with
-                  exceptional interpersonal and organizational skills.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/hadar-badash-645257153/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/hadarbadash" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalAlick"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/alick.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Alick Friedman</h2>
-                <h5>Business Solutions Manager</h5>
-                <p>
-                  <span
-                    >Previously Business Solutions Manager at Verint Systems in
-                    Singapore</span
-                  >
-                  (NASDAQ: VRNT), experienced in crafting complex cyber security
-                  &amp; communications solutions for governments all across Asia
-                  Pacific. Alick is an active Blockchain advocate since 2011 and
-                  holds a Private Pilot license.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/alickfriedman/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/Alickiko" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalDaniel"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/daniel.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Daniel Goldfine</h2>
-                <h5>Video Content Manager</h5>
-                <p>
-                  <span>Video Creator with over 12 years experience</span> in
-                  creating promotional and marketing materials in various fields
-                  as well as creative and technical consultant. Previously the
-                  Video Department Manager of Newshound Media, an International
-                  Media Production Agency and Content Creator for Maccabi
-                  Healthcare Services, the Phoenix Insurance, i24 News and more.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/daniel-goldfine-b57b09155/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/Dan1080p" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalBradley"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/bradley.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Bradley Berman</h2>
-                <h5>Lead Storyteller</h5>
-                <p>
-                  <span
-                    >Bradley Berman is a leading writer about electric vehicles,
-                    car culture, and the future of transportation.</span
-                  >
-                  He contributes to The New York Times, MIT Technology Review,
-                  and others. He also makes odd documentary films.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/bradley-berman-79b132/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalLior"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/lior.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Lior Shkoori</h2>
-                <h5>Head of Product</h5>
-                <p>
-                  <span>Co-founder of Fi Club</span>, a disruptive peer-to-peer
-                  sharing platform allowing users to bypass ISPs and instantly
-                  buy and sell internet access from each other. Previously
-                  Product Manager at Iron Source, leading the company’s flagship
-                  product - a mobile SDK for Android and iOS developers,
-                  integrated in more than 100K mobile apps.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/lior-shkoori-85060162/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/liorshkoori" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalTimi"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/timi.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Timi Ajiboye</h2>
-                <h5>Senior Developer</h5>
-                <p>
-                  <span
-                    >Founder/CEO of Bitkoin Africa, a cryptocurrency exchange
-                    for Africa.</span
-                  >
-                  A multidisciplinary software developer with extensive
-                  experience with different aspects of software development;
-                  frontend and backend Web development, cryptocurrencies,
-                  Android, iOS, IoT, Machine Learning, and Virtual Reality.
-                </p>
-                <a href="https://github.com/timigod" target="_blank"
-                  ><img src="img/icons/github-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/timigod" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalAnatoly"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/anatoly.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Anatoly Tokalov</h2>
-                <h5>Senior Developer</h5>
-                <p>
-                  <span
-                    >A multi-disciplinary technologist with over a decade of
-                    experience.</span
-                  >
-                  Involved with the crypto world since 2014, and coding Solidity
-                  for the past year. Experienced in multi-disciplinary
-                  development, including scalable systems architecture, signal
-                  processing, machine-learning algorithms, and scalable
-                  distributed systems solutions. Previously CTO &amp; co-founder
-                  at AbiliSense.
-                </p>
-                <a href="https://github.com/antt001" target="_blank"
-                  ><img src="img/icons/github-footer.png" width="25"
-                /></a>
-                <a href="https://www.linkedin.com/in/atokalov/" target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalYaron"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/yaron.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Yaron Shapira</h2>
-                <h5>Developer</h5>
-                <p>
-                  <span
-                    >An experienced software engineer who developed critical and
-                    scalable systems in the israeli army.</span
-                  >
-                  He is a computer science graduate, and has enthusiasm for a
-                  lot of fields such as autonomous transportation, machine
-                  learning, blockchain and more.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/yaron-shapira-371aa813a/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/Yar1016" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalHai"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/hai.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Hai Alaluf</h2>
-                <h5>Developer</h5>
-                <p>
-                  <span
-                    >B.Sc in Computer Science and Economics with deep knowledge
-                    in web development.</span
-                  >
-                  He has vast experience in designing and developing end to end
-                  applications.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/hai-alaluf-97665ab0/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://t.me/HaiAlaluf" target="_blank"
-                  ><img src="img/icons/telegram-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalAbhishek"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/abhishek.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Abhishek Singh</h2>
-                <h5>Senior Developer</h5>
-                <p>
-                  <span>An artist and maker. </span>Graduated with a Master's
-                  from NYU. Post doctoral resident at NYU working on AR/VR, AI,
-                  hardware, robotics, self driving cars, and blockchain.
-                  Previously co-founded three startups, and brought countless
-                  projects to life.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/abhishek-singh-30626ba5/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://github.com/shekit" target="_blank"
-                  ><img src="img/icons/github-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
       id="modalTung"
       tabindex="-1"
       role="dialog"
@@ -5149,58 +2904,6 @@
 
     <div
       class="modal team-modal"
-      id="modalFrank"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/frank.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Shahar Frank</h2>
-                <h5>R&amp;D Team Leader</h5>
-                <p>
-                  <span
-                    >Open source enthusiast with almost 20 years of software
-                    development and management experience.</span
-                  >
-                  Google Certified Data Engineer. Expert cloud technology
-                  solution architect. Loves BigData and machine learning.
-                  Designed and developed high scale low latency services for
-                  companies such as AOL.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/shaharfrank/"
-                  target="_blank"
-                  ><img src="img/icons/linkedin-footer.png" width="25"
-                /></a>
-                <a href="https://github.com/srfrnk" target="_blank"
-                  ><img src="img/icons/github-footer.png" width="25"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
       id="modalGilad"
       tabindex="-1"
       role="dialog"
@@ -5241,129 +2944,8 @@
                   and communities. He has a deep passion for travel and finding
                   the next amazing destination.
                 </p>
-                <!--
-                  <a href="#" target="_blank"><img src="img/icons/linkedin-footer.png" width="25"></a>
-                -->
-                <!--
-                  <a href="#" target="_blank"><img src="img/icons/github-footer.png" width="25"></a>
-                -->
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal"
-      id="modalDaan"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="row">
-              <div class="col-sm-4">
-                <br />
-                <br />
-                <img src="img/team/daan.jpg" width="100%" />
-              </div>
-              <div class="col-sm-8">
-                <h2>Daan van der Zwaag</h2>
-                <h5>UX Engineer</h5>
-                <p>
-                  <span
-                    >Interfacing research, design and code to shape intuitive
-                    digital experiences.</span
-                  >
-                  Solving complex problems with user centred design and
-                  technology is always the common thread.<br />
-                  Founder of a digital agency in Amsterdam and five years
-                  experience in digital product development &amp; brand and
-                  experience design. Specialised in Frontend development and
-                  UX/UI Design. Born in The Netherlands in 1996, but not bound
-                  to any borders. Previously lived in Spain and Denmark, now
-                  living in Tel Aviv while finishing up his bachelor in
-                  Amsterdam.
-                </p>
-                <!--
-                  <a href="#" target="_blank"><img src="img/icons/linkedin-footer.png" width="25"></a>
-                -->
-                <!--
-                  <a href="#" target="_blank"><img src="img/icons/github-footer.png" width="25"></a>
-                -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal team-modal kyc-modal"
-      id="modalThankYouKYC"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body text-center">
-            <h3>KYC Process Completed!</h3>
-            <br /><br />
-            <h4>Thank you for your support!</h4>
-            <p>
-              <br />
-              We're excited you're as enthusiastic about DAV as we are!
-              <b
-                >We’ll be sending you an email once your KYC application has
-                been processed with next steps.</b
-              >
-              In the meantime you can check your whitelist status
-              <a href="/?kyc=status">here</a>.
-
-              <br /><br />
-              Remember to join our
-              <a href="https://t.me/DAVNetwork" target="_blank"
-                >Telegram Channel</a
-              >
-              as that will always be the place we first announce exciting news
-              and updates happening at DAV. You can watch this
-              <a
-                href="https://www.youtube.com/watch?v=bHzJbl9ygrI&feature=youtu.be"
-                >video contribution tutorial</a
-              >
-              to see how to participate in our token sale. <br /><br />
-              We appreciate your support and would like to show our thanks by
-              giving you 3.5% in DAV Tokens of the total contributions for every
-              member you refer. Read our
-              <a
-                href="https://medium.com/davnetwork/dav-has-launched-an-affiliate-program-alongside-their-kyc-b26fdd000b82"
-                target="_blank"
-                >step by step</a
-              >
-              article on how to get earning today. <br /><br />
-              Welcome to the DAV family, we look forward building the future of
-              transportation together! <br />
-            </p>
-            <button
-              type="button"
-              class="close1"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              Close
-            </button>
           </div>
         </div>
       </div>
@@ -5452,8 +3034,6 @@
                 name="_subject"
                 value="New member joining the Alliance!"
               />
-              <input type="hidden" name="_cc" value="noam@dav.network" />
-              <input type="hidden" name="_cc" value="john@dav.network" />
               <div class="row">
                 <div class="col-sm-12">
                   <label for="Name">Name</label>
@@ -5462,21 +3042,12 @@
                   <label for="Company">Company</label>
                   <input type="text" id="Company" name="Company" required />
 
-                  <!-- <label for="name">Title</label> -->
-                  <!-- <input type="text" id="Title" name="Title" required> -->
-
                   <label for="Email">E-mail</label>
                   <input type="text" id="Email" name="Email" required />
 
                   <label for="comment">Message</label>
                   <textarea id="comment" name="comment"></textarea>
                 </div>
-                <!--
-                  <div class="col-sm-6">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                  </div>
-                -->
               </div>
               <div class="text-center">
                 <input type="submit" value="Join Us" />
@@ -5576,7 +3147,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
 
-          <a href="http://www.advancedaircraftcompany.com/" target="_blank"
+          <a href="https://www.advancedaircraftcompany.com/" target="_blank"
             ><img src="img/alliance/aac.png" height="60"
           /></a>
           <img
@@ -5606,7 +3177,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
 
-          <a href="http://www.auvsi.org/" target="_blank"
+          <a href="https://www.auvsi.org/" target="_blank"
             ><img src="img/alliance/auvsi.png" height="60"
           /></a>
           <img
@@ -5705,7 +3276,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
 
-          <a href="http://copterexpress.com/" target="_blank"
+          <a href="https://copterexpress.com/" target="_blank"
             ><img src="img/alliance/coex.jpg" height="60"
           /></a>
           <img
@@ -5737,7 +3308,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
 
-          <a href="http://www.skysense.co/" target="_blank"
+          <a href="https://www.skysense.co/" target="_blank"
             ><img src="img/alliance/skysense.png" height="60"
           /></a>
           <img
@@ -5770,7 +3341,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
 
-          <a href="http://www.droneterminus.com" target="_blank"
+          <a href="https://www.droneterminus.com" target="_blank"
             ><img src="img/alliance/drone-terminus.jpg" height="60"
           /></a>
           <img
@@ -5864,7 +3435,7 @@
           </button>
           <br />
 
-          <a href="http://www.dronemarketwatch.com/" target="_blank"
+          <a href="https://www.dronemarketwatch.com/" target="_blank"
             ><img src="img/alliance/drone-market-watch.png" height="60"
           /></a>
           <br />
@@ -5926,7 +3497,7 @@
           </button>
           <br />
 
-          <a href="http://gradd.co/" target="_blank"
+          <a href="https://gradd.co/" target="_blank"
             ><img src="img/alliance/gradd.png" height="60"
           /></a>
           <img
@@ -5991,7 +3562,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
 
-          <a href="http://aerodyne.co/" target="_blank"
+          <a href="https://aerodyne.co/" target="_blank"
             ><img src="img/alliance/aerodyne.jpg" height="60"
           /></a>
           <img
@@ -6025,7 +3596,7 @@
           </button>
           <br />
 
-          <a href="http://www.blktatu.com/" target="_blank"
+          <a href="https://www.blktatu.com/" target="_blank"
             ><img src="img/alliance/blktatu.jpg" height="60"
           /></a>
           <br />
@@ -6116,7 +3687,7 @@
           </button>
           <br />
 
-          <a href="http://www.slipstreamadvantage.com/" target="_blank"
+          <a href="https://www.slipstreamadvantage.com/" target="_blank"
             ><img src="img/alliance/slipstream.jpg" height="60"
           /></a>
           <br />
@@ -6147,7 +3718,7 @@
           </button>
           <br />
 
-          <a href="http://highdronechile.cl" target="_blank"
+          <a href="https://highdronechile.cl" target="_blank"
             ><img src="img/alliance/highdrone-chile.png" height="60"
           /></a>
           <br />
@@ -6209,7 +3780,7 @@
           </button>
           <br />
 
-          <a href="http://www.anratechnologies.com/home/" target="_blank"
+          <a href="https://www.anratechnologies.com/home/" target="_blank"
             ><img src="img/alliance/anratechnologies_logo.png" height="60"
           /></a>
           <br />
@@ -6302,7 +3873,7 @@
           </button>
           <br />
 
-          <a href="http://capacitybuilders.world/" target="_blank"
+          <a href="https://capacitybuilders.world/" target="_blank"
             ><img src="img/alliance/wcb.jpg" height="60"
           /></a>
           <br />
@@ -6316,59 +3887,108 @@
       </div>
     </div>
 
-    <div class="modal alliance-modal alliance-modal-small" id="brinc" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-      <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content text-center">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <br>
-
-          <a href="https://www.brinc.io/" target="_blank"><img src="img/alliance/brinc.jpg" height="60"></a>
-          <br>
-          <h5>Provides selected technology innovators with accelerator programs, strategic capital and planning, and management support. Offers a focus on drone innovation.</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal alliance-modal alliance-modal-small" id="xyo" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-      <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content text-center">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <br>
-
-          <a href="https://www.xyo.network/" target="_blank"><img src="img/alliance/xyo.png" height="60"></a>
-          <br>
-          <h5>XYO provides decentralized, verified location data for transport assets on the DAV network.</h5>
-        </div>
-      </div>
-    </div>
-
-    <!-- annoucement start -->
-    <!--
-      The annoucement is empty and not displayd for now, please only remove display: none to display this section
-    -->
     <div
-      class="alert-bottom alert alert-announcement hide"
-      id="alert-announcement"
-      style="display: none"
+      class="modal alliance-modal alliance-modal-small"
+      id="brinc"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
     >
-      <a href="#" class="close" data-dismiss="alert" aria-label="close"
-        >&times;</a
-      >
-      <p></p>
-    </div>
-    <!-- annoucement end -->
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content text-center">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <br />
 
-    <!--
-      <div class="telegram-bottom">
-          <a href="https://t.me/DAVNetwork" target="_blank" id="floating-button" onclick="ga('send', 'event', 'Telegram-Bottom-Click', 'click', 'floating_telegram_click');">
-          <span class="show">JOIN OUR<br>TELEGRAM</span>
-          <i class="fa fa-telegram" aria-hidden="true"></i>
-        </a>
+          <a href="https://www.brinc.io/" target="_blank"
+            ><img src="img/alliance/brinc.jpg" height="60"
+          /></a>
+          <br />
+          <h5>
+            Provides selected technology innovators with accelerator programs,
+            strategic capital and planning, and management support. Offers a
+            focus on drone innovation.
+          </h5>
+        </div>
       </div>
-    -->
+    </div>
+
+    <div
+      class="modal alliance-modal alliance-modal-small"
+      id="xyo"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+    >
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content text-center">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <br />
+
+          <a href="https://www.xyo.network/" target="_blank"
+            ><img src="img/alliance/xyo.png" height="60"
+          /></a>
+          <br />
+          <h5>
+            XYO provides decentralized, verified location data for transport
+            assets on the DAV network.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal team-modal"
+      id="wot"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" style="padding-bottom: 15px;">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <br />
+            <h4>DAV World of Transportation</h4>
+            <br class="hidden-xs" />
+            <div class="videoWrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/4xILPeYoX9k?rel=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+      src="js/jquery.min.js"
       type="text/javascript"
       data-cfasync="false"
     ></script>
@@ -6387,7 +4007,7 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
       data-cfasync="false"
-    ></script>   
+    ></script>
     <script
       src="js/main.min.js?v=3.6.5"
       type="text/javascript"
@@ -6395,21 +4015,21 @@
     ></script>
     <script type="text/javascript" data-cfasync="false">
       $(document).ready(function() {
-        var transactionId = getParameterByName('transaction_id');
-        if (transactionId) {
-          var homepageEventUrl =
-            'https://nessie.dav.network/homepage?transaction_id=' +
-            transactionId;
-          $.ajax({
-            type: 'GET',
-            url: homepageEventUrl,
-            dataType: 'json'
-          });
-        }
+        document.getElementById("home-video").play();
+
+        var videoSrc = $("#wot iframe").attr("src");
+        $("#wot").on("show.bs.modal", function(e) {
+          // $('video').trigger('play');
+          $("#wot iframe").attr("src", videoSrc + "&amp;autoplay=1");
+        });
+        $("#wot").on("hidden.bs.modal", function(e) {
+          $("#wot iframe").attr("src", videoSrc);
+          //   $('video').trigger('pause');
+        });
       });
 
       $(function() {
-        $('.slick-gallery').slick({
+        $(".slick-gallery").slick({
           nextArrow: '<img class="arrow-right" src="img/right.png" />',
           prevArrow: '<img class="arrow-left" src="img/left.png" />',
           dots: false,
@@ -6446,18 +4066,18 @@
             }
           ]
         });
-        $('.slick-arrow').on('click', function() {
-          $('.slick-gallery').slick('slickPause');
+        $(".slick-arrow").on("click", function() {
+          $(".slick-gallery").slick("slickPause");
         });
-        $('.slick-gallery').slick('slickPause');
+        $(".slick-gallery").slick("slickPause");
       });
       $(window).scroll(function() {
-        var hT = $('.people-are-talking').offset().top,
-          hH = $('.people-are-talking').outerHeight(),
+        var hT = $(".people-are-talking").offset().top,
+          hH = $(".people-are-talking").outerHeight(),
           wH = $(window).height(),
           wS = $(this).scrollTop();
         if (wS > hT + hH - wH) {
-          $('.slick-gallery').slick('slickPlay');
+          $(".slick-gallery").slick("slickPlay");
         }
       });
     </script>
