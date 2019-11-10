@@ -5355,7 +5355,7 @@ h3.article-title {
   flex-wrap: wrap;
   background-image: url("../img/background-video_grey.jpg");
   background-size: cover;
-  background-color: white;
+  background-color: #F0EDEE;
   padding-bottom: $magicNumber;
 
   @media (min-width: 768px) {
@@ -5394,7 +5394,7 @@ h3.article-title {
       width: 100%;
       height: auto;
       min-height: 30vh;
-      background: #f0edee;
+      background: white;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
       @media (min-width: 376px) {
         min-height: 65vh;
