@@ -1350,37 +1350,6 @@ input {
     }
   }
 }
-.roadmap {
-  img {
-    width: 90%;
-    max-width: 1270px;
-  }
-  background: #434343 url("../img/city.jpg") no-repeat center;
-  background-size: cover;
-  padding: 60px 0 55px;
-  text-align: center;
-  h2 {
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    margin: 0 0 50px;
-  }
-  a {
-    display: block;
-    color: #fff;
-    font-weight: 700;
-    font-size: 14px;
-    background: $orange;
-    margin: 50px auto 0;
-    line-height: 47px;
-    height: 47px;
-    width: 260px;
-    border-radius: 3px;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
 .dav-alliance {
   margin-top: 30px;
   padding-bottom: 30px;
